@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-bnr30-style";
+
+.mod-bnr30 {
+  @include mod-bnr30-common-style;
+  @include mod-bnr30-style;
+}
+

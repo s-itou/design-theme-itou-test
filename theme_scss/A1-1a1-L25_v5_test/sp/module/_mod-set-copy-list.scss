@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-copy-list の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../sp-style/mod-set-copy-list-style";
+@import "../design/pat-design-copy-list";
+
+
+// -----------------------------------
+// part-main-252
+// キャッチコピーリスト
+// -----------------------------------
+
+.mod-set-copy-list {
+  @extend %common-style-mod-set-copy-list !optional;
+  .ex-style_#{$baseEx_01A1} & {@include pat-design-copy-list-1;}
+  .ex-style_#{$baseEx_01A2} & {@include pat-design-copy-list-2;}
+  .ex-style_#{$baseEx_01A3} & {@include pat-design-copy-list-3;}
+  .ex-style_#{$baseEx_01B1} & {@include pat-design-copy-list-4;}
+  .ex-style_#{$baseEx_01B2} & {@include pat-design-copy-list-5;}
+  .ex-style_#{$baseEx_01B3} & {@include pat-design-copy-list-6;}
+  .ex-style_#{$baseEx_01C1} & {@include pat-design-copy-list-7;}
+  .ex-style_#{$baseEx_01C2} & {@include pat-design-copy-list-8;}
+  .ex-style_#{$baseEx_01C3} & {@include pat-design-copy-list-9;}
+}

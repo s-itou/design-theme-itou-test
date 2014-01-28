@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+//全module共通
+.mod-body {
+  color: #333333;
+  font-size: 14px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  padding-top: 41px;
+  margin: 0;
+  table {
+    width: 100% !important;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  div {
+    @include box-sizing(border-box);
+  }
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+  }
+  a {
+    color: #335a93;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.mod-body {
+  //------------------
+  // mod-margin-top
+  // 部品間の余白調整
+  //------------------
+  .mod-margin1 {
+    margin-top: 10px !important;
+  }
+  .mod-margin2 {
+    margin-top: 15px !important;
+  }
+  .mod-margin3 {
+    margin-top: 30px !important;
+  }
+}
+
+

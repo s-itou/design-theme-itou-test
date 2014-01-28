@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-design-nagare の定義
+//
+//   ・デザインパターン
+//   ・mod-set-nagare 内にincludeされる使い方を想定
+//   ・他のsetモジュール（お客さまの声、等）でも使われる可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+// pat-design-nagare-3col の共通スタイル
+// --------------------------------------------------------------------------
+
+@mixin common-style-pat-design-nagare-3col {
+  .mod-3col-inner, .mod-3col-inner2 {
+    width: floor(($mainWidth - 54) / 3);
+    margin: 0 27px 0 0;
+  }
+  .mod-3col-inner3 {
+    width: floor(($mainWidth - 54) / 3);
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-nagare-3col のモジュール共通スタイル
+// --------------------------------------------------------------------------
+@mixin module-style-pat-design-nagare-3col-1 {
+  .mod-bnr-inner {
+    background-position: 8px 8px;
+  }
+}
+@mixin module-style-pat-design-nagare-3col-2 {
+  .mod-bnr-inner {
+    background-position: 7px 5px;
+  }
+}
+@mixin module-style-pat-design-nagare-3col-3 {
+  .mod-bnr-inner {
+    background-position: 8px 8px;
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-nagare-3col の装飾スタイル
+// --------------------------------------------------------------------------
+
+// なし
+
+
+// --------------------------------------------------------------------------
+// pat-design-nagare-3col の個別設定
+// --------------------------------------------------------------------------
+
+@mixin pat-design-nagare-3col-1 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-grade-1;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+@mixin pat-design-nagare-3col-2 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-grade-1;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+@mixin pat-design-nagare-3col-3 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-grade-2;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+@mixin pat-design-nagare-3col-4 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-grade-3;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+@mixin pat-design-nagare-3col-5 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-grade-3;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+@mixin pat-design-nagare-3col-6 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-grade-4;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+@mixin pat-design-nagare-3col-7 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-simple-1;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+@mixin pat-design-nagare-3col-8 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-simple-2;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+@mixin pat-design-nagare-3col-9 {
+  .mod-3col-inner, .mod-3col-inner2 {
+    .mod-img {@include pat-item-arrow-simple-3;}
+  }
+  @include common-style-pat-design-nagare-3col;
+}
+

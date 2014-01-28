@@ -1,0 +1,800 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+//mod-info ヘッダーフッターの青いラベル
+%default-info-base {
+  @extend %cf;
+  .mod-info-inner {
+    float: left;
+    text-align: center;
+    @include border-radius;
+  }
+  .mod-info-inner2 {
+    float: left;
+  }
+}
+
+%default-info {
+  @extend %default-info-base;
+  .mod-info-inner{
+    width: 60px;
+    padding: 0 20px;
+  }
+  .mod-info-inner2 {
+    padding: 1px 0 0 10px;
+  }
+}
+
+%default-info2 {
+  @extend %default-info-base;
+  font-size: $fontSizeS + 1;
+  .mod-info-inner{
+    width: 60px;
+    padding: 0 10px;
+  }
+  .mod-info-inner2 {
+    padding: 1px 0 0 10px;
+  }
+}
+
+%default-info3 {
+  @extend %default-info-base;
+  .mod-info-inner{
+    width: 64px;
+    padding: 0 8px;
+  }
+  .mod-info-inner2 {
+    padding: 1px 0 0 20px;
+  }
+}
+
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+.mod-info {
+  margin-bottom: 15px;
+  @extend %default-info;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    max-width: 340px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-info-inner {
+      background-color: #426ca6;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01A3h & {
+    .mod-info-inner {
+      background-color: #ffa658;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #2e4a72;
+    }
+    .mod-info-inner2 {
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #095c66;
+    }
+    .mod-info-inner2 {
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #443308;
+    }
+    .mod-info-inner2 {
+      color: #443308;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    p:first-child {
+      background-color: #3f88f7;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #408bc2;
+    }
+  }
+}
+
+.mod-info2 { //ヘッダー３列右
+  margin-bottom: 5px;
+  @extend %default-info2;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    max-width: 150px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-info-inner {
+      background-color: #0b7d89;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &{
+    .mod-info-inner {
+      background-color: #519dce;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-info-inner {
+      color: $dh_infoColor;
+      background-color: $dh_infoBgColor;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-info-inner {
+      color: $dh_infoColor2;
+      background-color: $dh_infoBgColor2;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor3;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor3;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-info-inner {
+      color: #45320b;
+      background-color: #fff292;
+    }
+  }
+}
+
+.mod-info3 { //ヘッダー２列左＋３列左のリンクつき
+  margin-bottom: 5px;
+  @extend %default-info2;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    @extend %cf;
+    max-width: 200px;
+    .mod-info-inner2-2 {
+      float: left;
+    }
+    .mod-info-inner2-3 {
+      float: left;
+      display: inline-block;
+      max-width: 100%;
+    }
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-info-inner {
+      background-color: #0b7d89;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-info-inner {
+      background-color: #519dce;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor2;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor3;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor3;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-info-inner {
+      color: #45320b;
+      background-color: #fff292;
+    }
+  }
+}
+
+.mod-info4 { //ヘッダー２列左＋３列左
+  margin-bottom: 5px;
+  @extend %default-info2;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    max-width: 190px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-info-inner {
+      background-color: #0b7d89;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-info-inner {
+      background-color: #519dce;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor2;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor3;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor3;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-info-inner {
+      color: #45320b;
+      background-color: #fff292;
+    }
+  }
+}
+
+.mod-info5 { //青ラベルなし 文言＋リンク
+  margin-bottom: 5px;
+  font-size: $sideFontSizeM;
+  @extend %cf;
+  .mod-info-inner {
+    max-width: 100%;
+    min-width: 20px;
+    float: left;
+  }
+  .mod-info-inner2 {
+    max-width: 100%;
+    @include box-sizing(border-box);
+    float: left;
+    display: inline-block;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-info-inner {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-info-inner {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-info-inner {
+      color: $dh_infoColor3;
+    }
+  }
+}
+
+.mod-info6 { //フッター３列
+  margin-bottom: 15px;
+  @extend %default-info3;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    max-width: 200px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-info-inner {
+      background-color: #426ca6;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-info-inner {
+      background-color: #ffa658;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-info-inner {
+      color: $dm_infoColor;
+      background-color: $dm_info2BgColor;
+    }
+    .mod-info-inner2 {
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-info-inner {
+      color: $dm_infoColor2;
+      background-color: $dm_info2BgColor2;
+    }
+    .mod-info-inner2 {
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-info-inner {
+      color: $dm_infoColor3;
+      background-color: $dm_info2BgColor3;
+    }
+    .mod-info-inner2 {
+      color: #443308;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    p:first-child {
+      background-color: #3f88f7;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #408bc2;
+    }
+  }
+}
+
+.mod-info7 { //メイン２カラム
+  margin-bottom: 10px;
+  @extend %default-info;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    max-width: 220px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-info-inner {
+      color: #365997;
+      background-color: #ffe876;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-info-inner {
+      background-color: #519dce;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-info-inner {
+      background-color: #3C66BA;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-info-inner {
+      background-color: #095C66;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-info-inner {
+      background-color: #443308;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-info-inner {
+      background-color: #5596f6;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-info-inner {
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-info-inner {
+      color: #45320b;
+      background-color: #f2d028;
+    }
+  }
+}
+
+.mod-info8 {
+  margin-bottom: 15px;
+  @extend %cf;
+  .mod-info-inner {
+    width: 140px;
+    margin-right:15px;
+    background-color: #f59e3b;
+    @include border-radius();
+    text-align: center;
+    float: left;
+    color: #ffffff;
+  }
+  .mod-info-inner2 {
+    width: 485px;
+    float: left;
+    overflow: hidden;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2a &,
+  .ex-style_01A2a &,
+  .ex-style_01A2a & {
+    .mod-info-inner {
+      background-color: #ffe876;
+      color: #333333;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3a &,
+  .ex-style_01A3a &,
+  .ex-style_01A3a & {
+    .mod-info-inner {
+      background-color: #519dce;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {//装飾バリエーション
+    .mod-info-inner {
+      background-color: $dm_infoBgColor;
+      background-image: url("img/mod-info/bg.png");
+      background-repeat: repeat-x;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {//装飾バリエーション
+    .mod-info-inner {
+      color: #085b66;
+      background-color: $dm_infoBgColor2;
+      background-image: url("img/mod-info/bg_2.png");
+      background-repeat: repeat-x;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {//装飾バリエーション
+    .mod-info-inner {
+      background-color: $dm_infoBgColor3;
+      background-image: url("img/mod-info/bg_3.png");
+      background-repeat: repeat-x;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    border-bottom: 1px dotted #cccccc;
+    .mod-info-inner {
+      background: url("img/mod-info/bg03.png");
+      background-repeat: no-repeat;
+      background-position: left 6px;
+      color: #f7931d;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    border-bottom: 1px dotted #cccccc;
+    .mod-info-inner {
+      background: url("img/mod-info/bg03_2.png");
+      background-repeat: no-repeat;
+      background-position: left 6px;
+      color: #067e87;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    border-bottom: 1px dotted #cccccc;
+    .mod-info-inner {
+      background: url("img/mod-info/bg03_3.png");
+      background-repeat: no-repeat;
+      background-position: left 6px;
+      color: #416ca3;
+    }
+  }
+}
+
+.mod-info9 {
+  margin-bottom: 15px;
+  > p:first-child {
+    width: 140px;
+    margin-bottom:10px;
+    background-color: $newsBgColor;
+    @include border-radius();
+    text-align: center;
+    color: #ffffff;
+    .ex-style_01A2a &,
+    .ex-style_01A2b &,
+    .ex-style_01A2c &,
+    .ex-style_01A2d & {
+      background-color: $newsBgColor2;
+      color: #333333;
+    }
+    .ex-style_01A3a &,
+    .ex-style_01A3b &,
+    .ex-style_01A3c &,
+    .ex-style_01A3d & {
+      background-color: $newsBgColor3;
+      color: #ffffff;
+    }
+    .ex-style_01B1a &,
+    .ex-style_01B1b &,
+    .ex-style_01B1c &,
+    .ex-style_01B1d & {//装飾バリエーション
+      background-color: $dm_infoBgColor;
+      background-image: url("img/mod-info/bg.png");
+      background-repeat: repeat-x;
+      color: #ffffff;
+    }
+    .ex-style_01B2a &,
+    .ex-style_01B2b &,
+    .ex-style_01B2c &,
+    .ex-style_01B2d & {//装飾バリエーション
+      color: #085b66;
+      background-color: $dm_infoBgColor2;
+      background-image: url("img/mod-info/bg_2.png");
+      background-repeat: repeat-x;
+    }
+    .ex-style_01B3a &,
+    .ex-style_01B3b &,
+    .ex-style_01B3c &,
+    .ex-style_01B3d & {//装飾バリエーション
+      background-color: $dm_infoBgColor3;
+      background-image: url("img/mod-info/bg_3.png");
+      background-repeat: repeat-x;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    border-bottom: 1px dotted #cccccc;
+    > p:first-child {
+      background-image: url("img/mod-info/bg03.png");
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: left center;
+      color: #f7931d;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    border-bottom: 1px dotted #cccccc;
+    > p:first-child {
+      background-image: url("img/mod-info/bg03_2.png");
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: left center;
+      color: #067e87;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    border-bottom: 1px dotted #cccccc;
+    > p:first-child {
+      background-image: url("img/mod-info/bg03_3.png");
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: left center;
+      color: #416ca3;
+    }
+  }
+}

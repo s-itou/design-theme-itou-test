@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+//  mod-4col4 の mixin一式
+@mixin mod-4col4-common-style {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      padding-bottom: 30px;
+      margin-top: 20px;
+      background-position: 50% bottom;
+      background-repeat: no-repeat;
+      background-size: 39px 16px;
+    }
+  }
+}
+@mixin mod-4col4-style {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg.png");
+    }
+  }
+}
+@mixin mod-4col4-style2 {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg_2.png");
+    }
+  }
+}
+@mixin mod-4col4-style3 {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg_3.png");
+    }
+  }
+}
+@mixin mod-4col4-style4 {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg02.png");
+    }
+  }
+}
+@mixin mod-4col4-style5 {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg02_2.png");
+    }
+  }
+}
+@mixin mod-4col4-style6 {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg02_3.png");
+    }
+  }
+}
+@mixin mod-4col4-style7 {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg03.png");
+    }
+  }
+}
+@mixin mod-4col4-style8 {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg03_2.png");
+    }
+  }
+}
+@mixin mod-4col4-style9 {
+  > .mod-4col-wrap > .mod-4col-wrap2 {
+    > .mod-4col-inner,
+    > .mod-4col-inner2,
+    > .mod-4col-inner3 {
+      background-image: url("img/mod-column/spbg03_3.png");
+    }
+  }
+}

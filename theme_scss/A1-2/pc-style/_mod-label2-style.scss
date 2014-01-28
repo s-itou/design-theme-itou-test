@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@mixin mod-label2-common-style {
+max-height: 120px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  padding: 5px 10px;
+  .mod-h {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: $sideFontSizeL + 2;
+    @include text-shadow(1px 1px 2px #222222);
+  }
+}
+
+@mixin mod-label2-style {
+background-image: url("img/mod-label/bg.png");
+background-color: #646464;
+border: 1px solid #3c3c3c;
+}
+@mixin mod-label2-style2 {
+background-image: url("img/mod-label/bg_2.png");
+background-color: #0b2744;
+border: 1px solid #0f375f;
+}
+@mixin mod-label2-style3 {
+background-image: url("img/mod-label/bg_3.png");
+background-color: #430e07;
+border: 1px solid #260e0e;
+}
+

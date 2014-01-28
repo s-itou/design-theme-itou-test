@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@mixin mod-bnr23-common-style {
+@include border-radius();
+  background-position: left top;
+  width: 270px;
+  margin-top: 20px;
+  &:hover {
+    opacity: 0.80;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    overflow: hidden;
+    line-height: 1.4;
+    @include border-radius();
+    background-repeat: no-repeat;
+    padding: 11px 5px 10px 30px;
+  }
+}
+
+@mixin mod-bnr23-style {
+border: 1px solid #3c3c3c;
+  background-image: url("img/mod-bnr/bg03.png");
+  background-repeat: repeat-x;
+  background-color: #2e2e2e;
+  max-height: none;
+  overflow: visible;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg04.png");
+    background-position: 10px 15px;
+    border: 1px solid #b6b6b6;
+  }
+}
+@mixin mod-bnr23-style2 {
+border: 1px solid #325073;
+  background-image: url("img/mod-bnr/bg03_2.png");
+  background-repeat: repeat-x;
+  background-color: #264060;
+  max-height: none;
+  overflow: visible;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg04_2.png");
+    background-position: 10px 15px;
+    border: 1px solid #b3bcc8;
+  }
+}
+@mixin mod-bnr23-style3 {
+border: 1px solid #781b0e;
+  background-image: url("img/mod-bnr/bg03_3.png");
+  background-repeat: repeat-x;
+  background-color: #65140a;
+  max-height: none;
+  overflow: visible;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg04_3.png");
+    background-position: 10px 15px;
+    border: 1px solid #a6a7a7;
+  }
+}
+@mixin mod-bnr23-style4 {
+border: 1px solid #000000;
+  background-image: url("img/mod-bnr/bg51.png");
+  background-repeat: repeat-x;
+  background-color: #010305;
+  max-height: none;
+  overflow: visible;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg13.png");
+    background-position: 10px 10px;
+    border: 1px solid #a6a7a7;
+  }
+}
+@mixin mod-bnr23-style5 {
+border: 1px solid #7196c0;
+  background-image: url("img/mod-bnr/bg08_2.png");
+  background-repeat: repeat-x;
+  background-color: #143c65;
+  max-height: none;
+  overflow: visible;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg13_2.png");
+    background-position: 10px 10px;
+    border: 1px solid #adbac8;
+  }
+}
+@mixin mod-bnr23-style6 {
+border: 1px solid #982110;
+  background-image: url("img/mod-bnr/bg08_3.png");
+  background-repeat: repeat-x;
+  background-color: #531107;
+  max-height: none;
+  overflow: visible;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg13_3.png");
+    background-position: 10px 10px;
+    border: 1px solid #3d0d05;
+  }
+}
+@mixin mod-bnr23-style7 {
+border: 1px solid #3c3c3c;
+  background-image: url("img/mod-bnr/bg21.png");
+  background-repeat: no-repeat;
+  background-color: #ff7c76;
+  max-height: 111px;
+  overflow: hidden;
+  .mod-bnr-inner {
+    max-height: 109px;
+    color: #ffffff;
+    background-image: none;
+    background-position: 10px 15px;
+    border: 1px solid #c5c5c5;
+  }
+}
+@mixin mod-bnr23-style8 {
+border: 1px solid #0f375f;
+  background-image: url("img/mod-bnr/bg21_2.png");
+  background-repeat: no-repeat;
+  background-color: #ff7c76;
+  max-height: 111px;
+  overflow: hidden;
+  .mod-bnr-inner {
+    max-height: 109px;
+    color: #ffffff;
+    background-image: none;
+    background-position: 10px 15px;
+    border: 1px solid #adbcc9;
+  }
+}
+@mixin mod-bnr23-style9 {
+border: 1px solid #781b0e;
+  background-image: url("img/mod-bnr/bg21_3.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  max-height: 111px;
+  overflow: hidden;
+  .mod-bnr-inner {
+    max-height: 109px;
+    color: #ffffff;
+    background-image: none;
+    background-position: 10px 15px;
+    border: 1px solid #d1b3ad;
+  }
+}
+@mixin mod-bnr23-style10 {
+border: 1px solid #3a7ff0;
+  background-image: url("img/mod-bnr/bg.png");
+  background-repeat: repeat-x;
+  background-color: #3a7ff0;
+  max-height: none;
+  overflow: visible;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg13.png");
+    background-position: 10px 10px;
+    border: 1px solid #ffffff;
+  }
+}
+@mixin mod-bnr23-style11 {
+border: 1px solid #264061;
+  background-image: url("img/mod-bnr/bg03_2.png");
+  background-repeat: repeat-x;
+  background-color: #264061;
+  max-height: none;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg13.png");
+    background-position: 10px 10px;
+    border: 0 none transparent;
+  }
+}
+@mixin mod-bnr23-style12 {
+border: 1px solid #65140A;
+  background-image: url("img/mod-bnr/bg03_3.png");
+  background-repeat: repeat-x;
+  background-color: #65140A;
+  max-height: none;
+  .mod-bnr-inner {
+    max-height: 150px;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg13.png");
+    background-position: 10px 10px;
+    border: 0 none transparent;
+  }
+}
+

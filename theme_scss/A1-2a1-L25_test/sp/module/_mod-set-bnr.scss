@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-bnr の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../sp-style/mod-set-bnr-style";
+@import "../design/pat-design-bnr";
+
+
+// -----------------------------------
+// part-main-273
+// 写真入りバナー　３つ並び
+// -----------------------------------
+.mod-set-bnr-x3 {
+  @extend %common-style-mod-set-bnr-x3;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-design-bnr-x3-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-design-bnr-x3-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-design-bnr-x3-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-design-bnr-x3-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-design-bnr-x3-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-design-bnr-x3-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-design-bnr-x3-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-design-bnr-x3-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-design-bnr-x3-9;
+  }
+}
+
+
+// -----------------------------------
+// part-side-027 サイドエリア　バナー単体
+// -----------------------------------
+// .mod-set-bnr-side {
+//   @include module-style-mod-set-bnr-side;
+//   .ex-style_#{$baseEx_01A1} & {
+//     @include pat-design-bnr-x3-1;
+//   }
+//   .ex-style_#{$baseEx_01A2} & {
+//     @include pat-design-bnr-x3-2;
+//   }
+//   .ex-style_#{$baseEx_01A3} & {
+//     @include pat-design-bnr-x3-3;
+//   }
+//   .ex-style_#{$baseEx_01B1} & {
+//     @include pat-design-bnr-x3-4;
+//   }
+//   .ex-style_#{$baseEx_01B2} & {
+//     @include pat-design-bnr-x3-5;
+//   }
+//   .ex-style_#{$baseEx_01B3} & {
+//     @include pat-design-bnr-x3-6;
+//   }
+//   .ex-style_#{$baseEx_01C1} & {
+//     @include pat-design-bnr-x3-7;
+//   }
+//   .ex-style_#{$baseEx_01C2} & {
+//     @include pat-design-bnr-x3-8;
+//   }
+//   .ex-style_#{$baseEx_01C3} & {
+//     @include pat-design-bnr-x3-9;
+//   }
+// }

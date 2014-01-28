@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-faq の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-faq-style";
+@import "../pattern/pat-item-faq";
+
+
+// -----------------------------------
+// part-main-165 box38
+// .mod-set-faq-mokuji-h2
+// -----------------------------------
+
+.mod-set-faq-mokuji-h2 {
+  .ex-style_01A1 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-a1;}
+  .mod-box_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01A2 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-a2;}
+  .mod-box_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01A3 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-a3;}
+  .mod-box_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01B1 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-b1;}
+  .mod-box_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01B2 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-b2;}
+  .mod-box_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01B3 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-b3;}
+  .mod-box_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01C1 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-c1;}
+  .mod-box_ver2 {margin: 0 0 0 50px;}
+  }
+  .ex-style_01C2 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-c2;}
+  .mod-box_ver2 {margin: 0 0 0 50px;}
+  }
+  .ex-style_01C3 & {
+  .mod-h_2_ver2 {@extend %pat-item-h_2-faq-c3;}
+  .mod-box_ver2 {margin: 0 0 0 50px;}
+  }
+}
+
+
+// -----------------------------------
+// part-main-165 mod-2col7
+// mod-set-faq-2col
+// -----------------------------------
+
+.mod-set-faq-2col {
+  @extend %common-style-mod-set-faq-2col;
+  .mod-rte_ver2 {@extend %common-style-mod-rte-2col;}
+  .mod-rte-koramu {@extend %common-style-mod-rte-koramu-2col;}
+  .mod-ul_ver2 {@extend %common-style-mod-ul-2col;}
+  .ex-style_01A1 & {
+    .mod-h4_ver2 {@extend %pat-item-h_4-faq-a1;}
+    .mod-rte-koramu {
+      border: none;
+      background-color: #59bfcd;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01A2 & {
+    .mod-h4_ver2 {@extend %pat-item-h_4-faq-a2;}
+    .mod-rte-koramu {
+      border: none;
+      background-color: #ffeb84;
+      color: #333333;
+    }
+  }
+  .ex-style_01A3 & {
+    .mod-h4_ver2 {@extend %pat-item-h_4-faq-a3;}
+    .mod-rte-koramu {
+      border: none;
+      background-color: #519dce;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B1 & {
+    .mod-h4_ver2 {@extend %pat-item-h_4-faq-b1;}
+    .mod-rte-koramu {
+      border: none;
+      background-color: #f69e3c;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B2 & {
+    .mod-h4_ver2 {@extend %pat-item-h_4-faq-b2;}
+    .mod-rte-koramu {
+      border: none;
+      background-color: #f9e89d;
+      color: #331f13;
+    }
+  }
+  .ex-style_01B3 & {
+    .mod-h4_ver2 {@extend %pat-item-h_4-faq-b3;}
+    .mod-rte-koramu {
+      border: none;
+      background-color: #FE9D97;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01C1 & {
+    .mod-h4_ver2 {}
+    .mod-rte-koramu {}
+  }
+  .ex-style_01C2 & {
+    .mod-h4_ver2 {}
+    .mod-rte-koramu {}
+  }
+  .ex-style_01C3 & {
+    .mod-h4_ver2 {}
+    .mod-rte-koramu {}
+  }
+}
+
+.mod-set-faq-mokuji-h2 {
+
+}
+
+// -----------------------------------
+// part-main-201 mod-box30
+// mod-set-faq-question
+// -----------------------------------
+
+.mod-set-faq-question {
+  .ex-style_01A1 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-a1;}
+  .mod-rte_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01A2 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-a2;}
+  .mod-rte_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01A3 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-a3;}
+  .mod-rte_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01B1 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-b1;}
+  .mod-rte_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01B2 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-b2;}
+  .mod-rte_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01B3 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-b3;}
+  .mod-rte_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01C1 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-c1;}
+  .mod-rte_ver2 {margin: 0 0 0 50px;}
+  }
+  .ex-style_01C2 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-c2;}
+  .mod-rte_ver2 {margin: 0 0 0 50px;}
+  }
+  .ex-style_01C3 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-c3;}
+  .mod-rte_ver2 {margin: 0 0 0 50px;}
+  }
+}
+
+
+// -----------------------------------
+// part-main-201 mod-box31
+// mod-set-faq-answer
+// -----------------------------------
+
+.mod-set-faq-answer {
+  //@extend %common-style-mod-set-faq-answer;記述なし
+  .ex-style_01A1 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-a1;}
+  .mod-box_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01A2 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-a2;}
+  .mod-box_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01A3 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-a3;}
+  .mod-box_ver2 {margin: 0 0 0 67px;}
+  }
+  .ex-style_01B1 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-b1;}
+  .mod-box_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01B2 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-b2;}
+  .mod-box_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01B3 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-b3;}
+  .mod-box_ver2 {margin: 0 0 0 45px;}
+  }
+  .ex-style_01C1 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-c1;}
+  .mod-box_ver2 {margin: 0 0 0 50px;}
+  }
+  .ex-style_01C2 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-c2;}
+  .mod-box_ver2 {margin: 0 0 0 50px;}
+  }
+  .ex-style_01C3 & {
+  .mod-h4_ver2 {@extend %pat-item-h_4-faq-answer-c3;}
+  .mod-box_ver2 {margin: 0 0 0 50px;}
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// .mod-h_4_14,.mod-h_4_15 {
+//   @extend .mod-h4;
+// }
+
+
+// div[data-parts-name*="part-main-165"] .mod-box38 {
+//   @extend .mod-set-faq-mokuji-h2;
+// }
+// div[data-parts-name*="part-main-165"] .mod-2col7 {
+//   @extend .mod-set-faq-2col;
+// }
+// div[data-parts-name*="part-main-201"] .mod-box30 {
+//   @extend .mod-set-faq-question;
+// }
+// div[data-parts-name*="part-main-201"] .mod-box31 {
+//   @extend .mod-set-faq-answer;
+// }

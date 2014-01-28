@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+//unique 特別なmoduleセット
+
+
+//login部品
+p.mod-login {
+  width: 100%;
+  font-size: $fontSizeS;
+  text-align: center;
+  padding-top: 3px;
+  a{
+  	color: $linkColor;
+  }
+}
+
+
+.mod-em {
+  // width: 642px; SP対応
+  margin-bottom: 25px;
+  // padding-bottom: 36px;//吹き出し解除対応
+  // position: relative;
+  // &:after {
+  //   content: url(img/mod-un/bg.png);
+  //   position: absolute;
+  //   z-index: 500;
+  //   bottom: 0;
+  //   left: 0;
+  // }
+  .mod-em-inner {
+    padding: 10px;
+    border: 1px solid $m_box2BdColor;
+    @include border-radius();
+    background-color: $m_box2BgColor;
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    @include border-radius();
+    color: $m_boxColor;
+    @include background($color: #ffffff);
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    //&:after {
+    //  content: url(img/mod-un/bg12_2.png);
+    //}
+    .mod-em-inner {
+      border: 1px solid $m_box2BdColor2;
+      background-color: $m_box2BgColor2;
+      .mod-em-inner2 {
+        color: $m_boxColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    //&:after {
+    //  content: url(img/mod-un/bg12_3.png);
+    //}
+    .mod-em-inner {
+      border: 1px solid $m_box2BdColor3;
+      background-color: $m_box2BgColor3;
+      .mod-em-inner2 {
+        color: $m_boxColor3;
+      }
+
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    padding: 0;
+    //&:after {
+    //  content: none;
+    //}
+    .mod-em-inner {
+      min-height: 153px;
+      // overflow: hidden;
+      padding: 20px 25px;
+      border: none;
+      background-color: #1e4182;
+      background-image: url("img/mod-un/bg14.png");
+      background-repeat: no-repeat;
+      @include border-radius(8px);
+      .mod-em-inner2 {
+        padding: 0;
+        color: #ffffff;
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    padding: 0;
+    //&:after {
+    //  content: none;
+    //}
+    .mod-em-inner {
+      min-height: 153px;
+      // overflow: hidden;
+      padding: 20px 25px;
+      border: none;
+      background-color: #3da1b0;
+      background-image: url("img/mod-un/bg14_2.png");
+      background-repeat: no-repeat;
+      @include border-radius(8px);
+      .mod-em-inner2 {
+        padding: 0;
+        color: #ffffff;
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    padding: 0;
+    //&:after {
+    //  content: none;
+    //}
+    .mod-em-inner {
+      min-height: 153px;
+      // overflow: hidden;
+      padding: 20px 25px;
+      border: none;
+      background-color: #fea452;
+      background-image: url("img/mod-un/bg14_3.png");
+      background-repeat: no-repeat;
+      @include border-radius(8px);
+      .mod-em-inner2 {
+        padding: 0;
+        color: #ffffff;
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    padding: 0;
+    //&:after {
+    //  content: none;
+    //}
+    .mod-em-inner {
+      padding: 6px;
+      border: none;
+      @include border-radius();
+      @include background("mod-un/bg13.png",repeat);
+      .mod-em-inner2 {
+        padding: 15px;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    padding: 0;
+    //&:after {
+    //  content: none;
+    //}
+    .mod-em-inner {
+      padding: 6px;
+      border: none;
+      @include border-radius();
+      @include background("mod-un/bg13_2.png",repeat);
+      .mod-em-inner2 {
+        padding: 15px;
+        p {
+          color: #333333;
+        }
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    padding: 0;
+    //&:after {
+    //  content: none;
+    //}
+    .mod-em-inner {
+      padding: 6px;
+      border: none;
+      @include border-radius();
+      @include background("mod-un/bg13_3.png",repeat);
+      .mod-em-inner2 {
+        padding: 15px;
+        p {
+          color: #45320b;
+        }
+      }
+    }
+  }
+}
+
+
+.mod-card {
+  @extend %cf;
+  width: 100%;  //SP用
+  margin-bottom: 25px;
+  padding: 3px 3px 0;  //SP用
+  border: 3px double #c9e0ff;
+  > p {  //SP用
+    width: 40px;  //SP用
+    margin-bottom: 3px;  //SP用
+    display: inline-block;  //SP用
+  }
+  // > p:first-child {
+  //   margin-left: 0 !important;
+  // }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    border: 3px double #426ca6;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    border: 3px double #519dce;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    border: 3px double #f1d128;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    border: 3px double #F1D128;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    border: 3px double #FF994C;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border: 1px dotted #c9e0ff;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border: 1px dotted #f2d028;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border: 1px dotted #ffa658;
+  }
+}
+
+.mod-header-image {
+  @extend %cf;
+  // width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}

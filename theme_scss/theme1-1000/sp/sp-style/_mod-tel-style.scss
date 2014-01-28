@@ -1,0 +1,926 @@
+@charset "UTF-8";
+
+//  mod-ftel の mixin一式
+@mixin mod-ftel-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 20px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel2 の mixin一式
+@mixin mod-ftel2-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel3 の mixin一式
+@mixin mod-ftel3-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 20px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel4 の mixin一式
+@mixin mod-ftel4-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel7 の mixin一式
+@mixin mod-ftel7-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 20px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel8 の mixin一式
+@mixin mod-ftel8-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel9 の mixin一式
+@mixin mod-ftel9-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 10px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel10 の mixin一式
+@mixin mod-ftel10-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel11 の mixin一式
+@mixin mod-ftel11-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 10px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel12 の mixin一式
+@mixin mod-ftel12-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel13 の mixin一式
+@mixin mod-ftel13-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 10px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel14 の mixin一式
+@mixin mod-ftel14-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel15 の mixin一式
+@mixin mod-ftel15-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 10px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-ftel16 の mixin一式
+@mixin mod-ftel16-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+
+
+
+
+
+
+//  mod-tel2 の mixin一式
+@mixin mod-tel2-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 5px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+
+//  mod-tel4 の mixin一式
+@mixin mod-tel4-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 5px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-tel8 の mixin一式
+@mixin mod-tel8-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 5px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 24px;
+    color: #ff0000;
+  }
+}
+
+
+
+
+
+
+
+//  mod-tel12 の mixin一式
+@mixin mod-tel12-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 5px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-tel14 の mixin一式
+@mixin mod-tel14-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 5px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-tel16 の mixin一式
+@mixin mod-tel16-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 5px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-tel18 の mixin一式
+@mixin mod-tel18-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 5px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+
+

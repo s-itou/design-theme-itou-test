@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@mixin mod-link8-common-style {
+margin-top: 10px !important;
+  line-height: 1.4;
+  max-width: 100%;
+  @include box-sizing(border-box);
+  padding-left: 15px;
+  font-size: $sideFontSizeM;
+  background-position: left 2px;
+  background-repeat: no-repeat;
+
+  p {
+    min-height: 21px;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link8-style {
+background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+@mixin mod-link8-style2 {
+background-image: url("img/mod-link/bg_2.png");
+  a, a & {
+    color: #294470;
+  }
+}
+@mixin mod-link8-style3 {
+background-image: url("img/mod-link/bg_3.png");
+  a, a & {
+    color: #45320b;
+  }
+}
+

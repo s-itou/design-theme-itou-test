@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-rte5-style";
+
+.mod-rte5 {
+  @include mod-rte5-common-style;
+  @include mod-rte5-style;
+  .ex-style_01A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_v1A2 & {
+    @include mod-rte5-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 & {
+    @include mod-rte5-style3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_v1B1 & {
+    @include mod-rte5-style4;
+  }
+  .ex-style_01B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_v1B2 & {
+    @include mod-rte5-style5;
+  }
+  .ex-style_01B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_v1B3 & {
+    @include mod-rte5-style6;
+  }
+  .ex-style_01C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_v1C1 & {
+    @include mod-rte5-style7;
+  }
+  .ex-style_01C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_v1C2 & {
+    @include mod-rte5-style8;
+  }
+  .ex-style_01C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_v1C3 & {
+    @include mod-rte5-style9;
+  }
+  .ex-style_i1A1 & {
+    @include mod-rte5-style10;
+  }
+  .ex-style_q1A2 & {
+    @include mod-rte5-style20;
+  }
+  .ex-style_i1B1 & {
+    @include mod-rte5-style11;
+  }
+  .ex-style_i1B2 & {
+    @include mod-rte5-style11;
+  }
+  .ex-style_i1B3 & {
+    @include mod-rte5-style12;
+  }
+  .ex-style_q1B1 & {
+    @include mod-rte5-style14;
+  }
+  .ex-style_d1B2 &,
+  .ex-style_q1B2 & {
+    @include mod-rte5-style5;
+  }
+  .ex-style_q1B3 & {
+    @include mod-rte5-style15;
+  }
+  .ex-style_d1A1 & {
+    @include mod-rte5-style16;
+  }
+  .ex-style_d1A2 & {
+    @include mod-rte5-style17;
+  }
+  .ex-style_d1A3 & {
+    @include mod-rte5-style18;
+  }
+  .ex-style_d1B1 &,
+  .ex-style_d1B3 & {
+    @include mod-rte5-style19;
+  }
+}
+

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+//##################################################
+//  mod-text
+//##################################################
+
+//////////////////////////////////////////////////
+//  common-style
+@mixin common-style-mod-text {
+  margin-top: 10px !important;
+  text-align: left;
+  font-size: $fontSizeS + 1;
+  line-height: 1.6;
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+
+//////////////////////////////////////////////////
+//  module-style
+@mixin module-style-mod-text-pic {  //旧方式のコピーのため要改修
+  text-align: center;
+}
+@mixin module-style-mod-text-title-footer {
+  margin-top: 5px !important;
+}
+@mixin module-style-mod-text-kyocho-footer {
+  margin-top: 0 !important;
+  text-align: center;
+  font-size: $fontSizeL;
+}
+
+
+//////////////////////////////////////////////////
+//  deco-style
+@mixin deco-style01A1-mod-text-pic {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-text-pic {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-text-pic {
+  color: #56534e;
+}
+@mixin deco-style01B1-mod-text-pic {
+  color: #333333;
+}
+@mixin deco-style01B2-mod-text-pic {
+  color: #333333;
+}
+@mixin deco-style01B3-mod-text-pic {
+  color: #45320b;
+}
+@mixin deco-style01C1-mod-text-pic {
+  color: #333333;
+}
+@mixin deco-style01C2-mod-text-pic {
+  color: #333333;
+}
+@mixin deco-style01C3-mod-text-pic {
+  color: #45320b;
+}
+
+@mixin deco-style01A1-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01B1-mod-text-header {
+  color: #ffffff;
+}
+@mixin deco-style01B2-mod-text-header {
+  color: #ffffff;
+}
+@mixin deco-style01B3-mod-text-header {
+  color: #ffffff;
+}
+@mixin deco-style01C1-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01C2-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01C3-mod-text-header {
+  color: #333333;
+}

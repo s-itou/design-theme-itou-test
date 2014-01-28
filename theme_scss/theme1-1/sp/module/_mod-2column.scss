@@ -1,0 +1,1895 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+//回り込みありなしのプレイスホルダー
+%default-2col { //基準　回り込みなし　画像右
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A1 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A3 &,
+  .ex-style_d1A1 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B3 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C3 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C3 & { //回り込みあり　画像右
+    > .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A1 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A3 &,
+  .ex-style_d1A1 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B3 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C3 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C3 & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      //float: left;
+      //margin-left: 0;
+    }
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A1 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A3 &,
+  .ex-style_d1A1 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B3 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C3 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C3 & { //回り込みあり　画像左
+    > .mod-2col-inner {
+      // float: left;
+      // margin-left: 0;
+    }
+    > .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+}
+
+
+//------プレイスホルダー一覧 ここから------------
+
+
+
+//------ mixin一覧 ここまで------------
+
+
+//　このmixinを使用するか確認 classというmixin名変更必用
+@mixin class {
+  .ex-style_01Aa,
+  .ex-style_01Aa,
+  .ex-style_01Aa,
+  .ex-style_01Aa {
+  }
+}
+
+// @include class;
+
+@mixin mod-2col-ex2($margin-right:15px) {
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A1 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A3 &,
+  .ex-style_d1A1 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B3 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C3 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C3 & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      // margin-right: $margin-right;SP用
+    }
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A1 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A3 &,
+  .ex-style_d1A1 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B3 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C3 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C3 & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      // margin-right: $margin-right;SP用
+    }
+  }
+}
+
+
+
+//------ mixin一覧 ここまで------------
+
+
+
+//ヘッダー・フッター領域の部品分割用
+.mod-2col { //ヘッダー右可変
+  @extend %cf;
+  > .mod-2col-inner {
+    //float: left;
+    //width: 475px;
+    //margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    //float: right;
+    //max-width: 475px;
+    //margin-left: 15px;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 & {
+    padding: 0 15px;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & {
+    padding: 0 15px;
+  }
+}
+//↓sp　苦肉の策で部品指定。もっといい方法あったら教えて下さい（伊藤
+div[data-parts-name="part-header-037_001"], div[data-parts-name="part-header-037_002"] {
+  &.ex-style_01C1,
+  &.ex-style_01C2,
+  &.ex-style_01C3 {
+    .mod-2col {
+      padding: 0;
+    }
+  }
+}
+
+
+.mod-2col2 { //フッター固定幅
+  //@extend %cf;
+  > .mod-2col-inner {
+    //float: left;
+    //width: 475px;
+    //margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    //float: right;
+    //width: 475px;
+    //margin-left: 15px;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 & {
+    padding: 0 15px;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & {
+    padding: 0 15px;
+  }
+}
+//↓sp
+div[data-parts-name="part-header-050"] {
+  &.ex-style_01B1,
+  &.ex-style_01B2,
+  &.ex-style_01B3,
+  &.ex-style_01C1,
+  &.ex-style_01C2,
+  &.ex-style_01C3 {
+    .mod-2col2 {
+      padding: 0;
+    }
+  }
+}
+
+.mod-2col3 {
+  @extend %cf;
+  > .mod-2col-inner {
+    // float: left;
+    // width: 120px;
+    // margin-right: 20px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+}
+
+.mod-2col4 { //mb基準10px
+  @extend %cf;
+  .mod-body & { //SP　mod-mbかき消し
+    margin-bottom: 0 !important;//SP対応
+  }
+//  display:-moz-box;//SP
+//  display:-webkit-box;//SP
+//  display:-o-box;//SP
+//  display:-ms-box;//SP
+//	box-orient: vertical;//SP
+//	-webkit-box-orient: vertical;//SP
+//	-moz-box-orient: vertical;//SP
+  > .mod-2col-inner {
+//    box-ordinal-group:1;//SP
+//    -webkit-box-ordinal-group:1;//SP
+//    -moz-box-ordinal-group:1;//SP
+//    margin-bottom: 15px;//SP
+		// float: right;
+		// width: 250px;
+		// margin: 15px auto 0 auto;
+  }
+  > .mod-2col-inner { //回り込みなし　画像右
+//  	overflow: hidden;//SP
+    margin-bottom: 15px;
+    //float: right;
+    //width: 250px;
+    //margin-left: 15px;
+  }
+  > .mod-2col-inner2 {
+    margin-bottom: 20px;
+//		box-ordinal-group:2;//SP
+//		-webkit-box-ordinal-group:2;//SP
+//	  -moz-box-ordinal-group:2;//SP
+    .mod-bnr15{
+      margin-bottom: 10px !important;//SP
+    }
+  }
+  @extend %default-2col;
+  @include mod-2col-ex2(15px);
+  .ex-style_i1A1 &,
+  .ex-style_i1A1 &,
+  .ex-style_i1A1 &,
+  .ex-style_i1A1 & {
+    background-color: #fffdf2;
+    padding: 15px;
+  }
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 & {
+    background-color: #f6f6f6;
+    padding: 15px;
+  }
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 & {
+    background-color: #fff9ee;
+    padding: 15px;
+  }
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 & {
+    background-color: #e6f8ff;
+    padding: 15px;
+  }
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 & {
+    background-color: #fBf3c8;
+    padding: 15px;
+  }
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 & {
+    background-color: #ffefe5;
+    padding: 15px;
+  }
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 & {
+    border: 1px solid #c9e0ff;
+    background: none;
+    padding: 15px;
+  }
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 & {
+    border: 1px solid #f99317;
+    background: none;
+    padding: 15px;
+  }
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 & {
+    border: 1px solid #f2d028;
+    background: none;
+    padding: 15px;
+  }
+  div[data-parts-name="part-main-221_001 v2"] &, div[data-parts-name="part-main-221_002 v2"] &, div[data-parts-name="part-main-222_001 v2"] &, div[data-parts-name="part-main-222_002 v2"] & {
+    margin-bottom: 20px !important;
+    > .mod-2col-inner {
+      margin-bottom: 15px;
+    }
+    > .mod-2col-inner2 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.mod-2col5 { //mb基準30px
+  //display: table;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+		// width: 200px;
+		margin: 0 auto;
+  }
+  > .mod-2col-inner2 {
+		text-align: center;
+  }
+}
+
+.mod-2col6 { //M-85step
+  @extend %cf;
+  //margin-bottom: 20px; SP
+  > .mod-2col-inner {
+    // float: right;
+    // width: 200px;
+    // margin-left: 15px;
+    margin-bottom: 20px;//SP対応
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      // margin-right: 20px;
+    }
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & { //回り込みなし 画像左
+    > .mod-2col-inner {
+	  // margin-right: 20px;
+    }
+  }
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 & {
+    border: none;
+    padding: 3px;
+    @include background("mod-box/bg08.png", repeat);
+    >.mod-box-inner {
+      padding: 15px;
+    }
+  }
+}
+
+
+.mod-2col7 { //メイン２等分 30px
+  @extend %cf;
+  .mod-body & { //SP　mod-mbかき消し
+    margin-bottom: 0 !important;//SP対応
+  }
+	// margin-bottom: 30px;
+    // margin-bottom: 15px;//SP
+  > .mod-2col-inner {
+    margin-bottom: 20px;//SP
+  // float: left;
+  // width: 310px;
+  // margin-right: 20px;
+  }
+  > .mod-2col-inner2 {
+    margin-bottom: 20px; //SP
+    //float: right;
+    //width: 310px;
+  }
+  .ex-style_i1A1 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #fffdf2;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1A2 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #f6f6f6;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1A3 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #fff9ee;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #e6f8ff;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #fBf3c8;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #ffefe5;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      border: 1px solid #c9e0ff;
+      background: none;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      border: 1px solid #f99317;
+      background: none;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      border: 1px solid #f2d028;
+      background: none;
+      padding: 15px;
+    }
+  }
+}
+
+
+.mod-2col10 { //ヘッダータイトル３列大きい２カラム
+  @extend %cf;
+  > .mod-2col-inner {
+  //	margin: 0 15px;
+  }
+  > .mod-2col-inner2 {
+	//  margin: 0 15px;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 & {
+    padding: 0 15px;
+  }
+}
+
+.mod-2col11 { //ヘッダータイトル３列小さい２カラム
+  @extend %cf;
+  > .mod-2col-inner {
+  	width: 100%;
+  }
+  > .mod-2col-inner2 {
+  	width: 100%;
+  }
+}
+
+.mod-2col12 { //フッター３列table-cell
+	margin-bottom: 30px;
+  > .mod-2col-inner {
+    //display: table-cell;
+    //width: 70px;
+    //vertical-align: bottom;
+  }
+  > .mod-2col-inner2 {
+    //padding-left: 15px;
+    //display: table-cell;
+    //width: 230px;
+    //vertical-align: bottom;
+  }
+}
+
+.mod-2col13 {
+	//抜け番
+}
+
+.mod-2col14 { //ヘッダータイトル３列小さい２カラム
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner {
+    //float: left;
+    //width: 250px;
+    //margin-right: 30px;
+  }
+  > .mod-2col-inner2 {
+    //float: right;
+    //width: 290px;
+  }
+}
+
+.mod-2col15 {
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner {
+    // float: left;
+    // width: 80px;
+    // margin-right: 10px;
+    margin-bottom: 10px;//SP
+    .mod-image2 {
+      img {
+        max-width: 180px;
+      }
+    }
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & {
+    //> .mod-2col-inner2 {
+    //  overflow: hidden;
+    //}
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & {
+    //> .mod-2col-inner {
+    //  float: right;
+    //  margin-left: 10px;
+    //}
+    //> .mod-2col-inner2 {
+    //  overflow: hidden;
+    //}
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & {
+    //> .mod-2col-inner {
+    //  float: right;
+    //  margin-left: 10px;
+    //}
+  }
+}
+
+
+.mod-2col16 {
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner {
+    //float: right;
+    //width: 80px;
+    //margin-left: 10px;
+    margin-bottom: 10px;//SP
+    .mod-image2 {
+      img {
+        max-width: 180px;
+      }
+    }
+  }
+  @extend %default-2col;
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      //margin-right: 10px;
+    }
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      //margin-right: 10px;
+    }
+  }
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 & {
+    border: none;
+    padding: 3px;
+    @include background("mod-box/bg08.png", repeat);
+    >.mod-box-inner {
+      padding: 15px;
+    }
+  }
+}
+
+.mod-2col17 { //メイン２等分 30px
+  @extend %cf;
+  .mod-body & { //SP　mod-mbかき消し
+    margin-bottom: 0 !important;//SP対応
+  }
+  //margin-bottom: 30px;
+  > .mod-2col-inner {
+    // float: right;
+    // width: 310px;
+    // margin-left: 20px;
+    margin-bottom: 20px;//sp
+  }
+  > .mod-2col-inner2 {
+    margin-bottom: 20px;//sp
+    // overflow: hidden;
+    .mod-bnr3{//SP
+      margin-bottom: 10px !important;//SP
+    }//SP
+  }
+  @extend %default-2col;
+  .ex-style_01A1 & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      // margin-right: 20px;
+    }
+  }
+  .ex-style_01A1 & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      // margin-right: 20px;
+    }
+  }
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 & {
+    border: none;
+    padding: 3px;
+    @include background("mod-box/bg08.png", repeat);
+    >.mod-box-inner {
+      padding: 15px;
+    }
+  }
+}
+
+
+
+.mod-2col22 { //メイン2等分幅145px
+  @extend %cf;
+  > .mod-2col-inner {
+    // float: left;
+    // width: 145px;
+    // margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  > .mod-2col-inner2 {
+    // float: right;
+    // width: 145px;
+  }
+}
+
+
+.mod-2col25 { //メイン2等分幅200px
+  @extend %cf;
+  > .mod-2col-inner {
+    // float: left;
+    // width: 200px;
+    // margin-right: 10px;
+    margin-bottom: 20px;//SP
+  }
+  > .mod-2col-inner2 {
+    // float: right;
+    // width: 200px;
+  }
+}
+
+.mod-2col26 { //メイン２等分の中 0px
+  @extend %cf;
+  > .mod-2col-inner {
+    // float: right;
+    // max-width: 90px;//SP用対応
+    // margin-left: 5px;//SP用対応
+    margin-bottom: 20px;//SP対応
+    img{//SP用対応
+    // max-width: 90px;//SP用対応(旧)
+    max-width: 180px;//SP用対応(新)
+    }//SP用対応
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+    .mod-bnr15{//SP
+      margin-bottom: 10px !important;//SP
+    }//SP
+    .mod-bnr20{//SP
+      margin-bottom: 10px !important;//SP
+    }//SP
+  }
+  @extend %default-2col;
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-bottom: 20px;//sp
+    }
+    > .mod-2col-inner2 {
+      //margin-bottom: 20px;//SP対応
+    }
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      margin-bottom: 20px;//sp
+    }
+    > .mod-2col-inner2 {
+      //margin-bottom: 20px;//SP対応
+    }
+  }
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 & {
+    border: none;
+    padding: 3px;
+    @include background("mod-box/bg08.png", repeat);
+    >.mod-box-inner {
+      padding: 15px;
+    }
+  }
+}
+
+
+.mod-2col27 { //メイン２等分の中 0px
+  @extend %cf;
+  > .mod-2col-inner {
+    margin-bottom: 15px;//SP対応
+    // float: right;
+    // width: 70px;
+    // margin-left: 10px;
+    img{//SP用対応
+    max-width: 180px;//SP用対応
+    }//SP用対応
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      // margin-right: 10px;
+    }
+  }
+  .ex-style_01A1 &,
+  .ex-style_01A2 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A1 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A1 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C3 & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      // margin-right: 10px;
+    }
+  }
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 & {
+    border: none;
+    padding: 3px;
+    @include background("mod-box/bg08.png", repeat);
+    >.mod-box-inner {
+      padding: 15px;
+    }
+  }
+}
+
+.mod-2col28 { //抜け番
+}
+
+
+.mod-2col29 {
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    // float: left;
+    // width: 310px;
+    margin-bottom: 15px;//SP
+    padding: 10px;
+    border: 1px solid #ade9ef;
+    @include border-radius();
+    @include background($color: #ecfdff);
+    > .mod-2col-inner2 {
+      padding: 15px;
+      @include background($color: #ffffff);
+    }
+  }
+  > .mod-2col-inner3 {
+    // float: right;
+    // width: 310px;
+    // margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ade9ef;
+    @include border-radius();
+    @include background($color: #ecfdff);
+    >.mod-2col-inner4 {
+      padding: 15px;
+      @include background($color: #ffffff);
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      background-color: #ebfdff;
+      border: 1px solid #60bff0;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      background-color: #ffe0de;
+      border: 1px solid #fd8e89;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: 1px solid #abd2f6;
+      @include background("mod-box/bg04.png", repeat-x, $color: #ffffff);
+      >.mod-2col-inner2, .mod-2col-inner4 {
+        padding: 5px 10px;
+        @include border-radius();
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: 1px solid #f4d34f;
+      @include background("mod-box/bg04_2.png", repeat-x, $color: #ffffff);
+      >.mod-2col-inner2, .mod-2col-inner4 {
+        padding: 5px 10px;
+        @include border-radius();
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: 1px solid #ffa19b;
+      @include background("mod-box/bg04_3.png", repeat-x, $color: #ffffff);
+      >.mod-2col-inner2, .mod-2col-inner4 {
+        padding: 5px 10px;
+        @include border-radius();
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: none;
+      padding: 3px;
+      background-color: none;
+      @include background("mod-box/bg08.png", repeat);
+    }
+    >.mod-2col-inner2, .mod-2col-inner4 {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: none;
+      padding: 3px;
+      background-color: none;
+      @include background("mod-box/bg08_2.png", repeat);
+    }
+    >.mod-2col-inner2, .mod-2col-inner4 {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: none;
+      padding: 3px;
+      background-color: none;
+      @include background("mod-box/bg08_3.png", repeat);
+    }
+    >.mod-2col-inner2, .mod-2col-inner4 {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+}
+
+
+.mod-2col31 {
+  @extend %cf;
+  > .mod-2col-inner { //回り込みなし　画像右
+    // float: right;
+    // width: 250px;
+    // margin-left: 15px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  .step1 &, .step3 &, .step5 &, .step7 &, .step9 & {
+    .ex-style_01A1 &,
+    .ex-style_01A2 &,
+    .ex-style_01A3 & {
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+    .ex-style_01A1 &,
+    .ex-style_01A2 &,
+    .ex-style_01A3 & {
+      > .mod-2col-inner {
+        // float: left;
+        // margin-left: 0;
+        // margin-right: 15px;
+      }
+    }
+    .ex-style_01A1 &,
+    .ex-style_01A2 &,
+    .ex-style_01A3 & { //回り込みあり　画像左
+      > .mod-2col-inner {
+        // float: left;
+        // margin-left: 0;
+        // margin-right: 15px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+  .step2 &, .step4 &, .step6 &, .step8 &, .step10 & { //画像逆
+    > .mod-2col-inner {
+      //float: left;
+      //margin-right: 15px;
+      //margin-left: 0;
+    }
+    .ex-style_01A1 &,
+    .ex-style_01A2 &,
+    .ex-style_01A3 & {
+      > .mod-2col-inner {
+        //float: left;
+        //margin-right: 15px;
+        //margin-left: 0;
+      }
+      > .mod-2col-inner2 {
+        //overflow: visible;
+      }
+    }
+    .ex-style_01A1 &,
+    .ex-style_01A2 &,
+    .ex-style_01A3 & {
+      > .mod-2col-inner {
+        // float: left;
+        // margin-right: 15px;
+        // margin-left: 0;
+      }
+    }
+    .ex-style_01A1 &,
+    .ex-style_01A2 &,
+    .ex-style_01A3 & {
+      > .mod-2col-inner {
+        //float: right;
+        //margin-left: 15px;
+        //margin-right: 0;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+    .ex-style_01A1 &,
+    .ex-style_01A2 &,
+    .ex-style_01A3 & {
+      > .mod-2col-inner {
+        // float: right;
+        // margin-left: 15px;
+        // margin-right: 0;
+      }
+    }
+  }
+}
+
+
+.mod-2col32 {
+  @extend %cf;
+  display: table;
+  margin-bottom: 5px;
+  margin-left: auto;//SP用対応
+  margin-right: auto;//SP用対応
+  > .mod-2col-inner {
+    //display: table-cell;
+    //width: 80px;
+    //padding-right: 10px;
+  }
+  > .mod-2col-inner2 {
+    //float: right;
+    //width: 83px;
+    > .mod-2col-inner2-inner {
+      // display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .ex-style_01A1 & {
+    > .mod-2col-inner {
+      //float: right;
+      //padding-left: 10px;
+      //padding-right: 0;
+    }
+    > .mod-2col-inner2 {
+      //float: left;
+    .mod-2col-inner2-inner{
+       margin:0 auto;
+      }
+    }
+   }
+  .ex-style_01A1 & {
+    > .mod-2col-inner {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    > .mod-2col-inner2 {
+      display: table-cell;
+      width: 80px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.mod-2col34 { //画像大きめ対応
+  @extend %cf;
+  .mod-body & { //SP　mod-mbかき消し
+    margin-bottom: 0 !important;//SP対応
+  }
+  > .mod-2col-inner { //回り込みなし　画像右
+    margin-bottom: 15px;
+  }
+  > .mod-2col-inner2 {
+    margin-bottom: 20px;
+    .mod-bnr15{
+      margin-bottom: 10px !important;//SP
+    }
+  }
+}
+
+
+// part-main-051 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-2col-spec { //メイン2等分幅300px
+  @extend %cf;
+  // margin-bottom: 30px;
+  > .mod-2col-inner {
+    @include background("mod-image/spbg.png", $position-x: 50%, $position-y: bottom);
+    background-size: 39px 16px;
+    // float: left;
+    // width: 300px;
+    // margin-right: 40px;
+  padding-bottom : 10px;//SP用ここから
+  margin-bottom : 20px;
+  // position : relative;
+  // :after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 44px;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   margin: -20px 0;
+  //   @include background("mod-image/spbg.png", $position-x: 50%, $position-y: top);
+  //   -webkit-transform: rotate(90deg);
+  //   -moz-transform: rotate(90deg);
+  //   -ms-transform: rotate(90deg);
+  //   -o-transform: rotate(90deg);
+  //   transform: rotate(90deg);//SP用ここまで
+  //   }
+  }
+  > .mod-2col-inner2 {
+    // float: right;
+    // width: 300px;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+}
+
+// part-main-204 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-2col-spec2 { //メイン2等分幅305px
+  @extend %cf;
+  // margin-bottom: 30px;
+  > .mod-2col-inner {
+    @include background("mod-image/spbg.png", $position-x: 50%, $position-y: bottom);
+    background-size: 39px 16px;
+    // float: left;
+    // width: 305px;
+    // margin-right: 30px;
+    padding-bottom : 10px;//SP用ここから
+    margin-bottom : 20px;
+    // position : relative;
+    // :after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 44px;
+    //   bottom: 0;
+    //   left: 0;
+    //   z-index: 1;
+    //   margin: -20px 0;
+
+    //   -webkit-transform: rotate(90deg);
+    //   -moz-transform: rotate(90deg);
+    //   -ms-transform: rotate(90deg);
+    //   -o-transform: rotate(90deg);
+    //   transform: rotate(90deg);//SP用ここまで
+    // }
+  }
+  > .mod-2col-inner2 {
+    // float: right;
+    // width: 305px;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+}
+
+// part-main-205 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-2col-spec3 { //メイン2等分幅200px 410px
+  @extend %cf;
+  // margin-bottom: 30px;
+  > .mod-2col-inner {
+    @include background("mod-image/spbg.png", $position-x: 50%, $position-y: bottom);
+    background-size: 39px 16px;
+    // float: left;
+    // width: 200px;
+    // margin-right: 30px;
+    padding-bottom : 10px;//SP用ここから
+    margin-bottom : 20px;
+    // position : relative;
+    // :after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 44px;
+    //   bottom: 0;
+    //   left: 0;
+    //   z-index: 1;
+    //   margin: -20px 0;
+
+    //   -webkit-transform: rotate(90deg);
+    //   -moz-transform: rotate(90deg);
+    //   -ms-transform: rotate(90deg);
+    //   -o-transform: rotate(90deg);
+    //   transform: rotate(90deg);//SP用ここまで
+    // }
+  }
+  > .mod-2col-inner2 {
+    // float: right;
+    // width: 410px;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+}
+
+
+.mod-2col-spec4 { //メイン2等分幅145px 465px
+  @extend %cf;
+  // margin-bottom: 30px;
+  > .mod-2col-inner {
+    @include background("mod-image/spbg.png", $position-x: 50%, $position-y: bottom);
+    background-size: 39px 16px;
+    // float: left;
+    // width: 145px;
+    // margin-right: 30px;
+    padding-bottom : 10px;//SP用ここから
+    margin-bottom : 20px;
+    // position : relative;
+    // :after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 44px;
+    //   bottom: 0;
+    //   left: 0;
+    //   z-index: 1;
+    //   margin: -20px 0;
+    //   @include background("mod-image/spbg.png", $position-x: 50%, $position-y: top);
+    //   -webkit-transform: rotate(90deg);
+    //   -moz-transform: rotate(90deg);
+    //   -ms-transform: rotate(90deg);
+    //   -o-transform: rotate(90deg);
+    //   transform: rotate(90deg);//SP用ここまで
+    // }
+  }
+  > .mod-2col-inner2 {
+    // float: right;
+    // width: 465px;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg04_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    > .mod-2col-inner {
+      // :after {
+        @include background("mod-image/spbg07_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+}
+
+.mod-2col4sptest { //box-ordinal検証
+  @extend %cf;
+  margin-bottom: 10px;
+  display: box;
+  display: -webkit-box; /* Safari,Google Chrome用 */
+  display: -moz-box; /* Firefox用 */
+  .mod-2col-inner { //回り込みなし　画像右
+    -webkit-box-ordinal-group: 2;
+    margin-bottom: 15px;
+  }
+  .mod-box9:first-child {
+    -webkit-box-ordinal-group: 1;
+  }
+}

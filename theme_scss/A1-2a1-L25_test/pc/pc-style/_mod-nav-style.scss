@@ -1,0 +1,1117 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-navi-header
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----commom-style-----//
+
+@mixin common-style-mod-navi-header {
+  .mod-navi-inner {
+    margin: 0 auto;
+    padding: 2px 0;
+    width: 980px;
+    ul {
+      @include box-sizing(border-box);
+      display: table;
+      margin: 0;
+      padding: 0 2px 0 0;
+      width: 980px;
+      height: 49px;
+      background-position: right center;
+      background-repeat: no-repeat;
+      list-style-type: none;
+      text-align: left;
+      li {
+        @include word-break(break-all);
+        @include box-sizing(border-box);
+        display: table-cell;
+        padding: 0;
+        background-position: left center;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        font-size: $fontSizeM - 1 !important;
+        &:hover {
+          background-position: left center;
+          background-repeat: no-repeat;
+        }
+        span {
+          display: block;
+          overflow: hidden;
+          padding: 0 5px 0 24px;
+          max-height: 146px;
+          background-position: left center;
+          background-repeat: no-repeat;
+          line-height: 1.3;
+          a {
+            display: block;
+            margin: 0 -5px 0 -24px;
+            padding: 2px 5px 1px 24px;
+            max-height: 122px;
+            text-decoration: none;
+            line-height: 1.3;
+          }
+        }
+        &.state-current {
+          background-position: left center;
+          background-repeat: no-repeat;
+        }
+        &.state-em {
+          background-position: left center;
+          font-weight: bold;
+          &:hover {
+            background-position: left center;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+//-----module-style-----//
+@mixin module-style-mod-navi-header {
+  li {
+    max-width: 550px;
+  }
+}
+
+@mixin module-style-mod-navi-fix-header {
+  li {
+    width: 196px;
+  }
+}
+
+
+
+//-----deco-style-----//
+@mixin deco-style01A1-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg03.png");
+      color: #ffffff;
+      li {
+        background-image: url("img/mod-gnav/new/bg03.png");
+        &:hover {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg06.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg05.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg04.png");
+          span {
+            background-image: none;
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg17.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/new/bg06.png");
+            color: #ffffff;
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            color: #f2d028;
+            background-image: none;
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01A2-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg03_2.png");
+      color: #ffffff;
+      li {
+        background-image: url("img/mod-gnav/new/bg03_2.png");
+        &:hover {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg06_2.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg05.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg04_2.png");
+          span {
+            background-image: none;
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg17_2.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/new/bg06_2.png");
+            color: #ffffff;
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            color: #f2d028;
+            background-image: none;
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01A3-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg03_3.png");
+      color: #ffffff;
+      li {
+        background-image: url("img/mod-gnav/new/bg03_3.png");
+        &:hover {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg06_3.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg05.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg04_3.png");
+          span {
+            background-image: none;
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg17_3.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/new/bg06_3.png");
+            color: #ffffff;
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            color: #f2d028;
+            background-image: none;
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01B1-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg08.png");
+      color: #000000;
+      li {
+        background-image: url("img/mod-gnav/new/bg08.png");
+        &:hover {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg09.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg11.png");
+          a {
+            color: #000000;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg10.png");
+          span {
+            background-image: none;
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg18.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/new/bg09.png");
+            color: #000000;
+            a {
+              color: #000000;
+            }
+          }
+          span {
+            color: #9a3939;
+            background-image: none;
+            a {
+              color: #9a3939;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01B2-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg08.png");
+      color: #0a1f30;
+      li {
+        background-image: url("img/mod-gnav/new/bg08.png");
+        &:hover {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg09_2.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg11_2.png");
+          a {
+            color: #0a1f30;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg10_2.png");
+          span {
+            background-image: none;
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg18.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/new/bg09_2.png");
+            color:#0a1f30;
+            a {
+              color: #0a1f30;
+            }
+          }
+          span {
+            color: #9a3939;
+            background-image: none;
+            a {
+              color: #9a3939;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01B3-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg08.png");
+      color: #260e0e;
+      li {
+        background-image: url("img/mod-gnav/new/bg08.png");
+        &:hover {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg09_3.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg11_3.png");
+          a {
+            color: #260e0e;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/new/bg10_3.png");
+          span {
+            background-image: none;
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg18.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/new/bg09_3.png");
+            color: #260e0e;
+            a {
+              color: #260e0e;
+            }
+          }
+          span {
+            color: #9a3939;
+            background-image: none;
+            a {
+              color: #9a3939;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01C1-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg13.png");
+      color: #ffffff;
+      li {
+        background-image: url("img/mod-gnav/new/bg13.png");
+        &:hover {
+          background-image: url("img/mod-gnav/new/bg15.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          background-image: url("img/mod-gnav/new/bg16.png");
+          span {
+            background-image: none;
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg19.png");
+          &:hover {
+            background-image: url("img/mod-gnav/new/bg15.png");
+            color: #ffffff;
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            color: #f2d028;
+            background-image: none;
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01C2-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg13_2.png");
+      color: #ffffff;
+      li {
+        background-image: url("img/mod-gnav/new/bg13_2.png");
+        &:hover {
+          background-image: url("img/mod-gnav/new/bg15_2.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          background-image: url("img/mod-gnav/new/bg16_2.png");
+          span {
+            background-image: none;
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg19_2.png");
+          &:hover {
+            background-image: url("img/mod-gnav/new/bg15_2.png");
+            color: #ffffff;
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            color: #f2d028;
+            background-image: none;
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01C3-mod-navi-header {
+  .mod-navi-inner {
+    ul {
+      background-image: url("img/mod-gnav/new/bg13_3.png");
+      color: #ffffff;
+      li {
+        background-image: url("img/mod-gnav/new/bg13_3.png");
+        &:hover {
+          background-image: url("img/mod-gnav/new/bg15_3.png");
+        }
+        span {
+          background-image: url("img/mod-gnav/new/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          background-image: url("img/mod-gnav/new/bg16_3.png");
+          span {
+            background-image: none;
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/new/bg19_3.png");
+          &:hover {
+            background-image: url("img/mod-gnav/new/bg15_3.png");
+            color: #ffffff;
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            color: #f2d028;
+            background-image: none;
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-side-menu
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----commom-style-----//
+
+@mixin common-style-mod-side-menu {
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+
+//-----module-style-----//
+
+@mixin module-style-mod-side-menu {
+  padding: 5px 9px 11px;
+  font-size: $sideFontSizeM + 1;
+  line-height: 1.4;
+  > .mod-side-menu-list {
+    > ul {
+      > li {
+        padding: 8px 0 0;
+        > .mod-side-menu-item {
+          display: block;
+          padding: 5px 0 3px 25px;
+          margin: 0 0 8px;
+          background-position: 7px 9px;
+          background-repeat: no-repeat;
+          &.state-current {
+            background-position: 7px 9px;
+            background-repeat: no-repeat;
+          }
+          a {
+            display: block;
+            margin: -5px 0 -3px -25px;
+            padding: 5px 5px 3px 25px;
+            &:hover {
+              background-position: 7px 9px;
+              background-repeat: no-repeat;
+              text-decoration: none;
+              p {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        > .mod-side-menu-list {
+          > ul {
+            > li {
+              margin: 0 0 0 18px;
+              > .mod-side-menu-item {
+                display: block;
+                padding: 9px 11px 6px;
+                background-position: 0 15px;
+                background-repeat: no-repeat;
+                &.state-current {
+                  a {
+                  font-weight: bold;
+                  }
+                }
+                a {
+                  display: block;
+                }
+              }
+              > .mod-side-menu-list {
+                padding: 0 0 10px;
+                margin: -7px 0 0 13px;
+                > ul {
+                  > li {
+                    > .mod-side-menu-item {
+                      display: block;
+                      padding: 0 11px 2px;
+                      background-position: 0 13px;
+                      background-repeat: no-repeat;
+                      &.state-current {
+                        a {
+                        font-weight: bold;
+                        }
+                      }
+                      a {
+                        display: block;
+                        padding-top: 6px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin module-style-mod-handmenu-side {
+  padding: 5px 9px 11px;
+  font-size: $sideFontSizeM + 1;
+  line-height: 1.4;
+  > .mod-side-menu-list {
+    > ul > div > div {
+      > li {
+        padding: 8px 0 0;
+        > .mod-side-menu-item {
+          display: block;
+          padding: 5px 0 3px 25px;
+          margin: 0 0 8px;
+          background-position: 7px 9px;
+          background-repeat: no-repeat;
+          a {
+            display: block;
+            margin: -5px 0 -3px -25px;
+            padding: 5px 5px 3px 25px;
+            &:hover {
+              background-position: 7px 9px;
+              background-repeat: no-repeat;
+              text-decoration: none;
+              p {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        > .mod-side-menu-list {
+          > ul {
+            > li {
+              margin: 0 0 0 18px;
+              > .mod-side-menu-item {
+                display: block;
+                padding: 9px 11px 6px;
+                background-position: 0 15px;
+                background-repeat: no-repeat;
+                a {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+//-----deco-style-----//
+
+//----- side-menu -----//
+@mixin deco-style01A1-mod-side-menu {
+  color: #333333;// 全てのdecoに記述
+  border: 1px solid #cdd0d1;// 全てのdecoに記述
+  background-color: #f8f7f3;
+  > .mod-side-menu-list {
+    > ul > li:last-child > .mod-side-menu-list li:last-child {
+      border-bottom: 0 none transparent;
+    }
+    > ul > li {
+      border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+      &:first-child {
+        border-top: 0 none transparent;// 全てのdecoに記述
+      }
+      > .mod-side-menu-item {
+        background-image: url("img/mod-side-menu-box/new/bg04.png");
+        &.state-current {
+          background-color: #808285;
+          background-image: url("img/mod-side-menu-box/new/bg08.png");
+          a {
+            color: #ffffff;// 全てのdecoに記述
+          }
+        }
+        a {
+          color: #333333;// 全てのdecoに記述
+          &:hover {
+            background-color: #cccccc;
+            background-image: url("img/mod-side-menu-box/new/bg08.png");
+          }
+        }
+      }
+      > .mod-side-menu-list {
+        border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #f8f7f3;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li {
+          border-bottom: 1px dashed #bcbec0;// 全てのdecoに記述
+          > .mod-side-menu-item {
+            background-image: url("img/mod-side-menu-box/new/bg06.png");
+            &.state-current {
+              a {
+                color: #5f140a;
+              }
+            }
+            a {
+              color: #333333;// 全てのdecoに記述
+            }
+          }
+          > .mod-side-menu-list {
+            > ul > li {
+              > .mod-side-menu-item {
+                background-image: url("img/mod-side-menu-box/new/bg07.png");
+                &.state-current {
+                  a {
+                    color: #5f140a;
+                  }
+                }
+                a {
+                  color: #333333;// 全てのdecoに記述
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01A2-mod-side-menu {
+  color: #333333;// 全てのdecoに記述
+  border: 1px solid #cdd0d1;// 全てのdecoに記述
+  background-color: #e9eaeb;
+  > .mod-side-menu-list {
+    > ul > li:last-child > .mod-side-menu-list li:last-child {
+      border-bottom: 0 none transparent;
+    }
+    > ul > li {
+      border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+      &:first-child {
+        border-top: 0 none transparent;// 全てのdecoに記述
+      }
+      > .mod-side-menu-item {
+        background-image: url("img/mod-side-menu-box/new/bg04_2.png");
+        &.state-current {
+          background-color: #4873a6;
+          background-image: url("img/mod-side-menu-box/new/bg08_2.png");
+          a {
+            color: #ffffff;// 全てのdecoに記述
+          }
+        }
+        a {
+          color: #333333;// 全てのdecoに記述
+          &:hover {
+            background-color: #bddbfd;
+            background-image: url("img/mod-side-menu-box/new/bg08_2.png");
+          }
+        }
+      }
+      > .mod-side-menu-list {
+        border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #e9eaeb;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li {
+          border-bottom: 1px dashed #bcbec0;// 全てのdecoに記述
+          > .mod-side-menu-item {
+            background-image: url("img/mod-side-menu-box/new/bg06_2.png");
+            &.state-current {
+              a {
+                color: #0f375f;
+              }
+            }
+            a {
+              color: #333333;// 全てのdecoに記述
+            }
+          }
+          > .mod-side-menu-list {
+            > ul > li {
+              > .mod-side-menu-item {
+                background-image: url("img/mod-side-menu-box/new/bg07_2.png");
+                &.state-current {
+                  a {
+                    color: #0f375f;
+                  }
+                }
+                a {
+                  color: #333333;// 全てのdecoに記述
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01A3-mod-side-menu {
+  color: #333333;// 全てのdecoに記述
+  border: 1px solid #cdd0d1;// 全てのdecoに記述
+  background-color: #f8f7f3;
+  > .mod-side-menu-list {
+    > ul > li:last-child > .mod-side-menu-list li:last-child {
+      border-bottom: 0 none transparent;
+    }
+    > ul > li {
+      border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+      &:first-child {
+        border-top: 0 none transparent;// 全てのdecoに記述
+      }
+      > .mod-side-menu-item {
+        background-image: url("img/mod-side-menu-box/new/bg04_3.png");
+        &.state-current {
+          background-color: #a82614;
+          background-image: url("img/mod-side-menu-box/new/bg08_3.png");
+          a {
+            color: #ffffff;// 全てのdecoに記述
+          }
+        }
+        a {
+          color: #333333;// 全てのdecoに記述
+          &:hover {
+            background-color: #fbd2cc;
+            background-image: url("img/mod-side-menu-box/new/bg08_3.png");
+          }
+        }
+      }
+      > .mod-side-menu-list {
+        border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #f8f7f3;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li {
+          border-bottom: 1px dashed #bcbec0;// 全てのdecoに記述
+          > .mod-side-menu-item {
+            background-image: url("img/mod-side-menu-box/new/bg06.png");
+            &.state-current {
+              a {
+                color: #5f140a;
+              }
+            }
+            a {
+              color: #333333;// 全てのdecoに記述
+            }
+          }
+          > .mod-side-menu-list {
+            > ul > li {
+              > .mod-side-menu-item {
+                background-image: url("img/mod-side-menu-box/new/bg07.png");
+                &.state-current {
+                  a {
+                    color: #5f140a;
+                  }
+                }
+                a {
+                  color: #333333;// 全てのdecoに記述
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//----- handmenu-side -----//
+
+@mixin deco-style01A1-mod-handmenu-side {
+  color: #333333;// 全てのdecoに記述
+  border: 1px solid #cdd0d1;// 全てのdecoに記述
+  background-color: #f8f7f3;
+  > .mod-side-menu-list {
+    > ul > div > div:last-child > li > .mod-side-menu-list li:last-child {
+      border-bottom: 0 none transparent;
+    }
+    > ul > div > div:first-child > li:first-child {
+      border-top: 0 none transparent;// 全てのdecoに記述
+    }
+    > ul > div > div > li {
+      border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+      > .mod-side-menu-item {
+        background-image: url("img/mod-side-menu-box/new/bg04.png");
+        a {
+          color: #333333;// 全てのdecoに記述
+          &:hover {
+            background-color: #cccccc;
+            background-image: url("img/mod-side-menu-box/new/bg08.png");
+          }
+        }
+      }
+      > .mod-side-menu-list {
+        border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #f8f7f3;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li {
+          border-bottom: 1px dashed #bcbec0;// 全てのdecoに記述
+          > .mod-side-menu-item {
+            background-image: url("img/mod-side-menu-box/new/bg06.png");
+            a {
+              color: #333333;// 全てのdecoに記述
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01A2-mod-handmenu-side {
+  color: #333333;// 全てのdecoに記述
+  border: 1px solid #cdd0d1;// 全てのdecoに記述
+  background-color: #e9eaeb;
+  > .mod-side-menu-list {
+    > ul > div > div:last-child > li > .mod-side-menu-list li:last-child {
+      border-bottom: 0 none transparent;
+    }
+    > ul > div > div:first-child > li:first-child {
+      border-top: 0 none transparent;// 全てのdecoに記述
+    }
+    > ul > div > div > li {
+      border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+      > .mod-side-menu-item {
+        background-image: url("img/mod-side-menu-box/new/bg04_2.png");
+        a {
+          color: #333333;// 全てのdecoに記述
+          &:hover {
+            background-color: #bddbfd;
+            background-image: url("img/mod-side-menu-box/new/bg08_2.png");
+          }
+        }
+      }
+      > .mod-side-menu-list {
+        border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #e9eaeb;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li {
+          border-bottom: 1px dashed #bcbec0;// 全てのdecoに記述
+          > .mod-side-menu-item {
+            background-image: url("img/mod-side-menu-box/new/bg06_2.png");
+            a {
+              color: #333333;// 全てのdecoに記述
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style01A3-mod-handmenu-side {
+  color: #333333;// 全てのdecoに記述
+  border: 1px solid #cdd0d1;// 全てのdecoに記述
+  background-color: #f8f7f3;
+  > .mod-side-menu-list {
+    > ul > div > div:last-child > li > .mod-side-menu-list li:last-child {
+      border-bottom: 0 none transparent;
+    }
+    > ul > div > div:first-child > li:first-child {
+      border-top: 0 none transparent;// 全てのdecoに記述
+    }
+    > ul > div > div > li {
+      border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+      > .mod-side-menu-item {
+        background-image: url("img/mod-side-menu-box/new/bg04_3.png");
+        a {
+          color: #333333;// 全てのdecoに記述
+          &:hover {
+            background-color: #fbd2cc;
+            background-image: url("img/mod-side-menu-box/new/bg08_3.png");
+          }
+        }
+      }
+      > .mod-side-menu-list {
+        border-top: 1px dashed #bcbec0;// 全てのdecoに記述
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #f8f7f3;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li {
+          border-bottom: 1px dashed #bcbec0;// 全てのdecoに記述
+          > .mod-side-menu-item {
+            background-image: url("img/mod-side-menu-box/new/bg06.png");
+            a {
+              color: #333333;// 全てのdecoに記述
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-navi-footer
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----commom-style-----//
+
+@mixin common-style-mod-navi-footer {
+  ul {
+    margin: 0;
+    text-align: center;
+  }
+  li {
+    @extend %inlineBlock;
+    padding: 0 5px;
+    height: 15px;
+    color: #ffffff;
+    list-style: none;
+    font-size: $fontSizeM - 1;
+    line-height: 1.3;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+//-----module-style-----//
+@mixin module-style-mod-navi-footer {
+  ul {
+    padding: 2px 0;
+  }
+  li:first-child {
+    border-left: 0 solid transparent;
+  }
+  li {
+    border-left: 1px solid #ffffff;
+  }
+}
+
+
+//-----deco-style-----//
+@mixin deco-style01A1-mod-navi-footer {
+  li {
+    &.state-em {
+      span {
+        background-color: #666666;
+      }
+    }
+  }
+}
+
+@mixin deco-style01A2-mod-navi-footer {
+  li {
+    &.state-em {
+      span {
+        background-color: #7397c0;
+      }
+    }
+  }
+}
+
+@mixin deco-style01A3-mod-navi-footer {
+  li {
+    &.state-em {
+      span {
+        background-color: #200805;
+      }
+    }
+  }
+}
+
+
+
+

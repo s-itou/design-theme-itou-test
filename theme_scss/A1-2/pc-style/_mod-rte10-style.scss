@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@mixin mod-rte10-common-style {
+@include border-radius();
+  padding: 10px 10px;
+  margin-top: 20px;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte10-style {
+  color: #352111;
+  background-color: #fffce9;
+  border: 0 none transparent;
+}
+@mixin mod-rte10-style2 {
+  color: #294470;
+  background-color: #e3f6f8;
+  border: 0 none transparent;
+}
+@mixin mod-rte10-style3 {
+  color: #45320b;
+  background-color: #fef6b2;
+  border: 0 none transparent;
+}
+@mixin mod-rte10-style4 {
+  color: #331f13;
+  background-color: #f7de5e;
+  border: 0 none transparent;
+}
+@mixin mod-rte10-style5 {
+  color: #331f13;
+  background-color: #f9e89d;
+  border: 0 none transparent;
+}
+@mixin mod-rte10-style6 {
+  color: #352111;
+  background-color: #c8dffe;
+  border: 1px sol
+}
+@mixin mod-rte10-style7 {
+  color: #352111;
+  background-color: #fef8da;
+  border: 1px solid #f2d028;
+}
+@mixin mod-rte10-style8 {
+  color: #352111;
+  background-color: #ffe9d6;
+  border: 1px solid #f79316;
+}
+

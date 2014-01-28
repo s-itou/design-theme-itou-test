@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@mixin mod-html-common-style {
+overflow: auto;
+  width: 100%;
+  small {
+    a {
+      @include box-sizing(border-box);
+      display: block;
+      min-height: 40px;
+      font-size: $fontSizeM - 1;
+      @include border-radius(3px);
+      @extend %inlineBlock;
+      background-repeat: no-repeat;
+      padding: 10px 0 0 25px;
+    }
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+@mixin mod-html-style {
+small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-link/bg.png");
+      background-position: 9px 13px;
+      background-color: #ffffff;
+    }
+  }
+}
+@mixin mod-html-style2 {
+small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-bnr/bg07_2.png");
+      background-position: 9px 13px;
+      background-color: #ffffff;
+    }
+  }
+}
+@mixin mod-html-style3 {
+small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-bnr/bg07_3.png");
+      background-position: 9px 13px;
+      background-color: #ffffff;
+    }
+  }
+}
+@mixin mod-html-style4 {
+small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #ffffff !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+@mixin mod-html-style5 {
+small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #ffffff !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg_2.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+@mixin mod-html-style6 {
+small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #443308 !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg_3.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+

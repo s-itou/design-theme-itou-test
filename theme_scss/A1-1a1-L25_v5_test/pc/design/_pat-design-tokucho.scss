@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-design-tokucho の定義
+//
+//   ・デザインパターン
+//   ・mod-set-tokucho 内にincludeされる使い方を想定
+//   ・他のsetモジュール（お客さまの声、等）でも使われる可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// --------------------------------------------------------------------------
+
+
+// --------------------------------------------------------------------------
+// pat-design-tokucho の共通スタイル
+// --------------------------------------------------------------------------
+
+@mixin deco-style-pat-design-tokucho-bunsyo {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        > .ex-first-child {
+          > .mod-set-tokucho-h4 {
+            .mod-h_4_t1 {
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-tokucho の装飾スタイル
+// --------------------------------------------------------------------------
+
+// なし
+
+
+// --------------------------------------------------------------------------
+// pat-design-tokucho-bunsyo の個別設定
+// --------------------------------------------------------------------------
+@mixin pat-design-tokucho-bunsyo-1 {
+  @include pat-item-waku-kadomaru-futo-blue;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+@mixin pat-design-tokucho-bunsyo-2 {
+  @include pat-item-waku-kadomaru-futo-blue-3;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+@mixin pat-design-tokucho-bunsyo-3 {
+  @include pat-item-waku-kadomaru-futo-pink;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+@mixin pat-design-tokucho-bunsyo-4 {
+  @include pat-item-waku-kadomaru-simple-blue-grade;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+@mixin pat-design-tokucho-bunsyo-5 {
+  @include pat-item-waku-kadomaru-simple-yellow-grade;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+@mixin pat-design-tokucho-bunsyo-6 {
+  @include pat-item-waku-kadomaru-simple-pink-grade;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+@mixin pat-design-tokucho-bunsyo-7 {
+  @include pat-item-waku-kadomaru-image-blue;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+@mixin pat-design-tokucho-bunsyo-8 {
+  @include pat-item-waku-kadomaru-image-orange;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+@mixin pat-design-tokucho-bunsyo-9 {
+  @include pat-item-waku-kadomaru-image-yellow;
+  @include deco-style-pat-design-tokucho-bunsyo;
+}
+
+
+
+
+// --------------------------------------------------------------------------
+// pat-design-tokucho-h の共通スタイル
+// --------------------------------------------------------------------------
+@mixin deco-style-pat-design-tokucho-h-1 {
+  padding: 15px; // リボンタイトル用背景調整
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          .mod-h_4-inner3 {
+            background-image: none;
+            background-color: transparent;
+          }
+        }
+      }
+      > .mod-box-in2 {
+        background-color: #ffffff;
+        margin: 20px 0 0 0;
+        > .mod-box-inner {
+          > .mod-box-inner2 {
+            padding: 14px 10px 14px 10px;
+            > .ex-first-child {
+              > .ex-first-child {
+                > .mod-set-tokucho-h4 {
+                  .mod-h_4_t1 {
+                    margin-top: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-design-tokucho-h-2 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          .mod-h_4-inner3 {
+            background-image: none;
+            background-color: transparent;
+          }
+        }
+      }
+      > .mod-box-in2 {
+        margin: 20px 0 0 0;
+        > .mod-box-inner {
+          > .mod-box-inner2 {
+            padding: 15px;
+            > .ex-first-child {
+              > .ex-first-child {
+                > .mod-set-tokucho-h4 {
+                  .mod-h_4_t1 {
+                    margin-top: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-tokucho-h の個別設定
+// --------------------------------------------------------------------------
+@mixin pat-design-tokucho-h-1 {
+  @include pat-item-waku-kado-simple-green-bgc;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-ribbon-2;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-none-bgc-white;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-1;
+}
+@mixin pat-design-tokucho-h-2 {
+  @include pat-item-waku-kado-simple-green-bgc;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-ribbon-2;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-none-bgc-white;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-1;
+}
+@mixin pat-design-tokucho-h-3 {
+  @include pat-item-waku-kado-simple-orange-bgc-2;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-ribbon-3;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-none-bgc-white;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-1;
+}
+@mixin pat-design-tokucho-h-4 {
+  @include pat-item-waku-kado-none-grade-blue;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-border-1;
+        }
+        > .mod-rte_ver2 {
+          color: #ffffff;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-none-bgc-white;
+        background-color: #d0def7;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-2;
+}
+@mixin pat-design-tokucho-h-5 {
+  @include pat-item-waku-kado-none-grade-green;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-border-2;
+        }
+        > .mod-rte_ver2 {
+          color: #ffffff;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-none-bgc-white;
+        background-color: #edf4f4;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-2;
+}
+@mixin pat-design-tokucho-h-6 {
+  @include pat-item-waku-kado-none-grade-orange;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-border-3;
+        }
+        .mod-rte_ver2 {
+          color: #ffffff;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-none-bgc-white;
+        background-color: #f9d788;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-2;
+}
+@mixin pat-design-tokucho-h-7 {
+  @include pat-item-waku-kado-simple-orange-bgimg;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-border-4;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-board-orange;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-2;
+}
+@mixin pat-design-tokucho-h-8 {
+  @include pat-item-waku-kado-simple-green-bgimg;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-border-5;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-board-yellow;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-2;
+}
+@mixin pat-design-tokucho-h-9 {
+  @include pat-item-waku-kado-simple-orange-bgimg-2;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          @include pat-item-midashi-border-4;
+        }
+      }
+      > .mod-box-in2 {
+        @include pat-item-waku-board-brown;
+      }
+    }
+  }
+  @include deco-style-pat-design-tokucho-h-2;
+}
+
+
+
+// --------------------------------------------------------------------------
+// pat-design-tokucho-pic の共通スタイル
+// --------------------------------------------------------------------------
+
+@mixin common-style-pat-design-tokucho-pic {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-h_4_t1 {
+    display: block;
+    position: relative;
+    .mod-icon_num4 {
+      min-width: 57px;
+      position: absolute;
+      top: 0;
+    }
+    .mod-h_4-inner {
+      display: block;
+      width: 100%;
+      .mod-h_4-inner2 {
+        padding: 4px 0 0 15px;
+      }
+      .mod-h_4-inner3 {
+        .mod-h {
+          padding: 0 10px 0;
+        }
+      }
+      .mod-h_4-inner4 {
+        padding: 5px 0 0 10px;
+      }
+    }
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-tokucho-pic の装飾スタイル
+// --------------------------------------------------------------------------
+
+@mixin deco-style-pad-design-tokucho-pic-1 {
+  .mod-h_4_t1 {
+    .mod-h_4-inner {
+      padding: 3px 0 0 49px;
+    }
+  }
+}
+
+@mixin deco-style-pad-design-tokucho-pic-2 {
+  .mod-h_4_t1 {
+    .mod-icon_num4 {
+      margin-top: -4px;
+    }
+    .mod-h_4-inner {
+      padding: 0 0 0 49px;
+    }
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-tokucho-pic の個別設定
+// --------------------------------------------------------------------------
+@mixin pat-design-tokucho-pic-1 {
+  @include pat-item-waku-pic-a1;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-1;
+}
+@mixin pat-design-tokucho-pic-2 {
+  @include pat-item-waku-pic-a2;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-1;
+}
+@mixin pat-design-tokucho-pic-3 {
+  @include pat-item-waku-pic-a3;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-1;
+}
+@mixin pat-design-tokucho-pic-4 {
+  @include pat-item-waku-pic-b1;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-1;
+}
+@mixin pat-design-tokucho-pic-5 {
+  @include pat-item-waku-pic-b2;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-1;
+}
+@mixin pat-design-tokucho-pic-6 {
+  @include pat-item-waku-pic-b3;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-1;
+}
+@mixin pat-design-tokucho-pic-7 {
+  @include pat-item-waku-pic-c1;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-2;
+}
+@mixin pat-design-tokucho-pic-8 {
+  @include pat-item-waku-pic-c2;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-2;
+}
+@mixin pat-design-tokucho-pic-9 {
+  @include pat-item-waku-pic-c3;
+  @include common-style-pat-design-tokucho-pic;
+  @include deco-style-pad-design-tokucho-pic-2;
+}

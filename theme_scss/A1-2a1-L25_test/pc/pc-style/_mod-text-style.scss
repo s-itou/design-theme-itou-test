@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-style-mod-text {
+  margin-top: 10px !important;
+  text-align: left;
+  font-size: $fontSizeS + 1;
+  line-height: 1.6;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin module-style-mod-text{}
+@mixin module-style-mod-text-pic{}
+@mixin module-style-mod-text-list{}
+@mixin module-style-mod-text-table{}
+@mixin module-style-mod-text-S{
+  margin-top: 0 !important;
+  font-size: $fontSizeS - 1;
+  line-height: 1.4;
+}
+@mixin module-style-mod-text-side{}
+@mixin module-style-mod-text-pic-side{
+  text-align: center;
+}
+@mixin module-style-mod-text-kyocho-side{
+  font-weight: bold;
+  font-size: $fontSizeM;
+}
+@mixin module-style-mod-text-hosoku-side {
+  margin-top: 5px !important;
+}
+@mixin module-style-mod-text-list-side {
+  margin-top: 5px !important;
+}
+@mixin module-style-mod-text-header {
+  margin-top: 0 !important;
+}
+@mixin module-style-mod-text-footer {
+  margin-top: 0 !important;
+}
+@mixin module-style-mod-text-footer-second {
+  margin-top: 5px !important;
+}
+@mixin module-style-mod-text-footer-point {
+  margin-top: 5px !important;
+  font-size: $fontSizeM;
+}
+@mixin module-style-mod-text-title-footer {
+  margin-top: 5px !important;
+}
+@mixin module-style-mod-text-kyocho-footer {
+  margin-top: 0 !important;
+  text-align: center;
+  font-size: $fontSizeL;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin deco-style01A1-mod-text {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-text {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-text {
+  color: #333333;
+}
+@mixin deco-style01B1-mod-text {
+  color: #333333;
+}
+@mixin deco-style01B2-mod-text {
+  color: #333333;
+}
+@mixin deco-style01B3-mod-text {
+  color: #333333;
+}
+@mixin deco-style01C1-mod-text {
+  color: #333333;
+}
+@mixin deco-style01C2-mod-text {
+  color: #333333;
+}
+@mixin deco-style01C3-mod-text {
+  color: #333333;
+}
+
+@mixin deco-style01A1-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01B1-mod-text-header {
+  color: #ffffff;
+}
+@mixin deco-style01B2-mod-text-header {
+  color: #ffffff;
+}
+@mixin deco-style01B3-mod-text-header {
+  color: #ffffff;
+}
+@mixin deco-style01C1-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01C2-mod-text-header {
+  color: #333333;
+}
+@mixin deco-style01C3-mod-text-header {
+  color: #333333;
+}
+
+@mixin deco-style01A1-mod-text-side {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-text-side {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-text-side {
+  color: #333333;
+}
+
+
+
+

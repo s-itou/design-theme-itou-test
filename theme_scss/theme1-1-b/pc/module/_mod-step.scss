@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%mod-box-inner2_base {
+  padding-bottom: 5px;
+}
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+.mod-step {
+  margin-bottom: 30px;
+  .mod-step-inner {
+    width: 100%;
+    padding-top: 65px;
+    @include background("mod-step/01/bg11.png", no-repeat, top, center);
+  }
+  .step1 {
+    > div {
+      padding-top: 0;
+      background-image: none;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-step-inner {
+      padding-top: 20px;
+      background: none;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-step-inner {
+    @include background("mod-step/01/bg12.png", no-repeat, top, center);
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-step-inner {
+    @include background("mod-step/01/bg12_2.png", no-repeat, top, center);
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-step-inner {
+    @include background("mod-step/01/bg12_3.png", no-repeat, top, center);
+    }
+  }
+}
+
+
+
+
+

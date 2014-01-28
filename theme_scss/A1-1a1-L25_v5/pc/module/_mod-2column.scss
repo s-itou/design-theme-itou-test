@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import "../pc-style/mod-2column-style";
+
+
+.mod-2col2 {
+  @include mod-2col2-common-style;
+}
+
+
+
+.mod-2col4 {
+  @include mod-2col4-common-style;
+}
+
+
+.mod-2col6 {
+  @include mod-2col6-common-style;
+}
+
+.mod-2col7 {
+  @include mod-2col7-common-style;
+  .ex-style_i1A1 & {
+    @include mod-2col7-style;
+  }
+  .ex-style_i1A2 & {
+    @include mod-2col7-style2;
+  }
+  .ex-style_i1A3 & {
+    @include mod-2col7-style3;
+  }
+  .ex-style_i1B1 & {
+    @include mod-2col7-style4;
+  }
+  .ex-style_i1B2 & {
+    @include mod-2col7-style5;
+  }
+  .ex-style_i1B3 & {
+    @include mod-2col7-style6;
+  }
+  .ex-style_i1C1 & {
+    @include mod-2col7-style7;
+  }
+  .ex-style_i1C2 & {
+    @include mod-2col7-style8;
+  }
+  .ex-style_i1C3 & {
+    @include mod-2col7-style9;
+  }
+}
+
+
+.mod-2col16 {
+  @include mod-2col16-common-style;
+}
+
+
+.mod-2col17 {
+  @include mod-2col17-common-style;
+}
+
+.mod-2col22 {
+  @include mod-2col22-common-style;
+}
+
+
+.mod-2col25 {
+  @include mod-2col25-common-style;
+}
+
+
+.mod-2col26 {
+  @include mod-2col26-common-style;
+}
+
+
+.mod-2col27 {
+  @include mod-2col27-common-style;
+}
+
+
+.mod-2col29 {
+  @include mod-2col29-common-style;
+  @include mod-2col29-style;
+  .ex-style_01A2 & {
+    @include mod-2col29-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-2col29-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-2col29-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-2col29-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-2col29-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-2col29-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-2col29-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-2col29-style9;
+  }
+}
+
+
+.mod-2col31 {
+  @include mod-2col31-common-style;
+}
+
+
+.mod-2col32 {
+  @include mod-2col32-common-style;
+}
+
+
+.mod-2col33 {
+  @include mod-2col33-common-style;
+}
+
+.mod-2col34 {
+  @include mod-2col34-common-style;
+}
+
+.mod-2col35 {
+  @include mod-2col35-common-style;
+}
+
+.mod-2col36 {
+  @include mod-2col36-common-style;
+}
+
+.mod-2col37 {
+  @include mod-2col37-common-style;
+  @include mod-2col37-style;
+}
+
+.mod-2col38 {
+  @include mod-2col38-common-style;
+}
+
+.mod-2col39 {
+  @include mod-2col39-common-style;
+}
+
+.mod-2col40 {
+  @include mod-2col40-common-style;
+}
+
+.mod-2col41 {
+  @include mod-2col41-common-style;
+  .ex-style_t1A1 & {
+    @include mod-2col41-style;
+  }
+}
+
+.mod-2col42 {
+  @include mod-2col42-common-style;
+}
+
+.mod-2col43 {
+  @include mod-2col43-common-style;
+}
+
+.mod-2col44 {
+  @include mod-2col44-common-style;
+}
+
+.mod-2col45 {
+  @include mod-2col45-common-style;
+  @include mod-2col45-style;
+  .ex-style_01A1 & {
+    @include mod-2col45-style;
+  }
+}
+
+.mod-2col49 {
+  @include mod-2col49-common-style;
+}
+
+.mod-2col-spec {
+  @include mod-2col-spec-common-style;
+}
+
+.mod-2col-spec2 {
+  @include mod-2col-spec2-common-style;
+}
+
+.mod-2col-spec3 {
+  @include mod-2col-spec3-common-style;
+}
+
+.mod-2col-spec4 {
+  @include mod-2col-spec4-common-style;
+}
+
+
+

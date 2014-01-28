@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@mixin mod-box12-common-style {
+width: 100%;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 10px 10px 1px;
+    background-color: #ffffff;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box12-style {
+border: 1px solid #cdd0d1;
+  background-color: #f8f7f3;
+}
+@mixin mod-box12-style2 {
+border: 1px solid #cdd0d1;
+  background-color: #e9eaeb;
+}
+

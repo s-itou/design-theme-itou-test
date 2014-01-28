@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import "../pc-style/mod-fax-style";
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-fax
+//＊＊＊＊＊＊＊＊＊＊＊＊
+.mod-fax_ver2 {
+  @include common-style-mod-fax;
+  @include module-style-mod-fax;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-fax;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-fax;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-fax;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-fax;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-fax;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-fax;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-fax;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-fax;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-fax;
+  }
+}
+.mod-fax-side {
+  @include common-style-mod-fax;
+  @include common-side-style-mod-fax;
+  @include module-style-mod-fax-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-fax;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-fax;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-fax;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-fax;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-fax;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-fax;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-fax;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-fax;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-fax;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-fax-i
+//＊＊＊＊＊＊＊＊＊＊＊＊
+.mod-fax-i {
+  @include common-style-mod-fax;
+  @include module-style-mod-fax-i;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-fax;
+    @include deco-style01A2-mod-fax-i;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-fax;
+    @include deco-style01A3-mod-fax-i;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i;
+  }
+}
+.mod-fax-i-side {
+  @include common-style-mod-fax;
+  @include common-side-style-mod-fax;
+  @include module-style-mod-fax-i-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A1-mod-fax;  // 01A1を指定
+    @include deco-style01A2-mod-fax-i-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-fax;
+    @include deco-style01A3-mod-fax-i-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-fax;  // 01A1を指定
+    @include deco-style01A2-mod-fax-i-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-fax;
+    @include deco-style01A3-mod-fax-i-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-fax;
+    @include deco-style01A1-mod-fax-i-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A1-mod-fax;  // 01A1を指定
+    @include deco-style01A2-mod-fax-i-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-fax;
+    @include deco-style01A3-mod-fax-i-side;
+  }
+}
+
+.mod-fax-i-footer { //未完成部品
+  @include common-style-mod-fax;
+  @include module-style-mod-fax-i-footer;
+  @include deco-style01A1-mod-fax;
+  @include deco-style01A1-mod-fax-i-footer;
+}
+
+// .mod-fax7 {
+//   @extend .mod-fax-i;
+// }
+// .mod-fax8 {
+//   @extend .mod-fax;
+// }
+// .mod-fax11 {
+//   @extend .mod-fax-i-side;
+// }
+// .mod-fax12 {
+//   @extend .mod-fax-side;
+// }
+// .mod-fax13 {
+//   @extend .mod-fax-i-footer;
+// }

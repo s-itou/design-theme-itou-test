@@ -1,0 +1,493 @@
+@charset "UTF-8";
+
+//  mod-3col の mixin一式
+@mixin mod-3col-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin-right: 20px;
+    .mod-3col-inner-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin-right: 20px;
+    .mod-3col-inner2-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 40) / 3);
+    .mod-3col-inner3-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-3col-style {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+@mixin mod-3col-style2 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #fffdf2;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style3 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #f6f6f6;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style4 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #fff9ee;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style5 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #e6f8ff;
+    padding: 15px;
+  }
+}
+
+
+@mixin mod-3col-style6 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #FBF3C8;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style7 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #ffefe5;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style8 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #c9e0ff;
+    background-color: transparent;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style9 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #f99317;
+    background-color: transparent;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style10 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #f2d028;
+    background-color: transparent;
+    padding: 15px;
+  }
+}
+
+
+//  mod-3col4 の mixin一式
+@mixin mod-3col4-common-style {
+  @extend %cf;
+  > .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 60) / 4);
+    margin-right: 15px;
+  }
+  > .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 60) / 4);
+    margin-right: 15px;
+  }
+  > .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 60) / 4);
+  }
+}
+
+
+
+
+//  mod-3col6 の mixin一式
+@mixin mod-3col6-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin-right: 20px;
+    @include border-radius();
+    .mod-3col-inner-2 {
+      padding: 15px;
+    }
+    .mod-3col-inner-3 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin-right: 20px;
+    @include border-radius();
+    .mod-3col-inner2-2 {
+      padding: 15px;
+    }
+    .mod-3col-inner2-3 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 40) / 3);
+    @include border-radius();
+    .mod-3col-inner3-2 {
+      padding: 15px;
+    }
+    .mod-3col-inner3-3 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-3col6-style {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #ade9ef;
+    padding: 10px;
+    background-color: #ecfdff;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+
+
+@mixin mod-3col6-style2 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #60bff0;
+    padding: 10px;
+    background-color: #ebfdff;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-3col6-style3 {
+.mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #fd8e89;
+    padding: 10px;
+    background-color: #ffe0de;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-3col6-style4 {
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    border: 1px solid #abd2f6;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url(img/mod-box/bg04.png);
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: transparent;
+  }
+}
+
+@mixin mod-3col6-style5 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #f4d34f;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url(img/mod-box/bg04_2.png);
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: transparent;
+  }
+}
+
+@mixin mod-3col6-style6 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #ffa19b;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url(img/mod-box/bg04_3.png);
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: transparent;
+  }
+}
+
+@mixin mod-3col6-style7 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url(img/mod-box/bg08.png);
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-3col6-style8 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url(img/mod-box/bg08_2.png);
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-3col6-style9 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url(img/mod-box/bg08_3.png);
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+
+
+//  mod-3col7 の mixin一式
+@mixin mod-3col7-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-3col-inner {
+    float: left;
+    width: 330px;
+    margin-right: 30px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: 330px;
+    margin-right: 30px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: left;
+    width: 260px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+@mixin mod-3col7-style {
+  //none
+}
+
+
+//  mod-3col8 の mixin一式
+@mixin mod-3col8-common-style {
+  @extend %cf;
+  position: relative;
+  height: 210px;
+ .mod-3col-inner {
+    float: left;
+    width: 330px;
+    //max-height: 167px;
+    //overflow: hidden;
+    margin-right: 30px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: 260px;
+    margin-right: 30px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: left;
+    width: 330px;
+    //max-height: 167px;
+    //overflow: hidden;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+
+
+//  mod-3col9 の mixin一式
+@mixin mod-3col9-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 54) / 3);
+    margin-right: 27px;
+    .mod-3col-inner-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 54) / 3);
+    margin-right: 27px;
+    .mod-3col-inner2-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 54) / 3);
+    .mod-3col-inner3-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+//  mod-3col10 の mixin一式
+@mixin mod-3col10-common-style {
+  margin-top: 10px;
+  @extend %cf;
+  .mod-3col-wrap {
+    .mod-3col-inner {
+      float: left;
+      width: floor(($mainWidth - 40) / 3);
+      margin-right: 10px;
+      .mod-3col-inner-3 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+    .mod-3col-inner2 {
+      float: left;
+      width: floor(($mainWidth - 40) / 3);
+      margin-right: 10px;
+      .mod-3col-inner2-3 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+    .mod-3col-inner3 {
+      float: right;
+      width: floor(($mainWidth - 40) / 3);
+      .mod-3col-inner3-3 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}

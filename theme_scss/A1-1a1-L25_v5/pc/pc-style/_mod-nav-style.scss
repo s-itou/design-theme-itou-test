@@ -1,0 +1,2039 @@
+@charset "UTF-8";
+
+//  mod-gnav の mixin一式
+@mixin mod-gnav-common-style {
+  width: 100%;
+  max-height: 150px;
+  background-repeat: repeat-x;
+  background-position: left center;
+  .mod-gnav-inner {
+    width: 980px;
+    margin: 0 auto;
+    padding: 2px 0;
+    ul {
+      display: table;
+      width: 980px;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      list-style-type: none;
+      background-repeat: no-repeat;
+      height: 49px;
+      padding-right: 2px;
+      @include box-sizing(border-box);
+      li {
+        @include word-break(break-all);
+        @include box-sizing(border-box);
+        display: table-cell;
+        padding: 0;
+        font-size: 14px !important;
+        vertical-align: middle;
+        width: 196px;
+        background-repeat: no-repeat;
+        span {
+          display: block;
+          max-height: 146px;
+          overflow: hidden;
+          padding-left: 24px;
+          padding-right: 5px;
+          background-repeat: no-repeat;
+          background-position: left center;
+          line-height: 1.3;
+          a {
+            display: block;
+            max-height: 122px;
+            padding: 2px 0 1px;
+            text-decoration: none;
+            line-height: 1.3;
+            margin-left: -24px;
+            padding-left: 24px;
+            margin-right: -5px;
+            padding-right: 5px;
+          }
+        }
+        &.state-current {
+          background-repeat: no-repeat;
+        }
+        &.state-em {
+          font-weight: bold;
+          &:hover {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav-style {
+  background-image: url("img/mod-gnav/bg.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+  .mod-gnav-inner {
+    ul {
+      color: #452305;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg03.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05.png");
+          a {
+            color: #452305;
+          }
+        }
+        &.state-current {
+          @include text-shadow(1px 1px 1px #ffffff);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg17.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06.png");
+            background-position: left center;
+            color: #452305;
+            @include text-shadow(1px 1px 1px #ffffff);
+            a {
+              color: #452305;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav-style2 {
+  background-image: url("img/mod-gnav/bg_2.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg03_2.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03_2.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05_2.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04_2.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg17_2.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06_2.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #05393e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-gnav-style3 {
+  background-image: url("img/mod-gnav/bg_3.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+  .mod-gnav-inner {
+    ul {
+      color: #563110;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg03_3.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03_3.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05_3.png");
+          a {
+            color: #563110;
+          }
+        }
+        &.state-current {
+          @include text-shadow(1px 1px 1px #ffffff);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04_3.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg17_3.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06_3.png");
+            background-position: left center;
+            color: #453205;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #453205;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav-style4 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #2d4a72;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11.png");
+          a {
+            color: #2d4a72;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg18.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09.png");
+            background-position: left center;
+            color: #335a93;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #335a93;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav-style5 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #0B7D88;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11_2.png");
+          a {
+            color: #0B7D88;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10_2.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg18.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09_2.png");
+            background-position: left center;
+            color: #0B7D88;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #0B7D88;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav-style6 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #443308;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11_3.png");
+          a {
+            color: #443308;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10_3.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg18.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09_3.png");
+            background-position: left center;
+            color: #443308;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #443308;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav-style7 {
+  background-image: url("img/mod-gnav/bg12.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #2058a4;
+  border-top: 1px solid #d6f0f4;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg16.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg19.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav-style8 {
+  background-image: url("img/mod-gnav/bg12_2.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #43949e;
+  border-top: 1px solid #d6f0f4;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13_2.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13_2.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg16_2.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg19_2.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15_2.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #05393e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav-style9 {
+  background-image: url("img/mod-gnav/bg12_3.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #f7931d;
+  border-top: 1px solid #f89e35;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13_3.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13_3.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg16_3.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg19_3.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15_3.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #3b330a;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//  mod-gnav2 の mixin一式
+@mixin mod-gnav2-common-style {
+  width: 100%;
+  max-height: 150px;
+  background-repeat: repeat-x;
+  background-position: left center;
+  .mod-gnav-inner {
+    width: 980px;
+    margin: 0 auto;
+    padding: 2px 0;
+    ul {
+      display: table;
+      width: 980px;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      list-style-type: none;
+      background-repeat: no-repeat;
+      height: 49px;
+      padding-right: 2px;
+      @include box-sizing(border-box);
+      li {
+        @include word-break(break-all);
+        @include box-sizing(border-box);
+        display: table-cell;
+        padding: 0;
+        font-size: 14px !important;
+        vertical-align: middle;
+        max-width: 550px;
+        background-repeat: no-repeat;
+        span {
+          display: block;
+          max-height: 146px;
+          overflow: hidden;
+          padding-left: 24px;
+          padding-right: 5px;
+          background-repeat: no-repeat;
+          background-position: left center;
+          line-height: 1.3;
+          a {
+            display: block;
+            max-height: 122px;
+            padding: 2px 0 1px;
+            text-decoration: none;
+            line-height: 1.3;
+            margin-left: -24px;
+            padding-left: 24px;
+            margin-right: -5px;
+            padding-right: 5px;
+          }
+        }
+        &.state-current {
+          background-repeat: no-repeat;
+        }
+        &.state-em {
+          font-weight: bold;
+          &:hover {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style {
+  background-image: url("img/mod-gnav/bg.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+  .mod-gnav-inner {
+    ul {
+      color: #452305;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg03.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05.png");
+          a {
+            color: #452305;
+          }
+        }
+        &.state-current {
+          @include text-shadow(1px 1px 1px #ffffff);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg17.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06.png");
+            background-position: left center;
+            color: #452305;
+            @include text-shadow(1px 1px 1px #ffffff);
+            a {
+              color: #452305;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style2 {
+  background-image: url("img/mod-gnav/bg_2.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg03_2.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03_2.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05_2.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04_2.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg17_2.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06_2.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #05393e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-gnav2-style3 {
+  background-image: url("img/mod-gnav/bg_3.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+  .mod-gnav-inner {
+    ul {
+      color: #563110;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg03_3.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03_3.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05_3.png");
+          a {
+            color: #563110;
+          }
+        }
+        &.state-current {
+          @include text-shadow(1px 1px 1px #ffffff);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04_3.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg17_3.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06_3.png");
+            background-position: left center;
+            color: #453205;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #453205;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style4 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #2d4a72;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11.png");
+          a {
+            color: #2d4a72;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg18.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09.png");
+            background-position: left center;
+            color: #335a93;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #335a93;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style5 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #0B7D88;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11_2.png");
+          a {
+            color: #0B7D88;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10_2.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg18.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09_2.png");
+            background-position: left center;
+            color: #0B7D88;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #0B7D88;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style6 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #443308;
+      @include text-shadow(1px 1px 1px #ffffff);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11_3.png");
+          a {
+            color: #443308;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10_3.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg18.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09_3.png");
+            background-position: left center;
+            color: #443308;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #443308;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #e24a00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style7 {
+  background-image: url("img/mod-gnav/bg12.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #2058a4;
+  border-top: 1px solid #d6f0f4;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg16.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg19.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style8 {
+  background-image: url("img/mod-gnav/bg12_2.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #43949e;
+  border-top: 1px solid #d6f0f4;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13_2.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13_2.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg16_2.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg19_2.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15_2.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #05393e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style9 {
+  background-image: url("img/mod-gnav/bg12_3.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #f7931d;
+  border-top: 1px solid #f89e35;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13_3.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13_3.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include text-shadow(0 0 0 transparent);
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg16_3.png");
+          background-position: left center;
+        }
+        &.state-em {
+          @include border-radius();
+          @include text-shadow(0 0 0 transparent);
+          background-image: url("img/mod-gnav/bg19_3.png");
+          background-position: left center;
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15_3.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            background-image: none;
+            a {
+              color: #3b330a;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//  mod-side-menu-box の mixin一式
+@mixin mod-side-menu-box-common-style {
+  width: 100%;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 10px;
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mod-side-menu-box-h {
+    min-height: 10px;
+    border-left: 1px solid #dedad1;
+    border-right: 1px solid #dedad1;
+    .mod-side-menu-box-h-inner {
+      padding: 10px 10px 5px 10px;
+      .mod-h {
+        padding-left: 10px;
+        font-size: $fontSizeL;
+        font-weight: bold;
+      }
+    }
+  }
+  .mod-side-menu-box-b {
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .mod-side-menu {
+    padding-bottom: 15px;
+    border: 1px solid #dedad1;
+    border-top: none;
+    > .mod-side-menu-list {
+      > ul {
+        > li {
+          margin: 5px 9px;
+          &:first-child {
+              margin-top: 0;
+          }
+          > .mod-side-menu-item {
+            padding: 9px 10px 7px 25px;
+            background-repeat: no-repeat;
+            background-position: 8px 13px;
+            border-right: 1px solid #b2b2b2;
+            border-bottom: 1px solid #b2b2b2;
+            @include border-radius();
+            display: block;
+            zoom:1;
+            a {
+              display: block;
+              width: auto;
+              @include box-sizing(border-box);
+              &:hover {
+                margin: -9px -11px -8px -25px;
+                padding: 9px 10px 7px 25px;
+                text-decoration: none;
+                background-repeat: no-repeat;
+                background-position: 8px 13px;
+                border-top: 1px solid #ab9d7b;
+                border-left: 1px solid #ab9d7b;
+                @include box-sizing(border-box);
+                @include border-radius();
+              }
+            }
+          }
+          > .mod-side-menu-list {
+            > ul {
+              > li {
+                list-style: none;
+                border-bottom: 1px dotted #cccccc;
+                margin-bottom:10px;
+                > .mod-side-menu-item {
+                  padding: 8px 10px 6px 29px;
+                  background-repeat: no-repeat;
+                  background-position: 15px 15px;
+                  display: block;
+                  a {
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                > .mod-side-menu-list {
+                  > ul {
+                    > li {
+                      list-style: none;
+                      > .mod-side-menu-item {
+                        padding: 4px 10px 4px 44px;
+                        background-repeat: no-repeat;
+                        background-position: 29px 12px;
+                        display: block;
+                        a {
+                          &:hover {
+                            text-decoration: underline;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin mod-side-menu-box-style {
+  background-image: url("img/mod-side-menu-box/bg.png");
+  .mod-side-menu-box-h {
+    background-color: #fffce9;
+    .mod-h {
+      color: #f27f1b;
+      border-bottom: 1px solid #dcd4c0;
+    }
+  }
+  .mod-side-menu-box-b {
+    background-image: url("img/mod-side-menu-box/bg02.png");
+  }
+  .mod-side-menu {
+    background-color: #fffce9;
+    > .mod-side-menu-list {
+      > ul {
+        > li {
+          > .mod-side-menu-item {
+            color: #2f141c;
+            background-image: url("img/mod-side-menu-box/bg04.png");
+            background-color: #ffffff;
+            a {
+              color: #2f141c;
+              &:hover {
+                color: #321b07;
+                background-color: #d6cda7;
+                background-image: url("img/mod-side-menu-box/bg04.png");
+              }
+            }
+            &.state-current {
+              background-image: url("img/mod-side-menu-box/bg05.png");
+              background-color: #cbbb92;
+              border-top: 1px solid #938d73;
+              border-left: 1px solid #938d73;
+              border-bottom: none;
+              border-right: none;
+              &:hover {
+                background-image: url("img/mod-side-menu-box/bg05.png");
+              }
+              a {
+                color: #ffffff;
+                &:hover {
+                  color: #321b07;
+                }
+              }
+            }
+          }
+          > .mod-side-menu-list {
+            > ul {
+              > li {
+                > .mod-side-menu-item {
+                  color: #2f141c;
+                  background-image: url("img/mod-side-menu-box/bg06.png");
+                  a {
+                    color: #2f141c;
+                  }
+                  &.state-current {
+                    a {
+                      color: #f27f1b;
+                      font-weight: bold;
+                    }
+                  }
+                }
+                > .mod-side-menu-list {
+                  > ul {
+                    > li {
+                      > .mod-side-menu-item {
+                        color: #2f141c;
+                        background-image: url("img/mod-side-menu-box/bg07.png");
+                        a {
+                          color: #2f141c;
+                        }
+                        &.state-current {
+                          a {
+                            color: #f27f1b;
+                            font-weight: bold;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-side-menu-box-style2 {
+  background-image: url("img/mod-side-menu-box/bg_2.png");
+  .mod-side-menu-box-h {
+    background-color: #f6f6f6;
+    .mod-h {
+      color: #0b7d89;
+      border-bottom: 1px solid #cbd8d9;
+    }
+  }
+  .mod-side-menu-box-b {
+    background-image: url("img/mod-side-menu-box/bg02_2.png");
+  }
+  .mod-side-menu {
+    background-color: #f6f6f6;
+    > .mod-side-menu-list {
+      > ul {
+        > li {
+          > .mod-side-menu-item {
+            color: #294470;
+            background-image: url("img/mod-side-menu-box/bg04_2.png");
+            background-color: #ffffff;
+            a {
+              color: #294470;
+              &:hover {
+                color: #294470;
+                background-color: #aceef5;
+                background-image: url("img/mod-side-menu-box/bg08_2.png");
+              }
+            }
+            &.state-current {
+                background-image: url("img/mod-side-menu-box/bg05_2.png");
+                background-color: #67ced9;
+                border-top: 1px solid #57adb6;
+                border-left: 1px solid #57adb6;
+                border-bottom: none;
+                border-right: none;
+                &:hover {
+                  background-image: url("img/mod-side-menu-box/bg05_2.png");
+                }
+                a {
+                  color: #ffffff;
+                  &:hover {
+                    color: #294470;
+                  }
+                }
+              }
+            }
+          > .mod-side-menu-list {
+            > ul {
+              > li {
+                > .mod-side-menu-item {
+                  color: #294470;
+                  background-image: url("img/mod-side-menu-box/bg06_2.png");
+                  a {
+                    color: #294470;
+                  }
+                  &.state-current {
+                    a {
+                      color: #ffa658;
+                      font-weight: bold;
+                    }
+                  }
+                }
+                > .mod-side-menu-list {
+                  > ul {
+                    > li {
+                      > .mod-side-menu-item {
+                        color: #294470;
+                        background-image: url("img/mod-side-menu-box/bg07_2.png");
+                        a {
+                          color: #294470;
+                        }
+                        &.state-current {
+                          a {
+                            color: #ffa658;
+                            font-weight: bold;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-side-menu-box-style3 {
+  background-image: url("img/mod-side-menu-box/bg_3.png");
+  .mod-side-menu-box-h {
+    background-color: #fffef4;
+    .mod-h {
+      color: #45320b;
+      border-bottom: 1px solid #dcd4c0;
+    }
+  }
+  .mod-side-menu-box-b {
+    background-image: url("img/mod-side-menu-box/bg02_3.png");
+  }
+  .mod-side-menu {
+    background-color: #fffef4;
+    > .mod-side-menu-list {
+      > ul {
+        > li {
+          > .mod-side-menu-item {
+            color: #45320b;
+            background-image: url("img/mod-side-menu-box/bg04_3.png");
+            background-color: #ffffff;
+            a {
+              color: #45320b;
+              &:hover {
+                color: #45320b;
+                background-color: #fef7c1;
+                background-image: url("img/mod-side-menu-box/bg08_3.png");
+              }
+            }
+            &.state-current {
+              background-image: url("img/mod-side-menu-box/bg05_3.png");
+              background-color: #fef291;
+              border-top: 1px solid #9c8b47;
+              border-left: 1px solid #9c8b47;
+              border-bottom: none;
+              border-right: none;
+              &:hover {
+                background-image: url("img/mod-side-menu-box/bg05_3.png");
+              }
+              a {
+                color: #45320b;
+                &:hover {
+                  color: #45320b;
+                }
+              }
+            }
+          }
+          > .mod-side-menu-list {
+            > ul {
+              > li {
+                > .mod-side-menu-item {
+                  color: #45320b;
+                  background-image: url("img/mod-side-menu-box/bg06_3.png");
+                  a {
+                    color: #45320b;
+                  }
+                  &.state-current {
+                    color: #67ced9;
+                    font-weight: bold;
+                  }
+                }
+                > .mod-side-menu-list {
+                  > ul {
+                    > li {
+                      > .mod-side-menu-item {
+                         color: #45320b;
+                        background-image: url("img/mod-side-menu-box/bg07_3.png");
+                        a {
+                          color: #45320b;
+                        }
+                        &.state-current {
+                          a {
+                            color: #67ced9;
+                            font-weight: bold;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//  mod-fnav の mixin一式
+@mixin mod-fnav-common-style {
+  width: 100%;
+  text-align: center;
+  ul {
+    @extend %cf;
+    width: $baseWidth;
+    margin: 0 auto;
+    padding: 2px 0;
+    text-align: center;
+    li:last-child {
+      background: none;
+    }
+    li {
+      @extend %inlineBlock;
+      padding: 0 6px 0 10px;
+      color: #ffffff;
+      font-size: $fontSizeM - 1;
+      list-style: none;
+      background-image: url("img/mod-fnav/bg.png");
+      background-position: right 50px;
+      background-repeat: no-repeat;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@mixin mod-fnav-style {
+  background-color: #0e55b5;
+  li {
+    &.state-em {
+      a {
+        background-color: #093673;
+      }
+    }
+  }
+}
+
+@mixin mod-fnav-style2 {
+  background-color: #69ced8;
+  li {
+    &.state-em {
+      a {
+        background-color: #0b7d89;
+      }
+    }
+  }
+}
+
+@mixin mod-fnav-style3 {
+  background-color: #f37f1c;
+  li {
+    &.state-em {
+      a {
+        background-color: #8a4a00;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+//  mod-side-menu-box2 の mixin一式
+@mixin mod-side-menu-box2-common-style {
+  width: 100%;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 10px;
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mod-side-menu-box2-h {
+    min-height: 10px;
+    border-left: 1px solid #dedad1;
+    border-right: 1px solid #dedad1;
+    .mod-side-menu-box-h-inner {
+      padding: 10px 10px 5px 10px;
+      .mod-h {
+        padding-left: 10px;
+        font-size: $fontSizeL;
+        font-weight: bold;
+      }
+    }
+  }
+  .mod-side-menu-box2-b {
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .mod-side-handmenu {
+    padding-bottom: 15px;
+    border: 1px solid #dedad1;
+    border-top: none;
+    > .mod-side-handmenu-list {
+      > ul {
+        > li {
+          margin: 5px 9px;
+          &:first-child {
+              margin-top: 0;
+          }
+          > .mod-side-handmenu-item {
+            padding: 9px 10px 7px 25px;
+            background-repeat: no-repeat;
+            background-position: 8px 13px;
+            border-right: 1px solid #b2b2b2;
+            border-bottom: 1px solid #b2b2b2;
+            @include border-radius();
+            display: block;
+            zoom:1;
+            a {
+              display: block;
+              width: auto;
+              @include box-sizing(border-box);
+              &:hover {
+                margin: -9px -11px -8px -25px;
+                padding: 9px 10px 7px 25px;
+                text-decoration: none;
+                background-repeat: no-repeat;
+                background-position: 8px 13px;
+                border-top: 1px solid #ab9d7b;
+                border-left: 1px solid #ab9d7b;
+                @include box-sizing(border-box);
+                @include border-radius();
+              }
+            }
+          }
+          > .mod-side-handmenu-list {
+            > ul {
+              > li {
+                list-style: none;
+                border-bottom: 1px dotted #cccccc;
+                margin-bottom:10px;
+                > .mod-side-handmenu-item {
+                  padding: 8px 10px 6px 29px;
+                  background-repeat: no-repeat;
+                  background-position: 15px 15px;
+                  display: block;
+                  a {
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                > .mod-side-handmenu-list {
+                  > ul {
+                    > li {
+                      list-style: none;
+                      > .mod-side-handmenu-item {
+                        padding: 4px 10px 4px 44px;
+                        background-repeat: no-repeat;
+                        background-position: 29px 12px;
+                        display: block;
+                        a {
+                          &:hover {
+                            text-decoration: underline;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin mod-side-menu-box2-style {
+  background-image: url("img/mod-side-menu-box/bg.png");
+  .mod-side-menu-box2-h {
+    background-color: #fffce9;
+    .mod-h {
+      color: #f27f1b;
+      border-bottom: 1px solid #dcd4c0;
+    }
+  }
+  .mod-side-menu-box2-b {
+    background-image: url("img/mod-side-menu-box/bg02.png");
+  }
+  .mod-side-handmenu {
+    background-color: #fffce9;
+    > .mod-side-handmenu-list {
+      > ul {
+        > div > div {
+          > li {
+            > .mod-side-handmenu-item {
+              color: #2f141c;
+              background-image: url("img/mod-side-menu-box/bg04.png");
+              background-color: #ffffff;
+              a {
+                color: #2f141c;
+                &:hover {
+                  color: #321b07;
+                  background-color: #d6cda7;
+                  background-image: url("img/mod-side-menu-box/bg04.png");
+                }
+              }
+              &.state-current {
+                background-image: url("img/mod-side-menu-box/bg05.png");
+                background-color: #cbbb92;
+                border-top: 1px solid #938d73;
+                border-left: 1px solid #938d73;
+                border-bottom: none;
+                border-right: none;
+                &:hover {
+                  background-image: url("img/mod-side-menu-box/bg05.png");
+                }
+                a {
+                  color: #ffffff;
+                  &:hover {
+                    color: #321b07;
+                  }
+                }
+              }
+            }
+            > .mod-side-handmenu-list {
+              > ul {
+                > li {
+                  > .mod-side-handmenu-item {
+                    color: #2f141c;
+                    background-image: url("img/mod-side-menu-box/bg06.png");
+                    a {
+                      color: #2f141c;
+                    }
+                    &.state-current {
+                      a {
+                        color: #f27f1b;
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                  > .mod-side-handmenu-list {
+                    > ul {
+                      > li {
+                        > .mod-side-handmenu-item {
+                          color: #2f141c;
+                          background-image: url("img/mod-side-menu-box/bg07.png");
+                          a {
+                            color: #2f141c;
+                          }
+                          &.state-current {
+                            a {
+                              color: #f27f1b;
+                              font-weight: bold;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-side-menu-box2-style2 {
+  background-image: url("img/mod-side-menu-box/bg_2.png");
+  .mod-side-menu-box2-h {
+    background-color: #f6f6f6;
+    .mod-h {
+      color: #0b7d89;
+      border-bottom: 1px solid #cbd8d9;
+    }
+  }
+  .mod-side-menu-box2-b {
+    background-image: url("img/mod-side-menu-box/bg02_2.png");
+  }
+  .mod-side-handmenu {
+    background-color: #f6f6f6;
+    > .mod-side-handmenu-list {
+      > ul {
+        > div > div {
+          > li {
+            > .mod-side-handmenu-item {
+              color: #294470;
+              background-image: url("img/mod-side-menu-box/bg04_2.png");
+              background-color: #ffffff;
+              a {
+                color: #294470;
+                &:hover {
+                  color: #294470;
+                  background-color: #aceef5;
+                  background-image: url("img/mod-side-menu-box/bg08_2.png");
+                }
+              }
+              &.state-current {
+                background-image: url("img/mod-side-menu-box/bg05_2.png");
+                background-color: #67ced9;
+                border-top: 1px solid #57adb6;
+                border-left: 1px solid #57adb6;
+                border-bottom: none;
+                border-right: none;
+                &:hover {
+                  background-image: url("img/mod-side-menu-box/bg05_2.png");
+                }
+                a {
+                  color: #ffffff;
+                  &:hover {
+                    color: #294470;
+                  }
+                }
+              }
+            }
+            > .mod-side-handmenu-list {
+              > ul {
+                > li {
+                  > .mod-side-handmenu-item {
+                    color: #294470;
+                    background-image: url("img/mod-side-menu-box/bg06_2.png");
+                    a {
+                      color: #294470;
+                    }
+                    &.state-current {
+                      a {
+                        color: #ffa658;
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                  > .mod-side-handmenu-list {
+                    > ul {
+                      > li {
+                        > .mod-side-handmenu-item {
+                          color: #294470;
+                          background-image: url("img/mod-side-menu-box/bg07_2.png");
+                          a {
+                            color: #294470;
+                          }
+                          &.state-current {
+                            a {
+                              color: #ffa658;
+                              font-weight: bold;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-side-menu-box2-style3 {
+  background-image: url("img/mod-side-menu-box/bg_3.png");
+  .mod-side-menu-box2-h {
+    background-color: #fffef4;
+    .mod-h {
+      color: #45320b;
+      border-bottom: 1px solid #dcd4c0;
+    }
+  }
+  .mod-side-menu-box2-b {
+    background-image: url("img/mod-side-menu-box/bg02_3.png");
+  }
+  .mod-side-handmenu {
+    background-color: #fffef4;
+    > .mod-side-handmenu-list {
+      > ul {
+        > div > div {
+          > li {
+            > .mod-side-handmenu-item {
+              color: #45320b;
+              background-image: url("img/mod-side-menu-box/bg04_3.png");
+              background-color: #ffffff;
+              a {
+                color: #45320b;
+                &:hover {
+                  color: #45320b;
+                  background-color: #fef7c1;
+                  background-image: url("img/mod-side-menu-box/bg08_3.png");
+                }
+              }
+              &.state-current {
+                background-image: url("img/mod-side-menu-box/bg05_3.png");
+                background-color: #fef291;
+                border-top: 1px solid #9c8b47;
+                border-left: 1px solid #9c8b47;
+                border-bottom: none;
+                border-right: none;
+                &:hover {
+                  background-image: url("img/mod-side-menu-box/bg05_3.png");
+                }
+                a {
+                  color: #45320b;
+                  &:hover {
+                    color: #45320b;
+                  }
+                }
+              }
+            }
+            > .mod-side-handmenu-list {
+              > ul {
+                > li {
+                  > .mod-side-handmenu-item {
+                    color: #45320b;
+                    background-image: url("img/mod-side-menu-box/bg06_3.png");
+                    a {
+                      color: #45320b;
+                    }
+                    &.state-current {
+                      color: #67ced9;
+                      font-weight: bold;
+                    }
+                  }
+                  > .mod-side-handmenu-list {
+                    > ul {
+                      > li {
+                        > .mod-side-handmenu-item {
+                           color: #45320b;
+                          background-image: url("img/mod-side-menu-box/bg07_3.png");
+                          a {
+                            color: #45320b;
+                          }
+                          &.state-current {
+                            a {
+                              color: #67ced9;
+                              font-weight: bold;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

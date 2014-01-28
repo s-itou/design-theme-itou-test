@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%default-ul {
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    margin-left: 20px;
+    padding-top: 2px;
+    padding-left:15px;
+    list-style-type: none;
+    @include background("mod-ul/bg.png", $position-y: 8px);
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+.mod-ul { //メイン基準値25px
+  @extend %default-ul;
+  margin-bottom: 25px;
+  a {
+    text-decoration: none;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 & {
+    li {
+      background-image: url("img/mod-ul/bg_2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 & {
+    li {
+      background-image: url("img/mod-ul/bg_3.png");
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 & {
+    li {
+      @include background("mod-ul/bg04.png", $position-y: 8px);
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 & {
+    li {
+      background-image: url("img/mod-ul/bg04_2.png");
+      background-position-y: 8px;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 & {
+    li {
+      background-image: url("img/mod-ul/bg04_3.png");
+      background-position-y: 8px;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 & {
+    padding: 10px;
+    border: 1px solid #d1c9a4;
+    border-radius: 5px;
+    background-color: #fffce9;
+    li {
+      padding-left: 18px;
+      background-image: url("img/mod-ul/bg06.png");
+      background-position: left;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 & {
+    padding: 10px;
+    border: 1px solid #7ed1d9;
+    border-radius: 5px;
+    background-color: #e3f6f8;
+    li {
+      color: #45320b;
+      padding-left: 18px;
+      background-image: url("img/mod-ul/bg06_2.png");
+      background-position: left;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 & {
+    padding: 10px;
+    border: 1px solid #c8dffe;
+    border-radius: 5px;
+    background-color: #dce9fb;
+    li {
+      color: #45320b;
+      padding-left: 18px;
+      background-image: url("img/mod-ul/bg06_3.png");
+      background-position: left;
+    }
+  }
+}
+
+
+.mod-ul2 {
+  margin-bottom: 15px;
+  ul {
+    padding-left: 0;
+    li {
+      margin-bottom: 5px;
+      margin-left: 15px;
+      padding-left:15px;
+      list-style: none;
+      font-size: 13px;
+      @include background("mod-ul/bg02.png", $position-y: 5px);
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2e &,
+  .ex-style_01A2f &,
+  .ex-style_01A2g &,
+  .ex-style_01A2h & {
+    li {
+      background-image: url("img/mod-ul/bg02_2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3e &,
+  .ex-style_01A3f &,
+  .ex-style_01A3g &,
+  .ex-style_01A3h & {
+    li {
+      background-image: url("img/mod-ul/bg02_3.png");
+    }
+  }
+}
+
+//リンクつきリスト
+.mod-ul3 {
+  @extend %default-ul;
+  a {
+    color: #333333;
+  }
+}
+
+.mod-ul4 {
+  @extend .mod-ul;
+  ul {
+    li {
+      // margin-left: 25px;
+      margin-left: 15px;//SP
+    }
+  }
+}
+
+.mod-ul5 {
+  @extend .mod-ul;
+  ul {
+    li {
+      margin-left: 15px;
+    }
+  }
+}
+
+.mod-ol { //メイン基準値25px
+  margin-bottom: 25px;
+  ol {
+    // margin-left: 25px;
+    // padding-left: 25px;
+    margin-left: 15px;//SP
+    padding-left: 15px;//SP
+  }
+  li {
+    margin-bottom: 2px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    ol {
+      color: #f16c0b;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    ol {
+      color: #0C7D87;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    ol {
+      color: #337FB2;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    li {
+      color: #333333;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    li {
+      color: #333333;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    li {
+      color: #45320b;
+    }
+  }
+}
+
+
+
+
+
+

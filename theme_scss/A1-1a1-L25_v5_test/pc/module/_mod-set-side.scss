@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import "../pc-style/mod-set-side-style";
+// -----------------------------------
+//
+// 　　サイドエリアのset
+//
+// -----------------------------------
+
+
+// -----------------------------------
+// part-side-044 代表者写真左
+// -----------------------------------
+
+.mod-set-daiyhou-2col-side {
+  @include module-style-mod-set-daiyhou-2col-side;
+}
+// -----------------------------------
+// part-side-035 代表者写真右
+// -----------------------------------
+.mod-set-daiyhou-2colr-side {
+  @include module-style-mod-set-daiyhou-2colr-side;
+}
+
+
+
+// // ***********************************
+// // 現行モジュールへのスタイル取り込み
+// // ***********************************
+// .mod-2col32 {
+//   @extend .mod-set-daiyhou-2col-side;
+// }
+// .mod-2col33 {
+//   @extend .mod-set-daiyhou-2col-side;
+// }

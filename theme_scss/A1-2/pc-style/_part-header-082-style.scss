@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+
+
+//  mod-2col43 の mixin一式
+@mixin mod-2col43-common-style {
+  @extend %cf;
+  width: 100%;
+  > .mod-2col-inner {
+    float: left;
+    width: 430px;
+    margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 535px;
+    @extend %cf;
+  }
+}
+
+//  mod-2col48 の mixin一式
+@mixin mod-2col48-common-style {
+  float: right;
+  > .mod-2col-inner {
+    display: table-cell;
+    min-width: 280px;
+    max-width: 300px;
+    vertical-align: top;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    padding-left: 20px;
+    min-width: 230px;
+    vertical-align: top;
+  }
+}
+
+
+
+
+//  mod-text29 の mixin一式
+@mixin mod-text29-common-style {
+}
+@mixin mod-text29-style {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text29-style2 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text29-style3 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text29-style4 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text29-style5 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text29-style6 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text29-style7 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text29-style8 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text29-style9 {
+  color: #ffffff;
+}
+
+
+//  mod-box56 の mixin一式
+@mixin mod-box56-common-style {
+  width: 100%;
+  @include border-radius();
+  .mod-box-inner {
+   @include border-radius();
+   text-align: center;
+  }
+}
+
+@mixin mod-box56-style {
+  //none
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+@mixin mod-box56-style2 {
+  //none
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+@mixin mod-box56-style3 {
+  //none
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+@mixin mod-box56-style4 {
+  //none
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+@mixin mod-box56-style5 {
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+@mixin mod-box56-style6 {
+  //none
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+@mixin mod-box56-style7 {
+  //none
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+@mixin mod-box56-style8 {
+  //none
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+@mixin mod-box56-style9 {
+  //none
+  border: 1px solid #ffffff;
+  .mod-box-inner {
+    padding: 5px 10px;
+    background-repeat: repeat-x;
+  }
+}
+
+//  mod-bnr39 の mixin一式
+@mixin mod-bnr39-common-style {
+  @include border-radius();
+  display: inline-block;
+  min-width: 200px;
+  &:hover {
+    opacity: 0.80;
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    max-height: 45px;
+    line-height: 1.4;
+    @include border-radius;
+    padding: 2px 10px 2px 25px;
+  }
+}
+@mixin mod-bnr39-style5 {
+  //none
+  border: 1px solid #5771a2;
+  background-image: url("img/mod-bnr/_39/bg_b_2.png");
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-color: #3c4e78;
+  font-size: $fontSizeS;
+  .mod-bnr-inner {
+    border: 1px solid #344464;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/_39/bg02_b_2.png");
+    background-repeat: no-repeat;
+    background-position: 7px 4px;
+  }
+}
+@mixin mod-bnr39-style {
+  @include mod-bnr39-style5; // none
+}
+@mixin mod-bnr39-style2 {
+  @include mod-bnr39-style5; // none
+}
+@mixin mod-bnr39-style3 {
+  @include mod-bnr39-style5; // none
+}
+@mixin mod-bnr39-style4 {
+  @include mod-bnr39-style5; // none
+}
+// @mixin mod-bnr39-style5 {上に記載}
+@mixin mod-bnr39-style6 {
+  @include mod-bnr39-style5; // none
+}
+@mixin mod-bnr39-style7 {
+  @include mod-bnr39-style5; // none
+}
+@mixin mod-bnr39-style8 {
+  @include mod-bnr39-style5; // none
+}
+@mixin mod-bnr39-style9 {
+  @include mod-bnr39-style5; // none
+}

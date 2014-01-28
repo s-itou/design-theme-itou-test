@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@mixin mod-info8-common-style {
+margin-top: 10px;
+  @extend %cf;
+  .mod-info-inner {
+    width: 140px;
+    margin-right:15px;
+    @include border-radius();
+    text-align: center;
+    float: left;
+  }
+  .mod-info-inner2 {
+    float: left;
+    overflow: hidden;
+  }
+}
+
+@mixin mod-info8-style {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #5f140a;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style2 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #3c3c3c;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style3 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #325073;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style4 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: url("img/mod-info/bg.png");
+    background-repeat: repeat-x;
+    background-color: #722416;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style5 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #085b66;
+    background-image: url("img/mod-info/bg_2.png");
+    background-repeat: repeat-x;
+    background-color: #f8e693;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style6 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: url("img/mod-info/bg_3.png");
+    background-repeat: repeat-x;
+    background-color: #722416;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style7 {
+border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #781b0e;
+    background-image: url("img/mod-info/bg03.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+@mixin mod-info8-style8 {
+border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #325073;
+    background-image: url("img/mod-info/bg03_2.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+@mixin mod-info8-style9 {
+border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #0f375f;
+    background-image: url("img/mod-info/bg03_3.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+

@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>mod-col-spec</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../../../theme/theme1-1/pc/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../../../theme/theme1-1/pc/mod.css" />
+<link rel="stylesheet" type="text/css" href="css/list-style.css" />
+<style>
+.area-header-inner {
+	width:980px;
+	margin: 0 auto;
+}
+.area-footer-inner {
+	width:980px;
+	margin: 0 auto;
+}
+</style>
+<script type="text/javascript" src="scripts/shCore.js"></script>
+<script type="text/javascript" src="scripts/shBrushXml.js"></script>
+<link type="text/css" rel="stylesheet" href="styles/shCore.css" />
+<link type="text/css" rel="stylesheet" href="styles/shCoreDjango.css">
+<script type="text/javascript">
+SyntaxHighlighter.all();
+</script>
+</head>
+<body class="mod-body">
+
+	<nav class="mod-fnav">
+	<ul>
+	<li><span><a href="./mod-rte_text.html">rte_text</a></span></li>
+	<li><span><a href="./mod-column.html">column</a></span></li>
+	<li><span><a href="./mod-h.html">h</a></span></li>
+	<li><span><a href="./mod-h-set.html">h-set</a></span></li>
+	<li><span><a href="./mod-title.html">title</a></span></li>
+	<li><span><a href="./mod-image.html">image</a></span></li>
+	<li><span><a href="./mod-html.html">html</a></span></li>
+	<li><span><a href="./mod-link.html">link</a></span></li>
+	<li><span><a href="./mod-bnr.html">bnr</a></span></li>
+	<li><span><a href="./mod-table.html">table</a></span></li>
+	<li><span><a href="./mod-ul.html">ul</a></span></li>
+	<li><span><a href="./mod-info.html">info</a></span></li>
+	<li><span><a href="./mod-tel.html">tel</a></span></li>
+	<li><span><a href="./mod-label.html">label</a></span></li>
+	<li><span><a href="./mod-nav.html">nav</a></span></li>
+	<li><span><a href="./mod-step.html">step</a></span></li>
+	<li><span><a href="./mod-un.html">un</a></span></li>
+	<li><span><a href="./mod-set.html">set</a></span></li>
+	</ul>
+	</nav>
+
+<!--
+	＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊モジュール一覧はここから＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+-->
+
+<div class="area-all">
+
+	<header class="area-header">
+		<div class="area-header-inner" data-cms-contents="page-header[0]">
+			<p class="name-h">mod-3col-spec ヘッダーぶちぬき用</p>
+			<div class="mod-3col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+			<div class="mod-3col-spec-inner">
+			<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-3col-spec-inner2">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-3col-spec-inner3">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+			</div>
+			<pre class="brush:xml">
+			<div class="mod-3col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+			<div class="mod-3col-spec-inner">
+			<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-3col-spec-inner2">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-3col-spec-inner3">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+			</div>
+			</pre>
+
+
+			<p class="name-h">mod-3col-spec2 特徴アイコンつき</p>
+			<div class="mod-3col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+				<div class="mod-3col-spec-inner">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-1"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-3col-spec-inner2">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-2"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-3col-spec-inner3">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-3"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+			</div>
+			<pre class="brush:xml">
+			<div class="mod-3col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+				<div class="mod-3col-spec-inner">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-1"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-3col-spec-inner2">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-2"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-3col-spec-inner3">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-3"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+			</div>
+			</pre>
+
+
+			<p class="name-h">mod-3col-spec3 理由アイコンつき</p>
+			<div class="mod-3col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+				<div class="mod-3col-spec-inner">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-1"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-3col-spec-inner2">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-2"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-3col-spec-inner3">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-3"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+			</div>
+			<pre class="brush:xml">
+			<div class="mod-3col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+				<div class="mod-3col-spec-inner">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-1"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-3col-spec-inner2">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-2"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-3col-spec-inner3">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-3"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+			</div>
+			</pre>
+
+
+
+			<p class="name-h">mod-4col-spec ヘッダーぶちぬき用</p>
+			<div class="mod-4col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+			<div class="mod-4col-spec-inner">
+			<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-4col-spec-inner2">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-4col-spec-inner3">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-4col-spec-inner4">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+			</div>
+			<pre class="brush:xml">
+			<div class="mod-4col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+			<div class="mod-4col-spec-inner">
+			<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-4col-spec-inner2">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-4col-spec-inner3">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+				<div class="mod-4col-spec-inner4">
+				<div class="mod-title6">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+			</div>
+			</div>
+			</div>
+			</pre>
+
+
+			<p class="name-h">mod-4col-spec2 特徴アイコンつき</p>
+			<div class="mod-4col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+				<div class="mod-4col-spec-inner">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-1"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner2">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-2"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner3">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-3"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner4">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-4"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+			</div>
+			<pre class="brush:xml">
+			<div class="mod-4col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+				<div class="mod-4col-spec-inner">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-1"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner2">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-2"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner3">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-3"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner4">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon1-4"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+			</div>
+			</pre>
+
+
+
+			<p class="name-h">mod-4col-spec3 理由アイコンつき</p>
+			<div class="mod-4col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+				<div class="mod-4col-spec-inner">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-1"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner2">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-2"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner3">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-3"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner4">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-4"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+			</div>
+			<pre class="brush:xml">
+			<div class="mod-4col-spec" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">
+				<div class="mod-4col-spec-inner">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-1"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner2">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-2"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner3">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-3"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+				</div>
+				<div class="mod-4col-spec-inner4">
+				<div class="mod-col-spec-box">
+					<div class="mod-col-spec-icon2-4"></div>
+					<div class="mod-title7">
+					<p class="mod-title-inner" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">なるべく削らず歯を残す</p>
+					<p class="mod-title-inner2" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">虫歯治療</p>
+					<p class="mod-title-inner3" data-cms-editable="text" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="ラベル" data-cms-switchable-use="true">caries Treatment</p>
+					</div>
+				</div>
+			</div>
+			</pre>
+
+		</div><!-- /area-header-inner -->
+	</header><!-- /area-header -->
+
+	<div class="area-container">
+
+		<div class="area-main">
+			<div class="area-main-inner">
+
+
+
+			</div><!-- /div.area-main-inner -->
+		</div><!-- /div.area-main -->
+
+		<div class="area-side-left">
+			<div class="area-side-left-inner">
+
+			</div><!-- //area-side-left-inner -->
+		</div><!-- //area-side-left -->
+
+	</div><!-- //area-container -->
+
+	<footer class="area-footer">
+			<div class="area-footer-inner">
+
+
+
+		</div><!-- /area-footer-inner -->
+	</footer><!-- /area-footer -->
+
+</div><!--//area-all-->
+</body>
+</html>

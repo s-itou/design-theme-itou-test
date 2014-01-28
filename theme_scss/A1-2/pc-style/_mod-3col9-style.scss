@@ -1,0 +1,42 @@
+@mixin mod-3col9-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 54) / 3);
+    margin-right: 27px;
+    .mod-3col-inner-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 54) / 3);
+    margin-right: 27px;
+    .mod-3col-inner2-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 54) / 3);
+    .mod-3col-inner3-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}

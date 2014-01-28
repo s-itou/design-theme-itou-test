@@ -1,0 +1,991 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-form
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————block-style—————————
+@mixin block-style-mod-form-button-common {
+  @include border-radius();
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  background-repeat: repeat-x;
+  @include text-shadow(1px 1px 1px #ffffff);
+}
+@mixin block-style-mod-form-button-deco {
+  background-image: url("img/mod-form/bg06.png");
+  background-color: #ced3d9;//ブラウザのデフォルトスタイル解除
+  border: 1px solid #a5a8ad;//ブラウザのデフォルトスタイル解除
+  color: #333333;
+  &:hover {
+    border: 1px solid #a5caff;
+    background-color: #cee4ff;
+    background-image: url("img/mod-form/bg07.png");
+    color: #334766;
+  }
+  &:active {
+    border: 1px solid #7a828f;
+    background-color: #98a3b3;
+    background-image: url("img/mod-form/bg08.png");
+  }
+}
+//—————————common-style—————————
+@mixin common-style-mod-form {
+  margin: 30px 0 0 0;
+  .mod-form-items {
+    @include box-sizing(border-box);
+    display: table;
+    margin: 0 auto 15px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .mod-form-item {
+    @include box-sizing(border-box);
+    display: table-row;
+    width: 100%;
+    .mod-form-label {
+      @include box-sizing(border-box);
+      display: table-cell;
+      padding: 0 15px 0 15px;
+      width: 240px;
+      vertical-align: middle;
+      word-break: break-word;
+    }
+    .mod-form-required {
+      @include border-radius(3px);
+      display: inline-block;
+      margin: 0 0 0 8px;
+      padding: 3px 0 2px 0;
+      width: 32px;
+      text-align: center;
+      font-size: 11px;
+    }
+    .mod-form-part {
+      @include box-sizing(border-box);
+      display: table-cell;
+      padding: 10px 15px 10px 15px;
+      vertical-align: middle;
+      input[type="text"] {
+        @include box-sizing(border-box);
+        width: 200px;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        li {
+          display: inline;
+          input[type="radio"] {
+            margin: 0 4px 0 0;
+          }
+          + li > input[type="radio"] {
+            margin: 0 0 0 6px;
+          }
+          input[type="checkbox"] {
+            margin: 5px 4px 5px 0;
+          }
+          + li > input[type="checkbox"] {
+            margin: 0 0 0 6px;
+          }
+        }
+      }
+      &.ex-vertical ul {
+        li {
+          display: block;
+          + li > input[type="radio"] {
+            margin: 0;
+          }
+          + li > input[type="checkbox"] {
+            margin: 0;
+          }
+        }
+      }
+      select {
+        margin: 5px　0 5px 0;
+        width: 96px;
+      }
+      textarea {
+        width: 310px;
+        height: 95px;
+        resize: vertical;
+      }
+      .mod-form-description {
+        margin: 5px 0 0 0;
+        color: #666666;
+        word-break: break-word;
+        font-size: 11px;
+      }
+    }
+  }
+  .mod-form-submit {
+    margin: 0 auto 0 auto;
+    width: 300px;
+    .mod-form-submit-button {
+      margin: 0 auto 10px auto;
+      width: 162px;
+      input {
+        width: 162px;
+        min-height: 30px;
+        @include block-style-mod-form-button-common;
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+        }
+      }
+    }
+    .mod-form-confirm-button {
+      margin: 0 auto 0 auto;
+      width: 197px;
+      .mod-form-edit {
+        width: 86px;
+        min-height: 30px;
+        margin: 0 20px 0 0;
+        @include block-style-mod-form-button-common;
+        &:hover {
+          //cursor: pointer;
+        }
+      }
+      .mod-form-send {
+        width: 86px;
+        min-height: 30px;
+        @include block-style-mod-form-button-common;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .mod-form-submit-footer {
+      margin: 5px 0 0 0;
+      font-size: 11px;
+    }
+  }
+}
+//—————————module-style—————————
+//none
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #ddd9d0;
+    background-color: transparent;
+    .mod-form-label {
+      border: 1px solid #ddd9d0;
+      background-color: transparent;
+      background-image: none;
+      color: #333333;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+    .mod-form-part {
+      border: 1px solid #ddd9d0;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+@mixin deco-style01A2-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #b29e3b;
+    background-color: #ffffff;
+    .mod-form-label {
+      border: 1px solid #b29e3b;
+      background-color: #f2e18b;
+      background-image: none;
+      color: #333333;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+    .mod-form-part {
+      border: 1px solid #b29e3b;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+@mixin deco-style01A3-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #f6cd77;
+    background-color: #ffffff;
+    .mod-form-label {
+      border: 1px solid #f6cd77;
+      background-color: #ffdd9d;
+      background-image: none;
+      color: #56534e;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+      color: #ffffff;
+    }
+    .mod-form-part {
+      border: 1px solid #f6cd77;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+@mixin deco-style01B1-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #8aa9e3;
+    background-color: #ffffff;
+    .mod-form-label {
+      border: 1px solid #8aa9e3;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg04.png);
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+      color: #ffffff;
+    }
+    .mod-form-part {
+      border: 1px solid #8aa9e3;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+@mixin deco-style01B2-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #62cad9;
+    background-color: #ffffff;
+    .mod-form-label {
+      border: 1px solid #62cad9;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg04_2.png);
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+      color: #ffffff;
+    }
+    .mod-form-part {
+      border: 1px solid #62cad9;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+@mixin deco-style01B3-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #5ca4de;
+    background-color: #ffffff;
+    .mod-form-label {
+      border: 1px solid #5ca4de;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg04_3.png);
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+      color: #ffffff;
+    }
+    .mod-form-part {
+      border: 1px solid #5ca4de;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+@mixin deco-style01C1-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #ddd9d0;
+    background-color: #ffffff;
+    .mod-form-label {
+      border: 1px solid #ddd9d0;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg05.png);
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+      color: #ffffff;
+    }
+    .mod-form-part {
+      border: 1px solid #ddd9d0;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+@mixin deco-style01C2-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #ddd9d0;
+    background-color: #e3f6f8;
+    .mod-form-label {
+      border: 1px solid #ddd9d0;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg05_2.png);
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #355995;
+      color: #ffffff;
+    }
+    .mod-form-part {
+      border: 1px solid #ddd9d0;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+@mixin deco-style01C3-mod-form {
+  .mod-form-items {
+    border: 1px solid #ddd9d0;
+    background-color: #fffce9;
+  }
+  .mod-form-item {
+    border: 1px solid #ddd9d0;
+    background-color: #fdf6e4;
+    .mod-form-label {
+      border: 1px solid #ddd9d0;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg05_3.png);
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #519dce;
+      color: #ffffff;
+    }
+    .mod-form-part {
+      border: 1px solid #ddd9d0;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: #666666;
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-dl 未完成部品モジュール
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-dl {
+  margin: 20px 0 0 0;
+  display: table;
+  .mod-dl-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      margin-right: 10px !important;
+      float: left;
+    }
+  }
+  .mod-dl-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 20px;
+    > p {
+      padding: 0 0 0 5px;
+    }
+  }
+}
+//—————————module-style—————————
+@mixin module-style-mod-dl {
+  .mod-dl-inner2 {
+    > p {
+      font-size: $fontSizeL + 2;
+    }
+  }
+}
+@mixin module-style-mod-dl-adobe {
+  .mod-dl-inner2 {
+    > p {
+      font-size: $fontSizeM;
+    }
+  }
+}
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+
+@mixin deco-style01C1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-login 部品はないが必要な記述
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-login {
+  padding-top: 5px;
+  font-size: $fontSizeS;
+  text-align: right;
+  a {
+    color: #335a93;
+  }
+}
+//—————————module-style—————————
+//none
+//—————————deco-style—————————
+//none
+
+
+
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// // mod-card 後にsetになる
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// //—————————common-style—————————
+// @mixin common-style-mod-card {
+//   @extend %cf;
+//   width: 100%;
+//   margin: 15px 0 0 0;
+//   padding: 10px 7px 10px 7px;
+//   > p:first-child {
+//     margin-left: 0 !important;
+//   }
+// }
+// //—————————module-style—————————
+// //none
+// //—————————deco-style—————————
+// @mixin deco-style01A1-mod-card {
+//   border: 3px double #c9e0ff;
+// }
+// @mixin deco-style01A2-mod-card {
+//   border: 3px double #426ca6;
+// }
+// @mixin deco-style01A3-mod-card {
+//   border: 3px double #519dce;
+// }
+// @mixin deco-style01B1-mod-card {
+//   border: 3px double #f1d128;
+// }
+// @mixin deco-style01B2-mod-card {
+//   border: 3px double #F1D128;
+// }
+// @mixin deco-style01B3-mod-card {
+//   border: 3px double #FF994C;
+// }
+// @mixin deco-style01C1-mod-card {
+//   border: 1px dotted #c9e0ff;
+// }
+// @mixin deco-style01C2-mod-card {
+//   border: 1px dotted #f2d028;
+// }
+// @mixin deco-style01C3-mod-card {
+//   border: 1px dotted #ffa658;
+// }
+
+// // mod-copy の mixin一式
+// // new parts have this module?
+// @mixin mod-copy-common-style {
+//   width: 100%;
+//   margin-top: 0;
+//   padding: 5px 0 5px 0;
+//   border: none;
+//   background-color: transparent;
+//   background-repeat: repeat-y;
+//   background-position: left top;
+//   text-align: center;
+//   .mod-copy-inner {
+//     margin: 0;
+//     background-color: transparent;
+//     background-image: none;
+//     .mod-copy-inner2 {
+//       margin: 0;
+//       background-image: none;
+//       p {
+//         font-size: $fontSizeL + 10;
+//         font-weight: bold;
+//         line-height: 1.2;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01A1-mod-copy {
+//   background-image: url(img/mod-copy/_01/bg_a.png);
+//   .mod-copy-inner {
+//     .mod-copy-inner2 {
+//       p {
+//         color: #2e7feb;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01A2-mod-copy {
+//   background-image: url(img/mod-copy/_01/bg_a_2.png);
+//   .mod-copy-inner {
+//     .mod-copy-inner2 {
+//       p {
+//         color: #274c7e;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01A3-mod-copy {
+//   background-image: url(img/mod-copy/_01/bg_a_3.png);
+//   .mod-copy-inner {
+//     .mod-copy-inner2 {
+//       p {
+//         color: #3d2612;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01B1-mod-copy {
+//   border: 1px solid #2e4a72;
+//   background-color: #2e4a72;
+//   background-image: none;
+//   text-align: center;
+//   .mod-copy-inner {
+//     margin-left: 4px;
+//     background-image: url(img/mod-copy/_01/bg_b.png);
+//     background-repeat: no-repeat;
+//     background-position: left center;
+//     .mod-copy-inner2 {
+//       margin-right: 4px;
+//       background-image: url(img/mod-copy/_01/bg02_b.png);
+//       background-repeat: no-repeat;
+//       background-position: right center;
+//       p {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01B2-mod-copy {
+//   border: 1px solid #c7e9ee;
+//   background-color: #418189;
+//   background-image: none;
+//   text-align: center;
+//   .mod-copy-inner {
+//     margin-left: 4px;
+//     background-image: url(img/mod-copy/_01/bg_b_2.png);
+//     background-repeat: no-repeat;
+//     background-position: left center;
+//     .mod-copy-inner2 {
+//       margin-right: 4px;
+//       background-image: url(img/mod-copy/_01/bg02_b_2.png);
+//       background-repeat: no-repeat;
+//       background-position: right center;
+//       p {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01B3-mod-copy {
+//   border: 1px solid #fde082;
+//   background-color: #fcf1c2;
+//   background-image: none;
+//   text-align: center;
+//   .mod-copy-inner {
+//     margin-left: 4px;
+//     background-image: url(img/mod-copy/_01/bg_b_3.png);
+//     background-repeat: no-repeat;
+//     background-position: left center;
+//     .mod-copy-inner2 {
+//       margin-right: 4px;
+//       background-image: url(img/mod-copy/_01/bg02_b_3.png);
+//       background-repeat: no-repeat;
+//       background-position: right center;
+//       p {
+//         color: #443308;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01C1-mod-copy {
+//   padding: 5px;
+//   background-image: url(img/mod-copy/_01/bg_c.png);
+//   background-repeat: repeat;
+//   background-position: left top;
+//   .mod-copy-inner {
+//     padding: 10px;
+//     background-color: #5596f6;
+//     .mod-copy-inner2 {
+//       p {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01C2-mod-copy {
+//   padding: 5px;
+//   background-image: url(img/mod-copy/_01/bg_c_2.png);
+//   background-repeat: repeat;
+//   background-position: left top;
+//   .mod-copy-inner {
+//     padding: 10px;
+//     background-color: #fcf4c6;
+//     .mod-copy-inner2 {
+//       p {
+//         color: #42330a;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01C3-mod-copy {
+//   padding: 5px;
+//   background-image: url(img/mod-copy/_01/bg_c_3.png);
+//   background-repeat: repeat;
+//   background-position: left top;
+//   .mod-copy-inner {
+//     padding: 10px;
+//     background-color: #f27f1b;
+//     .mod-copy-inner2 {
+//       p {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+
+
+// //  mod-copy2 の mixin一式
+// @mixin mod-copy2-common-style {
+//   width: 100%;
+//   text-align: center;
+// }
+// @mixin mod-copy2-style {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_a.png");
+//   background-repeat: no-repeat;
+//   background-position: center bottom;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #5596f6;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style2 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_a_2.png");
+//   background-repeat: no-repeat;
+//   background-position: center bottom;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #274c7e;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style3 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_a_3.png");
+//   background-repeat: no-repeat;
+//   background-position: center bottom;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #f59c1c;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style4 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_b.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style5 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_b_2.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style6 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_b_3.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style7 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_c.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style8 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_c_2.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style9 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_c_3.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+
+

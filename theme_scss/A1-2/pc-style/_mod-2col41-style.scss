@@ -1,0 +1,42 @@
+@mixin mod-2col41-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      @if $layoutCode == "L25" or $layoutCode == "R25" {
+        width: 287px;
+      } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+        width: 260px;
+      }
+      .mod-2col-inner-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      @if $layoutCode == "L25" or $layoutCode == "R25" {
+        width: 287px;
+      } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+        width: 260px;
+      }
+      margin-left: 20px;
+       .mod-2col-inner2-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin mod-2col41-style {
+  //none;
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+//旧方式のコピーのため要改修
+
+//////////////////////////////////////////////////
+//  BLOCK-STYLE
+@mixin block-style-mod-img-hover {
+  a {
+    text-decoration: none;
+    &:hover {
+      opacity: 0.80;
+      -ms-filter: "alpha(opacity=80)";
+    }
+  }
+}
+
+//##################################################
+//  mod-image
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-img {
+  margin-top: 10px !important;
+  text-align: center;
+  img {
+    max-width: 300px;
+    width: 100%;
+  }
+  .ex-imgSize_L & {
+    img {
+      width: 90%;
+    }
+  }
+  .ex-imgSize_M & {
+    img {
+      width: 80%;
+    }
+  }
+  .ex-imgSize_S & {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-img {}

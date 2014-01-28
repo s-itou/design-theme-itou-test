@@ -1,0 +1,847 @@
+@charset "UTF-8";
+// -------------------------------------
+// mod-set-design の共通定義
+// -------------------------------------
+
+// --------------------------------------------------------------------------
+// mod-set-design
+// --------------------------------------------------------------------------
+@mixin common-style-mod-set-design {
+  //業務チームから見出し等がSWでoffになっても最低限この余白をとるようとの依頼
+  margin: 20px 0 0;
+}
+// --------------------------------------------------------------------------
+// mod-set-design2
+// --------------------------------------------------------------------------
+@mixin common-style-mod-set-design2 {
+  //業務チームから見出し等がSWでoffになっても最低限この余白をとるようとの依頼
+  margin: 30px 0 0;
+}
+
+
+// --------------------------------------------------------------------------
+// mod-set-design3
+// --------------------------------------------------------------------------
+@mixin common-style-mod-set-design3 {
+  .mod-box-inner2 {
+    > .ex-first-child {
+     margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+@mixin module-style-mod-set-design3 {
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin-left: 20px;
+      padding-left: 15px;
+      background-position: left 5px;
+    }
+  }
+}
+
+@mixin module-style-mod-set-design-2col {
+  .mod-box_ver2 {
+    margin: 0;
+  }
+  .mod-2col-wrap {
+    > .mod-2col-inner {
+      min-width: floor(($mainWidth - 10) / 2);
+    }
+    > .mod-2col-inner2 {
+      min-width: floor((($mainWidth - 10) / 2) + 10);
+      border-left: 10px solid #ffffff;
+      margin: 0;
+    }
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      display: table-cell;
+      position: relative;
+      > .mod-2col-inner-2, > .mod-2col-inner2-2 {
+        > .mod-2col-inner-3, > .mod-2col-inner2-3 {
+          > .mod-box_ver2 {
+            margin: 0;
+            > .ex-first-child {
+              margin-top: 0 !important;
+               > .ex-first-child {
+                margin-top: 0 !important;
+              }
+            }
+            > .mod-2col_ver2 > .mod-2col-inner,
+            > .mod-2col_ver2 > .mod-2col-inner2 {
+              > .ex-first-child {
+                margin-top: 0 !important;
+                 > .ex-first-child {
+                  margin-top: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &:first-child.mod-2col-inner2 {
+      border: none;
+    }
+    div[data-cms-switchable="false"] + .mod-2col-inner2 {//編集画面上,公開画面
+      border: none;
+    }
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin-left: 5px !important;// カラム指定方が階層深いため
+      padding-left: 15px;
+      background-position: left 5px;
+      font-size: $fontSizeM - 1;
+    }
+  }
+}
+
+
+
+
+@mixin deco-style01A1-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 15px 10px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(5px 0 0 5px);
+    margin: 0;
+    background-color: transparent;
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+      max-height: 47px;
+      background-position: 10px 8px;
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+@mixin deco-style01A2-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 15px 10px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(5px 0 0 5px);
+    margin: 0;
+    background-color: transparent;
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+      max-height: 47px;
+      border: 1px solid #fdf8da;
+      background-position: 10px 8px;
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+@mixin deco-style01A3-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 15px 10px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(5px 0 0 5px);
+    margin: 0;
+    background-color: transparent;
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+      max-height: 47px;
+      background-position: 10px 8px;
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+@mixin deco-style01B1-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 30px 20px 25px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    li {
+      color: #ffffff;
+      background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    color: #ffffff;
+    > p {
+      background-image: url("img/_mod/set-design3/link/bg_b_1.png");
+    }
+  }
+  a {
+    color: #ffffff;
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+      max-height: 47px;
+      background-position: 10px 6px;
+      background-image: url("img/_mod/set-design3/bnr/bg.png");
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+@mixin deco-style01B2-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 30px 20px 25px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    li {
+      color: #ffffff;
+      background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    color: #ffffff;
+    > p {
+      background-image: url("img/_mod/set-design3/link/bg_b_2.png");
+    }
+  }
+  a {
+    color: #ffffff;
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+      max-height: 47px;
+      background-position: 10px 6px;
+      background-image: url("img/_mod/set-design3/bnr/bg.png");
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+@mixin deco-style01B3-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 30px 20px 25px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #443308;
+  }
+  .mod-ul_ver2 {
+    li {
+      color: #443308;
+      background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    color: #443308;
+    > p {
+      background-image: url("img/_mod/set-design3/link/bg_b_3.png");
+    }
+  }
+  a {
+    color: #443308;
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+      max-height: 47px;
+      background-position: 10px 6px;
+      background-image: url("img/_mod/set-design3/bnr/bg.png");
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+@mixin deco-style01C1-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_c_1.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+       max-height: 47px;
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+@mixin deco-style01C2-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_c_2.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+       max-height: 47px;
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+@mixin deco-style01C3-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_c_3.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    max-width: 230px;
+    .mod-bnr-inner {
+      padding: 5px 5px 4px 30px;
+       max-height: 47px;
+       p {
+         font-size: 13px;
+       }
+    }
+  }
+}
+
+
+
+
+@mixin deco-style01A1-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      background-color: transparent;
+      padding: 4px 0 2px 7px;
+      .mod-h {
+        font-size: $fontSizeM;
+      }
+    }
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      background-position: 8px 8px;
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    > p {
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin deco-style01A2-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      background-color: transparent;
+      padding: 4px 0 2px 7px;
+      .mod-h {
+        font-size: $fontSizeM;
+      }
+    }
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      background-position: 8px 8px;
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    > p {
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin deco-style01A3-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      background-color: transparent;
+      padding: 4px 0 2px 7px;
+      .mod-h {
+        font-size: $fontSizeM;
+      }
+    }
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      background-position: 8px 8px;
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    > p {
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin deco-style01B1-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      @include border-radius(0px);
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      .mod-h {
+        font-size: $fontSizeM;
+        padding: 0 0 5px 0;
+      }
+    }
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    li {
+      color: #ffffff;
+      background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      background-position: 8px 5px;
+      background-image: url("img/_mod/set-design3/bnr/bg.png");
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    color: #ffffff;
+    > p {
+      background-image: url("img/_mod/set-design3/link/bg_b_1.png");
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin deco-style01B2-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      @include border-radius(0px);
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      .mod-h {
+        font-size: $fontSizeM;
+        padding: 0 0 5px 0;
+      }
+    }
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    li {
+      color: #ffffff;
+      background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      background-position: 8px 5px;
+      background-image: url("img/_mod/set-design3/bnr/bg.png");
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    color: #ffffff;
+    > p {
+      background-image: url("img/_mod/set-design3/link/bg_b_2.png");
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin deco-style01B3-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      @include border-radius(0px);
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      .mod-h {
+        font-size: $fontSizeM;
+        padding: 0 0 5px 0;
+      }
+    }
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #443308;
+  }
+  .mod-ul_ver2 {
+    li {
+      color: #443308;
+      background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      background-position: 8px 5px;
+      background-image: url("img/_mod/set-design3/bnr/bg.png");
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    color: #443308;
+    > p {
+      background-image: url("img/_mod/set-design3/link/bg_b_3.png");
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin deco-style01C1-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      @include border-radius(0px);
+      padding: 0;
+      background-image: none;
+      .mod-h {
+        font-size: $fontSizeM;
+        padding: 0 0 5px 0;
+      }
+    }
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_c_1.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    > p {
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin deco-style01C2-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      @include border-radius(0px);
+      padding: 0;
+      background-image: none;
+      .mod-h {
+        font-size: $fontSizeM;
+        padding: 0 0 5px 0;
+
+      }
+    }
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_c_2.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    > p {
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin deco-style01C3-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      @include border-radius(0px);
+      padding: 0;
+      background-image: none;
+      .mod-h {
+        font-size: $fontSizeM;
+        padding: 0 0 5px 0;
+      }
+    }
+  }
+  .mod-ul_ver2 {
+    li {
+      background-image: url("img/_mod/set-design3/ul/bg_c_3.png");
+    }
+  }
+  .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
+    .mod-bnr-inner {
+      padding: 5px 5px 3px 25px;
+      > p {
+        font-size: $fontSizeM - 2;
+      }
+    }
+  }
+  .mod-link-1st, .mod-link-2nd {
+    > p {
+      padding: 2px 0 0 20px;
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+
+
+
+
+// --------------------------------------------------------------------------
+// mod-set-design4
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// common-style
+// -------------------------------------
+@mixin common-style-mod-set-design4 {
+}
+
+// -------------------------------------
+// module-style
+// -------------------------------------
+@mixin module-style-mod-set-design4-1 {
+  .mod-box_ver2 {
+    margin: 6px 0 0;
+  }
+}
+@mixin module-style-mod-set-design4-2 {
+  .mod-box_ver2 {
+    margin: 14px 0 0;
+  }
+  .mod-rte_ver2 {
+    border-top: 1px dashed #9c9c9c;
+    padding: 15px 0 0;
+    &.ex-first-child {
+      border-top: none;
+      border-bottom: 1px dashed #9c9c9c;
+      padding: 0 0 15px;
+    }
+  }
+  .mod-2col-in1 {
+    .mod-rte_ver2 {
+      border: none;
+      padding: 0;
+    }
+  }
+}
+@mixin module-style-mod-set-design4-3 {
+  .mod-box_ver2 {
+    margin: 0;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(5px);
+    margin: 10px 0 0;
+    padding: 10px;
+    ul {
+      li {
+        margin: 2px 0 0 5px;
+      }
+    }
+  }
+}
+
+
+// -------------------------------------
+// deco-style
+// -------------------------------------
+@mixin deco-style-mod-set-design4-1 {
+}
+@mixin deco-style-mod-set-design4-2 {
+}
+@mixin deco-style-mod-set-design4-3 {
+}
+@mixin deco-style-mod-set-design4-4 {
+}
+@mixin deco-style-mod-set-design4-5 {
+}
+@mixin deco-style-mod-set-design4-6 {
+}
+@mixin deco-style-mod-set-design4-7 {
+}
+@mixin deco-style-mod-set-design4-8 {
+}
+@mixin deco-style-mod-set-design4-9 {
+}
+

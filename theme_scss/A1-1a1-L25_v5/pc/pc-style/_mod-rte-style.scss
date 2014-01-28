@@ -1,0 +1,1445 @@
+@charset "UTF-8";
+
+//  mod-rte の mixin一式
+@mixin mod-rte-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+
+//  mod-rte3 の mixin一式
+@mixin mod-rte3-common-style {
+  text-align: right;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+
+
+//  mod-rte4 の mixin一式
+@mixin mod-rte4-common-style {
+  text-align: center;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte4-style {
+  color: #333333;
+}
+
+@mixin mod-rte4-style2 {
+  color: #56534e;
+}
+
+@mixin mod-rte4-style3 {
+  color: #333333;
+}
+
+@mixin mod-rte4-style4 {
+  color: #443308;
+}
+
+@mixin mod-rte4-style5 {
+  color: #45320b;
+}
+
+
+//  mod-rte5 の mixin一式
+@mixin mod-rte5-common-style {
+  margin-top: 20px;
+  @include border-radius();
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte5-style {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #eff5fe;
+  border: 1px solid #a2c7f9;
+}
+@mixin mod-rte5-style2 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #e8fafa;
+  border: 1px solid #97dfe7;
+}
+
+@mixin mod-rte5-style3 {
+  color: #56534e;
+  padding: 10px 15px;
+  background-color: #e7eef8;
+  border: 1px solid #fdf6e5;
+}
+
+@mixin mod-rte5-style4 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #e7eef8;
+  border: 1px solid #a8bfdc;
+}
+
+@mixin mod-rte5-style5 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #dafafa;
+  border: 1px solid #67ced9;
+}
+
+@mixin mod-rte5-style6 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #fff6e5;
+  border: 1px solid #ffca99;
+}
+
+@mixin mod-rte5-style7 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #fffce9;
+  border: 1px solid #d1c9a4;
+}
+
+@mixin mod-rte5-style8 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #e3f6f8;
+  border: 1px solid #7ed1d9;
+}
+
+@mixin mod-rte5-style9 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #dce9fb;
+  border: 1px solid #c8dffe;
+}
+
+@mixin mod-rte5-style10 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #59bfcd;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style11 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #ffeb84;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style12 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #519dce;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style13 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #f69e3c;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style14 {
+  color: #331f13;
+  padding: 10px 15px;
+  background-color: #f9e89d;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style15 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #FE9D97;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style16 {
+  color: #352111;
+  padding: 15px 15px;
+  background-color: #fffce9;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style17 {
+  color: #294470;
+  padding: 15px 15px;
+  background-color: #e3f6f8;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style18 {
+  color: #45320b;
+  padding: 15px 15px;
+  background-color: #fef6b2;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte5-style19 {
+  color: #331f13;
+  padding: 10px 15px;
+  background-color: #f7de5e;
+  border: 0 none transparent;
+}
+
+
+
+//  mod-rte7 の mixin一式
+@mixin mod-rte7-common-style {
+  padding: 10px;
+  margin-top: 15px;
+  @include border-radius();
+  > p {
+    margin-top: 8px;
+    line-height: 1.5em;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte7-style {
+  border: 1px solid #a2c7f9;
+  background-color: #eff5fe;
+  color: #333333;
+}
+
+@mixin mod-rte7-style2 {
+  border: 1px solid #97dfe7;
+  background-color: #e8fafa;
+  color: #333333;
+}
+
+@mixin mod-rte7-style3 {
+  border: 1px solid #fdf6e5;
+  background-color: #e7eef8;
+  color: #56534e;
+}
+
+@mixin mod-rte7-style4 {
+  border: 1px solid #a8bfdc;
+  background-color: #e7eef8;
+  color: #333333;
+}
+
+@mixin mod-rte7-style5 {
+  border: 1px solid #67ced9;
+  background-color: #dafafa;
+  color: #333333;
+}
+
+@mixin mod-rte7-style6 {
+  border: 1px solid #ffca99;
+  background-color: #fff6e5;
+  color: #333333;
+}
+
+@mixin mod-rte7-style7 {
+  border: 1px solid #d1c9a4;
+  background-color: #fffce9;
+  color: #333333;
+}
+
+@mixin mod-rte7-style8 {
+  border: 1px solid #7ed1d9;
+  background-color: #e3f6f8;
+  color: #45320b;
+}
+
+@mixin mod-rte7-style9 {
+  border: 1px solid #c8dffe;
+  background-color: #dce9fb;
+  color: #45320b;
+}
+
+
+@mixin mod-rte7-style10 {
+  border: 0 none transparent;
+  background-color: #f69e3c;
+  color: #ffffff;
+}
+
+@mixin mod-rte7-style11 {
+  border: 0 none transparent;
+  background-color: #f9e89d;
+  color: #331f13;
+}
+
+@mixin mod-rte7-style12 {
+  border: 0 none transparent;
+  background-color: #FE9D97;
+  color: #ffffff;
+}
+
+
+
+
+//  mod-rte8 の mixin一式
+@mixin mod-rte8-common-style {
+  padding: 10px 10px;
+  margin-top: 20px;
+  @include border-radius();
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte8-style {
+  border: 1px solid #a2c7f9;
+  background-color: #eff5fe;
+  color: #333333;
+}
+
+@mixin mod-rte8-style2 {
+  border: 1px solid #97dfe7;
+  background-color: #e8fafa;
+  color: #333333;
+}
+
+@mixin mod-rte8-style3 {
+  border: 1px solid #fdf6e5;
+  background-color: #e7eef8;
+  color: #56534e;
+}
+
+@mixin mod-rte8-style4 {
+  border: 1px solid #a8bfdc;
+  background-color: #e7eef8;
+  color: #333333;
+}
+
+@mixin mod-rte8-style5 {
+  border: 1px solid #67ced9;
+  background-color: #dafafa;
+  color: #333333;
+}
+
+@mixin mod-rte8-style6 {
+  border: 1px solid #ffca99;
+  background-color: #fff6e5;
+  color: #333333;
+}
+
+@mixin mod-rte8-style7 {
+  border: 1px solid #d1c9a4;
+  background-color: #fffce9;
+  color: #333333;
+}
+
+@mixin mod-rte8-style8 {
+  border: 1px solid #7ed1d9;
+  background-color: #e3f6f8;
+  color: #45320b;
+}
+
+@mixin mod-rte8-style9 {
+  border: 1px solid #c8dffe;
+  background-color: #dce9fb;
+  color: #45320b;
+}
+
+@mixin mod-rte8-style10 {
+  border: 0 none transparent;
+  background-color: #f69e3c;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style11 {
+  border: 0 none transparent;
+  background-color: #f9e89d;
+  color: #331f13;
+}
+
+@mixin mod-rte8-style12 {
+  border: 0 none transparent;
+  background-color: #FE9D97;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style13 {
+  border: 0 none transparent;
+  background-color: #59bfcd;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style14 {
+  border: 0 none transparent;
+  background-color: #ffeb84;
+  color: #333333;
+}
+
+@mixin mod-rte8-style15 {
+  border: 0 none transparent;
+  background-color: #519dce;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  mod-rte9 の mixin一式
+@mixin mod-rte9-common-style {
+  padding: 15px 15px;
+  margin-top: 20px;
+  @include border-radius();
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte9-style {
+  border: 0 none transparent;
+  background-color: #fffce9;
+  color: #352111;
+}
+
+
+@mixin mod-rte9-style2 {
+  border: 0 none transparent;
+  background-color: #e3f6f8;
+  color: #294470;
+}
+
+@mixin mod-rte9-style3 {
+  border: 0 none transparent;
+  background-color: #fef6b2;
+  color: #45320b;
+}
+
+@mixin mod-rte9-style4 {
+  border: 0 none transparent;
+  background-color: #f7de5e;
+  color: #331f13;
+}
+
+@mixin mod-rte9-style5 {
+  border: 0 none transparent;
+  background-color: #f9e89d;
+  color: #331f13;
+}
+
+@mixin mod-rte9-style6 {
+  border: 1px solid #5596f6;
+  background-color: #c8dffe;
+  color: #352111;
+}
+
+@mixin mod-rte9-style7 {
+  border: 1px solid #f2d028;
+  background-color: #fef8da;
+  color: #352111;
+}
+
+@mixin mod-rte9-style8 {
+  border: 1px solid #f79316;
+  background-color: #ffe9d6;
+  color: #352111;
+}
+
+
+//  mod-rte10 の mixin一式
+@mixin mod-rte10-common-style {
+  @include border-radius();
+  padding: 10px 10px;
+  margin-top: 20px;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte10-style {
+  color: #352111;
+  background-color: #fffce9;
+  border: 0 none transparent;
+}
+
+
+@mixin mod-rte10-style2 {
+  color: #294470;
+  background-color: #e3f6f8;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte10-style3 {
+  color: #45320b;
+  background-color: #fef6b2;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte10-style4 {
+  color: #331f13;
+  background-color: #f7de5e;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte10-style5 {
+  color: #331f13;
+  background-color: #f9e89d;
+  border: 0 none transparent;
+}
+
+@mixin mod-rte10-style6 {
+  color: #352111;
+  background-color: #c8dffe;
+  border: 1px solid #5596f6;
+}
+
+@mixin mod-rte10-style7 {
+  color: #352111;
+  background-color: #fef8da;
+  border: 1px solid #f2d028;
+}
+
+@mixin mod-rte10-style8 {
+  color: #352111;
+  background-color: #ffe9d6;
+  border: 1px solid #f79316;
+}
+
+
+//  mod-rte11 の mixin一式
+@mixin mod-rte11-common-style {
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+
+//  mod-rte12 の mixin一式
+@mixin mod-rte12-common-style {
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte12-style {
+  color: #333333;
+}
+
+@mixin mod-rte12-style2 {
+  color: #56534e;
+}
+
+@mixin mod-rte12-style3 {
+  color: #ffffff;
+}
+
+@mixin mod-rte12-style4 {
+  color: #443308;
+}
+
+
+@mixin mod-rte12-style5 {
+  color: #45320b;
+}
+
+
+//  mod-rte13 の mixin一式
+@mixin mod-rte13-common-style {
+  text-align: right;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte13-style {
+  color: #333333;
+}
+
+
+@mixin mod-rte13-style2 {
+  color: #56534e;
+}
+
+@mixin mod-rte13-style3 {
+  color: #333333;
+}
+
+@mixin mod-rte13-style4 {
+  color: #443308;
+}
+
+@mixin mod-rte13-style5 {
+  color: #45320b;
+}
+
+
+//  mod-rte14 の mixin一式
+@mixin mod-rte14-common-style {
+ margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte15 の mixin一式
+@mixin mod-rte15-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte16 の mixin一式
+@mixin mod-rte16-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-rte16-style {
+  color: #333333;
+}
+@mixin mod-rte16-style2 {
+  color: #333333;
+}
+@mixin mod-rte16-style3 {
+  color: #56534e;
+}
+@mixin mod-rte16-style4 {
+  color: #ffffff;
+}
+@mixin mod-rte16-style5 {
+  color: #ffffff;
+}
+@mixin mod-rte16-style6 {
+  color: #ffffff;
+}
+@mixin mod-rte16-style7 {
+  color: #333333;
+}
+@mixin mod-rte16-style8 {
+  color: #333333;
+}
+@mixin mod-rte16-style9 {
+  color: #45320b;
+}
+
+
+//  mod-rte17 の mixin一式
+@mixin mod-rte17-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte18 の mixin一式
+@mixin mod-rte18-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte19 の mixin一式
+@mixin mod-rte19-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte20 の mixin一式
+@mixin mod-rte20-common-style {
+  margin-top: 15px;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte21 の mixin一式
+@mixin mod-rte21-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte22 の mixin一式
+@mixin mod-rte22-common-style {
+  margin-top: 15px;
+  > p {
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte23 の mixin一式
+@mixin mod-rte23-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte24 の mixin一式
+@mixin mod-rte24-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+
+//  mod-rte25 の mixin一式
+@mixin mod-rte25-common-style {
+  margin-top: 15px;
+  > p {
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+
+//  mod-rte26 の mixin一式
+@mixin mod-rte26-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte26-style {
+  margin-left: 67px;
+}
+@mixin mod-rte26-style2 {
+  margin-left: 45px;
+}
+@mixin mod-rte26-style3 {
+  margin-left: 50px;
+}
+
+
+
+
+//  mod-rte27 の mixin一式
+@mixin mod-rte27-common-style {
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte28 の mixin一式
+@mixin mod-rte28-common-style {
+  margin-top: 10px;
+  font-weight: bold;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-rte28-style {
+  color: #45320b;
+}
+@mixin mod-rte28-style2 {
+  color: #172846;
+}
+@mixin mod-rte28-style3 {
+  color: #333333;
+}
+@mixin mod-rte28-style4 {
+  color: #333333;
+}
+@mixin mod-rte28-style5 {
+  color: #333333;
+}
+@mixin mod-rte28-style6 {
+  color: #333333;
+}
+@mixin mod-rte28-style7 {
+  color: #426ca6;
+}
+@mixin mod-rte28-style8 {
+  color: #45320b;
+}
+@mixin mod-rte28-style9 {
+  color: #333333;
+}
+
+
+//  mod-rte29 の mixin一式
+@mixin mod-rte29-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-rte29-style {
+  text-align: center;
+}
+
+//  mod-rte30 の mixin一式
+@mixin mod-rte30-common-style {
+  margin-top: 10px;
+  > p {
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte31 の mixin一式
+@mixin mod-rte31-common-style {
+  margin-top: 15px;
+  text-align: center;
+  font-size: $fontSizeL;
+  > p {
+    margin-top: 15px;
+    line-height: 1.3;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-rte31-style {
+  color: #f27f1b;
+}
+@mixin mod-rte31-style2 {
+  color: #d1b422;
+}
+@mixin mod-rte31-style3 {
+  color: #5596f6;
+}
+@mixin mod-rte31-style4 {
+  color: #f16d0b;
+}
+@mixin mod-rte31-style5 {
+  color: #f16d0b;
+}
+@mixin mod-rte31-style6 {
+  color: #f16d0b;
+}
+@mixin mod-rte31-style7 {
+  color: #333333;
+}
+@mixin mod-rte31-style8 {
+  color: #333333;
+}
+@mixin mod-rte31-style9 {
+  color: #333333;
+}
+
+//  mod-rte32 の mixin一式
+@mixin mod-rte32-common-style {
+  margin-top: 15px;
+  text-align: center;
+  font-size: $fontSizeL + 2;
+  > p {
+    margin-top: 15px;
+    line-height: 1.3;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-rte32-style {
+  color: #333333;
+}
+@mixin mod-rte32-style2 {
+  color: #452305;
+}
+@mixin mod-rte32-style3 {
+  color: #452305;
+}
+@mixin mod-rte32-style4 {
+  color: #222222;
+}
+@mixin mod-rte32-style5 {
+  color: #222222;
+}
+@mixin mod-rte32-style6 {
+  color: #222222;
+}
+@mixin mod-rte32-style7 {
+  color: #f16d0b;
+}
+@mixin mod-rte32-style8 {
+  color: #365897;
+}
+@mixin mod-rte32-style9 {
+  color: #f16d0b;
+}
+
+//  mod-rte33 の mixin一式
+@mixin mod-rte33-common-style {
+  margin-top: 30px;
+  width: 395px;
+  margin-left: auto;
+  margin-right: auto;
+  // padding: 1px 0 1px;
+  .mod-rte-inner {
+    padding: 10px 15px 10px;
+    font-size: 13px;
+      .mod-rte-inner2 {
+      > p {
+        margin-top: 15px;
+        line-height: 1.6;
+      }
+      > p:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+@mixin mod-rte33-style {
+  border-top: 2px dotted #5596f6;
+  border-bottom: 2px dotted #5596f6;
+  padding: 1px 0 1px;
+  color: #4f4f4f;
+}
+@mixin mod-rte33-style2 {
+  border-top: 2px dotted #d1b422;
+  border-bottom: 2px dotted #d1b422;
+  padding: 1px 0 1px;
+  color: #4f4f4f;
+}
+@mixin mod-rte33-style3 {
+  border-top: 2px dotted #ffc38d;
+  border-bottom: 2px dotted #ffc38d;
+  padding: 1px 0 1px;
+  color: #4f4f4f;
+}
+@mixin mod-rte33-style4 {
+  border-top: 3px double #16305f;
+  border-bottom: 3px double #16305f;
+  color: #333333;
+}
+@mixin mod-rte33-style5 {
+  border-top: 3px double #16305f;
+  border-bottom: 3px double #16305f;
+  color: #333333;
+}
+@mixin mod-rte33-style6 {
+  border-top: 3px double #16305f;
+  border-bottom: 3px double #16305f;
+  color: #333333;
+}
+@mixin mod-rte33-style7 {
+  border-top: 3px double #331b07;
+  border-bottom: 3px double #331b07;
+  color: #333333;
+}
+@mixin mod-rte33-style8 {
+  border-top: 3px double #bea31f;
+  border-bottom: 3px double #bea31f;
+  color: #333333;
+}
+@mixin mod-rte33-style9 {
+  border-top: 3px double #331b07;
+  border-bottom: 3px double #331b07;
+  color: #333333;
+}
+
+@mixin mod-rte34-common-style {
+  margin-top: 40px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+
+//  mod-rte35 の mixin一式
+@mixin mod-rte35-common-style {
+  margin-top: 10px;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte36 の mixin一式
+@mixin mod-rte36-common-style {
+  text-align: left;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+//  mod-rte37 の mixin一式
+@mixin mod-rte37-common-style {
+  margin-top: 10px;
+  font-weight: bold;
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte37-style {
+  color: #45320b;
+}
+@mixin mod-rte37-style2 {
+  color: #172846;
+}
+@mixin mod-rte37-style3 {
+  font-weight: bold;
+  color: #333333;
+}
+@mixin mod-rte37-style4 {
+  color: #333333;
+}
+@mixin mod-rte37-style5 {
+  color: #333333;
+}
+@mixin mod-rte37-style6 {
+  color: #333333;
+}
+@mixin mod-rte37-style7 {
+  color: #426ca6;
+}
+@mixin mod-rte37-style8 {
+  color: #45320b;
+}
+@mixin mod-rte37-style9 {
+  color: #333333;
+}
+
+//  mod-rte38 の mixin一式
+@mixin mod-rte38-common-style {
+  margin-top: 10px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+
+//  mod-text の mixin一式
+@mixin mod-text-common-style {
+  font-size: $fontSizeS + 1;
+  margin-top: 10px !important;
+}
+
+
+
+//  mod-text2 の mixin一式
+@mixin mod-text2-common-style {
+  font-size: $fontSizeS + 1;
+}
+
+@mixin mod-text2-style {
+  color: #333333;
+}
+@mixin mod-text2-style2 {
+  color: #333333;
+}
+@mixin mod-text2-style3 {
+  color: #333333;
+}
+@mixin mod-text2-style4 {
+  color: #ffffff;
+}
+@mixin mod-text2-style5 {
+  color: #ffffff;
+}
+@mixin mod-text2-style6 {
+  color: #77590e;
+}
+@mixin mod-text2-style7 {
+  color: #333333;
+}
+@mixin mod-text2-style8 {
+  color: #333333;
+}
+@mixin mod-text2-style9 {
+  color: #333333;
+}
+
+//  mod-text3 の mixin一式
+@mixin mod-text3-common-style {
+  font-size: $fontSizeS + 1;
+  margin-top: 10px !important;
+}
+
+//  mod-text4 の mixin一式
+@mixin mod-text4-common-style {
+  font-size: $fontSizeS + 1;
+  text-align: center;
+  margin-top: 10px !important;
+}
+
+
+
+//  mod-text5 の mixin一式
+@mixin mod-text5-common-style {
+  margin-top: 10px;
+}
+
+@mixin mod-text5-style {
+  color: #333333;
+}
+
+@mixin mod-text5-style2 {
+  color: #56534e;
+}
+
+@mixin mod-text5-style3 {
+  color: #ffffff;
+}
+
+@mixin mod-text5-style4 {
+  color: #443308;
+}
+
+@mixin mod-text5-style5 {
+  color: #45320b;
+}
+
+
+//  mod-text6 の mixin一式
+@mixin mod-text6-common-style {
+  font-size: $fontSizeS + 1;
+  margin-top: 5px !important;
+}
+
+
+//  mod-text7 の mixin一式
+@mixin mod-text7-common-style {
+  font-size: $fontSizeS + 1;
+}
+
+
+//  mod-text9 の mixin一式
+@mixin mod-text9-common-style {
+  color: #ffffff;
+  font-size: $fontSizeM - 2;
+}
+
+//  mod-text17 の mixin一式
+@mixin mod-text17-common-style {
+  text-align: center;
+}
+
+
+//  mod-text18 の mixin一式
+@mixin mod-text18-common-style {
+  margin-top: 10px !important;
+  font-size: $sideFontSizeL - 1;
+  font-weight: bold;
+}
+
+@mixin mod-text18-style {
+  color: #333333;
+}
+
+@mixin mod-text18-style2 {
+  color: #56534e;
+}
+
+//  mod-text19 の mixin一式
+@mixin mod-text19-common-style {
+  text-align: center;
+}
+
+@mixin mod-text19-style {
+  color: #ffffff;
+}
+
+
+
+//  mod-text20 の mixin一式
+@mixin mod-text20-common-style {
+  text-align: center;
+}
+
+@mixin mod-text20-style {
+  color: #333333;
+}
+
+//  mod-text21 の mixin一式
+@mixin mod-text21-common-style {
+  text-align: center;
+  font-size: 13px;
+}
+
+@mixin mod-text21-style {
+  color: #333333;
+}
+
+//  mod-text22 の mixin一式
+@mixin mod-text22-common-style {
+  font-size: $fontSizeS - 1;
+  text-align: center;
+}
+
+@mixin mod-text22-style {
+  color: #ffffff;
+}
+
+//  mod-text23 の mixin一式
+@mixin mod-text23-common-style {
+  margin-top: 5px !important;
+  font-size: $fontSizeS + 1;
+}
+@mixin mod-text23-style {
+  color: #333333;
+}
+@mixin mod-text23-style2 {
+  color: #333333;
+}
+@mixin mod-text23-style3 {
+  color: #333333;
+}
+@mixin mod-text23-style4 {
+  color: #ffffff;
+}
+@mixin mod-text23-style5 {
+  color: #ffffff;
+}
+@mixin mod-text23-style6 {
+  color: #77590e;
+}
+@mixin mod-text23-style7 {
+  color: #333333;
+}
+@mixin mod-text23-style8 {
+  color: #333333;
+}
+@mixin mod-text23-style9 {
+  color: #333333;
+}
+
+//  mod-text24 の mixin一式
+@mixin mod-text24-common-style {
+  margin-top: 5px !important;
+  font-size: $fontSizeS + 1;
+  font-weight: bold;
+}
+@mixin mod-text24-style {
+  color: #333333;
+}
+@mixin mod-text24-style2 {
+  color: #333333;
+}
+@mixin mod-text24-style3 {
+  color: #333333;
+}
+@mixin mod-text24-style4 {
+  color: #ffffff;
+}
+@mixin mod-text24-style5 {
+  color: #ffffff;
+}
+@mixin mod-text24-style6 {
+  color: #443308;
+}
+@mixin mod-text24-style7 {
+  color: #333333;
+}
+@mixin mod-text24-style8 {
+  color: #333333;
+}
+@mixin mod-text24-style9 {
+  color: #333333;
+}
+
+
+//  mod-text25 の mixin一式
+@mixin mod-text25-common-style {
+  margin-top: 5px !important;
+  font-size: $fontSizeS + 1;
+}
+@mixin mod-text25-style {
+  color: #333333;
+}
+@mixin mod-text25-style2 {
+  color: #333333;
+}
+@mixin mod-text25-style3 {
+  color: #333333;
+}
+@mixin mod-text25-style4 {
+  color: #ffffff;
+}
+@mixin mod-text25-style5 {
+  color: #ffffff;
+}
+@mixin mod-text25-style6 {
+  color: #443308;
+}
+@mixin mod-text25-style7 {
+  color: #333333;
+}
+@mixin mod-text25-style8 {
+  color: #333333;
+}
+@mixin mod-text25-style9 {
+  color: #333333;
+}
+
+//  mod-text2 の mixin一式
+@mixin mod-text26-common-style {
+  font-size: $fontSizeS + 1;
+}
+@mixin mod-text26-style {
+  color: #333333;
+}
+@mixin mod-text26-style2 {
+  color: #333333;
+}
+@mixin mod-text26-style3 {
+  color: #333333;
+}
+@mixin mod-text26-style4 {
+  color: #ffffff;
+}
+@mixin mod-text26-style5 {
+  color: #ffffff;
+}
+@mixin mod-text26-style6 {
+  color: #443308;
+}
+@mixin mod-text26-style7 {
+  color: #333333;
+}
+@mixin mod-text26-style8 {
+  color: #333333;
+}
+@mixin mod-text26-style9 {
+  color: #333333;
+}
+
+
+@mixin mod-text27-common-style {
+  margin-top: 5px !important;
+  font-size: $fontSizeS;
+}
+
+

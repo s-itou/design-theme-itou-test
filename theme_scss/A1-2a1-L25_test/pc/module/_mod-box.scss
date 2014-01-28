@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import "../pc-style/mod-box-style";
+
+//commonがカラのため、includeしてません。
+.mod-box_ver2 {
+  @include module-style-mod-box;
+}
+.mod-box-in1 {
+  @include module-style-mod-box-in1;
+}
+.mod-box-in2 {
+  @include module-style-mod-box-in2;
+}
+.mod-box-in3 {
+  @include module-style-mod-box-in3;
+}
+
+
+.mod-box-header {
+  @include module-style-mod-box-header;
+}
+.mod-box-in1-header {
+  @include module-style-mod-box-in1-header;
+}
+
+
+.mod-box-footer {
+  @include module-style-mod-box-footer;
+}
+.mod-box-in1-footer {
+  @include module-style-mod-box-in1-footer;
+}
+
+
+.mod-box-side {
+  @include module-style-mod-box-side;
+}
+.mod-box-in1-side {
+  @include module-style-mod-box-in1-side;
+}
+.mod-box-in1-side {
+  @include module-style-mod-box-in1-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_01A2 & { // 01A1
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-box-in1-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_01B2 & { // 01A1
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-box-in1-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_01C2 & { // 01A1
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-box-in1-side;
+  }
+}
+
+
+// .mod-box44 {
+//   @extend .mod-box;
+// }
+// 中身が空っぽだとコンパイル時に警告されるため`
+// .mod-box63 {
+//   @extend .mod-box-in1;
+// }
+// */
+// .mod-box2, .mod-box26 {
+//   @extend .mod-box-header;
+// }
+// .mod-box25, .mod-box47 {
+//   @extend .mod-box-footer;
+// }
+// .mod-box13 {
+//   @extend .mod-box-side;
+// }
+// .mod-box12 {
+//   @extend .mod-box-in1-side;
+// }
+

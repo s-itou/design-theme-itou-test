@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import "../pc-style/mod-ftel-style";
+
+.mod-ftel-ig { //9
+  @include common-style-mod-ftel-ig;
+  @include module-style-mod-ftel-ig;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-ftel-ig;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-ftel-ig;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-ftel-ig;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-ftel-ig;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-ftel-ig;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-ftel-ig;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-ftel-ig;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A1-mod-ftel-ig;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C3-mod-ftel-ig;
+  }
+}
+
+.mod-ftel-ig-side { //15
+  @include common-style-mod-ftel-ig;
+  @include common-side-style-mod-ftel;
+  @include module-style-mod-ftel-ig-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-ftel-ig-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-ftel-ig-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-ftel-ig-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-ftel-ig-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-ftel-ig-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-ftel-ig-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-ftel-ig-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-ftel-ig-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-ftel-ig-side;
+  }
+}
+
+.mod-ftel-g { //10
+  @include common-style-mod-ftel-g;
+  @include module-style-mod-ftel-g;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-ftel-g;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-ftel-g;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-ftel-g;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-ftel-g;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-ftel-g;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-ftel-g;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-ftel-g;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A1-mod-ftel-g;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C3-mod-ftel-g;
+  }
+}
+
+.mod-ftel-g-side { //16
+  @include common-style-mod-ftel-g;
+  @include common-side-style-mod-ftel;
+  @include module-style-mod-ftel-g-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-ftel-g-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-ftel-g-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-ftel-g-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-ftel-g-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-ftel-g-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-ftel-g-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-ftel-g-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-ftel-g-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-ftel-g-side;
+  }
+}
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// .mod-ftel9 {
+//   @extend .mod-ftel-ig;
+// }
+// .mod-ftel10 {
+//   @extend .mod-ftel-g;
+// }
+// .mod-ftel15 {
+//   @extend .mod-ftel-ig-side;
+// }
+// .mod-ftel16 {
+//   @extend .mod-ftel-g-side;
+// }

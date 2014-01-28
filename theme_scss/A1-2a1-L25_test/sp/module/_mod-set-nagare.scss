@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// mod-set-toiawase の紐付けモジュール
+//
+// --------------------------------------------------------------------------
+
+@import "../sp-style/mod-set-nagare-style";
+@import "../design/pat-design-nagare";
+
+
+// --------------------------------------------------------------------------
+// part-main-272
+// 流れ <左→右 ３列>
+// --------------------------------------------------------------------------
+
+.mod-set-nagare-3col {
+  @extend %common-style-mod-set-nagare !optional;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-design-nagare-3col-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-design-nagare-3col-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-design-nagare-3col-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-design-nagare-3col-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-design-nagare-3col-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-design-nagare-3col-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-design-nagare-3col-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-design-nagare-3col-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-design-nagare-3col-9;
+  }
+}
+
+
+// -------------------------------------
+//  mod-set-nagare
+// -------------------------------------
+
+// .mod-set-nagare {
+//   @include common-style-mod-set-nagare;
+//   @include module-style-mod-set-nagare;
+//   .ex-style_#{$baseEx_01A1} & {
+//     @include pat-item-waku-kadomaru-a1;
+//   }
+//   .ex-style_#{$baseEx_01A2} & {
+//     @include pat-item-waku-kadomaru-a2;
+//   }
+//   .ex-style_#{$baseEx_01A3} & {
+//     @include pat-item-waku-kadomaru-a3;
+//   }
+// }
+
+

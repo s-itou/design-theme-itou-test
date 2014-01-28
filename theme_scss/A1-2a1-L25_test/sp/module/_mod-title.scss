@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "../sp-style/mod-title-style";
+
+//##################################################
+//  mod-title-footer
+//##################################################
+.mod-title-footer {
+  @include common-style-mod-title;
+  @include module-style-mod-title-footer;
+  .ex-style_#{$baseEx_01A1} & {@include pat-item-title-black-1;}
+  .ex-style_#{$baseEx_01A2} & {@include pat-item-title-black-1;}
+  .ex-style_#{$baseEx_01A3} & {@include pat-item-title-black-1;}
+  .ex-style_#{$baseEx_01B1} & {@include pat-item-title-white-1;}
+  .ex-style_#{$baseEx_01B2} & {@include pat-item-title-white-1;}
+  .ex-style_#{$baseEx_01B3} & {@include pat-item-title-white-1;}
+  .ex-style_#{$baseEx_01C1} & {@include pat-item-title-black-1;}
+  .ex-style_#{$baseEx_01C2} & {@include pat-item-title-black-1;}
+  .ex-style_#{$baseEx_01C3} & {@include pat-item-title-black-1;}
+}

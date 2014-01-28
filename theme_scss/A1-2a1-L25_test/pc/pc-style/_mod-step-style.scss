@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+//  mod-step の mixin一式
+@mixin mod-step-common-style {
+  margin-top: 30px;
+  .mod-step-inner {
+    width: 100%;
+  }
+  .step1 {
+    > div {
+      padding-top: 0 !important;
+      background-image: none !important;
+    }
+  }
+}
+
+@mixin mod-step-style {
+  .mod-step-inner {
+    padding-top: 65px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url(img/mod-step/01/bg11.png);
+  }
+}
+@mixin mod-step-style2 {
+  .mod-step-inner {
+    padding-top: 20px;
+    background-repeat: repeat;
+    background-position: left top;
+    background-image: none;
+  }
+}
+
+@mixin mod-step-style3 {
+  .mod-step-inner {
+    padding-top: 65px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url(img/mod-step/01/bg12.png);
+  }
+}
+
+@mixin mod-step-style4 {
+  .mod-step-inner {
+    padding-top: 65px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url(img/mod-step/01/bg12_2.png);
+  }
+}
+
+@mixin mod-step-style5 {
+  .mod-step-inner {
+    padding-top: 65px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url(img/mod-step/01/bg12_3.png);
+  }
+}
+

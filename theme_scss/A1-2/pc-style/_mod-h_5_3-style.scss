@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@mixin mod-h_5_3-common-style {
+margin-top: 25px;
+  display: table;
+  .mod-h_5-inner {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 30px;
+    > p {
+      font-size: $fontSizeS;
+    }
+  }
+  .mod-h {
+    line-height: 1.2;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: $fontSizeL;
+  }
+  i {
+    display: table-cell;
+    min-width: 68px;
+    height: 57px;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_0, .mod-icon_1 {
+    min-width: 0;
+  }
+}
+
+@mixin mod-h_5_3-style {
+  .mod-h_5-inner3 {
+      > p {
+        color: #666666;
+      }
+    }
+    .mod-h {
+      color: #222222;
+    }
+}
+@mixin mod-h_5_3-style2 {
+  .mod-h_5-inner3 {
+      > p {
+        color: #666666;
+      }
+    }
+    .mod-h {
+      color: #010911;
+    }
+}
+@mixin mod-h_5_3-style3 {
+  .mod-h_5-inner3 {
+      > p {
+        color: #333333;
+      }
+    }
+    .mod-h {
+      color: #333333;
+    }
+}
+@mixin mod-h_5_3-style4 {
+  .mod-h_5-inner3 {
+      > p {
+        color: #333333;
+      }
+    }
+    .mod-h {
+      color: #333333;
+    }
+}
+@mixin mod-h_5_3-style5 {
+  .mod-h_5-inner3 {
+      > p {
+        color: #666666;
+      }
+    }
+    .mod-h {
+      color: #222222;
+    }
+}
+@mixin mod-h_5_3-style6 {
+  .mod-h_5-inner3 {
+      > p {
+        color: #260e0e;
+      }
+    }
+    .mod-h {
+      color: #260e0e;
+    }
+}
+
+@mixin mod-h_5_3-style7 {
+  .mod-h_5-inner3 {
+      > p {
+        color: #666666;
+      }
+    }
+    .mod-h {
+      color: #222222;
+    }
+}
+
+@mixin mod-h_5_3-style8 {
+  .mod-h_5-inner3 {
+      > p {
+        color: #666666;
+      }
+    }
+    .mod-h {
+      color: #222222;
+    }
+}
+
+@mixin mod-h_5_3-style9 {
+  .mod-h_5-inner3 {
+      > p {
+        color: #666666;
+      }
+    }
+    .mod-h {
+      color: #222222;
+    }
+}

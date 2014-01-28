@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-in1-side
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-in1-side {
+  padding: 10px;
+  > .mod-box-inner {
+    padding: 10px 10px 1px;
+    background-color: #ffffff;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-box-in1-side {
+  border: 1px solid #dedad1;
+  background-color: #fffce9;
+}
+@mixin deco-style01A2-mod-box-in1-side {
+  border: 1px solid #cbd8d9;
+  background-color: #f6f6f6;
+}
+@mixin deco-style01A3-mod-box-in1-side {
+  border: 1px solid #dedad1;
+  background-color: #fffef4;
+}

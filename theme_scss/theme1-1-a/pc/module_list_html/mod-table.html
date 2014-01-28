@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mod-table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../../../theme/theme1-1/pc/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../../../theme/theme1-1/pc/mod.css" />
+<link rel="stylesheet" type="text/css" href="css/list-style.css" />
+<style>
+.area-header-inner {
+	width:980px;
+	margin: 0 auto;
+}
+.area-footer-inner {
+	width:980px;
+	margin: 0 auto;
+}
+</style>
+<script type="text/javascript" src="scripts/shCore.js"></script>
+<script type="text/javascript" src="scripts/shBrushXml.js"></script>
+<link type="text/css" rel="stylesheet" href="styles/shCore.css" />
+<link type="text/css" rel="stylesheet" href="styles/shCoreDjango.css">
+<script type="text/javascript">
+SyntaxHighlighter.all();
+</script>
+</head>
+<body class="mod-body">
+
+	<nav class="mod-fnav">
+	<ul>
+	<li><span><a href="./mod-rte_text.html">rte_text</a></span></li>
+	<li><span><a href="./mod-column.html">column</a></span></li>
+	<li><span><a href="./mod-h.html">h</a></span></li>
+	<li><span><a href="./mod-h-set.html">h-set</a></span></li>
+	<li><span><a href="./mod-title.html">title</a></span></li>
+	<li><span><a href="./mod-image.html">image</a></span></li>
+	<li><span><a href="./mod-html.html">html</a></span></li>
+	<li><span><a href="./mod-link.html">link</a></span></li>
+	<li><span><a href="./mod-bnr.html">bnr</a></span></li>
+	<li><span><a href="./mod-table.html">table</a></span></li>
+	<li><span><a href="./mod-ul.html">ul</a></span></li>
+	<li><span><a href="./mod-info.html">info</a></span></li>
+	<li><span><a href="./mod-tel.html">tel</a></span></li>
+	<li><span><a href="./mod-label.html">label</a></span></li>
+	<li><span><a href="./mod-nav.html">nav</a></span></li>
+	<li><span><a href="./mod-step.html">step</a></span></li>
+	<li><span><a href="./mod-un.html">un</a></span></li>
+	<li><span><a href="./mod-set.html">set</a></span></li>
+	</ul>
+	</nav>
+
+<!--
+	＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊モジュール一覧はここから＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+-->
+
+<div class="area-all">
+
+	<header class="area-header">
+		<div class="area-header-inner" data-cms-contents="page-header[0]">
+
+		</div><!-- /area-header-inner -->
+	</header><!-- /area-header -->
+
+	<div class="area-container">
+
+		<div class="area-main">
+			<div class="area-main-inner" data-cms-contents="master-main[0]">
+
+				<p>※以下4つはモジュールは同じですが、HTML構造が違います。部品にHTMLをコピーする際には注意してください。8/22伊藤</p>
+
+				<p class="name-m">◆mod-table(A)    width%指定 mb:25px;</p>
+				<!-- 縦横見出し -->
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<th>項目2</th>
+								<th>項目3</th>
+								<th>項目4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table(A)    width%指定 mb:25px;</p>
+				<!-- 縦横見出し -->
+				<div class="ex-style_01B1b">
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<th>項目2</th>
+								<th>項目3</th>
+								<th>項目4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+				<pre class="brush:xml">
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<th>項目2</th>
+				<th>項目3</th>
+				<th>項目4</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+				<!--縦見出し-->
+				<p class="name-m">◆mod-table(B) width%指定 mb:25px; 縦見出し用HTML</p>
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+								<td>項目3</td>
+								<td>項目4</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table(B)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+								<td>項目3</td>
+								<td>項目4</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<td>項目2</td>
+				<td>項目3</td>
+				<td>項目4</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+				<!--横見出し-->
+				<p class="name-m">◆mod-table(C) width%指定 mb:25px; 横見出し用HTML</p>
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<th>項目2</th>
+								<th>項目3</th>
+								<th>項目4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>項目1-1</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>項目1-2</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table(C)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<th>項目2</th>
+								<th>項目3</th>
+								<th>項目4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>項目1-1</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>項目1-2</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<th>項目2</th>
+				<th>項目3</th>
+				<th>項目4</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<td>項目1-1</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td>項目1-2</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+				<!--見出しなし-->
+				<p class="name-m">◆mod-table(D) width%指定 mb:25px; 見出しなし用HTML</p>
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<td>項目1</td>
+								<td>項目2</td>
+								<td>項目3</td>
+								<td>項目4</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>項目1-1</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>項目1-2</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table(D)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<td>項目1</td>
+								<td>項目2</td>
+								<td>項目3</td>
+								<td>項目4</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>項目1-1</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>項目1-2</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<td>項目1</td>
+				<td>項目2</td>
+				<td>項目3</td>
+				<td>項目4</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<td>項目1-1</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td>項目1-2</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+				<!--縦見出し-->
+				<p class="name-m">◆mod-table'(E) width%指定 mb:25px; 2列4行　縦見出し用HTML</p>
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-3</th>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table(E)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-3</th>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<td>項目2</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-3</th>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+
+				<p class="name-m">◆mod-table5(A) width%指定 mb:10px; 2列3行　縦見出し用HTML</p>
+				<div class="mod-table5" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table5(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table5" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table5" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<td>項目2</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+
+				<p class="name-m">◆mod-table5(B) width%指定 mb:10px; 2列3行　縦横見出し用HTML</p>
+				<div class="mod-table5" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<th>項目2</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table5(B)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table5" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<th>項目2</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table5" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<th>項目2</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+
+
+				<p class="name-m">◆mod-table6(A) width%指定 mb:10px; 2列3行　縦見出し用HTML</p>
+				<div class="mod-table6" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+								<td>項目3</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table6(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table6" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+								<td>項目3</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table6" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<td>項目2</td>
+				<td>項目3</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+
+				<p class="name-m">◆mod-table6(B) width%指定 mb:10px; 2列3行　縦横見出し用HTML</p>
+				<div class="mod-table6" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<th>項目2</th>
+								<th>項目3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table6(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table6" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<th>項目2</th>
+								<th>項目3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table6" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<th>項目2</th>
+				<th>項目3</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+
+				<p class="name-m">◆mod-table7 width%指定 mb:10px; 2列1行ステップ　縦見出し用HTML</p>
+				<div class="mod-table7" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<p class="name-m-ex">◆mod-table6(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table7" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table7" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<td>項目2</td>
+				</tr>
+				</thead>
+				</table>
+				</div>
+				</pre>
+
+
+				<p class="name-s">◆mod-table8 width%指定 mod-table4と同じスタイルのメイン用</p>
+				<div class="mod-table8" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>項目1</th>
+							<th>項目2</th>
+							<th>項目3</th>
+							<th>項目4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>項目1-1</th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th>項目1-2</th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				<p class="name-m-ex">◆mod-table6(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table8" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>項目1</th>
+							<th>項目2</th>
+							<th>項目3</th>
+							<th>項目4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>項目1-1</th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th>項目1-2</th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table8" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<th>項目2</th>
+				<th>項目3</th>
+				<th>項目4</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+				<p class="name-m">◆mod-table9 width%指定 mb:25px; 2列4行　縦見出し用HTML</p>
+				<div class="mod-table9" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-3</th>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table9" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<td>項目2</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-3</th>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+				<p class="name-m">◆mod-table10 width%指定 mb:25px; 2列4行　縦見出し用HTML fs:13px; </p>
+				<div class="mod-table10" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>項目1</th>
+								<td>項目2</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>項目1-1</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-2</th>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>項目1-3</th>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table10" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<td>項目2</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-3</th>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+				<p class="name-m">◆mod-table11 width:100%; mb:15px;  font-side:14px;</p>
+			<div class="mod-table11" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00～11:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>13:00～17:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="name-m-ex">◆mod-table11    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table11" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00～11:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>13:00～17:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				</div>
+			<pre class="brush:xml">
+			<div class="mod-table11" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+			<table>
+			<thead>
+			<tr>
+			<th>&nbsp;</th>
+			<th>月</th>
+			<th>火</th>
+			<th>水</th>
+			<th>木</th>
+			<th>金</th>
+			<th>土</th>
+			<th>日</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>9:00～11:30</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td>13:00～17:30</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+			</pre>
+
+
+
+
+
+			</div><!-- /div.area-main-inner -->
+		</div><!-- /div.area-main -->
+
+		<div class="area-side-left">
+			<div class="area-side-left-inner" data-cms-contents="master-sub[0]">
+
+				<p class="name-s">◆mod-table4 width%指定 サイド用</p>
+				<div class="mod-table4" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>項目1</th>
+							<th>項目2</th>
+							<th>項目3</th>
+							<th>項目4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>項目1-1</th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th>項目1-2</th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table4" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+				<table>
+				<thead>
+				<tr>
+				<th>項目1</th>
+				<th>項目2</th>
+				<th>項目3</th>
+				<th>項目4</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>項目1-1</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<th>項目1-2</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</pre>
+
+
+				<!--縦見出し-->
+				<p class="name-m">◆mod-table12 width%指定 mb:25px; 営業時間</p>
+				<div class="mod-table12" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<td>月</td>
+								<td>火</td>
+								<td>水</td>
+								<td>木</td>
+								<td>金</td>
+								<td>土</td>
+								<td>日</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>9:00～12:30</th>
+								<td>○</td>
+								<td>○</td>
+								<td>○</td>
+								<td>休</td>
+								<td>○</td>
+								<td>○</td>
+								<td>休</td>
+							</tr>
+							<tr>
+								<th>13:00～19:00</th>
+								<td>○</td>
+								<td>○</td>
+								<td>○</td>
+								<td>休</td>
+								<td>○</td>
+								<td>休</td>
+								<td>休</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-table11" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="表" data-cms-switchable-use="true">
+					<table>
+						<thead>
+							<tr>
+								<th>nbsp;</th>
+								<td>月</td>
+								<td>火</td>
+								<td>水</td>
+								<td>木</td>
+								<td>金</td>
+								<td>土</td>
+								<td>日</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>9:00～12:30</th>
+								<td>○</td>
+								<td>○</td>
+								<td>○</td>
+								<td>休</td>
+								<td>○</td>
+								<td>○</td>
+								<td>休</td>
+							</tr>
+							<tr>
+								<th>13:00～19:00</th>
+								<td>○</td>
+								<td>○</td>
+								<td>○</td>
+								<td>休</td>
+								<td>○</td>
+								<td>休</td>
+								<td>休</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</pre>
+
+			</div><!-- //area-side-left-inner -->
+		</div><!-- //area-side-left -->
+
+	</div><!-- //area-container -->
+
+	<footer class="area-footer">
+		<div class="area-footer-inner">
+
+			<p class="name-m">◆mod-table2(A) width:100%; mb:15px;  font-side:14px;</p>
+			<div class="mod-table2" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00～11:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>13:00～17:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="name-m-ex">◆mod-table2(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table2" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00～11:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>13:00～17:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				</div>
+				<p class="name-m-ex">◆mod-table2(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B3b">
+					<div class="mod-table2" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00～11:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>13:00～17:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				</div>
+			<pre class="brush:xml">
+			<div class="mod-table2" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+			<table>
+			<thead>
+			<tr>
+			<th>&nbsp;</th>
+			<th>月</th>
+			<th>火</th>
+			<th>水</th>
+			<th>木</th>
+			<th>金</th>
+			<th>土</th>
+			<th>日</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>9:00～11:30</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td>13:00～17:30</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+			</pre>
+
+
+			<p class="name-m">◆mod-table3(B) width:100%;  mb:15px;  font-side:13px;</p>
+			<div class="mod-table3" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00～11:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>13:00～17:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="name-m-ex">◆mod-table3(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B1b">
+					<div class="mod-table3" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00～11:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>13:00～17:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				</div>
+				<p class="name-m-ex">◆mod-table3(A)    width%指定 mb:25px;</p>
+				<div class="ex-style_01B3b">
+					<div class="mod-table3" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00～11:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>13:00～17:30</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				</div>
+			<pre class="brush:xml">
+			<div class="mod-table3" data-cms-editable="wysiwyg" contenteditable="true" data-cms-switchable="true" data-cms-switchable-label="診療日表" data-cms-switchable-use="true">
+			<table>
+			<thead>
+			<tr>
+			<th>&nbsp;</th>
+			<th>月</th>
+			<th>火</th>
+			<th>水</th>
+			<th>木</th>
+			<th>金</th>
+			<th>土</th>
+			<th>日</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>9:00～11:30</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td>13:00～17:30</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+			</pre>
+
+		</div><!-- /area-footer-inner -->
+	</footer><!-- /area-footer -->
+
+</div><!--//area-all-->
+</body>
+</html>

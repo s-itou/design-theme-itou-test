@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@mixin mod-box8-common-style {
+margin-top: 30px;
+  width: 100%;
+  @include border-radius();
+  .mod-box-inner2 {
+  > .ex-first-child {
+    > .ex-first-child {
+      > .ex-first-child {
+          margin-top: 0 !important;
+        > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box8-style {
+border: 1px solid #aaaaaa;
+  background-color: #e6e6e6;
+  background-image: none;
+  background-repeat: repeat;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box8-style2 {
+border: 1px solid #aebdce;
+  background-color: #d7e1ec;
+  background-image: none;
+  background-repeat: repeat;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box8-style3 {
+border: 1px solid #d3b2ae;
+  background-color: #fff3f1;
+  background-image: none;
+  background-repeat: repeat;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box8-style4 {
+border: 1px solid #989898;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box8-style5 {
+border: 1px solid #f2d028;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box8-style6 {
+border: 1px solid #f2d028;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box8-style7 {
+border: 1px solid #bbbbbb;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08.png");
+  background-repeat: repeat;
+  padding: 3px;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius();
+  }
+}
+@mixin mod-box8-style8 {
+border: 1px solid #bbbbbb;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_2.png");
+  background-repeat: repeat;
+  padding: 3px;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius();
+  }
+}
+@mixin mod-box8-style9 {
+border: 1px solid #ead3cf;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_3.png");
+  background-repeat: repeat;
+  padding: 3px;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius();
+  }
+}
+

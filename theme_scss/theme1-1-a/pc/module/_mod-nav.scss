@@ -1,0 +1,704 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+// mod-gnav
+%default-gnav {
+  width: 100%;
+  max-height: 150px;
+  @include background("mod-gnav/bg.png", repeat-x, $position-y:center, $color:#f9f3e2);
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+  .mod-gnav-inner {
+    width: 980px;
+    margin: 0 auto;
+    padding: 2px 0;
+    ul {
+      display: table;
+      width: 980px;
+      margin: 0;
+      padding: 0;
+      color: $h_menuColor;
+      @include text-shadow(1px 1px 1px #ffffff);
+      text-align: center;
+      list-style-type: none;
+      @include background("mod-gnav/bg03.png", $position-x:right, $position-y:50%);
+      li {
+        @include word-break(break-all);
+        @include box-sizing(border-box);
+        display: table-cell;
+        padding: 0 4px;
+        font-size: $fontSizeM + 1;
+        vertical-align: middle;
+        @include background("mod-gnav/bg03.png", $position-x:left, $position-y:50%);
+        span {
+          display: block;
+          max-height: 146px;
+          overflow: hidden;
+          padding-left: 18px;
+          padding-right: 5px;
+         @include background("mod-gnav/bg05.png", $position-y:50%);
+          a {
+            display: block;
+            max-height: 122px;
+            padding: 12px 0;
+            color: inherit;
+            text-decoration: none;
+          &:hover {
+              margin-left: -18px;
+              padding-left: 18px;
+              margin-right: -5px;
+              padding-right: 5px;
+              @include border-radius();
+              @include background("mod-gnav/bg04.png", $position-y:50%);
+            }
+          }
+        }
+        &.state-current {
+          span {
+            @include border-radius();
+            @include background("mod-gnav/bg06.png", $position-y:50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+//水色カラバリ
+%cv-gnav2 {
+  background-image: url("img/mod-gnav/bg_2.png");
+  .mod-gnav-inner {
+    ul {
+      color: $h_menuColor2;
+      text-shadow: none;
+      background-image: url("img/mod-gnav/bg03_2.png");
+      li {
+        background-image: url("img/mod-gnav/bg03_2.png");
+        span {
+         background-image: url("img/mod-gnav/bg05_2.png");
+          a {
+            color: inherit;
+          &:hover {
+              background-image: url("img/mod-gnav/bg04_2.png");
+            }
+          }
+        }
+        &.state-current {
+          span {
+            background-image: url("img/mod-gnav/bg06_2.png");
+          }
+        }
+      }
+    }
+  }
+}
+
+//オレンジカラバリ
+%cv-gnav3 {
+  background-image: url("img/mod-gnav/bg_3.png");
+  .mod-gnav-inner {
+    ul {
+      color: $h_menuColor3;
+      background-image: url("img/mod-gnav/bg03_3.png");
+      li {
+        background-image: url("img/mod-gnav/bg03_3.png");
+        span {
+         background-image: url("img/mod-gnav/bg05_3.png");
+          a {
+            color: inherit;
+          &:hover {
+              background-image: url("img/mod-gnav/bg04_3.png");
+            }
+          }
+        }
+        &.state-current {
+          span {
+            background-image: url("img/mod-gnav/bg06_3.png");
+          }
+        }
+      }
+    }
+  }
+}
+
+//装飾B　
+%deco-gnav2 {
+  @include background("mod-gnav/bg12.png", repeat-x, $position-y:center);
+  border-bottom: 1px solid　$d2h_menuBdColor;
+  border-top: 1px solid $d2h_menu2BdColor;
+  .mod-gnav-inner {
+  ul {
+    color: #ffffff;
+    text-shadow: none;
+    @include background("mod-gnav/bg13.png", $position-x:right, $position-y:50%);
+    li {
+      @include background("mod-gnav/bg13.png", $position-x:left, $position-y:50%);
+      span {
+       @include background("mod-gnav/bg14.png", $position-y:50%);
+        a {
+          &:hover {
+              border-radius: none;
+              background-image: url("img/mod-gnav/bg16.png") !important;
+            }
+          }
+        }
+        &.state-current {
+          span {
+            @include border-radius(0px);
+            @include background("mod-gnav/bg15.png", $position-y:50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+//装飾Bの水色CV
+%cv-deco-gnav2 {
+  @include background("mod-gnav/bg12_2.png", repeat-x, $position-y:center);
+  border-bottom: 1px solid　$d2h_menuBdColor2;
+  border-top: 1px solid $d2h_menu2BdColor2;
+  .mod-gnav-inner {
+  ul {
+    color: #ffffff;
+    text-shadow: none;
+    @include background("mod-gnav/bg13_2.png", $position-x:right, $position-y:50%);
+    li {
+      @include background("mod-gnav/bg13_2.png", $position-x:left, $position-y:50%);
+      span {
+       @include background("mod-gnav/bg14.png", $position-y:50%);
+        a {
+          &:hover {
+              border-radius: none;
+              background-image: url("img/mod-gnav/bg16_2.png") !important;
+            }
+          }
+        }
+        &.state-current {
+          span {
+            @include border-radius(0px);
+            @include background("mod-gnav/bg15_2.png", $position-y:50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+//装飾BのオレンジCV
+%cv2-deco-gnav2 {
+  @include background("mod-gnav/bg12_3.png", repeat-x, $position-y:center);
+  border-bottom: 1px solid　$d2h_menuBdColor3;
+  border-top: 1px solid $d2h_menu2BdColor3;
+  .mod-gnav-inner {
+  ul {
+    color: #ffffff;
+    text-shadow: none;
+    @include background("mod-gnav/bg13_3.png", $position-x:right, $position-y:50%);
+    li {
+      @include background("mod-gnav/bg13_3.png", $position-x:left, $position-y:50%);
+      span {
+       @include background("mod-gnav/bg14.png", $position-y:50%);
+        a {
+          &:hover {
+              @include border-radius(0px);
+              background-image: url("img/mod-gnav/bg16_3.png") !important;
+            }
+          }
+        }
+        &.state-current {
+          span {
+            border-radius: none;
+            @include background("mod-gnav/bg15_3.png", $position-y:50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.mod-gnav {
+  @extend %default-gnav;
+  li {
+    width: 196px;
+  }
+  &.ex-style_01A2a {
+    @extend %cv-gnav2;
+  }
+  &.ex-style_01A3a {
+    @extend %cv-gnav3;
+  }
+  &.ex-style_01B1a {
+  @include background("mod-gnav/bg07.png", repeat-x, $position-y:center, $color:#cecece);
+    border-bottom: none;
+    border-top: none;
+    .mod-gnav-inner {
+    ul {
+      color: #2d4a72;
+      @include text-shadow(1px 1px 1px #ffffff);
+      @include background("mod-gnav/bg08.png", $position-x:right, $position-y:50%);
+      li {
+        @include background("mod-gnav/bg08.png", $position-x:left, $position-y:50%);
+        span {
+         @include background("mod-gnav/bg11.png", $position-y:50%);
+          a {
+            &:hover {
+                background-image: url("img/mod-gnav/bg09.png") !important;
+              }
+            }
+          }
+          &.state-current {
+            span {
+              @include background("mod-gnav/bg10.png", $position-y:50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.ex-style_01B2a {
+    @include background("mod-gnav/bg07.png", repeat-x, $position-y:center, $color:#cecece);
+    border-bottom: none;
+    border-top: none;
+    .mod-gnav-inner {
+    ul {
+      color: #0B7D88;
+      @include text-shadow(1px 1px 1px #ffffff);
+      @include background("mod-gnav/bg08.png", $position-x:right, $position-y:50%);
+      li {
+        @include background("mod-gnav/bg08.png", $position-x:left, $position-y:50%);
+        span {
+         @include background("mod-gnav/bg11_2.png", $position-y:50%);
+          a {
+            &:hover {
+                background-image: url("img/mod-gnav/bg09_2.png") !important;
+              }
+            }
+          }
+          &.state-current {
+            span {
+              @include background("mod-gnav/bg10_2.png", $position-y:50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.ex-style_01B3a {
+    @include background("mod-gnav/bg07.png", repeat-x, $position-y:center, $color:#cecece);
+    border-bottom: none;
+    border-top: none;
+    .mod-gnav-inner {
+    ul {
+      color: #443308;
+      @include text-shadow(1px 1px 1px #ffffff);
+      @include background("mod-gnav/bg08.png", $position-x:right, $position-y:50%);
+      li {
+        @include background("mod-gnav/bg08.png", $position-x:left, $position-y:50%);
+        span {
+         @include background("mod-gnav/bg11_3.png", $position-y:50%);
+          a {
+            &:hover {
+                background-image: url("img/mod-gnav/bg09_3.png") !important;
+              }
+            }
+          }
+          &.state-current {
+            span {
+              @include background("mod-gnav/bg10_3.png", $position-y:50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.ex-style_01C1a {
+    @extend %deco-gnav2;
+  }
+  &.ex-style_01C2a {
+    @extend %cv-deco-gnav2;
+  }
+  &.ex-style_01C3a {
+    @extend %cv2-deco-gnav2;
+  }
+}
+
+
+
+.mod-gnav2 {
+  @extend %default-gnav;
+  li {
+    max-width: 550px;
+  }
+  &.ex-style_01A2a {
+    @extend %cv-gnav2;
+  }
+  &.ex-style_01A3a {
+    @extend %cv-gnav3;
+  }
+  &.ex-style_01B1a {
+  @include background("mod-gnav/bg07.png", repeat-x, $position-y:center, $color:#cecece);
+    border-bottom: none;
+    border-top: none;
+    .mod-gnav-inner {
+    ul {
+      color: #2d4a72;
+      @include text-shadow(1px 1px 1px #ffffff);
+      @include background("mod-gnav/bg08.png", $position-x:right, $position-y:50%);
+      li {
+        @include background("mod-gnav/bg08.png", $position-x:left, $position-y:50%);
+        span {
+         @include background("mod-gnav/bg11.png", $position-y:50%);
+          a {
+            &:hover {
+                background-image: url("img/mod-gnav/bg09.png") !important;
+              }
+            }
+          }
+          &.state-current {
+            span {
+              @include background("mod-gnav/bg10.png", $position-y:50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.ex-style_01B2a {
+    @include background("mod-gnav/bg07.png", repeat-x, $position-y:center, $color:#cecece);
+    border-bottom: none;
+    border-top: none;
+    .mod-gnav-inner {
+    ul {
+      color: #0B7D88;
+      @include text-shadow(1px 1px 1px #ffffff);
+      @include background("mod-gnav/bg08.png", $position-x:right, $position-y:50%);
+      li {
+        @include background("mod-gnav/bg08.png", $position-x:left, $position-y:50%);
+        span {
+         @include background("mod-gnav/bg11_2.png", $position-y:50%);
+          a {
+            &:hover {
+                background-image: url("img/mod-gnav/bg09_2.png") !important;
+              }
+            }
+          }
+          &.state-current {
+            span {
+              @include background("mod-gnav/bg10_2.png", $position-y:50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.ex-style_01B3a {
+    @include background("mod-gnav/bg07.png", repeat-x, $position-y:center, $color:#cecece);
+    border-bottom: none;
+    border-top: none;
+    .mod-gnav-inner {
+    ul {
+      color: #443308;
+      @include text-shadow(1px 1px 1px #ffffff);
+      @include background("mod-gnav/bg08.png", $position-x:right, $position-y:50%);
+      li {
+        @include background("mod-gnav/bg08.png", $position-x:left, $position-y:50%);
+        span {
+         @include background("mod-gnav/bg11_3.png", $position-y:50%);
+          a {
+            &:hover {
+                background-image: url("img/mod-gnav/bg09_3.png") !important;
+              }
+            }
+          }
+          &.state-current {
+            span {
+              @include background("mod-gnav/bg10_3.png", $position-y:50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.ex-style_01C1a {
+    @extend %deco-gnav2;
+  }
+  &.ex-style_01C2a {
+    @extend %cv-deco-gnav2;
+  }
+  &.ex-style_01C3a {
+    @extend %cv2-deco-gnav2;
+  }
+}
+
+//------------------
+// mod-side-menu-box
+//------------------
+.mod-side-menu-box {
+  width: 215px;
+  padding: 0px;
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mod-side-menu-box-h {
+    height: 10px;
+    @include background("mod-side-menu-box/bg.png", no-repeat, top, left);
+  }
+  .mod-side-menu-box-b {
+    height: 10px;
+    @include background("mod-side-menu-box/bg02.png", no-repeat, bottom, left);
+  }
+  .mod-side-menu {
+    padding: 15px 0;
+    border: 1px solid #dedad1;
+    border-top: none;
+    background-color: $s_boxBgColor;
+    > .mod-side-menu-list {
+      > ul {
+        > li {
+          margin: 5px 9px;
+          &:first-child {
+              margin-top: 0;
+          }
+          > .mod-side-menu-item {
+            color: $s_menuColor;
+            padding: 9px 10px 7px 25px;
+            @include background("mod-side-menu-box/bg04.png", no-repeat, 8px, 13px, $s_menuBgColor);
+            border-right: 1px solid #b2b2b2;
+            border-bottom: 1px solid #b2b2b2;
+            @include border-radius();
+            display: block;
+            zoom:1;
+            a {
+              color: $s_menuColor;
+              display: block;
+              width: auto;
+              @include box-sizing(border-box);
+              &:hover {
+                color: $s_menuColorh;
+                margin: -9px -11px -8px -25px;
+                padding: 9px 10px 7px 25px;
+                text-decoration: none;
+                @include background("mod-side-menu-box/bg05.png", no-repeat, 8px, 13px, $s_menuBgColorh);
+                border-top: 1px solid #ab9d7b;
+                border-left: 1px solid #ab9d7b;
+                @include box-sizing(border-box);
+                @include border-radius();
+              }
+            }
+          }
+          > .mod-side-menu-list {
+            > ul {
+              > li {
+                list-style: none;
+                border-bottom: 1px dotted #cccccc;
+                margin-bottom:10px;
+                > .mod-side-menu-item {
+                  color: $s_menuColor;
+                  padding: 8px 10px 6px 29px;
+                  @include background("mod-side-menu-box/bg06.png", no-repeat, 15px, 15px);
+                  // border-bottom: 1px dotted #cccccc;
+                  display: block;
+                  a {
+                    color: $s_menuColor;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                > .mod-side-menu-list {
+                  > ul {
+                    > li {
+                      list-style: none;
+                      > .mod-side-menu-item {
+                        color: $s_menuColor;
+                        padding: 4px 10px 4px 44px;
+                        @include background("mod-side-menu-box/bg07.png", no-repeat, 29px, 12px);
+                        display: block;
+                        a {
+                          color: $s_menuColor;
+                          &:hover {
+                            text-decoration: underline;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+.ex-style_01A2a {
+  .mod-side-menu-box-h {
+    height: 10px;
+    @include background("mod-side-menu-box/bg_2.png", no-repeat, top, left);
+  }
+  .mod-side-menu-box-b {
+    height: 10px;
+    @include background("mod-side-menu-box/bg02_2.png", no-repeat, bottom, left);
+  }
+  .mod-side-menu {
+    background-color: $s_boxBgColor2;
+    > .mod-side-menu-list {
+      > ul {
+        > li {
+          > .mod-side-menu-item {
+            color: $s_menuColor2;
+            background-image: url("img/mod-side-menu-box/bg04_2.png");
+            background-color: $s_menuBgColor2;
+            a {
+              color: $s_menuColor2;
+              &:hover {
+                color: $s_menuColorh2;
+                background-image: url("img/mod-side-menu-box/bg05_2.png");
+                background-color: $s_menuBgColorh2;
+              }
+            }
+          }
+          >.mod-side-menu-list {
+            > ul {
+              > li {
+                > .mod-side-menu-item {
+                  color: $s_menuColor2;
+                  background-image: url("img/mod-side-menu-box/bg06_2.png");
+                  a {
+                    color: $s_menuColor2;
+                  }
+                }
+                >.mod-side-menu-list {
+                  > ul {
+                    > li {
+                      > .mod-side-menu-item {
+                        color: $s_menuColor2;
+                        background-image: url("img/mod-side-menu-box/bg07_2.png");
+                        a {
+                          color: $s_menuColor2;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ex-style_01A3a {
+  .mod-side-menu-box-h {
+    height: 10px;
+    @include background("mod-side-menu-box/bg_3.png", no-repeat, top, left);
+  }
+  .mod-side-menu-box-b {
+    height: 10px;
+    @include background("mod-side-menu-box/bg02_3.png", no-repeat, bottom, left);
+  }
+  .mod-side-menu {
+    background-color: $s_boxBgColor3;
+    > .mod-side-menu-list {
+      > ul {
+        > li {
+          > .mod-side-menu-item {
+            color: $s_menuColor3;
+            background-image: url("img/mod-side-menu-box/bg04_3.png");
+            background-color: $s_menuBgColor3;
+            a {
+              color: $s_menuColor3;
+              &:hover {
+                color: $s_menuColorh3;
+                background-image: url("img/mod-side-menu-box/bg05_3.png");
+                background-color: $s_menuBgColorh3;
+              }
+            }
+          }
+          > .mod-side-menu-list {
+            > ul {
+              > li {
+                > .mod-side-menu-item {
+                  color: $s_menuColor3;
+                  background-image: url("img/mod-side-menu-box/bg06_3.png");
+                  a {
+                    color: $s_menuColor3;
+                  }
+                }
+                > .mod-side-menu-list {
+                  > ul {
+                    > li {
+                      > .mod-side-menu-item {
+                        color: $s_menuColor3;
+                        background-image: url("img/mod-side-menu-box/bg07_3.png");
+                        a {
+                          color: $s_menuColor3;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//------------------
+// mod-fnav
+//------------------
+.mod-fnav {
+  width: 100%;
+  background-color: $f_menuBgColor;
+  text-align: center;
+  ul {
+    @extend %cf;
+    width: $baseWidth;
+    margin: 0 auto;
+    padding: 2px 0;
+    text-align: center;
+    li:last-child {
+      background: none;
+    }
+    li {
+      @extend %inlineBlock;
+      padding: 0 6px 0 10px;
+      color: #ffffff;
+      font-size: $fontSizeM - 1;
+      list-style: none;
+      @include background("mod-fnav/bg.png", $position-x: right, $position-y: 50%);
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+  &.ex-style_01A2a,
+  &.ex-style_01B2a,
+  &.ex-style_01C2a {
+    background-color: $f_menuBgColor2;
+  }
+  &.ex-style_01A3a,
+  &.ex-style_01B3a,
+  &.ex-style_01C3a {
+    background-color: $f_menuBgColor3;
+  }
+}
+
+

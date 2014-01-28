@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@mixin mod-tel11-common-style {
+margin-top: 10px;
+  .mod-tel-inner {
+    font-size: 13px;
+    line-height: 1.0;
+    padding: 0 0 0 40px;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 25px;
+    padding: 5px 0 0 40px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
+
+@mixin mod-tel11-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #333333;
+    background-image: url("img/mod-tel/bg05.png");
+  }
+}
+@mixin mod-tel11-style2 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #010911;
+    background-image: url("img/mod-tel/bg05_2.png");
+  }
+}
+@mixin mod-tel11-style3 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #222222;
+    background-image: url("img/mod-tel/bg05_3.png");
+  }
+}
+@mixin mod-tel11-style4 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #222222;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+}
+@mixin mod-tel11-style5 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #222222;
+    background-image: url("img/mod-tel/bg18_2.png");
+  }
+}
+@mixin mod-tel11-style6 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #222222;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+}
+
+

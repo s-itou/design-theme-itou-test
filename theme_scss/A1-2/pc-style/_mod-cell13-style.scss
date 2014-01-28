@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@mixin mod-cell13-common-style {
+font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: $sideFontSizeL - 1;
+  min-height: 18px;
+  margin-top: 10px !important;
+  padding: 5px 0 0 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-cell13-style {
+  color: #333333;
+  background-image: url("img/mod-cell/bg06.png");
+}
+@mixin mod-cell13-style2 {
+  color: #010911;
+  background-image: url("img/mod-cell/bg06_2.png");
+}
+@mixin mod-cell13-style3 {
+  color: #200805;
+  background-image: url("img/mod-cell/bg06_3.png");
+}
+

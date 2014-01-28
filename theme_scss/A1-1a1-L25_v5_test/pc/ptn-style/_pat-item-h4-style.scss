@@ -1,0 +1,810 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-h4
+//
+//  ・h4-icon アイコンがつくデザイン
+//  ・h4-border 小見出しのようなデザイン
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-h4 の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-h4 {
+  display: table;
+  margin: 30px 0 0 0;
+  i {
+    display: table-cell;
+  }
+  .mod-h_4-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      font-size: $fontSizeS;
+    }
+  }
+  .mod-h_4-inner3 {
+    overflow: hidden;
+    .mod-h {
+      word-break: break-all;
+      font-size: $fontSizeL;
+      line-height: 1.3;
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 3px 0 0 0;
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-h4 の共通デザイン
+// -------------------------------------
+
+
+// 汎用的なボックス見出し＝デフォルトスタイル
+@mixin module-style-pat-item-h4-shimple {
+  width: 100%;
+  //i {}　iconなし
+  .mod-h_4-inner {
+    width: 100%;
+  }
+  .mod-h_4-inner3 {
+     @include border-radius();
+     margin: 3px 0 0 0;
+     padding: 2px 7px;
+  }
+  .mod-h {
+    max-height: 111px;
+    font-weight: normal;
+  }
+}
+
+// 背景グラデーション
+@mixin module-style-pat-item-h4-gurade {
+  width: 100%;
+  //i {}　iconなし
+  .mod-h_4-inner {
+    width: 100%;
+  }
+  .mod-h_4-inner3 {
+    background-position: right top;
+    }
+  .mod-h {
+    max-height: 111px;
+    font-weight: bold;
+  }
+}
+
+//四角い見出し　※お問い合わせボックス
+@mixin module-style-pat-item-h4-kaku {
+  margin: 0 auto;
+  width: 100%;
+  .mod-h_4-inner3 {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    background-repeat: repeat-x;
+    .mod-h {
+      text-align: center;
+      font-weight: normal;
+      font-size: $fontSizeL + 5;
+      line-height: 1.2;
+    }
+  }
+}
+
+// アイコンの入ったボックス見出し
+@mixin module-style-pat-item-h4-icon {
+  min-height: 52px;
+  height: 52px;
+  i {
+    width: 50px;
+    height: 52px;
+    padding: 0 10px 0 0;
+  }
+  .mod-h_4-inner {
+    min-width: 30px;
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      max-height: 111px;
+      font-weight: bold;
+    }
+    &.ex-first-child {
+      .mod-h {
+        font-size: $fontSizeL + 6;
+      }
+    }
+  }
+}
+
+
+// -------------------------------------
+// pat-item-h4-shimple の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-h4-shimple-1 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #58bfcc;
+    background-image: url(img/mod-h_4/bg02.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-2 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #2e4e88;
+    background-image: url(img/mod-h_4/bg02_2.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-3 {
+  .mod-h_4-inner {
+    > p {
+      color: #56534e;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #ff9a4c;
+    background-image: url(img/mod-h_4/bg02_3.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-4 {
+  .mod-h_4-inner {
+    > p {
+      color: #1f4185;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #2369d9;
+    background-image: url(img/mod-h_4/bg14.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-5 {
+  .mod-h_4-inner {
+    > p {
+      color: #06474f;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #3ca1b0;
+    background-image: url(img/mod-h_4/bg14_2.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-6 {
+  .mod-h_4-inner {
+    > p {
+      color: #163850;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #509ccd;
+    background-image: url(img/mod-h_4/bg14_3.png);
+    background-repeat: no-repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-7 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/mod-h_4/bg24.png);
+    background-repeat: no-repeat;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-8 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/mod-h_4/bg24_2.png);
+    background-repeat: no-repeat;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #355955;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-9 {
+  .mod-h_4-inner {
+    > p {
+      color: #45320b;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/mod-h_4/bg24_3.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+
+// -------------------------------------
+// pat-item-h4-gurade の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-gurade-1 {
+  .mod-h_4-inner3 {
+    padding: 2px 0 2px 10px;
+    background-color: #f2dc72;
+    background-image: url(img/_pat-item/h4-gurade/bg.png);
+    background-repeat: repeat-y;
+    }
+  .mod-h {
+    color: #352111;
+  }
+}
+@mixin deco-style-pat-item-h4-gurade-2 {
+  .mod-h_4-inner3 {
+    padding: 2px 0 2px 10px;
+    background-color: #66c7d2;
+    background-image: url(img/_pat-item/h4-gurade/bg_2.png);
+    background-repeat: repeat-y;
+    }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-gurade-3 {
+  .mod-h_4-inner3 {
+    padding: 2px 0 2px 10px;
+    background-color: #f27f1b;
+    background-image: url(img/_pat-item/h4-gurade/bg_3.png);
+    background-repeat: repeat-y;
+    }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+
+// -------------------------------------
+// pat-item-h4-kaku の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-kaku-1 {
+  border: 1px solid #c5dcff;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 9px 20px;
+    border: 1px solid #9ac2fe;
+    background-color: #6e98d8;
+    background-image: url("img/mod-h_4/_32/bg_a.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-2 {
+  border: 1px solid #c2eae8;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 9px 20px;
+    border: 1px solid #94d8dd;
+    background-color: #10808c;
+    background-image: url("img/mod-h_4/_32/bg_a_2.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-3 {
+  border: 1px solid #ffe5b9;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 9px 20px;
+    border: 1px solid #ffd098;
+    background-color: #f28220;
+    background-image: url("img/mod-h_4/_32/bg_a_3.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-4 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 16px 20px 8px;
+    background-color: #3c66ba;
+    background-image: url("img/mod-h_4/_32/bg_b.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-5 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 16px 20px 8px;
+    background-color: #12626c;
+    background-image: url("img/mod-h_4/_32/bg_b_2.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-6 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 16px 20px 8px;
+    background-color: #f3811e;
+    background-image: url("img/mod-h_4/_32/bg_b_3.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-7 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 13px 20px 6px;
+    background-color: transparent;
+    background-image: url("img/mod-h_4/_32/bg_c.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-8 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 13px 20px 6px;
+    background-color: transparent;
+    background-image: url("img/mod-h_4/_32/bg_c_2.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-9 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 13px 20px 6px;
+    background-color: transparent;
+    background-image: url("img/mod-h_4/_32/bg_c_3.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+// -------------------------------------
+// pat-item-h4-icon の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-h4-icon-case-1 {
+  i {
+    background-image: url(img/mod-h_4/bg07.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #426ca6;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-2 {
+  i {
+    background-image: url(img/mod-h_4/bg07_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #172846;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-3 {
+  i {
+    background-image: url(img/mod-h_4/bg07_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #56534e;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f7931d;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-4 {
+  i {
+    background-image: url(img/mod-h_4/bg10.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #1F4285;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f16c0b;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-5 {
+  i {
+    background-image: url(img/mod-h_4/bg10_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #0E7E89;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-6 {
+  i {
+    background-image: url(img/mod-h_4/bg10_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #428dc4;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-7 {
+  i {
+    background-image: url(img/mod-h_4/bg15.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #5596f6;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-8 {
+  i {
+    background-image: url(img/mod-h_4/bg15_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #59c8cf;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-9 {
+  i {
+    background-image: url(img/mod-h_4/bg15_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #45320b;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f16e0d;
+    }
+  }
+}
+
+
+@mixin deco-style-pat-item-h4-icon-voice-1 {
+  i {
+    background-image: url(img/mod-h_4/bg.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f58804;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-2 {
+  i {
+    background-image: url(img/mod-h_4/bg_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #0b7d89;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-3 {
+  i {
+    background-image: url(img/mod-h_4/bg_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #56534e;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #fd8e89;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-4 {
+  .mod-h_4-inner {
+    > p {
+      color: #F16C0B;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #1F4285;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-5 {
+  .mod-h_4-inner {
+    > p {
+      color: #F16C0B;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #06474F;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-6 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f16c0b;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-7 {
+  i {
+    background-image: url(img/mod-h_4/bg16.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #7dd1dB;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-8 {
+  i {
+    background-image: url(img/mod-h_4/bg16_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #7dd1dB;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-9 {
+  i {
+    background-image: url(img/mod-h_4/bg16_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #45320b;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f16e0d;
+    }
+  }
+}
+
+
+
+// -------------------------------------
+// pat-item-h4 (補足なし)　の共通スタイル
+// -------------------------------------
+@mixin common-style-pat-item-h4-shimple {
+  //-----必須レイアウト記述------
+  margin: 25px 0 0 0;
+  padding: 0;
+  line-height: 1.2;
+  // font-size: $fontSizeL;
+  text-align: left;
+  // ▼見出しにおいては不要
+  // p {
+  //   margin
+  //   line-height
+  // }
+  //-----必須デザイン記述------
+  // a {
+  //   color
+  //   &:hover {
+  //     color
+  //     text-decoration
+  //   }
+  // }
+  // font-weight: normal;
+  .mod-h {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-size: $fontSizeL;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+// -------------------------------------
+// pat-item-h4 (補足なし) の共通スタイル
+// -------------------------------------
+//小見出しのようなデザイン（これは補足）
+@mixin module-style-pat-item-h4-shimple-border {
+  width: 100%; //すべてのブラウザで下線をのばすため
+}
+// -------------------------------------
+//  pat-item-h4 (補足なし) の装飾デザイン
+// -------------------------------------
+@mixin deco-style-pat-item-h4-simple-border-1 {
+  .mod-h {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-simple-border-2 {
+  .mod-h {
+    color: #443308;
+    border-bottom: 1px solid #443308;
+  }
+}
+@mixin deco-style-pat-item-h4-simple-border-3 {
+  .mod-h {
+    color: #284469;
+    border-bottom: 1px dotted #384469;
+  }
+}
+@mixin deco-style-pat-item-h4-simple-border-4 {
+  .mod-h {
+    color: #12838e;
+    border-bottom: 1px dotted #12838e;
+  }
+}
+@mixin deco-style-pat-item-h4-simple-border-5 {
+  .mod-h {
+    color: #443308;
+    border-bottom: 1px dotted #f37f1c;
+  }
+}
+
+// -------------------------------------
+// pat-item-h4-side の共通スタイル
+// -------------------------------------
+@mixin common-style-pat-item-h4-side {}
+// -------------------------------------
+//  pat-item-h4-side の共通デザイン
+// -------------------------------------
+@mixin module-style-pat-item-h4-side {
+  overflow: hidden;
+  padding: 5px 10px;
+  max-height: 120px;
+  background-repeat: no-repeat;
+  .mod-h {
+    @include text-shadow(1px 1px 2px #222222);
+    font-weight: bold;
+    font-size: $sideFontSizeL + 2;
+  }
+}
+// -------------------------------------
+//  pat-item-h4-side の装飾デザイン
+// -------------------------------------
+@mixin deco-style-pat-item-h4-side-1 {
+  background-image: url("img/mod-label/bg.png");
+  color: #ffffff;
+}
+
+@mixin deco-style-pat-item-h4-side-2 {
+  background-image: url("img/mod-label/bg_2.png");
+  color: #ffffff;
+}
+
+@mixin deco-style-pat-item-h4-side-3 {
+  background-image: url("img/mod-label/bg_3.png");
+  color: #ffffff;
+}
+

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@mixin mod-h_4_11-common-style {
+  display: table;
+  margin-top: 30px;
+  width: 100%;
+  i {
+    display: table-cell;
+    background-position: left center;
+    background-repeat: no-repeat;
+    min-width: 67px;
+    width: 67px;
+    height: 57px;
+  }
+  .mod-h_4-inner {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 30px;
+    > p {
+      font-size: $fontSizeS;
+      padding-left: 0;
+    }
+    > p[data-cms-switchable="true"] + .mod-h_4-inner3, > p + .mod-h_4-inner3 {//編集画面上,公開画面
+      .mod-h {
+        font-size: $fontSizeL;
+      }
+    }
+    > p[data-cms-switchable="false"] + .mod-h_4-inner3 {//編集画面上
+      .mod-h {
+        font-size: $fontSizeL + 4;
+      }
+    }
+  }
+  .mod-h {
+    font-size: $fontSizeL + 4;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .ex-imgFloat .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 & {
+    width: 100% !important;
+  }
+  .ex-imgFloat.ex-imgSize_2L .mod-2col31 .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 & {
+    @if $layoutCode == "L25" or $layoutCode == "R25" {
+      width: 320px;
+    } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+      width: 266px;
+    }
+  }
+  .ex-imgFloat .mod-2col31 .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 & {
+    @if $layoutCode == "L25" or $layoutCode == "R25" {
+      width: 370px;
+    } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+      width: 316px;
+    }
+  }
+  .ex-imgFloat.ex-imgSize_2S .mod-2col31 .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 & {
+    @if $layoutCode == "L25" or $layoutCode == "R25" {
+      width: 420px;
+    } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+      width: 366px;
+    }
+  }
+  .ex-imgFloat.ex-imgSize_2SS .mod-2col31 .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 & {
+    @if $layoutCode == "L25" or $layoutCode == "R25" {
+      width: 470px;
+    } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+      width: 416px;
+    }
+  }
+}
+
+@mixin mod-h_4_11-style {
+  .mod-h_4-inner {
+    > p {
+      color: #575757;
+    }
+  }
+  .mod-h {
+    color: #53251d;
+  }
+}
+@mixin mod-h_4_11-style2 {
+  .mod-h_4-inner {
+    > p {
+      color: #666666;
+    }
+    .mod-h {
+      color: #222222;
+    }
+  }
+}
+@mixin mod-h_4_11-style3 {
+  .mod-h_4-inner {
+    > p {
+      color: #707070;
+    }
+  }
+  .mod-h {
+    color: #010911;
+  }
+}
+@mixin mod-h_4_11-style4 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_11-style5 {
+  .mod-h_4-inner {
+    > p {
+      color: #260e0e;
+    }
+  }
+  .mod-h {
+    color: #260e0e;
+  }
+}
+@mixin mod-h_4_11-style6 {
+  .mod-h_4-inner {
+    > p {
+      color: #707070;
+    }
+  }
+  .mod-h {
+    color: #350b06;
+  }
+}
+

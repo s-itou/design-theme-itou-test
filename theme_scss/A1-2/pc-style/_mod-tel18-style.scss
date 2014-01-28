@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@mixin mod-tel18-common-style {
+margin-top: 10px;
+  .mod-tel-inner {
+    font-size: $sideFontSizeS;
+    line-height: 1.0;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    font-weight: bold;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: $sideFontSizeL + 2;
+    padding-top: 6px;
+  }
+}
+
+@mixin mod-tel18-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #5f140a;
+  }
+}
+@mixin mod-tel18-style2 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #426ca6;
+  }
+}
+@mixin mod-tel18-style3 {
+  .mod-tel-inner {
+    color: #56534e;
+  }
+  .mod-tel-inner2 {
+    color: #5f140a;
+  }
+}
+@mixin mod-tel18-style4 {
+  .mod-tel-inner {
+    color: #45320b;
+  }
+  .mod-tel-inner2 {
+    color: #f7931d;
+  }
+}
+

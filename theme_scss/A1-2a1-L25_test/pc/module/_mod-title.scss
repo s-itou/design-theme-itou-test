@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import "../pc-style/mod-title-style";
+@import "../pattern/pat-item-title";
+
+.mod-title-footer {
+  @include common-style-mod-title;
+  @include module-style-mod-title-footer;
+  .ex-style_01A1 & {@include pat-item-title-black-1;}
+  .ex-style_01A2 & {@include pat-item-title-black-1;}
+  .ex-style_01A3 & {@include pat-item-title-black-1;}
+  .ex-style_01B1 & {@include pat-item-title-white-1;}
+  .ex-style_01B2 & {@include pat-item-title-white-1;}
+  .ex-style_01B3 & {@include pat-item-title-white-1;}
+  .ex-style_01C1 & {@include pat-item-title-black-1;}
+  .ex-style_01C2 & {@include pat-item-title-black-1;}
+  .ex-style_01C3 & {@include pat-item-title-black-1;}
+}
+
+// 統合対応ができるまでコメントアウト
+
+// .mod-title3 {
+//   @include mod-title3-common-style;
+//   @include mod-title3-style;
+//   .ex-style_01A1 & {
+//     @include mod-title3-style2;
+//   }
+//   .ex-style_01A2 & {
+//     @include mod-title3-style2;
+//   }
+//   .ex-style_01A3 & {
+//     @include mod-title3-style3;
+//   }
+//   .ex-style_01B1 & {
+//     @include mod-title3-style4;
+//   }
+//   .ex-style_01B2 & {
+//     @include mod-title3-style5;
+//   }
+//   .ex-style_01B3 & {
+//     @include mod-title3-style6;
+//   }
+//   .ex-style_01C1 & {
+//     @include mod-title3-style7;
+//   }
+//   .ex-style_01C2 & {
+//     @include mod-title3-style8;
+//   }
+//   .ex-style_01C3 & {
+//     @include mod-title3-style9;
+//   }
+// }
+
+
+// .mod-title8 {
+//   @include mod-title8-common-style;
+//   @include mod-title8-style;
+//   .ex-style_01A1 & {
+//     @include mod-title8-style;
+//   }
+//   .ex-style_01A2 & {
+//     @include mod-title8-style2;
+//   }
+//   .ex-style_01A3 & {
+//     @include mod-title8-style3;
+//   }
+//   .ex-style_01B1 & {
+//     @include mod-title8-style;
+//   }
+//   .ex-style_01B2 & {
+//     @include mod-title8-style;
+//   }
+//   .ex-style_01B3 & {
+//     @include mod-title8-style;
+//   }
+//   .ex-style_01C1 & {
+//     @include mod-title8-style4;
+//   }
+//   .ex-style_01C2 & {
+//     @include mod-title8-style5;
+//   }
+//   .ex-style_01C3 & {
+//     @include mod-title8-style3;
+//   }
+// }
+
+
+// .mod-title9 {
+//   @include mod-title9-common-style;
+//   @include mod-title9-style;
+// }
+
+
+// .mod-title10 {
+//   @include mod-title10-common-style;
+//   @include mod-title10-style;
+// }
+
+// .mod-title11 {
+//   @include mod-title11-common-style;
+//   @include mod-title11-style;
+//   .ex-style_01A1 & {
+//     @include mod-title11-style;
+//   }
+//   .ex-style_01A2 & {
+//     @include mod-title11-style2;
+//   }
+//   .ex-style_01A3 & {
+//     @include mod-title11-style3;
+//   }
+//   .ex-style_01B1 & {
+//     @include mod-title11-style4;
+//   }
+//   .ex-style_01B2 & {
+//     @include mod-title11-style5;
+//   }
+//   .ex-style_01B3 & {
+//     @include mod-title11-style6;
+//   }
+//   .ex-style_01C1 & {
+//     @include mod-title11-style7;
+//   }
+//   .ex-style_01C2 & {
+//     @include mod-title11-style8;
+//   }
+//   .ex-style_01C3 & {
+//     @include mod-title11-style9;
+//   }
+// }
+
+// .mod-title12 {
+//   @include mod-title12-common-style;
+//   @include mod-title12-style;
+//   .ex-style_01A1 & {
+//     @include mod-title12-style;
+//   }
+//   .ex-style_01A2 & {
+//     @include mod-title12-style2;
+//   }
+//   .ex-style_01A3 & {
+//     @include mod-title12-style3;
+//   }
+//   .ex-style_01B1 & {
+//     @include mod-title12-style4;
+//   }
+//   .ex-style_01B2 & {
+//     @include mod-title12-style5
+//   }
+//   .ex-style_01B3 & {
+//     @include mod-title12-style6;
+//   }
+//   .ex-style_01C1 & {
+//     @include mod-title12-style7;
+//   }
+//   .ex-style_01C2 & {
+//     @include mod-title12-style8;
+//   }
+//   .ex-style_01C3 & {
+//     @include mod-title12-style9;
+//   }
+// }
+
+
+
+
+
+
+
+// .mod-title-box {
+//   @include mod-titlebox-common-style;
+//   @include mod-titlebox-style;
+//   .ex-style_01A1 & {
+//     @include mod-titlebox-style;
+//   }
+//   .ex-style_01A2 & {
+//     @include mod-titlebox-style2;
+//   }
+//   .ex-style_01A3 & {
+//     @include mod-titlebox-style3;
+//   }
+//   .ex-style_01B1 & {
+//     @include mod-titlebox-style4;
+//   }
+//   .ex-style_01B2 & {
+//     @include mod-titlebox-style5;
+//   }
+//   .ex-style_01B3 & {
+//     @include mod-titlebox-style6;
+//   }
+//   .ex-style_01C1 & {
+//     @include mod-titlebox-style7;
+//   }
+//   .ex-style_01C2 & {
+//     @include mod-titlebox-style8;
+//   }
+//   .ex-style_01C3 & {
+//     @include mod-titlebox-style9;
+//   }
+// }

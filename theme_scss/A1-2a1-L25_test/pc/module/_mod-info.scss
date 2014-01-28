@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import "../pc-style/mod-info-style";
+
+.mod-info_ver2 {
+  @include common-style-mod-info;
+  @include module-style-mod-info;
+  .ex-style_01A1 & {@include deco-style01A1-mod-info;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-info;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-info;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-info;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-info;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-info;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-info;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-info;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-info;}
+}
+
+.mod-info-header {
+  @include common-style-mod-info-header;
+  @include module-style-mod-info-header;
+  .ex-style_01A1 & {@include deco-style01A1-mod-info-header;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-info-header;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-info-header;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-info-header;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-info-header;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-info-header;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-info-header;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-info-header;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-info-header;}
+}
+
+.mod-info-header-top {
+  @include common-style-mod-info-header;
+  @include module-style-mod-info-header-top;
+  .ex-style_01A1 & {@include deco-style01A1-mod-info-header;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-info-header;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-info-header;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-info-header;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-info-header;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-info-header;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-info-header;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-info-header;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-info-header;}
+}
+
+.mod-info-header-bottom {
+  @include common-style-mod-info-header;
+  @include module-style-mod-info-header-bottom;
+  .ex-style_01A1 & {@include deco-style01A1-mod-info-header;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-info-header;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-info-header;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-info-header;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-info-header;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-info-header;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-info-header;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-info-header;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-info-header;}
+}
+
+.mod-info-news {
+  @include common-style-mod-info-news;
+  @include module-style-mod-info-news;
+  .ex-style_01A1 & {@include deco-style01A1-mod-info-news;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-info-news;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-info-news;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-info-news;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-info-news;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-info-news;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-info-news;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-info-news;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-info-news;}
+}
+
+.mod-info-news2 {
+  @include common-style-mod-info-news;
+  @include module-style-mod-info-news2;
+  .ex-style_01A1 & {@include deco-style01A1-mod-info-news;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-info-news;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-info-news;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-info-news;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-info-news;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-info-news;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-info-news;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-info-news;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-info-news;}
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+// .mod-info7 {
+//   @extend .mod-info;
+// }
+// .mod-info8 {
+//   @extend .mod-info-news;
+// }
+// .mod-info9 {
+//   @extend .mod-info-news2;
+// }
+// .mod-info10 {
+//   @extend .mod-info-header;
+// }
+// .mod-info11 {
+//   @extend .mod-info-header-top;
+// }
+// .mod-info12 {
+//   @extend .mod-info-header-bottom;
+// }

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-navi-header の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-navi-header-style";
+@import "../pattern/pat-item-navi-header";
+
+
+// -----------------------------------
+// header用ナビゲーション
+// -----------------------------------
+
+//元 gnav,gnav2
+.mod-set-navi-header {
+  @include common-style-mod-set-navi-header;
+  &.ex-style_01A1 {
+    @include pat-item-navi-header-kado-image-yellow;
+  }
+  &.ex-style_01A2 {
+    @include pat-item-navi-header-kado-image-blue;
+  }
+  &.ex-style_01A3 {
+    @include pat-item-navi-header-kado-image-yellow-2;
+  }
+  &.ex-style_01B1 {
+    @include pat-item-navi-header-kado-image-gray;
+  }
+  &.ex-style_01B2 {
+    @include pat-item-navi-header-kado-image-gray;
+  }
+  &.ex-style_01B3 {
+    @include pat-item-navi-header-kado-image-gray;
+  }
+  &.ex-style_01C1 {
+    @include pat-item-navi-header-kado-image-blue-2;
+  }
+  &.ex-style_01C2 {
+    @include pat-item-navi-header-kado-image-blue-3;
+  }
+  &.ex-style_01C3 {
+    @include pat-item-navi-header-kado-image-orange;
+  }
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@mixin mod-table9-common-style {
+margin-top: 10px;
+  table {
+    width: 100%;
+    table-layout: fixed;
+    tr:first-child {
+      border-bottom: 1px dotted #dedad1 !important;
+      th:first-child {
+        width: 40%;
+      }
+      td:first-child {
+        width: 40%;
+      }
+    }
+    tr:last-child {
+      border: none;
+    }
+    tr {
+      border-bottom: 1px dotted #dedad1;
+    }
+    th {
+      padding: 10px 0 8px;
+      font-weight: normal;
+      text-align: left;
+      vertical-align: top;
+    }
+    td {
+      padding: 10px 0 8px;
+      vertical-align: top;
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+

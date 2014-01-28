@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-table
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-table-style.scss";
+
+// -------------------------------------
+//  pat-item-table の個別設定
+// -------------------------------------
+
+// table ex-style1
+@mixin pat-item-table-1 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-1;
+}
+
+// table ex-style2
+@mixin pat-item-table-2 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-2;
+}
+
+// table ex-style3
+@mixin pat-item-table-3 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-3;
+}
+
+// table ex-style4
+@mixin pat-item-table-4 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-4;
+}
+
+// table ex-style5
+@mixin pat-item-table-5 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-5;
+}
+
+// table ex-style6
+@mixin pat-item-table-6 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-6;
+}
+
+// table ex-style7
+@mixin pat-item-table-7 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-7;
+}
+
+// table ex-style8
+@mixin pat-item-table-8 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-8;
+}
+
+// table ex-style9
+@mixin pat-item-table-9 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-9;
+}
+
+
+//mod-set-schedule ex-style1
+@mixin pat-item-table-10 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-10;
+}
+
+//mod-set-schedule ex-style2
+@mixin pat-item-table-11 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-11;
+}
+
+//mod-set-schedule ex-style3
+@mixin pat-item-table-12 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-12;
+}
+
+//mod-set-schedule ex-style4
+@mixin pat-item-table-13 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-13;
+}
+
+//mod-set-schedule ex-style5
+@mixin pat-item-table-14 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-14;
+}
+
+//mod-set-schedule ex-style6
+@mixin pat-item-table-15 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-15;
+}
+
+//mod-set-schedule ex-style7
+@mixin pat-item-table-16 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-16;
+}
+
+//mod-set-schedule ex-style8
+@mixin pat-item-table-17 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-17;
+}
+
+//mod-set-schedule ex-style9
+@mixin pat-item-table-18 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-3;
+  @include deco-style-pat-item-table-18;
+}
+
+
+// table-side ex-style1
+@mixin pat-item-table-side-1 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-side-1;
+}
+
+// table-side ex-style2
+@mixin pat-item-table-side-2 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-side-2;
+}
+
+// table-side ex-style3
+@mixin pat-item-table-side-3 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table;
+  @include deco-style-pat-item-table-side-3;
+}
+
+
+// shedule table-side ex-style1
+@mixin pat-item-table-side-4 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-2;
+  @include deco-style-pat-item-table-side-1;
+}
+
+// shedule table-side ex-style2
+@mixin pat-item-table-side-5 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-2;
+  @include deco-style-pat-item-table-side-2;
+}
+
+// shedule table-side ex-style3
+@mixin pat-item-table-side-6 {
+  @include common-style-pat-item-table;
+  @include module-style-pat-item-table-2;
+  @include deco-style-pat-item-table-side-3;
+}

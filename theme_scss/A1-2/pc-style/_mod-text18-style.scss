@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@mixin mod-text18-common-style {
+margin-top: 10px !important;
+  font-size: $sideFontSizeL - 1;
+  font-weight: bold;
+}
+
+@mixin mod-text18-style {
+  color: #010911;
+}
+@mixin mod-text18-style2 {
+  color: #200805;
+}
+

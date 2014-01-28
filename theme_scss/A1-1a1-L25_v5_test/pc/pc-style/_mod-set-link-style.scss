@@ -1,0 +1,42 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// mod-set-link の共通定義
+//
+// -----------------------------------
+
+// ----------------------------
+// common-style
+// ----------------------------
+
+@mixin common-style-mod-set-link {
+  padding: 1px 0 0 0;
+}
+
+// ----------------------------
+// module-style
+// ----------------------------
+
+// mod-set-link
+@mixin module-style-mod-set-link {
+  &.ex-first-part {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+    > div > div > div > .ex-first-child > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+// mod-set-link-side
+@mixin module-style-mod-set-link-side {
+  &.ex-first-part {
+    > div > .ex-first-child > .ex-first-child {
+      margin-top: 0 !important;
+    }
+    > div > .ex-first-child a > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}

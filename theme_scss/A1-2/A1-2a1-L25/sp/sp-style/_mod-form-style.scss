@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+//  mod-form の mixin一式
+@mixin mod-form-common-style {
+  width: 100%;
+  margin-top: 15px;
+  .mod-form-items {
+    margin-bottom: 15px;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      @extend %cf;
+      padding: 5px 10px;
+      display: block;
+    }
+    .mod-form-name {
+      width: 85%;
+      float: right;
+      display: block;
+      padding-top: 2px;
+      &:only-child {
+        width: 100%;
+      }
+    }
+    .mod-form-required {
+      color: #ffffff;
+      font-size: 10px;
+      text-align: center;
+      width: 30px;
+      padding: 1px;
+      @include border-radius(3px);
+      display: inline-block;
+    }
+    .mod-form-part {
+      width: auto;
+      padding: 10px 10px 20px;
+      display: block;
+      .mod-form-description {
+        margin-top: 5px;
+        color: #666666;
+        font-size: 11px;
+      }
+      input[type="text"], textarea {
+        font-size: 16px;
+        width: 100% !important;
+        padding: 5px;
+        @include box-sizing(border-box);
+      }
+      ul {
+        padding: 0;
+        margin: 0  0 0 -20px;
+        list-style-type: none;
+        li {
+          margin-bottom: 10px;
+          display: inline-block;
+          padding-left: 49px;
+          text-indent: -49px;
+          input[type="radio"], input[type="checkbox"] {
+            width: 25px;
+            height: 25px;
+            margin: -2px 5px 0 20px;
+            & + label {
+              font-size: 14px;
+              vertical-align: top;
+            }
+          }
+          input[type="radio"] {
+            @include border-radius(15px);
+          }
+        }
+      }
+      select {
+        font-size: 16px;
+        vertical-align: top;
+        min-width: 40%;
+      }
+    }
+  }
+  .mod-form-submit {
+    width: 100%;
+    .mod-form-submit-button {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      input {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;//ブラウザのデフォルトスタイル解除
+        border: 1px solid #a5a8ad;//ブラウザのデフォルトスタイル解除
+        @include border-radius();
+        width: 162px;
+        min-height: 30px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: pointer;
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+    }
+    .mod-form-confirm-button {
+      width: 100%;
+      text-align: center;
+      .mod-form-edit {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;//ブラウザのデフォルトスタイル解除
+        border: 1px solid #a5a8ad;//ブラウザのデフォルトスタイル解除
+        @include border-radius();
+        min-width: 86px;
+        min-height: 30px;
+        margin-right:20px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: #334766;
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+      .mod-form-send {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;//ブラウザのデフォルトスタイル解除
+        border: 1px solid #a5a8ad;//ブラウザのデフォルトスタイル解除
+        @include border-radius();
+        min-width: 86px;
+        min-height: 30px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: #334766;
+          cursor: pointer;
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+    }
+    .mod-form-submit-footer {
+      text-align: center;
+      margin-top: 5px;
+      color: #666666;
+      font-size: 12px;
+    }
+  }
+}
+
+@mixin mod-form-style {
+  .mod-form-items {
+    border-top: 1px solid #ddd9d0;
+    border-right: 1px solid #ddd9d0;
+    border-left: 1px solid #ddd9d0;
+  }
+  .mod-form-item {
+    border-bottom: 1px solid #ddd9d0;
+    .mod-form-label {
+      background-color: #f8f7f3;
+      color: #333333;
+      border-bottom: 1px solid #ddd9d0;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-form-style2 {
+  .mod-form-items {
+    border-top: 1px solid #aebdce;
+    border-right: 1px solid #aebdce;
+    border-left: 1px solid #aebdce;
+  }
+  .mod-form-item {
+    border-bottom: 1px solid #aebdce;
+    .mod-form-label {
+      background-color: #e4ebf2;
+      color: #333333;
+      border-bottom: 1px solid #aebdce;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-form-style3 {
+  .mod-form-items {
+    border-top: 1px double #eaafa5;
+    border-right: 1px double #eaafa5;
+    border-left: 1px double #eaafa5;
+  }
+  .mod-form-item {
+    border-bottom: 1px double #eaafa5;
+    .mod-form-label {
+      background-color: #ead3cf;
+      color: #56534e;
+      border-bottom: 1px solid #eaafa5;
+    }
+    .mod-form-required {
+      background-color: #781d0e;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-form-style4 {
+  .mod-form-items {
+    border-top: 1px double #666666;
+    border-right: 1px double #666666;
+    border-left: 1px double #666666;
+  }
+  .mod-form-item {
+    border-bottom: 1px double #666666;
+    .mod-form-label {
+      background-color: #0f365f;
+      color: #ffffff;
+      border-bottom: 0 none transparent;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-form-style5 {
+  .mod-form-items {
+    border-top: 1px solid #103760;
+    border-right: 1px solid #103760;
+    border-left: 1px solid #103760;
+  }
+  .mod-form-item {
+    border-bottom:  1px solid #103760;
+    .mod-form-label {
+      background-color: #b1cbe8;
+      color: #0c2947;
+      border-bottom:  1px solid #103760;
+      }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-form-style6 {
+  .mod-form-items {
+    border-top: 1px solid #742516;
+    border-right: 1px solid #742516;
+    border-left: 1px solid #742516;
+  }
+  .mod-form-item {
+    border-bottom:  1px solid #742516;
+    .mod-form-label {
+      background-color: #340b05;
+      color: #ffffff;
+      border-bottom: 1px solid #742516;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-form-style7 {
+  .mod-form-items {
+    border-top: 1px solid #ddd9d0;
+    border-right: 1px solid #ddd9d0;
+    border-left: 1px solid #ddd9d0;
+  }
+  .mod-form-item {
+    border-bottom: 1px solid #ddd9d0;
+    .mod-form-label {
+      background-color: #3c3c3c;
+      color: #ffffff;
+      border-bottom: 1px solid #ddd9d0;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #f8f7f3;
+    }
+  }
+}
+
+@mixin mod-form-style8 {
+  .mod-form-items {
+    border-top: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+    border-left: 1px solid #aaaaaa;
+  }
+  .mod-form-item {
+    border-bottom: 1px solid #aaaaaa;
+    .mod-form-label {
+      background-color: #0f375f;
+      color: #ffffff;
+      border-bottom: 1px solid #aaaaaa;
+    }
+    .mod-form-required {
+      background-color: #5f140a;
+    }
+    .mod-form-part {
+      background-color: #e9eaed;
+    }
+  }
+}
+
+@mixin mod-form-style9 {
+  .mod-form-items {
+    border-top: 1px solid #ddd9d0;
+    border-right: 1px solid #ddd9d0;
+    border-left: 1px solid #ddd9d0;
+  }
+  .mod-form-item {
+    border-bottom: 1px solid #ddd9d0;
+    .mod-form-label {
+      background-color: #781b0e;
+      color: #ffffff;
+      border-bottom: 1px solid #ddd9d0;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #f8f7f3;
+    }
+  }
+}
+
+

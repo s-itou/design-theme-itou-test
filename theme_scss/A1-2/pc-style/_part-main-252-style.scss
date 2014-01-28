@@ -1,0 +1,380 @@
+@charset "UTF-8";
+
+//  mod-box54 の mixin一式
+@mixin mod-box54-common-style {
+  width: 112px;
+  height: 47px;
+  margin: 15px auto 0 auto;
+  background-image: url("img/mod-box/_54/bg_b_2.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@mixin mod-box54-style {
+}
+@mixin mod-box54-style2 {
+}
+@mixin mod-box54-style3 {
+}
+@mixin mod-box54-style4 {
+}
+@mixin mod-box54-style5 {
+}
+@mixin mod-box54-style6 {
+}
+@mixin mod-box54-style7 {
+}
+@mixin mod-box54-style8 {
+}
+@mixin mod-box54-style9 {
+}
+
+
+
+
+
+
+//  mod-box55 の mixin一式
+@mixin mod-box55-common-style {
+  margin-top: 30px;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+@mixin mod-box55-style5 {
+  //none
+  width: 100%;
+  padding: 0 0 67px 0;
+  background-color: #748697;
+  background-image: url("img/mod-box/_55/bg_b_2.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border: none;
+  > .mod-box-inner { //
+    background-image: url("img/mod-box/_55/bg02_b_2.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+    margin: 0 0 -40px 0;
+    padding: 3px 0 0 0;
+    > .mod-box-inner2 {
+      background-color: transparent;
+      padding: 10px 20px 0;
+    }
+  }
+}
+@mixin mod-box55-style {
+  @include mod-box55-style5; // none
+}
+@mixin mod-box55-style2 {
+  @include mod-box55-style5; // none
+}
+@mixin mod-box55-style3 {
+  @include mod-box55-style5; // none
+}
+@mixin mod-box55-style4 {
+  @include mod-box55-style5; // none
+}
+// @mixin mod-box55-style5 {上に記載}
+@mixin mod-box55-style6 {
+  @include mod-box55-style5; // none
+}
+@mixin mod-box55-style7 {
+  @include mod-box55-style5; // none
+}
+@mixin mod-box55-style8 {
+  @include mod-box55-style5; // none
+}
+@mixin mod-box55-style9 {
+  @include mod-box55-style5; // none
+}
+
+//  mod-copy の mixin一式
+@mixin mod-copy-common-style {
+  width: 100%;
+  text-align: center;
+}
+@mixin mod-copy-style5 {
+  margin-top: 0;
+  background-image: url(img/mod-copy/_01/bg_b_2.png);
+  background-repeat: repeat-y;
+  background-position: left top;
+  box-shadow: 1px 1px 1px #333333;
+  -moz-box-shadow: 1px 1px 1px #333333;
+  -webkit-box-shadow: 1px 1px 1px #333333;
+  .mod-copy-inner {
+    background-image: url(img/mod-copy/_01/bg02_b_2.png);
+    background-repeat: no-repeat;
+    background-position: 1% center;
+  }
+  .mod-copy-inner2 {
+    background-image: url(img/mod-copy/_01/bg02_b_2.png);
+    background-repeat: no-repeat;
+    background-position: 99% center;
+  }
+  p {
+    color: #ffffff;
+    font-size: $fontSizeL + 10;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: 10px 30px;
+  }
+}
+@mixin mod-copy-style {
+  @include mod-copy-style5; // none
+}
+@mixin mod-copy-style2 {
+  @include mod-copy-style5; // none
+}
+@mixin mod-copy-style3 {
+  @include mod-copy-style5; // none
+}
+@mixin mod-copy-style4 {
+  @include mod-copy-style5; // none
+}
+// @mixin mod-copy-style5 {上に記載}
+@mixin mod-copy-style6 {
+  @include mod-copy-style5; // none
+}
+@mixin mod-copy-style7 {
+  @include mod-copy-style5; // none
+}
+@mixin mod-copy-style8 {
+  @include mod-copy-style5; // none
+}
+@mixin mod-copy-style9 {
+  @include mod-copy-style5; // none
+}
+
+//  mod-h_4_27 の mixin一式
+@mixin mod-h_4_27-common-style {
+  margin-top: 15px;
+  .mod-h_4-inner2 {
+    display: table;
+  }
+  i {
+    display: table-cell;
+    background: none;
+  }
+  .mod-h_4-inner3 {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+    p {
+      font-size: $fontSizeS;
+    }
+    .mod-h {
+      font-size: $fontSizeL + 4;
+    }
+  }
+}
+
+@mixin mod-h_4_27-style5 {
+  div[data-parts-name="part-main-252 v7"] & {
+    text-align: left;
+  }
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 0 5px 0;
+  background-image: url("img/mod-h_4/_27/bg30_b_2.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  border-top: none;
+  border-bottom: none;
+  .mod-h_4-inner {
+    width: auto;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  .mod-h_4-inner2 {
+    height: 82px;
+    min-height: 82px;
+    margin: 0 auto;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+  }
+  p {
+    color: #ffffff;
+  }
+  .mod-h {
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.4;
+  }
+}
+@mixin mod-h_4_27-style {
+  @include mod-h_4_27-style5; // none
+}
+@mixin mod-h_4_27-style2 {
+  @include mod-h_4_27-style5; // none
+}
+@mixin mod-h_4_27-style3 {
+  @include mod-h_4_27-style5; // none
+}
+@mixin mod-h_4_27-style4 {
+  @include mod-h_4_27-style5; // none
+}
+// @mixin mod-h_4_27-style5 {上に記載}
+@mixin mod-h_4_27-style6 {
+  @include mod-h_4_27-style5; // none
+}
+@mixin mod-h_4_27-style7 {
+  @include mod-h_4_27-style5; // none
+}
+@mixin mod-h_4_27-style8 {
+  @include mod-h_4_27-style5; // none
+}
+@mixin mod-h_4_27-style9 {
+  @include mod-h_4_27-style5; // none
+}
+
+//  mod-ul6 の mixin一式
+@mixin mod-ul6-common-style {
+  margin-top: 10px;
+  ul {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    li {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 2px;
+      list-style-type: none;
+      background-repeat: no-repeat;
+      font-size: $fontSizeL;
+      font-weight: bold;
+    }
+  }
+  ol {
+    padding-left: 0;
+    > li {
+      background-image: none;
+      padding-left: 0;
+      list-style-type: decimal !important;
+    }
+  }
+}
+@mixin mod-ul6-style5 {
+  //none
+  border-left: none;
+  background-color: #314e78;
+  @include border-radius(0);
+  background-image: url("img/mod-ul/_06/bg03_b_2.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0;
+  @include border-radius(0);
+  box-shadow: 1px 1px 1px #333333;
+  -moz-box-shadow: 1px 1px 1px #333333;
+  -webkit-box-shadow: 1px 1px 1px #333333;
+  .mod-ul-inner {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-ul-inner2 {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  ul {
+    padding-bottom: 10px;
+    li {
+      padding: 7px 0 5px 30px;
+      border-bottom: 1px dashed #ffffff;
+      background-image: url("img/mod-ul/_06/bg_b_2.png");
+      background-position: left 2px;
+      color: #ffffff;
+    }
+  }
+}
+@mixin mod-ul6-style {
+  @include mod-ul6-style5; // none
+}
+@mixin mod-ul6-style2 {
+  @include mod-ul6-style5; // none
+}
+@mixin mod-ul6-style3 {
+  @include mod-ul6-style5; // none
+}
+@mixin mod-ul6-style4 {
+  @include mod-ul6-style5; // none
+}
+// @mixin mod-ul6-style5 {上に記載}
+@mixin mod-ul6-style6 {
+  @include mod-ul6-style5; // none
+}
+@mixin mod-ul6-style7 {
+  @include mod-ul6-style5; // none
+}
+@mixin mod-ul6-style8 {
+  @include mod-ul6-style5; // none
+}
+@mixin mod-ul6-style9 {
+  @include mod-ul6-style5; // none
+}
+
+
+//  mod-rte30 の mixin一式
+@mixin mod-rte30-common-style {
+  margin-top: 10px;
+  > p {
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-rte30-style {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte30-style2 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte30-style3 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte30-style4 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte30-style5 {
+  color: #ffffff;
+}
+@mixin mod-rte30-style6 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte30-style7 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte30-style8 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte30-style9 {
+  //none
+  color: #ffffff;
+}
+

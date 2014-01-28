@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@mixin mod-rte5-common-style {
+margin-top: 20px;
+  @include border-radius();
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte5-style {
+color: #52241b;
+  padding: 10px 15px;
+  background-color: #efefef;
+  border: 1px solid #52241b;
+}
+@mixin mod-rte5-style2 {
+color: #333333;
+  padding: 10px 15px;
+  background-color: #f5ede7;
+  border: 1px solid #e18836;
+}
+@mixin mod-rte5-style3 {
+color: #300c08;
+  padding: 10px 15px;
+  background-color: #fff3f1;
+  border: 1px solid #781b0e;
+}
+@mixin mod-rte5-style4 {
+color: #0f365f;
+  padding: 10px 15px;
+  background-color: #e8ebed;
+  border: 1px solid #0f365f;
+}
+@mixin mod-rte5-style5 {
+color: #163a61;
+  padding: 10px 15px;
+  background-color: #efefef;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style6 {
+color: #333333;
+  padding: 10px 15px;
+  background-color: #eeeeee;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style7 {
+color: #333333;
+  padding: 10px 15px;
+  background-color: #d7e1ec;
+  border: 1px solid #aebdce;
+}
+@mixin mod-rte5-style8 {
+color: #333333;
+  padding: 10px 15px;
+  background-color: #ececec;
+  border: 1px solid #aaaaaa;
+}
+@mixin mod-rte5-style9 {
+color: #333333;
+  padding: 10px 15px;
+  background-color: #f8f3e0;
+  border: 1px solid #cccccc;
+}
+@mixin mod-rte5-style10 {
+color: #52241b;
+  padding: 10px 15px;
+  background-color: #efefef;
+  border: 1px solid #52241b;
+}
+@mixin mod-rte5-style11 {
+  color: #11375C;
+  padding: 10px 15px;
+  background-color: #EAEAF2;
+  border: 1px solid #0F365D;
+}
+@mixin mod-rte5-style12 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #E8DFB6;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style13 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #f2eeda;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style14 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #ffeb84;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style15 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #ffffcc;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style16 {
+  color: #352111;
+  padding: 15px 15px;
+  background-color: #fffce9;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style17 {
+  color: #294470;
+  padding: 15px 15px;
+  background-color: #e3f6f8;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style18 {
+  color: #45320b;
+  padding: 15px 15px;
+  background-color: #fef6b2;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style19 {
+  color: #331f13;
+  padding: 10px 15px;
+  background-color: #f7de5e;
+  border: 0 none transparent;
+}
+@mixin mod-rte5-style20 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #d7e1ec;
+  border: 0 none transparent;
+}
+
+

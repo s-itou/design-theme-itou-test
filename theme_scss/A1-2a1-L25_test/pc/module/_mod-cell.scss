@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import "../pc-style/mod-cell-style";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-cell
+//＊＊＊＊＊＊＊＊＊＊＊＊
+.mod-cell_ver2 {
+  @include common-style-mod-cell;
+  @include module-style-mod-cell;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-cell;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-cell;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-cell;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-cell;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-cell;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-cell;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-cell;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-cell;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-cell;
+  }
+}
+
+.mod-cell-side {
+  @include common-style-mod-cell;
+  @include common-side-style-mod-cell;
+  @include module-style-mod-cell-side;
+  @include common-style-mod-cell;
+  @include common-side-style-mod-cell;
+  @include module-style-mod-cell-i-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-cell;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-cell;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-cell;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-cell;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-cell;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-cell;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-cell;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-cell;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-cell;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-cell-i
+//＊＊＊＊＊＊＊＊＊＊＊＊
+.mod-cell-i {
+  @include common-style-mod-cell;
+  @include module-style-mod-cell-i;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-cell;
+    @include deco-style01A2-mod-cell-i;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-cell;
+    @include deco-style01A3-mod-cell-i;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i;
+  }
+}
+
+.mod-cell-i-side {
+  @include common-style-mod-cell;
+  @include common-side-style-mod-cell;
+  @include module-style-mod-cell-i-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-cell;
+    @include deco-style01A2-mod-cell-i-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-cell;
+    @include deco-style01A3-mod-cell-i-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-cell;
+    @include deco-style01A2-mod-cell-i-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-cell;
+    @include deco-style01A3-mod-cell-i-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-cell;
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-cell;
+    @include deco-style01A2-mod-cell-i-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-cell;
+    @include deco-style01A3-mod-cell-i-side;
+  }
+}
+
+// .mod-cell9 {
+//   @extend .mod-cell-i;
+// }
+// .mod-cell10 {
+//   @extend .mod-cell;
+// }
+// .mod-cell13 {
+//   @extend .mod-cell-i-side;
+// }
+// .mod-cell14 {
+//   @extend .mod-cell-side;
+// }

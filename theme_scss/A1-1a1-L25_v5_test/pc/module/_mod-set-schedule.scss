@@ -1,0 +1,49 @@
+@charset "UTF-8";
+// --------------------------------------------------------------------------
+//
+// mod-set-schedule の紐付けモジュール
+//
+// --------------------------------------------------------------------------
+
+@import "../pc-style/mod-set-schedule-style";
+
+// --------------------------------------------------------------------------
+// part-main-002
+// 営業時間
+// --------------------------------------------------------------------------
+
+.mod-set-schedule {
+  @include common-style-mod-set-schedule;
+  .ex-style_01A1 & {
+    .mod-table{@include pat-item-table-10;}
+  }
+  .ex-style_01A2 & {
+    .mod-table{@include pat-item-table-11;}
+  }
+  .ex-style_01A3 & {
+    .mod-table{@include pat-item-table-12;}
+  }
+  .ex-style_01B1 & {
+    .mod-table{@include pat-item-table-13;}
+  }
+  .ex-style_01B2 & {
+    .mod-table{@include pat-item-table-14;}
+  }
+  .ex-style_01B3 & {
+    .mod-table{@include pat-item-table-15;}
+  }
+  .ex-style_01C1 & {
+    .mod-table{@include pat-item-table-16;}
+  }
+  .ex-style_01C2 & {
+    .mod-table{@include pat-item-table-17;}
+  }
+  .ex-style_01C3 & {
+    .mod-table{@include pat-item-table-18;}
+  }
+}
+
+
+div[data-parts-name*="part-main-002"] .mod-box37 {
+  @extend .mod-set-schedule;
+}

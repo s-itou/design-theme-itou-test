@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+//  mod-image7 の mixin一式
+@mixin mod-image7-common-style {
+  margin-left: 10px !important;
+  float: left;
+  text-align: center;
+  img {
+    @if $layoutCode == "L25" or $layoutCode == "R25" {
+      width: 60px;
+    } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+      width: 54px;
+    }
+    border-style: none;
+  }
+}
+

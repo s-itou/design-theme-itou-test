@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@mixin mod-fnav-common-style {
+width: 100%;
+  text-align: center;
+  ul {
+    @extend %cf;
+    width: $baseWidth;
+    margin: 0 auto;
+    padding: 2px 0;
+    text-align: center;
+    li:last-child {
+      background: none;
+    }
+    li {
+      @extend %inlineBlock;
+      padding: 0 10px 0 10px;
+      color: #ffffff;
+      font-size: $fontSizeM - 1;
+      list-style: none;
+      background-image: url("img/mod-fnav/bg.png");
+      background-position: right center;
+      background-repeat: no-repeat;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@mixin mod-fnav-style {
+background-color: #3c3c3c;
+  li {
+    &.state-em {
+      a {
+        background-color: #222222;
+      }
+    }
+  }
+}
+@mixin mod-fnav-style2 {
+background-color: #0f375f;
+  li {
+    &.state-em {
+      a {
+        background-color: #05203a;
+      }
+    }
+  }
+}
+@mixin mod-fnav-style3 {
+background-color: #5f140a;
+  li {
+    &.state-em {
+      a {
+        background-color: #200805;
+      }
+    }
+  }
+}
+

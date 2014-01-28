@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-box44-style";
+
+.mod-box44 {
+  @include mod-box44-common-style;
+  @include mod-box44-style;
+  .ex-style_01A1 & {
+    @include mod-box44-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box44-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-box44-style;
+  }
+  .ex-style_01B1 & {
+    @include mod-box44-style2;
+  }
+  .ex-style_01B2 & {
+    @include mod-box44-style2;
+  }
+  .ex-style_01B3 & {
+    @include mod-box44-style2;
+  }
+  .ex-style_01C1 & {
+    @include mod-box44-style2;
+  }
+  .ex-style_01C2 & {
+    @include mod-box44-style2;
+  }
+  .ex-style_01C3 & {
+    @include mod-box44-style2;
+  }
+}
+

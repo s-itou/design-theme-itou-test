@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-table4-style";
+
+.mod-table4 {
+  @include mod-table4-common-style;
+  @include mod-table4-style;
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include mod-table4-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include mod-table4-style3;
+  }
+}
+

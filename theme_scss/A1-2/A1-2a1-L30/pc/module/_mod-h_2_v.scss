@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-h_2_v-style";
+
+.mod-h_2_v {
+  @include mod-h_2_v-common-style;
+}
+
+@include _mod-h_2_v-common-style;
+

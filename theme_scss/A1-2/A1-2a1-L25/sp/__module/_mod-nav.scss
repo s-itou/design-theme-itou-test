@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../sp-style/mod-nav-style";
+
+
+.mod-gnav {
+  @include mod-gnav-common-style;
+}
+.mod-gnav2 {
+  @include mod-gnav2-common-style;
+}
+
+.mod-fnav {
+  @include mod-fnav-common-style;
+}

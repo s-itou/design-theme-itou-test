@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-design の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../sp-style/mod-set-design-style";
+@import "../design/pat-design-common";
+
+
+// -----------------------------------
+// part-main-275
+// 汎用枠
+// -----------------------------------
+
+.mod-set-design {
+  // @extend %common-style-mod-set-design;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-design-common-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-design-common-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-design-common-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-design-common-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-design-common-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-design-common-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-design-common-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-design-common-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-design-common-9;
+  }
+}

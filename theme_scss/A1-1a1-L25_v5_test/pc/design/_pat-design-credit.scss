@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+
+
+
+@mixin common-style-pat-design-credit {
+  margin: 15px 0 0 0;
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design- の個別設定
+// --------------------------------------------------------------------------
+@mixin pat-design-credit-1 {
+  @include pat-item-waku-kado-simple-blue;
+  @include common-style-pat-design-credit;
+}
+@mixin pat-design-credit-2 {
+  @include pat-item-waku-kado-simple-blue-2;
+  @include common-style-pat-design-credit;
+}
+@mixin pat-design-credit-3 {
+  @include pat-item-waku-kado-simple-blue-3;
+  @include common-style-pat-design-credit;
+}
+@mixin pat-design-credit-4 {
+  @include pat-item-waku-kado-simple-yellow;
+  @include common-style-pat-design-credit;
+}
+@mixin pat-design-credit-5 {
+  @include pat-item-waku-kado-simple-yellow-2;
+  @include common-style-pat-design-credit;
+}
+@mixin pat-design-credit-6 {
+  @include pat-item-waku-kado-simple-orange;
+  @include common-style-pat-design-credit;
+}
+@mixin pat-design-credit-7 {
+  @include pat-item-waku-kado-simple-blue-4;
+  @include common-style-pat-design-credit;
+}
+@mixin pat-design-credit-8 {
+  @include pat-item-waku-kado-simple-orange-2;
+  @include common-style-pat-design-credit;
+}
+@mixin pat-design-credit-9 {
+  @include pat-item-waku-kado-simple-orange-3;
+  @include common-style-pat-design-credit;
+}
+
+

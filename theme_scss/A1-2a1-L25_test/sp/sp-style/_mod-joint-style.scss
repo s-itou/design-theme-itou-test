@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-joint
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-joint {
+  height: 47px;
+  background-repeat: no-repeat;
+}
+
+//-----module-style-----//
+
+//mod-joint-hikaku
+@mixin module-style-mod-joint-hikaku {
+  width: 112px;
+  margin: 25px auto 0;
+}
+
+//mod-joint-copy
+@mixin module-style-mod-joint-copy {
+  margin: 15px auto 0 auto;
+  background-position: center top;
+}
+
+
+//-----deco-style-----//
+
+//mod-joint-hikaku
+@mixin deco-style01A1-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg02.png");
+}
+
+@mixin deco-style01A2-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg02_2.png");
+}
+
+@mixin deco-style01A3-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg02_3.png");
+}
+
+@mixin deco-style01B1-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg05.png");
+}
+
+@mixin deco-style01B2-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg05_2.png");
+}
+
+@mixin deco-style01B3-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg05_3.png");
+}
+
+@mixin deco-style01C1-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg06.png");
+}
+
+@mixin deco-style01C2-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg06_2.png");
+}
+
+@mixin deco-style01C3-mod-joint-hikaku {
+  background-image: url("img/mod-box/bg06_3.png");
+}
+
+//mod-joint-copy
+@mixin deco-style01A1-mod-joint-copy {
+  width: 112px;
+  background-image: url("img/mod-box/_54/bg_a.png");
+}
+
+@mixin deco-style01A2-mod-joint-copy {
+  width: 112px;
+  background-image: url("img/mod-box/_54/bg_a_2.png");
+}
+
+@mixin deco-style01A3-mod-joint-copy {
+  width: 112px;
+  background-image: url("img/mod-box/_54/bg_a_3.png");
+}
+
+@mixin deco-style01B1-mod-joint-copy {
+  width: 112px;
+  background-image: url("img/mod-box/_54/bg_b.png");
+}
+
+@mixin deco-style01B2-mod-joint-copy {
+  width: 112px;
+  background-image: url("img/mod-box/_54/bg_b_2.png");
+}
+
+@mixin deco-style01B3-mod-joint-copy {
+  width: 112px;
+  background-image: url("img/mod-box/_54/bg_b_3.png");
+}
+
+@mixin deco-style01C1-mod-joint-copy {
+  width: 66px;
+  background-image: url("img/mod-box/_54/bg_c.png");
+}
+
+@mixin deco-style01C2-mod-joint-copy {
+  width: 66px;
+  background-image: url("img/mod-box/_54/bg_c_2.png");
+}
+
+@mixin deco-style01C3-mod-joint-copy {
+  width: 66px;
+  background-image: url("img/mod-box/_54/bg_c_3.png");
+}

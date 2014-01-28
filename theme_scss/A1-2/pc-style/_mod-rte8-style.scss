@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@mixin mod-rte8-common-style {
+padding: 10px 10px;
+  margin-top: 20px;
+  @include border-radius();
+  > p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte8-style {
+  color: #52241b;
+  background-color: #efefef;
+  border: 1px solid #52241b;
+}
+@mixin mod-rte8-style2 {
+  color: #333333;
+  background-color: #f5ede7;
+  border: 1px solid #e18836;
+}
+@mixin mod-rte8-style3 {
+  color: #333333;
+  background-color: #fff3f1;
+  border: 1px solid #781b0e;
+}
+@mixin mod-rte8-style4 {
+  color: #0f365f;
+  background-color: #e8ebed;
+  border: 1px solid #0f365f;
+}
+@mixin mod-rte8-style5 {
+  color: #163a61;
+  background-color: #efefef;
+  border: 0 none transparent;
+}
+@mixin mod-rte8-style6 {
+  color: #333333;
+  background-color: #eeeeee;
+  border: 0 none transparent;
+
+}
+@mixin mod-rte8-style7 {
+  color: #333333;
+  background-color: #d7e1ec;
+  border: 1px solid #aebdce;
+
+}
+@mixin mod-rte8-style8 {
+  color: #333333;
+  background-color: #ececec;
+  border: 1px solid #aaaaaa;
+}
+@mixin mod-rte8-style9 {
+  color: #333333;
+  background-color: #f8f3e0;
+  border: 1px solid #cccccc;
+}
+@mixin mod-rte8-style10 {
+  color: #333333;
+  background-color: #f2eeda;
+  border:0 none transparent;
+}
+@mixin mod-rte8-style11 {
+  color: #333333;
+  background-color: #ffffcc;
+  border: 0 none transparent;
+}
+@mixin mod-rte8-style12 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #d7e1ec;
+  border: 0 none transparent;
+}
+@mixin mod-rte8-style13 {
+  color: #11375C;
+  padding: 10px 15px;
+  background-color: #EAEAF2;
+  border: 1px solid #0F365D;
+}
+@mixin mod-rte8-style14 {
+  color: #163a61;
+  padding: 10px 15px;
+  background-color: #efefef;
+  border: 1px solid #0F365D;
+}
+@mixin mod-rte8-style15 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #E8DFB6;
+  border: 0 none transparent;
+}
+@mixin mod-rte8-style16 {
+color: #52241b;
+  padding: 10px 15px;
+  background-color: #efefef;
+  border: 1px solid #52241b;
+}

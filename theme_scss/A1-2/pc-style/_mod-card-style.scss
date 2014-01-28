@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@mixin mod-card-common-style {
+@extend %cf;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 7px 10px 7px;
+  > p:first-child {
+    margin-left: 0 !important;
+  }
+}
+
+@mixin mod-card-style {
+border: 3px double #cccccc;
+}
+@mixin mod-card-style2 {
+border: 3px double #dae3ed;
+}
+@mixin mod-card-style3 {
+border: 3px double #ebd6d2;
+}
+@mixin mod-card-style4 {
+border: 3px double #5f140a;
+}
+@mixin mod-card-style5 {
+border: 3px double #f2d028;
+}
+@mixin mod-card-style6 {
+border: 3px double #260e0e;
+}
+@mixin mod-card-style7 {
+border: 1px dotted #666666;
+}
+@mixin mod-card-style8 {
+border: 1px dotted #96c0ed;
+}
+@mixin mod-card-style9 {
+border: 1px dotted #812a1e;
+}
+

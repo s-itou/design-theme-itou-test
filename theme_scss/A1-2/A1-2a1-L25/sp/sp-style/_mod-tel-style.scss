@@ -1,0 +1,1481 @@
+@charset "UTF-8";
+
+
+//  mod-ftel9 の mixin一式
+@mixin mod-ftel9-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 10px auto 0;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 10px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+//  mod-ftel10 の mixin一式
+@mixin mod-ftel10-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 10px auto 0;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+//  mod-ftel15 の mixin一式
+@mixin mod-ftel15-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 10px auto 0;
+  text-align:center;
+  position: relative;
+  padding: 2px 5px 8px 35px;
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 10px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+//  mod-ftel16 の mixin一式
+@mixin mod-ftel16-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 10px auto 0;
+  text-align:center;
+  position: relative;
+  padding: 2px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    margin: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+//  mod-ftel17 の mixin一式
+@mixin mod-ftel17-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-ftel-inner {
+    padding-left: 50px;
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    padding-left: 50px;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("img/mod-ftel/bg06.png");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+  }
+}
+@mixin mod-ftel17-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-ftel18 の mixin一式
+@mixin mod-ftel18-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-ftel-inner {
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@mixin mod-ftel18-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-ftel19 の mixin一式
+@mixin mod-ftel19-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-ftel-inner {
+    padding-left: 40px;
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 40px;
+    background-image: url("img/mod-ftel/bg07.png");
+    background-repeat: no-repeat;
+  }
+}
+@mixin mod-ftel19-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    @extend %inlineBlock;
+    color: #f58804;
+  }
+}
+
+//  mod-ftel20 の mixin一式
+@mixin mod-ftel20-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-ftel-inner {
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+@mixin mod-ftel20-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-tel11 の mixin一式
+@mixin mod-tel11-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  text-align:center;
+  position: relative;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 10px;
+    margin-top: 3px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+@mixin mod-tel11-style {
+  @include tel-button("mod-tel/spbg.png", 10px, 15px);
+  background-size: 31px 29px, 100%;
+}
+@mixin mod-tel11-style2 {
+  @include tel-button("mod-tel/spbg_2.png", 10px, 15px);
+  background-size: 29px 30px, 100%;
+}
+@mixin mod-tel11-style3 {
+  @include tel-button("mod-tel/spbg_3.png", 10px, 15px);
+  background-size: 29px 30px, 100%;
+}
+@mixin mod-tel11-style4 {
+  @include tel-button("mod-tel/spbg02.png", 10px, 15px);
+  background-size: 31px 29px, 100%;
+}
+@mixin mod-tel11-style5 {
+  @include tel-button("mod-tel/spbg02_2.png", 10px, 15px);
+  background-size: 29px 30px, 100%;
+}
+@mixin mod-tel11-style6 {
+  @include tel-button("mod-tel/spbg02_3.png", 10px, 15px);
+  background-size: 29px 30px, 100%;
+}
+
+
+//  mod-tel12 の mixin一式
+@mixin mod-tel12-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  text-align:center;
+  position: relative;
+  padding: 2px 5px 8px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 10px;
+    margin-top: 3px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+//  mod-tel17 の mixin一式
+@mixin mod-tel17-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align:center;
+  position: relative;
+  padding: 2px 5px 8px 35px;
+  height: 60px;
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 10px;
+    margin-top: 3px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+@mixin mod-tel17-style {
+  @include tel-button("mod-tel/spbg.png", 10px, 15px);
+  background-size: 31px 32px, 100%;
+}
+@mixin mod-tel17-style2 {
+  @include tel-button("mod-tel/spbg_2.png", 10px, 15px);
+  background-size: 31px 32px, 100%;
+}
+@mixin mod-tel17-style3 {
+  @include tel-button("mod-tel/spbg_3.png", 10px, 15px);
+  background-size: 31px 32px, 100%;
+}
+//  mod-tel18 の mixin一式
+@mixin mod-tel18-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 10px auto 0;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 2px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+    margin-top: 3px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+//  mod-tel22 の mixin一式
+@mixin mod-tel22-common-style {
+  .mod-tel-inner {
+    width: 100%;
+    text-align: center;
+  }
+  .mod-tel-inner-img {
+    width: 70%;
+  }
+  i {
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+  }
+  .mod-icon_ftel {
+    height: 25px;
+    top: 20px;
+    left: 10px;
+    background-size: 31px 25px;
+    background-image: url("img/mod-ftel/_22/bg_a.png");
+    background-position: left top;
+  }
+  .mod-icon_tel {
+    height: 32px;
+    top: 15px;
+    left: 10px;
+    background-size: 31px 32px;
+    background-position: left top;
+  }
+  .mod-tel-inner3  {
+    margin-top: 10px;
+    text-align: center;
+    font-size: $fontSizeL;
+  }
+  .mod-tel-inner4 {
+    @include border-radius();
+    border: 1px solid #cccccc;
+    width: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:center;
+    position: relative;
+    padding: 17px 0 0 20px;
+    height: 60px;
+    @include tel-button2();
+    text-align: center;
+  }
+  .mod-tel-inner4-2 {
+    display: inline-block;
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+@mixin mod-tel22-style {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/spbg_a.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+}
+@mixin mod-tel22-style2 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/spbg_a_2.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+}
+@mixin mod-tel22-style3 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/spbg_a_3.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+}
+@mixin mod-tel22-style4 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/spbg_b.png");
+  }
+  .mod-tel-inner3 {
+    color: #ffffff;
+  }
+}
+@mixin mod-tel22-style5 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/spbg_c.png");
+  }
+  .mod-tel-inner3 {
+    color: #222222;
+  }
+}
+@mixin mod-tel22-style6 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/spbg_c_2.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+}
+@mixin mod-tel22-style7 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/spbg_c_3.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+}
+
+//  mod-tel23 の mixin一式
+@mixin mod-tel23-common-style {
+  padding: 0 0 0 32px;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 32px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+@mixin mod-tel23-style {
+  color: #333333;
+  background-image: url("img/mod-tel/bg05_3.png");
+}
+
+//  mod-tel24 の mixin一式
+@mixin mod-tel24-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-tel-inner {
+    padding-left: 50px;
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    padding-left: 50px;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("img/mod-tel/bg14.png");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+  }
+}
+@mixin mod-tel24-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-tel25 の mixin一式
+@mixin mod-tel25-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-tel-inner {
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@mixin mod-tel25-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-tel26 の mixin一式
+@mixin mod-tel26-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-tel-inner {
+    padding-left:30px;
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left:30px;
+    background-image: url("img/mod-tel/bg15.png");
+    background-repeat: no-repeat;
+  }
+}
+@mixin mod-tel26-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    @extend %inlineBlock;
+    color: #f58804;
+  }
+}
+
+//  mod-tel27 の mixin一式
+@mixin mod-tel27-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-tel-inner {
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+@mixin mod-tel27-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-tel28 の mixin一式
+@mixin mod-tel28-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align:center;
+  position: relative;
+  padding: 5px 0 0 20px;
+  height: 60px;
+  @include tel-button2();
+  text-align: center;
+  i {
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+  }
+  .mod-icon_ftel {
+    height: 25px;
+    top: 20px;
+    left: 10px;
+    background-image: url("img/mod-ftel/spbg02.png");
+    background-position: left top;
+    background-size: 31px 25px;
+  }
+  .mod-icon_tel {
+    height: 32px;
+    top: 15px;
+    left: 10px;
+    background-size: 31px 32px;
+    background-position: left top;
+  }
+  .mod-tel-inner {
+    display: inline-block;
+    > p:first-child.mod-tel-inner-3 {
+      position: relative;
+      top: 10px;
+      margin-top: 3px;
+    }
+    > p[data-cms-switchable="false"] + p {
+      position: relative;
+      top: 10px;
+    }
+  }
+  .mod-tel-inner-2 {
+    font-size: 12px;
+    word-break: break-all;
+  }
+  .mod-tel-inner-3 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+@mixin mod-tel28-style {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/spbg_a.png");
+  }
+}
+@mixin mod-tel28-style2 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/spbg_a_2.png");
+  }
+}
+@mixin mod-tel28-style3 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/spbg_a_3.png");
+  }
+}
+@mixin mod-tel28-style4 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/spbg_b.png");
+  }
+}
+@mixin mod-tel28-style5 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/spbg_c_2.png");
+  }
+}
+@mixin mod-tel28-style6 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/spbg_c_3.png");
+  }
+}
+
+//  mod-tel29 の mixin一式
+@mixin mod-tel29-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align:center;
+  position: relative;
+  padding: 5px 0 0 30px;
+  height: 60px;
+  @include tel-button2();
+  text-align: center;
+  i {
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+  }
+  .mod-icon_ftel {
+    height: 25px;
+    top: 20px;
+    left: 10px;
+    background-size: 31px 25px;
+    background-image: url("img/mod-ftel/spbg02.png");
+    background-position: left top;
+  }
+  .mod-icon_tel {
+    height: 32px;
+    top: 15px;
+    left: 10px;
+    background-size: 31px 32px;
+    background-position: left top;
+  }
+  .mod-tel-inner {
+    display: inline-block;
+    > p:first-child.mod-tel-inner-3 {
+      position: relative;
+      top: 10px;
+      margin-top: 3px;
+    }
+    > p[data-cms-switchable="false"] + p {
+      position: relative;
+      top: 10px;
+    }
+  }
+  .mod-tel-inner-2 {
+    font-size: 12px;
+    word-break: break-all;
+  }
+  .mod-tel-inner-3 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+@mixin mod-tel29-style {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_a.png");
+
+  }
+}
+@mixin mod-tel29-style2 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_a_2.png");
+  }
+}
+@mixin mod-tel29-style3 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_a_3.png");
+  }
+}
+@mixin mod-tel29-style4 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_b.png");
+  }
+}
+@mixin mod-tel29-style5 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_b_2.png");
+  }
+}
+@mixin mod-tel29-style6 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_b_3.png");
+  }
+}
+@mixin mod-tel29-style7 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_c.png");
+  }
+}
+@mixin mod-tel29-style8 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_c_2.png");
+  }
+}
+@mixin mod-tel29-style9 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_c_3.png");
+  }
+}
+
+//  mod-tel30 の mixin一式
+@mixin mod-tel30-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align:center;
+  position: relative;
+  padding: 5px 0 0 30px;
+  height: 60px;
+  @include tel-button2();
+  text-align: center;
+  i {
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+  }
+  .mod-icon_ftel {
+    height: 25px;
+    top: 20px;
+    left: 10px;
+    background-size: 31px 25px;
+    background-image: url("img/mod-ftel/spbg02.png");
+    background-position: left top;
+  }
+  .mod-icon_tel {
+    height: 32px;
+    top: 15px;
+    left: 10px;
+    background-size: 31px 32px;
+    background-position: left top;
+  }
+  .mod-tel-inner {
+    display: inline-block;
+    > p:first-child.mod-tel-inner-3 {
+      position: relative;
+      top: 10px;
+      margin-top: 3px;
+    }
+    > p[data-cms-switchable="false"] + p {
+      position: relative;
+      top: 10px;
+    }
+  }
+  .mod-tel-inner-2 {
+    font-size: 12px;
+    word-break: break-all;
+  }
+  .mod-tel-inner-3 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+@mixin mod-tel30-style {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg.png");
+
+  }
+}
+
+@mixin mod-tel30-style2 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_2.png");
+  }
+}
+
+@mixin mod-tel30-style3 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_3.png");
+  }
+}
+
+@mixin mod-tel30-style4 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg.png");
+  }
+}
+
+@mixin mod-tel30-style5 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_2.png");
+  }
+}
+
+@mixin mod-tel30-style6 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_3.png");
+  }
+}
+
+@mixin mod-tel30-style7 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg.png");
+  }
+}
+
+@mixin mod-tel30-style8 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_2.png");
+  }
+}
+
+
+@mixin mod-tel30-style9 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_3.png");
+  }
+}
+
+
+
+//  mod-fax7 の mixin一式
+@mixin mod-fax7-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.5;
+  font-size: 20px;
+  color: #333333;
+  width:100%;
+  margin-top: 10px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    z-index: 3;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 22px 18px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: -5px;
+  }
+}
+@mixin mod-fax7-style {
+  &:before {
+    background-image: url("img/mod-fax/spbg.png");
+  }
+}
+@mixin mod-fax7-style2 {
+  &:before {
+    background-image: url("img/mod-fax/spbg_2.png");
+  }
+}
+@mixin mod-fax7-style3 {
+  &:before {
+    background-image: url("img/mod-fax/spbg_3.png");
+  }
+}
+
+//  mod-fax8 の mixin一式
+@mixin mod-fax8-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 20px;
+  color: #333333;
+  width:100%;
+  margin-top: 10px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+}
+
+//  mod-fax11 の mixin一式
+@mixin mod-fax11-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 20px;
+  color: #333333;
+  width:100%;
+  margin-top: 10px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    z-index: 3;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 22px 18px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: -5px;
+  }
+}
+@mixin mod-fax11-style {
+  &:before {
+    background-image: url("img/mod-fax/spbg.png");
+  }
+}
+@mixin mod-fax11-style2 {
+  &:before {
+    background-image: url("img/mod-fax/spbg_2.png");
+  }
+}
+@mixin mod-fax11-style3 {
+  &:before {
+    background-image: url("img/mod-fax/spbg_3.png");
+  }
+}
+
+//  mod-fax12 の mixin一式
+@mixin mod-fax12-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 20px;
+  color: #333333;
+  width:100%;
+  margin-top: 10px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+}
+
+
+//  mod-cell9 の mixin一式
+@mixin mod-cell9-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 22px !important;
+  color: #ff0000;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  height: 60px;
+}
+@mixin mod-cell9-style {
+  @include tel-button("mod-cell/spbg.png", 10px, 15px);
+  background-size: 31px 31px, 100%;
+}
+@mixin mod-cell9-style2 {
+  @include tel-button("mod-cell/spbg_2.png", 10px, 15px);
+  background-size: 28px 28px, 100%;
+}
+@mixin mod-cell9-style3 {
+  @include tel-button("mod-cell/spbg_3.png", 10px, 15px);
+  background-size: 31px 31px, 100%;
+}
+
+//  mod-cell10 の mixin一式
+@mixin mod-cell10-common-style {
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 22px !important;
+  color: #ff0000;
+  @include background-image(linear-gradient(top, #fff, #eee));
+}
+
+//  mod-cell13 の mixin一式
+@mixin mod-cell13-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 22px !important;
+  color: #ff0000;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  height: 60px;
+  background-size: 31px 31px, 100% !important;
+}
+@mixin mod-cell13-style {
+  @include tel-button("mod-cell/spbg.png", 10px, 15px);
+}
+@mixin mod-cell13-style2 {
+  @include tel-button("mod-cell/spbg_2.png", 10px, 15px);
+}
+@mixin mod-cell13-style3 {
+  @include tel-button("mod-cell/spbg_3.png", 10px, 15px);
+}
+//  mod-cell14 の mixin一式
+@mixin mod-cell14-common-style {
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 22px !important;
+  color: #ff0000;
+  @include background-image(linear-gradient(top, #fff, #eee));
+}
+
+//  mod-email5 の mixin一式
+@mixin mod-email5-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 0;
+  font-size: 20px;
+  @include box-sizing(border-box);
+  padding:  0 0 40px;
+  height: 60px;
+  color: transparent;
+  background-size: 30px 23px, 100% !important;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    height: 61px;
+    background-image: url("img/mod-email/sp_bg02.png");
+    background-size: 150px 38px;
+    background-position: 60% center;
+    background-repeat: no-repeat;
+  }
+  a {
+    color: transparent !important;
+    width: 100%;
+    height: 60px;
+    background-color: transparent !important;
+    display: block;
+    position: relative;
+    top: -60px;
+  }
+  span {
+    color: transparent !important;
+    background-color: transparent !important;
+  }
+}
+@mixin mod-email5-style {
+  @include tel-button("mod-email/spbg.png", 10px ,18px);
+}
+@mixin mod-email5-style2 {
+  @include tel-button("mod-email/spbg_2.png", 10px ,18px);
+}
+@mixin mod-email5-style3 {
+  @include tel-button("mod-email/spbg_3.png", 10px ,18px);
+}
+
+//  mod-email6 の mixin一式
+@mixin mod-email6-common-style {
+  @include box-sizing(border-box);
+  padding: 0 0 0 0;
+  height: 60px;
+  color: transparent !important;
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 0;
+  font-size: 20px;
+  color: #ff0000;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    height: 61px;
+    background-image: url("img/mod-email/sp_bg02.png");
+    background-size: 150px 38px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  a {
+    color: transparent !important;
+    width: 100%;
+    height: 60px;
+    background-color: transparent !important;
+    display: block;
+    position: relative;
+    top: -60px;
+  }
+  span {
+    color: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+//  mod-email9 の mixin一式
+@mixin mod-email9-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 0;
+  font-size: 20px;
+  @include box-sizing(border-box);
+  padding:  0 0 40px;
+  height: 60px;
+  color: transparent;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    height: 61px;
+    background-image: url("img/mod-email/sp_bg02.png");
+    background-size: 150px 38px;
+    background-position: 60% center;
+    background-repeat: no-repeat;
+  }
+  a {
+    color: transparent !important;
+    width: 100%;
+    height: 60px;
+    background-color: transparent !important;
+    display: block;
+    position: relative;
+    top: -60px;
+  }
+  span {
+    color: transparent !important;
+    background-color: transparent !important;
+  }
+}
+@mixin mod-email9-style {
+  @include tel-button("mod-email/spbg.png", 10px ,18px);
+  background-size: 30px 23px, 100%;
+}
+@mixin mod-email9-style2 {
+  @include tel-button("mod-email/spbg_2.png", 10px ,18px);
+  background-size: 30px 21px, 100%;
+}
+@mixin mod-email9-style3 {
+  @include tel-button("mod-email/spbg_3.png", 10px ,18px);
+  background-size: 30px 21px, 100%;
+}
+//  mod-email10 の mixin一式
+@mixin mod-email10-common-style {
+  @include box-sizing(border-box);
+  padding: 0 0 0 0;
+  height: 60px;
+  color: transparent !important;
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 0;
+  font-size: 20px;
+  color: #ff0000;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    height: 61px;
+    background-image: url("img/mod-email/sp_bg02.png");
+    background-size: 150px 38px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  a {
+    color: transparent !important;
+    width: 100%;
+    height: 60px;
+    background-color: transparent !important;
+    display: block;
+    position: relative;
+    top: -60px;
+  }
+  span {
+    color: transparent !important;
+    background-color: transparent !important;
+  }
+}

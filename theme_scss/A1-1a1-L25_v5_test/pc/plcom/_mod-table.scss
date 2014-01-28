@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+%common-style-mod-table-for-2col { //mod-2col-in1-hyo,mod-2col-in1,mod-2col50-in2
+  .mod-table_ver2
+  //.mod-table8 //暫定
+  {
+    table {
+      font-size: $sideFontSizeM;
+      tr:first-child {
+        > th:first-child,
+        > td:first-child {
+          width: 30%;
+        }
+      }
+      th {
+        padding: 8px 3px;
+      }
+      td {
+        padding: 8px 3px;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+
+
+
+//  佐藤さんコード
+// .mod-2col-in-hyo,
+// .mod-2col-in1,
+// .mod-2col50-in2 {
+//   .mod-table {
+//     table {
+//       font-size: $sideFontSizeM;
+//       tr:first-child {
+//         th:first-child,
+//         td:first-child {
+//           width: auto;
+//         }
+//       }
+//       th, td {
+//         padding: 8px 3px;
+//       }
+//     }
+//   }
+// }
+

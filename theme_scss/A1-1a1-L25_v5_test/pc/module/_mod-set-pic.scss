@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-pic の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-pic-style";
+
+
+// 未作成
+// .mod-set-pic-side {
+
+// }
+
+
+// --------------------------------------------------------------------------
+//　part-header-007
+//　 ヘッダーピクチャ
+// --------------------------------------------------------------------------
+
+.mod-set-pic-header {
+  @include common-style-mod-set-pic-header;
+  &.ex-style_01A1 {
+   @include pat-item-header-box-blue;
+  }
+  &.ex-style_01A2 {
+   @include pat-item-header-box-gleen;
+  }
+  &.ex-style_01A3 {
+   @include pat-item-header-box-orange;
+  }
+  &.ex-style_01B1 {
+   @include pat-item-header-box-blue-2;
+  }
+  &.ex-style_01B2 {
+   @include pat-item-header-box-gleen-2;
+  }
+  &.ex-style_01B3 {
+   @include pat-item-header-box-orange-2;
+  }
+  &.ex-style_01C1 {
+   @include pat-item-header-box-blue-3;
+  }
+  &.ex-style_01C2 {
+    @include pat-item-header-box-gleen-3;
+  }
+  &.ex-style_01C3 {
+   @include pat-item-header-box-orange-3;
+  }
+  &.ex-style_0000 {
+   @include pat-item-header-box-none;
+  }
+}

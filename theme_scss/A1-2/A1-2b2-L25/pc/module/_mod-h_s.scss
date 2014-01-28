@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-h_s-style";
+
+.mod-h_s {
+  @include mod-h_s-common-style;
+  @include mod-h_s-style2;
+  .ex-style_01A2 & {
+    @include mod-h_s-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-h_s-style3;
+  }
+}
+
+@include _mod-h_s-common-style;
+

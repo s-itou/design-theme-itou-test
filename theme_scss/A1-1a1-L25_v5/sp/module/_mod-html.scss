@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import "../sp-style/mod-html-style";
+
+.mod-html {
+  @include mod-html-common-style;
+  @if $defaultTheme == "01A1" { @include mod-html-style; }
+    @else if $defaultTheme == "01A2" { @include mod-html-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-html-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-html-style; }
+    @else if $defaultTheme == "01B2" { @include mod-html-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-html-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-html-style; }
+    @else if $defaultTheme == "01C2" { @include mod-html-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-html-style3; }
+    @else { @include mod-html-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-html-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-html-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-html-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-html-style;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-html-style2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-html-style3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-html-style;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-html-style2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-html-style3;
+  }
+}
+
+.mod-html3 {
+  @include mod-html3-common-style;
+}
+
+.mod-html4 {
+  @include mod-html4-common-style;
+  @if $defaultTheme == "01A1" { @include mod-html4-style; }
+    @else if $defaultTheme == "01A2" { @include mod-html4-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-html4-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-html4-style; }
+    @else if $defaultTheme == "01B2" { @include mod-html4-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-html4-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-html4-style; }
+    @else if $defaultTheme == "01C2" { @include mod-html4-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-html4-style3; }
+    @else { @include mod-html4-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-html4-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-html4-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-html4-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-html4-style;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-html4-style2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-html4-style3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-html4-style;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-html4-style2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-html4-style3;
+  }
+}
+
+.mod-html5 {
+  @include mod-html5-common-style;
+}
+
+.mod-html6 {
+  @include mod-html6-common-style;
+  @if $defaultTheme == "01A1" { @include mod-html6-style; }
+    @else if $defaultTheme == "01A2" { @include mod-html6-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-html6-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-html6-style; }
+    @else if $defaultTheme == "01B2" { @include mod-html6-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-html6-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-html6-style; }
+    @else if $defaultTheme == "01C2" { @include mod-html6-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-html6-style3; }
+    @else { @include mod-html6-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-html6-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-html6-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-html6-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-html6-style;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-html6-style2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-html6-style3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-html6-style;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-html6-style2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-html6-style3;
+  }
+}
+
+.mod-html-spec {
+  @include mod-html-spec-common-style;
+}

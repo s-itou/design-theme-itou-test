@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-cell9-style";
+
+.mod-cell9 {
+  @include mod-cell9-common-style;
+  @include mod-cell9-style;
+  .ex-style_01A2 &,
+  .ex-style_01C2 & {
+    @include mod-cell9-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01C3 & {
+    @include mod-cell9-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-cell9-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-cell9-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-cell9-style6;
+  }
+}
+

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@mixin mod-fax11-common-style {
+font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: $sideFontSizeL - 1;
+  margin-top: 10px !important;
+  padding: 3px 0 0 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-fax11-style {
+  color: #333333;
+  background-image: url("img/mod-fax/bg06.png");
+}
+@mixin mod-fax11-style2 {
+  color: #010911;
+  background-image: url("img/mod-fax/bg06_2.png");
+}
+@mixin mod-fax11-style3 {
+  color: #200805;
+  background-image: url("img/mod-fax/bg06_3.png");
+}
+

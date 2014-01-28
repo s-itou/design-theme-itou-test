@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+
+
+@mixin mod-m280-box-common-style {
+  margin-top: 30px;
+  .mod-m280-h_4 {
+    display: table;
+    i {
+      display: table-cell;
+    }
+    .mod-h_4-inner {
+      display: table-cell;
+      vertical-align: middle;
+      overflow: hidden;
+      width: 100%;
+      .mod-h {
+        font-size: $fontSizeM + 2;
+        font-weight: normal;
+      }
+    }
+  }
+  .mod-m280-box2 {
+    .mod-box-inner {
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+      .mod-m280-2col {
+        @extend %cf;
+        margin-top: 20px;
+        .mod-2col-inner {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          > .mod-2col-inner-2 {
+            img {
+              width: 100%;
+            }
+            > .ex-first-child {
+              margin-top: 0 !important;
+            }
+          }
+        }
+        .mod-2col-inner2 {
+          margin-top: 15px;
+          overflow: hidden;
+          > .mod-2col-inner2-2 {
+            > .ex-first-child {
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+      .mod-m280-2col2 {
+        margin-top: 10px;
+        .mod-2col-inner {
+          width: 100%;
+          .mod-2col-inner-3 {
+            > .ex-first-child {
+              margin-top: 0 !important;
+            }
+            .mod-m280-tel {
+              @include border-radius();
+              border: 1px solid #cccccc;
+              width: 100%;
+              margin-top: 10px;
+              margin-right: auto;
+              margin-left: auto;
+              text-align:center;
+              position: relative;
+              padding: 5px 0 0 30px;
+              height: 60px;
+              @include tel-button2();
+              text-align: center;
+              i {
+                width: 31px;
+                background-repeat: no-repeat;
+                background-position: left bottom;
+                position: absolute;
+              }
+              .mod-tel-inner {
+                display: inline-block;
+                > p:first-child.mod-tel-inner-3 {
+                  position: relative;
+                  top: 15px;
+                  margin-top: 3px;
+                }
+                > p[data-cms-switchable="false"] + p {
+                  position: relative;
+                  top: 10px;
+                }
+              }
+              .mod-tel-inner-2 {
+                font-size: 12px;
+                word-break: break-all;
+              }
+              .mod-tel-inner-3 {
+                margin-top: 3px !important;
+                word-break: break-all;
+                line-height: 1.0;
+                font-size: 22px;
+                color: #ff0000;
+              }
+            }
+          }
+        }
+        .mod-2col-inner2 {
+          width: 100%;
+        }
+      }
+      .mod-m280-box4 {
+        margin-top: 15px;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+        .mod-m280-h_5_2 {
+          margin-top: 15px;
+          display: table;
+          .mod-h_5-inner {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+          }
+          .mod-h {
+            line-height: 1.2;
+            font-weight: bold;
+            font-size: $fontSizeM + 2;
+          }
+          i {
+            display: table-cell;
+            height: 17px;
+          }
+          .mod-icon_0 {
+            min-width: 0;
+          }
+        }
+        .mod-m280-rte4 {
+          margin-top: 20px;
+        }
+      }
+      .mod-m280-rte7 {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+
+@mixin mod-m280-box-style5 {
+  //none
+  background-color: #0f375f;
+  .mod-m280-h_4 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("img/mod-m280/mod-h_4/bg_b_2.png");
+    background-repeat: repeat-x;
+    .mod-h_4-inner {
+      padding: 15px 20px 10px;
+      .mod-h {
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+  }
+  .mod-m280-box2 {
+    border: 3px solid #0f375f;
+    .mod-box-inner {
+      padding: 15px 20px;
+      background-color: #ffffff;
+      background-image: url("img/mod-m280/mod-box/bg02_b_2.png");
+      background-repeat: repeat-x;
+      border: 1px solid #c9c9c9;
+      .mod-m280-2col {
+        .mod-2col-inner {
+          .mod-m280-text {
+            font-size: $fontSizeS + 1;
+            text-align: center;
+            margin-top: 10px !important;
+          }
+        }
+        .mod-2col-inner2 {
+          .mod-m280-h_5 {
+            margin-top: 15px;
+            .mod-h {
+              color: #371008;
+              font-weight: bold;
+              font-size: $fontSizeM + 2;
+            }
+          }
+          .mod-m280-ul {
+            margin-top: 10px;
+            &.ex-first-child {
+              margin-top: 0;
+            }
+            ul {
+              padding: 0 0 0 15px;
+              margin-top: 0;
+              margin-right: 0;
+              margin-bottom: 0;
+              margin-left: 0;
+            }
+            li {
+              line-height: 1.5;
+              list-style: none;
+              padding-left:15px;
+              background-image: url("img/mod-m280/mod-ul/bg_b_2.png");
+              background-position: left 5px;
+              background-repeat: no-repeat;
+            }
+          }
+          .mod-m280-text2 {
+            font-size: $fontSizeS + 1;
+            margin-top: 10px !important;
+          }
+          .mod-m280-rte3 {
+            margin-top: 15px;
+          }
+        }
+      }
+      .mod-m280-rte4 {
+        margin-top: 20px;
+      }
+      .mod-m280-box3 {
+        margin-top: 15px;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+        .mod-m280-rte5 {
+          font-weight: bold;
+          text-align: center;
+        }
+        .mod-m280-2col2 {
+          .mod-2col-inner {
+            .mod-m280-tel {
+              .mod-icon_ftel {
+                height: 25px;
+                top: 20px;
+                left: 10px;
+                background-size: 39px 30px;
+                background-image: url("img/mod-m280/mod-tel/spbg_b_2.png");
+                background-position: left bottom;
+              }
+              .mod-icon_tel {
+                height: 32px;
+                top: 10px;
+                left: 10px;
+                background-size: 25px 24px;
+                background-image: url("img/mod-m280/mod-tel/spbg02_b_2.png");
+                background-position: left bottom;
+              }
+            }
+          }
+          .mod-2col-inner2 {
+            .mod-m280-bnr {
+              @include border-radius();
+              width: 100%;
+              margin-top: 15px;
+              border: 1px solid #3f5f7f;
+              background-image: url("img/mod-m280/mod-bnr/bg_b_2.png");
+              background-repeat: repeat-x;
+              background-color: #c7c0a1;
+              .mod-bnr-inner {
+                @include border-radius();
+                padding: 10px 30px 10px 15px;
+                text-align: center;
+                border: 1px solid #ebe9de;
+                background-image: url("img/mod-m280/mod-bnr/spbg02_b_2.png");
+                background-repeat: no-repeat;
+                background-position: 95% 50%;
+                background-size: 16px 16px;
+              }
+            }
+          }
+        }
+        .mod-m280-rte6 {
+          margin-top: 15px;
+          text-align: center;
+        }
+      }
+      .mod-m280-box4 {
+        .mod-m280-h_5_2 {
+          .mod-h {
+            color: #371008;
+            border-bottom: 1px solid #bea320;
+          }
+          .mod-icon_1 {
+            min-width: 0;
+            background-image: none;
+            background-position: left top;
+            background-repeat: no-repeat;
+            border-left: 0 none transparent;
+          }
+          .mod-icon_2 {
+            min-width: 13px;
+            background-image: url("img/mod-h_5/bg21_v2.png");
+            background-position: left top;
+            background-repeat: repeat-y;
+            border-left: 0 none transparent;
+          }
+          .mod-icon_3 {
+            min-width: 6px;
+            background-image: none;
+            background-position: left top;
+            background-repeat: no-repeat;
+            border-left: 10px solid #7ed1d9;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin mod-m280-box-style {
+  @include mod-m280-box-style5; // none
+}
+@mixin mod-m280-box-style2 {
+  @include mod-m280-box-style5; // none
+}
+@mixin mod-m280-box-style3 {
+  @include mod-m280-box-style5; // none
+}
+@mixin mod-m280-box-style4 {
+  @include mod-m280-box-style5; // none
+}
+// @mixin mod-m280-box-style5 {上に記載}
+@mixin mod-m280-box-style6 {
+  @include mod-m280-box-style5; // none
+}
+@mixin mod-m280-box-style7 {
+  @include mod-m280-box-style5; // none
+}
+@mixin mod-m280-box-style8 {
+  @include mod-m280-box-style5; // none
+}
+@mixin mod-m280-box-style9 {
+  @include mod-m280-box-style5; // none
+}

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@mixin mod-box7-common-style {
+width: 100%;
+  @include border-radius();
+  .mod-box-inner2 {
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+@mixin mod-box7-style {
+padding: 10px;
+  border: 1px solid #aaaaaa;
+  background-color: #e6e6e6;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+    padding: 10px;
+  }
+}
+@mixin mod-box7-style2 {
+padding: 10px;
+  border: 1px solid #aebdce;
+  background-color: #d7e1ec;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+    padding: 10px;
+  }
+}
+@mixin mod-box7-style3 {
+padding: 10px;
+  border: 1px solid #d3b2ae;
+  background-color: #fff3f1;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+    padding: 10px;
+  }
+}
+@mixin mod-box7-style4 {
+padding: 10px;
+  border: 1px solid #989898;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+    padding: 10px;
+  }
+}
+@mixin mod-box7-style5 {
+padding: 10px;
+  border: 1px solid #f2d028;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+    padding: 10px;
+  }
+}
+@mixin mod-box7-style6 {
+padding: 10px;
+  border: 1px solid #f2d028;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+    padding: 10px;
+  }
+}
+@mixin mod-box7-style7 {
+padding: 3px;
+  border: 0 none transparent;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+    padding: 15px;
+  }
+}
+

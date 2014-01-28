@@ -1,0 +1,2219 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+
+
+%default-table3 {//メイン経歴用
+  table {
+    width: 100%;
+    table-layout: fixed;
+    tr:first-child {
+      border-bottom: 1px dotted #dedad1 !important;
+      th:first-child {
+        width: 40%;
+      }
+      td:first-child {
+        width: 40%;
+      }
+    }
+    tr:last-child {
+      border: none;
+    }
+    tr {
+      border-bottom: 1px dotted #dedad1;
+    }
+    th {
+      padding: 10px 0 8px;
+      font-weight: normal;
+      text-align: left;
+      vertical-align: top;
+    }
+    td {
+      padding: 10px 0 8px;
+      vertical-align: top;
+    }
+  }
+}
+
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+// mod-table
+.mod-table {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 1px;
+  border: 1px solid $tableBdColor;
+  table {
+    width: 100%;
+    font-size: $fontSizeM;
+    border: 1px solid $tableBdColor;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    tr:first-child {
+      th:first-child {
+        width: 30%;
+      }
+      td:first-child {
+        width: 30%;
+      }
+      th {
+        border-top: 1px solid $tableBdColor;
+        border-bottom: 1px solid #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid #c9e0ff;
+      }
+    }
+    th {
+      padding: 8px;
+      font-weight: normal;
+      @include background($color: $tableBdColor);
+      text-align: left;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      padding: 8px;
+      vertical-align: top;
+      border: 1px solid $tableBdColor;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    border: 1px solid $tableBdColor2;
+    table {
+      border: 1px solid $tableBdColor2;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor2;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor2;
+      }
+      td {
+        border: 1px solid $tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    border: 1px solid $tableBdColor3;
+    table {
+      border: 1px solid $tableBdColor3;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor3;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor3;
+      }
+      td {
+        border: 1px solid $tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    border: 1px solid $d_tableBdColor;
+    color: $d_tableTextColor;
+    table {
+      border: 1px solid #ffffff;
+      tr:first-child {
+        th {
+          border-top: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        @include background("mod-table/bg02.png", repeat-x, $color: $d_tableBgColor);
+      }
+      td {
+        border: 1px solid $d_tableBdColor;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    border: 1px solid $d_tableBdColor2;
+    color: $d_tableTextColor2;
+    table {
+      border: 1px solid #A3E0E9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #A3E0E9;
+        }
+        th:last-child {
+          border-right: 1px solid #A3E0E9;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_2.png", repeat-x, $color: $d_tableBgColor2);
+      }
+      td {
+        border: 1px solid $d_tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    border: 1px solid $d_tableBdColor3;
+    color: $d_tableTextColor3;
+    table {
+      border: 1px solid #F7DE6A;
+      tr:first-child {
+        th {
+          border-top: 1px solid #F7DE6A;
+        }
+        th:last-child {
+          border-right: 1px solid #F7DE6A;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_3.png", repeat-x, $color: $d_tableBgColor3);
+      }
+      td {
+        border: 1px solid $d_tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border: 1px solid #8bb8e4;
+    table {
+      border: 1px solid #8bb8e4;
+      tr:first-child {
+        th {
+          border-top: 1px solid #8bb8e4;
+          border-bottom: 1px solid #8bb8e4;
+        }
+        th:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+      th {
+        @include background("mod-table/bg04.png", repeat-x, $color: #c9e0ff);
+        border-top: 1px solid #8bb8e4;
+        border-right: 1px solid #8bb8e4;
+      }
+      td {
+        border: 1px solid #8bb8e4;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border: 1px solid #7ed1d9;
+    color: #333333;
+    table {
+      border: 1px solid #7ed1d9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #7ed1d9;
+          border-bottom: 1px solid #7ed1d9;
+        }
+        th:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_2.png", repeat-x, $color: #c4ecf0);
+        border-top: 1px solid #7ed1d9;
+        border-right: 1px solid #7ed1d9;
+      }
+      td {
+        border: 1px solid #7ed1d9;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border: 1px solid #f9d5b5;
+    color: #45320b;
+    table {
+      border: 1px solid #f9d5b5;
+      tr:first-child {
+        th {
+          border-top: 1px solid #f9d5b5;
+          border-bottom: 1px solid #f9d5b5;
+        }
+        th:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_3.png", repeat-x, $color: #fdf6e4);
+        border-top: 1px solid #f9d5b5;
+        border-right: 1px solid #f9d5b5;
+      }
+      td {
+        border: 1px solid #f9d5b5;
+      }
+    }
+  }
+}
+
+
+
+
+.mod-table2 {
+  margin-bottom: 15px;
+  table {
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $fontSizeM - 1;
+    tr:first-child {
+      th:first-child {
+        width: 30%;
+      }
+      th:last-child {
+        border-right: 1px solid $table2BdColor;
+      }
+      td:first-child {
+        width: 30%;
+      }
+      th {
+        border-top: 1px solid $table2BdColor;
+        border-bottom: 1px solid $table2BdColor;
+        border-left: 1px solid $table2BdColor;
+      }
+    }
+    tr {
+      th:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+      td:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+    }
+    th {
+      font-weight: normal;
+      border-top: 1px solid $table2BdColor;
+      border-right: 1px solid #d2ccaa;
+      color: $f_tableColor;
+      background-color: $table2BgColor;
+      width: auto;
+      padding: 10px 5px;
+    }
+    td {
+      border: 1px solid $table2BdColor;
+      font-weight: bold;
+      background-color: #ffffff;
+      width: 48px;
+      padding: 10px 5px;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $table2BdColor2;
+          border-bottom: 1px solid $table2BdColor2;
+          border-left: 1px solid $table2BdColor2;
+        }
+        th:last-child {
+          border-right: 1px solid $table2BdColor2;
+        }
+      }
+      th {
+        border-top: 1px solid $table2BdColor2;
+        border-right: 1px solid #d1b422;
+        color: $f_tableColor2;
+        background-color: $table2BgColor2;
+      }
+      td {
+        border: 1px solid $table2BdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $table2BdColor3;
+          border-bottom: 1px solid $table2BdColor3;
+          border-left: 1px solid $table2BdColor3;
+        }
+        th:last-child {
+          border-right: 1px solid $table2BdColor3;
+        }
+      }
+      th {
+        border-top: 1px solid $table2BdColor3;
+        border-right: 1px solid #ffffff;
+        color: $f_tableColor3;
+        background-color: $table2BgColor3;
+      }
+      td {
+        border: 1px solid $table2BdColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    table {
+      tr:first-child {
+        font-weight: bold;
+        th {
+          border-top: 1px solid $d_table2BdColor;
+          border-bottom: 1px solid $d_table2BdColor;
+          border-left: 1px solid $d_table2BdColor;
+        }
+        th:last-child {
+          border-right: 1px solid $d_table2BdColor;
+        }
+      }
+      th {
+        border-top: 1px solid $d_table2BdColor;
+        border-right: 1px solid $d_table2BdColor;
+        color: #2d4a72;
+        background-color: $d_table2BgColor;
+        background-image: url("img/mod-table/bg05.png");
+        background-repeat: repeat-x;
+      }
+      td {
+        border: 1px solid $d_table2BdColor;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $d_table2BdColor2;
+          border-bottom: 1px solid $d_table2BdColor2;
+          border-left: 1px solid $d_table2BdColor2;
+        }
+        th:last-child {
+          border-right: 1px solid $d_table2BdColor2;
+        }
+      }
+      th {
+        border-top: 1px solid $d_table2BdColor2;
+        border-right: 1px solid $d_table2BdColor2;
+        color: #095C66;
+        background-color: $d_table2BgColor2;
+        background-image: url("img/mod-table/bg05_2.png");
+        background-repeat: repeat-x;
+      }
+      td {
+        border: 1px solid $d_table2BdColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $d_table2BdColor3;
+          border-bottom: 1px solid $d_table2BdColor3;
+          border-left: 1px solid $d_table2BdColor3;
+        }
+        th:last-child {
+          border-right: 1px solid $d_table2BdColor3;
+        }
+      }
+      th {
+        border-top: 1px solid $d_table2BdColor3;
+        border-right: 1px solid $d_table2BdColor3;
+        color: #ffffff;
+        background-color: $d_table2BgColor3;
+        background-image: url("img/mod-table/bg05_3.png");
+        background-repeat: repeat-x;
+      }
+      td {
+        border: 1px solid $d_table2BdColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    table {
+      background-image: url("img/mod-table/bg06.png");
+      th {
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    table {
+      background-image: url("img/mod-table/bg06_2.png");
+      th {
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    table {
+      background-image: url("img/mod-table/bg06_3.png");
+      th {
+        background-color: transparent;
+        color: #45320b;
+      }
+    }
+  }
+}
+
+
+
+.mod-table3 {
+  margin-bottom: 15px;
+  table {
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $fontSizeS + 1;
+    tr:first-child {
+      th:first-child {
+        width: 40%;
+      }
+      td:first-child {
+        width: 40%;
+      }
+      th {
+        border-top: 1px solid $table2BdColor;
+        border-bottom: 1px solid $table2BdColor;
+        border-left: 1px solid $table2BdColor;
+      }
+      th:last-child {
+        border-right: 1px solid $table2BdColor;
+      }
+    }
+    tr {
+      th:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+      td:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+    }
+    th {
+      font-weight: normal;
+      border-top: 1px solid $table2BdColor;
+      border-right: 1px solid #d2ccaa;
+      color: $f_tableColor;
+      background-color: $table2BgColor;
+      width: auto;
+      padding: 10px 5px;
+    }
+    td {
+      border: 1px solid $table2BdColor;
+      font-weight: bold;
+      background-color: #ffffff;
+      width: 24px;
+      padding: 10px 5px;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $table2BdColor2;
+          border-bottom: 1px solid $table2BdColor2;
+          border-left: 1px solid $table2BdColor2;
+        }
+        th:last-child {
+          border-right: 1px solid $table2BdColor2;
+        }
+      }
+      th {
+        border-top: 1px solid $table2BdColor2;
+        border-right: 1px solid #d1b422;
+        color: $f_tableColor2;
+        background-color: $table2BgColor2;
+      }
+      td {
+        border: 1px solid $table2BdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $table2BdColor3;
+          border-bottom: 1px solid $table2BdColor3;
+          border-left: 1px solid $table2BdColor3;
+        }
+        th:last-child {
+          border-right: 1px solid $table2BdColor3;
+        }
+      }
+      th {
+        border-top: 1px solid $table2BdColor3;
+        border-right: 1px solid #ffffff;
+        color: $f_tableColor3;
+        background-color: $table2BgColor3;
+      }
+      td {
+        border: 1px solid $table2BdColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $d_table2BdColor;
+          border-bottom: 1px solid $d_table2BdColor;
+          border-left: 1px solid $d_table2BdColor;
+        }
+        th:last-child {
+          border-right: 1px solid $d_table2BdColor;
+        }
+      }
+      th {
+        border-top: 1px solid $d_table2BdColor;
+        border-right: 1px solid $d_table2BdColor;
+        color: #2d4a72;
+        background-color: $d_table2BgColor;
+        background-image: url("img/mod-table/bg05.png");
+        background-repeat: repeat-x;
+      }
+      td {
+        border: 1px solid $d_table2BdColor;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $d_table2BdColor2;
+          border-bottom: 1px solid $d_table2BdColor2;
+          border-left: 1px solid $d_table2BdColor2;
+        }
+        th:last-child {
+          border-right: 1px solid $d_table2BdColor2;
+        }
+      }
+      th {
+        border-top: 1px solid $d_table2BdColor2;
+        border-right: 1px solid $d_table2BdColor2;
+        color: #095C66;
+        background-color: $d_table2BgColor2;
+        background-image: url("img/mod-table/bg05_2.png");
+        background-repeat: repeat-x;
+      }
+      td {
+        border: 1px solid $d_table2BdColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $d_table2BdColor3;
+          border-bottom: 1px solid $d_table2BdColor3;
+          border-left: 1px solid $d_table2BdColor3;
+        }
+        th:last-child {
+          border-right: 1px solid $d_table2BdColor3;
+        }
+      }
+      th {
+        border-top: 1px solid $d_table2BdColor3;
+        border-right: 1px solid $d_table2BdColor3;
+        color: #ffffff;
+        background-color: $d_table2BgColor3;
+        background-image: url("img/mod-table/bg05_3.png");
+        background-repeat: repeat-x;
+      }
+      td {
+        border: 1px solid $d_table2BdColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    table {
+      background-image: url("img/mod-table/bg06.png");
+      th {
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    table {
+      background-image: url("img/mod-table/bg06_2.png");
+      th {
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    table {
+      background-image: url("img/mod-table/bg06_3.png");
+      th {
+        background-color: transparent;
+        color: #45320b;
+      }
+    }
+  }
+}
+
+
+//サイド
+.mod-table4 {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 1px;
+  border: 1px solid $s_tableBdColor;
+  table {
+    width: 100%;
+    border: 1px solid $s_tableBdColor;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    font-size: $sideFontSizeM;
+    tr:first-child {
+      th {
+        border-top: 1px solid $s_tableBdColor;
+        border-bottom: 1px solid #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid $s_tableBdColor;
+      }
+    }
+    th {
+      padding: 8px 3px;
+      font-weight: normal;
+      text-align: left;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: $s_tableBdColor;
+    }
+    td {
+      padding: 8px 3px;
+      vertical-align: top;
+      border: 1px solid $s_tableBdColor;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    border: 1px solid $s_tableBdColor2;
+    table {
+      border: 1px solid $s_tableBdColor2;
+      tr:first-child {
+        th {
+          border-top: 1px solid $s_tableBdColor2;
+        }
+        th:last-child {
+          border-right: 1px solid $s_tableBdColor2;
+        }
+      }
+      th {
+        background-color: $s_tableBdColor2;
+      }
+      td {
+        border: 1px solid $s_tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    border: 1px solid $s_tableBdColor3;
+    table {
+      border: 1px solid $s_tableBdColor3;
+      tr:first-child {
+        th {
+          border-top: 1px solid $s_tableBdColor3;
+        }
+        th:last-child {
+          border-right: 1px solid $s_tableBdColor3;
+        }
+      }
+      th {
+        background-color: $s_tableBdColor3;
+      }
+      td {
+        border: 1px solid $s_tableBdColor3;
+      }
+    }
+  }
+}
+
+
+.mod-table5 {
+  padding: 1px;
+  border: 1px solid $tableBdColor;
+  width: 100%;
+  margin-bottom: 10px;
+  table {
+    border: 1px solid $tableBdColor;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $fontSizeM;
+    tr:first-child {
+      th:first-child {
+        width: 55%;
+      }
+      td:first-child {
+        width: 55%;
+      }
+      th {
+        border-top: 1px solid $tableBdColor;
+        border-bottom: 1px solid #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid #c9e0ff;
+      }
+    }
+    th {
+      text-align: left;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      padding: 8px;
+      font-weight: normal;
+      @include background($color: $tableBdColor);
+    }
+    td {
+      border: 1px solid $tableBdColor;
+      padding: 8px;
+      vertical-align: top;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    border: 1px solid $tableBdColor2;
+    table {
+      border: 1px solid $tableBdColor2;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor2;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor2;
+      }
+      td {
+        border: 1px solid $tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    border: 1px solid $tableBdColor3;
+    table {
+      border: 1px solid $tableBdColor3;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor3;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor3;
+      }
+      td {
+        border: 1px solid $tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    border: 1px solid $d_tableBdColor;
+    color: $d_tableTextColor;
+    table {
+      border: 1px solid #ffffff;
+      tr:first-child {
+        th {
+          border-top: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        @include background("mod-table/bg02.png", repeat-x, $color: $d_tableBgColor);
+      }
+      td {
+        border: 1px solid $d_tableBdColor;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    border: 1px solid $d_tableBdColor2;
+    color: $d_tableTextColor2;
+    table {
+      border: 1px solid #A3E0E9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #A3E0E9;
+        }
+        th:last-child {
+          border-right: 1px solid #A3E0E9;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_2.png", repeat-x, $color: $d_tableBgColor2);
+      }
+      td {
+        border: 1px solid $d_tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    border: 1px solid $d_tableBdColor3;
+    color: $d_tableTextColor3;
+    table {
+      border: 1px solid #F7DE6A;
+      tr:first-child {
+        th {
+          border-top: 1px solid #F7DE6A;
+        }
+        th:last-child {
+          border-right: 1px solid #F7DE6A;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_3.png", repeat-x, $color: $d_tableBgColor3);
+      }
+      td {
+        border: 1px solid $d_tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border: 1px solid #8bb8e4;
+    table {
+      border: 1px solid #8bb8e4;
+      tr:first-child {
+        th {
+          border-top: 1px solid #8bb8e4;
+          border-bottom: 1px solid #8bb8e4;
+        }
+        th:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+      th {
+        @include background("mod-table/bg04.png", repeat-x, $color: #c9e0ff);
+        border-top: 1px solid #8bb8e4;
+        border-right: 1px solid #8bb8e4;
+      }
+      td {
+        border: 1px solid #8bb8e4;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border: 1px solid #7ed1d9;
+    color: #333333;
+    table {
+      border: 1px solid #7ed1d9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #7ed1d9;
+          border-bottom: 1px solid #7ed1d9;
+        }
+        th:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_2.png", repeat-x, $color: #c4ecf0);
+        border-top: 1px solid #7ed1d9;
+        border-right: 1px solid #7ed1d9;
+      }
+      td {
+        border: 1px solid #7ed1d9;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border: 1px solid #f9d5b5;
+    color: #45320b;
+    table {
+      border: 1px solid #f9d5b5;
+      tr:first-child {
+        th {
+          border-top: 1px solid #f9d5b5;
+          border-bottom: 1px solid #f9d5b5;
+        }
+        th:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_3.png", repeat-x, $color: #fdf6e4);
+        border-top: 1px solid #f9d5b5;
+        border-right: 1px solid #f9d5b5;
+      }
+      td {
+        border: 1px solid #f9d5b5;
+      }
+    }
+  }
+}
+
+
+.mod-table6 {
+  padding: 1px;
+  border: 1px solid $tableBdColor;
+  width: 100%;
+  margin-bottom: 10px;
+  table {
+    border: 1px solid $tableBdColor;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $fontSizeM;
+    tr:first-child {
+      th:first-child {
+        width: 45%;
+      }
+      td:first-child {
+        width: 45%;
+      }
+      th {
+        border-top: 1px solid $tableBdColor;
+        border-bottom: 1px solid #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid #c9e0ff;
+      }
+    }
+    th {
+      text-align: left;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      padding: 8px;
+      font-weight: normal;
+      @include background($color: $tableBdColor);
+    }
+    td {
+      border: 1px solid $tableBdColor;
+      padding: 8px;
+      vertical-align: top;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    border: 1px solid $tableBdColor2;
+    table {
+      border: 1px solid $tableBdColor2;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor2;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor2;
+      }
+      td {
+        border: 1px solid $tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    border: 1px solid $tableBdColor3;
+    table {
+      border: 1px solid $tableBdColor3;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor3;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor3;
+      }
+      td {
+        border: 1px solid $tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    border: 1px solid $d_tableBdColor;
+    color: $d_tableTextColor;
+    table {
+      border: 1px solid #ffffff;
+      tr:first-child {
+        th {
+          border-top: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        @include background("mod-table/bg02.png", repeat-x, $color: $d_tableBgColor);
+      }
+      td {
+        border: 1px solid $d_tableBdColor;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    border: 1px solid $d_tableBdColor2;
+    color: $d_tableTextColor2;
+    table {
+      border: 1px solid #A3E0E9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #A3E0E9;
+        }
+        th:last-child {
+          border-right: 1px solid #A3E0E9;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_2.png", repeat-x, $color: $d_tableBgColor2);
+      }
+      td {
+        border: 1px solid $d_tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    border: 1px solid $d_tableBdColor3;
+    color: $d_tableTextColor3;
+    table {
+      border: 1px solid #F7DE6A;
+      tr:first-child {
+        th {
+          border-top: 1px solid #F7DE6A;
+        }
+        th:last-child {
+          border-right: 1px solid #F7DE6A;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_3.png", repeat-x, $color: $d_tableBgColor3);
+      }
+      td {
+        border: 1px solid $d_tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border: 1px solid #8bb8e4;
+    table {
+      border: 1px solid #8bb8e4;
+      tr:first-child {
+        th {
+          border-top: 1px solid #8bb8e4;
+          border-bottom: 1px solid #8bb8e4;
+        }
+        th:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+      th {
+        @include background("mod-table/bg04.png", repeat-x, $color: #c9e0ff);
+        border-top: 1px solid #8bb8e4;
+        border-right: 1px solid #8bb8e4;
+      }
+      td {
+        border: 1px solid #8bb8e4;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border: 1px solid #7ed1d9;
+    table {
+      border: 1px solid #7ed1d9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #7ed1d9;
+          border-bottom: 1px solid #7ed1d9;
+        }
+        th:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_2.png", repeat-x, $color: #c4ecf0);
+        border-top: 1px solid #7ed1d9;
+        border-right: 1px solid #7ed1d9;
+      }
+      td {
+        border: 1px solid #7ed1d9;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border: 1px solid #f9d5b5;
+    table {
+      border: 1px solid #f9d5b5;
+      tr:first-child {
+        th {
+          border-top: 1px solid #f9d5b5;
+          border-bottom: 1px solid #f9d5b5;
+        }
+        th:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_3.png", repeat-x, $color: #fdf6e4);
+        border-top: 1px solid #f9d5b5;
+        border-right: 1px solid #f9d5b5;
+      }
+      td {
+        border: 1px solid #f9d5b5;
+      }
+    }
+  }
+}
+
+
+.mod-table7 {
+  padding: 1px;
+  border: 1px solid $tableBdColor;
+  width: 100%;
+  margin-bottom: 10px;
+  table {
+    border: 1px solid $tableBdColor;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $fontSizeM;
+    tr:first-child {
+      th:first-child {
+        width: 45%;
+        border-bottom: 1px solid $tableBdColor;
+      }
+      td:first-child {
+        width: 45%;
+      }
+      th {
+        border-top: 1px solid $tableBdColor;
+        border-bottom: 1px solid #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid #c9e0ff;
+      }
+    }
+    th {
+      text-align: left;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      padding: 8px;
+      font-weight: normal;
+      background-color: $tableBdColor;
+    }
+    td {
+      border: 1px solid $tableBdColor;
+      padding: 8px;
+      vertical-align: top;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    border: 1px solid $tableBdColor2;
+    table {
+      border: 1px solid $tableBdColor2;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor2;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor2;
+      }
+      td {
+        border: 1px solid $tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    border: 1px solid $tableBdColor3;
+    table {
+      border: 1px solid $tableBdColor3;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor3;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor3;
+      }
+      td {
+        border: 1px solid $tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    border: 1px solid $d_tableBdColor;
+    color: $d_tableTextColor;
+    table {
+      border: 1px solid #ffffff;
+      tr:first-child {
+        th {
+          border-top: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        @include background("mod-table/bg02.png", repeat-x, $color: $d_tableBgColor);
+      }
+      td {
+        border: 1px solid $d_tableBdColor;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    border: 1px solid $d_tableBdColor2;
+    color: $d_tableTextColor2;
+    table {
+      border: 1px solid #A3E0E9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #A3E0E9;
+        }
+        th:last-child {
+          border-right: 1px solid #A3E0E9;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_2.png", repeat-x, $color: $d_tableBgColor2);
+      }
+      td {
+        border: 1px solid $d_tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    border: 1px solid $d_tableBdColor3;
+    color: $d_tableTextColor3;
+    table {
+      border: 1px solid #F7DE6A;
+      tr:first-child {
+        th {
+          border-top: 1px solid #F7DE6A;
+        }
+        th:last-child {
+          border-right: 1px solid #F7DE6A;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_3.png", repeat-x, $color: $d_tableBgColor3);
+      }
+      td {
+        border: 1px solid $d_tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border: 1px solid #8bb8e4;
+    table {
+      border: 1px solid #8bb8e4;
+      tr:first-child {
+        th {
+          border-top: 1px solid #8bb8e4;
+          border-bottom: 1px solid #8bb8e4;
+        }
+        th:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+      th {
+        @include background("mod-table/bg04.png", repeat-x, $color: #c9e0ff);
+        border-top: 1px solid #8bb8e4;
+        border-right: 1px solid #8bb8e4;
+      }
+      td {
+        border: 1px solid #8bb8e4;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border: 1px solid #7ed1d9;
+    color: #333333;
+    table {
+      border: 1px solid #7ed1d9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #7ed1d9;
+          border-bottom: 1px solid #7ed1d9;
+        }
+        th:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_2.png", repeat-x, $color: #c4ecf0);
+        border-top: 1px solid #7ed1d9;
+        border-right: 1px solid #7ed1d9;
+      }
+      td {
+        border: 1px solid #7ed1d9;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border: 1px solid #f9d5b5;
+    color: #45320b;
+    table {
+      border: 1px solid #f9d5b5;
+      tr:first-child {
+        th {
+          border-top: 1px solid #f9d5b5;
+          border-bottom: 1px solid #f9d5b5;
+        }
+        th:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_3.png", repeat-x, $color: #fdf6e4);
+        border-top: 1px solid #f9d5b5;
+        border-right: 1px solid #f9d5b5;
+      }
+      td {
+        border: 1px solid #f9d5b5;
+      }
+    }
+  }
+}
+
+
+.mod-table8 {//mod-table4のメインエリア用
+  padding: 1px;
+  border: 1px solid $tableBdColor;
+  width: 100%;
+  margin-bottom: 10px;
+  table {
+    border: 1px solid $tableBdColor;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $sideFontSizeM;
+    tr:first-child {
+      th {
+        border-top: 1px solid $tableBdColor;
+        border-bottom: 1px solid #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid #c9e0ff;
+      }
+    }
+    th {
+      text-align: left;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      padding: 8px 3px;
+      font-weight: normal;
+      background-color: $tableBdColor;
+    }
+    td {
+      border: 1px solid $tableBdColor;
+      padding: 8px 3px;
+      vertical-align: top;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    border: 1px solid $tableBdColor2;
+    table {
+      border: 1px solid $tableBdColor2;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor2;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor2;
+      }
+      td {
+        border: 1px solid $tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    border: 1px solid $tableBdColor3;
+    table {
+      border: 1px solid $tableBdColor3;
+      tr:first-child {
+        th {
+          border-top: 1px solid $tableBdColor3;
+          border-bottom: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+      th {
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        background-color: $tableBdColor3;
+      }
+      td {
+        border: 1px solid $tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 & {
+    border: 1px solid $d_tableBdColor;
+    color: $d_tableTextColor;
+    table {
+      border: 1px solid #ffffff;
+      tr:first-child {
+        th {
+          border-top: 1px solid #ffffff;
+        }
+        th:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+      th {
+        @include background("mod-table/bg02.png", repeat-x, $color: $d_tableBgColor);
+      }
+      td {
+        border: 1px solid $d_tableBdColor;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 & {
+    border: 1px solid $d_tableBdColor2;
+    color: $d_tableTextColor2;
+    table {
+      border: 1px solid #A3E0E9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #A3E0E9;
+        }
+        th:last-child {
+          border-right: 1px solid #A3E0E9;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_2.png", repeat-x, $color: $d_tableBgColor2);
+      }
+      td {
+        border: 1px solid $d_tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 & {
+    border: 1px solid $d_tableBdColor3;
+    color: $d_tableTextColor3;
+    table {
+      border: 1px solid #F7DE6A;
+      tr:first-child {
+        th {
+          border-top: 1px solid #F7DE6A;
+        }
+        th:last-child {
+          border-right: 1px solid #F7DE6A;
+        }
+      }
+      th {
+        @include background("mod-table/bg02_3.png", repeat-x, $color: $d_tableBgColor3);
+      }
+      td {
+        border: 1px solid $d_tableBdColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 & {
+    border: 1px solid #8bb8e4;
+    table {
+      border: 1px solid #8bb8e4;
+      tr:first-child {
+        th {
+          border-top: 1px solid #8bb8e4;
+          border-bottom: 1px solid #8bb8e4;
+        }
+        th:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+      th {
+        @include background("mod-table/bg04.png", repeat-x, $color: #c9e0ff);
+        border-top: 1px solid #8bb8e4;
+        border-right: 1px solid #8bb8e4;
+      }
+      td {
+        border: 1px solid #8bb8e4;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border: 1px solid #7ed1d9;
+    color: #333333;
+    table {
+      border: 1px solid #7ed1d9;
+      tr:first-child {
+        th {
+          border-top: 1px solid #7ed1d9;
+          border-bottom: 1px solid #7ed1d9;
+        }
+        th:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_2.png", repeat-x, $color: #c4ecf0);
+        border-top: 1px solid #7ed1d9;
+        border-right: 1px solid #7ed1d9;
+      }
+      td {
+        border: 1px solid #7ed1d9;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border: 1px solid #f9d5b5;
+    color: #45320b;
+    table {
+      border: 1px solid #f9d5b5;
+      tr:first-child {
+        th {
+          border-top: 1px solid #f9d5b5;
+          border-bottom: 1px solid #f9d5b5;
+        }
+        th:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+      th {
+        @include background("mod-table/bg04_3.png", repeat-x, $color: #fdf6e4);
+        border-top: 1px solid #f9d5b5;
+        border-right: 1px solid #f9d5b5;
+      }
+      td {
+        border: 1px solid #f9d5b5;
+      }
+    }
+  }
+}
+
+
+.mod-table9 {
+  @extend %default-table3;
+}
+
+
+.mod-table10 {
+  @extend %default-table3;
+  table {
+    font-size: $fontSizeS + 1;
+  }
+}
+
+
+.mod-table11 {
+  margin-bottom: 15px;
+  table {
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    tr:first-child {
+      font-size: $fontSizeM;
+      th {
+        border-top: 1px solid $table2BdColor;
+        border-bottom: 1px solid $table2BdColor;
+        border-left: 1px solid $table2BdColor;
+      }
+      th:last-child {
+        border-right: 1px solid $table2BdColor;
+      }
+      > th:first-child {
+        width: 30%;
+        padding: 10px 5px;
+      }
+      > td:first-child {
+        width: 30%;
+        padding: 10px 5px;
+      }
+    }
+    tr {
+      th:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+      td:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+    }
+    th {
+      font-weight: normal;
+      border-top: 1px solid $table2BdColor;
+      border-right: 1px solid #d2ccaa;
+      color: $f_tableColor;
+      background-color: $table2BgColor;
+    }
+    td {
+      border: 1px solid $table2BdColor;
+      font-weight: bold;
+      background-color: #ffffff;
+    }
+    tbody {
+      tr:first-child {
+        th {
+        font-size: $fontSizeM;
+        }
+        td {
+          font-size: $fontSizeM;
+        }
+      }
+      tr:first-child ~ tr {
+        th:first-child {
+        font-size: $fontSizeM;
+        }
+        td:first-child {
+          font-size: $fontSizeM;
+        }
+        th {
+          width: auto;
+          padding: 10px 5px;
+          font-size: $fontSizeS + 1;
+        }
+        td {
+          width: 48px;
+          padding: 10px 5px;
+          font-size: $fontSizeS + 1;
+        }
+      }
+    }
+    thead + tbody {
+      tr:first-child, tr {
+        th:first-child {
+          font-size: $fontSizeM;
+        }
+        td:first-child {
+          font-size: $fontSizeM;
+        }
+        th {
+          width: auto;
+          padding: 10px 5px;
+          font-size: $fontSizeS + 1;
+        }
+        td {
+          width: 48px;
+          padding: 10px 5px;
+          font-size: $fontSizeS + 1;
+        }
+      }
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $table2BdColor2;
+          border-bottom: 1px solid $table2BdColor2;
+          border-left: 1px solid $table2BdColor2;
+        }
+        th:last-child {
+          border-right: 1px solid $table2BdColor2;
+        }
+      }
+      th {
+        border-top: 1px solid $table2BdColor2;
+        border-right: 1px solid #d1b422;
+        color: $f_tableColor2;
+        background-color: $table2BgColor2;
+      }
+      td {
+        border: 1px solid $table2BdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    table {
+      tr:first-child {
+        th {
+          border-top: 1px solid $table2BdColor3;
+          border-bottom: 1px solid $table2BdColor3;
+          border-left: 1px solid $table2BdColor3;
+        }
+        th:last-child {
+          border-right: 1px solid $table2BdColor3;
+        }
+      }
+      th {
+        border-top: 1px solid $table2BdColor3;
+        border-right: 1px solid #ffffff;
+        color: $f_tableColor3;
+        background-color: $table2BgColor3;
+      }
+      td {
+        border: 1px solid $table2BdColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    table {
+      color: $d_tableTextColor;
+      tr:first-child {
+        th {
+          border-top: 1px solid $d_tableBdColor;
+          border-bottom: 1px solid $d_tableBdColor;
+          border-left: 1px solid $d_tableBdColor;
+          color: $d_tableTextColor;
+          @include background("mod-table/bg02.png", repeat-x, $color: $d_tableBgColor);
+        }
+        th:last-child {
+          border-right: 1px solid $d_tableBdColor;
+        }
+      }
+      th {
+        border-top: 1px solid $d_tableBdColor;
+        border-right: 1px solid $d_tableBdColor;
+        background-color: $d_tableBgColor;
+      }
+      td {
+        border: 1px solid $d_tableBdColor;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    table {
+      color: $d_tableTextColor2;
+      tr:first-child {
+        th {
+          border-top: 1px solid $d_tableBdColor2;
+          border-bottom: 1px solid $d_tableBdColor2;
+          border-left: 1px solid $d_tableBdColor2;
+          color: $d_tableTextColor2;
+          @include background("mod-table/bg02_2.png", repeat-x, $color: $d_tableBgColor2);
+        }
+        th:last-child {
+          border-right: 1px solid $d_tableBdColor2;
+        }
+      }
+      th {
+        border-top: 1px solid $d_tableBdColor2;
+        border-right: 1px solid $d_tableBdColor2;
+        background-color: $d_tableBgColor2;
+      }
+      td {
+        border: 1px solid $d_tableBdColor2;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    table {
+      color: $d_tableTextColor3;
+      tr:first-child {
+        th {
+          border-top: 1px solid $d_tableBdColor3;
+          border-bottom: 1px solid $d_tableBdColor3;
+          border-left: 1px solid $d_tableBdColor3;
+          color: $d_tableTextColor3;
+          @include background("mod-table/bg02_3.png", repeat-x, $color: $d_tableBgColor3);
+        }
+        th:last-child {
+          border-right: 1px solid $d_tableBdColor3;
+        }
+      }
+      th {
+        border-top: 1px solid $d_tableBdColor3;
+        border-right: 1px solid $d_tableBdColor3;
+        background-color: $d_tableBgColor3;
+      }
+      td {
+        border: 1px solid $d_tableBdColor3;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    table {
+      background-image: url("img/mod-table/bg03.png");
+      th {
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    table {
+      background-image: url("img/mod-table/bg03_2.png");
+      th {
+        background-color: transparent;
+        color: #45320b;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    table {
+      background-image: url("img/mod-table/bg03_3.png");
+      th {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+.mod-table12 {
+  padding: 1px;
+  border: 1px solid $s_tableBdColor;
+  width: 100%;
+  margin-bottom: 10px;
+  table {
+    border: 1px solid $s_tableBdColor;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $sideFontSizeM;
+    text-align: center;
+    tr:first-child {
+      th:first-child {
+        width: 30%;
+      }
+      td:first-child {
+        width: 30%;
+      }
+      th {
+        border-top: 1px solid $s_tableBdColor;
+        border-bottom: 1px solid #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid $s_tableBdColor;
+      }
+    }
+    th {
+      text-align: left;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      padding: 2px;
+      vertical-align: middle;
+      font-weight: normal;
+      @include background($color: $s_tableBdColor);
+    }
+    td {
+      border: 1px solid $s_tableBdColor;
+      padding: 8px 2px;
+      vertical-align: middle;
+      background-color: #ffffff;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    border: 1px solid $s_tableBdColor2;
+    table {
+      border: 1px solid $s_tableBdColor2;
+      tr:first-child {
+        th {
+          border-top: 1px solid $s_tableBdColor2;
+        }
+        th:last-child {
+          border-right: 1px solid $s_tableBdColor2;
+        }
+      }
+      th {
+        background-color: $s_tableBdColor2;
+      }
+      td {
+        border: 1px solid $s_tableBdColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    border: 1px solid $s_tableBdColor3;
+    table {
+      border: 1px solid $s_tableBdColor3;
+      tr:first-child {
+        th {
+          border-top: 1px solid $s_tableBdColor3;
+        }
+        th:last-child {
+          border-right: 1px solid $s_tableBdColor3;
+        }
+      }
+      th {
+        background-color: $s_tableBdColor3;
+      }
+      td {
+        border: 1px solid $s_tableBdColor3;
+      }
+    }
+  }
+}

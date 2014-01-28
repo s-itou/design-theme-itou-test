@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-text18-style";
+
+.mod-text18 {
+  @include mod-text18-common-style;
+  @include mod-text18-style2;
+  .ex-style_01A2 & {
+    @include mod-text18-style;
+  }
+}
+

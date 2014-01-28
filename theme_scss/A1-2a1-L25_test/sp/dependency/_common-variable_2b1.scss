@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+
+// ---------- サイズ：共通指定 -----------//
+
+//全体の横幅
+$baseWidth: 980px;
+//メインエリアの横幅
+$baseMainWidth: 690px;
+$mainWidth: 640px;
+//サイドエリアの横幅
+$baseSideWidth: 215px;
+//mainのインデント
+$mainMargin: 0 25px 0 25px;
+
+//画像サイズの横幅（大大）
+$baseImgWidthLL: 980px;
+//画像サイズの横幅（大）
+$baseImgWidthL: 400px;
+//画像サイズの横幅（中）
+$baseImgWidthM: 270px;
+//画像サイズの横幅（小）
+$baseImgWidthS: 70px;
+
+//フォントサイズ 大
+$fontSizeL: 18px;
+//フォントサイズ 中（基本のフォントサイズ）
+$fontSizeM: 14px;
+//フォントサイズ 小
+$fontSizeS: 12px;
+
+//フォントサイズ 大  サイド
+$sideFontSizeL: 16px;
+//フォントサイズ 中（基本のフォントサイズ） サイド
+$sideFontSizeM: 13px;
+//フォントサイズ 小 サイド
+$sideFontSizeS: 10px;
+
+
+// ---------- CV設定 -----------//
+
+//Theme1b1
+//01
+$baseEx_01A1: "01B1";
+$baseEx_01A2: "01B2";
+$baseEx_01A3: "01B3";
+$baseEx_01B1: "01A1";
+$baseEx_01B2: "01A2";
+$baseEx_01B3: "01A3";
+$baseEx_01C1: "01C1";
+$baseEx_01C2: "01C2";
+$baseEx_01C3: "01C3";
+
+//02
+$baseEx_02A1: "02B1";
+$baseEx_02A2: "02B2";
+$baseEx_02A3: "02B3";
+$baseEx_02B1: "02A1";
+$baseEx_02B2: "02A2";
+$baseEx_02B3: "02A3";
+$baseEx_02C1: "02C1";
+$baseEx_02C2: "02C2";
+$baseEx_02C3: "02C3";
+
+//03
+$baseEx_03A1: "03B1";
+$baseEx_03A2: "03B2";
+$baseEx_03A3: "03B3";
+$baseEx_03B1: "03A1";
+$baseEx_03B2: "03A2";
+$baseEx_03B3: "03A3";
+$baseEx_03C1: "03C1";
+$baseEx_03C2: "03C2";
+$baseEx_03C3: "03C3";
+
+//a1
+$baseEx_a1A1: "a1A1";
+
+//a2
+$baseEx_a2A1: "a2A1";
+
+//b1
+$baseEx_b1A1: "b1A1";
+
+//c1
+$baseEx_c1A1: "c1B1";
+$baseEx_c1A2: "c1B2";
+$baseEx_c1A3: "c1B3";
+$baseEx_c1B1: "c1A1";
+$baseEx_c1B2: "c1A2";
+$baseEx_c1B3: "c1A3";
+$baseEx_c1C1: "c1C1";
+$baseEx_c1C2: "c1C2";
+$baseEx_c1C3: "c1C3";
+
+//d1
+$baseEx_d1A1: "d1B1";
+$baseEx_d1A2: "d1B2";
+$baseEx_d1A3: "d1B3";
+$baseEx_d1B1: "d1A1";
+$baseEx_d1B2: "d1A2";
+$baseEx_d1B3: "d1A3";
+$baseEx_d1C1: "d1C1";
+$baseEx_d1C2: "d1C2";
+$baseEx_d1C3: "d1C3";
+
+//d2
+$baseEx_d2A1: "d2A1";
+
+//f1
+$baseEx_f1A1: "f1A1";
+
+//g1
+$baseEx_g1A1: "g1A1";
+
+//g2
+$baseEx_g2A1: "g2A1";
+
+//g4
+$baseEx_g4A1: "g4A1";
+$baseEx_g4A2: "g4A2";
+$baseEx_g4A3: "g4A3";
+$baseEx_g4B1: "g4B1";
+$baseEx_g4B2: "g4B2";
+$baseEx_g4B3: "g4B3";
+$baseEx_g4C1: "g4C1";
+$baseEx_g4C2: "g4C2";
+$baseEx_g4C3: "g4C3";
+
+//i1
+$baseEx_i1A1: "i1B1";
+$baseEx_i1A2: "i1B2";
+$baseEx_i1A3: "i1B3";
+$baseEx_i1B1: "i1A1";
+$baseEx_i1B2: "i1A2";
+$baseEx_i1B3: "i1A3";
+$baseEx_i1C1: "i1C1";
+$baseEx_i1C2: "i1C2";
+$baseEx_i1C3: "i1C3";
+
+//l1
+$baseEx_l1A1: "l1A1";
+
+//m1
+$baseEx_m1A1: "m1A1";
+
+//n1
+$baseEx_n1A1: "n1A1";
+
+//n2
+$baseEx_n2A1: "n2A1";
+
+//o1
+$baseEx_o1A1: "o1A1";
+
+//p1
+$baseEx_p1A1: "p1A1";
+
+//p2
+$baseEx_p2A1: "p2B1";
+$baseEx_p2A2: "p2B2";
+$baseEx_p2A3: "p2B3";
+$baseEx_p2B1: "p2A1";
+$baseEx_p2B2: "p2A2";
+$baseEx_p2B3: "p2A3";
+$baseEx_p2C1: "p2C1";
+$baseEx_p2C2: "p2C2";
+$baseEx_p2C3: "p2C3";
+
+//p3
+$baseEx_p3A1: "p3B1";
+$baseEx_p3A2: "p3B2";
+$baseEx_p3A3: "p3B3";
+$baseEx_p3B1: "p3A1";
+$baseEx_p3B2: "p3A2";
+$baseEx_p3B3: "p3A3";
+$baseEx_p3C1: "p3C1";
+$baseEx_p3C2: "p3C2";
+$baseEx_p3C3: "p3C3";
+
+//p4
+$baseEx_p4A1: "p4A1";
+$baseEx_p4A2: "p4A2";
+$baseEx_p4A3: "p4A3";
+$baseEx_p4B1: "p4B1";
+$baseEx_p4B2: "p4B2";
+$baseEx_p4B3: "p4B3";
+$baseEx_p4C1: "p4C1";
+$baseEx_p4C2: "p4C2";
+$baseEx_p4C3: "p4C3";
+
+//q1
+$baseEx_q1A1: "q1B1";
+$baseEx_q1A2: "q1B2";
+$baseEx_q1A3: "q1B3";
+$baseEx_q1B1: "q1A1";
+$baseEx_q1B2: "q1A2";
+$baseEx_q1B3: "q1A3";
+$baseEx_q1C1: "q1C1";
+$baseEx_q1C2: "q1C2";
+$baseEx_q1C3: "q1C3";
+
+//q2
+$baseEx_q2A1: "q2A1";
+
+//r1
+$baseEx_r1A1: "r1A1";
+
+//r2
+$baseEx_r2A1: "r2A1";
+
+//r4
+$baseEx_r4A1: "r4A1";
+
+//s1
+$baseEx_s1A1: "s1A1";
+
+//t1
+$baseEx_t1A1: "t1A1";
+
+//t2
+$baseEx_t2A1: "t2A1";
+
+//t4
+$baseEx_t4A1: "t4A1";
+$baseEx_t4A2: "t4A2";
+$baseEx_t4A3: "t4A3";
+$baseEx_t4B1: "t4B1";
+$baseEx_t4B2: "t4B2";
+$baseEx_t4B3: "t4B3";
+$baseEx_t4C1: "t4C1";
+$baseEx_t4C2: "t4C2";
+$baseEx_t4C3: "t4C3";
+
+//t5
+$baseEx_t5A1: "t5B1";
+$baseEx_t5A2: "t5B2";
+$baseEx_t5A3: "t5B3";
+$baseEx_t5B1: "t5A1";
+$baseEx_t5B2: "t5A2";
+$baseEx_t5B3: "t5A3";
+$baseEx_t5C1: "t5C1";
+$baseEx_t5C2: "t5C2";
+$baseEx_t5C3: "t5C3";
+
+//t6
+$baseEx_t6A1: "t6A1";
+
+//v1
+$baseEx_v1A1: "v1B1";
+$baseEx_v1A2: "v1B2";
+$baseEx_v1A3: "v1B3";
+$baseEx_v1B1: "v1A1";
+$baseEx_v1B2: "v1A2";
+$baseEx_v1B3: "v1A3";
+$baseEx_v1C1: "v1C1";
+$baseEx_v1C2: "v1C2";
+$baseEx_v1C3: "v1C3";
+
+//w1
+$baseEx_w1A1: "w1A1";
+
+//x1
+$baseEx_x1A1: "x1A1";
+
+//x2
+$baseEx_x2A1: "x2B1";
+$baseEx_x2A2: "x2B2";
+$baseEx_x2A3: "x2B3";
+$baseEx_x2B1: "x2A1";
+$baseEx_x2B2: "x2A2";
+$baseEx_x2B3: "x2A3";
+$baseEx_x2C1: "x2C1";
+$baseEx_x2C2: "x2C2";
+$baseEx_x2C3: "x2C3";
+
+//x3
+$baseEx_x3A1: "x3A1";
+
+//z1
+$baseEx_z1A1: "z1A1";
+
+//z2
+$baseEx_z2A1: "z2A1";
+
+//z3
+$baseEx_z3A1: "z3A1";
+
+//デフォルトテーマ設定
+$defaultTheme: $baseEx_01A1;

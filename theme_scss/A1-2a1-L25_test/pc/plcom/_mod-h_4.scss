@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+
+// ----------------------------
+// for-2col
+// ----------------------------
+%common-style-mod-h_4-for-2col {
+  .ex-imgFloat & .mod-2col-wrap > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 .mod-h_4_ver2 {
+    width: 100% !important;
+  }
+  .ex-imgFloat.ex-imgSize_2L & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_4_ver2 {
+    width: floor($mainWidth * 0.50);
+  }
+  .ex-imgFloat & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_4_ver2 {
+    width: floor($mainWidth * 0.57);
+  }
+  .ex-imgFloat.ex-imgSize_2S & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_4_ver2 {
+    width: floor($mainWidth * 0.65);
+  }
+  .ex-imgFloat.ex-imgSize_2SS & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_4_ver2 {
+    width: floor($mainWidth * 0.73);
+  }
+}
+
+%common-style-mod-h_4-for-2col-hyo {
+  .ex-imgFloat & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_4_ver2 {
+    @if $layoutCode == "L25" {
+      width: 310px;
+    } @else if $layoutCode == "L30" {
+      width: 256px;
+    }
+  }
+}
+
+
+// ----------------------------
+// for-3col
+// ----------------------------
+
+%common-style-mod-h_4-for-3col {
+  .mod-h_4_ver2
+  //.mod-h_4_3//暫定対応
+  {
+    .mod-h_4-inner {
+      > p[data-cms-switchable="true"] + .mod-h_4-inner3, > p + .mod-h_4-inner3 {//編集画面上,公開画面
+        .mod-h {
+          font-size: $fontSizeM;
+        }
+      }
+      > p[data-cms-switchable="false"] + .mod-h_4-inner3 {//編集画面上
+        .mod-h {
+          font-size: $fontSizeM;
+        }
+      }
+    }
+  }
+}

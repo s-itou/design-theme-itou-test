@@ -1,0 +1,1407 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+//回り込みありなしのプレイスホルダー
+%default-2col { //基準　回り込みなし　画像右
+  .ex-style_01A1a &,
+  .ex-style_01A2a &,
+  .ex-style_01A3a &,
+  .ex-style_v1A1a &,
+  .ex-style_v1A2a &,
+  .ex-style_v1A3a &,
+  .ex-style_c1A1a &,
+  .ex-style_c1A2a &,
+  .ex-style_c1A3a &,
+  .ex-style_i1A1a &,
+  .ex-style_i1A2a &,
+  .ex-style_i1A3a &,
+  .ex-style_d1A1a &,
+  .ex-style_d1A2a &,
+  .ex-style_d1A3a &,
+  .ex-style_01B1a &,
+  .ex-style_01B2a &,
+  .ex-style_01B3a &,
+  .ex-style_v1B1a &,
+  .ex-style_v1B2a &,
+  .ex-style_v1B3a &,
+  .ex-style_c1B1a &,
+  .ex-style_c1B2a &,
+  .ex-style_c1B3a &,
+  .ex-style_i1B1a &,
+  .ex-style_i1B2a &,
+  .ex-style_i1B3a &,
+  .ex-style_d1B1a &,
+  .ex-style_d1B2a &,
+  .ex-style_d1B3a &,
+  .ex-style_01C1a &,
+  .ex-style_01C2a &,
+  .ex-style_01C3a &,
+  .ex-style_v1C1a &,
+  .ex-style_v1C2a &,
+  .ex-style_v1C3a &,
+  .ex-style_c1C1a &,
+  .ex-style_c1C2a &,
+  .ex-style_c1C3a &,
+  .ex-style_i1C1a &,
+  .ex-style_i1C2a &,
+  .ex-style_i1C3a &,
+  .ex-style_d1C1a &,
+  .ex-style_d1C2a &,
+  .ex-style_d1C3a & { //回り込みあり　画像右
+    > .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+  .ex-style_01A1d &,
+  .ex-style_01A2d &,
+  .ex-style_01A3d &,
+  .ex-style_v1A1d &,
+  .ex-style_v1A2d &,
+  .ex-style_v1A3d &,
+  .ex-style_c1A1d &,
+  .ex-style_c1A2d &,
+  .ex-style_c1A3d &,
+  .ex-style_i1A1d &,
+  .ex-style_i1A2d &,
+  .ex-style_i1A3d &,
+  .ex-style_d1A1d &,
+  .ex-style_d1A2d &,
+  .ex-style_d1A3d &,
+  .ex-style_01B1d &,
+  .ex-style_01B2d &,
+  .ex-style_01B3d &,
+  .ex-style_v1B1d &,
+  .ex-style_v1B2d &,
+  .ex-style_v1B3d &,
+  .ex-style_c1B1d &,
+  .ex-style_c1B2d &,
+  .ex-style_c1B3d &,
+  .ex-style_i1B1d &,
+  .ex-style_i1B2d &,
+  .ex-style_i1B3d &,
+  .ex-style_d1B1d &,
+  .ex-style_d1B2d &,
+  .ex-style_d1B3d &,
+  .ex-style_01C1d &,
+  .ex-style_01C2d &,
+  .ex-style_01C3d &,
+  .ex-style_v1C1d &,
+  .ex-style_v1C2d &,
+  .ex-style_v1C3d &,
+  .ex-style_c1C1d &,
+  .ex-style_c1C2d &,
+  .ex-style_c1C3d &,
+  .ex-style_i1C1d &,
+  .ex-style_i1C2d &,
+  .ex-style_i1C3d &,
+  .ex-style_d1C1d &,
+  .ex-style_d1C2d &,
+  .ex-style_d1C3d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      float: left;
+      margin-left: 0;
+    }
+  }
+  .ex-style_01A1c &,
+  .ex-style_01A2c &,
+  .ex-style_01A3c &,
+  .ex-style_v1A1c &,
+  .ex-style_v1A2c &,
+  .ex-style_v1A3c &,
+  .ex-style_c1A1c &,
+  .ex-style_c1A2c &,
+  .ex-style_c1A3c &,
+  .ex-style_i1A1c &,
+  .ex-style_i1A2c &,
+  .ex-style_i1A3c &,
+  .ex-style_d1A1c &,
+  .ex-style_d1A2c &,
+  .ex-style_d1A3c &,
+  .ex-style_01B1c &,
+  .ex-style_01B2c &,
+  .ex-style_01B3c &,
+  .ex-style_v1B1c &,
+  .ex-style_v1B2c &,
+  .ex-style_v1B3c &,
+  .ex-style_c1B1c &,
+  .ex-style_c1B2c &,
+  .ex-style_c1B3c &,
+  .ex-style_i1B1c &,
+  .ex-style_i1B2c &,
+  .ex-style_i1B3c &,
+  .ex-style_d1B1c &,
+  .ex-style_d1B2c &,
+  .ex-style_d1B3c &,
+  .ex-style_01C1c &,
+  .ex-style_01C2c &,
+  .ex-style_01C3c &,
+  .ex-style_v1C1c &,
+  .ex-style_v1C2c &,
+  .ex-style_v1C3c &,
+  .ex-style_c1C1c &,
+  .ex-style_c1C2c &,
+  .ex-style_c1C3c &,
+  .ex-style_i1C1c &,
+  .ex-style_i1C2c &,
+  .ex-style_i1C3c &,
+  .ex-style_d1C1c &,
+  .ex-style_d1C2c &,
+  .ex-style_d1C3c & { //回り込みあり　画像左
+    > .mod-2col-inner {
+      float: left;
+      margin-left: 0;
+    }
+    > .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+}
+
+
+//------プレイスホルダー一覧 ここから------------
+
+
+
+//------ mixin一覧 ここまで------------
+
+
+//　このmixinを使用するか確認 classというmixin名変更必用
+@mixin class {
+  .ex-style_01Aaa,
+  .ex-style_01Aaa,
+  .ex-style_01Aaa,
+  .ex-style_01Aaa {
+  }
+}
+
+// @include class;
+
+@mixin mod-2col-ex2($margin-right:15px) {
+  .ex-style_01A1d &,
+  .ex-style_01A2d &,
+  .ex-style_01A3d &,
+  .ex-style_v1A1d &,
+  .ex-style_v1A2d &,
+  .ex-style_v1A3d &,
+  .ex-style_c1A1d &,
+  .ex-style_c1A2d &,
+  .ex-style_c1A3d &,
+  .ex-style_i1A1d &,
+  .ex-style_i1A2d &,
+  .ex-style_i1A3d &,
+  .ex-style_d1A1d &,
+  .ex-style_d1A2d &,
+  .ex-style_d1A3d &,
+  .ex-style_01B1d &,
+  .ex-style_01B2d &,
+  .ex-style_01B3d &,
+  .ex-style_v1B1d &,
+  .ex-style_v1B2d &,
+  .ex-style_v1B3d &,
+  .ex-style_c1B1d &,
+  .ex-style_c1B2d &,
+  .ex-style_c1B3d &,
+  .ex-style_i1B1d &,
+  .ex-style_i1B2d &,
+  .ex-style_i1B3d &,
+  .ex-style_d1B1d &,
+  .ex-style_d1B2d &,
+  .ex-style_d1B3d &,
+  .ex-style_01C1d &,
+  .ex-style_01C2d &,
+  .ex-style_01C3d &,
+  .ex-style_v1C1d &,
+  .ex-style_v1C2d &,
+  .ex-style_v1C3d &,
+  .ex-style_c1C1d &,
+  .ex-style_c1C2d &,
+  .ex-style_c1C3d &,
+  .ex-style_i1C1d &,
+  .ex-style_i1C2d &,
+  .ex-style_i1C3d &,
+  .ex-style_d1C1d &,
+  .ex-style_d1C2d &,
+  .ex-style_d1C3d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: $margin-right;
+    }
+  }
+  .ex-style_01A1c &,
+  .ex-style_01A2c &,
+  .ex-style_01A3c &,
+  .ex-style_v1A1c &,
+  .ex-style_v1A2c &,
+  .ex-style_v1A3c &,
+  .ex-style_c1A1c &,
+  .ex-style_c1A2c &,
+  .ex-style_c1A3c &,
+  .ex-style_i1A1c &,
+  .ex-style_i1A2c &,
+  .ex-style_i1A3c &,
+  .ex-style_d1A1c &,
+  .ex-style_d1A2c &,
+  .ex-style_d1A3c &,
+  .ex-style_01B1c &,
+  .ex-style_01B2c &,
+  .ex-style_01B3c &,
+  .ex-style_v1B1c &,
+  .ex-style_v1B2c &,
+  .ex-style_v1B3c &,
+  .ex-style_c1B1c &,
+  .ex-style_c1B2c &,
+  .ex-style_c1B3c &,
+  .ex-style_i1B1c &,
+  .ex-style_i1B2c &,
+  .ex-style_i1B3c &,
+  .ex-style_d1B1c &,
+  .ex-style_d1B2c &,
+  .ex-style_d1B3c &,
+  .ex-style_01C1c &,
+  .ex-style_01C2c &,
+  .ex-style_01C3c &,
+  .ex-style_v1C1c &,
+  .ex-style_v1C2c &,
+  .ex-style_v1C3c &,
+  .ex-style_c1C1c &,
+  .ex-style_c1C2c &,
+  .ex-style_c1C3c &,
+  .ex-style_i1C1c &,
+  .ex-style_i1C2c &,
+  .ex-style_i1C3c &,
+  .ex-style_d1C1c &,
+  .ex-style_d1C2c &,
+  .ex-style_d1C3c & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      margin-right: $margin-right;
+    }
+  }
+}
+
+
+
+//------ mixin一覧 ここまで------------
+
+
+
+//ヘッダー・フッター領域の部品分割用
+.mod-2col { //ヘッダー右可変
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: 475px;
+    margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    max-width: 475px;
+    margin-left: 15px;
+  }
+}
+
+.mod-2col2 { //フッター固定幅
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: 475px;
+    margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 475px;
+    margin-left: 15px;
+  }
+}
+
+.mod-2col3 {
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: 120px;
+    margin-right: 20px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+}
+
+.mod-2col4 { //mb基準10px
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner { //回り込みなし　画像右
+    float: right;
+    width: 250px;
+    margin-left: 15px; //layout手動
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  @include mod-2col-ex2(15px);
+  .ex-style_i1A1a &,
+  .ex-style_i1A1b &,
+  .ex-style_i1A1c &,
+  .ex-style_i1A1d & {
+    background-color: #fffdf2;
+    padding: 15px;
+  }
+  .ex-style_i1A2b &,
+  .ex-style_i1A2d & {
+    background-color: #f6f6f6;
+    padding: 15px;
+  }
+  .ex-style_i1A3b &,
+  .ex-style_i1A3d & {
+    background-color: #fff9ee;
+    padding: 15px;
+  }
+
+
+  .ex-style_i1B1a &,
+  .ex-style_i1B1b &,
+  .ex-style_i1B1c &,
+  .ex-style_i1B1d & {
+    background-color: #e6f8ff;
+    padding: 15px;
+  }
+  .ex-style_i1B2a &,
+  .ex-style_i1B2b &,
+  .ex-style_i1B2c &,
+  .ex-style_i1B2d & {
+    background-color: #fBf3c8;
+    padding: 15px;
+  }
+  .ex-style_i1B3a &,
+  .ex-style_i1B3b &,
+  .ex-style_i1B3c &,
+  .ex-style_i1B3d & {
+    background-color: #ffefe5;
+    padding: 15px;
+  }
+  .ex-style_i1C1a &,
+  .ex-style_i1C1b &,
+  .ex-style_i1C1c &,
+  .ex-style_i1C1d & {
+    border: 1px solid #c9e0ff;
+    background: none;
+    padding: 15px;
+  }
+  .ex-style_i1C2a &,
+  .ex-style_i1C2b &,
+  .ex-style_i1C2c &,
+  .ex-style_i1C2d & {
+    border: 1px solid #f99317;
+    background: none;
+    padding: 15px;
+  }
+  .ex-style_i1C3a &,
+  .ex-style_i1C3b &,
+  .ex-style_i1C3c &,
+  .ex-style_i1C3d & {
+    border: 1px solid #f2d028;
+    background: none;
+    padding: 15px;
+  }
+}
+
+
+.mod-2col5 { //mb基準30px
+  display: table;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: 120px;
+    vertical-align: bottom;
+  }
+  > .mod-2col-inner2 {
+    padding-left: 20px;
+    display: table-cell;
+    width: 355px;
+    vertical-align: bottom;
+  }
+}
+
+.mod-2col6 { //M-85step
+  @extend %cf;
+  > .mod-2col-inner {
+    float: right;
+    width: 200px; //layout手動
+    margin-left: 20px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  .ex-style_01A1c &,
+  .ex-style_01A2c &,
+  .ex-style_01A3c &,
+  .ex-style_01B1c &,
+  .ex-style_01B2c &,
+  .ex-style_01B3c &,
+  .ex-style_01C1c &,
+  .ex-style_01C2c &,
+  .ex-style_01C3c & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      margin-right: 20px;
+    }
+  }
+  .ex-style_01A1d &,
+  .ex-style_01A2d &,
+  .ex-style_01A3d &,
+  .ex-style_01B1d &,
+  .ex-style_01B2d &,
+  .ex-style_01B3d &,
+  .ex-style_01C1d &,
+  .ex-style_01C2d &,
+  .ex-style_01C3d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+	    margin-right: 20px;
+    }
+  }
+}
+
+
+.mod-2col7 { //メイン２等分 30px
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: ($mainWidth - 20) / 2; //layout変数
+    margin-right: 20px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: ($mainWidth - 20) / 2; //layout変数
+  }
+  .ex-style_i1A1a & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #fffdf2;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1A2a & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #f6f6f6;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1A3a & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #fff9ee;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1B1a & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #e6f8ff;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1B2a &,
+  .ex-style_i1B2b &,
+  .ex-style_i1B2c &,
+  .ex-style_i1B2d & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #fBf3c8;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1B3a &,
+  .ex-style_i1B3b &,
+  .ex-style_i1B3c &,
+  .ex-style_i1B3d & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      background-color: #ffefe5;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1C1a &,
+  .ex-style_i1C1b &,
+  .ex-style_i1C1c &,
+  .ex-style_i1C1d & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      border: 1px solid #c9e0ff;
+      background: none;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1C2a &,
+  .ex-style_i1C2b &,
+  .ex-style_i1C2c &,
+  .ex-style_i1C2d & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      border: 1px solid #f99317;
+      background: none;
+      padding: 15px;
+    }
+  }
+  .ex-style_i1C3a &,
+  .ex-style_i1C3b &,
+  .ex-style_i1C3c &,
+  .ex-style_i1C3d & {
+    .mod-2col-inner, .mod-2col-inner2 {
+      border: 1px solid #f2d028;
+      background: none;
+      padding: 15px;
+    }
+  }
+}
+
+.mod-2col8 { //メイン２等分の中 0px
+  @extend %cf;
+  > .mod-2col-inner {
+    float: right;
+    width: 95px;
+    margin-left: 10px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  .ex-style_01A1d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 10px;
+    }
+  }
+  .ex-style_01A1c & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 10px;
+    }
+  }
+}
+
+.mod-2col9 {
+  @extend %cf;
+  > .mod-2col-inner {
+    float: right;
+    width: 250px;
+    margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+}
+
+.mod-2col10 { //ヘッダータイトル３列大きい２カラム
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: 380px;
+    margin-right: 30px;
+  }
+  > .mod-2col-inner2 {
+  	float: right;
+    width: 570px;
+  }
+}
+
+.mod-2col11 { //ヘッダータイトル３列小さい２カラム
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner {
+    float: left;
+    width: 290px;
+    margin-right: 30px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 250px;
+  }
+}
+
+.mod-2col12 { //フッター３列table-cell
+  display: table;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: 70px;
+    vertical-align: bottom;
+  }
+  > .mod-2col-inner2 {
+    padding-left: 15px;
+    display: table-cell;
+    width: 230px;
+    vertical-align: bottom;
+  }
+}
+
+.mod-2col13 {
+	//抜け番
+}
+
+.mod-2col14 { //ヘッダータイトル３列小さい２カラム
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner {
+    float: left;
+    width: 250px;
+    margin-right: 30px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 290px;
+  }
+}
+
+.mod-2col15 {
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner {
+    float: left;
+    width: 80px;
+    margin-right: 10px;
+  }
+  .ex-style_01A1d &,
+  .ex-style_01A2d &,
+  .ex-style_01A3d &,
+  .ex-style_01B1d &,
+  .ex-style_01B2d &,
+  .ex-style_01B3d &,
+  .ex-style_01C1d &,
+  .ex-style_01C2d &,
+  .ex-style_01C3d & {
+    > .mod-2col-inner2 {
+      overflow: hidden;
+    }
+  }
+  .ex-style_01A1b &,
+  .ex-style_01A2b &,
+  .ex-style_01A3b &,
+  .ex-style_01B1b &,
+  .ex-style_01B2b &,
+  .ex-style_01B3b &,
+  .ex-style_01C1b &,
+  .ex-style_01C2b &,
+  .ex-style_01C3b & {
+    > .mod-2col-inner {
+      float: right;
+      margin-left: 10px;
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+    }
+  }
+  .ex-style_01A1a &,
+  .ex-style_01A2a &,
+  .ex-style_01A3a &,
+  .ex-style_01B1a &,
+  .ex-style_01B2a &,
+  .ex-style_01B3a &,
+  .ex-style_01C1a &,
+  .ex-style_01C2a &,
+  .ex-style_01C3a & {
+    > .mod-2col-inner {
+      float: right;
+      margin-left: 10px;
+    }
+  }
+}
+
+
+.mod-2col16 {
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner {
+    float: right;
+    width: 80px;
+    margin-left: 10px;
+  }
+  @extend %default-2col;
+  .ex-style_01A1d &,
+  .ex-style_01A2d &,
+  .ex-style_01A3d &,
+  .ex-style_v1A1d &,
+  .ex-style_v1A2d &,
+  .ex-style_v1A3d &,
+  .ex-style_c1A1d &,
+  .ex-style_c1A2d &,
+  .ex-style_c1A3d &,
+  .ex-style_01B1d &,
+  .ex-style_01B2d &,
+  .ex-style_01B3d &,
+  .ex-style_v1B1d &,
+  .ex-style_v1B2d &,
+  .ex-style_v1B3d &,
+  .ex-style_c1B1d &,
+  .ex-style_c1B2d &,
+  .ex-style_c1B3d &,
+  .ex-style_01C1d &,
+  .ex-style_01C2d &,
+  .ex-style_01C3d &,
+  .ex-style_v1C1d &,
+  .ex-style_v1C2d &,
+  .ex-style_v1C3d &,
+  .ex-style_c1C1d &,
+  .ex-style_c1C2d &,
+  .ex-style_c1C3d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 10px;
+    }
+  }
+  .ex-style_01A1c &,
+  .ex-style_01A2c &,
+  .ex-style_01A3c &,
+  .ex-style_v1A1c &,
+  .ex-style_v1A2c &,
+  .ex-style_v1A3c &,
+  .ex-style_c1A1c &,
+  .ex-style_c1A2c &,
+  .ex-style_c1A3c &,
+  .ex-style_01B1c &,
+  .ex-style_01B2c &,
+  .ex-style_01B3c &,
+  .ex-style_v1B1c &,
+  .ex-style_v1B2c &,
+  .ex-style_v1B3c &,
+  .ex-style_c1B1c &,
+  .ex-style_c1B2c &,
+  .ex-style_c1B3c &,
+  .ex-style_01C1c &,
+  .ex-style_01C2c &,
+  .ex-style_01C3c &,
+  .ex-style_v1C1c &,
+  .ex-style_v1C2c &,
+  .ex-style_v1C3c &,
+  .ex-style_c1C1c &,
+  .ex-style_c1C2c &,
+  .ex-style_c1C3c & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      margin-right: 10px;
+    }
+  }
+}
+
+.mod-2col17 { //メイン２等分 30px
+  @extend %cf;
+  > .mod-2col-inner {
+    float: right;
+    width: 283px; //layout手動
+    margin-left: 20px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  @include mod-2col-ex2(20px);
+}
+
+
+.mod-2col18 { //mb基準10px
+  @extend %cf;
+  margin-bottom: 10px;
+  > .mod-2col-inner { //回り込みなし　画像右
+    float: right;
+    width: 120px;
+    margin-left: 15px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  .ex-style_01A1d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 15px;
+    }
+  }
+  .ex-style_01A1c & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 15px;
+    }
+  }
+}
+
+.mod-2col19 { //ヘッダータイトル３列小さい２カラム
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: 350px;
+    margin-right: 20px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 257px;
+  }
+}
+
+//　リリースまでに使用されない場合削除
+.mod-2col20 { //メイン2等分幅300px
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: 300px;
+    margin-right: 40px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 300px;
+  }
+}
+
+//　リリースまでに使用されない場合削除
+.mod-2col21 { //メイン2等分幅305px
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: 305px;
+    margin-right: 30px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 305px;
+  }
+}
+
+.mod-2col22 { //2col-spec2
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: ((($mainWidth - 30) / 2) - 15) / 2;  //layout変数
+    margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: ((($mainWidth - 30) / 2) - 15) / 2; //layout変数
+  }
+}
+
+
+.mod-2col23 { //メイン2等分幅145px 465px
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: 145px;
+    margin-right: 30px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 465px;
+  }
+}
+
+//　リリースまでに使用されない場合削除
+.mod-2col24 { //メイン2等分幅200px 410px
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: 200px;
+    margin-right: 30px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 410px;
+  }
+}
+
+
+
+.mod-2col25 { //2col-spec3の中の2カラム
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: (374px - 10px) / 2; //layout変数
+    margin-right: 10px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: (374px - 10px) / 2; //layout変数
+  }
+}
+
+.mod-2col26 { //メイン２等分の中 0px
+  @extend %cf;
+  > .mod-2col-inner {
+    float: right;
+    width: 90px;
+    margin-left: 15px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  .ex-style_01A1d &,
+  .ex-style_01A2d &,
+  .ex-style_01A3d &,
+  .ex-style_v1A1d &,
+  .ex-style_v1A2d &,
+  .ex-style_v1A3d &,
+  .ex-style_c1A1d &,
+  .ex-style_c1A2d &,
+  .ex-style_c1A3d &,
+  .ex-style_01B1d &,
+  .ex-style_01B2d &,
+  .ex-style_01B3d &,
+  .ex-style_v1B1d &,
+  .ex-style_v1B2d &,
+  .ex-style_v1B3d &,
+  .ex-style_c1B1d &,
+  .ex-style_c1B2d &,
+  .ex-style_c1B3d &,
+  .ex-style_01C1d &,
+  .ex-style_01C2d &,
+  .ex-style_01C3d &,
+  .ex-style_v1C1d &,
+  .ex-style_v1C2d &,
+  .ex-style_v1C3d &,
+  .ex-style_c1C1d &,
+  .ex-style_c1C2d &,
+  .ex-style_c1C3d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 15px;
+    }
+  }
+  .ex-style_01A1c &,
+  .ex-style_01A2c &,
+  .ex-style_01A3c &,
+  .ex-style_v1A1c &,
+  .ex-style_v1A2c &,
+  .ex-style_v1A3c &,
+  .ex-style_c1A1c &,
+  .ex-style_c1A2c &,
+  .ex-style_c1A3c &,
+  .ex-style_01B1c &,
+  .ex-style_01B2c &,
+  .ex-style_01B3c &,
+  .ex-style_v1B1c &,
+  .ex-style_v1B2c &,
+  .ex-style_v1B3c &,
+  .ex-style_c1B1c &,
+  .ex-style_c1B2c &,
+  .ex-style_c1B3c &,
+  .ex-style_01C1c &,
+  .ex-style_01C2c &,
+  .ex-style_01C3c &,
+  .ex-style_v1C1c &,
+  .ex-style_v1C2c &,
+  .ex-style_v1C3c &,
+  .ex-style_c1C1c &,
+  .ex-style_c1C2c &,
+  .ex-style_c1C3c & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      margin-right: 15px;
+    }
+  }
+}
+
+
+.mod-2col27 { //メイン２等分の中 0px
+  @extend %cf;
+  > .mod-2col-inner {
+    float: right;
+    width: 70px;
+    margin-left: 10px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  .ex-style_01A1d &,
+  .ex-style_01A2d &,
+  .ex-style_01A3d &,
+  .ex-style_v1A1d &,
+  .ex-style_v1A2d &,
+  .ex-style_v1A3d &,
+  .ex-style_c1A1d &,
+  .ex-style_c1A2d &,
+  .ex-style_c1A3d &,
+  .ex-style_01B1d &,
+  .ex-style_01B2d &,
+  .ex-style_01B3d &,
+  .ex-style_v1B1d &,
+  .ex-style_v1B2d &,
+  .ex-style_v1B3d &,
+  .ex-style_c1B1d &,
+  .ex-style_c1B2d &,
+  .ex-style_c1B3d &,
+  .ex-style_01C1d &,
+  .ex-style_01C2d &,
+  .ex-style_01C3d &,
+  .ex-style_v1C1d &,
+  .ex-style_v1C2d &,
+  .ex-style_v1C3d &,
+  .ex-style_c1C1d &,
+  .ex-style_c1C2d &,
+  .ex-style_c1C3d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 10px;
+    }
+  }
+  .ex-style_01A1c &,
+  .ex-style_01A2c &,
+  .ex-style_01A3c &,
+  .ex-style_v1A1c &,
+  .ex-style_v1A2c &,
+  .ex-style_v1A3c &,
+  .ex-style_c1A1c &,
+  .ex-style_c1A2c &,
+  .ex-style_c1A3c &,
+  .ex-style_01B1c &,
+  .ex-style_01B2c &,
+  .ex-style_01B3c &,
+  .ex-style_v1B1c &,
+  .ex-style_v1B2c &,
+  .ex-style_v1B3c &,
+  .ex-style_c1B1c &,
+  .ex-style_c1B2c &,
+  .ex-style_c1B3c &,
+  .ex-style_01C1c &,
+  .ex-style_01C2c &,
+  .ex-style_01C3c &,
+  .ex-style_v1C1c &,
+  .ex-style_v1C2c &,
+  .ex-style_v1C3c &,
+  .ex-style_c1C1c &,
+  .ex-style_c1C2c &,
+  .ex-style_c1C3c & { //回り込みあり 画像左
+    > .mod-2col-inner {
+      margin-right: 10px;
+    }
+  }
+}
+
+.mod-2col28 { //抜け番
+}
+
+
+.mod-2col29 {
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: ($mainWidth - 20) / 2; //layout変数
+    padding: 10px;
+    border: 1px solid #ade9ef;
+    @include border-radius();
+    @include background($color: #ecfdff);
+    > .mod-2col-inner2 {
+      padding: 15px;
+      @include background($color: #ffffff);
+    }
+  }
+  > .mod-2col-inner3 {
+    float: right;
+    width: ($mainWidth - 20) / 2; //layout変数
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ade9ef;
+    @include border-radius();
+    @include background($color: #ecfdff);
+    >.mod-2col-inner4 {
+      padding: 15px;
+      @include background($color: #ffffff);
+    }
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      background-color: #ebfdff;
+      border: 1px solid #60bff0;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      background-color: #ffe0de;
+      border: 1px solid #fd8e89;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: 1px solid #abd2f6;
+      @include background("mod-box/bg04.png", repeat-x, $color: #ffffff);
+      >.mod-2col-inner2, .mod-2col-inner4 {
+        @include border-radius();
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: 1px solid #f4d34f;
+      @include background("mod-box/bg04_2.png", repeat-x, $color: #ffffff);
+      >.mod-2col-inner2, .mod-2col-inner4 {
+        @include border-radius();
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: 1px solid #ffa19b;
+      @include background("mod-box/bg04_3.png", repeat-x, $color: #ffffff);
+      >.mod-2col-inner2, .mod-2col-inner4 {
+        @include border-radius();
+        background-color: transparent;
+      }
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: none;
+      padding: 3px;
+      background-color: none;
+      @include background("mod-box/bg08.png", repeat);
+    }
+    >.mod-2col-inner2, .mod-2col-inner4 {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: none;
+      padding: 3px;
+      background-color: none;
+      @include background("mod-box/bg08_2.png", repeat);
+    }
+    >.mod-2col-inner2, .mod-2col-inner4 {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    >.mod-2col-inner, .mod-2col-inner3 {
+      border: none;
+      padding: 3px;
+      background-color: none;
+      @include background("mod-box/bg08_3.png", repeat);
+    }
+    >.mod-2col-inner2, .mod-2col-inner4 {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+}
+
+.mod-2col30 { //きいろい
+  @extend %cf;
+  background-color: #fffdf2;
+  padding: 15px;
+  > .mod-2col-inner { //回り込みなし　画像右
+    float: right;
+    width: 250px;
+    margin-left: 15px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  @extend %default-2col;
+  .ex-style_01A1d & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 15px;
+    }
+  }
+  .ex-style_01A1c & { //回り込みなし 画像左
+    > .mod-2col-inner {
+      margin-right: 15px;
+    }
+  }
+}
+
+.mod-2col31 {
+  @extend %cf;
+  > .mod-2col-inner { //回り込みなし　画像右
+    float: right;
+    width: 250px;
+    margin-left: 15px;
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+  .step1 &, .step3 &, .step5 &, .step7 &, .step9 & {
+    .ex-style_01A1a &,
+    .ex-style_01A2a &,
+    .ex-style_01A3a & {
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+    .ex-style_01A1d &,
+    .ex-style_01A2d &,
+    .ex-style_01A3d & {
+      > .mod-2col-inner {
+        float: left;
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+    .ex-style_01A1c &,
+    .ex-style_01A2c &,
+    .ex-style_01A3c & { //回り込みあり　画像左
+      > .mod-2col-inner {
+        float: left;
+        margin-left: 0;
+        margin-right: 15px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+  .step2 &, .step4 &, .step6 &, .step8 &, .step10 & { //画像逆
+    > .mod-2col-inner {
+      float: left;
+      margin-right: 15px;
+      margin-left: 0;
+    }
+    .ex-style_01A1a &,
+    .ex-style_01A2a &,
+    .ex-style_01A3a & {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+    .ex-style_01A1b &,
+    .ex-style_01A2b &,
+    .ex-style_01A3b & {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+      }
+    }
+    .ex-style_01A1c &,
+    .ex-style_01A2c &,
+    .ex-style_01A3c & {
+      > .mod-2col-inner {
+        float: right;
+        margin-left: 15px;
+        margin-right: 0;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+    .ex-style_01A1d &,
+    .ex-style_01A2d &,
+    .ex-style_01A3d & {
+      > .mod-2col-inner {
+        float: right;
+        margin-left: 15px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+.mod-2col32 { //画像左
+  margin-bottom: 5px;
+  display: table;
+  width: 100%;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: 80px;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px;
+  }
+}
+
+.mod-2col33 { //画像右
+  margin-bottom: 5px;
+  display: table;
+  width: 100%;
+  > .mod-2col-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    width: 80px;
+  }
+}
+
+
+
+
+// part-main-051 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-2col-spec { //メイン2等分幅300px
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: ($mainWidth - 40) / 2; //layout変数
+    margin-right: 40px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: ($mainWidth - 40) / 2; //layout変数
+  }
+}
+
+// part-main-204 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-2col-spec2 { //メイン2等分幅305px
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: ($mainWidth - 30) / 2;//layout変数
+    margin-right: 30px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: ($mainWidth - 30) / 2; //layout変数
+  }
+}
+
+// part-main-205 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-2col-spec3 { //メイン2等分幅200px 410px
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: 182px; //layout手動
+    margin-right: 30px; //layout手動
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 374px; //layout手動
+  }
+}
+
+.mod-2col-spec4 { //メイン2等分幅145px 465px
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: 131px; //layout手動
+    margin-right: 28px; //layout手動
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 423px; //layout手動
+  }
+}

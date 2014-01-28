@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@mixin mod-box13-common-style {
+width: 100%;
+  margin-top: 10px;
+  > div {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+

@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+//  mod-2col7 の mixin一式
+@mixin mod-2col7-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 40) / 2);
+      .mod-2col-inner-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 40) / 2);
+      margin-left: 40px;
+       .mod-2col-inner2-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-2col7-style {
+.mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: transparent;
+  background-image: none;
+  background-position: left top;
+  background-repeat: no-repeat;
+  border: 0 none transparent;
+  padding: 0;
+    }
+  }
+}
+
+@mixin mod-2col7-style2 {
+.mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: #f8f7f5;
+  background-image: none;
+  background-position: left top;
+  background-repeat: no-repeat;
+  border: 0 none transparent;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style3 {
+.mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: #f6eee8;
+  background-image: none;
+  background-position: left top;
+  background-repeat: no-repeat;
+  border: 0 none transparent;
+      padding: 15px;
+    }
+  }
+}
+@mixin mod-2col7-style4 {
+ .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: #f6eee8;
+  background-image: none;
+  background-position: left top;
+  background-repeat: no-repeat;
+  border: 0 none transparent;
+      padding: 15px;
+    }
+  }
+}
+@mixin mod-2col7-style5 {
+.mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: #f1f1f1;
+  background-image: none;
+  background-position: left top;
+  background-repeat: no-repeat;
+  border: 0 none transparent;
+      padding: 15px;
+    }
+  }
+}
+@mixin mod-2col7-style6 {
+.mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: #ffffe8;
+  background-image: none;
+  background-position: left top;
+  background-repeat: no-repeat;
+  border: 0 none transparent;
+      padding: 15px;
+    }
+  }
+}
+@mixin mod-2col7-style7 {
+.mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: #ffffd5;
+  background-image: none;
+  background-position: left top;
+  background-repeat: no-repeat;
+  border: 0 none transparent;
+      padding: 15px;
+    }
+  }
+}
+@mixin mod-2col7-style8 {
+.mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: transparent;
+  background-image: url("img/mod-box/_37/bg_b_3.png");
+  background-position: left top;
+  background-repeat: repeat;
+  border: 1px solid #bbbbbb;
+      padding: 15px;
+    }
+  }
+}
+@mixin mod-2col7-style9 {
+ .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: transparent;
+  background-image: url("img/mod-box/_37/bg_b_3.png");
+  background-position: left top;
+  background-repeat: repeat;
+  border: 1px solid #bbbbbb;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style10 {
+ .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+  background-color: transparent;
+  background-image: url("img/mod-box/_37/bg_b_3.png");
+  background-position: left top;
+  background-repeat: repeat;
+  border: 1px solid #ead3cf;
+      padding: 15px;
+    }
+  }
+}

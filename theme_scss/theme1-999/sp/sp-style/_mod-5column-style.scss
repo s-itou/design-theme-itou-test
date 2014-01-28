@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+//  mod-5col の mixin一式
+@mixin mod-5col-common-style {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      padding-bottom: 30px;
+      background-position: 50% bottom;
+      background-repeat: no-repeat;
+      background-size: 39px 16px;
+    }
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4,
+    > .mod-5col-inner5 {
+      margin-top: 20px;
+    }
+    .mod-bnr7 {
+        margin-bottom: 10px !important;
+    }
+  }
+}
+@mixin mod-5col-style {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg.png");
+    }
+  }
+}
+@mixin mod-5col-style2 {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg_2.png");
+    }
+  }
+}
+@mixin mod-5col-style3 {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg_3.png");
+    }
+  }
+}
+@mixin mod-5col-style4 {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg02.png");
+    }
+  }
+}
+@mixin mod-5col-style5 {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg02_2.png");
+    }
+  }
+}
+@mixin mod-5col-style6 {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg02_3.png");
+    }
+  }
+}
+@mixin mod-5col-style7 {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg03.png");
+    }
+  }
+}
+@mixin mod-5col-style8 {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg03_2.png");
+    }
+  }
+}
+@mixin mod-5col-style9 {
+  > .mod-5col-wrap > .mod-5col-wrap2 {
+    > .mod-5col-inner,
+    > .mod-5col-inner2,
+    > .mod-5col-inner3,
+    > .mod-5col-inner4 {
+      background-image: url("img/mod-column/spbg03_3.png");
+    }
+  }
+}

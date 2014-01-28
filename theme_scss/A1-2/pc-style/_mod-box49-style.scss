@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+//  mod-box49 の mixin一式
+@mixin mod-box49-common-style {
+  padding-top: 1px;
+  width: 100%;
+  &.ex-first-part {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+    > div > div > div > .ex-first-child > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}

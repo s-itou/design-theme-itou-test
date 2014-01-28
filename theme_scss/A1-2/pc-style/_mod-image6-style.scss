@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+@mixin mod-image6-common-style {
+margin-top: 10px !important;
+  position: relative;
+  text-align: center;
+  &:after {
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+  }
+  img {
+    width: 100%;
+    @include box-sizing(border-box);
+  }
+  > p {
+    background-repeat: no-repeat;
+    &:after {
+      position: absolute;
+      z-index: 500;
+      top: 0;
+      right: 0;
+    }
+  }
+  .ex-imgSize_L & {
+    .mod-image6 {
+      width: 85%;
+      margin-right: auto;
+      margin-left: auto;
+         > p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .ex-imgSize_M & {
+    .mod-image6 {
+      width: 75%;
+      margin-right: auto;
+      margin-left: auto;
+         > p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .ex-imgSize_S & {
+    .mod-image6 {
+      width: 65%;
+      margin-right: auto;
+      margin-left: auto;
+         > p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+
+@mixin mod-image6-style {
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    width: 586px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    width: 534px;
+  }
+  padding-top: 21px;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-repeat: repeat;
+  &:after {
+    content: url("img/mod-image/bg02.png");
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    background-color: transparent;
+    background-image: none;
+    background-position: left top;
+    &:after {
+      content: url("img/mod-image/bg08.png");
+    }
+    img {
+      padding: 0;
+      border: 0 none transparent;
+    }
+  }
+}
+@mixin mod-image6-style2 {
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    width: 586px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    width: 534px;
+  }
+  padding-top: 21px;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-repeat: repeat;
+  &:after {
+    content: url("img/mod-image/bg02_2.png");
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    background-color: transparent;
+    background-image: none;
+    background-position: left top;
+    &:after {
+      content: url("img/mod-image/bg08_2.png");
+    }
+    img {
+      padding: 0;
+      border: 0 none transparent;
+    }
+  }
+}
+@mixin mod-image6-style3 {
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    width: 586px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    width: 534px;
+  }
+  padding-top: 21px;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-repeat: repeat;
+  &:after {
+    content: url("img/mod-image/bg02_3.png");
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    background-color: transparent;
+    background-image: none;
+    background-position: left top;
+    &:after {
+      content: url("img/mod-image/bg08_3.png");
+    }
+    img {
+      padding: 0;
+      border: 0 none transparent;
+    }
+  }
+}
+@mixin mod-image6-style4 {
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    width: 586px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    width: 534px;
+  }
+  padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-repeat: repeat;
+  &:after {
+    content: none;
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    background-image: none;
+    background-position: left top;
+    &:after {
+      content: none;
+    }
+    img {
+      padding: 0;
+      border: 0 none transparent;
+    }
+  }
+}
+@mixin mod-image6-style5 {
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    width: 562px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    width: 514px;
+  }
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("img/mod-image/bg05.png");
+  background-repeat: no-repeat;
+  &:after {
+    content: none;
+  }
+  > p {
+    padding: 0 0 20px 0;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("img/mod-image/bg06.png");
+    background-position: left bottom;
+    &:after {
+      content: none;
+    }
+    img {
+      padding: 5px;
+      border: 1px solid #D1C9A4;
+    }
+  }
+}
+@mixin mod-image6-style6 {
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    width: 562px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    width: 514px;
+  }
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("img/mod-image/bg05_2.png");
+  background-repeat: no-repeat;
+  &:after {
+    content: none;
+  }
+  > p {
+    padding: 0 0 20px 0;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("img/mod-image/bg06_2.png");
+    background-position: left bottom;
+    &:after {
+      content: none;
+    }
+    img {
+      padding: 5px;
+      border: 1px solid #D1C9A4;
+    }
+  }
+}
+@mixin mod-image6-style7 {
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    width: 562px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    width: 514px;
+  }
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("img/mod-image/bg05_3.png");
+  background-repeat: no-repeat;
+  &:after {
+    content: none;
+  }
+  > p {
+    padding: 0 0 20px 0;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("img/mod-image/bg06_3.png");
+    background-position: left bottom;
+    &:after {
+      content: none;
+    }
+    img {
+      padding: 5px;
+      border: 1px solid #D1C9A4;
+    }
+  }
+}
+

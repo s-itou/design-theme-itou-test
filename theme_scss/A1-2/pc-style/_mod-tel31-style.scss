@@ -1,0 +1,63 @@
+
+//  mod-tel31 の mixin一式
+@mixin mod-tel31-common-style {
+  margin-top: 3px;
+  display: table;
+  min-height: 27px;
+  i {
+    display: table-cell;
+    width: 31px;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+    background-position: left bottom;
+  }
+  .mod-icon_tel {
+    background-position: left bottom;
+  }
+  .mod-tel-inner {
+    display: table-cell;
+    padding-left: 5px;
+    word-break: break-all;
+    line-height: 1.0;
+    letter-spacing: 1.250px;
+    font-size: 25px;
+  }
+}
+
+
+@mixin mod-tel31-style5 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg25_2.png");
+  }
+  .mod-tel-inner {
+    color: #f2d028;
+  }
+}
+
+@mixin mod-tel31-style {
+  @include mod-tel31-style5; // none
+}
+@mixin mod-tel31-style2 {
+  @include mod-tel31-style5; // none
+}
+@mixin mod-tel31-style3 {
+  @include mod-tel31-style5; // none
+}
+@mixin mod-tel31-style4 {
+  @include mod-tel31-style5; // none
+}
+// @mixin mod-tel31-style5 {上に記載}
+@mixin mod-tel31-style6 {
+  @include mod-tel31-style5; // none
+}
+@mixin mod-tel31-style7 {
+  @include mod-tel31-style5; // none
+}
+@mixin mod-tel31-style8 {
+  @include mod-tel31-style5; // none
+}
+@mixin mod-tel31-style9 {
+  @include mod-tel31-style5; // none
+}

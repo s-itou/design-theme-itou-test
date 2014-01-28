@@ -1,0 +1,637 @@
+@charset "UTF-8";
+
+//  mod-image の mixin一式
+@mixin mod-image-common-style {
+  margin-top: 10px !important;
+  text-align: center;
+  img {
+    width: 100%;
+    border-style: none;
+  }
+  .ex-imgSize_L & {
+    img {
+      width: 90%;
+    }
+  }
+
+  .ex-imgSize_M & {
+    img {
+      width: 80%;
+    }
+  }
+
+  .ex-imgSize_S & {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+
+//  mod-image2 の mixin一式
+@mixin mod-image2-common-style {
+  text-align: center;
+  img {
+    width: 100%;
+    border-style: none;
+  }
+  .ex-imgSize_L & {
+    img {
+      width: 90%;
+    }
+  }
+
+  .ex-imgSize_M & {
+    img {
+      width: 80%;
+    }
+  }
+
+  .ex-imgSize_S & {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+
+//  mod-image3 の mixin一式
+@mixin mod-image3-common-style {
+  width: 115px;
+  margin: 5px auto 0 !important;
+  text-align: center;
+  img {
+    width: 100%;
+    border-style: none;
+  }
+  .ex-imgSize_L & {
+    img {
+      width: 90%;
+    }
+  }
+
+  .ex-imgSize_M & {
+    img {
+      width: 80%;
+    }
+  }
+
+  .ex-imgSize_S & {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+//  mod-image4 の mixin一式
+@mixin mod-image4-common-style {
+  margin-top: 0;
+  text-align: center;
+  img {
+    width: 100%;
+    border-style: none;
+  }
+}
+
+
+
+//  mod-image6 の mixin一式
+@mixin mod-image6-common-style {
+  margin-top: 10px !important;
+  position: relative;
+  text-align: center;
+  &:after {
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+  }
+  img {
+    width: 100%;
+  }
+  > p {
+    background-repeat: no-repeat;
+    &:after {
+      position: absolute;
+      z-index: 500;
+      top: 0;
+      right: 0;
+    }
+  }
+  .ex-imgSize_L & {
+    .mod-image6 {
+      width: 85%;
+      margin-right: auto;
+      margin-left: auto;
+         > p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+  .ex-imgSize_M & {
+    .mod-image6 {
+      width: 75%;
+      margin-right: auto;
+      margin-left: auto;
+         > p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+  .ex-imgSize_S & {
+    .mod-image6 {
+      width: 65%;
+      margin-right: auto;
+      margin-left: auto;
+         > p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}
+@mixin mod-image6-style {
+  @if $layoutCode == "L25" {
+    width: 586px;
+  } @else if $layoutCode == "L30" {
+    width: 534px;
+  }
+  padding-top: 21px;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-repeat: repeat;
+  &:after {
+    content: url(img/mod-image/bg02.png);
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    background-color: transparent;
+    background-image: none;
+    background-position: left top;
+    &:after {
+      content: url(img/mod-image/bg08.png);
+    }
+    img {
+      padding: 0;
+      border: 0 none transparent;
+    }
+  }
+}
+@mixin mod-image6-style2 {
+  @if $layoutCode == "L25" {
+    width: 586px;
+  } @else if $layoutCode == "L30" {
+    width: 534px;
+  }
+  padding-top: 21px;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-repeat: repeat;
+  &:after {
+    content: url(img/mod-image/bg02_2.png);
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    background-color: transparent;
+    background-image: none;
+    background-position: left top;
+    &:after {
+      content: url(img/mod-image/bg08_2.png);
+    }
+    img {
+      padding: 0;
+      border: 0 none transparent;
+    }
+  }
+}
+@mixin mod-image6-style3 {
+  @if $layoutCode == "L25" {
+    width: 586px;
+  } @else if $layoutCode == "L30" {
+    width: 534px;
+  }
+  padding-top: 21px;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-repeat: repeat;
+  &:after {
+    content: url(img/mod-image/bg02_3.png);
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    background-color: transparent;
+    background-image: none;
+    background-position: left top;
+    &:after {
+      content: url(img/mod-image/bg08_3.png);
+    }
+    img {
+      padding: 0;
+      border: 0 none transparent;
+    }
+  }
+}
+@mixin mod-image6-style4 {
+  @if $layoutCode == "L25" {
+    width: 586px;
+  } @else if $layoutCode == "L30" {
+    width: 534px;
+  }
+  padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-repeat: repeat;
+  &:after {
+    content: none;
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    background-image: none;
+    background-position: left top;
+    &:after {
+      content: none;
+    }
+    img {
+      padding: 0;
+      border: 0 none transparent;
+    }
+  }
+}
+@mixin mod-image6-style5 {
+  @if $layoutCode == "L25" {
+    width: 562px;
+  } @else if $layoutCode == "L30" {
+    width: 514px;
+  }
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("img/mod-image/bg05.png");
+  background-repeat: no-repeat;
+  &:after {
+    content: none;
+  }
+  > p {
+    padding: 0 0 20px 0;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("img/mod-image/bg06.png");
+    background-position: right bottom;
+    &:after {
+      content: none;
+    }
+    img {
+      padding: 5px;
+      border: 1px solid #D1C9A4;
+    }
+  }
+}
+@mixin mod-image6-style6 {
+  @if $layoutCode == "L25" {
+    width: 562px;
+  } @else if $layoutCode == "L30" {
+    width: 514px;
+  }
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("img/mod-image/bg05_2.png");
+  background-repeat: no-repeat;
+  &:after {
+    content: none;
+  }
+  > p {
+    padding: 0 0 20px 0;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("img/mod-image/bg06_2.png");
+    background-position: right bottom;
+    &:after {
+      content: none;
+    }
+    img {
+      padding: 5px;
+      border: 1px solid #D1C9A4;
+    }
+  }
+}
+@mixin mod-image6-style7 {
+  @if $layoutCode == "L25" {
+    width: 562px;
+  } @else if $layoutCode == "L30" {
+    width: 514px;
+  }
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("img/mod-image/bg05_3.png");
+  background-repeat: no-repeat;
+  &:after {
+    content: none;
+  }
+  > p {
+    padding: 0 0 20px 0;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("img/mod-image/bg06_3.png");
+    background-position: right bottom;
+    &:after {
+      content: none;
+    }
+    img {
+      padding: 5px;
+      border: 1px solid #D1C9A4;
+    }
+  }
+}
+
+
+//  mod-image7 の mixin一式
+@mixin mod-image7-common-style {
+  margin-left: 10px !important;
+  float: left;
+  text-align: center;
+  img {
+    @if $layoutCode == "L25" {
+      width: 60px;
+    } @else if $layoutCode == "L30" {
+      width: 54px;
+    }
+    border-style: none;
+  }
+}
+
+
+//  mod-image8 の mixin一式
+@mixin mod-image8-common-style {
+  float: left;
+  text-align: center;
+  img {
+    width: 600px;
+    border-style: none;
+  }
+}
+
+
+//  mod-image9 の mixin一式
+@mixin mod-image9-common-style {
+  float: right;
+  text-align: center;
+  img {
+    width: 380px;
+    border-style: none;
+  }
+}
+
+//  mod-image10 の mixin一式
+@mixin mod-image10-common-style {
+  text-align: left;
+  img {
+    max-width: 100%;
+    border-style: none;
+  }
+}
+
+
+
+//  mod-image-spec の mixin一式
+@mixin mod-image-spec-common-style {
+  text-align: center;
+  img {
+    width: 100%;
+    border-style: none;
+  }
+  .ex-imgSize_L & {
+    img {
+      width: 90%;
+    }
+  }
+
+  .ex-imgSize_M & {
+    img {
+      width: 80%;
+    }
+  }
+
+  .ex-imgSize_S & {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+
+//  mod-image-spec3 の mixin一式
+@mixin mod-image-spec3-common-style {
+  margin-top: 10px !important;
+  margin-right: -30px !important;
+  padding-right: 30px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: center;
+  img {
+    width: 100%;
+    border-style: none;
+  }
+  .ex-imgSize_L & {
+    img {
+      width: 90%;
+    }
+  }
+
+  .ex-imgSize_M & {
+    img {
+      width: 80%;
+    }
+  }
+
+  .ex-imgSize_S & {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+@mixin mod-image-spec3-style {
+  background-image: url(img/mod-image/bg.png);
+}
+
+@mixin mod-image-spec3-style2 {
+  background-image: url(img/mod-image/bg_2.png);
+}
+
+@mixin mod-image-spec3-style3 {
+  background-image: url(img/mod-image/bg_3.png);
+}
+
+@mixin mod-image-spec3-style4 {
+  background-image: url(img/mod-image/bg04.png);
+}
+
+@mixin mod-image-spec3-style5 {
+  background-image: url(img/mod-image/bg04_2.png);
+}
+
+@mixin mod-image-spec3-style6 {
+  background-image: url(img/mod-image/bg04_3.png);
+}
+
+@mixin mod-image-spec3-style7 {
+  background-image: url(img/mod-image/bg07.png);
+}
+
+@mixin mod-image-spec3-style8 {
+  background-image: url(img/mod-image/bg07_2.png);
+}
+
+@mixin mod-image-spec3-style9 {
+  background-image: url(img/mod-image/bg07_3.png);
+}
+
+
+
+//  mod-image-spec4 の mixin一式
+@mixin mod-image-spec4-common-style {
+  margin-top: 10px !important;
+  margin-right: -25px !important;
+  padding-right: 25px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: center;
+  img {
+    width: 100%;
+    border-style: none;
+  }
+  .ex-imgSize_L & {
+    img {
+      width: 90%;
+    }
+  }
+
+  .ex-imgSize_M & {
+    img {
+      width: 80%;
+    }
+  }
+
+  .ex-imgSize_S & {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+@mixin mod-image-spec4-style {
+  background-image: url(img/mod-image/bg.png);
+}
+
+@mixin mod-image-spec4-style2 {
+  background-image: url(img/mod-image/bg_2.png);
+}
+
+@mixin mod-image-spec4-style3 {
+  background-image: url(img/mod-image/bg_3.png);
+}
+
+@mixin mod-image-spec4-style4 {
+  background-image: url(img/mod-image/bg04.png);
+}
+
+@mixin mod-image-spec4-style5 {
+  background-image: url(img/mod-image/bg04_2.png);
+}
+
+@mixin mod-image-spec4-style6 {
+  background-image: url(img/mod-image/bg04_3.png);
+}
+
+@mixin mod-image-spec4-style7 {
+  background-image: url(img/mod-image/bg07.png);
+}
+
+@mixin mod-image-spec4-style8 {
+  background-image: url(img/mod-image/bg07_2.png);
+}
+
+@mixin mod-image-spec4-style9 {
+  background-image: url(img/mod-image/bg07_3.png);
+}
+
+
+//  mod-image-spec5 の mixin一式
+@mixin mod-image-spec5-common-style {
+  margin-top: 10px !important;
+  margin-right: -22px !important;
+  padding-right: 22px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: center;
+  img {
+    width: 100%;
+    border-style: none;
+  }
+  .ex-imgSize_L & {
+    img {
+      width: 90%;
+    }
+  }
+
+  .ex-imgSize_M & {
+    img {
+      width: 80%;
+    }
+  }
+
+  .ex-imgSize_S & {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+@mixin mod-image-spec5-style {
+  background-image: url(img/mod-image-spec/_05/bg_a.png);
+}
+
+@mixin mod-image-spec5-style2 {
+  background-image: url(img/mod-image-spec/_05/bg_a_2.png);
+}
+
+@mixin mod-image-spec5-style3 {
+  background-image: url(img/mod-image-spec/_05/bg_a_3.png);
+}
+
+@mixin mod-image-spec5-style4 {
+  background-image: url(img/mod-image-spec/_05/bg_b.png);
+}
+
+@mixin mod-image-spec5-style5 {
+  background-image: url(img/mod-image-spec/_05/bg_b_2.png);
+}
+
+@mixin mod-image-spec5-style6 {
+  background-image: url(img/mod-image-spec/_05/bg_b_3.png);
+}
+
+@mixin mod-image-spec5-style7 {
+  background-image: url(img/mod-image-spec/_05/bg_c.png);
+}
+
+@mixin mod-image-spec5-style8 {
+  background-image: url(img/mod-image-spec/_05/bg_c_2.png);
+}
+
+@mixin mod-image-spec5-style9 {
+  background-image: url(img/mod-image-spec/_05/bg_c_3.png);
+}

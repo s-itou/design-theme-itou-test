@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import "../pattern/pat-item-navi-footer";
+
+// --------------------------------------------------------------------------
+//
+// pat-navi-footer の定義
+//
+//   ・デザインパターン
+//   ・mod-set-navi-footer, mod-set-navi-top-footer 内にincludeされる使い方を想定
+//   ・他のsetモジュール　でも使用される可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// --------------------------------------------------------------------------
+
+
+
+// --------------------------------------------------------------------------
+// pat-design-navi-footer の個別設定
+// --------------------------------------------------------------------------
+
+// footer-1　〜 footer-3 シンプルフッター
+// footer-4　〜 footer-12 上部豪華版
+
+@mixin pat-design-navi-footer-1 {
+  @include pat-item-navi-footer-kado-blue;
+}
+
+@mixin pat-design-navi-footer-2 {
+  @include pat-item-navi-footer-kado-blue-2;
+}
+
+@mixin pat-design-navi-footer-3 {
+  @include pat-item-navi-footer-kado-orange;
+}
+
+
+@mixin pat-design-navi-footer-4 {
+  @include pat-item-navi-footer-kado-image-blue;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_a.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+    }
+  }
+}
+
+@mixin pat-design-navi-footer-5 {
+  @include pat-item-navi-footer-kado-image-blue-2;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_a_2.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+    }
+  }
+}
+
+@mixin pat-design-navi-footer-6 {
+  @include pat-item-navi-footer-kado-image-orange;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_a_3.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+    }
+  }
+}
+
+@mixin pat-design-navi-footer-7 {
+  @include pat-item-navi-footer-kado-image-blue-3;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_b.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+      &.state-em {
+        span {
+          background-color: #0e55b5;
+        }
+      }
+    }
+  }
+}
+
+@mixin pat-design-navi-footer-8 {
+  @include pat-item-navi-footer-kado-image-blue-4;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_b_2.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+      &.state-em {
+        span {
+          background-color: #6aced9;
+        }
+      }
+    }
+  }
+}
+
+@mixin pat-design-navi-footer-9 {
+  @include pat-item-navi-footer-kado-image-orange-2;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_b_3.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+      color: #443308;
+      a {
+        color: #443308;
+      }
+      &.state-em {
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@mixin pat-design-navi-footer-10 {
+  @include pat-item-navi-footer-kado-image-blue-5;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_c.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+    }
+  }
+}
+
+@mixin pat-design-navi-footer-11 {
+  @include pat-item-navi-footer-kado-image-blue-6;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_c_2.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+    }
+  }
+}
+
+@mixin pat-design-navi-footer-12 {
+  @include pat-item-navi-footer-kado-image-orange-3;
+  .mod-navi-footer {
+    margin: -3px 0 0;
+    padding: 41px 0 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("img/mod-fnav/new/bg02_c_3.png");
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      border-left: 1px solid #ffffff;
+    }
+    li {
+      border-left: 0 solid transparent;
+      border-right: 1px solid #ffffff;
+    }
+  }
+}
+
+
+
+

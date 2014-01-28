@@ -1,0 +1,14 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// mod-set-form の共通定義
+//
+// -----------------------------------
+
+@mixin common-style-mod-set-form {
+  > .ex-first-child {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}

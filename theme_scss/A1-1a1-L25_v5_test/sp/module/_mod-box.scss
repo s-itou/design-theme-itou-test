@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "../sp-style/mod-box-style";
+
+.mod-box-in1-side {
+  @include module-style-mod-box-in1-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_01A2 & { // 01A1
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-box-in1-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_01B2 & { // 01A1
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-box-in1-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_01C2 & { // 01A1
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-box-in1-side;
+  }
+}

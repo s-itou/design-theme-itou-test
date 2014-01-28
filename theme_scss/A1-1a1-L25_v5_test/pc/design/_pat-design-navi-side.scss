@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import "../pattern/pat-item-navi-side";
+
+// --------------------------------------------------------------------------
+//
+// pat-navi-side の定義
+//
+//   ・デザインパターン
+//   ・mod-navi-side 内にincludeされる使い方を想定
+//   ・他のsetモジュール　でも使用される可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// --------------------------------------------------------------------------
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------
+// pat-design-navi-side の個別設定
+// --------------------------------------------------------------------------
+@mixin pat-design-navi-side-1 {
+  @include pat-item-navi-side-jouge-image-blue;
+  .mod-h_4_side {
+    overflow: visible;//label打ち消し
+    padding: 0;//label打ち消し
+    min-height: 10px;//mod-set-navi-side特有
+    max-height: none;//label打ち消し
+    border-right: 1px solid #dedad1;//mod-set-navi-side特有
+    border-left: 1px solid #dedad1;//mod-set-navi-side特有
+    background-color: #fffce9;//mod-set-navi-side特有
+    background-image: none;//label打ち消し
+    .mod-h_4-inner {
+      padding: 10px 10px 5px;//mod-set-navi-side特有
+      .mod-h {
+        @include text-shadow(0 0 0 transparent);//label打ち消し
+        padding: 0 0 0 10px;//mod-set-navi-side特有
+        border-bottom: 1px solid #dcd4c0;
+        color: #f27f1b;
+        font-weight: bold;
+        font-size: $sideFontSizeL + 2;
+      }
+    }
+  }
+}
+
+@mixin pat-design-navi-side-2 {
+  @include pat-item-navi-side-jouge-image-blue-2;
+  .mod-h_4_side {
+    overflow: visible;//label打ち消し
+    padding: 0;//label打ち消し
+    min-height: 10px;//mod-set-navi-side特有
+    max-height: none;//label打ち消し
+    border-right: 1px solid #dedad1;//mod-set-navi-side特有
+    border-left: 1px solid #dedad1;//mod-set-navi-side特有
+    background-color: #f6f6f6;//mod-set-navi-side特有
+    background-image: none;//label打ち消し
+    .mod-h_4-inner {
+      padding: 10px 10px 5px;//mod-set-navi-side特有
+      .mod-h {
+        @include text-shadow(0 0 0 transparent);//label打ち消し
+        padding: 0 0 0 10px;//mod-set-navi-side特有
+        border-bottom: 1px solid #cbd8d9;
+        color: #0b7d89;
+        font-weight: bold;
+        font-size: $sideFontSizeL + 2;
+      }
+    }
+  }
+}
+
+@mixin pat-design-navi-side-3 {
+  @include pat-item-navi-side-jouge-image-orange;
+  .mod-h_4_side {
+    overflow: visible;//label打ち消し
+    padding: 0;//label打ち消し
+    min-height: 10px;//mod-set-navi-side特有
+    max-height: none;//label打ち消し
+    border-right: 1px solid #dedad1;//mod-set-navi-side特有
+    border-left: 1px solid #dedad1;//mod-set-navi-side特有
+    background-color: #fffef4;//mod-set-navi-side特有
+    background-image: none;//label打ち消し
+    .mod-h_4-inner {
+      padding: 10px 10px 5px;//mod-set-navi-side特有
+      .mod-h {
+        @include text-shadow(0 0 0 transparent);//label打ち消し
+        padding: 0 0 0 10px;//mod-set-navi-side特有
+        border-bottom: 1px solid #dcd4c0;
+        color: #45320b;
+        font-weight: bold;
+        font-size: $sideFontSizeL + 2;
+      }
+    }
+  }
+}
+

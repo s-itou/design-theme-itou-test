@@ -1,0 +1,462 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-midashi
+//
+//   ・〜in2 + mod-h_4の組み合わせ使用していることが前提のデザイン
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-midashi の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-midashi {
+  background-repeat: no-repeat;
+  text-align: center;
+  > div {
+    width: 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    > div {
+      display: table;
+      margin: 0 auto 0 auto;
+      width: 100%;
+      background-position: center top;
+      background-repeat: repeat-x;
+      .mod-h_4_ver2 {
+        display: table-cell;
+        overflow: hidden;
+        vertical-align: middle;
+        p {
+          &, span {
+            font-size: $fontSizeS !important;
+          }
+        }
+        .mod-h {
+          font-weight: bold;
+          font-size: $fontSizeM + 2 !important;
+          line-height: 1.4;
+          span {
+            font-size: $fontSizeM + 2 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-midashi の共通デザイン
+// -------------------------------------
+
+// ３重背景画像（リボン系）タイトル
+@mixin module-style-pat-item-midashi-ribbon {
+  margin: 15px -26px 0 -25px;
+  padding: 0;
+  width: auto;//差分用　消さないで！
+  background-position: left top;
+  > div {
+    padding: 0 5px;
+    background-position: right top;
+    > div {
+      min-height: 82px;
+      background-position: center top;
+      &:before {
+        content: "";
+        display: block;
+        min-height: 82px;
+      }
+      .mod-h_4_ver2 {
+        padding-bottom: 7px;
+      }
+    }
+  }
+}
+
+// 下画像タイトル
+@mixin module-style-pat-item-midashi-image {
+  margin: 15px 0 0 0;
+  padding: 2px 0 18px 0;
+  background-position: center bottom;
+  > div {
+    padding: 0 15px 0 15px;
+    background-position: left top;
+    > div {
+      min-height: 50px;
+      background-position: left top;
+      &:before {
+        content: "";
+        display: block;
+        min-height: 50px;
+      }
+    }
+  }
+}
+// 画像タイトル
+@mixin module-style-pat-item-midashi-image-2 {
+  display: table;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 100%;
+  background-repeat: repeat-x;
+  > div {
+    display: table-cell;
+    overflow: hidden;
+    padding: 9px 20px 9px 20px;
+    width: 100%;
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: #ffffff;
+    vertical-align: middle;
+    font-size: $fontSizeL + 4;
+  }
+}
+
+// 上下ボーダータイトル
+@mixin module-style-pat-item-midashi-border {
+  margin: 0;
+  padding: 2px 0 1px 0;
+  background-position: left top;
+  > div {
+    padding: 0;
+    background-position: left top;
+    > div {
+      min-height: 50px;
+      background-image: none;
+      background-position: left top;
+      &:before {
+        content: "";
+        display: block;
+        min-height: 50px;
+      }
+    }
+  }
+}
+// ボーダータイトル
+@mixin module-style-pat-item-midashi-border-2 {
+  display: table;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 100%;
+  background-repeat: repeat-x;
+  > div {
+    display: table-cell;
+    overflow: hidden;
+    padding: 9px 20px 9px 20px;
+    width: 100%;
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: #ffffff;
+    vertical-align: middle;
+    font-size: $fontSizeL + 4;
+  }
+}
+
+
+// -------------------------------------
+// pat-item-midashi の装飾スタイル
+// -------------------------------------
+
+// ３重背景画像（リボン系）タイトル
+@mixin deco-style-pat-item-midashi-riboon-1 {
+  background-image: url("img/mod-h_4/_27/bg_a.png");
+  border: none;
+  > div {
+    background-image: url("img/mod-h_4/_27/bg02_a.png");
+    > div {
+      background-image: url("img/mod-h_4/_27/bg03_a.png");
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-riboon-2 {
+  background-image: url("img/mod-h_4/_27/bg_a_2.png");
+  border: none;
+  > div {
+    background-image: url("img/mod-h_4/_27/bg02_a_2.png");
+    > div {
+      background-image: url("img/mod-h_4/_27/bg03_a_2.png");
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-riboon-3 {
+  background-image: url("img/mod-h_4/_27/bg_a_3.png");
+  border: none;
+  > div {
+    background-image: url("img/mod-h_4/_27/bg02_a_3.png");
+    > div {
+      background-image: url("img/mod-h_4/_27/bg03_a_3.png");
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// 画像タイトル（特徴）
+@mixin deco-style-pat-item-midashi-image-1 {
+  background-image: url("img/mod-h_4/_27/bg_b.png");
+  border: none;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-image-2 {
+  background-image: url("img/mod-h_4/_27/bg_b_2.png");
+  border: none;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-image-3 {
+  background-image: url("img/mod-h_4/_27/bg_b_3.png");
+  border: none;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+// 画像タイトル（お問い合わせ）
+@mixin deco-style-pat-item-midashi-image-4 {
+  > div {
+    background-color: #3c66ba;
+    background-image: url("img/mod-h_4/_32/bg_b.png");
+    padding: 10px 20px 5px 20px;
+  }
+}
+@mixin deco-style-pat-item-midashi-image-5 {
+  > div {
+    background-color: #12626c;
+    background-image: url("img/mod-h_4/_32/bg_b_2.png");
+    padding: 10px 20px 5px 20px;
+  }
+}
+@mixin deco-style-pat-item-midashi-image-6 {
+  > div {
+    background-color: #f3811e;
+    background-image: url("img/mod-h_4/_32/bg_b_3.png");
+    padding: 10px 20px 5px 20px;
+  }
+}
+@mixin deco-style-pat-item-midashi-image-7 {
+  > div {
+    background-image: url("img/mod-h_4/_32/bg_c.png");
+    padding: 13px 20px 6px 20px;
+  }
+}
+@mixin deco-style-pat-item-midashi-image-8 {
+  > div {
+    background-image: url("img/mod-h_4/_32/bg_c_2.png");
+    padding: 13px 20px 6px 20px;
+  }
+}
+@mixin deco-style-pat-item-midashi-image-9 {
+  > div {
+    background-image: url("img/mod-h_4/_32/bg_c_3.png");
+    padding: 13px 20px 6px 20px;
+  }
+}
+
+// 上下ボーダータイトル
+@mixin deco-style-pat-item-midashi-border-1 {
+  @include single-box-shadow(#ffffff, 0, 1px, 0, 0);
+  background-image: none;
+  border-bottom: 1px solid #6c6c6c;
+  border-top: 3px solid #393939 ;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #393939;
+        }
+        .mod-h {
+          color: #393939;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-border-2 {
+  @include single-box-shadow(#ffffff, 0, 1px, 0, 0);
+  background-image: none;
+  border-bottom: 1px solid #b9c6d5;
+  border-top: 3px solid #325073 ;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #010911;
+        }
+        .mod-h {
+          color: #010911;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-border-3 {
+  @include single-box-shadow(#ffffff, 0, 1px, 0, 0);
+  background-image: none;
+  border-bottom: 1px solid #7e2a17;
+  border-top: 3px solid #421814 ;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #421814;
+        }
+        .mod-h {
+          color: #421814;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-border-4 {
+  @include single-box-shadow(#646464, 0, 1px, 0, 0);
+  background-image: none;
+  border-bottom: 1px solid #c1c1c1;
+  border-top: 3px solid #080d13;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-border-5 {
+  @include single-box-shadow(#476484, 0, 1px, 0, 0);
+  background-image: none;
+  border-bottom: 1px solid #c1c1c1;
+  border-top: 3px solid #0e284c ;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-border-6 {
+  @include single-box-shadow(#1e0c0c, 0, 1px, 0, 0);
+  background-image: none;
+  border-bottom: 1px solid #f2babb;
+  border-top: 3px solid #8f2319;
+  > div {
+    background-image: none;
+    > div {
+      background-image: none;
+      > div {
+        p {
+          color: #ffffff;
+        }
+        .mod-h {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-midashi-border-66 {
+  border: 1px solid #c5dcff;
+  > div {
+    border: 1px solid #9ac2f3;
+    background-color: #6e98d8;
+    background-image: url("img/mod-h_4/_32/bg_a.png");
+  }
+}
+@mixin deco-style-pat-item-midashi-border-7 {
+  border: 1px solid #c2eae8;
+  > div {
+    border: 1px solid #94d8dd;
+    background-color: #10808c;
+    background-image: url("img/mod-h_4/_32/bg_a_2.png");
+  }
+}
+@mixin deco-style-pat-item-midashi-border-8 {
+  border: 1px solid #ffe5b9;
+  > div {
+    border: 1px solid #ffd098;
+    background-color: #f28220;
+    background-image: url("img/mod-h_4/_32/bg_a_3.png");
+  }
+}
+
+
+

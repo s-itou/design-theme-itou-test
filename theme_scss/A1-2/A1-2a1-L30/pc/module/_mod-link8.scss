@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-link8-style";
+
+.mod-link8 {
+  @include mod-link8-common-style;
+  @include mod-link8-style;
+  .ex-style_01A2 & {
+    @include mod-link8-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-link8-style3;
+  }
+}
+

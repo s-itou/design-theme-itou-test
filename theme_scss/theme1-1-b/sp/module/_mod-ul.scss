@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%default-ul {
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    padding-top: 2px;
+    padding-left:15px;
+    list-style-type: none;
+    @include background("mod-ul/bg.png", $position-y: 8px);
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+.mod-ul { //メイン基準値25px
+  @extend %default-ul;
+  margin-bottom: 25px;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_q1A2a &,
+  .ex-style_q1A2b &,
+  .ex-style_q1A2c &,
+  .ex-style_q1A2d &,
+  .ex-style_d1A2a &,
+  .ex-style_d1A2b &,
+  .ex-style_d1A2c &,
+  .ex-style_d1A2d & {
+    li {
+      background-image: url("img/mod-ul/bg_2.png");
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_q1A3a &,
+  .ex-style_q1A3b &,
+  .ex-style_q1A3c &,
+  .ex-style_q1A3d &,
+  .ex-style_d1A3a &,
+  .ex-style_d1A3b &,
+  .ex-style_d1A3c &,
+  .ex-style_d1A3d & {
+    li {
+      background-image: url("img/mod-ul/bg_3.png");
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d &,
+  .ex-style_v1B1a &,
+  .ex-style_v1B1b &,
+  .ex-style_v1B1c &,
+  .ex-style_v1B1d &,
+  .ex-style_c1B1a &,
+  .ex-style_c1B1b &,
+  .ex-style_c1B1c &,
+  .ex-style_c1B1d &,
+  .ex-style_q1B1a &,
+  .ex-style_q1B1b &,
+  .ex-style_q1B1c &,
+  .ex-style_q1B1d & {
+    li {
+      @include background("mod-ul/bg04.png", $position-y: 8px);
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d &,
+  .ex-style_v1B2a &,
+  .ex-style_v1B2b &,
+  .ex-style_v1B2c &,
+  .ex-style_v1B2d &,
+  .ex-style_c1B2a &,
+  .ex-style_c1B2b &,
+  .ex-style_c1B2c &,
+  .ex-style_c1B2d &,
+  .ex-style_q1B2a &,
+  .ex-style_q1B2b &,
+  .ex-style_q1B2c &,
+  .ex-style_q1B2d & {
+    li {
+      background-image: url("img/mod-ul/bg04_2.png");
+      background-position-y: 8px;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d &,
+  .ex-style_v1B3a &,
+  .ex-style_v1B3b &,
+  .ex-style_v1B3c &,
+  .ex-style_v1B3d &,
+  .ex-style_c1B3a &,
+  .ex-style_c1B3b &,
+  .ex-style_c1B3c &,
+  .ex-style_c1B3d &,
+  .ex-style_q1B3a &,
+  .ex-style_q1B3b &,
+  .ex-style_q1B3c &,
+  .ex-style_q1B3d & {
+    li {
+      background-image: url("img/mod-ul/bg04_3.png");
+      background-position-y: 8px;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d &,
+  .ex-style_v1C1a &,
+  .ex-style_v1C1b &,
+  .ex-style_v1C1c &,
+  .ex-style_v1C1d &,
+  .ex-style_c1C1a &,
+  .ex-style_c1C1b &,
+  .ex-style_c1C1c &,
+  .ex-style_c1C1d &,
+  .ex-style_q1C1a &,
+  .ex-style_q1C1b &,
+  .ex-style_q1C1c &,
+  .ex-style_q1C1d & {
+    padding: 10px;
+    border: 1px solid #d1c9a4;
+    border-radius: 5px;
+    background-color: #fffce9;
+    li {
+      padding-left: 18px;
+      background-image: url("img/mod-ul/bg06.png");
+      background-position: left;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d &,
+  .ex-style_d1C2a &,
+  .ex-style_d1C2b &,
+  .ex-style_d1C2c &,
+  .ex-style_d1C2d &,
+  .ex-style_v1C2a &,
+  .ex-style_v1C2b &,
+  .ex-style_v1C2c &,
+  .ex-style_v1C2d &,
+  .ex-style_c1C2a &,
+  .ex-style_c1C2b &,
+  .ex-style_c1C2c &,
+  .ex-style_c1C2d &,
+  .ex-style_q1C2a &,
+  .ex-style_q1C2b &,
+  .ex-style_q1C2c &,
+  .ex-style_q1C2d & {
+    padding: 10px;
+    border: 1px solid #7ed1d9;
+    border-radius: 5px;
+    background-color: #e3f6f8;
+    li {
+      color: #45320b;
+      padding-left: 18px;
+      background-image: url("img/mod-ul/bg06_2.png");
+      background-position: left;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d &,
+  .ex-style_d1C3a &,
+  .ex-style_d1C3b &,
+  .ex-style_d1C3c &,
+  .ex-style_d1C3d &,
+  .ex-style_v1C3a &,
+  .ex-style_v1C3b &,
+  .ex-style_v1C3c &,
+  .ex-style_v1C3d &,
+  .ex-style_c1C3a &,
+  .ex-style_c1C3b &,
+  .ex-style_c1C3c &,
+  .ex-style_c1C3d &,
+  .ex-style_q1C3a &,
+  .ex-style_q1C3b &,
+  .ex-style_q1C3c &,
+  .ex-style_q1C3d & {
+    padding: 10px;
+    border: 1px solid #c8dffe;
+    border-radius: 5px;
+    background-color: #dce9fb;
+    li {
+      color: #45320b;
+      padding-left: 18px;
+      background-image: url("img/mod-ul/bg06_3.png");
+      background-position: left;
+    }
+  }
+}
+
+
+.mod-ul2 {
+  margin-bottom: 15px;
+  ul {
+    padding-left: 0;
+    li {
+      margin-bottom: 5px;
+      padding-left:15px;
+      list-style: none;
+      font-size: 13px;
+      @include background("mod-ul/bg02.png", $position-y: 5px);
+    }
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01A2e &,
+  .ex-style_01A2f &,
+  .ex-style_01A2g &,
+  .ex-style_01A2h & {
+    li {
+      background-image: url("img/mod-ul/bg02_2.png");
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01A3e &,
+  .ex-style_01A3f &,
+  .ex-style_01A3g &,
+  .ex-style_01A3h & {
+    li {
+      background-image: url("img/mod-ul/bg02_3.png");
+    }
+  }
+}
+//リンクつきリスト
+.mod-ul3 {
+  @extend %default-ul;
+  a {
+    color: #333333;
+  }
+}
+
+
+
+
+.mod-ol { //メイン基準値25px
+  margin-bottom: 25px;
+  ol {
+    margin: 0;
+    padding-left: 25px;
+  }
+  li {
+    margin-bottom: 2px;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    ol {
+      color: #f16c0b;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    ol {
+      color: #0C7D87;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    ol {
+      color: #337FB2;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    li {
+      color: #333333;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    li {
+      color: #333333;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    li {
+      color: #45320b;
+    }
+  }
+}
+
+
+
+
+
+

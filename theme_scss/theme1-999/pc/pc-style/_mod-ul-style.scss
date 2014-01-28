@@ -1,0 +1,653 @@
+@charset "UTF-8";
+
+
+//  mod-ul の mixin一式
+@mixin mod-ul-common-style {
+  margin-bottom: 25px;
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    margin-left: 20px;
+    padding-top: 2px;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-ul-style {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg.png");
+    background-position: left 8px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul-style2 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg.png");
+    background-position: left 8px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul-style3 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg_2.png");
+    background-position: left 8px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul-style4 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #56534e;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg_3.png");
+    background-position: left 8px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul-style5 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04.png");
+    background-position: left 8px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul-style6 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04_2.png");
+    background-position: left 8px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul-style7 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04_3.png");
+    background-position: left 8px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul-style8 {
+  padding: 10px;
+  border: 1px solid #d1c9a4;
+  @include border-radius();
+  background-color: #fffce9;
+  li {
+    color: #333333;
+    padding-left: 18px;
+    background-image: url("img/mod-ul/bg06.png");
+    background-position: left 2px;
+    margin-left: 10px;
+  }
+}
+
+@mixin mod-ul-style9 {
+  padding: 10px;
+  border: 1px solid #7ed1d9;
+  @include border-radius();
+  background-color: #e3f6f8;
+  li {
+    color: #45320b;
+    padding-left: 18px;
+    background-image: url("img/mod-ul/bg06_2.png");
+    background-position: left 2px;
+    margin-left: 10px;
+  }
+}
+
+@mixin mod-ul-style10 {
+  padding: 10px;
+  border: 1px solid #c8dffe;
+  @include border-radius();
+  background-color: #dce9fb;
+  li {
+    color: #45320b;
+    padding-left: 18px;
+    background-image: url("img/mod-ul/bg06_3.png");
+    background-position: left 2px;
+    margin-left: 10px;
+  }
+}
+
+
+//  mod-ul2 の mixin一式
+@mixin mod-ul2-common-style {
+  margin-bottom: 15px;
+  ul {
+    padding-left: 0;
+    li {
+      margin-bottom: 5px;
+      margin-left: 15px;
+      padding-left:15px;
+      list-style: none;
+      font-size: 13px;
+      background-repeat: no-repeat;
+      background-position: left 5px;
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-ul2-style {
+  li {
+    background-image: url("img/mod-ul/bg02.png");
+  }
+}
+
+@mixin mod-ul2-style2 {
+  li {
+    background-image: url("img/mod-ul/bg02.png");
+  }
+}
+
+@mixin mod-ul2-style3 {
+ li {
+    background-image: url("img/mod-ul/bg02_2.png");
+  }
+}
+
+@mixin mod-ul2-style4 {
+  li {
+    background-image: url("img/mod-ul/bg02_3.png");
+  }
+}
+
+
+
+//  mod-ul3 の mixin一式
+@mixin mod-ul3-common-style {
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    margin-left: 20px;
+    padding-top: 2px;
+    padding-left:15px;
+    list-style-type: none;
+    @include background("mod-ul/bg.png", $position-y: 8px);
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  a {
+    color: #333333;
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+
+
+//  mod-ul4 の mixin一式
+@mixin mod-ul4-common-style {
+  margin-bottom: 25px;
+  ul {
+    margin: 0;
+    padding-left: 0;
+    li {
+      margin-left: 15px;
+      padding-top: 2px;
+      list-style-type: none;
+      background-repeat: no-repeat;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-ul4-style {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left: 25px;
+    background-image: url("img/mod-ul/bg.png");
+    background-position: left 8px;
+    margin-left: 25px;
+  }
+}
+
+@mixin mod-ul4-style2 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left: 25px;
+    background-image: url("img/mod-ul/bg.png");
+    background-position: left 8px;
+    margin-left: 25px;
+  }
+}
+
+@mixin mod-ul4-style3 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left: 25px;
+    background-image: url("img/mod-ul/bg_2.png");
+    background-position: left 8px;
+    margin-left: 25px;
+  }
+}
+
+@mixin mod-ul4-style4 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #56534e;
+    padding-left: 25px;
+    background-image: url("img/mod-ul/bg_3.png");
+    background-position: left 8px;
+    margin-left: 25px;
+  }
+}
+
+@mixin mod-ul4-style5 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left: 25px;
+    background-image: url("img/mod-ul/bg04.png");
+    background-position: left 8px;
+    margin-left: 25px;
+  }
+}
+
+@mixin mod-ul4-style6 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left: 25px;
+    background-image: url("img/mod-ul/bg04_2.png");
+    background-position: left 8px;
+    margin-left: 25px;
+  }
+}
+
+@mixin mod-ul4-style7 {
+  padding: 0;
+  border: none;
+  @include border-radius(0px);
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left: 25px;
+    background-image: url("img/mod-ul/bg04_3.png");
+    background-position: left 8px;
+    margin-left: 25px;
+  }
+}
+
+@mixin mod-ul4-style8 {
+  padding: 10px;
+  border: 1px solid #d1c9a4;
+  @include border-radius();
+  background-color: #fffce9;
+  li {
+    color: #333333;
+    padding-left: 18px;
+    background-image: url("img/mod-ul/bg06.png");
+    background-position: left 2px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul4-style9 {
+  padding: 10px;
+  border: 1px solid #7ed1d9;
+  @include border-radius();
+  background-color: #e3f6f8;
+  li {
+    color: #45320b;
+    padding-left: 18px;
+    background-image: url("img/mod-ul/bg06_2.png");
+    background-position: left 2px;
+    margin-left: 20px;
+  }
+}
+
+@mixin mod-ul4-style10 {
+  padding: 10px;
+  border: 1px solid #c8dffe;
+  @include border-radius();
+  background-color: #dce9fb;
+  li {
+    color: #45320b;
+    padding-left: 18px;
+    background-image: url("img/mod-ul/bg06_3.png");
+    background-position: left 2px;
+    margin-left: 20px;
+  }
+}
+
+
+//mod-ul5 の mixin一式
+@mixin mod-ul5-common-style {
+  margin-bottom: 25px;
+  ul {
+    margin: 0;
+    padding-left: 0;
+    li {
+      padding-top: 2px;
+      list-style-type: none;
+      background-repeat: no-repeat;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-ul5-style {
+  @include border-radius(0px);
+  border: 0px none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg.png");
+    background-position: left 8px;
+  }
+}
+
+@mixin mod-ul5-style2 {
+  @include border-radius(0px);
+  border: 0px none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg.png");
+    background-position: left 8px;
+  }
+}
+
+@mixin mod-ul5-style3 {
+  @include border-radius(0px);
+  border: 0px none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg_2.png");
+    background-position: left 8px;
+  }
+}
+
+@mixin mod-ul5-style4 {
+  @include border-radius(0px);
+  border: 0px none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg_3.png");
+    background-position: left 8px;
+  }
+}
+
+@mixin mod-ul5-style5 {
+  @include border-radius(0px);
+  border: 0px none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg04.png");
+    background-position: left 8px;
+  }
+}
+
+@mixin mod-ul5-style6 {
+  @include border-radius(0px);
+  border: 0px none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg04_2.png");
+    background-position: left 8px;
+  }
+}
+
+@mixin mod-ul5-style7 {
+  @include border-radius(0px);
+  border: 0px none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg04_3.png");
+    background-position: left 8px;
+  }
+}
+
+@mixin mod-ul5-style8 {
+  @include border-radius();
+  border: 1px solid #d1c9a4;
+  background-color: #fffce9;
+  padding: 10px;
+  li {
+    margin-left: 5px;
+    padding-left: 18px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg06.png");
+    background-position: left 2px;
+  }
+}
+
+@mixin mod-ul5-style9 {
+  @include border-radius();
+  border: 1px solid #7ed1d9;
+  background-color: #e3f6f8;
+  padding: 10px;
+  li {
+    margin-left: 5px;
+    padding-left: 18px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg06_2.png");
+    background-position: left 2px;
+  }
+}
+
+@mixin mod-ul5-style10 {
+  @include border-radius();
+  border: 1px solid #c8dffe;
+  background-color: #dce9fb;
+  padding: 10px;
+  li {
+    margin-left: 5px;
+    padding-left: 18px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg06_3.png");
+    background-position: left 2px;
+  }
+}
+
+
+//  mod-ol の mixin一式
+@mixin mod-ol-common-style {
+  margin-bottom: 25px;
+  ol {
+    margin: 0 0 0 25px;
+    padding-left: 25px;
+  }
+  li {
+    margin-bottom: 2px;
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-ol-style {
+  ol {
+    color: #333333;
+  }
+}
+
+@mixin mod-ol-style2 {
+  ol {
+    color: #333333;
+  }
+}
+
+@mixin mod-ol-style3 {
+  ol {
+    color: #333333;
+  }
+}
+
+@mixin mod-ol-style4 {
+  ol {
+    color: #56534e;
+  }
+}
+
+@mixin mod-ol-style5 {
+  ol {
+    color: #f16c0b;
+  }
+}
+
+@mixin mod-ol-style6 {
+  ol {
+    color: #0C7D87;
+  }
+}
+
+@mixin mod-ol-style7 {
+  ol {
+    color: #337FB2;
+  }
+}
+
+@mixin mod-ol-style8 {
+  ol {
+    color: #333333;
+  }
+}
+
+@mixin mod-ol-style9 {
+  ol {
+    color: #333333;
+  }
+}
+
+@mixin mod-ol-style10 {
+  ol {
+    color: #45320b;
+  }
+}
+

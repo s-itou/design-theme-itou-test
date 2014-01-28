@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+//  mod-bnr11 の mixin一式
+@mixin mod-bnr11-common-style {
+  @include border-radius();
+  width: auto;
+  margin-top: 10px;
+  &:hover {
+    opacity: 0.80;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    max-height: 42px;
+    color: #ffffff;
+    @include border-radius();
+    font-size: $sideFontSizeM;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 18px;
+  }
+}
+
+@mixin mod-bnr11-style {
+  //none
+  background-color: #26415f;
+  border-top: 1px solid #98a4b4;
+  border-left: 1px solid #5a6e86;
+  border-bottom: 1px solid #0e1c33;
+  border-right: 1px solid #152640;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/bg61.png");
+  }
+}
+
+@mixin mod-bnr11-style2 {
+  background-color: #781b0e;
+  border-top: 1px solid #bf938d;
+  border-left: 1px solid #995248;
+  border-bottom: 1px solid #480904;
+  border-right: 1px solid #560e07;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/bg61_2.png");
+  }
+}
+
+@mixin mod-bnr11-style3 {
+  //none
+  background-color: #48160d;
+  border-top: 1px solid #a9908c;
+  border-left: 1px solid #754e47;
+  border-bottom: 1px solid #220704;
+  border-right: 1px solid #2d0b07;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/bg61_3.png");
+  }
+}

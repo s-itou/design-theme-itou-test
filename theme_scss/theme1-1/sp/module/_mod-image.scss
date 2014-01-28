@@ -1,0 +1,519 @@
+@charset "UTF-8";
+
+//mod-imageシリーズ
+
+.mod-image { //mb基準10px
+  margin-bottom: 10px !important;
+  text-align: center;//SP用
+		img {
+		width: 100%;
+    max-width: 300px;//SP用
+	}
+}
+
+.mod-image2 {
+    text-align: center;//SP用
+  img {
+    width: 100%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image3 { //ヘッダーピクチャなど単体用
+	line-height: 0;
+  text-align: center;//SP用
+	img {
+		width: 100%;//SP用
+		line-height: 0;
+    max-width: 300px;//SP用
+	}
+}
+
+
+.mod-image6 {
+  max-width: 286px;//SP対応
+  margin: 0 auto 10px !important;
+  padding-top: 21px;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: url(img/mod-image/bg02.png);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+  > p {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    &:after {
+      content: url(img/mod-image/bg08.png);
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      right: 0;
+    }
+    img {
+      width: 100%;
+      max-width: 250px;//SP対応
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    &:after {
+      content: url(img/mod-image/bg02_2.png);
+    }
+    > p {
+      &:after {
+        content: url(img/mod-image/bg08_2.png);
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    &:after {
+      content: url(img/mod-image/bg02_3.png);
+    }
+    > p {
+      &:after {
+        content: url(img/mod-image/bg08_3.png);
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    padding-top: 0;
+    &:after {
+      content: none;
+    }
+    > p {
+      border: 1px solid #d9d9d9;
+      background-color: #ffffff;
+      &:after {
+        content: none;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    width: 262px;//SP対応
+    // margin-bottom: 36px !important;//SP対応
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 0 16px;//SP対応
+    background-image: url("img/mod-image/bg05.png");
+    background-repeat: no-repeat;
+    position: relative;
+    &:after {
+      content: none;
+    }
+    > p {
+      padding: 5px;//SP対応
+      border: 1px solid #D1C9A4;//SP対応
+      // @include background("mod-image/bg06.png",$position-x: right, $position-y: bottom);//SP対応
+      &:before {//SP対応
+        content: url(img/mod-image/bg06.png);
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        right: 0;
+      }
+       &:after {
+        content: none;
+      }
+      img {
+        // padding: 5px;//SP対応
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    width: 262px;//SP対応
+    // margin-bottom: 36px !important;//SP対応
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 0 16px;//SP対応
+    background-image: url("img/mod-image/bg05_2.png");
+    background-repeat: no-repeat;
+    position: relative;
+    &:after {
+      content: none;
+    }
+    > p {
+      padding: 5px;//SP対応
+      border: 1px solid #D1C9A4;//SP対応
+      // @include background("mod-image/bg06.png",$position-x: right, $position-y: bottom);//SP対応
+      &:before {//SP対応
+        content: url(img/mod-image/bg06_2.png);
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        right: 0;
+      }
+       &:after {
+        content: none;
+      }
+      img {
+        // padding: 5px;//SP対応
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    width: 262px;//SP対応
+    // margin-bottom: 36px !important;//SP対応
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 0 16px;//SP対応
+    background-image: url("img/mod-image/bg05_3.png");
+    background-repeat: no-repeat;
+    position: relative;
+    &:after {
+      content: none;
+    }
+    > p {
+      padding: 5px;//SP対応
+      border: 1px solid #D1C9A4;//SP対応
+      // @include background("mod-image/bg06.png",$position-x: right, $position-y: bottom);//SP対応
+      &:before {//SP対応
+        content: url(img/mod-image/bg06_3.png);
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        right: 0;
+      }
+       &:after {
+        content: none;
+      }
+      img {
+        // padding: 5px;//SP対応
+      }
+    }
+  }
+}
+
+.mod-image7 {
+  margin-left: 3px !important;
+  text-align: center;//SP用
+  // float: left;
+  img{
+    width: 100%;//SP用
+    max-width: 100px;//SP用
+    // width: 60px;
+  }
+}
+
+.mod-image8 {
+  //float: left;
+  text-align: center;//SP用
+  img {
+    width: 100%;//SP用
+    max-width: 300px;//SP用
+  //  width: 660px;
+  //  height: 120px;
+  }
+}
+
+.mod-image9 {
+  //float: right;
+  text-align: center;//SP用
+  img {
+      width: 100%;//SP用
+      max-width: 300px;//SP用
+  //  width: 320px;
+  //  height: 120px;
+  }
+}
+
+.mod-image10 { //画像サイズが小さいもの
+  margin-bottom: 10px !important;
+  text-align: center;
+  img {
+    width: 80%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image11 { //画像サイズが小さいもの
+text-align: center;
+  img {
+    width: 80%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image12 { //画像サイズが小さいもの
+  margin-bottom: 10px !important;
+  text-align: center;
+  img {
+    width: 75%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image13 { //画像サイズが小さいもの
+text-align: center;
+  img {
+    width: 75%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image14 { //画像サイズが小さいもの
+  margin-bottom: 10px !important;
+  text-align: center;
+  img {
+    width: 85%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image15 { //画像サイズが小さいもの
+text-align: center;
+  img {
+    width: 85%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image16 { //画像サイズが小さいもの
+  margin-bottom: 10px !important;
+  text-align: center;
+  img {
+    width: 90%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image17 { //画像サイズが小さいもの
+text-align: center;
+  img {
+    width: 90%;
+    max-width: 300px;//SP用
+  }
+}
+
+.mod-image18 { //画像サイズが固定 とりあえずPCをマージ　のとほど要件に則って修正
+text-align: center;
+  img {
+    //width: 250px;
+    @extend .mod-image9;
+  }
+}
+
+.mod-image19 { //mod-image6 75%
+  @extend .mod-image6;
+  width: 286px * 0.85;
+  > p > img {
+    max-width: 250px * 0.85 !important;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+   width: 262px * 0.85;
+  }
+}
+
+.mod-image20 { //mod-image6 75%
+  @extend .mod-image6;
+  width: 586px * 0.75;
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    width: 262px * 0.75;
+  }
+}
+
+//スマフォでの対応を前提としたヘッダーピクチャ専用モジュール
+//part-header-007でのみ使用
+.mod-image-spec { //SP余白の相殺用
+		margin:0 -15px 15px -15px;
+		img {
+		width: 100%;//SP用
+    // max-width: 300px;//SP用
+		display: block;//背景画像の露出を防ぐ
+	}
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 &,
+  // .ex-style_01B2 &,
+  // .ex-style_01B2 &,
+  // .ex-style_01B2 &,
+  // .ex-style_01B2 &,
+  // .ex-style_01B3 &,
+  // .ex-style_01B3 &,
+  // .ex-style_01B3 &,
+  // .ex-style_01B3 & {
+  //   background-image: url("img/mod-box/bg07.png");
+  //   background-repeat: repeat-x;
+  //   background-color: #426ca6;
+  // }
+}
+
+
+// part-main-051 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-image-spec3 { //mb10　矢印画像付
+  margin-bottom: 10px !important;
+  // margin-right: -30px !important;
+  // padding-right: 30px;
+  // @include background("mod-image/bg.png", $position-x: right, $position-y: center);
+  text-align: center;//SP用
+  img {
+    width: 100%;
+    max-width: 300px;//SP用
+  }
+  // .ex-style_01A2 &,
+  // .ex-style_01A2 &,
+  // .ex-style_01A2 &,
+  // .ex-style_01A2 & {
+  //   background-image: url(img/mod-image/bg_2.png);
+  // }
+  // .ex-style_01A3 &,
+  // .ex-style_01A3 &,
+  // .ex-style_01A3 &,
+  // .ex-style_01A3 & {
+  //   background-image: url(img/mod-image/bg_3.png);
+  // }
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 & {
+  //   background-image: url(img/mod-image/bg04.png);
+  // }
+  //.ex-style_01B1 &,
+  //.ex-style_01B1 &,
+  //.ex-style_01B1 &,
+  //.ex-style_01B1 & {
+  //  background-image: url(img/mod-image/bg04.png);
+  //}
+  //.ex-style_01B2 &,
+  //.ex-style_01B2 &,
+  //.ex-style_01B2 &,
+  //.ex-style_01B2 & {
+  //  background-image: url(img/mod-image/bg04_2.png);
+  //}
+  //.ex-style_01B3 &,
+  //.ex-style_01B3 &,
+  //.ex-style_01B3 &,
+  //.ex-style_01B3 & {
+  //  background-image: url(img/mod-image/bg04_3.png);
+  //}
+  //.ex-style_01C1 &,
+  //.ex-style_01C1 &,
+  //.ex-style_01C1 &,
+  //.ex-style_01C1 & {
+  //  background-image: url(img/mod-image/bg07.png);
+  //}
+  //.ex-style_01C2 &,
+  //.ex-style_01C2 &,
+  //.ex-style_01C2 &,
+  //.ex-style_01C2 & {
+  //  background-image: url(img/mod-image/bg07_2.png);
+  //}
+  //.ex-style_01C3 &,
+  //.ex-style_01C3 &,
+  //.ex-style_01C3 &,
+  //.ex-style_01C3 & {
+  //  background-image: url(img/mod-image/bg07_3.png);
+  //}
+}
+
+// part-main-204,205 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-image-spec4 { //mb10　矢印画像付
+  margin-bottom: 10px !important;
+  // margin-right: -25px !important;
+  // padding-right: 25px;
+  // @include background("mod-image/bg.png", $position-x: right, $position-y: center);
+  text-align: center;//SP用
+  img {
+    width: 100%;
+    max-width: 300px;//SP用
+  }
+  // .ex-style_01A2 &,
+  // .ex-style_01A2 &,
+  // .ex-style_01A2 &,
+  // .ex-style_01A2 & {
+  //   background-image: url(img/mod-image/bg_2.png);
+  // }
+  // .ex-style_01A3 &,
+  // .ex-style_01A3 &,
+  // .ex-style_01A3 &,
+  // .ex-style_01A3 & {
+  //   background-image: url(img/mod-image/bg_3.png);
+  // }
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 &,
+  // .ex-style_01B1 & {
+  //   background-image: url(img/mod-image/bg04.png);
+  // }
+  // .ex-style_01B2 &,
+  // .ex-style_01B2 &,
+  // .ex-style_01B2 &,
+  // .ex-style_01B2 & {
+  //   background-image: url(img/mod-image/bg04_2.png);
+  // }
+  // .ex-style_01B3 &,
+  // .ex-style_01B3 &,
+  // .ex-style_01B3 &,
+  // .ex-style_01B3 & {
+  //   background-image: url(img/mod-image/bg04_3.png);
+  // }
+  // .ex-style_01C1 &,
+  // .ex-style_01C1 &,
+  // .ex-style_01C1 &,
+  // .ex-style_01C1 & {
+  //   background-image: url(img/mod-image/bg07.png);
+  // }
+  // .ex-style_01C2 &,
+  // .ex-style_01C2 &,
+  // .ex-style_01C2 &,
+  // .ex-style_01C2 & {
+  //   background-image: url(img/mod-image/bg07_2.png);
+  // }
+  // .ex-style_01C3 &,
+  // .ex-style_01C3 &,
+  // .ex-style_01C3 &,
+  // .ex-style_01C3 & {
+  //   background-image: url(img/mod-image/bg07_3.png);
+  // }
+}

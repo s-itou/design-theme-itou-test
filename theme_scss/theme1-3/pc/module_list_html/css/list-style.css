@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.name-h {
+  width: 980px;
+  background-color: gray;
+  padding: 0 5px;
+  line-height: 1.5;
+  margin: 20px auto 5px auto !important;
+  color: white;
+}
+.name-h-ex {
+  margin-left: 20px !important;
+  background-color: silver;
+  padding: 0 5px;
+  line-height: 1.5;
+}
+.name-h-ex + div, .name-h-ex + p {
+  margin-left: 20px;
+}
+
+
+.name-m {
+  margin: 20px auto 5px auto !important;
+  background-color: gray;
+  padding: 0 5px;
+  line-height: 1.5;
+  color: white;
+}
+.name-m-ex {
+  margin: 5px 0 5px 20px !important;
+  background-color: silver;
+  padding: 0 5px;
+  line-height: 1.5;
+}
+.name-m-ex + div, .name-m-ex + p {
+  margin-left: 20px;
+}
+
+.name-s {
+  width: 100%;
+  margin: 20px auto 5px auto !important;
+  background-color: gray;
+  padding: 0 5px;
+  line-height: 1.5;
+  color: white;
+}
+.name-s-ex {
+  margin-left: 20px !important;
+  background-color: silver;
+  padding: 0 5px;
+  line-height: 1.5;
+}
+.name-s-ex + div, .name-s-ex + p {
+  margin-left: 20px;
+}

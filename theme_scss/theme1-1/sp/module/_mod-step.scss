@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+//------------------
+
+%mod-box-inner2_base {
+  padding-bottom: 5px;
+}
+
+//------------------
+
+
+.mod-step {
+  margin-bottom: 30px;
+  .mod-step-inner {
+    width: 100%;
+    padding-top: 60px;
+    @include background("mod-step/01/bg11.png", no-repeat, center, top);
+  }
+  .step1 {
+    > div {
+      padding-top: 0;
+      background-image: none;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .mod-step-inner {
+      padding-top: 20px;
+      background: none;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .mod-step-inner {
+      padding-top: 20px;
+      background: none;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .mod-step-inner {
+      padding-top: 20px;
+      background: none;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    .mod-step-inner {
+      background-image: url(img/mod-step/01/bg12.png);
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    .mod-step-inner {
+      background-image: url(img/mod-step/01/bg12_2.png);
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    .mod-step-inner {
+      background-image: url(img/mod-step/01/bg12_3.png);
+    }
+  }
+}
+
+//部品ごとのmargin調整
+.step1, .step2, .step3, .step4 .step5, .step6, .step7, .step8, .step9, .step10 {
+  div[data-parts-name="part-main-045 v2"] & {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

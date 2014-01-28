@@ -1,0 +1,1045 @@
+@charset "UTF-8";
+
+//  mod-title3 の mixin一式
+@mixin mod-title3-common-style {
+  .mod-title3-inner2 {
+    font-size: $fontSizeS;
+    margin: 0;
+    line-height: 1.0;
+    span {
+      font-size: 12px !important;
+    }
+  }
+  .mod-title3-inner3 {
+    font-size: 20px;
+    font-weight: normal;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    span {
+      font-size: 20px !important;
+    }
+  }
+  .mod-title3-inner4 {
+    font-size: $fontSizeS;
+    line-height: 1.0;
+    span {
+      font-size: 12px !important;
+    }
+  }
+}
+@mixin mod-title3-style {
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  background-color: transparent;
+  color: #222222;
+  background-size: auto auto;
+  .mod-title3-inner {
+    margin: 0 -10px 0 -10px;
+    width: auto;
+    position: static;
+    display: block;
+    padding: 0;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    background-color: transparent;
+    line-height: 1.5;
+    background-size: auto auto;
+  }
+  .mod-title3-inner2 {
+    padding: 0;
+    color: #7a7a7a;
+  }
+  .mod-title3-inner3 {
+    color: #222222;
+    padding: 10px 0 10px 0;
+    background-image: url("img/mod-title/bg.png");
+    border-bottom: 1px solid #cbcbcb;
+    &:before {
+      content: normal;
+      width: auto;
+      height: auto;
+      z-index: auto;
+      display: inline;
+      position: static;
+      top: auto;
+      left: auto;
+      background-color: transparent;
+      @include border-radius(0px);
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #7a7a7a;
+    background-color: transparent;
+  }
+  .mod-title3-inner5 {
+    margin: 20px 15px 0;
+    padding: 0;
+    color: #333333;
+    background-color: transparent;
+  }
+}
+@mixin mod-title3-style2 {
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  background-color: transparent;
+  color: #333333;
+  background-size: auto auto;
+  .mod-title3-inner {
+    margin: 0 -10px 0 -10px;
+    width: auto;
+    position: static;
+    display: block;
+    padding: 0;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    background-color: transparent;
+    line-height: 1.5;
+    background-size: auto auto;
+  }
+  .mod-title3-inner2 {
+    padding: 0;
+    color: #666666;
+  }
+  .mod-title3-inner3 {
+    color: #325073;
+    padding: 10px 0 10px 0;
+    background-image: url("img/mod-title/bg_2.png");
+    border-bottom: 1px solid #b0bbcb;
+    &:before {
+      content: normal;
+      width: auto;
+      height: auto;
+      z-index: auto;
+      display: inline;
+      position: static;
+      top: auto;
+      left: auto;
+      background-color: transparent;
+      @include border-radius(0px);
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #666666;
+    background-color: transparent;
+  }
+  .mod-title3-inner5 {
+    margin:20px 15px 0;
+    padding: 0;
+    color: #333333;
+    background-color: transparent;
+  }
+}
+@mixin mod-title3-style3 {
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  background-color: transparent;
+  color: #333333;
+  background-size: auto auto;
+  .mod-title3-inner {
+    margin: 0 -10px 0 -10px;
+    width: auto;
+    position: static;
+    display: block;
+    padding: 0;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    background-color: transparent;
+    line-height: 1.5;
+    background-size: auto auto;
+  }
+  .mod-title3-inner2 {
+    padding: 0;
+    color: #666666;
+  }
+  .mod-title3-inner3 {
+    color: #350b06;
+    padding: 10px 0 10px 0;
+    background-image: url("img/mod-title/bg_3.png");
+    border-bottom: 1px solid #e2d1cc;
+    &:before {
+      content: normal;
+      width: auto;
+      height: auto;
+      z-index: auto;
+      display: inline;
+      position: static;
+      top: auto;
+      left: auto;
+      background-color: transparent;
+      @include border-radius(0px);
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #666666;
+    background-color: transparent;
+  }
+  .mod-title3-inner5 {
+    margin:20px 15px 0;
+    padding: 0;
+    color: #333333;
+    background-color: transparent;
+  }
+}
+@mixin mod-title3-style4 {
+  margin-top: 20px;
+  margin-right: -15px;
+  margin-bottom: 0;
+  margin-left: -15px;
+  background-image: url("img/mod-title/bg02.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #3c3c3c;
+  color: #ffffff;
+  background-size: 100% 90px;
+  .mod-title3-inner {
+    margin: 0;
+    width: auto;
+    position: static;
+    display: block;
+    padding: 0;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    background-color: transparent;
+    line-height: 1.5;
+    background-size: auto auto;
+  }
+  .mod-title3-inner2 {
+    padding: 5px 0 5px 15px;
+    color: #ffffff;
+  }
+  .mod-title3-inner3 {
+    color: #ffffff;
+    padding: 10px 0 10px 15px;
+    background-image: none;
+    border-bottom: none;
+    &:before {
+      content: normal;
+      width: auto;
+      height: auto;
+      z-index: auto;
+      display: inline;
+      position: static;
+      top: auto;
+      left: auto;
+      background-color: transparent;
+      @include border-radius(0px);
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 0 0 0 0;
+    padding: 5px 0 5px 15px;
+    color: #ffffff;
+    background-color: #565656;
+  }
+  .mod-title3-inner5 {
+    margin: 0;
+    padding: 15px 15px 10px;
+    color: #333333;
+    background-color: #cccccc;
+  }
+}
+@mixin mod-title3-style5 {
+  margin-top: 20px;
+  margin-right: -15px;
+  margin-bottom: 0;
+  margin-left: -15px;
+  background-image: url("img/mod-title/bg02_2.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #325170;
+  color: #333333;
+  background-size: 100% 90px;
+  .mod-title3-inner {
+    margin: 0;
+    width: auto;
+    position: static;
+    display: block;
+    padding: 0;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    background-color: transparent;
+    line-height: 1.5;
+    background-size: auto auto;
+  }
+  .mod-title3-inner2 {
+    padding: 5px 0 5px 15px;
+    color:  #ffffff;
+  }
+  .mod-title3-inner3 {
+    color: #ffffff;
+    padding: 10px 0 10px 15px;
+    background-image: none;
+    border-bottom: none;
+    &:before {
+      content: normal;
+      width: auto;
+      height: auto;
+      z-index: auto;
+      display: inline;
+      position: static;
+      top: auto;
+      left: auto;
+      background-color: transparent;
+      @include border-radius(0px);
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 0 0 0 0;
+    padding: 5px 0 5px 15px;
+    color:  #ffffff;
+    background-color: #446e98;
+  }
+  .mod-title3-inner5 {
+    margin: 0;
+    padding: 15px 15px 10px;
+    color: #064951;
+    background-color: #7196c0;
+  }
+}
+@mixin mod-title3-style6 {
+  margin-top: 20px;
+  margin-right: -15px;
+  margin-bottom: 0;
+  margin-left: -15px;
+  background-image: url("img/mod-title/bg02_3.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #732516;
+  color: #333333;
+  background-size: 100% 90px;
+  .mod-title3-inner {
+    margin: 0;
+    width: auto;
+    position: static;
+    display: block;
+    padding: 0;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    background-color: transparent;
+    line-height: 1.5;
+    background-size: auto auto;
+  }
+  .mod-title3-inner2 {
+    padding: 5px 0 5px 15px;
+    color: #ffffff;
+  }
+  .mod-title3-inner3 {
+    color: #ffffff;
+    padding: 10px 0 10px 15px;
+    background-image: none;
+    border-bottom: none;
+    &:before {
+      content: normal;
+      width: auto;
+      height: auto;
+      z-index: auto;
+      display: inline;
+      position: static;
+      top: auto;
+      left: auto;
+      background-color: transparent;
+      @include border-radius(0px);
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 0 0 0 0;
+    padding: 5px 0 5px 15px;
+    color: #ffffff;
+    background-color: #a2341f;
+  }
+  .mod-title3-inner5 {
+    margin:0;
+    padding: 15px 15px 10px;
+    color: #ffffff;
+    background-color: #c47769;
+  }
+}
+@mixin mod-title3-style7 {
+  margin-top: 20px;
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-left: -10px;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  background-color: transparent;
+  color: #222222;
+  background-size: auto auto;
+  .mod-title3-inner {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    background-image: url("img/mod-title/bg03.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: transparent;
+    line-height: 1.2;
+    background-size: 100% 90px;
+  }
+  .mod-title3-inner2 {
+    padding: 0;
+    color: #222222;
+  }
+  .mod-title3-inner3 {
+    color: #222222;
+    padding: 10px 0 7px;
+    background-image: none;
+    border-bottom: none;
+    &:before {
+      content: "";
+      width: 13px;
+      height: 100%;
+      z-index: 3;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #666666;
+      @include border-radius();
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 0 0 0 0;
+    padding: 0;
+    color: #222222;
+    background-color: transparent;
+  }
+  .mod-title3-inner5 {
+    margin: 20px 15px 0;
+    padding: 0;
+    color: #333333;
+    background-color: transparent;
+  }
+}
+@mixin mod-title3-style8 {
+  margin-top: 20px;
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-left: -10px;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  background-color: transparent;
+  color: #222222;
+  background-size: auto auto;
+  .mod-title3-inner {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    background-image: url("img/mod-title/bg03_2.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: transparent;
+    line-height: 1.2;
+    background-size: 100% 90px;
+  }
+  .mod-title3-inner2 {
+    padding: 0;
+    color: #7a7a7a;
+  }
+  .mod-title3-inner3 {
+    color: #222222;
+    padding: 10px 0 7px;
+    background-image: none;
+    border-bottom: none;
+    &:before {
+      content: "";
+      width: 13px;
+      height: 100%;
+      z-index: 3;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #0f375f;
+      @include border-radius();
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 0 0 0 0;
+    padding: 0;
+    color: #7a7a7a;
+    background-color: transparent;
+  }
+  .mod-title3-inner5 {
+    margin: 20px 15px 0;
+    padding: 0;
+    color: #333333;
+    background-color: transparent;
+  }
+}
+@mixin mod-title3-style9 {
+  margin-top: 20px;
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-left: -10px;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  background-color: transparent;
+  color: #666666;
+  background-size: auto auto;
+  .mod-title3-inner {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    background-image: url("img/mod-title/bg03_3.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: transparent;
+    line-height: 1.2;
+    background-size: 100% 90px;
+  }
+  .mod-title3-inner2 {
+    padding: 0;
+    color: #666666;
+  }
+  .mod-title3-inner3 {
+    color: #200805;
+    padding: 10px 0 7px;
+    background-image: none;
+    border-bottom: none;
+    &:before {
+      content: "";
+      width: 13px;
+      height: 100%;
+      z-index: 3;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #781b0e;
+      @include border-radius();
+    }
+  }
+  .mod-title3-inner4 {
+    margin: 0 0 0 0;
+    padding: 0;
+    color: #666666;
+    background-color: transparent;
+  }
+  .mod-title3-inner5 {
+    margin: 20px 15px 0;
+    padding: 0;
+    color: #333333;
+    background-color: transparent;
+  }
+}
+
+//  mod-title8 の mixin一式
+@mixin mod-title8-common-style {
+  margin-top: 10px;
+  display: table;
+  .mod-title8-inner {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.0;
+    vertical-align: middle;
+    margin: 0;
+    display: table-cell;
+    .mod-title8-inner-img {
+    width: 40px;
+    margin-right: 5px;
+    }
+  }
+}
+@mixin mod-title8-style {
+.mod-title8-inner {
+    color: #222222;
+  }
+}
+@mixin mod-title8-style2 {
+.mod-title8-inner {
+    color: #333333;
+  }
+}
+@mixin mod-title8-style3 {
+.mod-title8-inner {
+    color: #200805;
+  }
+}
+
+//  mod-title9 の mixin一式
+//未対応　新規部品
+@mixin mod-title9-common-style {
+  margin-top: 5px;
+  display: table;
+  .mod-title-inner {
+    display: table-cell;
+    vertical-align: top;
+    margin: 0;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .mod-title-inner-img {
+    margin-right: 5px;
+    width: 40px;
+  }
+  .mod-title-inner4 {
+    line-height: 1.0;
+    font-size: $fontSizeL + 7;
+    font-weight: bold;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .mod-title-inner3 {
+    font-size: $fontSizeS + 1;
+  }
+  .mod-title-inner5 {
+    font-size: $fontSizeS + 1;
+  }
+  p:first-child.mod-title-inner4 {//公開画面
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {//編集画面上
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+@mixin mod-title9-style {
+.mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    color: #6a3d04;
+    a {
+      color: #6a3d04;
+    }
+  }
+  .mod-title-inner5 {
+    color: #999999;
+  }
+}
+
+//  mod-title10 の mixin一式
+//未対応　新規部品
+@mixin mod-title10-common-style {
+  display: table;
+  .mod-title-inner {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    > p:first-child.mod-title-inner4 {//公開画面
+      font-size: $fontSizeL + 10;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {//編集画面上
+      font-size: $fontSizeL + 10;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+  .mod-title-inner-img {
+    margin-right: 5px;
+    width: 40px;
+  }
+  .mod-title-inner3 {
+    line-height: 1.0;
+    font-size: $fontSizeS + 1;
+  }
+  .mod-title-inner4 {
+    font-size: $fontSizeL + 7;
+    font-weight: bold;
+    line-height: 1.0;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+@mixin mod-title10-style {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    color: #6a3d04;
+    a {
+      color: #6a3d04;
+    }
+  }
+}
+
+//  mod-title11 の mixin一式
+@mixin mod-title11-common-style {
+  width: auto;
+  margin: 0 -15px;
+  padding: 10px 15px;
+  @include title-gradient();
+  .mod-title-inner {
+    display: table-cell;
+    margin: 0;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .mod-title-inner-img {
+    margin-right: 10px;
+    height: 45px;
+    max-width: 160px;
+  }
+  .mod-title-inner3 {
+    font-size: $fontSizeS + 1;
+    line-height: 1.0;
+  }
+  .mod-title-inner4 {
+    margin-top: 5px;
+    line-height: 1.0;
+    font-size: $fontSizeL + 7;
+    font-weight: bold;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  p:first-child.mod-title-inner4 {//公開画面
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {//編集画面上
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+@mixin mod-title11-style {
+  .mod-title-inner3 {
+    color: #222222;
+  }
+  .mod-title-inner4 {
+    color: #222222;
+    a {
+      color: #222222;
+    }
+  }
+}
+@mixin mod-title11-style2 {
+  .mod-title-inner3 {
+    color: #222222;
+  }
+  .mod-title-inner4 {
+    color: #030b13;
+    a {
+      color: #030b13;
+    }
+  }
+}
+@mixin mod-title11-style3 {
+  .mod-title-inner3 {
+    color: #222222;
+  }
+  .mod-title-inner4 {
+    color: #200805;
+    a {
+      color: #200805;
+    }
+  }
+}
+@mixin mod-title11-style4 {
+  .mod-title-inner3 {
+    color: #222222;
+  }
+  .mod-title-inner4 {
+    color: #222222;
+    a {
+      color: #222222;
+    }
+  }
+}
+@mixin mod-title11-style5 {
+  .mod-title-inner3 {
+    color: #222222;
+  }
+  .mod-title-inner4 {
+    color: #222222;
+    a {
+      color: #222222;
+    }
+  }
+}
+@mixin mod-title11-style6 {
+  .mod-title-inner3 {
+    color: #222222;
+  }
+  .mod-title-inner4 {
+    color: #222222;
+    a {
+      color: #222222;
+    }
+  }
+}
+@mixin mod-title11-style7 {
+  .mod-title-inner3 {
+    color: #5a6e55;
+  }
+  .mod-title-inner4 {
+    color: #222222;
+    a {
+      color: #222222;
+    }
+  }
+}
+@mixin mod-title11-style8 {
+  .mod-title-inner3 {
+    color: #5b91d1;
+  }
+  .mod-title-inner4 {
+    color: #200805;
+    a {
+      color: #200805;
+    }
+  }
+}
+@mixin mod-title11-style9 {
+  .mod-title-inner3 {
+    color: #46140b;
+  }
+  .mod-title-inner4 {
+    color: #200805;
+    a {
+      color: #200805;
+    }
+  }
+}
+
+//  mod-title12 の mixin一式
+@mixin mod-title12-common-style {
+  display: table;
+  .mod-title-inner {
+    display: table-cell;
+    margin: 0;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .mod-title-inner-img {
+    margin-right: 10px;
+    height: 45px;
+    max-width: 160px;
+  }
+  .mod-title-inner3 {
+    font-size: $fontSizeS + 1;
+    line-height: 1.0;
+  }
+  .mod-title-inner4 {
+    margin-top: 5px;
+    line-height: 1.0;
+    font-size: $fontSizeL + 7;
+    font-weight: bold;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  p:first-child.mod-title-inner4 {//公開画面
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {//編集画面上
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+@mixin mod-title12-style {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    color: #333333;
+    a {
+      color: #333333;
+    }
+  }
+}
+@mixin mod-title12-style2 {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    color: #200805;
+    a {
+      color: #200805;
+    }
+  }
+}
+@mixin mod-title12-style3 {
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+@mixin mod-title12-style4 {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    color: #222222;
+    a {
+      color: #222222;
+    }
+  }
+}
+@mixin mod-title12-style5 {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    color: #333333;
+    a {
+      color: #333333;
+    }
+  }
+}
+
+//  mod-title-box の mixin一式
+//未対応　新規部品
+@mixin mod-title-box-common-style {
+  width: 100%;
+  background-position: center top;
+  .mod-titlebox-inner {
+    text-align: right;
+    min-height: 200px;
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    .mod-titlebox-inner3 {
+      font-size: 20px;
+      font-weight: normal;
+    }
+  }
+}
+@mixin mod-title-box-style {
+  background-image: url("img/mod-box/bg.png");
+  background-repeat: no-repeat;
+  .mod-titlebox-inner3 {
+    color: #063ca9;
+    @include text-shadow(1px 1px 2px #ffffff);
+  }
+}
+@mixin mod-title-box-style2 {
+  background-image: url("img/mod-box/bg_2.png");
+  background-repeat: no-repeat;
+  .mod-titlebox-inner3 {
+    color: #0f9299;
+    @include text-shadow(1px 1px 2px #ffffff);
+  }
+}
+@mixin mod-title-box-style3 {
+  background-image: url("img/mod-box/bg_3.png");
+  background-repeat: no-repeat;
+  .mod-titlebox-inner3 {
+    color: #e8970f;
+    @include text-shadow(1px 1px 2px #ffffff);
+  }
+}
+@mixin mod-title-box-style4 {
+  background-image: url("img/mod-box/bg09.png");
+  background-repeat: repeat-x;
+  .mod-titlebox-inner3 {
+    color: #ffffff;
+    @include text-shadow(1px 1px 2px #aaaaaa);
+  }
+}
+@mixin mod-title-box-style5 {
+  background-image: url("img/mod-box/bg09_2.png");
+  background-repeat: repeat-x;
+  .mod-titlebox-inner3 {
+    color: #ffffff;
+    @include text-shadow(1px 1px 2px #aaaaaa);
+  }
+}
+@mixin mod-title-box-style6 {
+  background-image: url("img/mod-box/bg09_3.png");
+  background-repeat: repeat-x;
+  .mod-titlebox-inner3 {
+    color: #774d08;
+    @include text-shadow(1px 1px 2px #ffffff);
+  }
+}
+@mixin mod-title-box-style7 {
+  background-image: url("img/mod-box/bg10.png");
+  background-repeat: repeat-x;
+  .mod-titlebox-inner3 {
+    color: #0f9299;
+    @include text-shadow(0 0 0 transparent);
+  }
+}
+@mixin mod-title-box-style8 {
+  background-image: url("img/mod-box/bg10_2.png");
+  background-repeat: repeat-x;
+  .mod-titlebox-inner3 {
+    color: #355995;
+    @include text-shadow(0 0 0 transparent);
+  }
+}
+@mixin mod-title-box-style9 {
+  background-image: url("img/mod-box/bg10_3.png");
+  background-repeat: repeat-x;
+  .mod-titlebox-inner3 {
+    color: #f7931d;
+    @include text-shadow(0 0 0 transparent);
+  }
+}

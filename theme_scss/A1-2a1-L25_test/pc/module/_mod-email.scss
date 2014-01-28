@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import "../pc-style/mod-email-style";
+
+
+.mod-email_ver2 {
+  @include common-style-mod-email;
+  @include module-style-mod-email;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-email;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-email;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-email;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-email;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-email;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-email;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-email;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A1-mod-email;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A1-mod-email;
+  }
+}
+.mod-email-side {
+  @include common-style-mod-email;
+  @include common-side-style-mod-email;
+  @include module-style-mod-email-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-email-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-email-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-email-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-email-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-email-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-email-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-email-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-email-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-email-side;
+  }
+}
+
+.mod-email-i {
+  @include common-style-mod-email;
+  @include module-style-mod-email-i;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-email;
+    @include deco-style01A1-mod-email-i;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-email;
+    @include deco-style01A2-mod-email-i;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-email;
+    @include deco-style01A3-mod-email-i;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-email;
+    @include deco-style01A1-mod-email-i;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-email;
+    @include deco-style01A1-mod-email-i;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-email;
+    @include deco-style01A1-mod-email-i;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-email;
+    @include deco-style01A1-mod-email-i;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A1-mod-email;
+    @include deco-style01A1-mod-email-i;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A1-mod-email;
+    @include deco-style01A1-mod-email-i;
+  }
+}
+
+
+.mod-email-i-side {
+  @include common-style-mod-email;
+  @include common-side-style-mod-email;
+  @include module-style-mod-email-i-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-email-side;
+    @include deco-style01A1-mod-email-i-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-email-side;
+    @include deco-style01A2-mod-email-i-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-email-side;
+    @include deco-style01A3-mod-email-i-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-email-side;
+    @include deco-style01A1-mod-email-i-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-email-side;
+    @include deco-style01A2-mod-email-i-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-email-side;
+    @include deco-style01A3-mod-email-i-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-email-side;
+    @include deco-style01A1-mod-email-i-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-email-side;
+    @include deco-style01A2-mod-email-i-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-email-side;
+    @include deco-style01A3-mod-email-i-side;
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// .mod-email5 {
+//   @extend .mod-email-i;
+// }
+// .mod-email6 {
+//   @extend .mod-email;
+// }
+// .mod-email9 {
+//   @extend .mod-email-i-side;
+// }
+// .mod-email10 {
+//   @extend .mod-email-side;
+// }

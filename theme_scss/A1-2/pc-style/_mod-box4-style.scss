@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@mixin mod-box4-common-style {
+width: 100%;
+padding-top: 1px;
+  &.ex-first-part {
+    > .div {
+      > .ex-first-child {
+        > .ex-first-child {
+          > .ex-first-child {
+              margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+

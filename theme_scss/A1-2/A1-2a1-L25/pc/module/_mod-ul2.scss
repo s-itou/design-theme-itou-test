@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-ul2-style";
+
+.mod-ul2 {
+  @include mod-ul2-common-style;
+  @include mod-ul2-style;
+  .ex-style_01A2 & {
+    @include mod-ul2-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-ul2-style3;
+  }
+}
+

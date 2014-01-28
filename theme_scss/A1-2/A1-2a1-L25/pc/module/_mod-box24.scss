@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-box24-style";
+
+.mod-box24 {
+  @include mod-box24-common-style;
+  @include mod-box24-style;
+  &.ex-style_01B1 {
+    @include mod-box24-style2;
+  }
+  &.ex-style_01B2 {
+    @include mod-box24-style3;
+  }
+  &.ex-style_01B3 {
+    @include mod-box24-style4;
+  }
+}
+

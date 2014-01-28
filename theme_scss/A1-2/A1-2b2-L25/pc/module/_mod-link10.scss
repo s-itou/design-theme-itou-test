@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-link10-style";
+
+.mod-link10 {
+  @include mod-link10-common-style;
+  @include mod-link10-style2;
+  .ex-style_01A2 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_c1A2 &,
+  .ex-style_v1A2 & {
+    @include mod-link10-style;
+  }
+  .ex-style_01A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_v1A3 & {
+    @include mod-link10-style3;
+  }
+}
+

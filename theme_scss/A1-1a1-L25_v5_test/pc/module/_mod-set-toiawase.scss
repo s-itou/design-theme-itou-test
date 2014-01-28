@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+// -------------------------------------
+//
+// mod-set-toiawase の紐付けモジュール
+//
+// -------------------------------------
+
+@import "../pc-style/mod-set-toiawase-style";
+
+// -------------------------------------
+// part-main-280
+// お問い合わせ
+// -------------------------------------
+
+.mod-set-toiawase-2col {
+  .ex-style_01A1 & {
+    @include pat-item-waku-kadomaru-simple-blue-3;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-1;}
+    .mod-box-in1 {
+      .mod-tel-iig {@include pat-item-tel-M-1;}
+      .mod-bnr_ver2 {@include pat-item-bnr-bgc-1;}
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-1;
+    @include deco-style-mod-set-toiawase-2col-1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-waku-kadomaru-simple-green;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-2;}
+    .mod-box-in1 {
+      .mod-tel-iig {@include pat-item-tel-M-2;}
+      .mod-bnr_ver2 {@include pat-item-bnr-bgc-2;}
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-1;
+    @include deco-style-mod-set-toiawase-2col-2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-waku-kadomaru-simple-orange;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-3;}
+    .mod-box-in1 {
+      .mod-tel-iig {@include pat-item-tel-M-3;}
+      .mod-bnr_ver2 {@include pat-item-bnr-bgc-3;}
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-1;
+    @include deco-style-mod-set-toiawase-2col-3;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-waku-kadomaru-none-bgc-blue;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-4;}
+    .mod-box-in1 {
+      @include pat-item-waku-kadomaru-none-gurade-gold;
+      .mod-tel-iig {@include pat-item-tel-M-4;}
+      .mod-bnr_ver2 {@include pat-item-bnr-grade-7;}
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-2;
+    @include deco-style-mod-set-toiawase-2col-4;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-waku-kadomaru-none-bgc-green;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-5;}
+    .mod-box-in1 {
+      @include pat-item-waku-kadomaru-none-gurade-blue;
+      .mod-tel-iig {@include pat-item-tel-M-5;}
+      .mod-bnr_ver2 {@include pat-item-bnr-grade-8;}
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-2;
+    @include deco-style-mod-set-toiawase-2col-5;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-waku-kadomaru-none-bgc-orange;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-6;}
+    .mod-box-in1 {
+      @include pat-item-waku-kadomaru-none-gurade-yellow;
+      .mod-tel-iig {@include pat-item-tel-M-6;}
+      .mod-bnr_ver2 {@include pat-item-bnr-grade-9;}
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-2;
+    @include deco-style-mod-set-toiawase-2col-6;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-waku-kadomaru-repeat-1;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-7;}
+    .mod-box-in1 {
+      .mod-tel-iig {@include pat-item-tel-M-7;}
+      .mod-bnr_ver2 {@include pat-item-bnr-mesh-3;}
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-3;
+    @include deco-style-mod-set-toiawase-2col-7;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-waku-kadomaru-repeat-2;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-8;}
+    .mod-box-in1 {
+      .mod-tel-iig {@include pat-item-tel-M-8;}
+      .mod-bnr_ver2 {@include pat-item-bnr-mesh-4;}
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-3;
+    @include deco-style-mod-set-toiawase-2col-8;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-waku-kadomaru-repeat-3;
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-9;}
+    .mod-box-in1 {
+      .mod-tel-iig {@include pat-item-tel-M-9;}
+      .mod-bnr_ver2 {@include pat-item-bnr-mesh-5;}
+      .mod-ul_ver2 {
+        @include pat-item-waku-kadomaru-yellow-bgc-2;
+        @include pat-item-list-check-default-1;
+      }
+    }
+    @include common-style-mod-set-toiawase;
+    @include module-style-mod-set-toiawase-2col-3;
+    @include deco-style-mod-set-toiawase-2col-9;
+  }
+}
+

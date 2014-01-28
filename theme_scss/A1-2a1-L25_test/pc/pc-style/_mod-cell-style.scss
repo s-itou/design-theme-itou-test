@@ -1,0 +1,82 @@
+@charset "UTF-8";
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// common-side-style-mod-email(グループ共通common)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-side-style-mod-cell {
+  @if $layoutCode == "L25" {
+    font-size: $sideFontSizeL;
+  } @else if $layoutCode == "L30" {
+    font-size: $sideFontSizeL + 4;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-cell
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-cell {
+  margin-top: 10px !important;
+  word-break: break-all;
+  font-weight: normal;
+  line-height: 1.0;
+}
+//—————————module-style—————————
+@mixin module-style-mod-cell {
+  font-size: 25px;
+}
+@mixin module-style-mod-cell-side {
+}
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-cell {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-cell {
+  color: #0b2d63;
+}
+@mixin deco-style01A3-mod-cell {
+  color: #45320b;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-cell-i
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+//mod-cellと同じ
+//—————————module-style—————————
+@mixin module-style-mod-cell-i {
+  padding: 5px 0 0 40px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-size: 25px;
+}
+@mixin module-style-mod-cell-i-side {
+  padding: 5px 0 0 30px;
+  min-height: 18px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+//—————————deco-style—————————
+//mod-cell-i
+@mixin deco-style01A1-mod-cell-i {
+  background-image: url(img/mod-cell/bg05.png);
+}
+@mixin deco-style01A2-mod-cell-i {
+  background-image: url(img/mod-cell/bg05_2.png);
+}
+@mixin deco-style01A3-mod-cell-i {
+  background-image: url(img/mod-cell/bg05_3.png);
+}
+//mod-cell-i-side
+@mixin deco-style01A1-mod-cell-i-side {
+  background-image: url(img/mod-cell/bg06.png);
+}
+@mixin deco-style01A2-mod-cell-i-side {
+  background-image: url(img/mod-cell/bg06_2.png);
+}
+@mixin deco-style01A3-mod-cell-i-side {
+  background-image: url(img/mod-cell/bg06_3.png);
+}
+
+
+
+

@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-list
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-list-maru の共通スタイル
+// -------------------------------------
+
+// サークルリスト
+@mixin common-style-pat-item-list-maru {
+  ul {
+    margin: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-list-maru の共通デザイン
+// -------------------------------------
+
+// サークルリスト（デフォルト）
+@mixin module-style-pat-item-list-maru-default {
+  ul {
+    padding: 0;
+    li {
+      margin: 2px 0 0 20px;
+      padding: 0 0 0 15px;
+      border-bottom: none;
+      background-position: left 8px;
+      background-repeat: no-repeat;
+      @include common-set-font($fontSizeM);
+    }
+  }
+}
+
+
+// -------------------------------------
+// pat-item-list-maru の装飾スタイル
+// -------------------------------------
+
+// サークルリスト（デフォルト）
+@mixin deco-style-pat-item-list-maru-default-1 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-maru-default-2 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg_2.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-maru-default-3 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg_3.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+
+
+// -------------------------------------
+// pat-item-list-check の共通スタイル
+// -------------------------------------
+
+// チェックリスト
+@mixin common-style-pat-item-list-check {
+  ul {
+    margin: 0;
+    li {
+      background-position: left 4px;
+      background-repeat: no-repeat;
+      list-style-type: none;
+      font-weight: bold;
+      font-size: $fontSizeL;
+    }
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-list-check の共通デザイン
+// -------------------------------------
+
+// チェックリスト（デフォルト）
+@mixin module-style-pat-item-list-check-default {
+  ul {
+    padding: 0;
+    li {
+      margin: 2px 0 0 5px;
+      padding: 0 0 0 18px;
+      border-bottom: none;
+      background-position: left 2px;
+      background-repeat: no-repeat;
+      @include common-set-font($fontSizeM);
+    }
+  }
+}
+// チェックリスト
+@mixin module-style-pat-item-list-check-1 {
+  ul {
+    padding: 5px 0 10px 0;
+    li {
+      margin: 2px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      border-bottom: none;
+    }
+  }
+}
+// チェックリスト（下線画像あり）
+@mixin module-style-pat-item-list-check-2 {
+  ul {
+    padding: 5px 0 15px 0;
+    li {
+      position: relative;
+      margin: 10px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      border-bottom: none;
+      &:first-child {
+        margin-top: 2px;
+      }
+    }
+  }
+}
+// チェックリスト（下破線あり）
+@mixin module-style-pat-item-list-check-3 {
+  ul {
+    padding: 5px 0 0 0;
+    li {
+      margin: 2px 15px 0 15px;
+      padding: 7px 0 0 30px;
+    }
+  }
+}
+
+
+// -------------------------------------
+// pat-item-list-check の装飾スタイル
+// -------------------------------------
+
+// チェックリスト（デフォルト）
+@mixin deco-style-pat-item-list-check-default-1 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-check/bg.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-default-2 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-check/bg_2.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-default-3 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-check/bg_3.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+// チェックリスト
+@mixin deco-style-pat-item-list-check-1 {
+  ul {
+    li {
+      background-image: url("img/mod-ul/_06/bg_a.png");
+      color: #010a11;
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-2 {
+  ul {
+    li {
+      background-image: url("img/mod-ul/_06/bg_a_2.png");
+      color: #010a11;
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-3 {
+  ul {
+    li {
+      background-image: url("img/mod-ul/_06/bg_a_3.png");
+      color: #010a11;
+    }
+  }
+}
+// チェックリスト（下線画像あり）
+@mixin deco-style-pat-item-list-check-4 {
+  ul {
+    li {
+      background-image: url("img/mod-ul/_06/bg02_b.png");
+      color: #ffffff;
+      &:after {
+        position: absolute;
+        bottom: -10px;
+        left: 10px;
+        content: url("img/mod-ul/_06/bg03_b.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-5 {
+  ul {
+    li {
+      background-image: url("img/mod-ul/_06/bg02_b_2.png");
+      color: #ffffff;
+      &:after {
+        position: absolute;
+        bottom: -10px;
+        left: 10px;
+        content: url("img/mod-ul/_06/bg03_b_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-6 {
+  ul {
+    li {
+      background-image: url("img/mod-ul/_06/bg02_b_3.png");
+      color: #333333;
+      &:after {
+        position: absolute;
+        bottom: -10px;
+        left: 10px;
+        content: url("img/mod-ul/_06/bg03_b_3.png");
+      }
+    }
+  }
+}
+// チェックリスト（下破線あり）
+@mixin deco-style-pat-item-list-check-7 {
+  ul {
+    li {
+      border-bottom: 1px dashed #808285;
+      background-image: url("img/mod-ul/_06/bg03_c.png");
+      color: #331b07;
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-8 {
+  ul {
+    li {
+      border-bottom: 1px dashed #808285;
+      background-image: url("img/mod-ul/_06/bg03_c_2.png");
+      color: #331b07;
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-9 {
+  ul {
+    li {
+      border-bottom: 1px dashed #c5c5c5;
+      background-image: url("img/mod-ul/_06/bg03_c_3.png");
+      color: #331b07;
+    }
+  }
+}
+
+
+// -------------------------------------
+// pat-item-list-number の共通スタイル
+// -------------------------------------
+
+// 番号リスト
+@mixin common-style-pat-item-list-number {
+  margin-top: 20px;
+  ol {
+    counter-reset:li; //カウントリセット
+  }
+  li {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  li {
+    > p {
+      margin-top: 12px;
+    }
+    > p:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// -------------------------------------
+//  pat-item-list-number の共通デザイン
+// -------------------------------------
+
+// 番号リスト
+@mixin module-style-pat-item-list-number-1 {
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    padding: 3px 10px 10px 45px;
+    border-top: none;
+    border-left: none;
+    background-color: transparent;
+    font-size: $fontSizeM;
+    border-rignt: none;
+  }
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    color:#ffffff;
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeM + 1;
+  }
+}
+
+// 番号リスト（枠付き）
+@mixin module-style-pat-item-list-number-2 {
+  ol {
+    padding: 0 0 0 8px;
+    margin: 0;
+  }
+  li {
+    color: #333333;
+    font-size: $fontSizeM;
+    list-style:none; //デフォルトナンバリングを消す
+    padding: 8px 10px 10px 50px;
+  }
+  li:before {
+    color:#ffffff;
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+    top: 0;
+    left: -9px;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 47px;
+    height: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeL + 2;
+  }
+}
+
+
+// -------------------------------------
+// pat-item-list-number の装飾スタイル
+// -------------------------------------
+
+// 番号リスト
+@mixin deco-style-pat-item-list-number-1 {
+  li {
+    border-bottom: 1px dotted #dedad1;
+    color: #333333;
+  }
+  li:before {
+    background: url(img/mod-ol/_02/bg_a.png) no-repeat left top;
+  }
+}
+@mixin deco-style-pat-item-list-number-2 {
+  li {
+    border-bottom: 1px dotted #cccccc;
+    color: #333333;
+  }
+  li:before {
+    background: url(img/mod-ol/_02/bg_a_2.png) no-repeat left top;
+  }
+}
+@mixin deco-style-pat-item-list-number-3 {
+  li {
+    border-bottom: 1px dotted #dedad1;
+    color: #333333;
+  }
+  li:before {
+    background: url(img/mod-ol/_02/bg_a_3.png) no-repeat left top;
+  }
+}
+
+// 番号リスト（枠付き）
+@mixin deco-style-pat-item-list-number-4 {
+  li {
+    border: 1px solid #cccccc;
+    background-color: #f8f7f3;
+  }
+  li:before {
+    background:url(img/mod-ol/_02/bg_b.png) no-repeat left 2px;
+  }
+}
+@mixin deco-style-pat-item-list-number-5 {
+  li {
+    border: 1px solid #cdd0d1;
+    background-color: #e4e5e6;
+  }
+  li:before {
+    background:url(img/mod-ol/_02/bg_b_2.png) no-repeat left 2px;
+  }
+}
+@mixin deco-style-pat-item-list-number-6 {
+  li {
+    border: 1px solid #cdd0d1;
+    background-color: #f6f5f0;
+  }
+  li:before {
+    background:url(img/mod-ol/_02/bg_b_3.png) no-repeat left 2px;
+  }
+}
+@mixin deco-style-pat-item-list-number-7 {
+  li {
+    border: 1px solid #cccccc;
+    background-color: #f6f5f0;
+  }
+  li:before {
+    background:url(img/mod-ol/_02/bg_c.png) no-repeat left 2px;
+  }
+}
+@mixin deco-style-pat-item-list-number-8 {
+  li {
+    border: 1px solid #aaaaaa;
+    background-color: #ececec;
+  }
+  li:before {
+    background:url(img/mod-ol/_02/bg_c_2.png) no-repeat left 2px;
+  }
+}
+@mixin deco-style-pat-item-list-number-9 {
+  li {
+    border: 1px solid #cccccc;
+    background-color: #f8f3e0;
+  }
+  li:before {
+    background:url(img/mod-ol/_02/bg_c_3.png) no-repeat left 2px;
+  }
+}
+
+
+
+
+

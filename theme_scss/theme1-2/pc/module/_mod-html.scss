@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+//GoogleMap用
+%default-html {
+  @include box-sizing(border-box);
+  display: block;
+  width: 200px;
+  min-height: 40px;
+  padding: 10px 0 0 25px;
+  @extend %inlineBlock;
+  color: #333333 !important;
+  border-bottom: 1px solid #bfbfbf;
+  border-right: 1px solid #bfbfbf;
+  @include border-radius(3px);
+  font-size: $fontSizeM - 1;
+}
+
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+//mod-htmlシリーズ
+
+.mod-html {
+  overflow: auto;
+  width: 100%;
+  a {
+    @extend %default-html;
+    @include background("mod-link/bg_2.png", no-repeat, 9px, 13px, #ffffff);//hosi
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    a {
+      background-image: url("img/mod-bnr/bg07.png");//hosi
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    a {
+      background-image: url("img/mod-bnr/bg07_3.png");
+    }
+  }
+  .ex-style_01B1a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+      color: #ffffff !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg_2.png");//hosi
+      background-position: left top;
+    }
+  }
+  .ex-style_01B2a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+      color: #ffffff !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg.png");//hosi
+      background-position: left top;
+    }
+  }
+  .ex-style_01B3a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+       color: #443308 !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg_3.png");
+      background-position: left top;
+    }
+  }
+}
+
+.mod-html2 { //GoogleMap用
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  a {
+    @extend %default-html;
+    @include background("mod-bnr/bg07_2.png", no-repeat, 9px, 13px, #ffffff);//hosi
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    a {
+      background-image: url("img/mod-link/bg.png");//hosi
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    a {
+      background-image: url("img/mod-bnr/bg07_3.png");
+    }
+  }
+  .ex-style_01B1a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+      color: #ffffff !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg_2.png");//hosi
+      background-position: left top;
+    }
+  }
+  .ex-style_01B2a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+      color: #ffffff !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg.png");//hosi
+      background-position: left top;
+    }
+  }
+  .ex-style_01B3a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+       color: #443308 !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg_3.png");
+      background-position: left top;
+    }
+  }
+}
+
+.mod-html3 {
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+//GoogleMap用　黄
+.mod-html4 {
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  a {
+    @extend %default-html;
+    @include background("mod-bnr/bg07_2.png", no-repeat, 9px, 13px, #fffdf3);//hosi
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    a {
+      background-image: url("img/mod-link/bg.png");//hosi
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    a {
+      background-image: url("img/mod-bnr/bg07_3.png");
+    }
+  }
+  .ex-style_01B1a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+      color: #ffffff !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg_2.png");//hosi
+      background-position: left top;
+    }
+  }
+  .ex-style_01B2a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+      color: #ffffff !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg.png");//hosi
+      background-position: left top;
+    }
+  }
+  .ex-style_01B3a & {
+    a {
+      height: 41px;
+      width: 201px;
+      overflow: hidden;
+      padding-left: 25px;
+       color: #443308 !important;
+      border: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg_3.png");
+      background-position: left top;
+    }
+  }
+}
+
+.mod-html5 {
+  overflow: auto;
+  width: 100%;
+  a {
+    @extend %inlineBlock;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    margin-bottom: 10px !important;
+    padding-left: 15px;
+    font-size: $sideFontSizeM;
+    @include background("mod-link/bg.png", $position-y: 2px);
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+//スライド動画専用
+.mod-html-spec {
+  overflow: auto;
+  width: 100%;
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}

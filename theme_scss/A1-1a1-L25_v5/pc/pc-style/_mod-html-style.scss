@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+//  mod-html の mixin一式
+@mixin mod-html-common-style {
+  overflow: auto;
+  width: 100%;
+  small {
+    a {
+      @include box-sizing(border-box);
+      display: block;
+      min-height: 40px;
+      font-size: $fontSizeM - 1;
+      @include border-radius(3px);
+      @extend %inlineBlock;
+      background-repeat: no-repeat;
+      padding: 10px 0 0 25px;
+    }
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+@mixin mod-html-style {
+  small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-link/bg.png");
+      background-position: 9px 13px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-html-style2 {
+  small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-bnr/bg07_2.png");
+      background-position: 9px 13px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-html-style3 {
+  small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-bnr/bg07_3.png");
+      background-position: 9px 13px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-html-style4 {
+  small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #ffffff !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+
+@mixin mod-html-style5 {
+  small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #ffffff !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg_2.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+
+@mixin mod-html-style6 {
+  small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #443308 !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg_3.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+
+
+//  mod-html3 の mixin一式
+@mixin mod-html3-common-style {
+  overflow: auto;
+  width: 100%;
+  margin-top: 15px;
+
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+
+
+
+//  mod-html4 の mixin一式
+@mixin mod-html4-common-style {
+  overflow: auto;
+  width: 100%;
+  margin-top: 10px;
+  small {
+    a {
+      @include box-sizing(border-box);
+      display: block;
+      min-height: 40px;
+      font-size: $fontSizeM - 1;
+      @include border-radius(3px);
+      @extend %inlineBlock;
+      background-repeat: no-repeat;
+      padding: 10px 0 0 25px;
+    }
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+    max-width: 100% !important;
+  }
+  //IE8のみハック
+  html>/**/body & {
+    small a {
+      height: 40px;
+      min-height /*\**/: 29px\9;
+    }
+  }
+}
+
+@mixin mod-html4-style {
+  small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-link/bg.png");
+      background-position: 9px 13px;
+      background-color: #fffdf3;
+    }
+  }
+}
+
+@mixin mod-html4-style2 {
+  small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-bnr/bg07_2.png");
+      background-position: 9px 13px;
+      background-color: #fffdf3;
+    }
+  }
+}
+
+@mixin mod-html4-style3 {
+  small {
+    a {
+      width: 200px;
+      height: auto;
+      overflow: visible;
+      color: #333333 !important;
+      border-bottom: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf;
+      background-image: url("img/mod-bnr/bg07_3.png");
+      background-position: 9px 13px;
+      background-color: #fffdf3;
+    }
+  }
+}
+
+@mixin mod-html4-style4 {
+  small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #ffffff !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+
+@mixin mod-html4-style5 {
+  small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #ffffff !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg_2.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+
+@mixin mod-html4-style6 {
+  small {
+    a {
+      width: 201px;
+      height: 41px;
+      overflow: hidden;
+      color: #443308 !important;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      background-image: url("img/mod-html/bg_3.png");
+      background-position: left top;
+      background-color: transparent;
+    }
+  }
+}
+
+//  mod-html5 の mixin一式
+@mixin mod-html5-common-style {
+  margin-top: 10px;
+  overflow: auto;
+  width: 100%;
+  small {
+    a {
+      @extend %inlineBlock;
+      max-width: 100%;
+      @include box-sizing(border-box);
+      padding-left: 15px;
+      font-size: $sideFontSizeM;
+      background-image: url("img/mod-link/bg.png");
+      background-position: left 2px;
+      background-repeat: no-repeat;
+    }
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+//  mod-html6 の mixin一式
+@mixin mod-html6-common-style {
+  iframe {
+    width: 100% !important;
+    height: 190px !important;
+    margin-bottom: -23px;
+  }
+  small {
+    a {
+      @extend %inlineBlock;
+      max-width: 100%;
+      @include box-sizing(border-box);
+      padding-left: 15px;
+      font-size: $sideFontSizeM;
+
+      background-position: left 2px;
+      background-repeat: no-repeat;
+    }
+  }
+  > div, > iframe {
+    display: block;
+  }
+}
+@mixin mod-html6-style {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_a.png");
+      color: #45320b;
+      &:hover {
+        color: #45320b;
+      }
+    }
+  }
+}
+@mixin mod-html6-style2 {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_a_2.png");
+      color: #294470;
+      &:hover {
+        color: #294470;
+      }
+    }
+  }
+}
+@mixin mod-html6-style3 {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_a_3.png");
+      color: #294470;
+      &:hover {
+        color: #294470;
+      }
+    }
+  }
+}
+@mixin mod-html6-style4 {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_b.png");
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+@mixin mod-html6-style5 {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_b_2.png");
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+@mixin mod-html6-style6 {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_b_3.png");
+      color: #443308;
+      &:hover {
+        color: #443308;
+      }
+    }
+  }
+}
+@mixin mod-html6-style7 {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_c.png");
+      color: #45320b;
+      &:hover {
+        color: #45320b;
+      }
+    }
+  }
+}
+@mixin mod-html6-style8 {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_c_2.png");
+      color: #45320b;
+      &:hover {
+        color: #45320b;
+      }
+    }
+  }
+}
+@mixin mod-html6-style9 {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_c_3.png");
+      color: #45320b;
+      &:hover {
+        color: #45320b;
+      }
+    }
+  }
+}
+
+
+//  mod-html-spec の mixin一式
+@mixin mod-html-spec-common-style {
+  overflow: auto;
+  width: 100%;
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+
+
+
+
+
+

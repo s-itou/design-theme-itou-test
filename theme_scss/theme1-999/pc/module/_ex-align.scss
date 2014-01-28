@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+//------------------
+// ex-align-center mod.scssでは見出しよりも上において（ポイント）
+//------------------
+
+.ex-align-center {
+  margin-right: auto;
+  margin-left: auto;
+  .mod-h, .mod-text12, .mod-h_4-inner3 {
+    text-align: center;
+  }
+  .ex-style_01B1 &.mod-h_3,
+  .ex-style_01B2 &.mod-h_3,
+  .ex-style_01B3 &.mod-h_3,
+  &.mod-h_2D1,
+  &.mod-h_2D2,
+  &.mod-h_2D3,
+  &.mod-h_2E1,
+  &.mod-h_2E2,
+  &.mod-h_2E3,
+  &.mod-h_2F1,
+  &.mod-h_2F2,
+  &.mod-h_2F3,
+  &.mod-h_3B1,
+  &.mod-h_3B2,
+  &.mod-h_3B3,
+  &.mod-h_3D1,
+  &.mod-h_3D2,
+  &.mod-h_3D3,
+  &.mod-h_3E1,
+  &.mod-h_3E2,
+  &.mod-h_3E3,
+  &.mod-h_3F1,
+  &.mod-h_3F2,
+  &.mod-h_3F3 {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+//------------------
+// ex-align-left
+//------------------
+
+.ex-align-left {
+  margin-right: auto;
+  margin-left: 0;
+  .mod-h, .mod-text12 .mod-h_4-inner3 {
+    text-align: left;
+  }
+  .ex-style_01B1 &.mod-h_3,
+  .ex-style_01B2 &.mod-h_3,
+  .ex-style_01B3 &.mod-h_3,
+  &.mod-h_2D1,
+  &.mod-h_2D2,
+  &.mod-h_2D3,
+  &.mod-h_2E1,
+  &.mod-h_2E2,
+  &.mod-h_2E3,
+  &.mod-h_2F1,
+  &.mod-h_2F2,
+  &.mod-h_2F3,
+  &.mod-h_3B1,
+  &.mod-h_3B2,
+  &.mod-h_3B3,
+  &.mod-h_3D1,
+  &.mod-h_3D2,
+  &.mod-h_3D3,
+  &.mod-h_3E1,
+  &.mod-h_3E2,
+  &.mod-h_3E3,
+  &.mod-h_3F1,
+  &.mod-h_3F2,
+  &.mod-h_3F3 {
+    margin-right: auto;
+  }
+}
+
+//------------------
+// ex-align-right
+//------------------
+
+.ex-align-right {
+  margin-right: 0;
+  margin-left: auto;
+  .mod-h, .mod-text12, .mod-h_4-inner3 {
+    text-align: right;
+  }
+  .ex-style_01B1 &.mod-h_3,
+  .ex-style_01B2 &.mod-h_3,
+  .ex-style_01B3 &.mod-h_3,
+  &.mod-h_2D1,
+  &.mod-h_2D2,
+  &.mod-h_2D3,
+  &.mod-h_2E1,
+  &.mod-h_2E2,
+  &.mod-h_2E3,
+  &.mod-h_2F1,
+  &.mod-h_2F2,
+  &.mod-h_2F3,
+  &.mod-h_3B1,
+  &.mod-h_3B2,
+  &.mod-h_3B3,
+  &.mod-h_3D1,
+  &.mod-h_3D2,
+  &.mod-h_3D3,
+  &.mod-h_3E1,
+  &.mod-h_3E2,
+  &.mod-h_3E3,
+  &.mod-h_3F1,
+  &.mod-h_3F2,
+  &.mod-h_3F3 {
+    margin-left: auto;
+  }
+}
+
+

@@ -1,0 +1,476 @@
+@charset "UTF-8";
+
+//mod-imageシリーズ
+
+.mod-image { //mb基準10px
+  margin-bottom: 10px !important;
+  img {
+    width: 100%;
+  }
+}
+
+.mod-image2 {
+  img {
+    width: 100%;
+  }
+}
+
+.mod-image3 { //ヘッダーピクチャなど単体用
+  width: 115px;
+  margin: 0 auto 10px !important;
+  img {
+    width: 115px;
+  }
+}
+
+
+// mod-iamge-spec3同様の記述があり
+// しばらくはex-styleは同期して下さい
+
+.mod-image4 { //mb10　矢印画像付
+  margin-bottom: 10px !important;
+  margin-right: -30px !important;
+  padding-right: 30px;
+  @include background("mod-image/bg.png", $position-x: right, $position-y: center);
+  img {
+    width: 100%;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-image/bg_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-image/bg_3.png);
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url(img/mod-image/bg04.png);
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url(img/mod-image/bg04_2.png);
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url(img/mod-image/bg04_3.png);
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    background-image: url(img/mod-image/bg07.png);
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url(img/mod-image/bg07_2.png);
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url(img/mod-image/bg07_3.png);
+  }
+}
+
+// mod-iamge-spec4同様の記述があり
+// ex-styleは同期して下さい
+
+.mod-image5 { //mb10　矢印画像付
+  margin-bottom: 10px !important;
+  margin-right: -25px !important;
+  padding-right: 25px;
+  @include background("mod-image/bg.png", $position-x: right, $position-y: center);
+  img {
+    width: 100%;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-image/bg_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-image/bg_3.png);
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url(img/mod-image/bg04.png);
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url(img/mod-image/bg04_2.png);
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url(img/mod-image/bg04_3.png);
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    background-image: url(img/mod-image/bg07.png);
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url(img/mod-image/bg07_2.png);
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url(img/mod-image/bg07_3.png);
+  }
+}
+
+.mod-image6 {
+  width: $mainWidth - 52; //layout変数
+  margin-bottom: 10px !important;
+  padding-top: 21px;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: url(img/mod-image/bg02.png);
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+  }
+  .mod-image6-inner {
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    &:after {
+      content: url(img/mod-image/bg08.png);
+      position: absolute;
+      z-index: 500;
+      top: 0;
+      right: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    &:after {
+      content: url(img/mod-image/bg02_2.png);
+    }
+    .mod-image6-inner {
+      &:after {
+        content: url(img/mod-image/bg08_2.png);
+      }
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    &:after {
+      content: url(img/mod-image/bg02_3.png);
+    }
+    .mod-image6-inner {
+      &:after {
+        content: url(img/mod-image/bg08_3.png);
+      }
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d &,
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d &,
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    padding-top: 0;
+    &:after {
+      content: none;
+    }
+    .mod-image6-inner {
+      border: 1px solid #d9d9d9;
+      background-color: #ffffff;
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    width: 562px;
+    margin-bottom: 36px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 26px;
+    background-image: url("img/mod-image/bg05.png");
+    background-repeat: no-repeat;
+    &:after {
+      content: none;
+    }
+    .mod-image6-inner {
+      margin-bottom: -26px;
+      padding: 0 0 26px 0;
+      border: none;
+      @include background("mod-image/bg06.png",$position-y: bottom);
+      &:after {
+        content: none;
+      }
+      img {
+        padding: 5px;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+      }
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    width: 562px;
+    margin-bottom: 36px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 26px;
+    background-image: url("img/mod-image/bg05_2.png");
+    background-repeat: no-repeat;
+    &:after {
+      content: none;
+    }
+    .mod-image6-inner {
+      margin-bottom: -26px;
+      padding: 0 0 26px 0;
+      border: none;
+      @include background("mod-image/bg06_2.png", $position-y: bottom);
+      &:after {
+        content: none;
+      }
+      img {
+        padding: 5px;
+        border-left: 1px solid #D1C9A4;
+        border-right: 1px solid #D1C9A4;
+      }
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    width: 562px;
+    margin-bottom: 36px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 26px;
+    background-image: url("img/mod-image/bg05_3.png");
+    background-repeat: no-repeat;
+    &:after {
+      content: none;
+    }
+    .mod-image6-inner {
+      margin-bottom: -26px;
+      padding: 0 0 26px 0;
+      border: none;
+      @include background("mod-image/bg06_3.png", $position-y: bottom);
+      &:after {
+        content: none;
+      }
+      img {
+        padding: 5px;
+        border-left: 1px solid #d1c9a4;
+        border-right: 1px solid #d1c9a4;
+      }
+    }
+  }
+}
+
+.mod-image7 {
+  margin-left: 10px !important;
+  float: left;
+  img{
+    width: 60px;
+  }
+}
+
+
+.mod-image8 {
+  float: left;
+  img {
+    width: 600px;
+  }
+}
+
+.mod-image9 {
+  float: right;
+  img {
+    width: 380px;
+  }
+}
+
+
+
+
+//スマフォでの対応を前提としたヘッダーピクチャ専用モジュール
+//part-header-007でのみ使用
+.mod-image-spec {
+  img {
+    width: 100%;
+  }
+}
+
+//part-side-011_001
+//のQRコードの利用を前提とした専用モジュール
+.mod-image-spec2 {
+  width: 115px;
+  margin: 0 auto 10px !important;
+  img {
+    width: 115px;
+  }
+}
+
+// part-main-051 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-image-spec3 { //mb10　矢印画像付
+  margin-bottom: 10px !important;
+  margin-right: -30px !important;
+  padding-right: 30px;
+  @include background("mod-image/bg.png", $position-x: right, $position-y: center);
+  img {
+    width: 100%;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-image/bg_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-image/bg_3.png);
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url(img/mod-image/bg04.png);
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url(img/mod-image/bg04_2.png);
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url(img/mod-image/bg04_3.png);
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    background-image: url(img/mod-image/bg07.png);
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url(img/mod-image/bg07_2.png);
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url(img/mod-image/bg07_3.png);
+  }
+}
+
+// part-main-204,205 の矢印付きでSPでの切替を前提にした専用モジュール
+.mod-image-spec4 { //mb10　矢印画像付
+  margin-bottom: 10px !important;
+  margin-right: -25px !important;
+  padding-right: 25px;
+  @include background("mod-image/bg.png", $position-x: right, $position-y: center);
+  img {
+    width: 100%;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-image/bg_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-image/bg_3.png);
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url(img/mod-image/bg04.png);
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url(img/mod-image/bg04_2.png);
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url(img/mod-image/bg04_3.png);
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    background-image: url(img/mod-image/bg07.png);
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url(img/mod-image/bg07_2.png);
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url(img/mod-image/bg07_3.png);
+  }
+}

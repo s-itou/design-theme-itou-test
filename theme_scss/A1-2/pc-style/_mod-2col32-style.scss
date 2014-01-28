@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@mixin mod-2col32-common-style {
+display: table;
+  width: 100%;
+  margin-top: 5px;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: 80px;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px;
+  }
+  .ex-imgSize_S2S & {
+    > .mod-2col-inner {
+      width: 60px;
+    }
+  }
+}
+
+

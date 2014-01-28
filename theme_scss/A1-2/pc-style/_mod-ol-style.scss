@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@mixin mod-ol-common-style {
+margin-top: 10px;
+  ol {
+    margin: 0 0 0 25px;
+    padding-left: 25px;
+    color: #333333;
+  }
+  li {
+    margin-top: 2px;
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+

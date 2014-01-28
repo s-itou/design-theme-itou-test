@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import "../sp-style/mod-5column-style";
+
+.mod-5col {
+  @include mod-5col-common-style;
+  @if $defaultTheme == "01A1" { @include mod-5col-style; }
+    @else if $defaultTheme == "01A2" { @include mod-5col-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-5col-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-5col-style4; }
+    @else if $defaultTheme == "01B2" { @include mod-5col-style5; }
+    @else if $defaultTheme == "01B3" { @include mod-5col-style6; }
+    @else if $defaultTheme == "01C1" { @include mod-5col-style7; }
+    @else if $defaultTheme == "01C2" { @include mod-5col-style8; }
+    @else if $defaultTheme == "01C3" { @include mod-5col-style9; }
+    @else { @include mod-5col-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-5col-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-5col-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-5col-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-5col-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-5col-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-5col-style6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-5col-style7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-5col-style8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-5col-style9;
+  }
+}

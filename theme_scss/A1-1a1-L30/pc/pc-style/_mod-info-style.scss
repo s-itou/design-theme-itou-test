@@ -1,0 +1,456 @@
+@charset "UTF-8";
+
+
+//  mod-info7 の mixin一式
+@mixin mod-info7-common-style {
+  margin-top: 10px;
+  th {
+    font-weight: normal;
+    vertical-align: top;
+    padding-bottom: 10px;
+    > p {
+      width: 60px;
+      padding: 0 20px;
+      text-align: center;
+      @include border-radius();
+    }
+  }
+  td {
+    vertical-align: top;
+    padding: 1px 0 10px 10px;
+    max-width: 220px;
+    color: #333333;
+  }
+}
+
+
+
+@mixin mod-info7-style {
+  th {
+    > p {
+      color: #ffffff;
+      background-color: #1d6fde;
+    }
+  }
+}
+
+@mixin mod-info7-style2 {
+  th {
+    > p {
+    color: #365997;
+    background-color: #ffe876;
+    }
+  }
+}
+
+@mixin mod-info7-style3 {
+  th {
+    > p {
+    color: #ffffff;
+    background-color: #519dce;
+    }
+  }
+}
+
+@mixin mod-info7-style4 {
+  th {
+    > p {
+    color: #ffffff;
+    background-color: #3C66BA;
+    }
+  }
+}
+
+
+@mixin mod-info7-style5 {
+  th {
+    > p {
+    color: #ffffff;
+    background-color: #095C66;
+    }
+  }
+}
+
+@mixin mod-info7-style6 {
+  th {
+    > p {
+    color: #ffffff;
+    background-color: #443308;
+    }
+  }
+}
+
+@mixin mod-info7-style7 {
+  th {
+    > p {
+    color: #ffffff;
+    background-color: #5596f6;
+    }
+  }
+}
+
+@mixin mod-info7-style8 {
+  th {
+    > p {
+    color: #ffffff;
+    background-color: #5bc8d3;
+    }
+  }
+}
+
+@mixin mod-info7-style9 {
+  th {
+    > p {
+    color: #45320b;
+    background-color: #f2d028;
+    }
+  }
+}
+
+//  mod-info8 の mixin一式
+@mixin mod-info8-common-style {
+  margin-top: 10px;
+  @extend %cf;
+  .mod-info-inner {
+    width: 140px;
+    margin-right:15px;
+    @include border-radius();
+    text-align: center;
+    float: left;
+  }
+  .mod-info-inner2 {
+    float: left;
+    overflow: hidden;
+  }
+}
+
+@mixin mod-info8-style {
+  border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #f59e3b;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info8-style2 {
+  border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #333333;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #ffe876;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info8-style3 {
+  border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #519dce;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info8-style4 {
+  border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: url("img/mod-info/bg.png");
+    background-repeat: repeat-x;
+    background-color: #3a66b7;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info8-style5 {
+  border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #085b66;
+    background-image: url("img/mod-info/bg_2.png");
+    background-repeat: repeat-x;
+    background-color: #FEEB91;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info8-style6 {
+  border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: url("img/mod-info/bg_3.png");
+    background-repeat: repeat-x;
+    background-color: #7CB4D8;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info8-style7 {
+  border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #f7931d;
+    background-image: url("img/mod-info/bg03.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+
+@mixin mod-info8-style8 {
+  border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #067e87;
+    background-image: url("img/mod-info/bg03_2.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+
+@mixin mod-info8-style9 {
+  border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #416ca3;
+    background-image: url("img/mod-info/bg03_3.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+
+
+//  mod-info9 の mixin一式
+@mixin mod-info9-common-style {
+  margin-top: 10px;
+  > p:first-child {
+    width: 140px;
+    @include border-radius();
+    text-align: center;
+  }
+  > p + > p {
+    margin-top: 10px;
+  }
+}
+
+
+@mixin mod-info9-style {
+  border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #f59e3b;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info9-style2 {
+  border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #333333;
+    background-color: #ffe876;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info9-style3 {
+  border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #519dce;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info9-style4 {
+  border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #3a66b7;
+    background-image: url("img/mod-info/bg.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info9-style5 {
+  border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #085b66;
+    background-color: #FEEB91;
+    background-image: url("img/mod-info/bg_2.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info9-style6 {
+  border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #7CB4D8;
+    background-image: url("img/mod-info/bg_3.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+
+@mixin mod-info9-style7 {
+  border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #f7931d;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+@mixin mod-info9-style8 {
+  border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #067e87;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03_2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+@mixin mod-info9-style9 {
+  border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #416ca3;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03_3.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+
+//  mod-info10 の mixin一式
+@mixin mod-info10-common-style {
+  th {
+    font-weight: normal;
+    vertical-align: top;
+    > p {
+      width: 48px;
+      padding: 0 3px;
+      float: left;
+      text-align: center;
+      font-size: $fontSizeS - 1;
+      @include border-radius(3px);
+    }
+  }
+  td {
+    vertical-align: top;
+    padding: 0 0 1px 7px;
+    float: left;
+    max-width: 158px;
+    font-size: $fontSizeS ;
+  }
+}
+
+
+@mixin mod-info10-style {
+  th {
+    > p {
+      color: #ffffff;
+      background-color: #ff8809;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+
+//  mod-info11 の mixin一式
+@mixin mod-info11-common-style {
+  th {
+    font-weight: normal;
+    vertical-align: middle;
+    width: 48px;
+    height: 36px;
+    padding: 0 3px;
+    text-align: center;
+    font-size: $fontSizeS - 1;
+    @include border-radius(3px);
+    display: table;
+    > p {
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+  td {
+    vertical-align: top;
+    padding: 0 0 0 7px;
+    max-width: 135px;
+    font-size: $fontSizeS ;
+  }
+}
+
+
+
+@mixin mod-info11-style {
+  th {
+    color: #ffffff;
+    background-color: #ff8809;
+  }
+  td {
+    color: #333333;
+  }
+}
+
+
+
+//  mod-info12 の mixin一式
+@mixin mod-info12-common-style {
+  margin-top: 5px;
+  &.ex-first-child {
+    margin-top: 0 !important;
+  }
+  th {
+    vertical-align: middle;
+    font-weight: normal;
+    width: 48px;
+    padding: 0 3px;
+    text-align: center;
+    font-size: $fontSizeS - 1;
+    @include border-radius(3px);
+    display: table;
+    > p {
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+  td {
+    vertical-align: top;
+    padding: 0 0 6px 7px;
+    max-width: 135px;
+    font-size: $fontSizeS;
+  }
+}
+
+
+
+
+@mixin mod-info12-style {
+  th {
+    color: #ffffff;
+    background-color: #ff8809;
+  }
+  td {
+    color: #333333;
+  }
+}

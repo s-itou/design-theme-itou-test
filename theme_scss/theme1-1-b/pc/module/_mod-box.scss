@@ -1,0 +1,767 @@
+@charset "UTF-8";
+
+
+//ヘッダー領域用 テーマ特有の背景画像設定
+.mod-box {
+  width: 100%;
+  background-image: url("./img/mod-box/bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  &.ex-style_01A2a {
+    background-image: url("./img/mod-box/bg_2.png");
+  }
+  &.ex-style_01A3a {
+    background-image: url("./img/mod-box/bg_3.png");
+  }
+  &.ex-style_01B1a {
+    background-image: url("img/mod-box/bg09.png");
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01B2a {
+    background-image: url("img/mod-box/bg09_2.png");
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01B3a {
+    background-image: url("img/mod-box/bg09_3.png");
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01C1a {
+    background-image: url("img/mod-box/bg10.png");
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01C2a {
+    background-image: url("img/mod-box/bg10_2.png");
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01C3a {
+    background-image: url("img/mod-box/bg10_3.png");
+    background-repeat: repeat-x;
+  }
+}
+
+//ヘッダー.フッター領域用
+.mod-box2 {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0 15px;
+  .ex-style_01B1a & {
+    .area-footer & {
+      background-image: url("img/mod-box/bg13.png");
+    background-repeat: repeat-y;
+    }
+  }
+}
+
+.mod-box6 { //ヘッダータイトルで使用
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+//メイン領域用
+.mod-box3 {
+  width: $mainWidth; //layout変数
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mod-box4 {
+  width: 100%;
+}
+
+.mod-box5 {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.mod-box7 { //ステップで使う青いボックス
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ade9ef;
+  @include border-radius();
+  background-color: #ecfdff;
+  >.mod-box-inner {
+  	padding: 10px;
+    background-color: #ffffff;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    border: 1px solid #ade9ef;
+    background-color: #e3f6f8;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    border: 1px solid #dedad1;
+    background-color: #fff0e4;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    border: 1px solid $d_boxBdColor;
+    @include background("mod-box/bg04.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    border: 1px solid $d_boxBdColor2;
+    @include background("mod-box/bg04_2.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    border: 1px solid $d_boxBdColor3;
+    @include background("mod-box/bg04_3.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    border: none;
+    padding: 3px;
+    background: none;
+    >.mod-box-inner {
+      padding: 15px;
+    }
+  }
+}
+
+.mod-box8 { //ステップで使う青いボックス
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $m_boxBdColor;
+  @include border-radius();
+  background-color: $m_boxBgColor;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    @include background($color: #ffffff);
+  }
+  .ex-style_01A2a & {
+    border: 1px solid $m_boxBdColor2;
+    background-color: $m_boxBgColor2;
+  }
+  .ex-style_01A3a & {
+    border: 1px solid $m_boxBdColor3;
+    background-color: $m_boxBgColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    border: 1px solid $d_boxBdColor;
+    @include background("mod-box/bg04.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    border: 1px solid $d_boxBdColor2;
+    @include background("mod-box/bg04_2.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    border: 1px solid $d_boxBdColor3;
+    @include background("mod-box/bg04_3.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    border: none;
+    padding: 3px;
+    background-color: none;
+    @include background("mod-box/bg08.png", repeat);
+    > .mod-box-inner {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    border: none;
+    padding: 3px;
+    background-color: none;
+    @include background("mod-box/bg08_2.png", repeat);
+    > .mod-box-inner {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    border: none;
+    padding: 3px;
+    background-color: none;
+    @include background("mod-box/bg08_3.png", repeat);
+    > .mod-box-inner {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+}
+
+.mod-box9 {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.mod-box10 { //サイドで使う黄色いボックス padding-top:5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dedad1;
+  background-color: #fffce9;
+  > .mod-box-inner{
+    padding: 5px 10px 1px;
+    background-color: #ffffff;
+  }
+  .ex-style_01A2a & {
+    border: 1px solid #cbd8d9;
+    background-color: #f6f6f6;
+  }
+  .ex-style_01A3a & {
+    border: 1px solid #dedad1;
+    background-color: #fffef4;
+  }
+}
+
+.mod-box11 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.mod-box12 { //サイドで使う黄色いボックス padding-top:10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dedad1;
+  @include background($color: #fffce9);
+  > .mod-box-inner{
+    padding: 10px 10px 1px;
+    background-color: #ffffff;
+  }
+  .ex-style_01A2a & {
+    border: 1px solid #cbd8d9;
+    background-color: #f6f6f6;
+  }
+  .ex-style_01A3a & {
+    border: 1px solid #dedad1;
+    background-color: #fffef4;
+  }
+}
+
+.mod-box13 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mod-box14 { //ヘッダータイトル上用
+  width: 100%;
+  padding: 3px 5px;
+  background-color: #2e7fec;
+  &.ex-style_01A2a,
+  &.ex-style_01A2b,
+  &.ex-style_01A2c,
+  &.ex-style_01A2d,
+  &.ex-style_01B2a,
+  &.ex-style_01B2b,
+  &.ex-style_01B2c,
+  &.ex-style_01B2d,
+  &.ex-style_01C2a,
+  &.ex-style_01C2b,
+  &.ex-style_01C2c,
+  &.ex-style_01C2d {
+    background-color: #69ced8;
+  }
+  &.ex-style_01A3a,
+  &.ex-style_01A3b,
+  &.ex-style_01A3c,
+  &.ex-style_01A3d,
+  &.ex-style_01B3a,
+  &.ex-style_01B3b,
+  &.ex-style_01B3c,
+  &.ex-style_01B3d,
+  &.ex-style_01C3a,
+  &.ex-style_01C3b,
+  &.ex-style_01C3c,
+  &.ex-style_01C3d {
+   background-color: #f37f1c;
+  }
+}
+.mod-box15 { //メイン装飾ボックス
+  width: 100%;
+  padding: 30px 30px;
+  background-color: #fffdf1;
+  border: #dedad1 1px solid;
+  @include border-radius();
+}
+
+.mod-box16 { //矢印用
+  width: 112px;
+  height: 47px;
+  margin: 0 auto 25px;
+  @include background("mod-box/bg02.png");
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url("img/mod-box/bg02_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url("img/mod-box/bg02_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-box/bg05.png");
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-box/bg05_2.png");
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-box/bg05_3.png");
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    background-image: url("img/mod-box/bg06.png");
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-box/bg06_2.png");
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-box/bg06_3.png");
+  }
+}
+
+.mod-box17 { //青いボックス
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ade9ef;
+  @include border-radius();
+  @include background($color: #ecfdff);
+  >.mod-box-inner {
+    padding: 15px;
+    @include background($color: #ffffff);
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    border: 1px solid #60bff0;
+    background-color: #ebfdff;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    border: 1px solid #fd8e89;
+    background-color: #ffe0de;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    border: 1px solid #abd2f6;
+    @include background("mod-box/bg04.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    border: 1px solid #f4d34f;
+    @include background("mod-box/bg04_2.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    border: 1px solid #ffa19b;
+    @include background("mod-box/bg04_3.png", repeat-x, $color: #ffffff);
+    >.mod-box-inner {
+      @include border-radius();
+      background-color: transparent;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    border: none;
+    padding: 3px;
+    background-color: none;
+    @include background("mod-box/bg08.png", repeat);
+    > .mod-box-inner {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    border: none;
+    padding: 3px;
+    background-color: none;
+    @include background("mod-box/bg08_2.png", repeat);
+    > .mod-box-inner {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    border: none;
+    padding: 3px;
+    background-color: none;
+    @include background("mod-box/bg08_3.png", repeat);
+    > .mod-box-inner {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+}
+
+.mod-box18 { //黄色い背景
+  .ex-style_i1A1a & {
+    width: auto;
+    margin-right: -15px;
+    padding: 15px;
+    background-color: #fffdf2;
+  }
+  .ex-style_i1A2a & {
+    width: auto;
+    margin-right: -15px;
+    padding: 15px;
+    background-color: #f6f6f6;
+  }
+  .ex-style_i1A3a & {
+    width: auto;
+    margin-right: -15px;
+    padding: 15px;
+    background-color: #fff9ee;
+  }
+  .ex-style_i1B1a &,
+  .ex-style_i1B1b &,
+  .ex-style_i1B1c &,
+  .ex-style_i1B1d & {
+    padding: 15px;
+    background-color: #e6f8ff;
+  }
+  .ex-style_i1B2a &,
+  .ex-style_i1B2b &,
+  .ex-style_i1B2c &,
+  .ex-style_i1B2d & {
+    padding: 15px;
+    background-color: #FBF3C8;
+  }
+  .ex-style_i1B3a &,
+  .ex-style_i1B3b &,
+  .ex-style_i1B3c &,
+  .ex-style_i1B3d & {
+    padding: 15px;
+    background-color: #ffefe5;
+  }
+  .ex-style_i1C1a &,
+  .ex-style_i1C1b &,
+  .ex-style_i1C1c &,
+  .ex-style_i1C1d & {
+    border: 1px solid #c9e0ff;
+    background: none;
+    padding: 15px;
+  }
+  .ex-style_i1C2a &,
+  .ex-style_i1C2b &,
+  .ex-style_i1C2c &,
+  .ex-style_i1C2d & {
+    border: 1px solid #f99317;
+    background: none;
+    padding: 15px;
+  }
+  .ex-style_i1C3a &,
+  .ex-style_i1C3b &,
+  .ex-style_i1C3c &,
+  .ex-style_i1C3d & {
+    border: 1px solid #f2d028;
+    background: none;
+    padding: 15px;
+  }
+}
+
+.mod-box19 {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid $m_box3BdColor;
+  @include border-radius();
+  background-color: $m_box3BgColor;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    border: 1px solid $m_box3BdColor2;
+    background-color: $m_box3BgColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    border: 1px solid $m_box3BdColor3;
+    background-color: $m_box3BgColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    border: 1px solid $d_boxBdColor;
+    @include background("mod-box/bg04.png", repeat-x, $color: #ffffff);
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    border: 1px solid $d_boxBdColor2;
+    @include background("mod-box/bg04_2.png", repeat-x, $color: #ffffff);
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    border: 1px solid $d_boxBdColor3;
+    @include background("mod-box/bg04_3.png", repeat-x, $color: #ffffff);
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    border: 1px solid #d1c9a4;
+  }
+}
+
+.mod-box20 {
+  width: 100%;
+  border: 2px solid #7ed1d9;
+  @include border-radius();
+  padding: 25px 25px 0;
+  margin-bottom: 30px;
+  .ex-style_01A2a & {
+     border: 2px solid #b29e3b;
+    }
+  .ex-style_01A3a & {
+    border: 2px solid #f6cd77;
+    }
+  .ex-style_01B1a & {
+    border: 2px solid #355591;
+  }
+  .ex-style_01B3a & {
+    border: 2px solid #448DC9;
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C2a &,
+  .ex-style_01C3a & {
+    border: none;
+  }
+}
+
+
+
+.mod-box21 {
+  width: 100%;
+  background-color: #fbf6e9;
+  &.ex-style_01B1a,
+  &.ex-style_01B1b,
+  &.ex-style_01B1c,
+  &.ex-style_01B1d {
+    background-image: url("img/mod-box/bg12.png");
+    background-repeat: repeat-x;
+    background-color: $box21BgColor;
+  }
+  &.ex-style_01B2a,
+  &.ex-style_01B2b,
+  &.ex-style_01B2c,
+  &.ex-style_01B2d {
+    background-image: url("img/mod-box/bg12_2.png");
+    background-repeat: repeat-x;
+    background-color: $box21BgColor2;
+  }
+  &.ex-style_01B3a,
+  &.ex-style_01B3b,
+  &.ex-style_01B3c,
+  &.ex-style_01B3d {
+    background-image: url("img/mod-box/bg12_3.png");
+    background-repeat: repeat-x;
+    background-color: $box21BgColor3;
+  }
+  &.ex-style_01C1a,
+  &.ex-style_01C1b,
+  &.ex-style_01C1c,
+  &.ex-style_01C1d {
+    background-color: #c5eef9;
+    background-image: url("img/mod-box/bg11.png");
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01C2a,
+  &.ex-style_01C2b,
+  &.ex-style_01C2c,
+  &.ex-style_01C2d {
+    background-color: #b3d0f9;
+    background-image: url("img/mod-box/bg11_2.png");
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01C3a,
+  &.ex-style_01C3b,
+  &.ex-style_01C3c,
+  &.ex-style_01C3d {
+    background-color: #ffd1a6;
+    background-image: url("img/mod-box/bg11_3.png");
+    background-repeat: repeat-x;
+  }
+}
+
+//footerのログイン、コピーライト用
+.mod-box22 {
+  width: 100%;
+}
+
+//ヘッター囲み用
+.mod-box23 {
+  width: 100%;
+  &.ex-style_01B1a,
+  &.ex-style_01B1b,
+  &.ex-style_01B1c,
+  &.ex-style_01B1d {
+    background-image: url("img/mod-box/bg07.png");
+    background-repeat: repeat-x;
+    background-color: $dh_boxBgColor;
+  }
+  &.ex-style_01B2a,
+  &.ex-style_01B2b,
+  &.ex-style_01B2c,
+  &.ex-style_01B2d {
+    background-image: url("img/mod-box/bg07_2.png");
+    background-repeat: repeat-x;
+    background-color: $dh_boxBgColor2;
+  }
+  &.ex-style_01B3a,
+  &.ex-style_01B3b,
+  &.ex-style_01B3c,
+  &.ex-style_01B3d {
+    background-image: url("img/mod-box/bg07_3.png");
+    background-repeat: repeat-x;
+    background-color: $dh_boxBgColor3;
+  }
+}
+
+//ヘッター
+.mod-box24 {
+  width: 100%;
+  &.ex-style_01B1a,
+  &.ex-style_01B1b,
+  &.ex-style_01B1c,
+  &.ex-style_01B1d {
+    background-image: url(img/mod-box/bg09.png);
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01B2a,
+  &.ex-style_01B2b,
+  &.ex-style_01B2c,
+  &.ex-style_01B2d {
+    background-image: url(img/mod-box/bg09_2.png);
+    background-repeat: repeat-x;
+  }
+  &.ex-style_01B3a,
+  &.ex-style_01B3b,
+  &.ex-style_01B3c,
+  &.ex-style_01B3d {
+    background-image: url(img/mod-box/bg09_3.png);
+    background-repeat: repeat-x;
+  }
+}
+
+.mod-box25 {//フッター用余白なし
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mod-box26 {//ヘッター用余白なし
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}

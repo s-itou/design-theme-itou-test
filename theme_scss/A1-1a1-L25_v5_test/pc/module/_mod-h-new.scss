@@ -1,0 +1,1915 @@
+@charset "UTF-8";
+@import "../pc-style/mod-h-style-new";
+
+
+.mod-h_2_ver2 {
+  @include mod-h_2-common-style;
+  .ex-style_01A1 & {
+    @include mod-h_2-01A;
+    @include deco-style-mod-h_2-01A1;
+  }
+  .ex-style_01A2 & {
+    @include mod-h_2-01A;
+    @include deco-style-mod-h_2-01A2;
+  }
+  .ex-style_01A3 & {
+    @include mod-h_2-01A;
+    @include deco-style-mod-h_2-01A3;
+  }
+  .ex-style_01B1 & {
+    @include mod-h_2-01B;
+    @include deco-style-mod-h_2-01B1;
+  }
+  .ex-style_01B2 & {
+    @include mod-h_2-01B;
+    @include deco-style-mod-h_2-01B2;
+  }
+  .ex-style_01B3 & {
+    @include mod-h_2-01B;
+    @include deco-style-mod-h_2-01B3;
+  }
+  .ex-style_01C1 & {
+    @include mod-h_2-01C;
+    @include deco-style-mod-h_2-01C1;
+  }
+  .ex-style_01C2 & {
+    @include mod-h_2-01C;
+    @include deco-style-mod-h_2-01C2;
+  }
+  .ex-style_01C3 & {
+    @include mod-h_2-01C;
+    @include deco-style-mod-h_2-01C3;
+  }
+  //faq-setに移行
+  // .ex-style_q1A1 & {
+  //   @include mod-h_2-q1A;
+  //   @include deco-style-mod-h_2-q1A1;
+  // }
+  // .ex-style_q1A2 & {
+  //   @include mod-h_2-q1A;
+  //   @include deco-style-mod-h_2-q1A2;
+  // }
+  // .ex-style_q1A3 & {
+  //   @include mod-h_2-q1A;
+  //   @include deco-style-mod-h_2-q1A3;
+  // }
+  // .ex-style_q1B1 & {
+  //   @include mod-h_2-q1B;
+  //   @include deco-style-mod-h_2-q1B1;
+  // }
+  // .ex-style_q1B2 & {
+  //   @include mod-h_2-q1B;
+  //   @include deco-style-mod-h_2-q1B2;
+  // }
+  // .ex-style_q1B3 & {
+  //   @include mod-h_2-q1B;
+  //   @include deco-style-mod-h_2-q1B3;
+  // }
+  // .ex-style_q1C1 & {
+  //   @include mod-h_2-q1C;
+  //   @include deco-style-mod-h_2-q1C1;
+  // }
+  // .ex-style_q1C2 & {
+  //   @include mod-h_2-q1C;
+  //   @include deco-style-mod-h_2-q1C2;
+  // }
+  // .ex-style_q1C3 & {
+  //   @include mod-h_2-q1C;
+  //   @include deco-style-mod-h_2-q1C3;
+  // }
+}
+
+// .mod-h_2A1 {
+//   @include mod-h_2-01A;
+//   @include deco-style-mod-h_2-01A1;
+// }
+// .mod-h_2A2 {
+//   @include mod-h_2-01A;
+//   @include deco-style-mod-h_2-01A2;
+// }
+// .mod-h_2A3 {
+//   @include mod-h_2-01A;
+//   @include deco-style-mod-h_2-01A3;
+// }
+// .mod-h_2B1 {
+//   @include mod-h_2-01B;
+//   @include deco-style-mod-h_2-01B1;
+// }
+// .mod-h_2B2 {
+//   @include mod-h_2-01B;
+//   @include deco-style-mod-h_2-01B2;
+// }
+// .mod-h_2B3 {
+//   @include mod-h_2-01B;
+//   @include deco-style-mod-h_2-01B3;
+// }
+// .mod-h_2C1 {
+//     @include mod-h_2-01C;
+//     @include deco-style-mod-h_2-01C1;
+// }
+// .mod-h_2C2 {
+//     @include mod-h_2-01C;
+//     @include deco-style-mod-h_2-01C2;
+// }
+// .mod-h_2C3 {
+//     @include mod-h_2-01C;
+//     @include deco-style-mod-h_2-01C3;
+// }
+// .mod-h_2D1 {
+//   @include mod-h_2-01DEF;
+//   @include mod-h_2-01D;
+//   @include deco-style-mod-h_2-01D1;
+// }
+// .mod-h_2D2 {
+//   @include mod-h_2-01DEF;
+//   @include mod-h_2-01D;
+//   @include deco-style-mod-h_2-01D2;
+// }
+// .mod-h_2D3 {
+//   @include mod-h_2-01DEF;
+//   @include mod-h_2-01D;
+//   @include deco-style-mod-h_2-01D3;
+// }
+// .mod-h_2E1 {
+//   @include mod-h_2-01DEF;
+//   @include mod-h_2-01E;
+//   @include deco-style-mod-h_2-01E1;
+// }
+// .mod-h_2E2 {
+//   @include mod-h_2-01DEF;
+//   @include mod-h_2-01E;
+//   @include deco-style-mod-h_2-01E2;
+// }
+// .mod-h_2E3 {
+//   @include mod-h_2-01DEF;
+//   @include mod-h_2-01E;
+//   @include deco-style-mod-h_2-01E3;
+// }
+// .mod-h_2F1 {
+//   @include mod-h_2-01DEF;
+//     @include mod-h_2-01F;
+//     @include deco-style-mod-h_2-01F1;
+// }
+// .mod-h_2F2 {
+//   @include mod-h_2-01DEF;
+//     @include mod-h_2-01F;
+//     @include deco-style-mod-h_2-01F2;
+// }
+// .mod-h_2F3 {
+//   @include mod-h_2-01DEF;
+//     @include mod-h_2-01F;
+//     @include deco-style-mod-h_2-01F3;
+// }
+
+// .ex-style_01A1,
+// .ex-style_01B1,
+// .ex-style_01C1 {
+//   .mod-h_2_v {
+//     @include mod-h_2_v-01A1;
+//   }
+//   .mod-h_2_v2 {
+//     @include mod-h_2_v2-01A1;
+//   }
+//   .mod-h_2_v3 {
+//     @include mod-h_2_v3-01A1;
+//   }
+//   .mod-h_2_v4 {
+//     @include mod-h_2_v4-01A1;
+//   }
+//   .mod-h_2_v5 {
+//     @include mod-h_2_v5-01A1;
+//   }
+//   .mod-h_2_v6 {
+//     @include mod-h_2_v6-01A1;
+//   }
+//   .mod-h_2_v7 {
+//     @include mod-h_2_v7-01A1;
+//   }
+//   .mod-h_2_v8 {
+//     @include mod-h_2_v8-01A1;
+//   }
+//   .mod-h_2_v9 {
+//     @include mod-h_2_v9-01A1;
+//   }
+//   .mod-h_2_v10 {
+//     @include mod-h_2_v10-01A1;
+//   }
+// }
+// .ex-style_01A2,
+// .ex-style_01B2,
+// .ex-style_01C2 {
+//   .mod-h_2_v {
+//     @include mod-h_2_v-01A2;
+//   }
+//   .mod-h_2_v2 {
+//     @include mod-h_2_v2-01A2;
+//   }
+//   .mod-h_2_v3 {
+//     @include mod-h_2_v3-01A2;
+//   }
+//   .mod-h_2_v4 {
+//     @include mod-h_2_v4-01A2;
+//   }
+//   .mod-h_2_v5 {
+//     @include mod-h_2_v5-01A2;
+//   }
+//   .mod-h_2_v6 {
+//     @include mod-h_2_v6-01A2;
+//   }
+//   .mod-h_2_v7 {
+//     @include mod-h_2_v7-01A2;
+//   }
+//   .mod-h_2_v8 {
+//     @include mod-h_2_v8-01A2;
+//   }
+//   .mod-h_2_v9 {
+//     @include mod-h_2_v9-01A2;
+//   }
+//   .mod-h_2_v10 {
+//     @include mod-h_2_v10-01A2;
+//   }
+// }
+// .ex-style_01A3,
+// .ex-style_01B3,
+// .ex-style_01C3 {
+//   .mod-h_2_v {
+//     @include mod-h_2_v-01A3;
+//   }
+//   .mod-h_2_v2 {
+//     @include mod-h_2_v2-01A3;
+//   }
+//   .mod-h_2_v3 {
+//     @include mod-h_2_v3-01A3;
+//   }
+//   .mod-h_2_v4 {
+//     @include mod-h_2_v4-01A3;
+//   }
+//   .mod-h_2_v5 {
+//     @include mod-h_2_v5-01A3;
+//   }
+//   .mod-h_2_v6 {
+//     @include mod-h_2_v6-01A3;
+//   }
+//   .mod-h_2_v7 {
+//     @include mod-h_2_v7-01A3;
+//   }
+//   .mod-h_2_v8 {
+//     @include mod-h_2_v8-01A3;
+//   }
+//   .mod-h_2_v9 {
+//     @include mod-h_2_v9-01A3;
+//   }
+//   .mod-h_2_v10 {
+//     @include mod-h_2_v10-01A3;
+//   }
+// }
+
+.mod-h_3_ver2 {
+  @include mod-h_3-common-style;
+  .ex-style_01A1 & {
+    @include mod-h_3-01A;
+    @include deco-style-mod-h_3-01A1;
+  }
+  .ex-style_01A2 & {
+    @include mod-h_3-01A;
+    @include deco-style-mod-h_3-01A2;
+  }
+  .ex-style_01A3 & {
+    @include mod-h_3-01A;
+    @include deco-style-mod-h_3-01A3;
+  }
+  .ex-style_01B1 & {
+    @include mod-h_3-01B;
+    @include deco-style-mod-h_3-01B1;
+  }
+  .ex-style_01B2 & {
+    @include mod-h_3-01B;
+    @include deco-style-mod-h_3-01B2;
+  }
+  .ex-style_01B3 & {
+    @include mod-h_3-01B;
+    @include deco-style-mod-h_3-01B3;
+  }
+  .ex-style_01C1 & {
+    @include mod-h_3-01C;
+    @include deco-style-mod-h_3-01C1;
+  }
+  .ex-style_01C2 & {
+    @include mod-h_3-01C;
+    @include deco-style-mod-h_3-01C2;
+  }
+  .ex-style_01C3 & {
+    @include mod-h_3-01C;
+    @include deco-style-mod-h_3-01C3;
+  }
+}
+
+// .mod-h_3A1 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01A;
+//   @include deco-style-mod-h_3-01A1;
+// }
+// .mod-h_3A2 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01A;
+//   @include deco-style-mod-h_3-01A2;
+// }
+// .mod-h_3A3 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01A;
+//   @include deco-style-mod-h_3-01A3;
+// }
+// .mod-h_3B1 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01B;
+//   @include deco-style-mod-h_3-01B1;
+// }
+// .mod-h_3B2 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01B;
+//   @include deco-style-mod-h_3-01B2;
+// }
+// .mod-h_3B3 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01B;
+//   @include deco-style-mod-h_3-01B3;
+// }
+// .mod-h_3C1 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01C;
+//   @include deco-style-mod-h_3-01C1;
+// }
+// .mod-h_3C2 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01C;
+//   @include deco-style-mod-h_3-01C2;
+// }
+// .mod-h_3C3 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01C;
+//   @include deco-style-mod-h_3-01C3;
+// }
+// .mod-h_3D1 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01D;
+//   @include deco-style-mod-h_3-01D1;
+// }
+// .mod-h_3D2 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01D;
+//   @include deco-style-mod-h_3-01D2;
+// }
+// .mod-h_3D3 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01D;
+//   @include deco-style-mod-h_3-01D3;
+// }
+// .mod-h_3E1 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01E;
+//   @include deco-style-mod-h_3-01E1;
+// }
+// .mod-h_3E2 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01E;
+//   @include deco-style-mod-h_3-01E2;
+// }
+// .mod-h_3E3 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01E;
+//   @include deco-style-mod-h_3-01E3;
+// }
+// .mod-h_3F1 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01F;
+//   @include deco-style-mod-h_3-01F1;
+// }
+// .mod-h_3F2 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01F;
+//   @include deco-style-mod-h_3-01F2;
+// }
+// .mod-h_3F3 {
+//   @include mod-h_3-common-style;
+//   @include mod-h_3-01F;
+//   @include deco-style-mod-h_3-01F3;
+// }
+
+// .mod-h_3_1 {
+//   @include mod-h_3_1-common-style;
+//   .ex-style_01A1 & {
+//     @include mod-h_3_1-01A;
+//     @include deco-style-mod-h_3_1-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include mod-h_3_1-01A;
+//     @include deco-style-mod-h_3_1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include mod-h_3_1-01A;
+//     @include deco-style-mod-h_3_1-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include mod-h_3_1-01B;
+//     @include deco-style-mod-h_3_1-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include mod-h_3_1-01B;
+//     @include deco-style-mod-h_3_1-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include mod-h_3_1-01B;
+//     @include deco-style-mod-h_3_1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include mod-h_3_1-01C;
+//     @include deco-style-mod-h_3_1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include mod-h_3_1-01C;
+//     @include deco-style-mod-h_3_1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include mod-h_3_1-01C;
+//     @include deco-style-mod-h_3_1-01C3;
+//   }
+// }
+
+.mod-h_5_ver2 {
+  @include mod-h_5-common-style;
+  .ex-style_01A1 & {
+      @include mod-h_5-01A;
+      @include deco-style-mod-h_5-01A1;
+  }
+  .ex-style_01A2 & {
+      @include mod-h_5-01A;
+      @include deco-style-mod-h_5-01A2;
+  }
+  .ex-style_01A3 & {
+      @include mod-h_5-01A;
+      @include deco-style-mod-h_5-01A3;
+  }
+  .ex-style_01B1 & {
+      @include mod-h_5-01B;
+      @include deco-style-mod-h_5-01B1;
+  }
+  .ex-style_01B2 & {
+      @include mod-h_5-01B;
+      @include deco-style-mod-h_5-01B2;
+  }
+  .ex-style_01B3 & {
+      @include mod-h_5-01B;
+      @include deco-style-mod-h_5-01B3;
+  }
+  .ex-style_01C1 & {
+      @include mod-h_5-01C;
+      @include deco-style-mod-h_5-01C1;
+  }
+  .ex-style_01C2 & {
+      @include mod-h_5-01C;
+      @include deco-style-mod-h_5-01C2;
+  }
+  .ex-style_01C3 & {
+      @include mod-h_5-01C;
+      @include deco-style-mod-h_5-01C3;
+  }
+  // .ex-style_d1A1 & {
+  //   @include mod-h_5-d1A;
+  //   @include deco-style-mod-h_5-d1A1;
+  // }
+  // .ex-style_d1A2 & {
+  //   @include mod-h_5-d1A;
+  //   @include deco-style-mod-h_5-d1A2;
+  // }
+  // .ex-style_d1A3 & {
+  //   @include mod-h_5-d1A;
+  //   @include deco-style-mod-h_5-d1A3;
+  // }
+  // .ex-style_d1B1 & {
+  //   @include mod-h_5-d1B;
+  //   @include deco-style-mod-h_5-d1B1;
+  // }
+  // .ex-style_d1B2 & {
+  //   @include mod-h_5-d1B;
+  //   @include deco-style-mod-h_5-d1B2;
+  // }
+  // .ex-style_d1B3 & {
+  //   @include mod-h_5-d1B;
+  //   @include deco-style-mod-h_5-d1B3;
+  // }
+  // .ex-style_d1C1 & {
+  //   @include mod-h_5-d1C;
+  //   @include deco-style-mod-h_5-d1C1;
+  // }
+  // .ex-style_d1C2 & {
+  //   @include mod-h_5-d1C;
+  //   @include deco-style-mod-h_5-d1C2;
+  // }
+  // .ex-style_d1C3 & {
+  //   @include mod-h_5-d1C;
+  //   @include deco-style-mod-h_5-d1C3;
+  // }
+  // .ex-style_i1A1 & {
+  //   @include mod-h_5-i1A;
+  //   @include deco-style-mod-h_5-i1A1;
+  // }
+  // .ex-style_i1A2 & {
+  //   @include mod-h_5-i1A;
+  //   @include deco-style-mod-h_5-i1A2;
+  // }
+  // .ex-style_i1A3 & {
+  //   @include mod-h_5-i1A;
+  //   @include deco-style-mod-h_5-i1A3;
+  // }
+  // .ex-style_i1B1 & {
+  //   @include mod-h_5-i1B;
+  //   @include deco-style-mod-h_5-i1B1;
+  // }
+  // .ex-style_i1B2 & {
+  //   @include mod-h_5-i1B;
+  //   @include deco-style-mod-h_5-i1B2;
+  // }
+  // .ex-style_i1B3 & {
+  //   @include mod-h_5-i1B;
+  //   @include deco-style-mod-h_5-i1B3;
+  // }
+  // .ex-style_i1C1 & {
+  //   @include mod-h_5-i1C;
+  //   @include deco-style-mod-h_5-i1C1;
+  // }
+  // .ex-style_i1C2 & {
+  //   @include mod-h_5-i1C;
+  //   @include deco-style-mod-h_5-i1C2;
+  // }
+  // .ex-style_i1C3 & {
+  //   @include mod-h_5-i1C;
+  //   @include deco-style-mod-h_5-i1C3;
+  // }
+}
+
+// .mod-h_5A1 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01A;
+//   @include deco-style-mod-h_5-01A1;
+// }
+// .mod-h_5A2 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01A;
+//   @include deco-style-mod-h_5-01A2;
+// }
+// .mod-h_5A3 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01A;
+//   @include deco-style-mod-h_5-01A3;
+// }
+// .mod-h_5B1 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01B;
+//   @include deco-style-mod-h_5-01B1;
+// }
+// .mod-h_5B2 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01B;
+//   @include deco-style-mod-h_5-01B2;
+// }
+// .mod-h_5B3 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01B;
+//   @include deco-style-mod-h_5-01B3;
+// }
+// .mod-h_5C1 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01C;
+//   @include deco-style-mod-h_5-01C1;
+// }
+// .mod-h_5C2 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01C;
+//   @include deco-style-mod-h_5-01C2;
+// }
+// .mod-h_5C3 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01C;
+//   @include deco-style-mod-h_5-01C3;
+// }
+// .mod-h_5D1 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01D;
+//   @include deco-style-mod-h_5-01D1;
+// }
+// .mod-h_5D2 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01D;
+//   @include deco-style-mod-h_5-01D2;
+// }
+// .mod-h_5D3 {
+//   @include mod-h_5-common-style;
+//   @include mod-h_5-01D;
+//   @include deco-style-mod-h_5-01D3;
+// }
+
+// .mod-h_5_2 {
+//   @include mod-h_5_2-common-style;
+//   .ex-style_01A1 & {
+//     @include mod-h_5_2-01A;
+//     @include deco-style-mod-h_5_2-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include mod-h_5_2-01A;
+//     @include deco-style-mod-h_5_2-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include mod-h_5_2-01A;
+//     @include deco-style-mod-h_5_2-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include mod-h_5_2-01B;
+//     @include deco-style-mod-h_5_2-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include mod-h_5_2-01B;
+//     @include deco-style-mod-h_5_2-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include mod-h_5_2-01B;
+//     @include deco-style-mod-h_5_2-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include mod-h_5_2-01C;
+//     @include deco-style-mod-h_5_2-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include mod-h_5_2-01C;
+//     @include deco-style-mod-h_5_2-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include mod-h_5_2-01C;
+//     @include deco-style-mod-h_5_2-01C3;
+//   }
+//   .ex-style_i1A1 & {
+//     @include mod-h_5_2-i1A;
+//     @include deco-style-mod-h_5_2-i1A1;
+//   }
+//   .ex-style_i1A2 & {
+//     @include mod-h_5_2-i1A;
+//     @include deco-style-mod-h_5_2-i1A2;
+//   }
+//   .ex-style_i1A3 & {
+//     @include mod-h_5_2-i1A;
+//     @include deco-style-mod-h_5_2-i1A3;
+//   }
+//   .ex-style_i1B1 & {
+//     @include mod-h_5_2-i1B;
+//     @include deco-style-mod-h_5_2-i1B1;
+//   }
+//   .ex-style_i1B2 & {
+//     @include mod-h_5_2-i1B;
+//     @include deco-style-mod-h_5_2-i1B2;
+//   }
+//   .ex-style_i1B3 & {
+//     @include mod-h_5_2-i1B;
+//     @include deco-style-mod-h_5_2-i1B3;
+//   }
+//   .ex-style_i1C1 & {
+//     @include mod-h_5_2-i1C;
+//     @include deco-style-mod-h_5_2-i1C1;
+//   }
+//   .ex-style_i1C2 & {
+//     @include mod-h_5_2-i1C;
+//     @include deco-style-mod-h_5_2-i1C2;
+//   }
+//   .ex-style_i1C3 & {
+//     @include mod-h_5_2-i1C;
+//     @include deco-style-mod-h_5_2-i1C3;
+//   }
+// }
+
+// .mod-h_5_3 {
+//   @include mod-h_5_3-common-style;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_3-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_3-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_3-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_3-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_3-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_3-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_3-01A1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_3-01A2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_3-01A3;
+//   }
+// }
+
+// .mod-h_5_4 {
+//   @include mod-h_5_4-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 &,
+//   .ex-style_c1A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_5 {
+//   @include mod-h_5_5-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+
+.mod-h_5_6_ver2 {//香川さん新規部品
+  @include mod-h_5_6-common-style;
+  @include mod-h_5_x2;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_x2-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_x2-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_x2-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_x2-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_x2-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_x2-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_x2-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_x2-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_x2-01C3;
+  }
+}
+
+.mod-h_5_hyo_top {
+  @include mod-h_5_hyo-common-style;
+  @include mod-h_5_hyo;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_hyo-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_hyo-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_hyo-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_hyo-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_hyo-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_hyo-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_hyo-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_hyo-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_hyo-01C3;
+  }
+}
+
+.mod-h_5_hyo_bottom {
+  @include mod-h_5_hyo-common-style;
+  @include mod-h_5_hyo;
+  @include mod-h_5_hyo_bottom;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_hyo-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_hyo-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_hyo-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_hyo-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_hyo-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_hyo-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_hyo-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_hyo-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_hyo-01C3;
+  }
+}
+
+
+.mod-h_5_list_top {
+  @include mod-h_5_list-common-style;
+  @include mod-h_5_list;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_list-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_list-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_list-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_list-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_list-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_list-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_list-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_list-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_list-01C3;
+  }
+}
+
+
+.mod-h_5_list_bottom {
+  @include mod-h_5_list-common-style;
+  @include mod-h_5_list;
+  @include mod-h_5_list_bottom;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_list-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_list-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_list-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_list-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_list-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_list-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_list-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_list-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_list-01C3;
+  }
+}
+
+
+.mod-h_5_pic_top {
+  @include mod-h_5_pic-common-style;
+  @include mod-h_5_pic;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_pic-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_pic-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_pic-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_pic-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_pic-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_pic-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_pic-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_pic-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_pic-01C3;
+  }
+}
+
+
+.mod-h_5_pic_bottom {
+  @include mod-h_5_pic-common-style;
+  @include mod-h_5_pic;
+  @include mod-h_5_pic_bottom;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_pic-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_pic-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_pic-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_pic-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_pic-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_pic-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_pic-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_pic-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_pic-01C3;
+  }
+}
+
+
+// .mod-h_5_9 {
+//   @include mod-h_5_9-common-style;
+//   @include mod-h_5_x1;
+//   &.ex-style_01A1 {
+//     @include deco-style-mod-h_5_x1-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_10 {
+//   @include mod-h_5_10-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//     .mod-h {
+//       color: #fd8e89;
+//     }
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_11 {
+//   @include mod-h_5_11-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//     .mod-h {
+//       color: #fd8e89;
+//     }
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_12 {
+//   @include mod-h_5_12-common-style;
+//   @include mod-h_5_x2;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x2-01A1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x2-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x2-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x2-01B1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x2-01B2;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x2-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x2-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x2-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x2-01C3;
+//   }
+// }
+
+// .mod-h_5_13 {
+//   @include mod-h_5_13-common-style;
+//   @include mod-h_5_x2;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x2-01A1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x2-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x2-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x2-01B1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x2-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x2-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x2-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x2-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x2-01C3;
+//   }
+// }
+
+// .mod-h_5_14 {
+//   @include mod-h_5_14-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_15 {
+//   @include mod-h_5_15-common-style;
+//   @include mod-h_5_x2;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x2-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x2-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x2-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x2-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x2-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x2-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x2-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x2-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x2-01C3;
+//   }
+// }
+
+// .mod-h_5_21 {
+//   @include mod-h_5_21-common-style;
+//   @include mod-h_5_x3;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x3-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x3-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x3-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x3-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x3-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x3-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x3-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x3-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x3-01C3;
+//   }
+// }
+
+// .mod-h_5_22 {
+//   @include mod-h_5_22-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+
+.mod-h_5_23_ver2 {//香川さん新規部品
+    @include mod-h_5_23-common-style;
+    @include mod-h_5_x1;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_x1-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_x1-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_x1-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_x1-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_x1-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_x1-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_x1-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_x1-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_x1-01C3;
+  }
+}
+
+// .mod-h_5_24 {
+//   @include mod-h_5_24-common-style;
+//   @include mod-h_5_x2;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x2-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x2-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x2-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x2-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x2-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x2-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x2-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x2-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x2-01C3;
+//   }
+// }
+
+// .mod-h_5_25 {
+//   @include mod-h_5_25-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//     .mod-h {
+//       color: #fd8e89;
+//     }
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_26 {
+//   @include mod-h_5_26-common-style;
+//   @include mod-h_5_x2;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x2-01A1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x2-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x2-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x2-01B1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x2-01B2;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x2-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x2-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x2-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x2-01C3;
+//   }
+// }
+
+// .mod-h_5_27 {
+//   @include mod-h_5_27-common-style;
+//   @include mod-h_5_x2;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x2-01A1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x2-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x2-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x2-01B1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x2-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x2-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x2-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x2-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x2-01C3;
+//   }
+// }
+
+// .mod-h_5_28 {
+//   @include mod-h_5_28-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_29 {
+//   @include mod-h_5_29-common-style;
+//   @include mod-h_5_x2;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x2-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x2-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x2-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x2-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x2-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x2-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x2-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x2-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x2-01C3;
+//   }
+// }
+
+// .mod-h_5_30 {
+//   @include mod-h_5_30-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_31 {
+//   @include mod-h_5_31-common-style;
+//   @include mod-h_5_x1;
+//   .ex-style_01A1 & {
+//     @include deco-style-mod-h_5_x1-01A1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style-mod-h_5_x1-01A2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style-mod-h_5_x1-01A3;
+//     .mod-h {
+//       color: #fd8e89;
+//     }
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style-mod-h_5_x1-01B1;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style-mod-h_5_x1-01B2;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style-mod-h_5_x1-01B3;
+//     .mod-h {
+//       color: #f7931d;
+//     }
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style-mod-h_5_x1-01C1;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style-mod-h_5_x1-01C2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style-mod-h_5_x1-01C3;
+//   }
+// }
+
+// .mod-h_5_32 {
+//   @include mod-h_5_32-common-style;
+//   @include mod-h_5_32-style;
+//   .ex-style_01A1 & {
+//     @include mod-h_5_32-style;
+//   }
+// }
+
+.mod-h_5_side {
+  @include mod-h_5_side-common-style;
+  @include mod-h_5_side-01A;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_side-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_side-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_side-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_side-01A1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_side-01A2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_side-01A3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_side-01A1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_side-01A2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_side-01A3;
+  }
+}
+
+.mod-h_5_list_top_side {
+  @include mod-h_5-list-side-common-style;
+  @include mod-h_5-list-side-01A;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+}
+
+.mod-h_5_list_bottom_side {
+  @include mod-h_5-list-side-common-style;
+  @include mod-h_5-list-side-01A;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+}
+
+
+.mod-h_5_pic_top_side {
+  @include mod-h_5-pic-side-common-style;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+}
+
+
+.mod-h_5_pic_bottom_side {
+  @include mod-h_5-pic-side-common-style;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_pic_bottom_side-01A3;
+  }
+}
+
+
+// ***********************************
+// 現行モジュールへのスタイル取り込み
+// ***********************************
+
+// .mod-h_5 { 親モジュール
+// }
+// .mod-h_5_2 {
+//   @extend .mod-h_5; //+set +カラム
+// }
+// .mod-h_5_3 {
+// }
+// .mod-h_5_4 {
+//   @extend .mod-h_5_6; //+set
+// }
+// .mod-h_5_5 {
+//   @extend .mod-h_5_6; //+set
+// }
+// .mod-h_5_6 { 親モジュール
+// }
+// .mod-h_5_7 {
+//   @extend .mod-h_5_6; //+set
+// }
+// .mod-h_5_9 {
+//   @extend .mod-h_5_6; //+set
+// }
+// .mod-h_5_10 {
+//   @extend .mod-h_5_6; //+set
+// }
+// .mod-h_5_10 {
+// }
+// .mod-h_5_11 {
+// }
+// .mod-h_5_12 {
+// }
+// .mod-h_5_14 {
+//   @extend .mod-h_5_6; //+set
+// }
+// .mod-h_5_15 {
+//   @extend .mod-h_5_6; //+set
+// }
+// .mod-h_5_21 {
+// }
+// .mod-h_5_22 {
+//   @extend .mod-h_5_23; //+set
+// }
+// .mod-h_5_23 { 親モジュール
+// }
+// .mod-h_5_24 {
+//   @extend .mod-h_5_23; //+set
+// }
+// .mod-h_5_25 {
+// }
+// .mod-h_5_26 {
+// }
+// .mod-h_5_28 {
+//   @extend .mod-h_5_23; //+set
+// }
+// .mod-h_5_29 {
+//   @extend .mod-h_5_23; //+set
+// }
+// .mod-h_5_30 {
+//   @extend .mod-h_5_23; //+set
+// }
+// .mod-h_5_31 {
+// }
+// .mod-h_5_32 {
+// }

@@ -1,0 +1,882 @@
+@charset "UTF-8";
+@import "../pc-style/mod-link-style";
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-link
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+.mod-link_ver2 {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-1st {
+  @include common-style-mod-link;
+  @include module-style-mod-link-1st;
+  //decoはmod-linkをinclude
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-2nd {
+  @include common-style-mod-link;
+  @include module-style-mod-link-2nd;
+  //decoはmod-linkをinclude
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-list {
+  @include common-style-mod-link;
+  @include module-style-mod-link-list;
+  //decoはmod-linkをinclude
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-hyo {
+  @include common-style-mod-link;
+  @include module-style-mod-link-hyo;
+  //decoはmod-linkをinclude
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-pic {
+  @include common-style-mod-link;
+  @include module-style-mod-link-pic;
+  //decoはmod-linkをinclude
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-back {
+  @include common-style-mod-link;
+  @include module-style-mod-link-back;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link-back;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link-back;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link-back;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link-back;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link-back;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link-back;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link-back;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link-back;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link-back;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-link-yudo
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+.mod-link-yudo {
+@include common-style-mod-link-yudo;
+@include module-style-mod-link-yudo;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link-yudo;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link-yudo;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link-yudo;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01B1-mod-link-yudo;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01B2-mod-link-yudo;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01B3-mod-link-yudo;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01C1-mod-link-yudo;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01C2-mod-link-yudo;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C3-mod-link-yudo;
+  }
+  .ex-style_02A1 & {
+    @include deco-style01A1-mod-link-yudo;
+  }
+  .ex-style_02A2 & {
+    @include deco-style02A2-mod-link-yudo;
+  }
+  .ex-style_02A3 & {
+    @include deco-style02A3-mod-link-yudo;
+  }
+  .ex-style_02B1 & {
+    @include deco-style02B1-mod-link-yudo;
+  }
+  .ex-style_02B2 & {
+    @include deco-style02B2-mod-link-yudo;
+  }
+  .ex-style_02B3 & {
+    @include deco-style02B3-mod-link-yudo;
+  }
+  .ex-style_02C1 & {
+    @include deco-style02C1-mod-link-yudo;
+  }
+  .ex-style_02C2 & {
+    @include deco-style02C2-mod-link-yudo;
+  }
+  .ex-style_02C3 & {
+    @include deco-style02C3-mod-link-yudo;
+  }
+  .ex-style_03A1 & {
+    @include deco-style03A1-mod-link-yudo;
+  }
+  .ex-style_03A2 & {
+    @include deco-style03A2-mod-link-yudo;
+  }
+  .ex-style_03A3 & {
+    @include deco-style03A3-mod-link-yudo;
+  }
+  .ex-style_03B1 & {
+    @include deco-style03B1-mod-link-yudo;
+  }
+  .ex-style_03B2 & {
+    @include deco-style03B2-mod-link-yudo;
+  }
+  .ex-style_03B3 & {
+    @include deco-style03B3-mod-link-yudo;
+  }
+  .ex-style_03C1 & {
+    @include deco-style03C1-mod-link-yudo;
+  }
+  .ex-style_03C2 & {
+    @include deco-style03C2-mod-link-yudo;
+  }
+  .ex-style_03C3 & {
+    @include deco-style03C3-mod-link-yudo;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-link-side
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+.mod-link-side,
+.mod-link-1st-side,
+.mod-link-2nd-side {
+  @include common-side-style-mod-link;
+  @include module-style-mod-link-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-pic-side {
+  @include common-side-style-mod-link;
+  @include module-style-mod-link-pic-side;
+  //decoはmod-link-sideをinclude
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-list-side {
+  @include common-side-style-mod-link;
+  @include module-style-mod-link-list-side;
+  //decoはmod-link-sideをinclude
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+.mod-link-hyo-side {
+  @include common-side-style-mod-link;
+  @include module-style-mod-link-hyo-side;
+  //decoはmod-link-sideをinclude
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-link-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-link-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-link-side;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01A2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01A3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01B1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01B2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01B3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_01C1 a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_01C2 a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_01C3 a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// .mod-link {//.ex-align-centerにも暫定対応記述あり
+//   @extend .mod-link-2nd;
+// }
+// .mod-link2 {//.ex-align-centerにも暫定対応記述あり
+//   @extend .mod-link-pic;
+// }
+// .mod-link7 {//.ex-align-centerにも暫定対応記述あり
+//   @extend .mod-link-yudo;
+// }
+// .mod-link8 {
+//   @extend .mod-link-side;
+// }
+// .mod-link10 {//.ex-align-centerにも暫定対応記述あり
+//   @extend .mod-link-pic;//setからスタイル指定が加わる
+// }
+// .mod-link11 {//.ex-align-centerにも暫定対応記述あり
+//   @extend .mod-link-pic-side;
+// }
+// .mod-link12 {
+//   @extend .mod-link-back;
+// }
+// .mod-link13 {//.ex-align-centerにも暫定対応記述あり
+//   @extend .mod-link;
+// }
+// .mod-link14 {
+//   @extend .mod-link;//setからスタイル指定が加わる
+// }
+
+
+//以下高橋さんようなので保留
+// .mod-link15 {
+//   @extend .mod-link-side2;
+// }
+// .mod-link16 {
+//   @extend .mod-link-yoso-side;//setからスタイル指定が加わる
+// }
+
+
+
+//↓統合前にあったモジュール。いずれ削除
+
+// .mod-link-yoso-2col {
+//   @include common-style-mod-link;
+//   @include module-style-mod-link-yoso-2col;
+//   // ↓decoはmod-link-yosoと同じ
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-link;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-link;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-link;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01A1-mod-link;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01A2-mod-link;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01A3-mod-link;
+//   }
+//     .ex-style_01C1 & {
+//     @include deco-style01A1-mod-link;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01A2-mod-link;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01A3-mod-link;
+//   }
+// }
+
+
+// .mod-link-side2 {
+//   @include common-side-style-mod-link;
+//   @include module-style-mod-link-side2;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-link-side2;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-link-side2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-link-side2;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01A1-mod-link-side2;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01A2-mod-link-side2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01A3-mod-link-side2;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01A1-mod-link-side2;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01A2-mod-link-side2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01A3-mod-link-side2;
+//   }
+// }

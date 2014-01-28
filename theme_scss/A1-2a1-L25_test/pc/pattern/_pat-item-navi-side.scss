@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-navi-side
+//
+//    ・ナビゲーションの背景デザイン
+//    ・mod-side-menu, mod-side-handmenuと一緒に利用する事
+//     を前提としたデザインパターン
+//
+//    ・navi-side（サイドメニューの枠のデザイン）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-navi-side-style.scss";
+
+// -------------------------------------
+//  pat-item-navi-side の個別設定
+// -------------------------------------
+
+// navi-side ex-style1
+@mixin pat-item-navi-side-jouge-image-black {
+  @include common-style-pat-item-navi-side;
+  @include module-style-pat-item-navi-side-jouge-image;
+  @include deco-style-pat-item-navi-side-jouge-image-black;
+}
+
+// navi-side ex-style2
+@mixin pat-item-navi-side-jouge-image-blue {
+  @include common-style-pat-item-navi-side;
+  @include module-style-pat-item-navi-side-jouge-image;
+  @include deco-style-pat-item-navi-side-jouge-image-blue;
+}
+
+// navi-side ex-style3
+@mixin pat-item-navi-side-jouge-image-red {
+  @include common-style-pat-item-navi-side;
+  @include module-style-pat-item-navi-side-jouge-image;
+  @include deco-style-pat-item-navi-side-jouge-image-red;
+}
+

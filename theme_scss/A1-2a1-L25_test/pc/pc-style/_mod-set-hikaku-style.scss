@@ -1,0 +1,118 @@
+@charset "UTF-8";
+// ----------------------------
+//
+// mod-set-hikaku
+//
+// ----------------------------
+
+// ----------------------------
+// common-style
+// ----------------------------
+
+@mixin common-style-mod-set-hikaku {
+  @extend %cf;
+  margin: 30px 0 0 0;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      margin-right: 30px;
+    }
+    > .mod-2col-inner2 {
+      float: right;
+    }
+  }
+}
+
+// ----------------------------
+// module-style
+// ----------------------------
+
+@mixin module-style-mod-set-hikaku-1vs1 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      width: floor(($mainWidth - 40) / 2);
+      margin-right: 40px;
+    }
+    > .mod-2col-inner2 {
+      width: floor(($mainWidth - 40) / 2);
+    }
+  }
+}
+
+@mixin module-style-mod-set-hikaku-2vs2 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      width: floor(($mainWidth - 30) / 2);
+    }
+    > .mod-2col-inner2 {
+      width: floor(($mainWidth - 30) / 2);
+    }
+  }
+  .mod-2col50 {                           //  mod-2col22の個別対応
+    > .mod-2col-inner {
+      width: floor(($mainWidth - 60) / 4);
+    }
+    > .mod-2col-inner2 {
+    width: floor(($mainWidth - 60) / 4);
+    }
+  }
+}
+
+
+@mixin module-style-mod-set-hikaku-1vs3 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      width: floor(($mainWidth - 30) / 2);
+    }
+    > .mod-2col-inner2 {
+      width: floor(($mainWidth - 30) / 2);
+
+      .mod-3col_ver2 {         // 内部で利用している3列の指定
+      > .mod-3col-inner {
+        width: floor(($mainWidth - 60) / 4);
+        margin-right: 15px;
+      }
+      > .mod-3col-inner2 {
+        width: floor(($mainWidth - 60) / 4);
+        margin-right: 15px;
+      }
+      > .mod-3col-inner3 {
+        width: floor(($mainWidth - 60) / 4);
+      }
+    }
+  }
+}
+
+
+@mixin module-style-mod-set-hikaku-1vs2 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      width: floor(($mainWidth - 40) / 3);
+    }
+    > .mod-2col-inner2 {
+      width: floor(($mainWidth - 40) / 3 * 2) + 10;
+    }
+  }
+  .mod-2col50 {                           //  mod-2col25の個別対応
+    > .mod-2col-inner {
+      width: floor(($mainWidth - 40) / 3);
+      margin-right: 10px;
+    }
+    > .mod-2col-inner2 {
+      width: floor(($mainWidth - 40) / 3);
+    }
+  }
+}
+
+@mixin module-style-mod-set-hikaku-1vs3 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      width: floor(($mainWidth - 60) / 4);
+    }
+    > .mod-2col-inner2 {
+      width: floor(($mainWidth - 60) / 4 * 3) + 30;
+    }
+  }
+}
+
+

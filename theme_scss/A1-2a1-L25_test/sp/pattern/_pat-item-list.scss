@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-list
+//
+//    ・枠で囲んだデザインパターン。
+//
+//    ・list-check（チェックリスト）
+//    ・list-number（番号リスト）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-list-style.scss";
+
+// ----------------------------------
+//  pat-item-list の個別設定
+//
+//　　・以下の定義が、上位のモジュールから呼び出される
+// ----------------------------------
+
+// チェックリスト
+@mixin pat-item-list-check-1 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-1;
+  @include deco-style-pat-item-list-check-1;
+}
+@mixin pat-item-list-check-2 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-1;
+  @include deco-style-pat-item-list-check-2;
+}
+@mixin pat-item-list-check-3 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-1;
+  @include deco-style-pat-item-list-check-3;
+}
+// チェックリスト（下線画像あり）
+@mixin pat-item-list-check-4 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-2;
+  @include deco-style-pat-item-list-check-4;
+}
+@mixin pat-item-list-check-5 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-2;
+  @include deco-style-pat-item-list-check-5;
+}
+@mixin pat-item-list-check-6 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-2;
+  @include deco-style-pat-item-list-check-6;
+}
+// チェックリスト（下破線あり）
+@mixin pat-item-list-check-7 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-3;
+  @include deco-style-pat-item-list-check-7;
+}
+@mixin pat-item-list-check-8 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-3;
+  @include deco-style-pat-item-list-check-8;
+}
+@mixin pat-item-list-check-9 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-3;
+  @include deco-style-pat-item-list-check-9;
+}
+
+
+
+// 番号リスト
+@mixin pat-item-list-number-1 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-1;
+  @include deco-style-pat-item-list-number-1;
+}
+@mixin pat-item-list-number-2 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-1;
+  @include deco-style-pat-item-list-number-2;
+}
+@mixin pat-item-list-number-3 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-1;
+  @include deco-style-pat-item-list-number-3;
+}
+// 番号リスト（枠あり）
+@mixin pat-item-list-number-4 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-2;
+  @include deco-style-pat-item-list-number-4;
+}
+@mixin pat-item-list-number-5 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-2;
+  @include deco-style-pat-item-list-number-5;
+}
+@mixin pat-item-list-number-6 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-2;
+  @include deco-style-pat-item-list-number-6;
+}
+@mixin pat-item-list-number-7 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-2;
+  @include deco-style-pat-item-list-number-7;
+}
+@mixin pat-item-list-number-8 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-2;
+  @include deco-style-pat-item-list-number-8;
+}
+@mixin pat-item-list-number-9 {
+  @include common-style-pat-item-list-number;
+  @include module-style-pat-item-list-number-2;
+  @include deco-style-pat-item-list-number-9;
+}

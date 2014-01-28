@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@mixin mod-ftel10-common-style {
+margin-top: 10px;
+  .mod-ftel-inner {
+    font-size: 13px;
+    line-height: 1.0;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 25px;
+  }
+}
+
+@mixin mod-ftel10-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+  }
+}
+@mixin mod-ftel10-style2 {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #010911;
+  }
+}
+@mixin mod-ftel10-style3 {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #222222;
+  }
+}
+

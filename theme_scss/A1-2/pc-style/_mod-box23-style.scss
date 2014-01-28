@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+@mixin mod-box23-common-style {
+  width: 100%;
+  background-color: #c9c9c9;
+  background-image: none;
+  background-repeat: repeat;
+}
+@mixin mod-box23-style {
+  @include mod-box23-common-style;
+}
+@mixin mod-box23-style2 {
+  @include mod-box23-common-style;
+	background-color: #aebdce;
+}
+@mixin mod-box23-style3 {
+  @include mod-box23-common-style;
+	background-color: #ead3cf;
+}
+@mixin mod-box23-style4 {
+  @include mod-box23-common-style;
+  background-color: #464646;
+  background-image: url(img/mod-box/_23/bg_b.png);
+  background-repeat: repeat-x;
+}
+@mixin mod-box23-style5 {
+  @include mod-box23-common-style;
+  background-color: #162d42;
+  background-image: url(img/mod-box/_23/bg_b_2.png);
+  background-repeat: repeat-x;
+}
+@mixin mod-box23-style6 {
+  @include mod-box23-common-style;
+  background-color: #2e0f0e;
+  background-image: url(img/mod-box/_23/bg_b_3.png);
+  background-repeat: repeat-x;
+}
+@mixin mod-box23-style7 {
+  @include mod-box23-common-style;
+	background-color: #efefef;
+}

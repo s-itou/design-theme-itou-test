@@ -1,0 +1,91 @@
+@charset "UTF-8";
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// common-side-style-mod-email(グループ共通common)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-side-style-mod-email {
+  @if $layoutCode == "L25" {
+    font-size: $sideFontSizeL;
+  } @else if $layoutCode == "L30" {
+    font-size: $sideFontSizeL + 4;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-email
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-email {
+  margin-top: 10px !important;
+  word-break: break-all;
+  font-weight: normal;
+  line-height: 1.0;
+}
+//—————————module-style—————————
+@mixin module-style-mod-email {
+  font-size: $fontSizeL + 2;
+}
+@mixin module-style-mod-email-side {
+  //none
+}
+//—————————deco-style—————————
+//mod-email
+@mixin deco-style01A1-mod-email {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-email {
+  color: #0b2d63;
+}
+@mixin deco-style01A3-mod-email {
+  color: #45320b;
+}
+//mod-email-side
+@mixin deco-style01A1-mod-email-side {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-email-side {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-email-side {
+  color: #45320b;
+}
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-email-i
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+//mod-emailと同じ
+//—————————module-style—————————
+@mixin module-style-mod-email-i {
+  padding: 1px 0 2px 40px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-size: $fontSizeL + 2;
+}
+@mixin module-style-mod-email-i-side {
+  padding: 0 0 0 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+//—————————deco-style—————————
+//mod-email-i
+@mixin deco-style01A1-mod-email-i {
+  background-image: url(img/mod-email/bg04.png);
+}
+@mixin deco-style01A2-mod-email-i {
+  background-image: url(img/mod-email/bg04_2.png);
+}
+@mixin deco-style01A3-mod-email-i {
+  background-image: url(img/mod-email/bg04_3.png);
+}
+//mod-email-i-side
+@mixin deco-style01A1-mod-email-i-side {
+  background-image: url(img/mod-email/bg05.png);
+}
+@mixin deco-style01A2-mod-email-i-side {
+  background-image: url(img/mod-email/bg05_2.png);
+}
+@mixin deco-style01A3-mod-email-i-side {
+  background-image: url(img/mod-email/bg05_3.png);
+}

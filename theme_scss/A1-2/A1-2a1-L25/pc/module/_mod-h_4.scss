@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-h_4-style";
+
+.mod-h_4 {
+  @include mod-h_4-common-style;
+  @include mod-h_4-style;
+  .ex-style_01A2 &,
+  .ex-style_d1A2 & {
+    @include mod-h_4-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_d1A3 & {
+    @include mod-h_4-style3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_d1B1 & {
+    @include mod-h_4-style4;
+  }
+  .ex-style_01B2 &,
+  .ex-style_d1B2 & {
+    @include mod-h_4-style5;
+  }
+  .ex-style_01B3 &,
+  .ex-style_d1B3 & {
+    @include mod-h_4-style6;
+  }
+  .ex-style_01C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_q1C1 & {
+    @include mod-h_4-style7;
+  }
+  .ex-style_01C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_q1C2 & {
+    @include mod-h_4-style8;
+  }
+  .ex-style_01C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_q1C3 & {
+    @include mod-h_4-style9;
+  }
+  .ex-style_q1A1 &,
+  .ex-style_i1A1 & {
+    @include mod-h_4-style10;
+  }
+  .ex-style_q1A2 &,
+  .ex-style_i1A2 & {
+    @include mod-h_4-style11;
+  }
+  .ex-style_q1A3 &,
+  .ex-style_i1A3 & {
+    @include mod-h_4-style12;
+  }
+  .ex-style_q1B1 &,
+  .ex-style_i1B1 & {
+    @include mod-h_4-style13;
+  }
+  .ex-style_q1B2 &,
+  .ex-style_i1B2 & {
+    @include mod-h_4-style14;
+  }
+  .ex-style_q1B3 &,
+  .ex-style_i1B3 & {
+    @include mod-h_4-style15;
+  }
+  .ex-style_d1A1 & {
+    @include mod-h_4-style16;
+  }
+  .ex-style_c1A1 & {
+    @include mod-h_4-style17;
+  }
+  .ex-style_c1A2 & {
+    @include mod-h_4-style18;
+  }
+  .ex-style_c1A3 & {
+    @include mod-h_4-style19;
+  }
+  .ex-style_c1B1 & {
+    @include mod-h_4-style20;
+  }
+  .ex-style_c1B2 & {
+    @include mod-h_4-style21;
+  }
+  .ex-style_c1B3 & {
+    @include mod-h_4-style22;
+  }
+  .ex-style_c1C1 & {
+    @include mod-h_4-style23;
+  }
+  .ex-style_c1C2 & {
+    @include mod-h_4-style24;
+  }
+  .ex-style_c1C3 & {
+    @include mod-h_4-style25;
+  }
+  .ex-style_v1A1 & {
+    @include mod-h_4-style26;
+  }
+  .ex-style_v1A2 & {
+    @include mod-h_4-style27;
+  }
+  .ex-style_v1A3 & {
+    @include mod-h_4-style28;
+  }
+  .ex-style_v1B1 & {
+    @include mod-h_4-style29;
+  }
+  .ex-style_v1B2 & {
+    @include mod-h_4-style30;
+  }
+  .ex-style_v1B3 & {
+    @include mod-h_4-style31;
+  }
+  .ex-style_v1C1 & {
+    @include mod-h_4-style32;
+  }
+  .ex-style_v1C2 & {
+    @include mod-h_4-style33;
+  }
+  .ex-style_v1C3 & {
+    @include mod-h_4-style34;
+  }
+}
+

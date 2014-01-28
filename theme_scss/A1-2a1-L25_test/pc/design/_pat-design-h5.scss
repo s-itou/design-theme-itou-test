@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// pat-design-h5 の定義
+//
+//   ・デザインパターン
+//   ・mod-set-h5 内にincludeされる使い方を想定
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// -----------------------------------
+
+
+// -----------------------------------
+// pat-design-h5 の共通スタイル
+//
+//   ・pat-design-h5-1 〜 9 で共通にincludeされるスタイル
+// -----------------------------------
+
+%common-style-mod-set-h5 {
+}
+
+%block-style-mod-set-h5-1 {
+}
+%block-style-mod-set-h5-2 {
+}
+%block-style-mod-set-h5-3 {
+}
+
+
+// -----------------------------------
+// pat-design-h5 の個別設定
+// -----------------------------------
+
+@mixin pat-design-h5-1 {
+}
+@mixin pat-design-h5-2 {
+}
+@mixin pat-design-h5-3 {
+}
+@mixin pat-design-h5-4 {
+}
+@mixin pat-design-h5-5 {
+}
+@mixin pat-design-h5-6 {
+}
+@mixin pat-design-h5-7 {
+}
+@mixin pat-design-h5-8 {
+}
+@mixin pat-design-h5-9 {
+}
+

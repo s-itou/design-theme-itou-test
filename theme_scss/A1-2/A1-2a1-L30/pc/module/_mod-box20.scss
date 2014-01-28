@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-box20-style";
+
+.mod-box20 {
+  @include mod-box20-common-style;
+  @include mod-box20-style;
+  .ex-style_01A2 & {
+    @include mod-box20-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box20-style3;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & {
+    @include mod-box20-style4;
+  }
+}
+

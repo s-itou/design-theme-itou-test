@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+//  mod-login の mixin一式
+@mixin mod-login-common-style {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 3px;
+  a{
+    color: #335a93;
+  }
+}
+
+//  mod-em の mixin一式
+@mixin mod-em-common-style {
+  margin-bottom: 25px;
+  .mod-em-inner2 {
+    @include border-radius();
+  }
+}
+@mixin mod-em-style {
+  .mod-em-inner {
+    min-height: 0;
+    padding: 10px;
+    background-color: #ecfdff;
+    background-image: none;
+    background-repeat: repeat;
+    border: 1px solid #ade9ef;
+    @include border-radius();
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #264e84;
+    background-color: #ffffff;
+    p {
+      color: #264e84;
+    }
+  }
+}
+@mixin mod-em-style2 {
+  .mod-em-inner {
+    min-height: 0;
+    padding: 10px;
+    background-color: #ecfdff;
+    background-image: none;
+    background-repeat: repeat;
+    border: 1px solid #ade9ef;
+    @include border-radius();
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #264e84;
+    background-color: #ffffff;
+    p {
+      color: #264e84;
+    }
+  }
+}
+@mixin mod-em-style3 {
+  .mod-em-inner {
+    min-height: 0;
+    padding: 10px;
+    background-color: #fee4ba;
+    background-image: none;
+    background-repeat: repeat;
+    border: 1px solid #b29e3b;
+    @include border-radius();
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #56534e;
+    background-color: #ffffff;
+    p {
+      color: #56534e;
+    }
+  }
+}
+@mixin mod-em-style4 {
+  .mod-em-inner {
+    min-height: 0;
+    padding: 10px;
+    background-color: #ffe0de;
+    background-image: none;
+    background-repeat: repeat;
+    border: 1px solid #fd8e89;
+    @include border-radius();
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #45320b;
+    background-color: #ffffff;
+    p {
+      color: #45320b;
+    }
+  }
+}
+@mixin mod-em-style5 {
+  .mod-em-inner {
+    min-height: 153px;
+    padding: 20px 25px;
+    background-color: #1e4182;
+    background-image: url("img/mod-un/bg14.png");
+    background-repeat: no-repeat;
+    border: none;
+    @include border-radius(8px);
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+    p {
+      color: #ffffff;
+    }
+  }
+}
+@mixin mod-em-style6 {
+  .mod-em-inner {
+    min-height: 153px;
+    padding: 20px 25px;
+    background-color: #3da1b0;
+    background-image: url("img/mod-un/bg14_2.png");
+    background-repeat: no-repeat;
+    border: none;
+    @include border-radius(8px);
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+    p {
+      color: #ffffff;
+    }
+  }
+}
+@mixin mod-em-style7 {
+  .mod-em-inner {
+    min-height: 153px;
+    padding: 20px 25px;
+    background-color: #fea452;
+    background-image: url("img/mod-un/bg14_3.png");
+    background-repeat: no-repeat;
+    border: none;
+    @include border-radius(8px);
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+    p {
+      color: #264e84;
+    }
+  }
+}
+@mixin mod-em-style8 {
+  .mod-em-inner {
+    min-height: 0;
+    padding: 6px;
+    background-color: #ecfdff;
+    background-image: url("img/mod-un/bg13.png");
+    background-repeat: repeat;
+    border: none;
+    @include border-radius();
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #264e84;
+    background-color: #ffffff;
+    p {
+      color: #264e84;
+    }
+  }
+}
+@mixin mod-em-style9 {
+  .mod-em-inner {
+    min-height: 0;
+    padding: 6px;
+    background-color: #ecfdff;
+    background-image: url("img/mod-un/bg13_2.png");
+    background-repeat: repeat;
+    border: none;
+    @include border-radius();
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #264e84;
+    background-color: #ffffff;
+    p {
+      color: #333333;
+    }
+  }
+}
+@mixin mod-em-style10 {
+  .mod-em-inner {
+    min-height: 0;
+    padding: 6px;
+    background-color: #ecfdff;
+    background-image: url("img/mod-un/bg13_3.png");
+    background-repeat: repeat;
+    border: none;
+    @include border-radius();
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #264e84;
+    background-color: #ffffff;
+    p {
+      color: #45320b;
+    }
+  }
+}
+
+//  mod-card の mixin一式
+@mixin mod-card-common-style {
+  @extend %cf;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 3px 3px 0;
+  > p {
+    width: 40px;
+    margin-bottom: 3px;
+    display: inline-block;
+  }
+}
+@mixin mod-card-style {
+  border: 3px double #c9e0ff;
+}
+@mixin mod-card-style2 {
+  border: 3px double #c9e0ff;
+}
+@mixin mod-card-style3 {
+  border: 3px double #426ca6;
+}
+@mixin mod-card-style4 {
+  border: 3px double #519dce;
+}
+@mixin mod-card-style5 {
+  border: 3px double #f1d128;
+}
+@mixin mod-card-style6 {
+  border: 3px double #f1d128;
+}
+@mixin mod-card-style7 {
+  border: 3px double #ff994c;
+}
+@mixin mod-card-style8 {
+  border: 1px dotted #c9e0ff;
+}
+@mixin mod-card-style9 {
+  border: 1px dotted #f2d028;
+}
+@mixin mod-card-style10 {
+  border: 1px dotted #ffa658;
+}
+
+//  mod-header-image の mixin一式
+@mixin mod-header-image-common-style {
+  @extend %cf;
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}

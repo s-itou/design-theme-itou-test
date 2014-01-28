@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+
+%default-4col-inner-base {
+  padding: 10px 10px 0 10px;
+  border: 1px solid #cccccc;
+  border-top: 3px solid #f77b18;
+  @include border-radius();
+  background-color: #fffdf5;
+}
+
+%default-4col-inner {
+  // float: left;
+  // width: 235px;
+  @extend %default-4col-inner-base;
+}
+
+
+%default-4col-inner2 {
+  // float: left;
+  // width: 165px;
+  // padding-left: 20px;
+  // @include background("mod-column/bg.png", $position-x: left, $position-y: center);
+}
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+.mod-4col2 { //フッター４等分
+  //@extend %cf;
+  //margin-bottom: 30px;
+  > .mod-4col-inner {
+    // float: left;
+    // width: 230px;
+    // margin-right: 20px;
+  }
+  > .mod-4col-inner2 {
+    // float: left;
+    // width: 230px;
+    // margin-right: 20px;
+  }
+  > .mod-4col-inner3 {
+    // float: left;
+    // width: 230px;
+    // margin-right: 20px;
+    margin-bottom: 20px;//SP余白対応
+  }
+  > .mod-4col-inner4 {
+    // float: left;
+    // width: 230px;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    padding: 0 15px;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & {
+    padding: 0 15px;
+  }
+}
+
+
+.mod-4col4 {
+  @extend %cf;
+  margin-bottom: 30px;
+  // > .mod-email3 {//SPここから
+    // padding-left: 320px;
+   // }//SPここまで
+   > .mod-4col-inner {
+    @include background("mod-column/spbg.png", $position-x: 50%, $position-y: bottom);
+    background-size: 39px 16px;
+    padding-bottom : 30px;//SP用ここから
+    margin-bottom : 20px;
+    // float: left;
+    // width: 145px;
+  }
+  > .mod-4col-inner2 {
+    // @extend %default-4col-inner2;
+    // padding-top : 30px;//SPここから
+    @include background("mod-column/spbg.png", $position-x: 50%, $position-y: bottom);
+    background-size: 39px 16px;
+    padding-bottom : 30px;//SP用ここから
+    margin-bottom : 20px;
+  //   position : relative;
+  // :after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 44px;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   margin: -20px 0;
+  //   @include background("mod-column/bg.png", $position-x: 50%, $position-y: top);
+  //   -webkit-transform: rotate(90deg);
+  //   -moz-transform: rotate(90deg);
+  //   -ms-transform: rotate(90deg);
+  //   -o-transform: rotate(90deg);
+  //   transform: rotate(90deg);//SP用ここまで
+  //   }
+  }
+  > .mod-4col-inner3 {
+    @include background("mod-column/spbg.png", $position-x: 50%, $position-y: bottom);
+    background-size: 39px 16px;
+    padding-bottom : 30px;//SP用ここから
+    margin-bottom : 20px;
+  // :after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 44px;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   margin: -20px 0;
+  //   @include background("mod-column/bg.png", $position-x: 50%, $position-y: top);
+  //   -webkit-transform: rotate(90deg);
+  //   -moz-transform: rotate(90deg);
+  //   -ms-transform: rotate(90deg);
+  //   -o-transform: rotate(90deg);
+  //   transform: rotate(90deg);//SP用ここまで
+  //   }
+  }
+  > .mod-4col-inner4 {
+  // :after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 44px;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   margin: -20px 0;
+  //   @include background("mod-column/bg.png", $position-x: 50%, $position-y: top);
+  //   -webkit-transform: rotate(90deg);
+  //   -moz-transform: rotate(90deg);
+  //   -ms-transform: rotate(90deg);
+  //   -o-transform: rotate(90deg);
+  //   transform: rotate(90deg);//SP用ここまで
+  //   }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_012 &,
+  .ex-style_01A2 & {
+    > .mod-4col-inner {
+      // :after {
+        @include background("mod-column/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner2 {
+      // :after {
+        @include background("mod-column/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    >.mod-4col-inner4 {
+      // :after {
+        @include background("mod-column/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_013 &,
+  .ex-style_01A3 & {
+    > .mod-4col-inner {
+      // :after {
+        @include background("mod-column/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner2 {
+      // :after {
+        @include background("mod-column/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    >.mod-4col-inner3 {
+      // :after {
+        @include background("mod-column/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    > .mod-4col-inner {
+      // :after {
+        @include background("mod-column/spbg02.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner2 {
+      // :after {
+        @include background("mod-column/spbg02.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner3 {
+      // :after {
+        @include background("mod-column/spbg02.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    > .mod-4col-inner {
+      // :after {
+        @include background("mod-column/spbg02_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner2 {
+      // :after {
+        @include background("mod-column/spbg02_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner3 {
+      // :after {
+        @include background("mod-column/spbg02_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    > .mod-4col-inner {
+      // :after {
+        @include background("mod-column/spbg02_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner2 {
+      // :after {
+        @include background("mod-column/spbg02_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner3 {
+      // :after {
+        @include background("mod-column/spbg02_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    > .mod-4col-inner {
+      // :after {
+        @include background("mod-column/spbg03.png", $position-x: 50%, $position-y: topbottom);
+    }
+    > .mod-4col-inner2 {
+      // :after {
+        @include background("mod-column/spbg03.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner3 {
+      // :after {
+        @include background("mod-column/spbg03.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    > .mod-4col-inner {
+      // :after {
+        @include background("mod-column/spbg03_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner2 {
+      // :after {
+        @include background("mod-column/spbg03_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner3 {
+      // :after {
+        @include background("mod-column/spbg03_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    > .mod-4col-inner {
+      // :after {
+        @include background("mod-column/spbg03_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner2 {
+      // :after {
+        @include background("mod-column/spbg03_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-4col-inner3 {
+      // :after {
+        @include background("mod-column/spbg03_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+}
+

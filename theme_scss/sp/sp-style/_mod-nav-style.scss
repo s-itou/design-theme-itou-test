@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+//  mod-gnav の mixin一式
+@mixin mod-gnav-common-style {
+  ul, li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+//  mod-gnav2 の mixin一式
+@mixin mod-gnav2-common-style {
+  ul, li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+//  mod-fnav の mixin一式
+@mixin mod-fnav-common-style {
+  text-align: center;
+  ul {
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 1px #cccccc;
+    @include box-sizing(border-box);
+    li {
+      font-size: $fontSizeM - 1;
+      background-color: #eeeeee;
+      border-bottom: solid 1px #cccccc;
+      list-style: none;
+      &:last-child {
+        border-bottom: none;
+      }
+      span {
+        color: #333333;
+        width: 100%;
+        padding: 10px 10%;
+        display: block;
+        @include box-sizing(border-box);
+      }
+      a {
+        color: #333333;
+        text-decoration: none;
+        display: block;
+        padding: 10px 10%;
+        margin: -10px -10%;
+        &:hover {
+          text-decoration: underline;
+        }
+        &[href] {
+          background-image: url("img/mod-fnav/menu_link.png");
+          background-position: 95% 50%;
+          background-repeat: no-repeat;
+          @include background-size(21px 21px, 100% 100%);
+        }
+      }
+    }
+  }
+}
+
+
+
+

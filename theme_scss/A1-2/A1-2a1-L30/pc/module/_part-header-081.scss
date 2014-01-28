@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import "../../pc-style/part-header-081-style";
+
+
+.mod-2col43 {
+  @include mod-2col43-common-style;
+}
+
+
+.mod-title11 {
+  @include mod-title11-common-style;
+  .ex-style_01A1 & {
+    @include mod-title11-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-title11-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-title11-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-title11-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-title11-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-title11-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-title11-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-title11-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-title11-style9;
+  }
+}
+
+
+.mod-text23 {
+  @include mod-text23-common-style;
+  @include mod-text23-style;
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 & {
+    @include mod-text23-style2;
+  }
+}
+
+
+.mod-2col44 {
+  @include mod-2col44-common-style;
+}
+
+
+.mod-label3 {
+  @include mod-label3-common-style;
+  .ex-style_01A1 & {
+    @include mod-label3-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-label3-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-label3-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-label3-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-label3-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-label3-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-label3-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-label3-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-label3-style9;
+  }
+}
+
+
+.mod-tel28 {
+  @include mod-tel28-common-style;
+  .ex-style_01A1 &,
+  .ex-style_01C1 & {
+    @include mod-tel28-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-tel28-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-tel28-style3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 & {
+    @include mod-tel28-style4;
+  }
+  .ex-style_01C2 & {
+    @include mod-tel28-style5;
+  }
+  .ex-style_01C3 & {
+    @include mod-tel28-style6;
+  }
+}
+
+
+.mod-bnr32 {
+  @include mod-bnr32-common-style;
+  .ex-style_01A1 & {
+    @include mod-bnr32-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr32-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr32-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr32-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr32-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr32-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr32-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr32-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr32-style9;
+  }
+}
+

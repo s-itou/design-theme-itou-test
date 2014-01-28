@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-box22-style";
+
+.mod-box22 {
+  @include mod-box22-common-style;
+  &.ex-style_01A1,
+  &.ex-style_01B1,
+  &.ex-style_01C1 {
+    @include mod-box22-style;
+  }
+  &.ex-style_01A2,
+  &.ex-style_01B2,
+  &.ex-style_01C2 {
+    @include mod-box22-style2;
+  }
+  &.ex-style_01A3,
+  &.ex-style_01B3,
+  &.ex-style_01C3 {
+    @include mod-box22-style3;
+  }
+}

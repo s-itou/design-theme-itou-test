@@ -1,0 +1,826 @@
+@charset "UTF-8";
+
+//SP用のinnerの幅指定
+%SP-inner-wid{
+    width: 29%;
+}
+
+%SP-inner2-wid{
+    width: 59%;
+}
+
+
+//mod-info ヘッダーフッターの青いラベル
+%default-info-base {
+  @extend %cf;
+  .mod-info-inner {
+    float: left;
+    text-align: center;
+    @include border-radius;
+  }
+  .mod-info-inner2 {
+    float: left;
+  }
+}
+
+%default-info {
+  @extend %default-info-base;
+  .mod-info-inner{
+    // width: 100px;
+   @extend %SP-inner-wid;
+    padding: 0 8px;
+  }
+  .mod-info-inner2 {
+    padding: 1px 0 0 10px;
+  }
+}
+
+%default-info2 {
+  @extend %default-info-base;
+  font-size: $fontSizeS + 1;
+  .mod-info-inner{
+    // width: 80px;
+        @extend %SP-inner-wid;
+    padding: 0 10px;
+  }
+  .mod-info-inner2 {
+        @extend %SP-inner2-wid;
+    padding: 1px 0 0 10px;
+  }
+}
+
+%default-info3 {
+  @extend %default-info-base;
+  .mod-info-inner{
+    // width: 100px;
+    @extend %SP-inner-wid;
+    padding: 0 8px;
+  }
+  .mod-info-inner2 {
+    padding: 1px 0 0 10px;
+  }
+}
+
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+.mod-info {
+  margin-bottom: 15px;
+  @extend %default-info-base;
+  .mod-info-inner {
+    @extend %SP-inner-wid;
+    padding: 0 8px;
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner + .mod-info-inner2 {
+    // max-width: 145px;
+    @extend %SP-inner2-wid;
+    padding: 1px 0 0 10px;
+  }
+  .mod-info-inner2 {
+    width: 100%;
+    padding: 0;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    .mod-info-inner {
+      background-color: #426ca6;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3h & {
+    .mod-info-inner {
+      background-color: #ffa658;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .mod-info-inner {
+      color: $dh_infoColor;
+      background-color: $dh_infoBgColor
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .mod-info-inner {
+      color: $dh_infoColor2;
+      background-color: $dh_infoBgColor2
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .mod-info-inner {
+      color: $dm_infoColor3;
+      background-color: $dm_info2BgColor3;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor3;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    p:first-child {
+      background-color: #3f88f7;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #408bc2;
+    }
+  }
+}
+
+.mod-info2 { //ヘッダー３列右
+  margin-bottom: 5px;
+  @extend %default-info2;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    // max-width: 160px;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    .mod-info-inner {
+      background-color: #0b7d89;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &{
+    .mod-info-inner {
+      background-color: #519dce;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .mod-info-inner {
+      color: $dh_infoColor;
+      background-color: $dh_infoBgColor;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .mod-info-inner {
+      color: $dh_infoColor2;
+      background-color: $dh_infoBgColor2;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor3;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor3;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    .mod-info-inner {
+      color: #45320b;
+      background-color: #fff292;
+    }
+  }
+}
+
+.mod-info3 { //ヘッダー２列左＋３列左のリンクつき
+  margin-bottom: 5px;
+  @extend %default-info2;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    @extend %cf;
+    //max-width: 200px;
+    .mod-info-inner2-2 {
+      float: left;
+    }
+    .mod-info-inner2-3 {
+      float: left;
+      display: inline-block;
+      max-width: 100%;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    .mod-info-inner {
+      background-color: #0b7d89;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    .mod-info-inner {
+      background-color: #519dce;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor2;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor3;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor3;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    .mod-info-inner {
+      color: #45320b;
+      background-color: #fff292;
+    }
+  }
+}
+
+.mod-info4 { //ヘッダー２列左＋３列左
+  // margin-bottom: 5px;
+  margin-bottom: 10px;//SP
+  @extend %default-info2;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+  //max-width: 200px;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    .mod-info-inner {
+      background-color: #0b7d89;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    .mod-info-inner {
+      background-color: #519dce;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor2;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .mod-info-inner {
+      background-color: $dh_infoBgColor3;
+    }
+    .mod-info-inner2 {
+      color: $dh_infoColor3;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    .mod-info-inner {
+      color: #45320b;
+      background-color: #fff292;
+    }
+  }
+}
+
+.mod-info5 { //青ラベルなし 文言＋リンク
+  margin-bottom: 5px;
+  font-size: $sideFontSizeM;
+  @extend %cf;
+  .mod-info-inner {
+    float: left;
+  }
+  .mod-info-inner2 {
+    float: left;
+    display: inline-block;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .mod-info-inner {
+      color: $dh_infoColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .mod-info-inner {
+      color: $dh_infoColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .mod-info-inner {
+      color: $dh_infoColor3;
+    }
+  }
+}
+
+.mod-info6 {
+  margin-bottom: 15px;
+  @extend %default-info-base;
+  .mod-info-inner {
+    @extend %SP-inner-wid;
+    padding: 0 8px;
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner + .mod-info-inner2 {
+    // max-width: 145px;
+    @extend %SP-inner2-wid;
+    padding: 1px 0 0 10px;
+  }
+  .mod-info-inner2 {
+    width: 100%;
+    padding: 0;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    .mod-info-inner {
+      background-color: #426ca6;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    .mod-info-inner {
+      background-color: #ffa658;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .mod-info-inner {
+      color: $dm_infoColor;
+      background-color: $dm_info2BgColor;
+    }
+    .mod-info-inner2 {
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .mod-info-inner {
+      color: $dm_infoColor2;
+      background-color: $dm_info2BgColor2;
+    }
+    .mod-info-inner2 {
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .mod-info-inner {
+      color: $dm_infoColor3;
+      background-color: $dm_info2BgColor3;
+    }
+    .mod-info-inner2 {
+      color: #443308;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    p:first-child {
+      background-color: #3f88f7;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    .mod-info-inner {
+      color: #ffffff;
+      background-color: #408bc2;
+    }
+  }
+}
+
+.mod-info7 { //メイン２カラム
+  margin-bottom: 10px;
+  @extend %default-info;
+  .mod-info-inner {
+    color: #ffffff;
+    background-color: #1d6fde;
+  }
+  .mod-info-inner2 {
+    //max-width: 230px;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    .mod-info-inner {
+      color: #365997;
+      background-color: #ffe876;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    .mod-info-inner {
+      background-color: #519dce;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .mod-info-inner {
+      background-color: #3C66BA;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .mod-info-inner {
+      background-color: #095C66;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .mod-info-inner {
+      background-color: #443308;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    .mod-info-inner {
+      background-color: #5596f6;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    .mod-info-inner {
+      background-color: #5bc8d3;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    .mod-info-inner {
+      color: #45320b;
+      background-color: #f2d028;
+    }
+  }
+}
+
+.mod-info8 {
+  margin-bottom: 15px;
+  @extend %cf;
+  .mod-info-inner {
+    width: 140px;
+    margin-right: 15px;
+    margin-bottom: 10px;//SP
+    background-color: #f59e3b;
+    @include border-radius();
+    text-align: center;
+    // float: left;
+    color: #ffffff;
+    //margin-bottom: inherit;
+  }
+  .mod-info-inner2 {
+    //margin-left: 155px;
+    //margin-bottom: inherit;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    .mod-info-inner {
+      background-color: #ffe876;
+      color: #333333;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    .mod-info-inner {
+      background-color: #519dce;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {//装飾バリエーション
+    .mod-info-inner {
+      background-color: $dm_infoBgColor;
+      background-image: url("img/mod-info/bg.png");
+      background-repeat: repeat-x;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {//装飾バリエーション
+    .mod-info-inner {
+      color: #085b66;
+      background-color: $dm_infoBgColor2;
+      background-image: url("img/mod-info/bg_2.png");
+      background-repeat: repeat-x;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {//装飾バリエーション
+    .mod-info-inner {
+      background-color: $dm_infoBgColor3;
+      background-image: url("img/mod-info/bg_3.png");
+      background-repeat: repeat-x;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border-bottom: 1px dotted #cccccc;
+    .mod-info-inner {
+      background: url("img/mod-info/bg03.png");
+      background-repeat: no-repeat;
+      background-position: left 6px;
+      color: #f7931d;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border-bottom: 1px dotted #cccccc;
+    .mod-info-inner {
+      background: url("img/mod-info/bg03_2.png");
+      background-repeat: no-repeat;
+      background-position: left 6px;
+      color: #067e87;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border-bottom: 1px dotted #cccccc;
+    .mod-info-inner {
+      background: url("img/mod-info/bg03_3.png");
+      background-repeat: no-repeat;
+      background-position: left 6px;
+      color: #416ca3;
+    }
+  }
+}
+
+.mod-info9 {
+  margin-bottom: 15px;
+  > p:first-child {
+    width: 140px;
+    margin-bottom:10px;
+    background-color: $newsBgColor;
+    @include border-radius();
+    text-align: center;
+    color: #ffffff;
+    .ex-style_01A2 &,
+    .ex-style_01A2 &,
+    .ex-style_01A2 &,
+    .ex-style_01A2 & {
+      background-color: $newsBgColor2;
+      color: #333333;
+    }
+    .ex-style_01A3 &,
+    .ex-style_01A3 &,
+    .ex-style_01A3 &,
+    .ex-style_01A3 & {
+      background-color: $newsBgColor3;
+      color: #ffffff;
+    }
+    .ex-style_01B1 &,
+    .ex-style_01B1 &,
+    .ex-style_01B1 &,
+    .ex-style_01B1 & {//装飾バリエーション
+      background-color: $dm_infoBgColor;
+      background-image: url("img/mod-info/bg.png");
+      background-repeat: repeat-x;
+      color: #ffffff;
+    }
+    .ex-style_01B2 &,
+    .ex-style_01B2 &,
+    .ex-style_01B2 &,
+    .ex-style_01B2 & {//装飾バリエーション
+      color: #085b66;
+      background-color: $dm_infoBgColor2;
+      background-image: url("img/mod-info/bg_2.png");
+      background-repeat: repeat-x;
+    }
+    .ex-style_01B3 &,
+    .ex-style_01B3 &,
+    .ex-style_01B3 &,
+    .ex-style_01B3 & {//装飾バリエーション
+      background-color: $dm_infoBgColor3;
+      background-image: url("img/mod-info/bg_3.png");
+      background-repeat: repeat-x;
+      color: #ffffff;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border-bottom: 1px dotted #cccccc;
+    > p:first-child {
+      background-image: url("img/mod-info/bg03.png");
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: left center;
+      color: #f7931d;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border-bottom: 1px dotted #cccccc;
+    > p:first-child {
+      background-image: url("img/mod-info/bg03_2.png");
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: left center;
+      color: #067e87;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border-bottom: 1px dotted #cccccc;
+    > p:first-child {
+      background-image: url("img/mod-info/bg03_3.png");
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: left center;
+      color: #416ca3;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@mixin mod-2col42-common-style {
+  @extend %cf;
+  margin-top: 25px;
+  .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: 250px;
+      margin-left: 20px;
+      .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      .mod-2col-inner2-2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .ex-imgSize_2L & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: 250px;
+      }
+    }
+  }
+  .ex-imgSize_2S & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: 200px;
+      }
+    }
+  }
+  .ex-imgSize_2SS & {
+    margin-right: 20px;
+    margin-left: 20px;
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: 150px;
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+  .ex-imgSize_2S.ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-left: 0;
+        @if $layoutCode == "L25" or $layoutCode == "R25" {
+          margin-right: 50px;
+        } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  .ex-imgSize_2SS.ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: 150px;
+        float: left;
+        margin-left: 0;
+        @if $layoutCode == "L25" or $layoutCode == "R25" {
+          margin-right: 60px;
+        } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-email5-style";
+
+.mod-email5 {
+  @include mod-email5-common-style;
+  @include mod-email5-style2;
+  .ex-style_01A2 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 & {
+    @include mod-email5-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-email5-style3;
+  }
+}
+

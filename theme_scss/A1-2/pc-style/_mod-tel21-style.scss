@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@mixin mod-tel21-common-style {
+padding: 0 0 0 25px;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-tel21-style {
+  color: #ffffff;
+  background-image: url("img/mod-tel/bg13.png");
+}
+

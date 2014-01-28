@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@mixin mod-box16-common-style {
+  width: 112px;
+  height: 29px;
+  margin: 25px auto 0;
+  background-repeat: no-repeat;
+}
+
+@mixin mod-box16-style {
+background-image: url("img/mod-box/bg02.png");
+}
+@mixin mod-box16-style2 {
+background-image: url("img/mod-box/bg02_2.png");
+}
+@mixin mod-box16-style3 {
+background-image: url("img/mod-box/bg02_3.png");
+}
+@mixin mod-box16-style4 {
+background-image: url("img/mod-box/bg05.png");
+}
+@mixin mod-box16-style5 {
+background-image: url("img/mod-box/bg05_2.png");
+}
+@mixin mod-box16-style6 {
+background-image: url("img/mod-box/bg05_3.png");
+}
+@mixin mod-box16-style7 {
+background-image: url("img/mod-box/bg06.png");
+}
+@mixin mod-box16-style8 {
+background-image: url("img/mod-box/bg06_2.png");
+}
+@mixin mod-box16-style9 {
+background-image: url("img/mod-box/bg06_3.png");
+}
+

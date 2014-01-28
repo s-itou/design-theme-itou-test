@@ -1,0 +1,4857 @@
+@charset "UTF-8";
+
+//アイコン横並び
+// %default-icon {
+//   @extend %cf;
+//   > i {
+//     float: left;
+//     display: block;
+//     padding-right: 10px;
+//   }
+//   > h2, h3, div {
+//     float: left;
+//     width: 100%;
+//   }
+// }
+
+// %default-icon2 {
+//   display: table;
+//   vertical-align: middle;
+//   > i {
+//     display: table-cell;
+//   }
+//   > div {
+//     display: table-cell;
+//     vertical-align: middle;
+//     > p {
+//       padding-left: 0;
+//       margin: 0 !important;
+//     }
+//   }
+// }
+
+// > .mod-icon_0 {
+//   padding: 0;
+//   width: 0;
+// }
+
+
+//------------------
+// mod-h_2
+//------------------
+// %h_2 {
+//   padding: 5px 0 2px;
+//   border-top: 4px solid $m_index21BdColor;
+//   border-bottom: 1px dotted $m_index22BdColor;
+//   .mod-h {
+//     width: auto;
+//     color: $m_index2Color;
+//     font-size: $fontSizeL + 7;
+//     display: table-cell;
+//     vertical-align: middle;
+//   }
+// }
+
+// %default-qh_2 {
+//   min-height: 65px;
+//   border: none;
+//   .mod-h {
+//     padding: 0 0 8px 0;
+//     margin: 5px 0 5px 0;
+//     font-size: 25px;
+//   }
+// }
+
+
+%vari-h_2 {
+  width: 690px;
+  padding: 5px 0 2px;
+  margin: 0 -25px 20px -25px;
+  .mod-h {
+    width: auto;
+     font-size: $fontSizeL + 7;
+     display: table-cell;
+     vertical-align: middle;
+  }
+}
+
+.mod-h_2A1 { //デフォルト
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  border-top:  4px solid $m_index21BdColor;
+  border-bottom: 1px dotted $m_index22BdColor;
+  .mod-h {
+    color: $m_index2Color;
+  }
+  > i {
+    width: 42px;
+  }
+  > .mod-icon_0,> .mod-icon_1 {
+    width: 0;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg02_v.png", $position-y: 1px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg03_v.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg04_v.png", $position-x: 11px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg05_v.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg_v.png", $position-y: 4px);
+  }
+}
+
+
+.mod-h_2A2 { //mizuiro CV
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  border-top:  4px solid $m_index21BdColor2;
+  border-bottom: 1px dotted $m_index22BdColor2;
+  .mod-h {
+    color: $m_index2Color2;
+  }
+  > i {
+    width: 42px;
+  }
+  > .mod-icon_0,> .mod-icon_1 {
+    width: 0;
+  }
+  > .mod-icon_2 {
+    width: 42px;
+    @include background("mod-h_2/bg02_v2.png", $position-y: 1px);
+  }
+  > .mod-icon_3 {
+    width: 42px;
+    @include background("mod-h_2/bg03_v2.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_4 {
+    width: 42px;
+    @include background("mod-h_2/bg04_v2.png", $position-x: 11px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    width: 42px;
+    @include background("mod-h_2/bg05_v2.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_dental {
+    width: 42px;
+    @include background("mod-h_2/bg_v2.png", $position-y: 4px);
+  }
+}
+
+.mod-h_2A3 { //orenziCV
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  border-top:  4px solid $m_index21BdColor3;
+  border-bottom: 1px dotted $m_index22BdColor3;
+  .mod-h {
+    color: $m_index2Color3;
+  }
+  > i {
+    width: 42px;
+  }
+  > .mod-icon_0,> .mod-icon_1 {
+    width: 0;
+  }
+  > .mod-icon_2 {
+    width: 42px;
+    @include background("mod-h_2/bg02_v3.png", $position-y: 1px);
+  }
+  > .mod-icon_3 {
+    width: 42px;
+    @include background("mod-h_2/bg03_v3.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_4 {
+    width: 42px;
+    @include background("mod-h_2/bg04_v3.png", $position-x: 11px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    width: 42px;
+    @include background("mod-h_2/bg05_v3.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_dental {
+    width: 42px;
+    @include background("mod-h_2/bg_v3.png", $position-y: 4px);
+  }
+}
+
+.mod-h_2B1 { //装飾１
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  overflow: hidden;
+  padding: 0;
+  @include border-radius();
+  @include background("mod-h_2/bg03.png");
+  > i {
+    width: 70px;
+    height: 38px;
+  }
+  > .mod-icon_0 {
+    width: 15px;
+    background: none;
+  }
+  > .mod-icon_1, > .mod-icon_2 {
+    @include background("mod-h_2/bg02.png", $position-x: 10px, $position-y: 12px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg07_v.png", $position-x: 20px, $position-y: 16px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg08_v.png", $position-x: 26px, $position-y: 10px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg09_v.png", $position-x: 20px, $position-y: 16px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg10_v.png", $position-x: 18px, $position-y: 12px);
+  }
+  .mod-h {
+    padding: 10px 10px 5px 0;
+    color: #ffffff;
+    font-size: $fontSizeL + 6;
+  }
+}
+
+
+.mod-h_2B2 { //装飾１ 水色
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  overflow: hidden;
+  padding: 0;
+  @include border-radius();
+  @include background("mod-h_2/bg03_2.png");
+  > i {
+    width: 70px;
+    height: 38px;
+  }
+  > .mod-icon_0 {
+    width: 15px;
+    background: none;
+  }
+  > .mod-icon_1, > .mod-icon_2 {
+    @include background("mod-h_2/bg02_2.png", $position-x: 10px, $position-y: 12px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg07_v.png", $position-x: 20px, $position-y: 16px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg08_v.png", $position-x: 26px, $position-y: 10px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg09_v2.png", $position-x: 20px, $position-y: 16px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg10_v2.png", $position-x: 18px, $position-y: 12px);
+  }
+  .mod-h {
+    padding: 10px 10px 5px 0;
+    color: #ffffff;
+    font-size: $fontSizeL + 6;
+  }
+}
+
+.mod-h_2B3 { //装飾１ オレンジ
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  margin: 0 -25px 20px -25px;
+  overflow: hidden;
+  padding: 0;
+  @include border-radius();
+  @include background("mod-h_2/bg03_3.png");
+  > i {
+    width: 70px;
+    height: 38px;
+  }
+  > .mod-icon_0 {
+    width: 15px;
+    background: none;
+  }
+  > .mod-icon_1, > .mod-icon_2 {
+    @include background("mod-h_2/bg02_3.png", $position-x: 10px, $position-y: 12px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg07_v.png", $position-x: 20px, $position-y: 16px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg08_v.png", $position-x: 26px, $position-y: 10px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg09_v3.png", $position-x: 20px, $position-y: 16px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg10_v3.png", $position-x: 18px, $position-y: 12px);
+  }
+  .mod-h {
+    padding: 10px 10px 5px 0;
+    color: #ffffff;
+    font-size: $fontSizeL + 6;
+  }
+}
+
+.mod-h_2C1 { //装飾2
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  overflow: hidden;
+  padding: 0;
+  @include border-radius();
+  @include background("mod-h_2/bg10.png");
+  > i {
+    width: 40px;
+    border-top: 4px solid #1b6fe0;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    width: 15px;
+    background: none;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg11_v.png", $position-x: 12px, $position-y: 15px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg12_v.png", $position-x: 10px, $position-y: 14px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg13_v.png", $position-x: 13px, $position-y: 13px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg14_v.png", $position-x: 10px, $position-y: 14px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg15_v.png", $position-x: 6px, $position-y: 12px);
+  }
+  .mod-h {
+    border-top: 4px solid #1b6fe0;
+    padding: 6px 15px 3px 10px;
+    color: #1b6fe0;
+    font-size: $fontSizeL + 9;
+    @include box-sizing(border-box);
+  }
+}
+
+.mod-h_2C2 { //装飾2 水色
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  overflow: hidden;
+  padding: 0;
+  @include border-radius();
+  @include background("mod-h_2/bg10_2.png");
+  > i {
+    width: 40px;
+    border-top: 4px solid #7ed1d9;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    width: 15px;
+    background: none;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg11_v2.png", $position-x: 12px, $position-y: 15px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg12_v2.png", $position-x: 10px, $position-y: 14px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg13_v2.png", $position-x: 13px, $position-y: 13px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg14_v2.png", $position-x: 10px, $position-y: 14px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg15_v2.png", $position-x: 6px, $position-y: 12px);
+  }
+  .mod-h {
+    border-top: 4px solid #7ed1d9;
+    padding: 6px 15px 3px 10px;
+    color: #355995;
+    font-size: $fontSizeL + 9;
+    @include box-sizing(border-box);
+  }
+}
+
+.mod-h_2C3 { //装飾2 オレンジ
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  overflow: hidden;
+  padding: 0;
+  @include border-radius();
+  @include background("mod-h_2/bg10_3.png");
+  > i {
+    width: 40px;
+    border-top: 4px solid #f7931d;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    width: 15px;
+    background: none;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg11_v3.png", $position-x: 12px, $position-y: 15px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg12_v3.png", $position-x: 10px, $position-y: 14px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg13_v3.png", $position-x: 13px, $position-y: 13px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg14_v3.png", $position-x: 10px, $position-y: 14px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg15_v3.png", $position-x: 6px, $position-y: 12px);
+  }
+  .mod-h {
+    border-top: 4px solid #f7931d;
+    padding: 6px 15px 3px 10px;
+    color: #45320b;
+    font-size: $fontSizeL + 9;
+    @include box-sizing(border-box);
+  }
+}
+
+//-----------------
+//mod-h_3
+//------------------
+
+// %h_3 {
+//   padding: 2px 0 0 5px;
+//   border-bottom: 1px solid $m_index3BdColor;
+//   .mod-h {
+//     width: auto;
+//     color: $m_index3Color;
+//     font-size: $fontSizeL + 8;
+//     line-height: 1.3;
+//     display: table-cell;
+//     vertical-align: middle;
+//   }
+// }
+
+
+%vari-h_3 {
+  width: 690px;
+  margin: 0 -25px 20px -25px;
+  .mod-h {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    line-height: 1.3;
+  }
+}
+
+.mod-h_3A1 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  padding: 2px 0 0 5px;
+  border-bottom: 1px solid $m_index3BdColor;
+  .mod-h {
+    color: $m_index3Color;
+    font-size: $fontSizeL + 8;
+  }
+  > i {
+    width: 31px;
+  }
+  > .mod-icon_0 {
+    width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
+    @include background("mod-h_3/bg04.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg02_v.png", $position-y: 9px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg03_v.png", $position-y: 3px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg04_v.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg05_v.png", $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg_v.png");
+  }
+}
+
+.mod-h_3A2 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  padding: 2px 0 0 5px;
+  border-bottom: 1px solid $m_index3BdColor2;
+  .mod-h {
+    color: $m_index3Color2;
+    font-size: $fontSizeL + 8;
+  }
+  > i {
+    width: 31px;
+  }
+  > .mod-icon_0 {
+    width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
+    @include background("mod-h_3/bg04_2.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg02_v2.png", $position-y: 9px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg03_v2.png", $position-y: 3px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg04_v2.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg05_v2.png", $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg_v2.png");
+  }
+}
+
+.mod-h_3A3 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  padding: 2px 0 0 5px;
+  border-bottom: 1px solid $m_index3BdColor2;
+  .mod-h {
+    color: $m_index3Color3;
+    font-size: $fontSizeL + 8;
+  }
+  > i {
+    width: 31px;
+  }
+  > .mod-icon_0 {
+    width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
+    @include background("mod-h_3/bg04_3.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg02_v3.png", $position-y: 9px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg03_v3.png", $position-y: 3px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg04_v3.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg05_v3.png", $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg_v3.png");
+  }
+}
+
+.mod-h_3B1 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  padding: 2px 0 0 5px;
+  .mod-h {
+    padding-top: 5px;
+    font-size: $fontSizeL + 6;
+    color: #f16c0b;
+    font-weight: bold;
+  }
+  > i {
+    width: 49px;
+    height: 38px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+    background: none;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_3/bg03.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg06_v.png", $position-x: 6px, $position-y: 11px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg07_v.png", $position-x: 10px, $position-y: 8px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg08_v.png", $position-x: 14px, $position-y: 7px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg09_v.png", $position-x: 11px, $position-y: 8px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg10_v.png", $position-x: 10px, $position-y: 3px);
+  }
+}
+
+.mod-h_3B2 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  padding: 2px 0 0 5px;
+  .mod-h {
+    padding-top: 5px;
+    font-size: $fontSizeL + 6;
+    color: #2b436e;
+    font-weight: bold;
+  }
+  > i {
+    width: 49px;
+    height: 38px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+    background: none;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_3/bg03_2.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg06_v2.png", $position-x: 6px, $position-y: 11px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg07_v2.png", $position-x: 10px, $position-y: 8px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg08_v2.png", $position-x: 14px, $position-y: 7px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg09_v2.png", $position-x: 11px, $position-y: 8px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg10_v2.png", $position-x: 10px, $position-y: 3px);
+  }
+}
+
+.mod-h_3B3 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  padding: 2px 0 0 5px;
+  .mod-h {
+    padding-top: 5px;
+    font-size: $fontSizeL + 6;
+    color: #2b436e;
+    font-weight: bold;
+  }
+  > i {
+    width: 49px;
+    height: 38px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+    background: none;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_3/bg03_3.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg06_v3.png", $position-x: 6px, $position-y: 11px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg07_v3.png", $position-x: 10px, $position-y: 8px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg08_v3.png", $position-x: 14px, $position-y: 7px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg09_v3.png", $position-x: 11px, $position-y: 8px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg10_v3.png", $position-x: 10px, $position-y: 3px);
+  }
+  .mod-h {
+    padding-top: 5px;
+    font-size: $fontSizeL + 6;
+    color: #37280b;
+    font-weight: bold;
+  }
+}
+
+.mod-h_3C1 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  overflow: hidden;
+  border-left: 10px solid #f7931d;
+  background-color: #f7eadb;
+  .mod-h {
+    border-top: 1px dotted #f7931d;
+    border-bottom: 1px dotted #f7931d;
+    border-right: 1px dotted #f7931d;
+    padding: 4px 10px 2px 10px;
+    font-size: $fontSizeL + 5;
+    color: #331b07;
+    font-weight: bold;
+  }
+  > i {
+    width: 20px;
+    padding: 0;
+    border-top: 1px dotted #f7931d;
+    border-bottom: 1px dotted #f7931d;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    background: none;
+  }
+  > .mod-icon_2 {
+     @include background("mod-h_3/bg14_v.png",repeat-y);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg11_v.png");
+  }
+  > .mod-icon_4 {
+    border-left: 2px solid #f2d027;
+    width: 18px;
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg12_v.png", $position-x: 6px, $position-y: 12px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg13_v.png", $position-x: 4px, $position-y: 12px);
+  }
+}
+
+.mod-h_3C2 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  overflow: hidden;
+  border-left: 10px solid #f2d028;
+  background-color: #fcf3c6;
+  .mod-h {
+    border-top: 1px dotted #f7931d;
+    border-bottom: 1px dotted #f7931d;
+    border-right: 1px dotted #f7931d;
+    padding: 4px 10px 2px 10px;
+    font-size: $fontSizeL + 5;
+    color: #331b07;
+    font-weight: bold;
+  }
+  > i {
+    width: 20px;
+    padding: 0;
+    border-top: 1px dotted #f7931d;
+    border-bottom: 1px dotted #f7931d;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    background: none;
+  }
+  > .mod-icon_2 {
+     @include background("mod-h_3/bg14_v2.png",repeat-y);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg11_v2.png");
+  }
+  > .mod-icon_4 {
+    border-left: 2px solid #f7931d;
+    width: 18px;
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg12_v2.png", $position-x: 6px, $position-y: 12px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg13_v2.png", $position-x: 4px, $position-y: 12px);
+  }
+}
+
+.mod-h_3C3 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  overflow: hidden;
+  border-left: 10px solid #519dce;
+  background-color: #d5e6f2;
+  .mod-h {
+    border-top: 1px dotted #519dce;
+    border-bottom: 1px dotted #519dce;
+    border-right: 1px dotted #519dce;
+    padding: 4px 10px 2px 10px;
+    font-size: $fontSizeL + 5;
+    color: #45320b;
+    font-weight: bold;
+  }
+  > i {
+    width: 20px;
+    padding: 0;
+    border-top: 1px dotted #519dce;
+    border-bottom: 1px dotted #519dce;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    background: none;
+  }
+  > .mod-icon_2 {
+     @include background("mod-h_3/bg14_v3.png",repeat-y);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg11_v3.png");
+  }
+  > .mod-icon_4 {
+    border-left: 2px solid #7ed1d9;
+    width: 18px;
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg12_v3.png", $position-x: 6px, $position-y: 12px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg13_v3.png", $position-x: 4px, $position-y: 12px);
+  }
+}
+
+
+
+
+//------------------
+// 小見出し h-5
+//------------------
+// %default-h_5_3 {
+//   .mod-h_5-inner {
+//     @extend %inlineBlock;
+//     width: 100%;
+//   }
+//   .mod-h_5-inner2 {
+//     display: table;
+//     vertical-align: middle;
+//     width: 100%;
+//     > i {
+//       display: table-cell;
+//       background-position: left center;
+//       background-repeat: no-repeat;
+//     }
+//     > p {
+//       margin-bottom: 3px;
+//     }
+//   }
+//   .mod-h_5-inner3 {
+//     display: table-cell;
+//     vertical-align: middle;
+//   }
+//   .mod-h {
+//     line-height: 1.2;
+//   }
+// }
+
+// %default-h_5-inner4 { //エメラルドの横に伸びるやつベース
+//   margin-bottom: 5px;
+//   padding: 3px 7px 1px;
+//   overflow: hidden;
+//   @include border-radius();
+//   .mod-h {
+//     display: inline-block;
+//     line-height: 1.3;
+//     max-height: 111px;
+//     word-break: break-all;
+//   }
+// }
+
+ %vari-h_5_3 {
+  .mod-h_5-inner {
+    @extend %inlineBlock;
+    width: 100%;
+    vertical-align: bottom;
+  }
+  .mod-h_5-inner2 {
+    display: table;
+    vertical-align: middle;
+    width: 100%;
+    > i {
+      display: table-cell;
+    }
+    > .mod-icon_0, > .mod-icon_1 {
+      width: 0;
+    }
+    > p {
+      margin-bottom: 3px;
+    }
+  }
+  .mod-h_5-inner3 {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .mod-h {
+    line-height: 1.2;
+  }
+}
+
+
+.mod-h_5A1 { //小見出し　アイコン無し
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: $m_index8Color;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    border-bottom: 1px solid #352111;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #426ca6;
+  }
+}
+
+.mod-h_5A2 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: $m_index8Color2;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    border-bottom: 1px solid #352111;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v2.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #7ed1d9;
+  }
+}
+
+.mod-h_5A3 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: $m_index8Color3;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    border-bottom: 1px solid #352111;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v3.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #ff9547;
+  }
+}
+
+.mod-h_5B1 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner3 {
+    > p {
+      color: #342113;
+    }
+  }
+  .mod-h {
+    color: #f47200;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    border-bottom: 1px solid #f47200;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #426ca6;
+  }
+}
+
+.mod-h_5B2 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner3 {
+    > p {
+      color: #06474f;
+    }
+  }
+  .mod-h {
+    color: #06474f;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    border-bottom: 1px solid #06474f;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v2.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #7ed1d9;
+  }
+}
+
+.mod-h_5B3 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner3 {
+    > p {
+      color: #f37f1c;
+    }
+  }
+  .mod-h {
+    color: #433409;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    border-bottom: 1px solid #f37f1c;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v3.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #ff9547;
+  }
+}
+
+.mod-h_5C1 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner3 {
+    border: none;
+    .mod-h {
+      color: #426ca6;
+      font-weight: bold;
+      font-size: $fontSizeL;
+      border-bottom: 1px solid #426ca6;
+      margin-bottom: 5px;
+    }
+  }
+  .mod-icon_1 {
+    width: 5px;
+    border-left: 3px solid #426ca6;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #426ca6;
+  }
+}
+
+.mod-h_5C2 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner3 {
+    border: none;
+    .mod-h {
+      color: #426ca6;
+      font-weight: bold;
+      font-size: $fontSizeL;
+      border-bottom: 1px solid #7ed1d9;
+      margin-bottom: 5px;
+    }
+  }
+  .mod-icon_1 {
+    width: 5px;
+    border-left: 3px solid #7ed1d9;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v2.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #7ed1d9;
+  }
+}
+
+.mod-h_5C3 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner3 {
+    border: none;
+    .mod-h {
+      color: #45320b;
+      font-weight: bold;
+      font-size: $fontSizeL;
+      border-bottom: 1px solid #f6931c;
+      margin-bottom: 5px;
+    }
+  }
+  .mod-icon_1 {
+    width: 5px;
+    border-left: 3px solid #f6931c;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v3.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #ff9547;
+  }
+}
+
+
+
+
+//---------------------------------
+//   要素見出し
+//---------------------------------
+%vari-h_5 {
+  overflow: hidden;
+  margin-bottom: 10px;
+  .mod-h_5-inner {
+    @extend %inlineBlock;
+    width: 100%;
+    vertical-align: bottom;
+  }
+  .mod-h_5-inner2 {
+    display: table;
+    vertical-align: middle;
+    width: 100%;
+    i {
+      display: table-cell;
+      width: 30px;
+      height: 17px;
+    }
+    .mod-icon_0,.mod-icon_1 {
+      width: 0;
+    }
+    .mod-h {
+      font-size: $fontSizeL;
+      font-weight: bold;
+    }
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-h {
+      font-size: $fontSizeM;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-h {
+      font-size: $fontSizeS + 1;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-h {
+      font-size: $fontSizeL;
+    }
+  }
+}
+
+
+
+.mod-h_5_4A1 {
+  @extend %vari-h_5;
+  .mod-h {
+    color: #223868;
+  }
+  .mod-icon_2 {
+    @include background("mod-h_5/bg07_v.png", $position-x: center, $position-y: 4px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg08_v.png", $position-x: center, $position-y: 4px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg09_v.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg10_v.png", $position-x: center, $position-y: 7px);
+  }
+  .mod-icon_dental {
+    height: 19px;
+    @include background("mod-h_5/bg06_v.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 1px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 4px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 2px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 4px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 4px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 5px;
+    }
+    .mod-icon_5 {
+      background-position-y: 7px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: 1px;
+    }
+  }
+}
+
+
+.mod-h_5_4A2 {
+  @extend %vari-h_5;
+  .mod-icon_2 {
+    @include background("mod-h_5/bg07_v2.png", $position-x: center, $position-y: 4px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg08_v2.png", $position-x: center, $position-y: 4px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg09_v2.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg10_v2.png", $position-x: center, $position-y: 7px);
+  }
+  .mod-icon_dental {
+    height: 19px;
+    @include background("mod-h_5/bg06_v2.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-h {
+    color: $m_index7Color2;
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 1px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 4px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 2px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 4px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 4px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 5px;
+    }
+    .mod-icon_5 {
+      background-position-y: 7px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: 1px;
+    }
+  }
+}
+
+.mod-h_5_4A3 {
+  @extend %vari-h_5;
+  .mod-icon_2 {
+    @include background("mod-h_5/bg07_v3.png", $position-x: center, $position-y: 4px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg08_v3.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg09_v3.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg10_v3.png", $position-x: center, $position-y: 7px);
+  }
+  .mod-icon_dental {
+    height: 19px;
+    @include background("mod-h_5/bg06_v3.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-h {
+    color: $m_index7Color3;
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 1px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 4px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 2px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 4px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 4px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 5px;
+    }
+    .mod-icon_5 {
+      background-position-y: 7px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: 1px;
+    }
+  }
+}
+
+.mod-h_5_4B1 {
+  @extend %vari-h_5;
+  .mod-h {
+    color: #223868;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    @include background("mod-h_5/bg12_v.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg13_v.png", $position-x: center, $position-y: 6px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg14_v.png", $position-x: center, $position-y: 6px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg15_v.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_dental {
+    height: 21px;
+    @include background("mod-h_5/bg11_v.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-h {
+    color: #223868;
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 3px;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 6px;
+    }
+    .mod-icon_5 {
+      background-position-y: 5px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: 3px;
+    }
+  }
+}
+
+.mod-h_5_4B2 {
+  @extend %vari-h_5;
+  .mod-h {
+    color: #0c7d87;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    @include background("mod-h_5/bg12_v2.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg13_v2.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg14_v2.png", $position-x: center, $position-y: 6px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg15_v2.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_dental {
+    height: 21px;
+    @include background("mod-h_5/bg11_v2.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-h {
+    color: #223868;
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 3px;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 6px;
+    }
+    .mod-icon_5 {
+      background-position-y: 5px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: 3px;
+    }
+  }
+}
+
+.mod-h_5_4B3 {
+  @extend %vari-h_5;
+  .mod-icon_2 {
+    height: 21px;
+    @include background("mod-h_5/bg12_v3.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg13_v3.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg14_v3.png", $position-x: center, $position-y: 6px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg15_v3.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_dental {
+    height: 21px;
+    @include background("mod-h_5/bg11_v3.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-h {
+    color: #f37f1c;
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 3px;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 6px;
+    }
+    .mod-icon_5 {
+      background-position-y: 5px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: 3px;
+    }
+  }
+}
+
+
+.mod-h_5_4C1 {
+  @extend %vari-h_5;
+  .mod-icon_2 {
+    height: 21px;
+    @include background("mod-h_5/bg16_v.png", $position-x: center, $position-y: 10%);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg17_v.png", $position-x: center, $position-y: 10%);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg18_v.png", $position-x: center, $position-y: 10%);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg19_v.png", $position-x: center, $position-y: 10%);
+  }
+  .mod-icon_dental {
+    height: 21px;
+    @include background("mod-h_5/bg20_v.png", $position-x: center, $position-y: 10%);
+  }
+  .mod-h {
+    color: #223868;
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 3px;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 6px;
+    }
+    .mod-icon_5 {
+      background-position-y: 5px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: 3px;
+    }
+  }
+}
+
+.mod-h_5_4C2 {
+  @extend %vari-h_5;
+  .mod-icon_2 {
+    height: 21px;
+    @include background("mod-h_5/bg16_v2.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg17_v2.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg18_v2.png", $position-x: center, $position-y: 6px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg19_v2.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_dental {
+    height: 21px;
+    @include background("mod-h_5/bg20_v2.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-h {
+    color: #223868;
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 3px;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 6px;
+    }
+    .mod-icon_5 {
+      background-position-y: 5px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: 3px;
+    }
+  }
+}
+
+
+
+.mod-h_5_4C3 {
+  @extend %vari-h_5;
+  .mod-icon_2 {
+    height: 21px;
+    @include background("mod-h_5/bg16_v3.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg17_v3.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg18_v3.png", $position-x: center, $position-y: 6px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg19_v3.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_dental {
+    height: 21px;
+    @include background("mod-h_5/bg20_v3.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-h {
+    color: #223868;
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 2px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 3px;
+    }
+    .mod-icon_3 {
+      background-position-y: 3px;
+    }
+    .mod-icon_4 {
+      background-position-y: 6px;
+    }
+    .mod-icon_5 {
+      background-position-y: 5px;
+    }
+    .mod-icon_dental {
+      height: 21px;
+      background-position-y: 3px;
+    }
+  }
+}
+
+//------------------
+//  例外：相対の要素見出し
+//------------------
+
+
+
+.mod-h_5v {
+  @extend %vari-h_5;
+  .mod-icon_2 {
+    @include background("mod-h_5/bg07_v.png", $position-x: center, $position-y: 4px);
+  }
+  .mod-icon_3 {
+    @include background("mod-h_5/bg08_v.png", $position-x: center, $position-y: 4px);
+  }
+  .mod-icon_4 {
+    @include background("mod-h_5/bg09_v.png", $position-x: center, $position-y: 5px);
+  }
+  .mod-icon_5 {
+    @include background("mod-h_5/bg10_v.png", $position-x: center, $position-y: 7px);
+  }
+  .mod-icon_dental {
+    height: 19px;
+    @include background("mod-h_5/bg06_v.png", $position-x: center, $position-y: 3px);
+  }
+  .mod-2col-inner &,
+  .mod-2col-inner2 &,
+  .mod-3col-inner &,
+  .mod-3col-inner2 &,
+  .mod-3col-inner3 &,
+  .mod-4col-inner &,
+  .mod-4col-inner2 &,
+  .mod-4col-inner3 &,
+  .mod-4col-inner4 &,
+  .mod-5col & {
+    .mod-icon_2 {
+      background-position-y: top;
+    }
+    .mod-icon_3 {
+      background-position-y: 1px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 4px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: top;
+    }
+  }
+  .mod-2col26 > .mod-2col-inner &,
+  .mod-2col27 > .mod-2col-inner & {
+    .mod-icon_2 {
+      background-position-y: 1px;
+    }
+    .mod-icon_3 {
+      background-position-y: 2px;
+    }
+    .mod-icon_4 {
+      background-position-y: 3px;
+    }
+    .mod-icon_5 {
+      background-position-y: 4px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: top;
+    }
+  }
+  div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+  div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+    .mod-icon_2 {
+      background-position-y: 4px;
+    }
+    .mod-icon_3 {
+      background-position-y: 4px;
+    }
+    .mod-icon_4 {
+      background-position-y: 5px;
+    }
+    .mod-icon_5 {
+      background-position-y: 7px;
+    }
+    .mod-icon_dental {
+      height: 19px;
+      background-position-y: 1px;
+    }
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 & {
+    .mod-h {
+      color: $m_index7Color2;
+    }
+    .mod-icon_2 {
+      @include background("mod-h_5/bg07_v2.png", $position-x: center, $position-y: 4px);
+    }
+    .mod-icon_3 {
+      @include background("mod-h_5/bg08_v2.png", $position-x: center, $position-y: 4px);
+    }
+    .mod-icon_4 {
+      @include background("mod-h_5/bg09_v2.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_5 {
+      @include background("mod-h_5/bg10_v2.png", $position-x: center, $position-y: 7px);
+    }
+    .mod-icon_dental {
+      height: 19px;
+      @include background("mod-h_5/bg06_v2.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-2col-inner &,
+    .mod-2col-inner2 &,
+    .mod-3col-inner &,
+    .mod-3col-inner2 &,
+    .mod-3col-inner3 &,
+    .mod-4col-inner &,
+    .mod-4col-inner2 &,
+    .mod-4col-inner3 &,
+    .mod-4col-inner4 &,
+    .mod-5col & {
+      .mod-icon_2 {
+        background-position-y: top;
+      }
+      .mod-icon_3 {
+        background-position-y: 1px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 4px;
+      }
+      .mod-icon_dental {
+        height: 19px;
+        background-position-y: top;
+      }
+    }
+    .mod-2col26 > .mod-2col-inner &,
+    .mod-2col27 > .mod-2col-inner & {
+      .mod-icon_2 {
+        background-position-y: 1px;
+      }
+      .mod-icon_3 {
+        background-position-y: 2px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 4px;
+      }
+      .mod-icon_dental {
+        height: 19px;
+        background-position-y: top;
+      }
+    }
+    div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+    div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+      .mod-icon_2 {
+        background-position-y: 4px;
+      }
+      .mod-icon_3 {
+        background-position-y: 4px;
+      }
+      .mod-icon_4 {
+        background-position-y: 5px;
+      }
+      .mod-icon_5 {
+        background-position-y: 7px;
+      }
+      .mod-icon_dental {
+        height: 19px;
+        background-position-y: 1px;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 & {//装飾バリエーション
+    .mod-h {
+      color: $m_index7Color3;
+    }
+    .mod-icon_2 {
+      @include background("mod-h_5/bg07_v3.png", $position-x: center, $position-y: 4px);
+    }
+    .mod-icon_3 {
+      @include background("mod-h_5/bg08_v3.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_4 {
+      @include background("mod-h_5/bg09_v3.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_5 {
+      @include background("mod-h_5/bg10_v3.png", $position-x: center, $position-y: 7px);
+    }
+    .mod-icon_dental {
+      height: 19px;
+      @include background("mod-h_5/bg06_v3.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-2col-inner &,
+    .mod-2col-inner2 &,
+    .mod-3col-inner &,
+    .mod-3col-inner2 &,
+    .mod-3col-inner3 &,
+    .mod-4col-inner &,
+    .mod-4col-inner2 &,
+    .mod-4col-inner3 &,
+    .mod-4col-inner4 &,
+    .mod-5col & {
+      .mod-icon_2 {
+        background-position-y: top;
+      }
+      .mod-icon_3 {
+        background-position-y: 1px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 4px;
+      }
+      .mod-icon_dental {
+        height: 19px;
+        background-position-y: top;
+      }
+    }
+    .mod-2col26 > .mod-2col-inner &,
+    .mod-2col27 > .mod-2col-inner & {
+      .mod-icon_2 {
+        background-position-y: 1px;
+      }
+      .mod-icon_3 {
+        background-position-y: 2px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 4px;
+      }
+      .mod-icon_dental {
+        height: 19px;
+        background-position-y: top;
+      }
+    }
+    div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+    div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+      .mod-icon_2 {
+        background-position-y: 4px;
+      }
+      .mod-icon_3 {
+        background-position-y: 4px;
+      }
+      .mod-icon_4 {
+        background-position-y: 5px;
+      }
+      .mod-icon_5 {
+        background-position-y: 7px;
+      }
+      .mod-icon_dental {
+        height: 19px;
+        background-position-y: 1px;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 & {//装飾バリエーション
+    .mod-h {
+      color: #223868;
+    }
+    .mod-icon_2 {
+      height: 21px;
+      @include background("mod-h_5/bg12_v.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-icon_3 {
+      @include background("mod-h_5/bg13_v.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_4 {
+      @include background("mod-h_5/bg14_v.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_5 {
+      @include background("mod-h_5/bg15_v.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_dental {
+      height: 21px;
+      @include background("mod-h_5/bg11_v.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-2col-inner &,
+    .mod-2col-inner2 &,
+    .mod-3col-inner &,
+    .mod-3col-inner2 &,
+    .mod-3col-inner3 &,
+    .mod-4col-inner &,
+    .mod-4col-inner2 &,
+    .mod-4col-inner3 &,
+    .mod-4col-inner4 &,
+    .mod-5col & {
+      .mod-icon_2 {
+        background-position-y: top;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    .mod-2col26 > .mod-2col-inner &,
+    .mod-2col27 > .mod-2col-inner & {
+      .mod-icon_2 {
+        background-position-y: 1px;
+      }
+      .mod-icon_3 {
+        background-position-y: 4px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+    div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+      .mod-icon_2 {
+        background-position-y: 3px;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 6px;
+      }
+      .mod-icon_5 {
+        background-position-y: 5px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: 3px;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 & {//装飾バリエーション
+    .mod-h {
+      color: #0c7d87;
+    }
+    .mod-icon_2 {
+      height: 21px;
+      @include background("mod-h_5/bg12_v2.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-icon_3 {
+      @include background("mod-h_5/bg13_v2.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_4 {
+      @include background("mod-h_5/bg14_v2.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_5 {
+      @include background("mod-h_5/bg15_v2.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_dental {
+      height: 21px;
+      @include background("mod-h_5/bg11_v2.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-2col-inner &,
+    .mod-2col-inner2 &,
+    .mod-3col-inner &,
+    .mod-3col-inner2 &,
+    .mod-3col-inner3 &,
+    .mod-4col-inner &,
+    .mod-4col-inner2 &,
+    .mod-4col-inner3 &,
+    .mod-4col-inner4 &,
+    .mod-5col & {
+      .mod-icon_2 {
+        background-position-y: top;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    .mod-2col26 > .mod-2col-inner &,
+    .mod-2col27 > .mod-2col-inner & {
+      .mod-icon_2 {
+        background-position-y: 1px;
+      }
+      .mod-icon_3 {
+        background-position-y: 4px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+    div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+      .mod-icon_2 {
+        background-position-y: 3px;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 6px;
+      }
+      .mod-icon_5 {
+        background-position-y: 5px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: 3px;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 & {//装飾バリエーション
+    .mod-h {
+      color: #f37f1c;
+      }
+    .mod-icon_2 {
+      height: 21px;
+      @include background("mod-h_5/bg12_v3.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-icon_3 {
+      @include background("mod-h_5/bg13_v3.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-icon_4 {
+      @include background("mod-h_5/bg14_v3.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_5 {
+      @include background("mod-h_5/bg15_v3.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_dental {
+      height: 21px;
+      @include background("mod-h_5/bg11_v3.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-2col-inner &,
+    .mod-2col-inner2 &,
+    .mod-3col-inner &,
+    .mod-3col-inner2 &,
+    .mod-3col-inner3 &,
+    .mod-4col-inner &,
+    .mod-4col-inner2 &,
+    .mod-4col-inner3 &,
+    .mod-4col-inner4 &,
+    .mod-5col & {
+      .mod-icon_2 {
+        background-position-y: top;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    .mod-2col26 > .mod-2col-inner &,
+    .mod-2col27 > .mod-2col-inner & {
+      .mod-icon_2 {
+        background-position-y: 1px;
+      }
+      .mod-icon_3 {
+        background-position-y: 4px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+    div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+      .mod-icon_2 {
+        background-position-y: 3px;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 6px;
+      }
+      .mod-icon_5 {
+        background-position-y: 5px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: 3px;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 & {///装飾バリエーション
+    .mod-h {
+      color: #333333;
+    }
+    .mod-icon_2 {
+      height: 21px;
+      @include background("mod-h_5/bg16_v.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-icon_3 {
+      @include background("mod-h_5/bg17_v.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_4 {
+      @include background("mod-h_5/bg18_v.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_5 {
+      @include background("mod-h_5/bg19_v.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_dental {
+      height: 21px;
+      @include background("mod-h_5/bg20_v.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-2col-inner &,
+    .mod-2col-inner2 &,
+    .mod-3col-inner &,
+    .mod-3col-inner2 &,
+    .mod-3col-inner3 &,
+    .mod-4col-inner &,
+    .mod-4col-inner2 &,
+    .mod-4col-inner3 &,
+    .mod-4col-inner4 &,
+    .mod-5col & {
+      .mod-icon_2 {
+        background-position-y: top;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    .mod-2col26 > .mod-2col-inner &,
+    .mod-2col27 > .mod-2col-inner & {
+      .mod-icon_2 {
+        background-position-y: 1px;
+      }
+      .mod-icon_3 {
+        background-position-y: 4px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+    div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+      .mod-icon_2 {
+        background-position-y: 3px;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 6px;
+      }
+      .mod-icon_5 {
+        background-position-y: 5px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: 3px;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 & {///装飾バリエーション
+    .mod-h {
+      color: #355997;
+    }
+    .mod-icon_2 {
+      height: 21px;
+      @include background("mod-h_5/bg16_v2.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-icon_3 {
+      @include background("mod-h_5/bg17_v2.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_4 {
+      @include background("mod-h_5/bg18_v2.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_5 {
+      @include background("mod-h_5/bg19_v2.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_dental {
+      height: 21px;
+      @include background("mod-h_5/bg20_v2.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-h {
+      color: #223868;
+    }
+    .mod-2col-inner &,
+    .mod-2col-inner2 &,
+    .mod-3col-inner &,
+    .mod-3col-inner2 &,
+    .mod-3col-inner3 &,
+    .mod-4col-inner &,
+    .mod-4col-inner2 &,
+    .mod-4col-inner3 &,
+    .mod-4col-inner4 &,
+    .mod-5col & {
+      .mod-icon_2 {
+        background-position-y: top;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    .mod-2col26 > .mod-2col-inner &,
+    .mod-2col27 > .mod-2col-inner & {
+      .mod-icon_2 {
+        background-position-y: 1px;
+      }
+      .mod-icon_3 {
+        background-position-y: 4px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+    div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+      .mod-icon_2 {
+        background-position-y: 3px;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 6px;
+      }
+      .mod-icon_5 {
+        background-position-y: 5px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: 3px;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 & {///装飾バリエーション
+    .mod-h {
+      color: #45320b;
+      }
+    .mod-icon_2 {
+      height: 21px;
+      @include background("mod-h_5/bg16_v3.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-icon_3 {
+      @include background("mod-h_5/bg17_v3.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_4 {
+      @include background("mod-h_5/bg18_v3.png", $position-x: center, $position-y: 6px);
+    }
+    .mod-icon_5 {
+      @include background("mod-h_5/bg19_v3.png", $position-x: center, $position-y: 5px);
+    }
+    .mod-icon_dental {
+      height: 21px;
+      @include background("mod-h_5/bg20_v3.png", $position-x: center, $position-y: 3px);
+    }
+    .mod-h {
+      color: #223868;
+    }
+    .mod-2col-inner &,
+    .mod-2col-inner2 &,
+    .mod-3col-inner &,
+    .mod-3col-inner2 &,
+    .mod-3col-inner3 &,
+    .mod-4col-inner &,
+    .mod-4col-inner2 &,
+    .mod-4col-inner3 &,
+    .mod-4col-inner4 &,
+    .mod-5col & {
+      .mod-icon_2 {
+        background-position-y: top;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    .mod-2col26 > .mod-2col-inner &,
+    .mod-2col27 > .mod-2col-inner & {
+      .mod-icon_2 {
+        background-position-y: 1px;
+      }
+      .mod-icon_3 {
+        background-position-y: 4px;
+      }
+      .mod-icon_4 {
+        background-position-y: 3px;
+      }
+      .mod-icon_5 {
+        background-position-y: 2px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: top;
+      }
+    }
+    div[data-parts-name="part-main-153_001 v2"] .mod-box11 &,
+    div[data-parts-name="part-main-153_002 v2"] .mod-box11 & {
+      .mod-icon_2 {
+        background-position-y: 3px;
+      }
+      .mod-icon_3 {
+        background-position-y: 3px;
+      }
+      .mod-icon_4 {
+        background-position-y: 6px;
+      }
+      .mod-icon_5 {
+        background-position-y: 5px;
+      }
+      .mod-icon_dental {
+        height: 21px;
+        background-position-y: 3px;
+      }
+    }
+  }
+}
+
+
+//-----------------
+//下線なしバリエーション
+//------------------
+
+//大見出し
+.mod-h_2D1 {
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod_h {
+    color: #07172f;
+  }
+  > i {
+    width: 42px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    width: 30px;
+    border-left: #5596f6 solid 12px;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg02_v.png", $position-y: 1px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg03_v.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg04_v.png", $position-x: 11px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg05_v.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg_v.png", $position-y: 4px);
+  }
+}
+
+.mod-h_2D2 {
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod_h {
+    color: #07172f;
+  }
+  > i {
+    width: 42px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    width: 30px;
+    border-left: #7ed1d9 solid 12px;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg02_v2.png", $position-y: 1px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg03_v2.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg04_v2.png", $position-x: 11px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg05_v2.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg_v2.png", $position-y: 4px);
+  }
+}
+
+.mod-h_2D3 {
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod_h {
+    color: #07172f;
+  }
+  > i {
+    width: 42px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    width: 30px;
+    border-left: #ffa658 solid 12px;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg02_v3.png", $position-y: 1px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg03_v3.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg04_v3.png", $position-x: 11px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg05_v3.png", $position-x: 6px, $position-y: 6px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg_v3.png", $position-y: 4px);
+  }
+}
+
+.mod-h_2E1 { //装飾１
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod-h {
+    padding-left: 10px;
+    color: #07172f;
+    font-size: $fontSizeL + 6;
+  }
+  > i {
+    width: 55px;
+    height: 50px;
+  }
+  > .mod-icon_0 {
+    width: 15px;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/bg16_v.png",$color: #ffffff);
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg18_v.png", $position-y: 12px, $position-x: 5px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg19_v.png", $position-x: 15px, $position-y: 15px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg20_v.png", $position-x: 21px, $position-y: 10px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg21_v.png", $position-x: 17px, $position-y: 10px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg22_v.png", $position-x: 15px, $position-y: 12px);
+  }
+}
+
+.mod-h_2E2 { //装飾１
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod-h {
+    padding-left: 10px;
+    color: #07172f;
+    font-size: $fontSizeL + 6;
+  }
+  > i {
+    width: 55px;
+    height: 50px;
+  }
+  > .mod-icon_0 {
+    width: 15px;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/bg16_v2.png",$color: #ffffff);
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg18_v2.png", $position-y: 12px, $position-x: 5px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg19_v2.png", $position-x: 15px, $position-y: 15px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg20_v2.png", $position-x: 21px, $position-y: 10px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg21_v2.png", $position-x: 17px, $position-y: 10px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg22_v2.png", $position-x: 15px, $position-y: 12px);
+  }
+}
+
+.mod-h_2E3 { //装飾１
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod-h {
+    padding-left: 10px;
+    color: #07172f;
+    font-size: $fontSizeL + 6;
+  }
+  > i {
+    width: 55px;
+    height: 50px;
+  }
+  > .mod-icon_0 {
+    width: 15px;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/bg16_v3.png",$color: #ffffff);
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg18_v3.png", $position-y: 12px, $position-x: 5px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg19_v3.png", $position-x: 15px, $position-y: 15px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg20_v3.png", $position-x: 21px, $position-y: 10px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg21_v3.png", $position-x: 17px, $position-y: 10px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg22_v3.png", $position-x: 15px, $position-y: 12px);
+  }
+}
+
+.mod-h_2F1 { //装飾2
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod-h {
+    padding-left: 10px;
+    color: #07172f;
+    font-size: $fontSizeL + 9;
+  }
+  > i {
+    width: 55px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    height: 50px;
+    @include background("mod-h_2/bg17_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg11_v.png", $position-x: 11px, $position-y: 10px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg12_v.png", $position-x: 25px, $position-y: 8px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg13_v.png", $position-x: 28px, $position-y: 7px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg14_v.png", $position-x: 24px, $position-y: 8px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg15_v.png", $position-x: 22px, $position-y: 6px);
+  }
+}
+
+.mod-h_2F2 { //装飾2
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod-h {
+    padding-left: 10px;
+    color: #07172f;
+    font-size: $fontSizeL + 9;
+  }
+  > i {
+    width: 55px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    height: 50px;
+    @include background("mod-h_2/bg17_v2.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg11_v2.png", $position-x: 11px, $position-y: 10px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg12_v2.png", $position-x: 25px, $position-y: 8px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg13_v2.png", $position-x: 28px, $position-y: 7px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg14_v2.png", $position-x: 24px, $position-y: 8px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg15_v2.png", $position-x: 22px, $position-y: 6px);
+  }
+}
+
+.mod-h_2F3 { //装飾2
+  @extend %default-icon2;
+  @extend %vari-h_2;
+  .mod-h {
+    padding-left: 10px;
+    color: #07172f;
+    font-size: $fontSizeL + 9;
+  }
+  > i {
+    width: 55px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    height: 50px;
+    @include background("mod-h_2/bg17_v3.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/bg11_v3.png", $position-x: 11px, $position-y: 10px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/bg12_v3.png", $position-x: 25px, $position-y: 8px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/bg13_v3.png", $position-x: 28px, $position-y: 7px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/bg14_v3.png", $position-x: 24px, $position-y: 8px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_2/bg15_v3.png", $position-x: 22px, $position-y: 6px);
+  }
+}
+
+
+//中見出し
+.mod-h_3D1 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  .mod-h {
+    font-size: $fontSizeL + 6;
+    color: $m_index3Color;
+  }
+  > i {
+    width: 31px;
+  }
+  > .mod-icon_0 {
+    width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
+    @include background("mod-h_3/bg15_v.png", $position-y: 5px);
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg02_v.png", $position-y: 9px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg03_v.png", $position-y: 3px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg04_v.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg05_v.png", $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg_v.png");
+  }
+}
+
+.mod-h_3D2 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  .mod-h {
+    font-size: $fontSizeL + 6;
+    color: $m_index3Color2;
+  }
+  > i {
+    width: 31px;
+  }
+  > .mod-icon_0 {
+    width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
+    @include background("mod-h_3/bg15_v2.png", $position-y: 5px);
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg02_v2.png", $position-y: 9px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg03_v2.png", $position-y: 3px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg04_v2.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg05_v2.png", $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg_v2.png");
+  }
+}
+
+.mod-h_3D3 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  .mod-h {
+    font-size: $fontSizeL + 6;
+    color: $m_index3Color3;
+  }
+  > i {
+    width: 31px;
+  }
+  > .mod-icon_0 {
+    width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
+    @include background("mod-h_3/bg15_v3.png", $position-y: 5px);
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg02_v3.png", $position-y: 9px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg03_v3.png", $position-y: 3px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg04_v3.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg05_v3.png", $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg_v3.png");
+  }
+}
+
+.mod-h_3E1 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  @include background("mod-h_3/bg17_v.png", $position-y: bottom);
+  .mod-h {
+    font-size: $fontSizeL + 6;
+    color: #f16c0b;
+  }
+  > i {
+    width: 38px;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    width: 0;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg06_v.png", $position-x: 2px, $position-y: 5px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg07_v.png", $position-x: 1px, $position-y: 1px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg08_v.png", $position-x: 9px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg09_v.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg10_v.png", $position-x: 6px);
+  }
+}
+
+.mod-h_3E2 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  @include background("mod-h_3/bg17_v2.png", $position-y: bottom);
+  .mod-h {
+    font-size: $fontSizeL + 6;
+    color: #06474f;
+  }
+  > i {
+    width: 38px;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    width: 0;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg06_v2.png", $position-x: 2px, $position-y: 5px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg07_v2.png", $position-x: 1px, $position-y: 1px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg08_v2.png", $position-x: 9px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg09_v2.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg10_v2.png", $position-x: 6px);
+  }
+}
+
+.mod-h_3E3 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  @include background("mod-h_3/bg17_v3.png", $position-y: bottom);
+  .mod-h {
+    font-size: $fontSizeL + 6;
+    color: #37280b;
+  }
+  > i {
+    width: 38px;
+  }
+  > .mod-icon_0, > .mod-icon_1 {
+    width: 0;
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_3/bg06_v3.png", $position-x: 2px, $position-y: 5px);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg07_v3.png", $position-x: 1px, $position-y: 1px);
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_3/bg08_v3.png", $position-x: 9px, $position-y: 3px);
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg09_v3.png", $position-x: 5px, $position-y: 3px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg10_v3.png", $position-x: 6px);
+  }
+}
+
+.mod-h_3F1 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  .mod-h {
+    font-size: $fontSizeL + 5;
+    color: #331b07;
+    font-weight: bold;
+  }
+  > i {
+    width: 30px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_3/bg16_v.png", $position-y: 3px);
+  }
+  > .mod-icon_2 {
+     @include background("mod-h_3/bg14_v.png",repeat-y);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg11_v.png");
+    height: 36px;
+  }
+  > .mod-icon_4 {
+    border-left: 5px solid #f2d027;
+    width: 25px;
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg12_v.png", $position-x: 12px, $position-y: 7px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg13_v.png", $position-x: 6px, $position-y: 7px);
+  }
+}
+
+.mod-h_3F2 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  .mod-h {
+    font-size: $fontSizeL + 5;
+    color: #331b07;
+    font-weight: bold;
+  }
+  > i {
+    width: 30px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_3/bg16_v2.png", $position-y: 3px);
+  }
+  > .mod-icon_2 {
+     @include background("mod-h_3/bg14_v2.png",repeat-y);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg11_v2.png");
+    height: 36px;
+  }
+  > .mod-icon_4 {
+    border-left: 5px solid #f7931d;
+    width: 25px;
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg12_v2.png", $position-x: 12px, $position-y: 7px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg13_v2.png", $position-x: 6px, $position-y: 7px);
+  }
+}
+
+.mod-h_3F3 {
+  @extend %default-icon2;
+  @extend %vari-h_3;
+  .mod-h {
+    font-size: $fontSizeL + 5;
+    color: #331b07;
+    font-weight: bold;
+  }
+  > i {
+    width: 30px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_3/bg16_v3.png", $position-y: 3px);
+  }
+  > .mod-icon_2 {
+     @include background("mod-h_3/bg14_v3.png",repeat-y);
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_3/bg11_v3.png");
+    height: 36px;
+  }
+  > .mod-icon_4 {
+    border-left: 5px solid #7ed1d9;
+    width: 25px;
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_3/bg12_v3.png", $position-x: 12px, $position-y: 7px);
+  }
+  > .mod-icon_dental {
+    @include background("mod-h_3/bg13_v3.png", $position-x: 6px, $position-y: 7px);
+  }
+}
+
+//小見出し
+.mod-h_5D1 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: #352111;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_1, .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #426ca6;
+  }
+}
+
+.mod-h_5D2 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: #172846;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_1, .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v2.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #7ed1d9;
+  }
+}
+
+.mod-h_5D3 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: #45320b;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_1, .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v3.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #ff9547;
+  }
+}
+
+.mod-h_5E1 { //小見出し　アイコン無し
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner {
+    > p {
+      color: #342113;
+    }
+  }
+  .mod-h {
+    color: #fd7c77;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #426ca6;
+  }
+}
+
+.mod-h_5E2 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner {
+    > p {
+      color: #f37f1c;
+    }
+  }
+  .mod-h {
+    color: #433409;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v2.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #7ed1d9;
+  }
+}
+
+.mod-h_5E3 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h_5-inner {
+    > p {
+      color: #00646d;
+    }
+  }
+  .mod-h {
+    color: #00646d;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v3.png", repeat-y);
+  }
+  .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #ff9547;
+  }
+}
+
+.mod-h_5F1 { //小見出し　アイコン無し
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: #071730;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v.png", repeat-y);
+  }
+  .mod-icon_1, .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #426ca6;
+  }
+}
+
+.mod-h_5F2 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: #071730;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v2.png", repeat-y);
+  }
+  .mod-icon_1, .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #7ed1d9;
+  }
+}
+
+.mod-h_5F3 {
+  @extend %default-h_5_3;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .mod-h {
+    color: #331b07;
+    font-weight: bold;
+    font-size: $fontSizeL;
+    margin-bottom: 5px;
+  }
+  .mod-icon_2 {
+    width: 18px;
+    @include background("mod-h_5/bg21_v3.png", repeat-y);
+  }
+  .mod-icon_1, .mod-icon_3 {
+    width: 6px;
+    border-left: 10px solid #ff9547;
+  }
+}
+
+
+
+//-----------------
+//mod-h_2_v 連番アイコン
+//------------------
+%default-h_2_icon {
+  width: 690px;
+  margin: 0 -25px 20px -25px;
+  overflow: hidden;
+  padding: 0;
+  > i {
+    width: 70px;
+    height: 45px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  .mod-h {
+    display: table-cell;
+    vertical-align: middle;
+    color: #45320b;
+    font-size: $fontSizeL + 9;
+    border-bottom: 1px dotted #dedad1;
+  }
+}
+
+.mod-h_2_v { //特徴
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > i {
+    height: 45px;
+  }
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/01/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/01/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/01/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/01/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/01/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/01/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/01/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/01/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/01/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/01/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/01/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/01/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/01/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/01/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/01/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/01/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/01/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/01/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/01/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/01/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/01/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/01/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/01/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/01/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/01/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/01/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/01/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/01/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/01/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/01/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v2 { //特長
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_1 {
+    @include background("mod-h_2/02/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/02/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/02/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/02/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/02/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/02/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/02/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/02/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/02/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/02/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/02/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/02/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/02/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/02/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/02/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/02/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/02/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/02/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/02/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/02/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/02/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/02/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/02/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/02/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/02/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/02/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/02/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/02/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/02/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/02/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v3 {
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_1 {
+    @include background("mod-h_2/03/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/03/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/03/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/03/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/03/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/03/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/03/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/03/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/03/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/03/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/03/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/03/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/03/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/03/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/03/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/03/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/03/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/03/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/03/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/03/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/03/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/03/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/03/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/03/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/03/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/03/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/03/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/03/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/03/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/03/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v4 { //方針
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/04/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/04/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/04/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/04/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/04/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/04/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/04/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/04/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/04/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/04/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/04/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/04/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/04/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/04/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/04/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/04/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/04/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/04/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/04/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/04/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/04/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/04/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/04/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/04/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/04/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/04/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/04/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/04/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/04/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/04/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v5 { //理由
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/05/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/05/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/05/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/05/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/05/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/05/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/05/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/05/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/05/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/05/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/05/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/05/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/05/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/05/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/05/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/05/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/05/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/05/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/05/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/05/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/05/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/05/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/05/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/05/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/05/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/05/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/05/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/05/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/05/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/05/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v6 { //お約束
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/06/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/06/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/06/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/06/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/06/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/06/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/06/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/06/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/06/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/06/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/06/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/06/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/06/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/06/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/06/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/06/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/06/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/06/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/06/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/06/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/06/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/06/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/06/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/06/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/06/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/06/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/06/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/06/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/06/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/06/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v7 { //こだわり
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/07/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/07/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/07/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/07/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/07/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/07/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/07/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/07/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/07/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/07/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/07/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/07/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/07/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/07/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/07/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/07/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/07/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/07/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/07/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/07/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/07/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/07/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/07/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/07/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/07/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/07/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/07/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/07/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/07/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/07/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v8 { //コンセプト
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/08/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/08/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/08/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/08/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/08/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/08/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/08/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/08/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/08/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/08/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/08/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/08/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/08/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/08/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/08/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/08/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/08/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/08/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/08/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/08/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/08/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/08/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/08/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/08/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/08/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/08/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/08/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/08/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/08/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/08/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v9 { //メリット
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/09/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/09/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/09/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/09/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/09/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/09/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/09/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/09/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/09/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/09/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/09/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/09/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/09/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/09/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/09/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/09/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/09/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/09/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/09/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/09/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/09/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/09/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/09/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/09/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/09/bg05_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/09/bg06_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/09/bg07_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/09/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/09/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/09/bg10_v3.png");
+    }
+  }
+}
+
+.mod-h_2_v10 { //ポイント
+  @extend %default-icon2;
+  @extend %default-h_2_icon;
+  > .mod-icon_0 {
+    width: 0;
+  }
+  > .mod-icon_1 {
+    @include background("mod-h_2/10/bg_v.png");
+  }
+  > .mod-icon_2 {
+    @include background("mod-h_2/10/bg02_v.png");
+  }
+  > .mod-icon_3 {
+    @include background("mod-h_2/10/bg03_v.png");
+  }
+  > .mod-icon_4 {
+    @include background("mod-h_2/10/bg04_v.png");
+  }
+  > .mod-icon_5 {
+    @include background("mod-h_2/10/bg05_v.png");
+  }
+  > .mod-icon_6 {
+    @include background("mod-h_2/10/bg06_v.png");
+  }
+  > .mod-icon_7 {
+    @include background("mod-h_2/10/bg07_v.png");
+  }
+  > .mod-icon_8 {
+    @include background("mod-h_2/10/bg08_v.png");
+  }
+  > .mod-icon_9 {
+    @include background("mod-h_2/10/bg09_v.png");
+  }
+  > .mod-icon_10 {
+    @include background("mod-h_2/10/bg10_v.png");
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/10/bg_v2.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/10/bg02_v2.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/10/bg03_v2.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/10/bg04_v2.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/10/bg05_v2.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/10/bg06_v2.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/10/bg07_v2.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/10/bg08_v2.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/10/bg09_v2.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/10/bg10_v2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    > .mod-icon_1 {
+      @include background("mod-h_2/10/bg_v3.png");
+    }
+    > .mod-icon_2 {
+      @include background("mod-h_2/10/bg02_v3.png");
+    }
+    > .mod-icon_3 {
+      @include background("mod-h_2/10/bg03_v3.png");
+    }
+    > .mod-icon_4 {
+      @include background("mod-h_2/10/bg04_v3.png");
+    }
+    > .mod-icon_5 {
+      @include background("mod-h_2/10/bg08_v3.png");
+    }
+    > .mod-icon_6 {
+      @include background("mod-h_2/10/bg08_v3.png");
+    }
+    > .mod-icon_7 {
+      @include background("mod-h_2/10/bg08_v3.png");
+    }
+    > .mod-icon_8 {
+      @include background("mod-h_2/10/bg08_v3.png");
+    }
+    > .mod-icon_9 {
+      @include background("mod-h_2/10/bg09_v3.png");
+    }
+    > .mod-icon_10 {
+      @include background("mod-h_2/10/bg10_v3.png");
+    }
+  }
+}

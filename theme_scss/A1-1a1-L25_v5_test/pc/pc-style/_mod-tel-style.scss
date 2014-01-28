@@ -1,0 +1,642 @@
+@charset "UTF-8";
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// common-side-style-mod-tel(グループ共通common)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-side-style-mod-tel {
+  .mod-tel-inner2 {
+    @if $layoutCode == "L25" {
+      font-size: $sideFontSizeL + 2;
+    } @else if $layoutCode == "L30" {
+      font-size: $sideFontSizeL + 8;
+    }
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-tel-ig
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-tel-ig { //ゴロあり、アイコンあり　11,12,17,18,24,25,26,27
+  @extend %inlineBlock;
+  margin: 10px 0 0 0;
+  .mod-tel-inner {
+    font-size: $fontSizeM - 2;
+    text-align: right;
+    line-height: 1.0;
+  }
+  .mod-tel-inner2 {
+    margin: 3px 0 0 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    word-break: break-all;
+    font-weight: bold;
+    line-height: 1.0;
+  }
+}
+//—————————module-style—————————
+@mixin module-style-mod-tel-ig { //mod-tel11
+  .mod-tel-inner {
+    padding: 0 0 0 40px;
+  }
+  .mod-tel-inner2 {
+    padding: 5px 0 0 40px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 25px;
+  }
+}
+@mixin module-style-mod-tel-ig-side { //mod-tel17
+  .mod-tel-inner {
+    font-size: $sideFontSizeS;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    padding: 6px 0 0 30px;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+}
+//
+// @mixin module-style-mod-tel-ig { //mod-tel24 m249 set待ち
+//   margin: 15px 0 0 0;
+//   .mod-tel-inner {
+//     padding: 0 0 0 50px;
+//   }
+//   .mod-tel-inner2 {
+//     padding: 0 0 0 50px;
+//     font-size: 40px;
+//     text-align: center;
+//     background-image: url("img/mod-tel/bg14.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 2px;
+//   }
+// }
+// @mixin module-style-mod-tel-ig { //mod-tel26 m250 set待ち
+//   margin: 15px 0 0 0;
+//   .mod-tel-inner {
+//     padding: 0 0 0 30px;
+//   }
+//   .mod-tel-inner2 {
+//     font-size: 30px;
+//     padding: 0 0 0 30px;
+//     background-image: url("img/mod-tel/bg15.png");
+//     background-repeat: no-repeat;
+//   }
+// }
+//
+//—————————deco-style—————————
+//mod-tel-ig 旧tel11
+@mixin deco-style01A1-mod-tel-ig {
+  .mod-tel-inner2 {
+    background-image: url(img/mod-tel/bg05.png);
+  }
+}
+@mixin deco-style01A2-mod-tel-ig {
+  .mod-tel-inner2 {
+    background-image: url(img/mod-tel/bg05_2.png);
+  }
+}
+@mixin deco-style01A3-mod-tel-ig {
+  .mod-tel-inner2 {
+    background-image: url(img/mod-tel/bg05_3.png);
+  }
+}
+@mixin deco-style01C3-mod-tel-ig {
+  .mod-tel-inner2 {
+    background-image: url(img/mod-tel/bg05.png);
+  }
+}
+
+//mod-tel-ig-side 旧tel17
+@mixin deco-style01A1-mod-tel-ig-side {
+  .mod-tel-inner2 {
+    background-image: url(img/mod-tel/bg08.png);
+  }
+}
+@mixin deco-style01A2-mod-tel-ig-side {
+  .mod-tel-inner2 {
+    background-image: url(img/mod-tel/bg08_2.png);
+  }
+}
+@mixin deco-style01A3-mod-tel-ig-side {
+  .mod-tel-inner2 {
+    background-image: url(img/mod-tel/bg08_3.png);
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-tel-g
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-tel-g { //ごろあり、アイコンなし
+  @extend %inlineBlock;
+  margin: 10px 0 0 0;
+  .mod-tel-inner {
+    font-size: $fontSizeM - 2;
+    text-align: right;
+    line-height: 1.0;
+  }
+  .mod-tel-inner2 {
+    margin: 3px 0 0 0;
+    word-break: break-all;
+    font-weight: bold;
+    line-height: 1.0;
+  }
+}
+//—————————module-style—————————
+@mixin module-style-mod-tel-g { //mod-tel12
+  .mod-tel-inner2 {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 1.0;
+  }
+}
+@mixin module-style-mod-tel-g-side { //mod-tel18
+  .mod-tel-inner {
+    font-size: $sideFontSizeS;
+  }
+  .mod-tel-inner2 {
+    margin: 0;
+    padding: 6px 0 0 0;
+  }
+}
+//
+// @mixin module-style-mod-tel-g  { //mod-tel25 m249 set待ち
+//   margin: 15px 0 0 0;
+//   .mod-tel-inner2 {
+//     font-size: 40px;
+//     text-align: center;
+//   }
+// }
+// @mixin module-style-mod-tel-g { //mod-tel27 m250 set待ち
+//   margin: 15px 0 0 0;
+//   .mod-tel-inner2 {
+//     font-size: 30px;
+//   }
+// }
+//
+//—————————deco-style—————————
+//mod-tel-g 旧tel12
+@mixin deco-style01A1-mod-tel-g {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #333333;
+  }
+}
+@mixin deco-style01A2-mod-tel-g {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #0b2d63;
+  }
+}
+@mixin deco-style01A3-mod-tel-g {
+  .mod-tel-inner {
+    color: #56534e;
+  }
+  .mod-tel-inner2 {
+    color: #45320b;
+  }
+}
+@mixin deco-style01C3-mod-tel-g {
+  .mod-tel-inner {
+    color: #45320b;
+  }
+  .mod-tel-inner2 {
+    color: #333333;
+  }
+}
+
+//mod-tel-g-side 旧tel18
+@mixin deco-style01A1-mod-tel-g-side {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f7931d;
+  }
+}
+@mixin deco-style01A2-mod-tel-g-side {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #426ca6;
+  }
+}
+@mixin deco-style01A3-mod-tel-g-side {
+  .mod-tel-inner {
+    color: #56534e;
+  }
+  .mod-tel-inner2 {
+    color: #eb5910;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-tel-i
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-tel-i { //語呂なし
+  background-position: left center;
+  background-repeat: no-repeat;
+  word-break: break-all;
+  line-height: 1.0;
+}
+//—————————module-style—————————
+@mixin module-style-mod-tel-i-footer { //mod-tel23
+  padding: 0 0 0 32px;
+  font-size: 32px;
+}
+//
+// @mixin module-style-mod-tel-i-header { //mod-tel19 ペンド
+//   padding: 0 0 0 35px;
+//   line-height: 1.5;
+//   font-size: 25px;
+// }
+// @mixin module-style-mod-tel-i-header { //mod-tel21 ペンド
+//   padding: 0 0 0 25px;
+//   font-size: 25px;
+// }
+//
+//—————————deco-style—————————
+//mod-tel3-footer 旧tel23
+@mixin deco-style01A1-mod-tel-i-footer {
+  background-image: url(img/mod-tel/bg05_3.png);
+  color: #333333;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-tel-g-iig
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-tel-iig { //ダブルアイコン ゴロあり 28,29,30
+  display: table;
+  margin: 10px 0 0 0;
+  i {
+    display: table-cell;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+  .mod-tel-inner {
+    display: table-cell;
+  }
+  .mod-tel-inner-2 {
+    text-align: right;
+    font-size: $fontSizeS;
+    line-height: 1.0;
+  }
+  .mod-tel-inner-3 {
+    margin: 3px 0 0 0;
+    word-break: break-all;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.0;
+  }
+}
+
+//—————————module-style—————————
+@mixin module-style-mod-tel-iig-header {
+  margin: 0;
+  i {
+    width: 31px;
+  }
+  .mod-tel-inner {
+    padding: 0 0 0 5px;
+  }
+  .mod-tel-inner-3 {
+    font-weight: normal;
+    font-size: 30px;
+  }
+}
+//
+// @mixin module-style-mod-tel-iig { //元29 m271 set待ち
+//   .mod-tel-inner-3 {
+//     font-size: 32px;
+//     color: #eb5910;
+//   }
+// }
+// @mixin module-style-mod-tel-iig { //元30 m277 set待ち
+//   .mod-tel-inner-3 {
+//     font-size: 32px;
+//     color: #eb5910;
+//   }
+// }
+//
+
+//—————————deco-style—————————
+//mod-tel-iig-header 旧tel28
+@mixin deco-style01A1-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_a.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #333333;
+  }
+}
+@mixin deco-style01A2-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_a_2.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #436491;
+  }
+}
+@mixin deco-style01A3-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_a_3.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+@mixin deco-style01B1-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_b.png");
+  }
+  .mod-tel-inner-2 {
+    color: #ffffff;
+  }
+  .mod-tel-inner-3 {
+    color: #f2d028;
+  }
+}
+@mixin deco-style01B2-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_b_2.png");
+  }
+  .mod-tel-inner-2 {
+    color: #ffffff;
+  }
+  .mod-tel-inner-3 {
+    color: #ffffff;
+  }
+}
+@mixin deco-style01B3-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_b_3.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #443308;
+  }
+}
+@mixin deco-style01C1-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_c.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #284469;
+  }
+}
+@mixin deco-style01C2-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_c_2.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #f7931d;
+  }
+}
+@mixin deco-style01C3-mod-tel-iig-header {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_28/bg_c_3.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-tel-pic
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-tel-pic-footer { //mod-tel22
+  display: table;
+  .mod-tel-inner {
+    display: table-cell;
+    margin: 0;
+    vertical-align: top;
+  }
+  .mod-tel-inner-img {
+    margin: 0 5px 0 0;
+    width: 60px;
+  }
+  .mod-tel-inner2 {
+    display: table-cell;
+    margin: 0;
+    vertical-align: middle;
+  }
+  .mod-tel-inner3 {
+    font-size: $fontSizeL;
+  }
+  .mod-tel-inner4 {
+    display: table;
+  }
+  i {
+    display: table-cell;
+    padding: 0 5px 0 0;
+    width: 23px;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+  .mod-tel-inner4-2 {
+    display: table-cell;
+    margin: 3px 0 0 0;
+    word-break: break-all;
+    font-size: $fontSizeL + 14;
+    line-height: 1.0;
+  }
+}
+
+//—————————deco-style—————————
+//mod-tel-pic-footer 旧tel28
+@mixin deco-style01A1-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_a.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+  .mod-tel-inner4-2 {
+    color: #333333;
+  }
+}
+@mixin deco-style01A2-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_a_2.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+  .mod-tel-inner4-2 {
+    color: #333333;
+  }
+}
+@mixin deco-style01A3-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_a_3.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin deco-style01B1-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_b.png");
+  }
+  .mod-tel-inner3 {
+    color: #ffffff;
+  }
+  .mod-tel-inner4-2 {
+    color: #ffffff;
+  }
+}
+@mixin deco-style01B2-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_b_2.png");
+  }
+  .mod-tel-inner3 {
+    color: #ffffff;
+  }
+  .mod-tel-inner4-2 {
+    color: #ffffff;
+  }
+}
+@mixin deco-style01B3-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_b_3.png");
+  }
+  .mod-tel-inner3 {
+    color: #443308;
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin deco-style01C1-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_c.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+  .mod-tel-inner4-2 {
+    color: #284469;
+  }
+}
+@mixin deco-style01C2-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_c_2.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+  .mod-tel-inner4-2 {
+    color: #333333;
+  }
+}
+@mixin deco-style01C3-mod-tel-pic-footer {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_22/bg_c_3.png");
+  }
+  .mod-tel-inner3 {
+    color: #333333;
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//  mod-title
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+//----- common-style -----//
+@mixin common-style-mod-tel-ii-footer { };
+
+//----- module-style -----//
+@mixin module-style-mod-tel-ii-footer { };
+
+//----- deco-style -----//

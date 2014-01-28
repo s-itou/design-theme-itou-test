@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// pat-design-copy-list の定義
+//
+//   ・デザインパターン
+//   ・mod-set-copy-list にincludeされる使い方を想定
+//   ・他のsetモジュール（お客さまの声、等）でも使われる可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// -----------------------------------
+
+// -----------------------------------
+// pat-design-copy-list 装飾スタイル
+// -----------------------------------
+@mixin common-style-pat-design-copy-list-1 {
+  margin-top: 10px;
+  padding: 5px 0;
+}
+@mixin common-style-pat-design-copy-list-2 {
+  margin-top: 10px;
+}
+
+// -----------------------------------
+// pat-design-decolistの個別設定
+// -----------------------------------
+@mixin pat-design-copy-list-1 {
+  .mod-copy-in2 {
+    @include pat-item-copy-grade-4;
+    @include common-style-pat-design-copy-list-1;
+  }
+}
+@mixin pat-design-copy-list-2 {
+  .mod-copy-in2 {
+    @include pat-item-copy-grade-5;
+    @include common-style-pat-design-copy-list-1;
+  }
+}
+@mixin pat-design-copy-list-3 {
+  .mod-copy-in2 {
+    @include pat-item-copy-grade-6;
+    @include common-style-pat-design-copy-list-1;
+  }
+}
+@mixin pat-design-copy-list-4 {
+  .mod-copy-in2 {
+    @include pat-item-copy-sayu-image-1;
+    @include common-style-pat-design-copy-list-1;
+  }
+}
+@mixin pat-design-copy-list-5 {
+  .mod-copy-in2 {
+    @include pat-item-copy-sayu-image-2;
+    @include common-style-pat-design-copy-list-1;
+  }
+}
+@mixin pat-design-copy-list-6 {
+  .mod-copy-in2 {
+    @include pat-item-copy-sayu-image-3;
+    @include common-style-pat-design-copy-list-1;
+  }
+}
+@mixin pat-design-copy-list-7 {
+  .mod-copy-in2 {
+    @include pat-item-copy-futoimg-bgc-1;
+    @include common-style-pat-design-copy-list-2;
+  }
+}
+@mixin pat-design-copy-list-8 {
+  .mod-copy-in2 {
+    @include pat-item-copy-futoimg-bgc-2;
+    @include common-style-pat-design-copy-list-2;
+  }
+}
+@mixin pat-design-copy-list-9 {
+  .mod-copy-in2 {
+    @include pat-item-copy-futoimg-bgc-3;
+    @include common-style-pat-design-copy-list-2;
+  }
+}
+

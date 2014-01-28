@@ -1,0 +1,451 @@
+@charset "UTF-8";
+@import "../pc-style/mod-link-style";
+
+
+.mod-link {
+  @include mod-link-common-style;
+  @include mod-link-style;
+  .ex-style_01A1 &,
+  .ex-style_q1A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_c1A1 &,
+  .ex-style_d1A1 &,
+  .ex-style_i1A1 & {
+    @include mod-link-style2;
+  }
+  .ex-style_01A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_i1A2 & {
+    @include mod-link-style3;
+  }
+  .ex-style_01A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_i1A3 & {
+    @include mod-link-style4;
+  }
+  .ex-style_01B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_i1B1 & {
+    @include mod-link-style5;
+  }
+  .ex-style_01B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_i1B2 & {
+    @include mod-link-style6;
+  }
+  .ex-style_01B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_i1B3 & {
+    @include mod-link-style7;
+  }
+  .ex-style_01C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_i1C1 & {
+    @include mod-link-style8;
+  }
+  .ex-style_01C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_i1C2 & {
+    @include mod-link-style9;
+  }
+  .ex-style_01C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_i1C3 & {
+    @include mod-link-style10;
+  }
+}
+
+
+.mod-link2 {
+  @include mod-link2-common-style;
+  @include mod-link2-style;
+  .ex-style_01A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_c1A1 &,
+  .ex-style_i1A1 & {
+    @include mod-link2-style2;
+  }
+  .ex-style_01A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_i1A2 & {
+    @include mod-link2-style3;
+  }
+  .ex-style_01A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A3 & {
+    @include mod-link2-style4;
+  }
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_i1B1 & {
+    @include mod-link2-style5;
+  }
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_i1B2 & {
+    @include mod-link2-style6;
+  }
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_i1B3 & {
+    @include mod-link2-style7;
+  }
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_i1C1 & {
+    @include mod-link2-style8;
+  }
+  .ex-style_01C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_i1C2 & {
+    @include mod-link2-style9;
+  }
+  .ex-style_01C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_i1C3 & {
+    @include mod-link2-style10;
+  }
+}
+
+
+.mod-link4 {
+  @include mod-link4-common-style;
+  @include mod-link4-style;
+  .ex-style_01A1 & {
+    @include mod-link4-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-link4-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-link4-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-link4-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-link4-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-link4-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-link4-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-link4-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-link4-style10;
+  }
+}
+
+
+.mod-link7 {
+  @include mod-link7-common-style;
+  @include mod-link7-style;
+  .ex-style_01A1 & {
+    @include mod-link7-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-link7-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-link7-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-link7-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-link7-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-link7-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-link7-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-link7-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-link7-style10;
+  }
+}
+
+
+.mod-link8 {
+  @include mod-link8-common-style;
+  @include mod-link8-style;
+  .ex-style_01A1 & {
+    @include mod-link8-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-link8-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-link8-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-link8-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-link8-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-link8-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-link8-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-link8-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-link8-style10;
+  }
+}
+
+
+.mod-link9 {
+  @include mod-link9-common-style;
+  @include mod-link9-style;
+  .ex-style_01A1 & {
+    @include mod-link9-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-link9-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-link9-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-link9-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-link9-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-link9-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-link9-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-link9-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-link9-style10;
+  }
+}
+
+
+.mod-link10 {
+  @include mod-link10-common-style;
+  @include mod-link10-style;
+  .ex-style_01A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_c1A1 & {
+    @include mod-link10-style2;
+  }
+  .ex-style_01A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 & {
+    @include mod-link10-style3;
+  }
+  .ex-style_01A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 & {
+    @include mod-link10-style4;
+  }
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 & {
+    @include mod-link10-style5;
+  }
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 & {
+    @include mod-link10-style6;
+  }
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 & {
+    @include mod-link10-style7;
+  }
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 & {
+    @include mod-link10-style8;
+  }
+  .ex-style_01C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 & {
+    @include mod-link10-style9;
+  }
+  .ex-style_01C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 & {
+    @include mod-link10-style10;
+  }
+}
+
+
+.mod-link11 {
+  @include mod-link11-common-style;
+  @include mod-link11-style;
+  .ex-style_01A1 & {
+    @include mod-link11-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-link11-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-link11-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-link11-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-link11-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-link11-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-link11-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-link11-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-link11-style10;
+  }
+}
+
+
+.mod-link-set {
+  @include mod-link-set-common-style;
+  @include mod-link-set-style;
+  .ex-style_01A1 & {
+    @include mod-link-set-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-link-set-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-link-set-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-link-set-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-link-set-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-link-set-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-link-set-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-link-set-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-link-set-style10;
+  }
+}
+
+
+.mod-link-set2 {
+  @include mod-link-set2-common-style;
+}
+
+.mod-link-set3 {
+  @include mod-link-set3-common-style;
+}
+
+
+.mod-link-set4 {
+  @include mod-link-set4-common-style;
+  @include mod-link-set4-style;
+  .ex-style_01A1 & {
+    @include mod-link-set4-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-link-set4-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-link-set4-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-link-set4-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-link-set4-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-link-set4-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-link-set4-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-link-set4-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-link-set4-style10;
+  }
+}
+
+
+
+.mod-link-set8 {
+  @include mod-link-set8-common-style;
+}
+
+
+.mod-link-set9 {
+  @include mod-link-set9-common-style;
+}
+
+
+.mod-link-set10 {
+  @include mod-link-set10-common-style;
+}
+
+
+
+

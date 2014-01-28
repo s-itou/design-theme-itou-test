@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@mixin mod-2col34-common-style {
+  @extend %cf;
+  > .mod-2col-inner {
+  	float: left;
+    width: 505px;
+    margin-right: 10px;
+  }
+  > .mod-2col-inner2 {
+  	float: right;
+  	width: 465px;
+  }
+}

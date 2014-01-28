@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+// -----------------------------------
+// pat-item-h_2 の共通スタイル
+// -----------------------------------
+
+
+//h_2は鈴木さんが作成中のため、保留
+@import "../pc-style/mod-h-style-new";
+%pat-item-h_2-faq-a1 {
+  @include mod-h_2-q1A;
+  @include deco-style-mod-h_2-q1A1;
+  }
+%pat-item-h_2-faq-a2 {
+  @include mod-h_2-q1A;
+  @include deco-style-mod-h_2-q1A2;
+  }
+%pat-item-h_2-faq-a3 {
+  @include mod-h_2-q1A;
+  @include deco-style-mod-h_2-q1A3;
+  }
+%pat-item-h_2-faq-b1 {
+  @include mod-h_2-q1B;
+  @include deco-style-mod-h_2-q1B1;
+  }
+%pat-item-h_2-faq-b2 {
+  @include mod-h_2-q1B;
+  @include deco-style-mod-h_2-q1B2;
+  }
+%pat-item-h_2-faq-b3 {
+  @include mod-h_2-q1B;
+  @include deco-style-mod-h_2-q1B3;
+  }
+%pat-item-h_2-faq-c1 {
+  @include mod-h_2-q1C;
+  @include deco-style-mod-h_2-q1C1;
+  }
+%pat-item-h_2-faq-c2 {
+  @include mod-h_2-q1C;
+  @include deco-style-mod-h_2-q1C2;
+  }
+%pat-item-h_2-faq-c3 {
+  @include mod-h_2-q1C;
+  @include deco-style-mod-h_2-q1C3;
+  }
+
+
+
+// -----------------------------------
+// pat-design-faq-2colの共通スタイル
+// -----------------------------------
+
+
+//h_4は鈴木さんが作成中のため、保留
+@import "../pc-style/mod-h_4-style";
+%pat-item-h_4-faq-a1 {
+  @include mod-h_4-common-style;
+  @include mod-h_4-style10;
+  }
+%pat-item-h_4-faq-a2 {
+  @include mod-h_4-common-style;
+  @include mod-h_4-style11;
+  }
+%pat-item-h_4-faq-a3 {
+  @include mod-h_4-common-style;
+  @include mod-h_4-style12;
+  }
+%pat-item-h_4-faq-b1 {
+  @include mod-h_4-common-style;
+  @include mod-h_4-style13;
+  }
+%pat-item-h_4-faq-b2 {
+  @include mod-h_4-common-style;
+  @include mod-h_4-style14;
+  }
+%pat-item-h_4-faq-b3 {
+  @include mod-h_4-common-style;
+  @include mod-h_4-style15;
+}
+
+
+
+// -----------------------------------
+// pat-design-faq-aquestionの共通スタイル
+// -----------------------------------
+
+
+//h_4は鈴木さんが作成中のため、保留
+@import "../pc-style/mod-h_4-style";
+%pat-item-h_4-faq-question-a1 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style;
+  }
+%pat-item-h_4-faq-question-a2 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style2;
+  }
+%pat-item-h_4-faq-question-a3 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style3;
+  }
+%pat-item-h_4-faq-question-b1 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style4;
+  }
+%pat-item-h_4-faq-question-b2 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style5;
+  }
+%pat-item-h_4-faq-question-b3 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style6;
+  }
+%pat-item-h_4-faq-question-c1 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style7;
+  }
+%pat-item-h_4-faq-question-c2 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style8;
+  }
+%pat-item-h_4-faq-question-c3 {
+  @include mod-h_4_14-common-style;
+  @include mod-h_4_14-style9;
+  }
+
+
+
+
+// -----------------------------------
+// pat-design-faq-answerの共通スタイル
+// -----------------------------------
+
+
+//h_4は鈴木さんが作成中のため、保留
+@import "../pc-style/mod-h_4-style";
+%pat-item-h_4-faq-answer-a1 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style;
+  }
+%pat-item-h_4-faq-answer-a2 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style2;
+  }
+%pat-item-h_4-faq-answer-a3 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style3;
+  }
+%pat-item-h_4-faq-answer-b1 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style4;
+  }
+%pat-item-h_4-faq-answer-b2 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style5;
+  }
+%pat-item-h_4-faq-answer-b3 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style6;
+  }
+%pat-item-h_4-faq-answer-c1 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style7;
+  }
+%pat-item-h_4-faq-answer-c2 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style8;
+  }
+%pat-item-h_4-faq-answer-c3 {
+  @include mod-h_4_15-common-style;
+  @include mod-h_4_15-style9;
+  }

@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+@mixin mod-form-common-style {
+  margin-top: 30px;
+  .mod-form-items {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: table;
+    @include box-sizing(border-box);
+
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  .mod-form-item {
+    @include box-sizing(border-box);
+    width: 100%;
+    display: table-row;
+    .mod-form-label {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 240px;
+      @include box-sizing(border-box);
+    }
+    .mod-form-required {
+      margin-left: 8px;
+      @include border-radius(3px);
+      font-size: 11px;
+      text-align: center;
+      color: #ffffff;
+      width: 32px;
+      display: inline-block;
+      padding: 3px 2px 0;
+    }
+    .mod-form-part {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      @include box-sizing(border-box);
+      input[type="text"] {
+        @include box-sizing(border-box);
+        width: 200px;
+      }
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+        li {
+          display: inline;
+          input[type="radio"] {
+            margin-right: 4px;
+          }
+          + li > input[type="radio"] {
+            margin-left: 6px;
+          }
+          input[type="checkbox"] {
+            margin-right: 4px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+          + li > input[type="checkbox"] {
+            margin-left: 6px;
+          }
+        }
+      }
+      &.ex-vertical ul {
+        li {
+          display: block;
+          + li > input[type="radio"] {
+            margin-left: 0;
+          }
+          + li > input[type="checkbox"] {
+            margin-left: 0;
+          }
+        }
+      }
+      select {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 96px;
+      }
+      textarea {
+        width: 310px;
+        height: 95px;
+        resize: vertical;
+      }
+      .mod-form-description {
+        margin-top: 5px;
+        color: #666666;
+        font-size: 11px;
+      }
+    }
+  }
+  .mod-form-submit {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    .mod-form-submit-button {
+      width: 162px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px;
+      input {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;
+        border: 1px solid #a5a8ad;
+        @include border-radius();
+        width: 162px;
+        min-height: 30px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: #334766;
+          cursor: pointer;
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+    }
+    .mod-form-confirm-button {
+      width: 197px;
+      margin-right: auto;
+      margin-left: auto;
+      .mod-form-edit {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;
+        border: 1px solid #a5a8ad;
+        @include border-radius();
+        min-width: 86px;
+        min-height: 30px;
+        margin-right:20px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: #334766;
+
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+      .mod-form-send {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;
+        border: 1px solid #a5a8ad;
+        @include border-radius();
+        min-width: 86px;
+        min-height: 30px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: #334766;
+          cursor: pointer;
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+    }
+    .mod-form-submit-footer {
+      margin-top: 5px;
+      color: #666666;
+      font-size: 11px;
+    }
+  }
+  //デフォルトデザインの記述
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #f8f7f3;
+      color: #333333;
+      border: 1px solid #ddd9d0;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #f8f7f3;
+      border: 1px solid #ddd9d0;
+    }
+  }
+}
+
+@mixin mod-form-style {
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #f8f7f3;
+      color: #333333;
+      border: 1px solid #ddd9d0;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #f8f7f3;
+      border: 1px solid #ddd9d0;
+    }
+  }
+}
+@mixin mod-form-style2 {
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #e4ebf2;
+      color: #333333;
+      border: 1px solid #aebdce;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #e4ebf2;
+      border: 1px solid #aebdce;
+    }
+  }
+}
+@mixin mod-form-style3 {
+  .mod-form-items {
+    border: 1px double #eaafa5;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #ead3cf;
+      color: #56534e;
+      border: 1px solid #ffffff;
+    }
+    .mod-form-required {
+      background-color: #781d0e;
+    }
+    .mod-form-part {
+      background-color: #ead3cf;
+      border: 1px solid #ffffff;
+    }
+  }
+}
+@mixin mod-form-style4 {
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #0f365f;
+      color: #ffffff;
+      border: 1px solid #666666;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+      border: 1px solid #666666;
+    }
+  }
+}
+@mixin mod-form-style5 {
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #b1cbe8;
+      color: #0c2947;
+      border: 1px solid #103760;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+      border: 1px solid #103760;
+    }
+  }
+}
+@mixin mod-form-style6 {
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #340b05;
+      color: #ffffff;
+      border: 1px solid #742516;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+    .mod-form-part {
+      background-color: #ffffff;
+      border: 1px solid #742516;
+    }
+  }
+}
+@mixin mod-form-style7 {
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #3c3c3c;
+      color: #ffffff;
+      border: 1px solid #ddd9d0;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #f8f7f3;
+      border: 1px solid #ddd9d0;
+    }
+  }
+}
+@mixin mod-form-style8 {
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #0f375f;
+      color: #ffffff;
+      border: 1px solid #aaaaaa;
+    }
+    .mod-form-required {
+      background-color: #5f140a;
+    }
+    .mod-form-part {
+      background-color: #e9eaed;
+      border: 1px solid #aaaaaa;
+    }
+  }
+}
+@mixin mod-form-style9 {
+  .mod-form-items {
+    border: 0 none transparent;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      background-color: #781b0e;
+      color: #ffffff;
+      border: 1px solid #ddd9d0;
+    }
+    .mod-form-required {
+      background-color: #0f375f;
+    }
+    .mod-form-part {
+      background-color: #f8f7f3;
+      border: 1px solid #ddd9d0;
+    }
+  }
+}
+

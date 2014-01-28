@@ -1,0 +1,815 @@
+@charset "UTF-8";
+
+
+//  mod-link の mixin一式
+@mixin mod-link-common-style {
+  @if $layoutCode == "L25" {
+    padding-left: 20px;
+    font-size: 15px;
+  } @else if $layoutCode == "L30" {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+  line-height: 1.4;
+  margin-top: 10px !important;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  @include box-sizing(border-box);
+  p {
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link-style {
+  background-image: url("img/mod-link/bg.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-style2 {
+  background-image: url("img/mod-link/bg_2.png");
+  a &, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link-style3 {
+  background-image: url("img/mod-link/bg_3.png");
+  a &, a {
+    color: #45320b;
+  }
+}
+
+//  mod-link2 の mixin一式
+@mixin mod-link2-common-style {
+  margin-top: 10px !important;
+  p {
+    @if $layoutCode == "L25" {
+      padding-left: 20px;
+      font-size: 15px;
+      background-position: left 4px;
+    } @else if $layoutCode == "L30" {
+      padding-left: 16px;
+      font-size: 13px;
+      background-position: left 2px;
+    }
+    @extend %inlineBlock;
+    line-height: 1.4;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link2-style {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link2-style2 {
+  p {
+    background-image: url("img/mod-link/bg_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link2-style3 {
+  p {
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+
+//  mod-link7 の mixin一式
+@mixin mod-link7-common-style {
+  text-align: center;
+  .mod-link-inner {
+    @extend %inlineBlock;
+    text-align: left;
+    .mod-link-inner2 {
+      min-height: 30px;
+      margin-top: 10px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      .mod-link-inner3, .mod-link-inner6 {
+        padding-left: 40px;
+        color: #f3882b;
+        font-size: $fontSizeM - 1;
+        line-height: 1.2;
+        a:hover{
+          text-decoration: none;
+        }
+      }
+      .mod-link-inner4 {
+        position: relative;
+        margin: 0;
+        padding: 3px 0 3px 40px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        color: #335a93;
+        font-size: $fontSizeL;
+        line-height: 1.2;
+        &:before {
+          position: absolute;
+          // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+          margin-top: -15px;
+          content: url("img/mod-link/_07/bg_a.png");
+          left: 0;
+          top: 50%;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-link7-style {
+}
+@mixin mod-link7-style2 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #0b7d89;
+    }
+    .mod-link-inner4 {
+      color: #294470;
+      &:before {
+        content: url("img/mod-link/_07/bg_a_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style3 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #321b07;
+    }
+    .mod-link-inner4 {
+      color: #335a93;
+      &:before {
+        content: url("img/mod-link/_07/bg_a_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style4 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      color: #16305F;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -10px;
+        content: url("img/mod-link/_07/bg_b.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style5 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      color: #2b436f;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -10px;
+        content: url("img/mod-link/_07/bg_b_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style6 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #37280b;
+    }
+    .mod-link-inner4 {
+      color: #337fb2;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -10px;
+        content: url("img/mod-link/_07/bg_b_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style7 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #f3882b;
+    }
+    .mod-link-inner4 {
+      color: #154e86;
+      &:before {
+        // 基本アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -14px;
+        content: url("img/mod-link/_07/bg_c.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style8 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #0b7d89;
+    }
+    .mod-link-inner4 {
+      color: #154e86;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -14px;
+        content: url("img/mod-link/_07/bg_c_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style9 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #45320b;
+    }
+    .mod-link-inner4 {
+      color: #154e86;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -14px;
+        content: url("img/mod-link/_07/bg_c_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style10 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #f3882b;
+    }
+    .mod-link-inner4 {
+      color: #335a93;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_a.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style11 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #0b7d89;
+    }
+    .mod-link-inner4 {
+      color: #294470;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_a_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style12 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #321b07;
+    }
+    .mod-link-inner4 {
+      color: #335a93;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_a_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style13 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      color: #16305F;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_b.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style14 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      color: #2b436f;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_b_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style15 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #37280b;
+    }
+    .mod-link-inner4 {
+      color: #337fb2;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_b_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style16 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #f3882b;
+    }
+    .mod-link-inner4 {
+      color: #154e86;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_c.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style17 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #0b7d89;
+    }
+    .mod-link-inner4 {
+      color: #154e86;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_c_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style18 {
+  .mod-link-inner2 {
+    .mod-link-inner3, .mod-link-inner6 {
+      color: #45320b;
+    }
+    .mod-link-inner4 {
+      color: #154e86;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_c_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style19 {
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #f3882b;
+    }
+    .mod-link-inner4 {
+      padding-left: 135px;
+      color: #335a93;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_a.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style20 {
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #0b7d89;
+    }
+    .mod-link-inner4 {
+      padding-left: 135px;
+      color: #294470;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_a_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style21 {
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #321b07;
+    }
+    .mod-link-inner4 {
+      padding-left: 135px;
+      color: #335a93;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_a_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style22 {
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding-left: 135px;
+      color: #16305F;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_b.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style23 {
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding-left: 135px;
+      color: #2b436f;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_b_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style24 {
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #37280b;
+    }
+    .mod-link-inner4 {
+      padding-left: 135px;
+      color: #337fb2;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_b_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style25 {
+  .mod-link-inner2 {
+    min-height: 43px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 125px;
+      color: #f3882b;
+    }
+    .mod-link-inner4 {
+      padding-left: 125px;
+      color: #154e86;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -22px;
+        content: url("img/mod-link/_07/bg03_c.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style26 {
+  .mod-link-inner2 {
+    min-height: 43px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 125px;
+      color: #0b7d89;
+    }
+    .mod-link-inner4 {
+      padding-left: 125px;
+      color: #154e86;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -22px;
+        content: url("img/mod-link/_07/bg03_c_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style27 {
+  .mod-link-inner2 {
+    min-height: 43px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 125px;
+      color: #45320b;
+    }
+    .mod-link-inner4 {
+      padding-left: 125px;
+      color: #154e86;
+      &:before {
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -22px;
+        content: url("img/mod-link/_07/bg03_c_3.png");
+      }
+    }
+  }
+}
+
+//  mod-link8 の mixin一式
+@mixin mod-link8-common-style {
+  margin-top: 10px !important;
+  line-height: 1.4;
+  max-width: 100%;
+  @include box-sizing(border-box);
+  padding-left: 15px;
+  font-size: $sideFontSizeM;
+  background-position: left 2px;
+  background-repeat: no-repeat;
+
+  p {
+    min-height: 21px;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link8-style {
+  background-image: url("img/mod-link/bg17.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link8-style2 {
+  background-image: url("img/mod-link/bg17_2.png");
+  a, a & {
+    color: #294470;
+  }
+}
+
+@mixin mod-link8-style3 {
+  background-image: url("img/mod-link/bg17_3.png");
+  a, a & {
+    color: #45320b;
+  }
+}
+
+
+//  mod-link10 の mixin一式
+@mixin mod-link10-common-style {
+  margin-top: 10px !important;
+  p {
+    @if $layoutCode == "L25" {
+      padding-left: 15px;
+    } @else if $layoutCode == "L30" {
+      padding-left: 14px;
+    }
+    @extend %inlineBlock;
+    line-height: 1.4;
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 17px;
+    @include box-sizing(border-box);
+    font-size: $fontSizeS;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link10-style {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link10-style2 {
+  p {
+    background-image: url("img/mod-link/bg_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link10-style3 {
+  p {
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+//  mod-link11 の mixin一式
+@mixin mod-link11-common-style {
+  margin-top: 10px;
+  p {
+    @extend %inlineBlock;
+    line-height: 1.4;
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    padding-left: 15px;
+    font-size: $sideFontSizeM;
+    min-height: 21px;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link11-style {
+  p {
+    background-image: url("img/mod-link/bg17.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link11-style2 {
+  p {
+    background-image: url("img/mod-link/bg17_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link11-style3 {
+  p {
+    background-image: url("img/mod-link/bg17_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+
+//  mod-link12 の mixin一式
+@mixin mod-link12-common-style {
+  margin-top: 15px;
+  text-align: right;
+  p {
+    @extend %inlineBlock;
+    line-height: 1.4;
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    padding-left: 15px;
+    font-size: $fontSizeM;
+    min-height: 21px;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link12-style {
+  p {
+    background-image: url("img/mod-link/bg12.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link12-style2 {
+  p {
+    background-image: url("img/mod-link/bg12_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link12-style3 {
+  p {
+    background-image: url("img/mod-link/bg12_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+//  mod-link13 の mixin一式
+@mixin mod-link13-common-style {
+  @if $layoutCode == "L25" {
+    padding-left: 20px;
+    font-size: 15px;
+  } @else if $layoutCode == "L30" {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+  line-height: 1.4;
+  margin-top: 20px !important;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  @include box-sizing(border-box);
+  p {
+    min-width: 15px;
+  }
+  .ex-imgFloat & {
+    overflow: hidden;
+  }
+}
+
+@mixin mod-link13-style {
+  padding-right: 0;
+  background-image: url("img/mod-link/bg.png");
+  background-position: left 4px;
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link13-style2 {
+  padding-right: 0;
+  background-image: url("img/mod-link/bg_2.png");
+  background-position: left 4px;
+  a &, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link13-style3 {
+  padding-right: 0;
+  background-image: url("img/mod-link/bg_3.png");
+  background-position: left 4px;
+  a &, a {
+    color: #45320b;
+  }
+}
+
+
+
+//  mod-link14 の mixin一式
+@mixin mod-link14-common-style {
+  padding-left: 20px;
+  line-height: 1.4;
+  margin-top: 10px !important;
+  padding-right: 3px;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-position: 3px 4px;
+  @include box-sizing(border-box);
+  p {
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link14-style {
+  background-image: url("img/mod-link/bg.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link14-style2 {
+  background-image: url("img/mod-link/bg_2.png");
+  a &, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link14-style3 {
+  background-image: url("img/mod-link/bg_3.png");
+  a &, a {
+    color: #45320b;
+  }
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// サイドエリアのset
+//
+// -----------------------------------
+
+// ----------------------------
+// common-style  -- mod-set-daihyou
+// ----------------------------
+// 共通項なし
+
+// ----------------------------
+// module-style  -- mod-set-daihyou
+// ----------------------------
+
+// mod-set-daiyhou-2col-side
+@mixin module-style-mod-set-daiyhou-2col-side {
+  display: table;
+  margin: 5px 0 0 0;
+  width: 100%;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: floor($baseSideWidth * 0.37);
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    padding: 0 5px;
+    vertical-align: middle;
+  }
+  .ex-imgSize_S2S & {
+    > .mod-2col-inner {
+      width: floor($baseSideWidth * 0.28);
+    }
+  }
+}
+
+// mod-set-daiyhou-2colr-side
+@mixin module-style-mod-set-daiyhou-2colr-side {
+  display: table;
+  margin: 5px 0 0 0;
+  width: 100%;
+  > .mod-2col-inner {
+    display: table-cell;
+    padding: 0 5px;
+    vertical-align: middle;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    width: floor($baseSideWidth * 0.37);
+  }
+  .ex-imgSize_S2S & {
+    > .mod-2col-inner2 {
+      width: floor($baseSideWidth * 0.28);
+    }
+  }
+}
+
+
+// ----------------------------
+// common-style  -- mod-set-navi-side
+// ----------------------------
+
+%common-style-mod-set-navi-side {
+}
+

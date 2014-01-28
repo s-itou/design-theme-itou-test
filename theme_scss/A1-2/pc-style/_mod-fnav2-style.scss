@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@mixin mod-fnav2-common-style {
+//none
+}
+
+@mixin mod-fnav2-style5 {
+  width: 100%;
+  margin: -3px 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: url("img/mod-fnav/_02/bg_b_2.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  .mod-fnav-inner {
+    width: 1024px;
+    margin: 0 auto;
+    .mod-fnav-inner2 {
+      margin: -3px 0 0;
+      background-image: url("img/mod-fnav/_02/bg02_b_2.png");
+      background-position: center top;
+      background-repeat: no-repeat;
+      padding: 50px 0 5px 0; 
+    }
+  } 
+  ul {
+    @extend %cf;
+    margin: 0;
+    padding: 0 0 0 25px;
+    text-align: center;
+    background-repeat: no-repeat;
+    li:first-child {
+      padding-left: 10px;
+    }
+    li {
+      @extend %inlineBlock;
+      height: 15px; 
+      padding: 0 10px 0 12px;
+      color: #ffffff;
+      font-size: $fontSizeM - 1;
+      list-style: none;
+      border-right: 1px solid #ffffff;
+      border-left: 1px solid #ffffff;
+      margin-left: -1px;
+      line-height: 1.3;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style {
+  @include mod-fnav2-style5; // none
+}
+@mixin mod-fnav2-style2 {
+  @include mod-fnav2-style5; // none
+}
+@mixin mod-fnav2-style3 {
+  @include mod-fnav2-style5; // none
+}
+@mixin mod-fnav2-style4 {
+  @include mod-fnav2-style5; // none
+}
+// @mixin mod-fnav2-style5 {上に記載}
+@mixin mod-fnav2-style6 {
+  @include mod-fnav2-style5; // none
+}
+@mixin mod-fnav2-style7 {
+  @include mod-fnav2-style5; // none
+}
+@mixin mod-fnav2-style8 {
+  @include mod-fnav2-style5; // none
+}
+@mixin mod-fnav2-style9 {
+  @include mod-fnav2-style5; // none
+}

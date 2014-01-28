@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-image-spec4-style";
+
+.mod-image-spec4 {
+  @include mod-image-spec4-common-style;
+  @include mod-image-spec4-style2;
+  .ex-style_01A2 & {
+    @include mod-image-spec4-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-image-spec4-style3;
+  }
+  .ex-style_01B2 & {
+    @include mod-image-spec4-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-image-spec4-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-image-spec4-style6;
+  }
+  .ex-style_01C2 & {
+    @include mod-image-spec4-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-image-spec4-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-image-spec4-style9;
+  }
+}
+

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@mixin mod-rte3-common-style {
+text-align: right;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+

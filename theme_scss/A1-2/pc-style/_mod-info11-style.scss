@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@mixin mod-info11-common-style {
+th {
+    font-weight: normal;
+    vertical-align: middle;
+    width: 48px;
+    height: 36px;
+    padding: 0 3px;
+    text-align: center;
+    font-size: $fontSizeS - 1;
+    @include border-radius(3px);
+    display: table;
+    > p {
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+  td {
+    vertical-align: top;
+    padding: 0 0 0 7px;
+    max-width: 135px;
+    font-size: $fontSizeS ;
+  }
+}
+
+@mixin mod-info11-style {
+th {
+    color: #ffffff;
+    background-color: #ff8809;
+  }
+  td {
+    color: #333333;
+  }
+}
+

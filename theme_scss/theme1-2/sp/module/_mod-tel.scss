@@ -1,0 +1,3544 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%default-number-base{
+  margin: 0;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+}
+%default-number {
+  @extend %default-number-base;
+  //padding-top: 6px;
+  font-size: 24px;
+  color: $f_telColor;
+}
+%default-number2 {
+  @extend %default-number-base;
+  //padding-top: 6px;
+  font-size: 24px;
+  color: $h_telColor;
+}
+%default-number3 { //SP用
+ @extend %default-number-base;
+ font-size: 20px;
+ color: $f_telColor;
+}
+%default-number4 {
+  @extend %default-number-base;
+  //padding-top: 4px;//SP用
+  font-size: 24px;//SP用
+  // font-size: $sideFontSizeL - 1;
+  //font-weight: bold;
+  color: $s_telColor;
+}
+%default-number5 { //SP用
+ @extend %default-number-base;
+ font-size: 20px;
+ color: $h_telColor;
+}
+//%default-number5 { default-numberで対応
+//  @extend %default-number-base;
+//  font-size: 25px;
+//  color: $f_telColor;
+//}
+//%default-number6 {
+//  @extend %default-number-base;
+//  font-size: $sideFontSizeL - 1;
+//}
+//%default-number7 { default-numberで対応
+//  @extend %default-number-base;
+//  font-size: $sideFontSizeL + 22;
+//  color: $f_telColor;
+//}
+//%default-number8 {
+//  @extend %default-number-base;
+//  font-size: $sideFontSizeL + 2;
+//  color: #f7931d;
+//}
+
+
+%default-address {
+  @extend %default-number-base;
+  font-size: 20px;
+  color: $f_telColor;
+}
+//%default-address2 {
+//  @extend %default-number-base;
+//  font-size: 16px;
+//  color: $f_telColor;
+//}
+//%default-address3 {
+//  @extend %default-number-base;
+//  font-size: $sideFontSizeL - 1;
+//  color: $h_telColor;
+//}
+//%default-address4 {
+//  @extend %default-number-base;
+//}
+%default-goro {
+  font-size: 13px;
+  word-break: break-all;
+  padding: 4px 0 0 0;
+}
+%default-goro2 {
+  font-size: 12px;
+  // line-height: 1.0;
+  word-break: break-all;
+  //margin-bottom: 3px;
+  padding: 4px 0 4px 0;//SP用
+}
+//%default-goro3 { default-goroで対応
+//  font-size: $sideFontSizeS;
+//  line-height: 1.0;
+//  margin-bottom: 2px;
+//}
+//%default-goro4 { default-goroで対応
+//  font-size: $fontSizeM - 1;
+//  line-height: 1.0;
+//  margin-bottom: 3px;
+//}
+%default-numberline {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto;
+  text-align:center;
+}
+%cv-tel2 {  // カラバリ青緑
+  color: $s_telColor2;
+}
+%cv-tel2-s {  // カラバリ青緑 サイド2
+  color: $s_tel2Color2;
+}
+%cv-tel2-s2 {  // カラバリ橙 サイド3
+  color: $s_tel3Color2;
+}
+%cv-tel2-h {  // カラバリ青緑ヘッダー
+  color: $h_telColor2;
+}
+%cv-tel2-f {  // カラバリ青緑フッター
+  color: $f_telColor2;
+}
+%cv-tel2-m {  // カラバリ青緑
+  color: $m_telColor2;
+}
+%cv-tel3 {  // カラバリ橙
+  color: $s_telColor3;
+}
+%cv-tel3-s {  // カラバリ橙 サイド3
+  color: $s_tel2Color3;
+}
+%cv-tel3-s2 {  // カラバリ橙 サイド3
+  color: $s_tel3Color3;
+}
+%cv-tel3-h {  // カラバリ橙ヘッダー
+  color: $h_telColor3;
+}
+%cv-tel3-f {  // カラバリ橙フッター
+  color: $f_telColor3;
+}
+%cv-tel3-m {  // カラバリ青緑
+  color: $m_telColor3;
+}
+
+@mixin tel-button($imgUrl,$position-x: 20px, $position-y: 15px) { //spカラバリ対策
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+}
+
+//------プレイスホルダー一覧 ここまで------------
+//------------------
+// mod-ftel
+//------------------
+
+//アイコンあり、フッター
+.mod-ftel {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    @extend %default-number;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    @extend %default-number;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $df_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $df_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $df_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//アイコンなし、フッター
+.mod-ftel2 {
+  @extend %default-numberline;
+  position: relative;//sp対応
+  padding: 5px 5px 8px; //SP
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    @extend %default-number;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    @extend %default-number;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $df_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $df_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $df_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//アイコンあり、ヘッダー
+.mod-ftel3 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $h_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $h_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $d_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $d_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $d_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor3;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-ftel-inner2 {
+      color: #284469;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: #f7931d
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: #519dce;
+    }
+  }
+}
+
+//アイコンなし、ヘッダー
+.mod-ftel4 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $h_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $h_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $d_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $d_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $d_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor3;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-ftel-inner2 {
+      color: #284469;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: #f7931d
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: #519dce;
+    }
+  }
+}
+
+//フッター
+.mod-ftel7 {
+  // margin-bottom: 10px;
+  // padding-left: 35px;
+  // @include background("mod-ftel/bg03.png", $position-y: bottom);
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-ftel-inner {
+    @extend %default-goro2;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 25px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 25px;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-ftel/bg03.png");
+    .mod-ftel-inner {
+      color: $df_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-ftel/bg03.png");
+    .mod-ftel-inner {
+      color: $df_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-ftel/bg03.png");
+    .mod-ftel-inner {
+      color: $df_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//フッター
+.mod-ftel8 {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    @extend %default-goro2;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 25px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 25px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $df_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $df_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $df_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//メイン、アイコンあり
+.mod-ftel9 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+
+//メイン、アイコンなし
+.mod-ftel10 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+//サイド、アイコンあり
+.mod-ftel11 {
+  @extend %default-numberline;
+  @include box-sizing(border-box);
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  font-size: 24px;
+  background: url(img/mod-ftel/bg02.png) 15px 20px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-ftel/bg02.png) 15px 20px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-ftel/bg02.png) 15px 20px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number4;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $s_tel2Color2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $s_tel2Color3;
+    }
+  }
+}
+
+//サイド、アイコンなし
+.mod-ftel12 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  height: 60px;
+  padding: 5px 0 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number4;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $s_tel2Color2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $s_tel2Color3;
+    }
+  }
+}
+
+//メイン、アイコンあり
+.mod-ftel13 {
+  //margin-bottom: 15px;
+  //padding: 0 0 0 45px;
+  //@include background("mod-ftel/bg05.png", $position-y: bottom);
+  @extend %default-number;
+  @extend %default-numberline;
+  // margin-bottom: 10px;
+  // padding-left: 35px;
+  // height: 60px;
+  width: auto;//SP対応
+  margin-bottom: 10px !important;//SP対応
+  padding-left: 50px;
+  padding-top: 9px;//SP対応
+  height: 60px;//SP対応
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+//メイン、アイコンなし
+.mod-ftel14 {
+  //margin-bottom: 15px;
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+.mod-ftel15 {
+  //margin-bottom: 15px;
+  //padding: 0 0 0 30px;
+  //@include background("mod-ftel/bg.png", $position-y: bottom);
+  @extend %default-number;
+  @extend %default-numberline;
+  color: $s_telColor;
+  width: auto;//SP対応
+  margin-bottom: 10px !important;//SP対応
+  padding: 5px 5px 8px 35px; //SP
+  padding-top: 22px;//SP対応
+  height: 36px;//SP対応
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-ftel/bg02.png) 20px 20px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel3Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel3Color3;
+  }
+}
+
+.mod-ftel16 {
+  //margin-bottom: 15px;
+  @extend %default-number;
+  @extend %default-numberline;
+  color: $s_telColor;
+  margin-bottom: 10px !important;//SP対応
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel3Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel3Color3;
+  }
+}
+
+//------------------
+// mod-tel
+//------------------
+
+//フッター、アイコンあり
+.mod-tel {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-tel/bg02_2.png");
+    .mod-tel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-tel/bg02_3.png");
+    .mod-tel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-tel/bg09.png");
+    .mod-tel-inner {
+      color: $df_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-tel/bg09_2.png");
+    .mod-tel-inner {
+      color: $df_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-tel/bg09_3.png");
+    .mod-tel-inner {
+      color: $df_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//フッター、アイコンなし
+.mod-tel2 {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-tel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-tel-inner {
+      color: $df_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-tel-inner {
+      color: $df_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-tel-inner {
+      color: $df_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner {
+      color: #45320b;
+    }
+    .mod-tel-inner2 {
+      color: #45320b;
+    }
+  }
+}
+
+//ヘッダー、アイコンあり
+.mod-tel3 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  @include tel-button("mod-tel/bg04.png", 20px, 15px);
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+      @include tel-button("mod-tel/bg04_2.png", 20px, 15px);
+    .mod-tel-inner2 {
+      color: $h_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url("img/mod-tel/bg04_3.png");
+    .mod-tel-inner2 {
+      color: $h_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-tel/bg09.png");
+    .mod-tel-inner {
+      color: $d_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-tel/bg09_2.png");
+    .mod-tel-inner {
+      color: $d_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-tel/bg09_3.png");
+    .mod-tel-inner {
+      color: #443308;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor3;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-tel-inner2 {
+      color: #284469;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-tel/bg11_2.png");
+    .mod-tel-inner2 {
+      color: #f7931d
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-tel/bg11_3.png");
+    .mod-tel-inner2 {
+      color: #519dce;
+    }
+  }
+}
+
+//ヘッダー、アイコンなし
+.mod-tel4 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $h_telColor2;
+    }
+  }
+   .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $h_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-tel/bg09.png");
+    .mod-tel-inner {
+      color: $d_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-tel/bg09_2.png");
+    .mod-tel-inner {
+      color: $d_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-tel/bg09_3.png");
+    .mod-tel-inner {
+      color: #443308;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor3;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-tel-inner2 {
+      color: #284469;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-tel-inner2 {
+      color: #f7931d
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner2 {
+      color: #519dce;
+    }
+  }
+}
+
+//フッター、アイコンあり
+ .mod-tel7 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  padding-top: 4px;//SP対応
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-tel-inner {
+    @extend %default-goro2;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-tel/bg03_2.png");
+    .mod-tel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-tel/bg03_3.png");
+    .mod-tel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-tel/bg10.png");
+    .mod-tel-inner {
+      color: $df_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-tel/bg10_2.png");
+    .mod-tel-inner {
+      color: $df_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-tel/bg10_3.png");
+    .mod-tel-inner {
+      color: $df_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner {
+      color: #45320b;
+    }
+    .mod-tel-inner2 {
+      color: #45320b;
+    }
+  }
+}
+
+
+//フッター
+.mod-tel8 {
+  //margin-bottom: 10px;
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  padding-top: 5px;//SP
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    @extend %default-goro2;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-tel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-tel-inner {
+      color: $df_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-tel-inner {
+      color: $df_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-tel-inner {
+      color: $df_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//サイド、アイコンあり語呂なし
+.mod-tel9 {
+  @extend %default-numberline;
+  @extend %default-number4;
+  @include box-sizing(border-box);
+  margin-bottom: 10px !important;
+  padding: 24px 0 0 30px;
+  height: 60px;
+  font-size: 24px;
+  background: url(img/mod-tel/bg04.png) 10px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-tel/bg04.png) 10px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-tel/bg04.png) 10px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_telColor2;
+    background-image: url("img/mod-tel/bg_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_telColor3;
+    background-image: url("img/mod-tel/bg_3.png");
+  }
+}
+
+//サイド アイコンなし
+.mod-tel10 {
+  @extend %default-numberline;
+  @extend %default-number4;
+  @include box-sizing(border-box);
+  margin-bottom: 10px;
+  padding-top: 21px;
+  height: 60px;
+  font-size: 24px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_telColor3;
+  }
+}
+
+//メイン、アイコンあり
+.mod-tel11 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-tel/bg05_2.png);
+    .mod-tel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-tel/bg05_3.png);
+    .mod-tel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+//メイン、アイコンなし
+.mod-tel12 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+
+//サイド、アイコンあり
+.mod-tel13 {
+  @extend %default-numberline;
+  @include box-sizing(border-box);
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px;
+  height: 60px;
+  background: url(img/mod-tel/bg04.png) 15px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-tel/bg04.png) 15px 15px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-tel/bg04.png) 15px 15px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-tel-inner {
+    @extend %default-goro;//SP
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number4;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-tel/bg08_2.png);
+    .mod-tel-inner2 {
+      color: $s_tel2Color2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-tel/bg08_3.png);
+    .mod-tel-inner2 {
+      color: $s_tel2Color3;
+    }
+  }
+}
+
+//サイド、アイコンなし
+.mod-tel14 {
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  height: 60px;
+  padding: 5px 0 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    @extend %default-goro;//SP
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number4;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $s_tel2Color2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $s_tel2Color3;
+    }
+  }
+}
+
+//メイン、アイコンあり
+.mod-tel15 {
+  //margin-bottom: 15px;
+  //padding: 0 0 0 45px;
+  //@include background("mod-tel/bg06.png", $position-y: bottom);
+  @extend %default-numberline;
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-tel/bg02.png) 20px 15px no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .mod-tel-inner {
+    @extend %default-goro;//SP
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;//SP
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-tel/bg06_2.png);
+    .mod-tel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-tel/bg06_3.png);
+    .mod-tel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+//メイン、アイコンあり
+.mod-tel16 {
+  //margin-bottom: 15px;
+  @extend %default-numberline;
+  margin-bottom: 10px !important;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    @extend %default-goro;//SP
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;//SP
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+//サイド、アイコンあり語呂なし
+.mod-tel17 {
+  //margin-bottom: 5px;
+  //padding: 3px 0 0 30px;
+  //@include background("mod-tel/bg07.png", $position-y: bottom);
+  //@extend %default-number8;
+  @extend %default-numberline;
+  @extend %default-number4;
+  @include box-sizing(border-box);
+  margin-bottom: 10px !important;//SP対応
+  padding: 24px 0 0 30px;
+  height: 60px;
+  font-size: 24px;
+  background: url(img/mod-tel/bg04.png) 10px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-tel/bg04.png) 10px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-tel/bg04.png) 10px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-tel/bg07_2.png);
+    color: $s_tel3Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-tel/bg07_3.png);
+    color: $s_tel3Color3;
+  }
+}
+
+//サイド アイコンなし
+
+.mod-tel18 {
+  //margin-bottom: 5px;
+  //@extend %default-number8;
+  @extend %default-numberline;
+  @extend %default-number4;
+  @include box-sizing(border-box);
+  margin-bottom: 10px !important;//SP対応
+  padding-top: 21px;
+  height: 60px;
+  font-size: 24px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel3Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel3Color3;
+  }
+}
+
+
+
+//------------------
+// mod-fax
+//------------------
+
+//ヘッダー、アイコンあり
+.mod-fax {
+  @extend %default-number5;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 31px;
+    height: 23px;
+    z-index: 3;
+    @include background("mod-fax/bg02.png");
+    display: block;
+    position: relative;
+    top: -6px;
+    left: -5px;
+  }//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $h_telColor2;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg02_2.png");
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $h_telColor3;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg02_3.png");
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $d_telColor;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg07.png");
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $d_telColor2;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg07_2.png");
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $d_telColor3;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg07_3.png");
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    color: #284469;
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: #f7931d;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg09_2.png");
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #519dce;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg09_3.png");
+    }
+  }
+}
+
+//ヘッダー、アイコンなし
+.mod-fax2 {
+  @extend %default-number5;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $h_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $h_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $d_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $d_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $d_telColor3;
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    color: #284469;
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: #f7931d
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #519dce;
+  }
+}
+
+//フッター、アイコンあり
+.mod-fax3 {
+  @extend %default-number3;
+  width:100%;
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    height: 18px;
+    z-index: 3;
+    @include background("mod-fax/bg04.png");
+    background-size: contain;
+    display: block;
+    position: relative;
+    top: -2px;
+    left: -5px;
+  }
+  //SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg03_3.png");
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg03_3.png");
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_SupColor;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg07.png");
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_SupColor2;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg07_2.png");
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: #443308;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg07_3.png");
+    }
+  }
+}
+
+//フッター、アイコンなし
+.mod-fax4 {
+  @extend %default-number3;
+  width:100%;//SP用ここから
+  margin: 5px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+
+//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_SupColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_SupColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: #443308;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター、アイコンあり、カラバリあり
+.mod-fax5 {
+  @extend %default-number3;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    height: 18px;
+    z-index: 3;
+    @include background("mod-fax/bg04.png");
+    background-size: contain;
+    display: block;
+    position: relative;
+    top: -2px;
+    left: -5px;
+  }
+
+  //SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg04_3.png");
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg04_3.png");
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg08.png");
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg08_2.png");
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg08_3.png");
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター、アイコンなし
+.mod-fax6 {
+  @extend %default-number;
+  width:100%;
+  clear: both;
+  @include box-sizing(border-box);
+  text-align: right;
+  padding-right: 2px;
+  height: 40px;
+  margin-bottom: 10px;
+  text-align:right;
+  font-size:20px;
+
+//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//メイン、アイコンあり
+.mod-fax7 {
+  @extend %default-number3;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 31px;
+    height: 23px;
+    z-index: 3;
+    @include background("mod-fax/bg05.png");
+    display: block;
+    position: relative;
+    top: -6px;
+    left: -5px;
+  }//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg05_2.png");
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    &:before {//sp対応
+      background-image: url("img/mod-fax/bg05_3.png");
+    }
+    color: $m_telColor3;
+  }
+}
+//メイン、アイコンなし
+.mod-fax8 {
+  @extend %default-number3;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $m_telColor3;
+  }
+}
+
+.mod-fax9 {
+  @extend %default-number5; //SP
+  // margin-bottom: 5px !important;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    height: 18px;
+    z-index: 3;
+    @include background("mod-fax/bg.png");
+    display: block;
+    position: relative;
+    top: -2px;
+    left: -5px;
+  }//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+    &:before {//sp対応
+      background-image: url(img/mod-fax/bg_2.png);
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+    &:before {//sp対応
+      background-image: url(img/mod-fax/bg_3.png);
+    }
+  }
+}
+
+.mod-fax10 {
+  @extend %default-number5; //SP
+  // margin-bottom: 5px !important;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+  }
+}
+
+.mod-fax11 {
+  @extend %default-number3;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    height: 18px;
+    z-index: 3;
+    @include background("mod-fax/bg06.png");
+    display: block;
+    position: relative;
+    top: -2px;
+    left: -5px;
+  }//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+    &:before {//sp対応
+      background-image: url(img/mod-fax/bg06_2.png);
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+    &:before {//sp対応
+      background-image: url(img/mod-fax/bg06_3.png);
+    }
+  }
+}
+
+.mod-fax12 {
+  @extend %default-number3;
+  width:100%;//SP用ここから
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;//SP用ここまで
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+  }
+}
+
+
+
+
+//------------------
+// mod-cell
+//------------------
+
+//フッター、アイコンあり
+.mod-cell {
+  @extend %default-numberline;
+  @extend %default-number;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url("img/mod-cell/bg02_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url("img/mod-cell/bg02_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-cell/bg07.png");
+      color: $d_punColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-cell/bg07_2.png");
+      color: $d_punColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-cell/bg07_3.png");
+      color: $d_punColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター、アイコンなし
+.mod-cell2 {
+  margin-bottom: 10px;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @extend %default-numberline;
+  @extend %default-number;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $d_punColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $d_punColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $d_punColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//ヘッダー、アイコンあり
+.mod-cell3 {
+  @extend %default-numberline;
+  @extend %default-number;
+  @include box-sizing(border-box);
+  color: $h_telColor;
+  padding: 20px 0 0 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  background: url(img/mod-cell/bg04.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-cell/bg04.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-cell/bg04.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $h_telColor2;
+    background-image: url("img/mod-cell/bg04_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $h_telColor3;
+    background-image: url("img/mod-cell/bg04_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-cell/bg07.png");
+    color: $d_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-cell/bg07_2.png");
+    color: $d_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-cell/bg07_3.png");
+    color: $d_telColor3;
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    color: #284469;
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-cell/bg09_2.png");
+    color: #f7931d
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-cell/bg09_3.png");
+    color: #519dce;
+  }
+}
+
+//ヘッダー、アイコンなし
+.mod-cell4 {
+  @extend %default-numberline;
+  @extend %default-number;
+  color: $h_telColor;
+  margin-bottom: 10px;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $h_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $h_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-cell/bg07.png");
+    color: $d_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-cell/bg07_2.png");
+    color: $d_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-cell/bg07_3.png");
+    color: $d_telColor3;
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    color: #284469;
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: #f7931d
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #519dce;
+  }
+}
+
+//フッター、アイコンあり
+.mod-cell7 {
+  //@extend %default-number3;
+  //margin-bottom: 10px;
+  //padding: 9px 0 0 35px;
+  //@include background("mod-cell/bg03.png", $position-y: center);
+  @extend %default-numberline;
+  @extend %default-number;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url("img/mod-cell/bg03_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url("img/mod-cell/bg03_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: #ffffff;
+    background-image: url("img/mod-cell/bg08.png");
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+    background-image: url("img/mod-cell/bg08_2.png");
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+    background-image: url("img/mod-cell/bg08_3.png");
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: #f7931d
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター、アイコンなし
+.mod-cell8 {
+  //@extend %default-number3;
+  margin-bottom: 10px !important;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @extend %default-numberline;
+  @extend %default-number;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//メイン、アイコンあり
+.mod-cell9 {
+  @extend %default-numberline;
+  @extend %default-number;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+    background-image: url(img/mod-cell/bg05_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-cell/bg05_3.png);
+    color: $m_telColor3;
+  }
+}
+
+//メイン、アイコンなし
+.mod-cell10 {
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @extend %default-numberline;
+  @extend %default-number;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $m_telColor3;
+  }
+}
+
+//サイド、アイコンあり
+.mod-cell11 {
+  @extend %default-numberline;
+  @extend %default-number4;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  margin: 0 15px ;
+  height: 60px;
+  margin-bottom: 10px !important;
+  background: url(img/mod-cell/bg04.png) 15px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-cell/bg04.png) 15px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-cell/bg04.png) 15px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-cell/bg_2.png);
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-cell/bg_3.png);
+    color: $s_tel2Color3;
+  }
+}
+
+//サイド、アイコンなし
+.mod-cell12 {
+  @extend %default-numberline;
+  @extend %default-number4;
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+  }
+}
+
+//サイド、アイコンあり、黒
+.mod-cell13 {
+  @extend %default-numberline;
+  @extend %default-number;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-cell/bg02.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-cell/bg06_2.png);
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-cell/bg06_3.png);
+    color: $s_tel2Color3;
+  }
+}
+
+//サイド、アイコンなし、黒
+.mod-cell14 {
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @extend %default-numberline;
+  @extend %default-number;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+  }
+}
+
+//sp対応ここから
+.mod-email:before,.mod-email2:before,
+.mod-email3:before,.mod-email4:before,
+.mod-email5:before,.mod-email6:before,
+.mod-email7:before,.mod-email8:before,
+.mod-email9:before,.mod-email10:before {
+  content: "";
+  display: block;
+  height: 61px;
+  background-image: url(img/mod-email/bg08.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+//sp対応ここまで
+
+//フッター
+.mod-email {
+  @extend %default-numberline;
+  @extend %default-address;
+  @include box-sizing(border-box);
+  padding:  0 0 40px; //sp対応
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  color: transparent !important; //sp対応
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url("img/mod-email/bg02_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url("img/mod-email/bg02_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+    background-image: url("img/mod-email/bg07.png");
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+    background-image: url("img/mod-email/bg07_2.png");
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+    background-image: url("img/mod-email/bg07_3.png");
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-email2 {
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 0 0 0 0; //sp対応
+  height: 60px;
+  color: transparent !important;
+  @extend %default-numberline;
+  @extend %default-address;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+
+.mod-email3 {
+  //@extend %default-address2;
+  //padding: 2px 0 2px 35px;
+  //@include background("mod-email/bg03.png", $position-y: center);
+  @extend %default-numberline;
+  @extend %default-address;
+  @include box-sizing(border-box);
+  padding: 0 0 0 40px; //sp対応
+  //margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  color: transparent !important;
+  margin-bottom: 10px !important;
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url("img/mod-email/bg03_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url("img/mod-email/bg03_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+    background-image: url("img/mod-email/bg06.png");
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+    background-image: url("img/mod-email/bg06_2.png");
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+    background-image: url("img/mod-email/bg06_3.png");
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-email4 {
+  //@extend %default-address2;
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 0; //sp対応
+  height: 60px;
+  color: transparent !important; //sp対応
+  @extend %default-numberline;
+  @extend %default-address;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//ヘッダー、カラバリなし
+.mod-email5 {
+  @extend %default-numberline;
+  @extend %default-address;
+  @include box-sizing(border-box);
+  padding: 0 0 0 40px; //sp対応
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  color: transparent !important;
+  margin-bottom: 10px !important;
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-email/bg02.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+    background-image: url(img/mod-email/bg04_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-email/bg04_3.png);
+    color: $m_telColor3;
+  }
+}
+
+//フッター、カラバリなし
+.mod-email6 {
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 0;//sp対応
+  height: 60px;
+  color: transparent !important;//sp対応
+  @extend %default-numberline;
+  @extend %default-address;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $m_telColor3;
+  }
+}
+
+//サイド、アイコンあり
+.mod-email7 {
+  @extend %default-number4;
+  @extend %default-numberline;
+  @include box-sizing(border-box);
+  padding: 0 0 0 40px;//sp対応
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  color: transparent !important;//sp対応
+  margin-bottom: 10px !important;
+  background: url(img/mod-email/bg04_3.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-email/bg04_3.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-email/bg04_3.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-email/bg_2.png);
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-email/bg_3.png);
+    color: $s_tel2Color3;
+  }
+}
+
+//サイド、アイコンなし
+.mod-email8 {
+  @extend %default-number4;
+  @extend %default-numberline;
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 0;//sp対応
+  height: 60px;
+  color: transparent !important;//sp対応
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+  }
+}
+
+.mod-email9 {
+  @extend %default-address;
+  @extend %default-numberline;
+  @include box-sizing(border-box);
+  padding: 0 0 0 40px;//sp対応
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  color: transparent !important;//sp対応
+  margin-bottom: 10px !important;
+  background: url(img/mod-email/bg03.png) 20px 15px no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/mod-email/bg03.png) 20px 15px no-repeat,  -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/mod-email/bg03.png) 20px 15px no-repeat,  -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-email/bg05_2.png);
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-email/bg05_3.png);
+    color: $s_tel2Color3;
+  }
+}
+
+.mod-email10 {
+  @extend %default-address;
+  @extend %default-numberline;
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 0 0 0 0;//sp対応
+  height: 60px;
+  color: transparent !important;//sp対応
+  @include background-image(linear-gradient(top, #fff, #eee));
+  margin-bottom: 5px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {;
+    color: $s_tel2Color3;
+  }
+}
+

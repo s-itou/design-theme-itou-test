@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@import "../pc-style/mod-2column-style";
+
+.mod-2col_ver2 {
+  @include common-style-mod-2col;
+  @include module-style-mod-2col;
+}
+.mod-2col50 {
+  @include common-style-mod-2col;
+  @include module-style-mod-2col;
+  @extend %common-style-mod-text-for-2col;
+  @extend %common-style-mod-html-for-2col;
+  @extend %common-style-mod-table-for-2col;
+  @extend %common-style-mod-rte-for-2col;
+  @extend %common-style-mod-rte-koramu-for-2col;
+  @extend %common-style-mod-ul-for-2col;
+}
+.mod-2col-side {
+  @include common-style-mod-2col;
+  @include module-style-mod-2col-side;
+}
+.mod-2col-in1, .mod-2col-in1-inset {
+  @include common-style-mod-2col-in1;
+  @include module-style-mod-2col-in1;
+  @extend %common-style-mod-bnr-for-2col;
+  @extend %common-style-mod-h_4-for-2col;
+  @extend %common-style-mod-h_5-for-2col;
+  @extend %common-style-mod-h_5_pic-for-2col;
+  @extend %common-style-mod-h_5_6-for-2col;//仮名称
+  @extend %mod-h_5_x1-for-3col;//3colと共通（仮名称）
+  @extend %common-style-mod-h_5_23-for-2col;//仮名称
+  @extend %common-style-mod-html-for-2col;
+  @extend %common-style-mod-text-for-2col;
+  @extend %common-style-mod-ul-for-2col;
+  .ex-style_01A1 & {
+    @extend %deco-style01A1-mod-bnr-for-2col;
+    @extend %deco-style01A1-mod-h_5_pic-for-2col
+  }
+  .ex-style_01A2 & {
+    @extend %deco-style01A2-mod-bnr-for-2col;
+    @extend %deco-style01A1-mod-h_5_pic-for-2col;
+  }
+  .ex-style_01A3 & {
+    @extend %deco-style01A3-mod-bnr-for-2col;
+    @extend %deco-style01A1-mod-h_5_pic-for-2col;
+  }
+  .ex-style_01B1 & {
+    @extend %deco-style01B1-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+  }
+  .ex-style_01B2 & {
+    @extend %deco-style01B2-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+  }
+  .ex-style_01B3 & {
+    @extend %deco-style01B3-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+  }
+    .ex-style_01C1 & {
+    @extend %deco-style01C1-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+  }
+  .ex-style_01C2 & {
+    @extend %deco-style01C2-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+  }
+  .ex-style_01C3 & {
+    @extend %deco-style01C3-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+  }
+}
+.mod-2col-in1-hyo {
+  @include common-style-mod-2col-in1;
+  @include module-style-mod-2col-in1-hyo;
+  @extend %common-style-mod-h_4-for-2col-hyo;
+  @extend %common-style-mod-h_5-for-2col-hyo;
+  @extend %common-style-mod-h_5_pic-for-2col;
+  @extend %common-style-mod-h_5_6-for-2col;//仮名称
+  @extend %mod-h_5_x1-for-3col;//3colと共通（仮名称）
+  @extend %common-style-mod-h_5_23-for-2col;//仮名称
+  @extend %common-style-mod-table-for-2col;
+  @extend %common-style-mod-text-for-2col;
+}
+.mod-2col50-in2, .mod-2col50-in2-inset {
+  @include common-style-mod-2col50-in2;
+  @include module-style-mod-2col50-in2;
+  @extend %common-style-mod-bnr-for-2col;
+  @extend %common-style-mod-text-for-2col;
+  @extend %common-style-mod-h_4-for-2col;
+  @extend %common-style-mod-h_5_pic-for-2col;
+  @extend %common-style-mod-h_5_6-for-2col;//仮名称
+  @extend %mod-h_5_x1-for-3col;//3colと共通（仮名称）
+  @extend %common-style-mod-h_5_23-for-2col;//仮名称
+  @extend %common-style-mod-html-for-2col;
+  @extend %common-style-mod-rte-for-2col;
+  @extend %common-style-mod-rte-koramu-for-2col;
+  @extend %common-style-mod-table-for-2col;
+  @extend %common-style-mod-ul-for-2col;
+  .mod-2col-inner-3, .mod-2col-inner2-3,
+  .mod-2col-inner-3 > div, .mod-2col-inner2-3 > div {
+    > .mod-2col_ver2 {
+      @extend %common-style-mod-h_5-for-2colin2col;
+      @extend %common-style-mod-h_5_pic-for-2colin3col;
+      @extend %common-style-mod-h_5_6-for-2colin3col;//2colin3colと共通（仮名称）
+      @extend %mod-h_5_x1-for-3col;//3colと共通（仮名称）
+      @extend %common-style-mod-h_5_23-for-2colin3col;//2colin3colと共通（仮名称）
+      @extend %mod-h_5_x2-for-2colin3col;//3colと共通（仮名称）
+      @extend %common-style-mod-link-for-2col;
+      margin: 25px 0 0 0;//2colin2colの差分
+      > .mod-2col-inner {
+        @if $layoutCode == "L25" {
+          width: 90px;
+        } @else if $layoutCode == "L30" {
+          width: 86px;
+        }
+        margin: 0 0 0 15px;
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+      > .mod-2col-inner2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+      .ex-imgLayout_l & {
+        .mod-2col-inner {
+          float: left;
+          margin: 0 15px 0 0;
+        }
+      }
+    }
+  }
+  .ex-style_01A1 & {
+    @extend %deco-style01A1-mod-bnr-for-2col;
+    @extend %deco-style01A1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01A1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+  .ex-style_01A2 & {
+    @extend %deco-style01A2-mod-bnr-for-2col;
+    @extend %deco-style01A1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01A1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+  .ex-style_01A3 & {
+    @extend %deco-style01A3-mod-bnr-for-2col;
+    @extend %deco-style01A1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01A1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+  .ex-style_01B1 & {
+    @extend %deco-style01B1-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01B1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+  .ex-style_01B2 & {
+    @extend %deco-style01B2-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01B1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+  .ex-style_01B3 & {
+    @extend %deco-style01B3-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01B1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+    .ex-style_01C1 & {
+    @extend %deco-style01C1-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01B1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+  .ex-style_01C2 & {
+    @extend %deco-style01C2-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01B1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+  .ex-style_01C3 & {
+    @extend %deco-style01C3-mod-bnr-for-2col;
+    @extend %deco-style01B1-mod-h_5_pic-for-2col;
+    .mod-2col_ver2 {
+      @extend %deco-style01B1-mod-h_5-pic-for-2colin3col;
+    }
+  }
+}
+.mod-2col-footer {
+  @include common-style-mod-2col-footer;
+  @include module-style-mod-2col-footer;
+  .ex-style_01A1 & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_01A2 & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_01A3 & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_01B1 & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_01B2 & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_01B3 & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_01C1 & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_01C2 & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_01C3 & {@include deco-style01A1-mod-2col-footer;}
+}
+.mod-2col-table-footer {
+  @include common-style-mod-2col-table-footer;
+  @include module-style-mod-2col-table-footer;
+  .ex-style_01A1 & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_01A2 & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_01A3 & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_01B1 & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_01B2 & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_01B3 & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_01C1 & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_01C2 & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_01C3 & {@include deco-style01A1-mod-2col-table-footer;}
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+// .mod-2col2 {
+//   @extend .mod-2col50;
+// }
+// .mod-2col4 {
+//   @extend .mod-2col-in1;
+// }
+// .mod-2col6 {
+//   @extend .mod-2col-in1;
+// }
+// .mod-2col7 {
+//   @extend .mod-2col50-in2;
+// }
+// .mod-2col16 {
+//   @extend .mod-2col-side;
+// }
+// .mod-2col17 {
+//   @extend .mod-2col-in1;
+// }
+// .mod-2col22 {
+//   @extend .mod-2col50;
+// }
+// .mod-2col25 {
+//   @extend .mod-2col50;
+// }
+// .mod-2col26 {
+//   @extend .mod-2col;
+// }
+// .mod-2col27 {
+//   @extend .mod-2col;
+// }
+// .mod-2col31 {
+//   @extend .mod-2col-in1;
+// }
+// .mod-2col42 {
+//   @extend .mod-2col-in1;
+// }
+// .mod-2col45 {
+//   @extend .mod-2col-in1-hyo;
+// }
+

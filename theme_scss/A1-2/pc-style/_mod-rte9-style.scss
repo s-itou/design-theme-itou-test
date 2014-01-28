@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@mixin mod-rte9-common-style {
+padding: 15px 15px;
+  margin-top: 20px;
+  @include border-radius();
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte9-style {
+border: 0 none transparent;
+  background-color: #eeeeee;
+  color: #333333;
+}
+@mixin mod-rte9-style2 {
+border: 0 none transparent;
+  background-color: #ebcebe;
+  color: #352111;
+}
+@mixin mod-rte9-style3 {
+border: 0 none transparent;
+  background-color: #ead3cf;
+  color: #333333;
+}
+@mixin mod-rte9-style4 {
+border: 0 none transparent;
+  background-color: #bea320;
+  color: #ffffff;
+}
+@mixin mod-rte9-style5 {
+border: 1px solid #371008;
+  background-color: #f2d028;
+  color: #45320b;
+}
+@mixin mod-rte9-style6 {
+color: #a1c4ed;
+  border: 1px solid #325073;
+  background-color: #f2d028;
+}
+@mixin mod-rte9-style7 {
+border: 1px solid #3c3c3c;
+  background-color: #666666;
+  color: #ffffff;
+}
+@mixin mod-rte9-style8 {
+border: 1px solid #eaaba2;
+  background-color: #ead3cf;
+  color: #46140b;
+}
+

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@mixin mod-ftel12-common-style {
+margin-top: 10px;
+  .mod-ftel-inner {
+    font-size: $sideFontSizeS;
+    line-height: 1.0;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    font-weight: bold;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: $sideFontSizeL - 1;
+  }
+}
+
+@mixin mod-ftel12-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f7931d;
+  }
+}
+@mixin mod-ftel12-style2 {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+  }
+}
+@mixin mod-ftel12-style3 {
+  .mod-ftel-inner {
+    color: #56534e;
+  }
+  .mod-ftel-inner2 {
+    color: #45320b;
+  }
+}
+@mixin mod-ftel12-style4 {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #f7931d;
+  }
+}
+

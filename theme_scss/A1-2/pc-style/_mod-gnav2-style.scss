@@ -1,0 +1,609 @@
+@charset "UTF-8";
+
+
+//  mod-gnav の mixin一式
+@mixin mod-gnav2-common-style {
+  width: 100%;
+  max-height: 150px;
+  background-repeat: repeat-x;
+  background-position: left center;
+  .mod-gnav-inner {
+    width: 980px;
+    margin: 0 auto;
+    padding: 2px 0;
+    ul {
+      display: table;
+      width: 980px;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      list-style-type: none;
+      background-repeat: no-repeat;
+      height: 49px;
+      li {
+        @include word-break(break-all);
+        @include box-sizing(border-box);
+        display: table-cell;
+        padding: 0;
+        font-size: 14px !important;
+        vertical-align: middle;
+        max-width: 550px;
+        background-repeat: no-repeat;
+        &:hover {
+          span {
+            background-image: none !important;
+          }
+        }
+        span {
+          display: block;
+          max-height: 146px;
+          overflow: hidden;
+          padding-left: 24px;
+          padding-right: 5px;
+          background-repeat: no-repeat;
+          background-position: left center;
+          line-height: 1.3;
+          a {
+            display: block;
+            max-height: 122px;
+            padding: 2px 0 1px;
+            text-decoration: none;
+            line-height: 1.3;
+            margin-left: -24px;
+            padding-left: 24px;
+            margin-right: -5px;
+            padding-right: 5px;
+          }
+        }
+        &.state-current {
+          background-repeat: no-repeat;
+          span {
+            background-image: none !important;
+          }
+        }
+        &.state-em {
+          @include text-shadow(0px 0px 0px transparent);
+          background-repeat: no-repeat;
+          background-position: left center;
+          span {
+            background-image: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin mod-gnav2-style {
+  background-image: url("img/mod-gnav/bg.png");
+  background-color: transparent;
+  border-bottom: 0 none transparent;
+  border-top: 1px solid #717675;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg03.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg17.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(1px 1px 1px #ffffff);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style2 {
+  background-image: url("img/mod-gnav/bg_2.png");
+  background-color: transparent;
+  border-bottom: 0 none transparent;
+  border-top: 1px solid #0f2d4c;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg03_2.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03_2.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05_2.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04_2.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg17_2.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06_2.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-gnav2-style3 {
+  background-image: url("img/mod-gnav/bg_3.png");
+  background-color: transparent;
+  border-bottom: 0 none transparent;
+  border-top: 1px solid #330b06;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg03_3.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg03_3.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg06_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg05_3.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg04_3.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg17_3.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg06_3.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style4 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #000000;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11.png");
+          a {
+            color: #000000;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg18.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09.png");
+            background-position: left center;
+            color: #000000;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #000000;
+            }
+          }
+          span {
+            a {
+              color: #9a3939;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style5 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #0a1f30;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11_2.png");
+          a {
+            color: #0a1f30;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10_2.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg18.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09_2.png");
+            background-position: left center;
+            color: #0a1f30;
+            @include text-shadow(0 0 0 transparent);
+            a {
+            }
+          }
+          span {
+            a {
+              color: #9a3939;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style6 {
+  background-image: url("img/mod-gnav/bg07.png");
+  background-color: #cecece;
+  border-bottom: 0 none transparent;
+  border-top: 0 none transparent;
+  .mod-gnav-inner {
+    ul {
+      color: #260e0e;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg08.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg08.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg09_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg11_3.png");
+          a {
+            color: #260e0e;
+          }
+        }
+        &.state-current {
+          @include border-radius();
+          background-image: url("img/mod-gnav/bg10_3.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg18.png");
+          &:hover {
+            @include border-radius();
+            background-image: url("img/mod-gnav/bg09_3.png");
+            background-position: left center;
+            color: #260e0e;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #260e0e;
+            }
+          }
+          span {
+            a {
+              color: #9a3939;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style7 {
+  background-image: url("img/mod-gnav/bg12.png");
+  background-color: transparent;
+  border-bottom: 1px solid #666666;
+  border-top: 1px solid #222222;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg16.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg17.png");
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style8 {
+  background-image: url("img/mod-gnav/bg12_2.png");
+  background-color: transparent;
+  border-bottom: 1px solid #364c64;
+  border-top: 1px solid #05203a;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13_2.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13_2.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15_2.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg16_2.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg17_2.png");
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15_2.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            a {
+              color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-gnav2-style9 {
+  background-image: url("img/mod-gnav/bg12_3.png");
+  background-color: transparent;
+  border-bottom: 1px solid #761a0e;
+  border-top: 1px solid #200805;
+  .mod-gnav-inner {
+    ul {
+      color: #ffffff;
+      @include text-shadow(0 0 0 transparent);
+      background-image: url("img/mod-gnav/bg13_3.png");
+      background-position: right center;
+      li {
+        background-image: url("img/mod-gnav/bg13_3.png");
+        background-position: left center;
+        &:hover {
+          background-repeat: no-repeat;
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg15_3.png");
+          background-position: left center;
+        }
+        span {
+          background-image: url("img/mod-gnav/bg14.png");
+          a {
+            color: #ffffff;
+          }
+        }
+        &.state-current {
+          @include border-radius(0);
+          background-image: url("img/mod-gnav/bg16_3.png");
+          background-position: left center;
+          span {
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        &.state-em {
+          background-image: url("img/mod-gnav/bg17_3.png");
+          &:hover {
+            @include border-radius(0);
+            background-image: url("img/mod-gnav/bg15_3.png");
+            background-position: left center;
+            color: #ffffff;
+            @include text-shadow(0 0 0 transparent);
+            a {
+              color: #ffffff;
+            }
+          }
+          span {
+            a {
+             color: #f2d028;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

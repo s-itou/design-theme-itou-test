@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-navi-footer（通常デザイン）
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-navi-footer の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-navi-footer {
+  .mod-set-navi-inner {
+    margin: 0 auto;
+  }
+}
+
+
+
+// -------------------------------------
+// pat-item-navi-footer の共通デザイン
+// -------------------------------------
+
+@mixin module-style-pat-item-navi-footer-kado {
+  .mod-set-navi-inner {
+    width: 980px;
+  }
+}
+
+@mixin module-style-pat-item-navi-footer-kado-image {
+  background-position: left 3px;
+  background-repeat: repeat-x;
+  .mod-set-navi-inner {
+    width: 1024px;
+  }
+}
+
+
+// -------------------------------------
+// pat-item-navi-footer の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-navi-footer-kado-blue {
+  background-color: #0e55b5;
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-blue-2 {
+  background-color: #69ced8;
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-orange {
+  background-color: #f37f1c;
+}
+
+
+//上部イメージ付き
+@mixin deco-style-pat-item-navi-footer-kado-image-blue {
+  background-image: url("img/mod-fnav/new/bg_a.png");
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-image-blue-2 {
+  background-image: url("img/mod-fnav/new/bg_a_2.png");
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-image-orange {
+  background-image: url("img/mod-fnav/new/bg_a_3.png");
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-image-blue-3 {
+  background-image: url("img/mod-fnav/new/bg_b.png");
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-image-blue-4 {
+  background-image: url("img/mod-fnav/new/bg_b_2.png");
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-image-orange-2 {
+  background-image: url("img/mod-fnav/new/bg_b_3.png");
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-image-blue-5 {
+  background-image: url("img/mod-fnav/new/bg_c.png");
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-image-blue-6 {
+  background-image: url("img/mod-fnav/new/bg_c_2.png");
+}
+
+@mixin deco-style-pat-item-navi-footer-kado-image-orange-3 {
+  background-image: url("img/mod-fnav/new/bg_c_3.png");
+}
+
+
+
+

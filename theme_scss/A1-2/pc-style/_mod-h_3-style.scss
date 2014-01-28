@@ -1,0 +1,527 @@
+@charset "UTF-8";
+
+
+@mixin mod-h_3-common-style {
+  @extend %default-icon2;
+  width: $baseMainWidth;
+  margin: 50px -25px 0 -25px;
+  padding: 2px 0 0 5px;
+  border-top: 0 none transparent;
+  border-bottom: 1px solid #dddddd;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  overflow: visible;
+  .mod-h {
+    display: table-cell;
+    width: 100%;
+    padding: 0;
+    border: none;
+    color: #3c3c3c;
+    line-height: 1.3;
+    font-size: $fontSizeL + 8;
+    font-weight: normal;
+    vertical-align: middle;
+  }
+  i {
+    height: auto;
+    padding: 0;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+  }
+  a {
+    display: table;
+    width: 100%;
+  }
+  .mod-icon_0 {
+    min-width: 10px;
+    width: 10px;
+  }
+  .mod-icon_1 {
+    height: 28px;
+    min-width: 31px;
+    width: 31px;
+    background-image: url("img/mod-h_3/bg04.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-icon_2 {
+    min-width: 31px;
+    width: 31px;
+    background-image: url("img/mod-h_3/bg02_v.png");
+    background-repeat: no-repeat;
+    background-position: left 9px;
+  }
+  .mod-icon_3 {
+    min-width: 31px;
+    width: 31px;
+    background-image: url("img/mod-h_3/bg03_v.png");
+    background-repeat: no-repeat;
+    background-position: left 3px;
+  }
+  .mod-icon_4 {
+    min-width: 31px;
+    width: 31px;
+    border-left: 0 none transparent;
+    background-image: url("img/mod-h_3/bg04_v.png");
+    background-repeat: no-repeat;
+    background-position: 5px 4px;
+  }
+  .mod-icon_5 {
+    min-width: 31px;
+    width: 31px;
+    background-image: url("img/mod-h_3/bg05_v.png");
+    background-repeat: no-repeat;
+    background-position: left 4px;
+  }
+  .mod-icon_dental {
+    min-width: 31px;
+    width: 31px;
+    background-image: url("img/mod-h_3/bg_v.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  &.ex-align-center {
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+  &.ex-align-right {
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+}
+
+@mixin mod-h_3-style {
+  @include mod-h_3-common-style;
+}
+@mixin mod-h_3-style2 {
+  @include mod-h_3-common-style;
+  border-bottom: 1px solid #d7e1ec;
+  .mod-h {
+    color: #222222;
+  }
+  .mod-icon_1 {
+    background-image: url("img/mod-h_3/bg04_2.png");
+  }
+  .mod-icon_2 {
+    background-image: url("img/mod-h_3/bg02_v2.png");
+  }
+  .mod-icon_3 {
+    background-image: url("img/mod-h_3/bg03_v2.png");
+  }
+  .mod-icon_4 {
+    background-image: url("img/mod-h_3/bg04_v2.png");
+  }
+  .mod-icon_5 {
+    background-image: url("img/mod-h_3/bg05_v2.png");
+  }
+  .mod-icon_dental {
+    background-image: url("img/mod-h_3/bg_v2.png");
+  }
+}
+@mixin mod-h_3-style3 {
+  @include mod-h_3-common-style;
+  border-bottom: 1px solid #eadcda;
+  .mod-h {
+    color: #350b06;
+  }
+  .mod-icon_1 {
+    background-image: url("img/mod-h_3/bg04_3.png");
+  }
+  .mod-icon_2 {
+    background-image: url("img/mod-h_3/bg02_v3.png");
+  }
+  .mod-icon_3 {
+    background-image: url("img/mod-h_3/bg03_v3.png");
+  }
+  .mod-icon_4 {
+    background-image: url("img/mod-h_3/bg04_v3.png");
+  }
+  .mod-icon_5 {
+    background-image: url("img/mod-h_3/bg05_v3.png");
+  }
+  .mod-icon_dental {
+    background-image: url("img/mod-h_3/bg_v3.png");
+  }
+}
+@mixin mod-h_3-style4 {
+  @include mod-h_3-common-style;
+  border: none;
+  .mod-h {
+    min-width: 30px;
+    padding: 5px 0 0 0;
+    color: #333333;
+    font-size: $fontSizeL + 6;
+    font-weight: bold;
+  }
+  i {
+    height: 38px;
+  }
+  .mod-icon_0 {
+    min-width: 0;
+    width: 0;
+  }
+  .mod-icon_1 {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg03.png");
+  }
+  .mod-icon_2 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg06_v.png");
+    background-position: 6px 11px;
+  }
+  .mod-icon_3 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg07_v.png");
+    background-position: center 9px;
+  }
+  .mod-icon_4 {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg08_v.png");
+    background-position: left top;
+  }
+  .mod-icon_5 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg09_v.png");
+    background-position: 11px 8px;
+  }
+  .mod-icon_dental {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg10_v.png");
+    background-position: 10px 3px;
+  }
+  &.ex-align-center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &.ex-align-right {
+    margin-left: auto;
+  }
+}
+@mixin mod-h_3-style5 {
+  @include mod-h_3-common-style;
+  border: none;
+  .mod-h {
+    min-width: 30px;
+    padding: 5px 0 0 0;
+    color: #333333;
+    font-size: $fontSizeL + 6;
+    font-weight: bold;
+  }
+  i {
+    height: 38px;
+  }
+  .mod-icon_0 {
+    min-width: 0;
+    width: 0;
+  }
+  .mod-icon_1 {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg03_2.png");
+  }
+  .mod-icon_2 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg06_v2.png");
+    background-position: 6px 11px;
+  }
+  .mod-icon_3 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg07_v2.png");
+    background-position: center 9px;
+  }
+  .mod-icon_4 {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg08_v2.png");
+    background-position: left top;
+  }
+  .mod-icon_5 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg09_v2.png");
+    background-position: 11px 8px;
+  }
+  .mod-icon_dental {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg10_v2.png");
+    background-position: 10px 3px;
+  }
+  &.ex-align-center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &.ex-align-right {
+    margin-left: auto;
+  }
+
+
+}
+@mixin mod-h_3-style6 {
+  @include mod-h_3-common-style;
+  width: $baseMainWidth;
+  padding: 2px 0 0 5px;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  overflow: visible;
+  .mod-h {
+    min-width: 30px;
+    color: #333333;
+    padding: 5px 0 0 0;
+    font-size: $fontSizeL + 6;
+    font-weight: bold;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+  }
+  i {
+    height: 38px;
+    padding: 0;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+  }
+  .mod-icon_0 {
+    min-width: 0;
+    width: 0;
+  }
+  .mod-icon_1 {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg03_3.png");
+  }
+  .mod-icon_2 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg06_v3.png");
+    background-position: 6px 11px;
+  }
+  .mod-icon_3 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg07_v3.png");
+    background-position: center 9px;
+  }
+  .mod-icon_4 {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg08_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_5 {
+    min-width: 39px;
+    width: 39px;
+    background-image: url("img/mod-h_3/bg09_v3.png");
+    background-position: 11px 8px;
+  }
+  .mod-icon_dental {
+    min-width: 49px;
+    width: 49px;
+    background-image: url("img/mod-h_3/bg10_v3.png");
+    background-position: 10px 3px;
+  }
+  &.ex-align-center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &.ex-align-right {
+    margin-left: auto;
+  }
+}
+@mixin mod-h_3-style7 {
+  @include mod-h_3-common-style;
+  padding: 0;
+  border-bottom: 0 none transparent;
+  border-left: 10px solid #0f375f;
+  background-color: #d7e1ec;
+  overflow: hidden;
+  .mod-h {
+    padding: 4px 10px 2px 0;
+    border-top: 1px dotted #0f375f;
+    border-bottom: 1px dotted #0f375f;
+    border-right: 1px dotted #0f375f;
+    color: #222222;
+    font-size: $fontSizeL + 5;
+    vertical-align: baseline\9;//IEハック forIE10以下
+  }
+  i {
+    border-top: 1px dotted #0f375f;
+    border-bottom: 1px dotted #0f375f;
+  }
+  .mod-icon_0 {
+    min-width: 20px;
+    width: 20px;
+  }
+  .mod-icon_1 {
+    min-width: 20px;
+    width: 20px;
+    background-image: none;
+  }
+  .mod-icon_2 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg14_v.png");
+    background-repeat: repeat-y;
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg11_v.png");
+    background-position: left top;
+  }
+  .mod-icon_4 {
+    min-width: 18px;
+    width: 18px;
+    border-left: 2px solid #f2d027;
+    background-image: none;
+  }
+  .mod-icon_5 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg12_v.png");
+    background-position: 6px 12px;
+  }
+  .mod-icon_dental {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg13_v.png");
+    background-position: 4px 12px;
+  }
+}
+@mixin mod-h_3-style8 {
+  @include mod-h_3-common-style;
+  padding: 0;
+  border-bottom: 0 none transparent;
+  border-left: 10px solid #5f140a;
+  background-color: #ead3cf;
+  overflow: hidden;
+  .mod-h {
+    padding: 4px 10px 2px 0;
+    border-top: 1px dotted #5f140a;
+    border-bottom: 1px dotted #5f140a;
+    border-right: 1px dotted #5f140a;
+    color: #222222;
+    font-size: $fontSizeL + 5;
+    vertical-align: baseline\9;//IEハック forIE10以下
+  }
+  i {
+    border-top: 1px dotted #5f140a;
+    border-bottom: 1px dotted #5f140a;
+  }
+  .mod-icon_0 {
+    min-width: 20px;
+    width: 20px;
+  }
+  .mod-icon_1 {
+    min-width: 20px;
+    width: 20px;
+    background-image: none;
+  }
+  .mod-icon_2 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg14_v2.png");
+    background-repeat: repeat-y;
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg11_v2.png");
+    background-position: left top;
+  }
+  .mod-icon_4 {
+    min-width: 18px;
+    width: 18px;
+    border-left: 2px solid #f7931d;
+    background-image: none;
+  }
+  .mod-icon_5 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg12_v2.png");
+    background-position: 6px 12px;
+  }
+  .mod-icon_dental {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg13_v2.png");
+    background-position: 4px 12px;
+  }
+}
+@mixin mod-h_3-style9 {
+  @include mod-h_3-common-style;
+  padding: 0;
+  border-bottom: 0 none transparent;
+  border-left: 10px solid #200805;
+  background-color: #f8f7f3;
+  overflow: hidden;
+  .mod-h {
+    padding: 4px 10px 2px 0;
+    border-top: 1px dotted #200805;
+    border-bottom: 1px dotted #200805;
+    border-right: 1px dotted #200805;
+    color: #200805;
+    font-size: $fontSizeL + 5;
+    vertical-align: baseline\9;//IEハック forIE10以下
+  }
+  i {
+    border-top: 1px dotted #200805;
+    border-bottom: 1px dotted #200805;
+  }
+  .mod-icon_0 {
+    min-width: 20px;
+    width: 20px;
+  }
+  .mod-icon_1 {
+    min-width: 20px;
+    width: 20px;
+    background-image: none;
+  }
+  .mod-icon_2 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg14_v3.png");
+    background-repeat: repeat-y;
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg11_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_4 {
+    min-width: 18px;
+    width: 18px;
+    border-left: 2px solid #7ed1d9;
+    background-image: none;
+  }
+  .mod-icon_5 {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg12_v3.png");
+    background-position: 6px 12px;
+  }
+  .mod-icon_dental {
+    min-width: 20px;
+    width: 20px;
+    background-image: url("img/mod-h_3/bg13_v3.png");
+    background-position: 4px 12px;
+  }
+}
+
+
+

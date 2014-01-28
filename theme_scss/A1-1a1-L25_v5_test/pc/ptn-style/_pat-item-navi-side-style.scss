@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-navi-side（通常デザイン）
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-navi-side の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-navi-side {
+
+}
+
+
+
+// -------------------------------------
+// pat-item-navi-side の共通デザイン
+// -------------------------------------
+
+@mixin module-style-pat-item-navi-side-jouge-image {
+  padding: 10px 0 0;
+  background-position: left top;
+  background-repeat: no-repeat;
+  .mod-set-navi-inner {
+    padding: 0 0 10px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+
+// -------------------------------------
+// pat-item-navi-side の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-navi-side-jouge-image-blue {
+  background-image: url("img/mod-side-menu-box/new/bg.png");
+  .mod-set-navi-inner {
+    background-image: url("img/mod-side-menu-box/new/bg02.png");
+  }
+}
+
+@mixin deco-style-pat-item-navi-side-jouge-image-blue-2 {
+  background-image: url("img/mod-side-menu-box/new/bg_2.png");
+  .mod-set-navi-inner {
+    background-image: url("img/mod-side-menu-box/new/bg02_2.png");
+  }
+}
+
+@mixin deco-style-pat-item-navi-side-jouge-image-orange {
+  background-image: url("img/mod-side-menu-box/new/bg_3.png");
+  .mod-set-navi-inner {
+    background-image: url("img/mod-side-menu-box/new/bg02_3.png");
+  }
+}
+
+
+
+
+
+
+

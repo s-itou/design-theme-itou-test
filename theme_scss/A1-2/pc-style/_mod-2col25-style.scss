@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@mixin mod-2col25-common-style {
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin-right: 10px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: floor(($mainWidth - 40) / 3);
+  }
+}
+
+

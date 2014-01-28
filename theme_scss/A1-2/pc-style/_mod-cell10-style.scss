@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@mixin mod-cell10-common-style {
+font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  margin-top: 10px !important;
+}
+
+@mixin mod-cell10-style {
+  color: #333333;
+}
+@mixin mod-cell10-style2 {
+  color: #010911;
+}
+@mixin mod-cell10-style3 {
+  color: #222222;
+}
+

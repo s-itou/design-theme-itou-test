@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import "../pattern/pat-item-navi-side";
+
+// --------------------------------------------------------------------------
+//
+// pat-navi-side の定義
+//
+//   ・デザインパターン
+//   ・mod-navi-side 内にincludeされる使い方を想定
+//   ・他のsetモジュール　でも使用される可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// --------------------------------------------------------------------------
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------
+// pat-design-navi-side の個別設定
+// --------------------------------------------------------------------------
+@mixin pat-design-navi-side-1 {
+  @include pat-item-navi-side-jouge-image-black;
+  .mod-h_4_side {
+    overflow: visible;//label打ち消し
+    padding: 0;//label打ち消し
+    min-height: 10px;//mod-set-navi-side特有
+    max-height: none;//label打ち消し
+    border: none;//label打ち消し
+    background-color: #393939;//mod-set-navi-side特有
+    background-image: none;//label打ち消し
+    .mod-h_4-inner {
+      padding: 2px 10px;//mod-set-navi-side特有
+      .mod-h {
+        @include text-shadow(0 0 0 transparent);//label打ち消し
+        color: #ffffff;//mod-set-navi-side特有
+        font-size: $sideFontSizeL - 1;//mod-set-navi-side特有
+      }
+    }
+  }
+}
+
+@mixin pat-design-navi-side-2 {
+  @include pat-item-navi-side-jouge-image-blue;
+  .mod-h_4_side {
+    overflow: visible;//label打ち消し
+    padding: 0;//label打ち消し
+    min-height: 10px;//mod-set-navi-side特有
+    max-height: none;//label打ち消し
+    border: none;//label打ち消し
+    background-color: #0f375f;//mod-set-navi-side特有
+    background-image: none;//label打ち消し
+    .mod-h_4-inner {
+      padding: 2px 10px;//mod-set-navi-side特有
+      .mod-h {
+        @include text-shadow(0 0 0 transparent);//label打ち消し
+        color: #ffffff;//mod-set-navi-side特有
+        font-size: $sideFontSizeL - 1;//mod-set-navi-side特有
+      }
+    }
+  }
+}
+
+@mixin pat-design-navi-side-3 {
+  @include pat-item-navi-side-jouge-image-red;
+  .mod-h_4_side {
+    overflow: visible;//label打ち消し
+    padding: 0;//label打ち消し
+    min-height: 10px;//mod-set-navi-side特有
+    max-height: none;//label打ち消し
+    border: none;//label打ち消し
+    background-color: #5f140a;//mod-set-navi-side特有
+    background-image: none;//label打ち消し
+    .mod-h_4-inner {
+      padding: 2px 10px;//mod-set-navi-side特有
+      .mod-h {
+        @include text-shadow(0 0 0 transparent);//label打ち消し
+        color: #ffffff;//mod-set-navi-side特有
+        font-size: $sideFontSizeL - 1;//mod-set-navi-side特有
+      }
+    }
+  }
+}
+

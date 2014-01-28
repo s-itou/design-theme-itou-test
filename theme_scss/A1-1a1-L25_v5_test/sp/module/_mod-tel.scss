@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import "../sp-style/mod-tel-style";
+
+.mod-ftel-g-side {
+	@include module-style-mod-ftel-g-side;
+}
+
+.mod-ftel-ig-side {
+	@include module-style-mod-ftel-ig-side;
+}
+
+.mod-tel-g-side {
+	@include module-style-mod-tel-g-side;
+}
+
+.mod-tel-ig-side {
+	@include module-style-mod-tel-ig-side;
+	.ex-style_01A1 & {
+		@include deco-style01A1-mod-tel-ig-side-style;
+	}	
+	.ex-style_01A2 & {
+		@include deco-style01A2-mod-tel-ig-side-style;
+	}
+}
+
+.mod-cell-side {
+	@include module-style-mod-cell-side;
+}
+
+.mod-cell-i-side {
+	@include module-style-mod-cell-i-side;
+	.ex-style_01A1 & {
+		@include deco-style01A1-mod-cell-i-side;
+	}
+	.ex-style_01A2 & {
+		@include deco-style01A2-mod-cell-i-side;
+	}
+}
+
+.mod-email-side {
+	@include module-style-mod-email-side;
+}
+
+.mod-email-i-side {
+	@include module-style-mod-email-i-side;
+	.ex-style_01A1 & {
+		@include deco-style01A1-mod-email-i-side;
+	}
+	.ex-style_01A2 & {
+		@include deco-style01A2-mod-email-i-side;
+	}
+}
+
+.mod-fax-side {
+	@include module-style-mod-fax-side;
+}
+
+.mod-fax-i-side {
+	@include module-style-mod-fax-i-side;
+	.ex-style_01A1 & {
+		@include deco-style01A1-mod-fax-i-side;
+	}
+	.ex-style_01A2 & {
+		@include deco-style01A2-mod-fax-i-side;
+	}
+	.ex-style_01A3 & {
+		@include deco-style01A3-mod-fax-i-side;
+	}
+}

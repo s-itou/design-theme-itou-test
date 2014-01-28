@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@mixin mod-2col35-common-style {
+  @extend %cf;
+  margin-right: 0;
+  margin-left: auto;
+  display: table;
+  > .mod-2col-inner {
+    display: table-cell;
+    min-width: 240px;
+    max-width: 260px;
+    vertical-align: top;
+    .mod-2col-inner-2 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+        &.mod-tel31 {
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    width: 150px;
+    height: 76px;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+}
+

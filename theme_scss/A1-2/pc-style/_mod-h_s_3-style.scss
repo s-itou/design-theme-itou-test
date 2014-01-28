@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@mixin mod-h_s_3-common-style {
+  display: table;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  i {
+    display: table-cell;
+  }
+  .mod-h {
+    display: table-cell;
+    font-weight: bold;
+    font-size: $sideFontSizeL - 1;
+  }
+  a {
+    display: table;
+    width: 100%;
+  }
+}
+
+@mixin mod-h_s_3-style {
+  .mod-h {
+    color: #46140b;
+  }
+}
+@mixin mod-h_s_3-style2 {
+  .mod-h {
+    color: #222222;
+  }
+}
+@mixin mod-h_s_3-style3 {
+  .mod-h {
+    color: #010911;
+  }
+}
+

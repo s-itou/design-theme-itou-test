@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@mixin mod-3col6-common-style {
+@extend %cf;
+  margin-top: 30px;
+  .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin-right: 20px;
+    @include border-radius();
+    .mod-3col-inner-2 {
+      padding: 15px;
+    }
+    .mod-3col-inner-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin-right: 20px;
+    @include border-radius();
+    .mod-3col-inner2-2 {
+      padding: 15px;
+    }
+    .mod-3col-inner2-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 40) / 3);
+    @include border-radius();
+    .mod-3col-inner3-2 {
+      padding: 15px;
+    }
+    .mod-3col-inner3-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-3col6-style {
+.mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #ade9ef;
+    padding: 10px;
+    background-color: #ecfdff;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+@mixin mod-3col6-style2 {
+.mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #60bff0;
+    padding: 10px;
+    background-color: #ebfdff;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+@mixin mod-3col6-style3 {
+.mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #fd8e89;
+    padding: 10px;
+    background-color: #ffe0de;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+@mixin mod-3col6-style4 {
+.mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    border: 1px solid #abd2f6;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url("img/mod-box/bg04.png");
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: transparent;
+  }
+}
+@mixin mod-3col6-style5 {
+.mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #f4d34f;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url("img/mod-box/bg04_2.png");
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: transparent;
+  }
+}
+@mixin mod-3col6-style6 {
+.mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #ffa19b;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url("img/mod-box/bg04_3.png");
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: transparent;
+  }
+}
+@mixin mod-3col6-style7 {
+.mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg08.png");
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+@mixin mod-3col6-style8 {
+.mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg08_2.png");
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+@mixin mod-3col6-style9 {
+ .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg08_3.png");
+    background-repeat: repeat;
+  }
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2 {
+    background-color: #ffffff;
+  }
+}
+

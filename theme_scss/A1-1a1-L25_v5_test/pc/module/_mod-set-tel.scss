@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-design の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-tel-style";
+
+
+// -----------------------------------
+// part-main-275
+// 汎用枠
+// -----------------------------------
+
+.mod-set-tel {
+  @include common-style-mod-set-design;
+  //本来はsetからでなくmoduleに書くべきものらしい。デフォルトデザインなので
+}
+
+.mod-set-tel-2col {
+  @include common-style-mod-set-design2;
+}
+
+.mod-set-tel-side {
+  @include common-style-mod-set-tel-side;
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+//—————————common-style—————————
+@mixin common-style-mod-box {
+  //共通スタイルはありません
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box {
+  margin: 0 0 0 67px;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-in1
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-in1 {
+  //囲うだけのbox
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-in2 未使用
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-in2 {
+  //none（未使用）
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-in3 未使用
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-in3 {
+  //none（未使用）
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-header
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-header {
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
+  width: $baseWidth;
+  background-repeat: repeat-y;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-in1-header 未使用
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-in1-header {
+  //none（未使用）
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-footer
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-footer {
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
+  width: $baseWidth;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-footer-in1
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-in1-footer {
+  //none（未使用）
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-side
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-side {
+  margin: 10px 0 0 0;
+  > div {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-box-in1-side
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————module-style—————————
+@mixin module-style-mod-box-in1-side {
+  padding: 10px;
+  > .mod-box-inner {
+    padding: 10px 10px 1px;
+    background-color: #ffffff;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-box-in1-side {
+  border: 1px solid #cdd0d1;
+  background-color: #f8f7f3;
+}
+@mixin deco-style01A2-mod-box-in1-side {
+  border: 1px solid #cdd0d1;
+  background-color: #f8f7f3;
+}
+@mixin deco-style01A3-mod-box-in1-side {
+  border: 1px solid #cdd0d1;
+  background-color: #e9eaeb;
+}

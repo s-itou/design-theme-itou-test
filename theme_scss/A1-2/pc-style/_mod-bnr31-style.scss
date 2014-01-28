@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@mixin mod-bnr31-common-style {
+  @include border-radius();
+  background-repeat: repeat-x;
+  background-position: left top;
+  width: auto;
+  margin-top: 10px;
+  &:hover {
+    opacity: 0.80;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    overflow: hidden;
+    max-height: 150px;
+    border: 1px solid #ffffff;
+    line-height: 1.4;
+    color: #ffffff;
+    @include border-radius();
+    font-size: $sideFontSizeM;
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+    padding: 10px 5px 10px 30px;
+  }
+}
+
+@mixin mod-bnr31-style {
+  border: 1px solid #325073;
+  background-image: url("img/mod-bnr/bg.png");
+  background-color: #0d2b4d;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/bg02.png");
+    border: 1px solid #bec9d4;
+  }
+}
+@mixin mod-bnr31-style2 {
+  border: 1px solid #781b0e;
+  background-image: url("img/mod-bnr/bg_2.png");
+  background-color: #64130a;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/bg02_2.png");
+    border: 1px solid #c9ada9;
+  }
+}
+@mixin mod-bnr31-style3 {
+  border: 1px solid #200805;
+  background-image: url("img/mod-bnr/bg_3.png");
+  background-color: #180603;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/bg02_3.png");
+  }
+}
+

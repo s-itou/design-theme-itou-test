@@ -1,0 +1,541 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-dl 未完成部品モジュール
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-dl {
+  display: table;
+  margin: 20px 0 0 0;
+  .mod-dl-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      float: left;
+      margin-right: 10px !important;
+    }
+  }
+  .mod-dl-inner2 {
+    display: table-cell;
+    min-width: 20px;
+    vertical-align: middle;
+    > p {
+      padding: 0 0 0 5px;
+    }
+  }
+}
+//—————————module-style—————————
+@mixin module-style-mod-dl {
+  .mod-dl-inner2 {
+    > p {
+      font-size: $fontSizeL + 2;
+    }
+  }
+}
+@mixin module-style-mod-dl-adobe {
+  .mod-dl-inner2 {
+    > p {
+      font-size: $fontSizeM;
+    }
+  }
+}
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01A2-mod-dl {
+  a {
+    color: #294470;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01A3-mod-dl {
+  a {
+    color: #45320b;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01B1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01B2-mod-dl {
+  a {
+    color: #294470;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01B3-mod-dl {
+  a {
+    color: #45320b;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01C1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}
+@mixin deco-style01C2-mod-dl {
+  a {
+    color: #294470;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}
+@mixin deco-style01C3-mod-dl {
+  a {
+    color: #45320b;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-login 部品はないが必要な記述
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-login {
+  padding-top: 5px;
+  font-size: $fontSizeS;
+  text-align: right;
+  a {
+    color: #335a93;
+  }
+}
+//—————————module-style—————————
+//none
+//—————————deco-style—————————
+//none
+
+
+//
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// // mod-card 後にsetになる
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// //—————————common-style—————————
+// @mixin common-style-mod-card {
+//   @extend %cf;
+//   width: 100%;
+//   margin: 15px 0 0 0;
+//   padding: 10px 7px 10px 7px;
+//   > p:first-child {
+//     margin-left: 0 !important;
+//   }
+// }
+// //—————————module-style—————————
+// //none
+// //—————————deco-style—————————
+// @mixin deco-style01A1-mod-card {
+//   border: 3px double #c9e0ff;
+// }
+// @mixin deco-style01A2-mod-card {
+//   border: 3px double #426ca6;
+// }
+// @mixin deco-style01A3-mod-card {
+//   border: 3px double #519dce;
+// }
+// @mixin deco-style01B1-mod-card {
+//   border: 3px double #f1d128;
+// }
+// @mixin deco-style01B2-mod-card {
+//   border: 3px double #F1D128;
+// }
+// @mixin deco-style01B3-mod-card {
+//   border: 3px double #FF994C;
+// }
+// @mixin deco-style01C1-mod-card {
+//   border: 1px dotted #c9e0ff;
+// }
+// @mixin deco-style01C2-mod-card {
+//   border: 1px dotted #f2d028;
+// }
+// @mixin deco-style01C3-mod-card {
+//   border: 1px dotted #ffa658;
+// }
+
+// // mod-copy の mixin一式
+// // new parts have this module?
+// @mixin mod-copy-common-style {
+//   width: 100%;
+//   margin-top: 0;
+//   padding: 5px 0 5px 0;
+//   border: none;
+//   background-color: transparent;
+//   background-repeat: repeat-y;
+//   background-position: left top;
+//   text-align: center;
+//   .mod-copy-inner {
+//     margin: 0;
+//     background-color: transparent;
+//     background-image: none;
+//     .mod-copy-inner2 {
+//       margin: 0;
+//       background-image: none;
+//       p {
+//         font-size: $fontSizeL + 10;
+//         font-weight: bold;
+//         line-height: 1.2;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01A1-mod-copy {
+//   background-image: url(img/mod-copy/_01/bg_a.png);
+//   .mod-copy-inner {
+//     .mod-copy-inner2 {
+//       p {
+//         color: #2e7feb;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01A2-mod-copy {
+//   background-image: url(img/mod-copy/_01/bg_a_2.png);
+//   .mod-copy-inner {
+//     .mod-copy-inner2 {
+//       p {
+//         color: #274c7e;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01A3-mod-copy {
+//   background-image: url(img/mod-copy/_01/bg_a_3.png);
+//   .mod-copy-inner {
+//     .mod-copy-inner2 {
+//       p {
+//         color: #3d2612;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01B1-mod-copy {
+//   border: 1px solid #2e4a72;
+//   background-color: #2e4a72;
+//   background-image: none;
+//   text-align: center;
+//   .mod-copy-inner {
+//     margin-left: 4px;
+//     background-image: url(img/mod-copy/_01/bg_b.png);
+//     background-repeat: no-repeat;
+//     background-position: left center;
+//     .mod-copy-inner2 {
+//       margin-right: 4px;
+//       background-image: url(img/mod-copy/_01/bg02_b.png);
+//       background-repeat: no-repeat;
+//       background-position: right center;
+//       p {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01B2-mod-copy {
+//   border: 1px solid #c7e9ee;
+//   background-color: #418189;
+//   background-image: none;
+//   text-align: center;
+//   .mod-copy-inner {
+//     margin-left: 4px;
+//     background-image: url(img/mod-copy/_01/bg_b_2.png);
+//     background-repeat: no-repeat;
+//     background-position: left center;
+//     .mod-copy-inner2 {
+//       margin-right: 4px;
+//       background-image: url(img/mod-copy/_01/bg02_b_2.png);
+//       background-repeat: no-repeat;
+//       background-position: right center;
+//       p {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01B3-mod-copy {
+//   border: 1px solid #fde082;
+//   background-color: #fcf1c2;
+//   background-image: none;
+//   text-align: center;
+//   .mod-copy-inner {
+//     margin-left: 4px;
+//     background-image: url(img/mod-copy/_01/bg_b_3.png);
+//     background-repeat: no-repeat;
+//     background-position: left center;
+//     .mod-copy-inner2 {
+//       margin-right: 4px;
+//       background-image: url(img/mod-copy/_01/bg02_b_3.png);
+//       background-repeat: no-repeat;
+//       background-position: right center;
+//       p {
+//         color: #443308;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01C1-mod-copy {
+//   padding: 5px;
+//   background-image: url(img/mod-copy/_01/bg_c.png);
+//   background-repeat: repeat;
+//   background-position: left top;
+//   .mod-copy-inner {
+//     padding: 10px;
+//     background-color: #5596f6;
+//     .mod-copy-inner2 {
+//       p {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01C2-mod-copy {
+//   padding: 5px;
+//   background-image: url(img/mod-copy/_01/bg_c_2.png);
+//   background-repeat: repeat;
+//   background-position: left top;
+//   .mod-copy-inner {
+//     padding: 10px;
+//     background-color: #fcf4c6;
+//     .mod-copy-inner2 {
+//       p {
+//         color: #42330a;
+//       }
+//     }
+//   }
+// }
+// @mixin deco-style01C3-mod-copy {
+//   padding: 5px;
+//   background-image: url(img/mod-copy/_01/bg_c_3.png);
+//   background-repeat: repeat;
+//   background-position: left top;
+//   .mod-copy-inner {
+//     padding: 10px;
+//     background-color: #f27f1b;
+//     .mod-copy-inner2 {
+//       p {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+
+
+// //  mod-copy2 の mixin一式
+// @mixin mod-copy2-common-style {
+//   width: 100%;
+//   text-align: center;
+// }
+// @mixin mod-copy2-style {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_a.png");
+//   background-repeat: no-repeat;
+//   background-position: center bottom;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #5596f6;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style2 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_a_2.png");
+//   background-repeat: no-repeat;
+//   background-position: center bottom;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #274c7e;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style3 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_a_3.png");
+//   background-repeat: no-repeat;
+//   background-position: center bottom;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #f59c1c;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style4 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_b.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style5 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_b_2.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style6 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_b_3.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style7 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_c.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style8 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_c_2.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+// @mixin mod-copy2-style9 {
+//   margin-top: 15px;
+//   background-image: url("img/mod-copy/_02/bg_c_3.png");
+//   background-repeat: repeat;
+//   background-position: left top;
+//   padding: 10px;
+//   .mod-copy-inner {
+//     padding: 0;
+//     background-color: transparent;
+//   }
+//   p {
+//     color: #ffffff;
+//     font-size: $fontSizeL + 10;
+//     font-weight: bold;
+//     line-height: 1.2;
+//   }
+// }
+//
+

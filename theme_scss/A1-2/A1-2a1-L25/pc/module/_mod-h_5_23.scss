@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-h_5_23-style";
+
+.mod-h_5_23 {
+  @include mod-h_5_23-common-style;
+  @include mod-h_5_23-style;
+  .ex-style_01A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_v1A2 & {
+    @include mod-h_5_23-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_v1A3 & {
+    @include mod-h_5_23-style3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_v1B1 & {
+    @include mod-h_5_23-style4;
+  }
+  .ex-style_01B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_v1B2 & {
+    @include mod-h_5_23-style5;
+  }
+  .ex-style_01B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_v1B3 & {
+    @include mod-h_5_23-style6;
+  }
+  .ex-style_01C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_v1C1 & {
+    @include mod-h_5_23-style7;
+  }
+  .ex-style_01C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_v1C2 & {
+    @include mod-h_5_23-style8;
+  }
+  .ex-style_01C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_v1C3 & {
+    @include mod-h_5_23-style9;
+  }
+}
+

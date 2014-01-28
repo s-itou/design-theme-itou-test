@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-tokucho の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../sp-style/mod-set-tokucho-style";
+@import "../design/pat-design-tokucho";
+
+
+// -----------------------------------
+// part-main-274
+// 特徴　枠付き部品
+// -----------------------------------
+
+.mod-set-tokucho-bunsyo {
+  @extend %common-style-mod-set-tokucho;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-design-tokucho-bunsyo-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-design-tokucho-bunsyo-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-design-tokucho-bunsyo-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-design-tokucho-bunsyo-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-design-tokucho-bunsyo-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-design-tokucho-bunsyo-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-design-tokucho-bunsyo-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-design-tokucho-bunsyo-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-design-tokucho-bunsyo-9;
+  }
+}
+
+
+// -----------------------------------
+// part-main-276
+// 特徴 <装飾> -２
+// -----------------------------------
+
+.mod-set-tokucho-h {
+  @extend %common-style-mod-set-tokucho-2;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-design-tokucho-h-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-design-tokucho-h-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-design-tokucho-h-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-design-tokucho-h-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-design-tokucho-h-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-design-tokucho-h-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-design-tokucho-h-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-design-tokucho-h-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-design-tokucho-h-9;
+  }
+}
+
+
+// -----------------------------------
+// part-main-278
+// 特徴 <画像>
+// -----------------------------------
+
+.mod-set-tokucho-pic {
+  @extend %common-style-mod-set-tokucho-2;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-design-tokucho-pic-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-design-tokucho-pic-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-design-tokucho-pic-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-design-tokucho-pic-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-design-tokucho-pic-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-design-tokucho-pic-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-design-tokucho-pic-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-design-tokucho-pic-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-design-tokucho-pic-9;
+  }
+}
+

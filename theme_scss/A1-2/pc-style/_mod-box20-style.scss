@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@mixin mod-box20-common-style {
+margin-top: 30px;
+  width: 100%;
+  @include border-radius();
+  padding: 25px 25px 0;
+  > .ex-first-child {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+@mixin mod-box20-style {
+  border: 2px solid #cccccc;
+}
+@mixin mod-box20-style2 {
+  border: 2px solid #d7e1ec;
+}
+@mixin mod-box20-style3 {
+  border: 2px solid #ead3cf;
+}
+@mixin mod-box20-style4 {
+  border: 0 none transparent;
+}
+@mixin mod-box20-style5 {
+border: 2px solid #448DC9;
+}
+@mixin mod-box20-style6 {
+border: 0 none transparent;
+}
+

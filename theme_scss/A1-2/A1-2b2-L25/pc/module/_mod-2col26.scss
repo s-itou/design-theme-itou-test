@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-2col26-style";
+
+.mod-2col26 {
+  @include mod-2col26-common-style;
+  @include mod-2col26-style;
+}
+

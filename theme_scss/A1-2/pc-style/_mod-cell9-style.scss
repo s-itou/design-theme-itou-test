@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@mixin mod-cell9-common-style {
+font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  margin-top: 10px !important;
+  padding: 5px 0 0 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-cell9-style {
+  color: #333333;
+  background-image: url("img/mod-cell/bg05.png");
+}
+@mixin mod-cell9-style2 {
+  color: #010911;
+  background-image: url("img/mod-cell/bg05_2.png");
+}
+@mixin mod-cell9-style3 {
+  color: #222222;
+  background-image: url("img/mod-cell/bg05_3.png");
+}
+@mixin mod-cell9-style4 {
+  color: #333333;
+  background-image: url("img/mod-cell/bg18.png");
+}
+@mixin mod-cell9-style5 {
+  color: #333333;
+  background-image: url("img/mod-cell/bg18_2.png");
+}
+@mixin mod-cell9-style6 {
+  color: #333333;
+  background-image: url("img/mod-cell/bg18_3.png");
+}

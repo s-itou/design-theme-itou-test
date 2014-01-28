@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+//  mod-text28 の mixin一式
+@mixin mod-text28-common-style {
+  font-size: $fontSizeL;
+}
+@mixin mod-text28-style {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style2 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style3 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style4 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style5 {
+  color: #ffffff;
+}
+@mixin mod-text28-style6 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style7 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style8 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style9 {
+  color: #ffffff;
+}
+
+
+//  mod-tel28 の mixin一式
+@mixin mod-tel32-common-style {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align:center;
+  position: relative;
+  padding: 5px 0 0 20px;
+  height: 60px;
+  @include tel-button2();
+  text-align: center;
+  i {
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+  }
+  .mod-icon_ftel {
+    height: 25px;
+    top: 20px;
+    left: 10px;
+    background-size: 31px 25px;
+    background-image: url("img/mod-ftel/spbg02.png");
+    background-position: left top;
+  }
+  .mod-icon_tel {
+    height: 32px;
+    top: 15px;
+    left: 10px;
+    background-size: 31px 32px;
+    background-position: left top;
+  }
+  .mod-tel-inner {
+    display: inline-block;
+    > p:first-child.mod-tel-inner-3 {
+      position: relative;
+      top: 10px;
+      margin-top: 3px;
+    }
+    > p[data-cms-switchable="false"] + p {
+      position: relative;
+      top: 10px;
+    }
+  }
+  .mod-tel-inner-2 {
+    font-size: 12px;
+    word-break: break-all;
+  }
+  .mod-tel-inner-3 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+
+@mixin mod-tel32-style {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg.png");
+
+  }
+}
+
+@mixin mod-tel32-style2 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_2.png");
+  }
+}
+
+@mixin mod-tel32-style3 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_3.png");
+  }
+}
+
+@mixin mod-tel32-style4 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg.png");
+  }
+}
+
+@mixin mod-tel32-style5 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg24_2.png");
+  }
+}
+
+@mixin mod-tel32-style6 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_3.png");
+  }
+}
+
+@mixin mod-tel32-style7 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg.png");
+  }
+}
+
+@mixin mod-tel32-style8 {
+ // none
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_2.png");
+  }
+}
+
+
+@mixin mod-tel32-style9 {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/spbg_3.png");
+  }
+}
+
+//  mod-tel31 の mixin一式
+@mixin mod-tel32-common-style {
+  display: table;
+  margin: 0 auto;
+  i {
+    display: table-cell;
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .mod-tel-inner {
+    display: table-cell;
+    padding-left: 5px;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+  }
+}
+
+
+//  mod-bnr38 の mixin一式
+@mixin mod-bnr38-common-style {
+  @include border-radius();
+  display: inline-block;
+  width: 150px;
+  margin-top: 10px;
+  &:hover {
+    opacity: 0.80;
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    max-height: 45px;
+    border: 1px solid #ffffff;
+    line-height: 1.4;
+    @include border-radius;
+    padding: 5px 5px 5px 20px;
+  }
+}
+
+@mixin mod-bnr38-style5 {
+  border: 1px solid #284265;
+  background-image: url("img/mod-bnr/bg56_2.png");
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-color: #3c4e78;
+  font-size: $fontSizeS;
+  .mod-bnr-inner {
+    border: 1px solid #4772a5;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg04_2.png");
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+  }
+}
+@mixin mod-bnr38-style {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style2 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style3 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style4 {
+  @include mod-bnr38-style5; // none
+}
+// @mixin mod-bnr38-style5 {上に記載}
+@mixin mod-bnr38-style6 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style7 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style8 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style9 {
+  @include mod-bnr38-style5; // none
+}
+
+
+
+//  mod-2col46 の mixin一式
+@mixin mod-2col46-common-style {
+  .mod-2col-inner {
+  }
+}
+//  mod-2col47 の mixin一式
+@mixin mod-2col47-common-style {
+  .mod-2col-inner {
+
+  }
+  .mod-2col-inner2 {
+    text-align: center;
+  }
+}
+

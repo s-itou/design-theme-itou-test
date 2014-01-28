@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-arrow
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-arrow の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-arrow {
+  margin-top: 10px !important;
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+
+// -------------------------------------
+//  pat-item-arrow の共通デザイン
+// -------------------------------------
+
+@mixin module-style-pat-item-arrow-1 {
+  margin-right: -26px !important;
+  padding-right: 26px;
+}
+@mixin module-style-pat-item-arrow-2 {
+  margin-right: -24px !important;
+  padding-right: 24px;
+}
+
+// -------------------------------------
+// pat-item-arrow の装飾スタイル
+// -------------------------------------
+
+// シンプル
+@mixin deco-style-pat-item-arrow-simple-1 {
+  background-image: url(img/mod-image-spec/_05/bg_c.png);
+}
+@mixin deco-style-pat-item-arrow-simple-2 {
+  background-image: url(img/mod-image-spec/_05/bg_c_2.png);
+}
+@mixin deco-style-pat-item-arrow-simple-3 {
+  background-image: url(img/mod-image-spec/_05/bg_c_3.png);
+}
+
+// グラデーション
+@mixin deco-style-pat-item-arrow-double-1 {
+  background-image: url(img/mod-image-spec/_05/bg_a.png);
+}
+@mixin deco-style-pat-item-arrow-double-2 {
+  background-image: url(img/mod-image-spec/_05/bg_a_2.png);
+}
+@mixin deco-style-pat-item-arrow-double-3 {
+  background-image: url(img/mod-image-spec/_05/bg_a_3.png);
+}
+@mixin deco-style-pat-item-arrow-double-4 {
+  background-image: url(img/mod-image-spec/_05/bg_b.png);
+}
+@mixin deco-style-pat-item-arrow-double-5 {
+  background-image: url(img/mod-image-spec/_05/bg_b_3.png);
+}
+

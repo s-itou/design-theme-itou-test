@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+@mixin mod-h_5_22-common-style {
+margin-top: 10px;
+  @extend %default-h_5_3;
+  .mod-h {
+    font-weight: bold;
+    font-size: $fontSizeM;
+  }
+}
+
+@mixin mod-h_5_22-style {
+.mod-h {
+    color: #46140b;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v.png");
+    background-position: center top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg08_v.png");
+    background-position: center 2px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg09_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg10_v.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg06_v.png");
+    background-position: center top;
+  }
+}
+@mixin mod-h_5_22-style2 {
+.mod-h {
+    color: #222222;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v2.png");
+    background-position: center top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg08_v2.png");
+    background-position: center 2px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg09_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg10_v2.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg06_v2.png");
+    background-position: center top;
+  }
+}
+@mixin mod-h_5_22-style3 {
+.mod-h {
+    color: #010911;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v3.png");
+    background-position: center top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg08_v3.png");
+    background-position: center 2px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg09_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg10_v3.png");
+    background-position: center 5px;
+  }
+  .mod-icon_dental {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg06_v3.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+}
+@mixin mod-h_5_22-style4 {
+.mod-h {
+    color: #5a6e55;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg13_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg14_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg15_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v.png");
+    background-position: center top;
+  }
+}
+@mixin mod-h_5_22-style5 {
+.mod-h {
+    color: #46140b;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v2.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg13_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg14_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg15_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v2.png");
+    background-position: center top;
+  }
+}
+@mixin mod-h_5_22-style6 {
+.mod-h {
+    color: #6d5b04;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg13_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg14_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg15_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v3.png");
+    background-position: center top;
+  }
+}
+@mixin mod-h_5_22-style7 {
+.mod-h {
+    color: #3c3c3c;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg17_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg18_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg19_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v.png");
+    background-position: center top;
+  }
+}
+@mixin mod-h_5_22-style8 {
+.mod-h {
+    color: #375068;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v2.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg17_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg18_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg19_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v2.png");
+    background-position: center top;
+  }
+}
+@mixin mod-h_5_22-style9 {
+.mod-h {
+    color: #4b4b4b;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg17_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg18_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg19_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v3.png");
+    background-position: center top;
+  }
+}
+

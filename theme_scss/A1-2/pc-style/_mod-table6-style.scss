@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+@mixin mod-table6-common-style {
+padding: 1px;
+  width: 100%;
+  margin-top: 10px;
+  table {
+    font-weight: normal;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $fontSizeM;
+    tr:first-child {
+      th:first-child {
+        width: 45%;
+      }
+      td:first-child {
+        width: 45%;
+      }
+    }
+    th {
+      text-align: left;
+      padding: 8px;
+      font-weight: normal;
+    }
+    td {
+      padding: 8px;
+      vertical-align: top;
+      background-color: #ffffff;
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-table6-style {
+border: 1px solid #c6c6c6;
+  color: #333333;
+  table {
+    border: 1px solid #c6c6c6;
+    background-image: none;
+    background-color: transparent;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c6c6c6;
+        border-bottom: 1px solid #ffffff;
+        color: #333333;
+      }
+      th:last-child {
+        border-right: 1px solid #c6c6c6;
+      }
+    }
+    th {
+      background-color: #c6c6c6;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      color: #333333;
+    }
+    td {
+      border: 1px solid #c6c6c6;
+    }
+  }
+}
+@mixin mod-table6-style2 {
+border: 1px solid #d7e1ec;
+  color: #333333;
+  table {
+    border: 1px solid #d7e1ec;
+    background-image: none;
+    background-color: transparent;
+    tr:first-child {
+      th {
+        border-top: 1px solid #d7e1ec;
+        border-bottom: 1px solid #ffffff;
+        color: #333333;
+      }
+      th:last-child {
+        border-right: 1px solid #d7e1ec;
+      }
+    }
+    th {
+      background-color: #d7e1ec;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      color: #333333;
+    }
+    td {
+      border: 1px solid #d7e1ec;
+    }
+  }
+}
+@mixin mod-table6-style3 {
+border: 1px solid #ead3cf;
+  color: #333333;
+  table {
+    border: 1px solid #ead3cf;
+    background-image: none;
+    background-color: transparent;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ead3cf;
+        border-bottom: 1px solid #ffffff;
+        color: #333333;
+      }
+      th:last-child {
+        border-right: 1px solid #ead3cf;
+      }
+    }
+    th {
+      background-color: #ead3cf;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      color: #333333;
+    }
+    td {
+      border: 1px solid #ead3cf;
+    }
+  }
+}
+@mixin mod-table6-style4 {
+ border: 1px solid #666666;
+  color: #666666;
+  table {
+    border: 1px solid #666666;
+    background-image: none;
+    background-color: transparent;
+    tr:first-child {
+      th {
+        border-top: 1px solid #666666;
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid #666666;
+      }
+    }
+    th {
+      background-color: #666666;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      color: #ffffff;
+    }
+    td {
+      border: 1px solid #666666;
+    }
+  }
+}
+@mixin mod-table6-style5 {
+  border: 1px solid #b1cbe8;
+  color: #333333;
+  table {
+    border: 1px solid #b1cbe8;
+    background-image: none;
+    background-color: transparent;
+    tr:first-child {
+      th {
+        border-top: 1px solid #b1cbe8;
+        border-bottom: 1px solid #ffffff;
+        color: #0c2947;
+      }
+      th:last-child {
+        border-right: 1px solid #b1cbe8;
+      }
+    }
+    th {
+      background-color: #b1cbe8;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      color: #0c2947;
+    }
+    td {
+      border: 1px solid #b1cbe8;
+    }
+  }
+}
+@mixin mod-table6-style6 {
+  border: 1px solid #eaaca1;
+  color: #333333;
+  table {
+    border: 1px solid #eaaca1;
+    background-image: none;
+    background-color: transparent;
+    tr:first-child {
+      th {
+        border-top: 1px solid #eaaca1;
+        border-bottom: 1px solid #ffffff;
+        color: #260e0e;
+      }
+      th:last-child {
+        border-right: 1px solid #eaaca1;
+      }
+    }
+    th {
+      background-color: #eaaca1;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      color: #260e0e;
+    }
+    td {
+      border: 1px solid #eaaca1;
+    }
+  }
+}
+@mixin mod-table6-style7 {
+border: 0 none transparent;
+color: #333333;
+  table {
+    border: 1px solid #666666;
+    background-image: url("img/mod-table/bg04.png");
+    background-color: #eaeaea;
+    tr:first-child {
+      th {
+        border-top: 0 none transparent;
+        border-bottom: 1px solid #666666;
+        color: #333333;
+      }
+      th:last-child {
+        border-right: 1px solid #666666;
+      }
+    }
+    th {
+      background-color: transparent;
+      border-top: 1px solid #666666;
+      border-right: 1px solid #666666;
+      color: #333333;
+    }
+    td {
+      border: 1px solid #666666;
+    }
+  }
+}
+@mixin mod-table6-style8 {
+border: 0 none transparent;
+  color: #414141;
+  table {
+    border: 1px solid #325073;
+    background-image: url("img/mod-table/bg04_2.png");
+    background-color: #d6e3f0;
+    tr:first-child {
+      th {
+        border-top: 0 none transparent;
+        border-bottom: 1px solid #325073;
+        color: #333333;
+      }
+      th:last-child {
+        border-right: 1px solid #325073;
+      }
+    }
+    th {
+      background-color: transparent;
+      border-top: 1px solid #325073;
+      border-right: 1px solid #325073;
+      color: #333333;
+    }
+    td {
+      border: 1px solid #325073;
+    }
+  }
+}
+@mixin mod-table6-style9 {
+border: 0 none transparent;
+  color: #333333;
+  table {
+    border: 1px solid #46140b;
+    background-image: url("img/mod-table/bg04_3.png");
+    background-color: #eec9c2;
+    tr:first-child {
+      th {
+        border-top: 0 none transparent;
+        border-bottom: 1px solid #46140b;
+        color: #333333;
+      }
+      th:last-child {
+        border-right: 1px solid #46140b;
+      }
+    }
+    th {
+      background-color: transparent;
+      border-top: 1px solid #46140b;
+      border-right: 1px solid #46140b;
+      color: #333333;
+    }
+    td {
+      border: 1px solid #46140b;
+    }
+  }
+}
+

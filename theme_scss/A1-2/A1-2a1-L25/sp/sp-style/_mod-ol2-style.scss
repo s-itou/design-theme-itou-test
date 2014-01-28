@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+
+
+//  mod-ol2 の mixin一式
+@mixin mod-ol2-common-style {
+  margin-top: 20px;
+  ol {
+    counter-reset:li; //カウントリセット
+  }
+  li {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 0;
+  }
+  li {
+    > p {
+      margin-top: 12px;
+    }
+    > p:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@mixin mod-ol2-style {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #e9eaeb;
+    border: 1px solid #cdd0d1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg10_2.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style2 {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #fffdee;
+    border: 1px solid #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg09_3.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style3 {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #fffdee;
+    border: 1px solid #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg09_3.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style4 {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #fffdee;
+    border: 1px solid #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg09_3.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style5 {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #fffdee;
+    border: 1px solid #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg09_3.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style6 {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #fffdee;
+    border: 1px solid #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg09_3.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style7 {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #fffdee;
+    border: 1px solid #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg09_3.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style8 {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #fffdee;
+    border: 1px solid #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg09_3.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style9 {
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 45px;
+    background-color: #fffdee;
+    border: 1px solid #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ul/bg09_3.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}

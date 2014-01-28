@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import "../pc-style/mod-html-style";
+
+.mod-html_ver2 {
+  @include common-style-mod-html;
+  @include module-style-mod-html;
+}
+
+.mod-html-doga {
+  @include common-style-mod-html;
+  @include module-style-mod-html-doga;
+}
+
+.mod-html-map {
+  @include common-style-mod-html;
+  @include module-style-mod-html-map;
+  .ex-style_01A1 & {@include deco-style01A1-mod-html-map;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-html-map;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-html-map;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-html-map;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-html-map;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-html-map;}
+  .ex-style_01C1 & {@include deco-style01A1-mod-html-map;}
+  .ex-style_01C2 & {@include deco-style01A2-mod-html-map;}
+  .ex-style_01C3 & {@include deco-style01A3-mod-html-map;}
+}
+
+.mod-html-slide {
+  @include common-style-mod-html;
+  @include module-style-mod-html-slide;
+}
+
+.mod-html-side {
+  @include common-style-mod-html;
+  @include module-style-mod-html-side;
+}
+
+.mod-html-slide-side {
+  @include common-style-mod-html;
+  @include module-style-mod-html-slide-side;
+}
+
+.mod-html-map-side {
+  @include common-style-mod-html;
+  @include module-style-mod-html-map-side;
+}
+
+.mod-html-header {
+  @include common-style-mod-html;
+  @include module-style-mod-html-header;
+}
+
+.mod-html-slide-header {
+  @include common-style-mod-html;
+  @include module-style-mod-html-slide-header;
+}
+
+.mod-html-header-footer {
+  @include common-style-mod-html;
+  @include module-style-mod-html-footer;
+}
+
+.mod-html-map-footer {
+  @include common-style-mod-html;
+  @include module-style-mod-html-map-footer;
+  .ex-style_01A1 & {@include deco-style01A1-mod-html-map-footer;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-html-map-footer;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-html-map-footer;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-html-map-footer;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-html-map-footer;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-html-map-footer;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-html-map-footer;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-html-map-footer;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-html-map-footer;}
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+// .mod-html {
+//   @extend .mod-html;
+// }
+// .mod-html3 {
+//   @extend .mod-html-doga;
+// }
+// .mod-html4 {
+//   @extend .mod-html-map;
+// }
+// .mod-html-spec {
+//   @extend .mod-html-slide;
+// }
+// .mod-html5 {
+//   @extend .mod-html-map-side;
+// }
+// .mod-html6 {
+//   @extend .mod-html-map-footer;
+// }

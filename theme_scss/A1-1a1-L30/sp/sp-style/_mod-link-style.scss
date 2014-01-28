@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+//  mod-link の mixin一式
+@mixin mod-link-common-style {
+  line-height: 1.4;
+  text-decoration: none;
+  text-align: center;
+  width: 95%;
+  padding: 12px 40px 12px 10px;
+  margin-top: 10px;
+  background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 17px 17px, 100%;
+  border: 1px solid #cccccc;
+  @include border-radius();
+  display: block;
+  @include box-sizing(border-box);
+  p {
+    font-size: 14px !important;
+    span {
+      font-size: 14px !important;
+    }
+    strong {
+      font-size: 14px !important;
+    }
+  }
+}
+@mixin mod-link-style {
+  color: #335a93;
+}
+@mixin mod-link-style2 {
+  color: #294470;
+}
+@mixin mod-link-style3 {
+  color: #45320b;
+}
+
+//  mod-link2 の mixin一式
+@mixin mod-link2-common-style {
+  text-align: center;
+  width: 95%;
+  margin-top: 15px;
+  p {
+    line-height: 1.4;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 12px 40px 12px 10px;
+    background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 17px 17px, 100%;
+    border: 1px solid #cccccc;
+    @include border-radius();
+    display: block;
+    @include box-sizing(border-box);
+    font-size: 14px !important;
+    span {
+      font-size: 14px !important;
+    }
+  }
+}
+@mixin mod-link2-style {
+  color: #335a93;
+}
+@mixin mod-link2-style2 {
+  color: #294470;
+}
+@mixin mod-link2-style3 {
+  color: #45320b;
+}
+
+//  mod-link7 の mixin一式
+@mixin mod-link7-common-style {
+  text-align: center;
+  width: 95%;
+  padding: 12px 40px 12px 10px;
+  margin-top: 10px;
+  background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 17px 17px, 100%;
+  border: 1px solid #cccccc;
+  @include border-radius();
+  display: block;
+  @include box-sizing(border-box);
+  p {
+    font-size: 14px;
+    span {
+      font-size: 14px !important;
+    }
+  }
+}
+@mixin mod-link7-style {
+  color: #335a93;
+}
+@mixin mod-link7-style2 {
+  color: #294470;
+}
+@mixin mod-link7-style3 {
+  color: #45320b;
+}
+@mixin mod-link7-style4 {
+  color: #15305f;
+}
+@mixin mod-link7-style5 {
+  color: #2b436f;
+}
+@mixin mod-link7-style6 {
+  color: #37280b;
+}
+@mixin mod-link7-style7 {
+  color: #352111;
+}
+
+
+//  mod-link8 の mixin一式
+@mixin mod-link8-common-style {
+  line-height: 1.4;
+  text-decoration: none;
+  text-align: center;
+  width: 95%;
+  padding: 12px 40px 12px 10px;
+  margin-top: 10px;
+  background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 17px 17px, 100%;
+  border: 1px solid #cccccc;
+  @include border-radius();
+  display: block;
+  @include box-sizing(border-box);
+  p {
+    font-size: 14px !important;
+    span {
+      font-size: 14px !important;
+    }
+  }
+}
+@mixin mod-link8-style {
+  color: #335a93;
+}
+@mixin mod-link8-style2 {
+  color: #294470;
+}
+@mixin mod-link8-style3 {
+  color: #45320b;
+}
+
+//  mod-link10 の mixin一式
+@mixin mod-link10-common-style {
+  line-height: 1.4;
+  text-decoration: none;
+  text-align: center;
+  width: 95%;
+  padding: 12px 40px 12px 10px;
+  margin-top: 15px;
+  background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 17px 17px, 100%;
+  border: 1px solid #cccccc;
+  @include border-radius();
+  display: block;
+  @include box-sizing(border-box);
+  p {
+    font-size: 14px !important;
+    span {
+      font-size: 14px !important;
+    }
+  }
+}
+@mixin mod-link10-style {
+  color: #335a93;
+}
+@mixin mod-link10-style2 {
+  color: #294470;
+}
+@mixin mod-link10-style3 {
+  color: #45320b;
+}
+
+//  mod-link11 の mixin一式
+@mixin mod-link11-common-style {
+  line-height: 1.4;
+  text-decoration: none;
+  text-align: center;
+  width: 95%;
+  padding: 12px 40px 12px 10px;
+  margin-top: 10px;
+  background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 17px 17px, 100%;
+  border: 1px solid #cccccc;
+  @include border-radius();
+  display: block;
+  @include box-sizing(border-box);
+  p {
+    font-size: 14px !important;
+    span {
+      font-size: 14px !important;
+    }
+  }
+}
+@mixin mod-link11-style {
+  color: #335a93;
+}
+@mixin mod-link11-style2 {
+  color: #294470;
+}
+@mixin mod-link11-style3 {
+  color: #45320b;
+}

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+//　pat-item-arrow
+//  : 矢印画像を目立たせるデザインパターン
+//
+//    ・arrow-simple（シンプル）
+//    ・arrow-double（二重）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-arrow-style.scss";
+
+// ----------------------------------
+//  pat-item-arrow の個別設定
+// ----------------------------------
+
+// シンプル
+@mixin pat-item-arrow-simple-1 { // gray
+  @include common-style-pat-item-arrow;
+  @include module-style-pat-item-arrow-1;
+  @include deco-style-pat-item-arrow-simple-1;
+}
+@mixin pat-item-arrow-simple-2 { // blue
+  @include common-style-pat-item-arrow;
+  @include module-style-pat-item-arrow-1;
+  @include deco-style-pat-item-arrow-simple-2;
+}
+@mixin pat-item-arrow-simple-3 { // pink
+  @include common-style-pat-item-arrow;
+  @include module-style-pat-item-arrow-1;
+  @include deco-style-pat-item-arrow-simple-3;
+}
+
+// 二重
+@mixin pat-item-arrow-double-1 { // gray
+  @include common-style-pat-item-arrow;
+  @include module-style-pat-item-arrow-1;
+  @include deco-style-pat-item-arrow-double-1;
+}
+@mixin pat-item-arrow-double-2 { // blue
+  @include common-style-pat-item-arrow;
+  @include module-style-pat-item-arrow-1;
+  @include deco-style-pat-item-arrow-double-2;
+}
+@mixin pat-item-arrow-double-3 { // pink
+  @include common-style-pat-item-arrow;
+  @include module-style-pat-item-arrow-1;
+  @include deco-style-pat-item-arrow-double-3;
+}
+@mixin pat-item-arrow-double-4 { // yellow
+  @include common-style-pat-item-arrow;
+  @include module-style-pat-item-arrow-2;
+  @include deco-style-pat-item-arrow-double-4;
+}
+@mixin pat-item-arrow-double-5 { // brown
+  @include common-style-pat-item-arrow;
+  @include module-style-pat-item-arrow-2;
+  @include deco-style-pat-item-arrow-double-5;
+}
+
+
+

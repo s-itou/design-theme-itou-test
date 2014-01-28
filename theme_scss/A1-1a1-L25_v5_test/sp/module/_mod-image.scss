@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "../sp-style/mod-image-style";
+
+//旧方式のコピーのため要改修
+
+//##################################################
+//  mod-image
+//##################################################
+.mod-img {
+  @include common-style-mod-img;
+  @include module-style-mod-img;
+}

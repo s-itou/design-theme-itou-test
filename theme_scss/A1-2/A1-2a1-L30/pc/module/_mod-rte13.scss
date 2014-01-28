@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-rte13-style";
+
+.mod-rte13 {
+  @include mod-rte13-common-style;
+  @include mod-rte13-style;
+}
+

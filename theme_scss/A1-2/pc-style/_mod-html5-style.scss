@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@mixin mod-html5-common-style {
+margin-top: 10px;
+  overflow: auto;
+  width: 100%;
+  small {
+    a {
+      @extend %inlineBlock;
+      max-width: 100%;
+      @include box-sizing(border-box);
+      padding-left: 15px;
+      font-size: $sideFontSizeM;
+      background-image: url("img/mod-link/bg.png");
+      background-position: left 2px;
+      background-repeat: no-repeat;
+    }
+  }
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+

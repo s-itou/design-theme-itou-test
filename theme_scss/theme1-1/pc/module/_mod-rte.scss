@@ -1,0 +1,1090 @@
+@charset "UTF-8";
+
+
+// mod-rte
+.mod-rte {
+  margin-bottom: 30px !important;
+  }
+
+.mod-rte2 {
+  margin-bottom: 25px !important;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .area-header & {
+      color: $dh_textColor;
+    }
+    .area-footer & {
+      color: $dh_textColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .area-header & {
+      color: $dh_textColor2;
+    }
+    .area-footer & {
+      color: $dh_textColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .area-header & {
+      color: $dh_textColor3;
+    }
+    .area-footer & {
+      color: $dh_textColor3;
+    }
+  }
+}
+
+
+.mod-rte3 {
+  text-align: right;
+  margin-bottom: 25px !important;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .area-footer & {
+      color: $dh_textColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .area-footer & {
+      color: $dh_textColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .area-footer & {
+      color: $dh_textColor3;
+    }
+  }
+}
+
+.mod-rte4 {
+  text-align: center;
+  margin-bottom: 25px !important;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .area-footer & {
+      color: $dh_textColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .area-footer & {
+      color: $dh_textColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .area-footer & {
+      color: $dh_textColor3;
+    }
+  }
+}
+
+.mod-rte5 {
+  color: #ffffff;
+  padding: 10px 15px;
+  margin-bottom: 25px !important;
+  @include background($color: $m_decTextColor);
+  @include border-radius();
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 & {
+    background-color: $m_decTextColor2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 & {
+    background-color: $m_decTextColor3;
+  }
+  .ex-style_q1A1 & {
+    color: $mq_decTextColor;
+    background-color: $mq_decTextBgColor;
+  }
+  .ex-style_q1A2 & {
+    color: $mq_decTextColor2;
+    background-color: $mq_decTextBgColor2;
+  }
+  .ex-style_q1A3 & {
+    color: $mq_decTextColor3;
+    background-color: $mq_decTextBgColor3;
+  }
+  .ex-style_d1A1 &,
+  .ex-style_d1A1 &,
+  .ex-style_d1A1 &,
+  .ex-style_d1A1 & {
+    color: #352111;
+    padding: 15px 15px;
+    @include background($color: #fffce9);
+  }
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 & {
+    padding: 15px 15px;
+    background-color: #e3f6f8;
+    color: #294470;
+  }
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 & {
+    padding: 15px 15px;
+    background-color: #fef6b2;
+    color: #45320b;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 & {
+    background-color: #3c66ba;
+  }
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_q1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B1 & {
+    background-color: #f69e3c;
+  }
+  .ex-style_d1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_d1B1 & {
+    color: #331f13;
+    background-color: #f7de5e;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 & {
+    background-color: #2e4e87;
+  }
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_q1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B2 & {
+    color: #331f13;
+    background-color: #f9e89d;
+  }
+  .ex-style_d1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_d1B2 & {
+    color: #331f13;
+    background-color: #f9e89d;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 & {
+    background-color: #337FB2;
+  }
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_q1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1B3 & {
+    color: #ffffff;
+    background-color: #FE9D97;
+  }
+  .ex-style_d1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_d1B3 & {
+    color: #331f13;
+    background-color: #f7de5e;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C1 & {
+    border: 1px solid #d1c9a4;
+    background-color: #fffce9;
+    color: #333333;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C2 & {
+    border: 1px solid #7ed1d9;
+    background-color: #e3f6f8;
+    color: #45320b;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_i1C3 & {
+    border: 1px solid #c8dffe;
+    background-color: #dce9fb;
+    color: #45320b;
+  }
+}
+
+.mod-rte7 {
+  color: #ffffff;
+  padding: 10px 5px;
+  margin-bottom: 25px !important;
+  background-color: $m_decTextColor;
+  @include border-radius();
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 & {
+    background-color: $m_decTextColor2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 & {
+    background-color: $m_decTextColor3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 & {
+    @include background($color: #3c66ba);
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 & {
+    background-color: #2e4e87;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 & {
+    background-color: #337FB2;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 & {
+    border: 1px solid #d1c9a4;
+    background-color: #fffce9;
+    color: #333333;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 & {
+    border: 1px solid #7ed1d9;
+    background-color: #e3f6f8;
+    color: #45320b;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 & {
+    border: 1px solid #c8dffe;
+    background-color: #dce9fb;
+    color: #45320b;
+  }
+}
+
+.mod-rte8 {
+  color: #ffffff;
+  padding: 10px 10px;
+  margin-bottom: 25px !important;
+  background-color: $m_decTextColor;
+  @include border-radius();
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 & {
+    background-color: $m_decTextColor2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 & {
+    background-color: $m_decTextColor3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_c1B1 & {
+    @include background($color: #3c66ba);
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_c1B2 & {
+    background-color: #2e4e87;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_c1B3 & {
+    background-color: #337FB2;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_c1C1 & {
+    border: 1px solid #d1c9a4;
+    background-color: #fffce9;
+    color: #333333;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_c1C2 & {
+    border: 1px solid #7ed1d9;
+    background-color: #e3f6f8;
+    color: #45320b;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_c1C3 & {
+    border: 1px solid #c8dffe;
+    background-color: #dce9fb;
+    color: #45320b;
+  }
+}
+
+.mod-rte9 {
+  color: #352111;
+  padding: 15px 15px;
+  margin-bottom: 25px !important;
+  @include background($color: #fffce9);
+  @include border-radius();
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    background-color: #e3f6f8;
+    color: #294470;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    background-color: #fef6b2;
+    color: #45320b;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    color: #331f13;
+    background-color: #f7de5e;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: #331f13;
+    background-color: #f9e89d;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border: 1px solid #5596f6;
+    background-color: #c8dffe;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border: 1px solid #f2d028;
+    background-color: #fef8da;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border: 1px solid #f79316;
+    background-color: #ffe9d6;
+  }
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_d1C1 & {
+    border: 1px solid #5596f6;
+    background-color: #c8dffe;
+    color: #333333;
+  }
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_d1C2 & {
+    border: 1px solid #f79317;
+    background-color: #fef7da;
+    color: #333333;
+  }
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_d1C3 & {
+    border: 1px solid #f79317;
+    background-color: #ffe8d6;
+    color: #45320b;
+  }
+}
+
+.mod-rte10 {
+  color: #352111;
+  padding: 10px 10px;
+  margin-bottom: 25px !important;
+  @include background($color: #fffce9);
+  @include border-radius();
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    color: #294470;
+    background-color: #e3f6f8;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    color: #45320b;
+    background-color: #fef6b2;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    color: #331f13;
+    background-color: #f7de5e;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    color: #331f13;
+    background-color: #f9e89d;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    border: 1px solid #5596f6;
+    background-color: #c8dffe;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    border: 1px solid #f2d028;
+    background-color: #fef8da;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    border: 1px solid #f79316;
+    background-color: #ffe9d6;
+  }
+}
+
+.mod-rte11 {//ヘッター用
+  margin-bottom: 25px !important;
+}
+
+.mod-rte12 {//フッター用
+  margin-bottom: 25px !important;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    color: $dh_textColor;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: $dh_textColor2;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    color: $dh_textColor3;
+  }
+}
+
+.mod-rte13 {//フッター用
+  margin-bottom: 25px !important;
+  text-align: right;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    color: $dh_textColor;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: $dh_textColor2;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    color: $dh_textColor3;
+  }
+}
+
+
+
+// mod-text
+.mod-text {
+  font-size: $fontSizeS + 1;
+  margin-bottom: 25px !important;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    .area-header & {
+      color: $dh_textColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    .area-header & {
+      color: $dh_textColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    .area-header & {
+      color: $dh_textColor3;
+    }
+  }
+}
+
+.mod-text2 {
+  font-size: $fontSizeS + 1;
+  margin-bottom: 10px !important;
+  .ex-style_01B1 &,
+  .ex-style_01B2 & {
+    .area-header & {
+      color: #ffffff;
+    }
+  }
+  .ex-style_01B3 & {
+    .area-header & {
+      color: $dh_textColor3;
+    }
+  }
+}
+
+.mod-text4 {
+  font-size: $fontSizeS + 1;
+  text-align: center;
+  margin-bottom: 10px !important;
+}
+
+.mod-text5 {
+  margin-bottom: 30px !important;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    color: $dh_textColor;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: $dh_textColor2;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    color: $dh_textColor3;
+  }
+}
+
+.mod-text7 {
+  text-align: center;
+  margin-bottom: 30px !important;
+}
+
+.mod-text8 {
+  color: $h_textColor;
+  font-size: $fontSizeL;
+  margin-bottom: 10px !important;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,{
+    color: $h_textColor2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,{
+    color: $h_textColor3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    color: $dh_textColor;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: $dh_textColor2;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    color: $dh_textColor3;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    color: #333333;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    color: #0c7d8b;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    color: #2b4369;
+  }
+}
+
+.mod-text9 {
+  color: #ffffff;
+  font-size: $fontSizeM - 2;
+}
+
+.mod-text10 {
+  color: #ffffff;
+  font-size: $fontSizeM - 2;
+  text-align: center;
+}
+
+.mod-text11 {
+  color: #ffffff;
+  font-size: $fontSizeM - 2;
+  text-align: right;
+}
+
+//ボックス見出し・小見出しの補足
+.mod-text12 {
+  font-size: $fontSizeS;
+  margin-bottom: 5px !important;
+}
+
+.mod-text14 {
+  margin-bottom: 15px !important;
+  color: $m_boldColor;
+  font-size: $fontSizeL + 6;
+  font-weight: bold;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    color: $m_boldColor2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    color: $m_boldColor3;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    color: #0c7c8a;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    color: #097d8a;
+  }
+}
+
+//ボックス見出し・小見出しの補足 青
+.mod-text15 {
+  margin-bottom: 5px !important;
+  font-size: $fontSizeS;
+  color: #333333;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    color: $m_sup1Color2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    color: $m_sup1Color3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    color: #1f4185;
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: #0e7f8a;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    color: #f38321;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    color: #5696f7;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    color: #45320b;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    color: #45320b;
+  }
+}
+
+//ボックス見出し・小見出しの補足
+.mod-text16 {
+  font-size: $fontSizeS;
+  color: $m_sup2Color;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    color: $m_sup2Color2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    color: $m_sup2Color3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    color: #ffffff;
+  }
+}
+
+//コピーライト用
+.mod-text17 {
+  text-align: center;
+}
+
+//サイド強調
+.mod-text18 {
+  margin-bottom: 15px !important;
+  font-size: $sideFontSizeL - 1;
+  font-weight: bold;
+  color: $s_boldColor;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    color: $s_boldColor2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    color: $s_boldColor3;
+  }
+}

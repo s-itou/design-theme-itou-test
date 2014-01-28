@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin common-style-mod-rte {
+  margin: 20px 0 0 0;
+  font-size: $fontSizeM;
+  line-height: 1.6;
+  > p {
+    margin: 12px 0 0 0;
+  }
+  > p:first-child {
+    margin-top: 0 !important;
+  }
+}
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//差分記述用のextend-common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+%common-style-mod-rte-2col {//２カラムの時
+  > p {
+    margin: 10px 0 0 0;
+  }
+}
+%common-style-mod-rte-3col {//３カラム
+  margin: 15px 0 0 0;
+  line-height: 1.5;
+  > p {
+    margin: 8px 0 0 0;
+  }
+}
+%common-style-mod-rte-4col {//4カラム
+  margin: 15px 0 0 0;
+  line-height: 1.5;
+  > p {
+    margin: 8px 0 0 0;
+  }
+}
+%common-style-mod-rte-5col {//5カラム
+  margin: 15px 0 0 0;
+  line-height: 1.5;
+  > p {
+    margin: 6px 0 0 0;
+  }
+}
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin module-style-mod-rte {}
+@mixin module-style-mod-rte-header {//ヘッダー用
+  margin: 0;
+}
+@mixin module-style-mod-rte-footer {//フッター用
+  margin: 0;
+}
+@mixin module-style-mod-rte-kyocho {
+  font-weight: bold;
+}
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin deco-style01A1-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01B1-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01B2-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01B3-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01C1-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01C2-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01C3-mod-rte {
+  color: #333333;
+}
+
+
+
+// +++++++++++++++++++++++++
+//      mod-rte-koramu
+// +++++++++++++++++++++++++
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-style-mod-rte-koramu {
+  @include border-radius();
+  margin: 20px 0 0 0;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: $fontSizeM;
+  line-height: 1.6;
+  > p {
+    margin: 12px 0 0 0;
+  }
+  > p:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//差分記述用のextend-common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+%common-style-mod-rte-koramu-2col { //２カラムの時
+  > p {
+    margin: 10px 0 0 0;
+  }
+}
+%common-style-mod-rte-koramu-3col { //３カラム
+  margin: 15px 0 0 0;
+  line-height: 1.5;
+  > p {
+    margin: 8px 0 0 0;
+  }
+}
+%common-style-mod-rte-koramu-4col { //4カラム
+  margin: 15px 0 0 0;
+  line-height: 1.5;
+  > p {
+    margin: 8px 0 0 0;
+  }
+}
+%common-style-mod-rte-koramu-5col { //5カラム
+  margin: 15px 0 0 0;
+  line-height: 1.5;
+  > p {
+    margin: 6px 0 0 0;
+  }
+}
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin module-style-mod-rte-koramu {}//１カラムの時
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin deco-style01A1-mod-rte-koramu {
+  border: 1px solid #52241b;
+  background-color: #efefef;
+  color: #52241b;
+}
+@mixin deco-style01A2-mod-rte-koramu {
+  border: 1px solid #e18836;
+  background-color: #f5ede7;
+  color: #333333;
+}
+@mixin deco-style01A3-mod-rte-koramu {
+  border: 1px solid #781b0e;
+  background-color: #fff3f1;
+  color: #333333;
+}
+@mixin deco-style01B1-mod-rte-koramu {
+  border: 1px solid #0f365f;
+  background-color: #e8ebed;
+  color: #0f365f;
+}
+@mixin deco-style01B2-mod-rte-koramu {
+  border: 0 none transparent;
+  background-color: #efefef;
+  color: #163a61;
+}
+@mixin deco-style01B3-mod-rte-koramu {
+  border: 0 none transparent;
+  background-color: #eeeeee;
+  color: #333333;
+}
+@mixin deco-style01C1-mod-rte-koramu {
+  border: 1px solid #aebdce;
+  background-color: #d7e1ec;
+  color: #333333;
+}
+@mixin deco-style01C2-mod-rte-koramu {
+  border: 1px solid #aaaaaa;
+  background-color: #ececec;
+  color: #333333;
+}
+@mixin deco-style01C3-mod-rte-koramu {
+  border: 1px solid #cccccc;
+  background-color: #f8f3e0;
+  color: #333333;
+}

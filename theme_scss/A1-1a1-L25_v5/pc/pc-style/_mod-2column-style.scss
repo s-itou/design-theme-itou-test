@@ -1,0 +1,1352 @@
+@charset "UTF-8";
+
+
+//  mod-2col2 の mixin一式
+@mixin mod-2col2-common-style {
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: 475px;
+    margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 475px;
+    margin-left: 15px;
+  }
+}
+
+
+//  mod-2col4 の mixin一式
+@mixin mod-2col4-common-style {
+  margin-top: 20px;
+  @extend %cf;
+  > .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: floor($mainWidth * 0.39);
+      margin-left: 20px;
+      > .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      > .mod-2col-inner2-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+              > .ex-first-child {
+              margin-top: 0 !important;
+                > .ex-first-child {
+                  margin-top: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ex-imgSize_2L & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.46);
+      }
+    }
+  }
+  .ex-imgSize_2S & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.31);
+      }
+    }
+  }
+  .ex-imgSize_2SS & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.23);
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+
+
+//  mod-2col6 の mixin一式
+@mixin mod-2col6-common-style {
+  margin-top: 20px;
+  @extend %cf;
+  > .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: floor($mainWidth * 0.39);
+      margin-left: 20px;
+      > .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      > .mod-2col-inner2-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .ex-imgSize_2L & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.46);
+      }
+    }
+  }
+  .ex-imgSize_2S & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.31);
+      }
+    }
+  }
+  .ex-imgSize_2SS & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.23);
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+
+//  mod-2col7 の mixin一式
+@mixin mod-2col7-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 40) / 2);
+      .mod-2col-inner-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 40) / 2);
+      margin-left: 40px;
+       .mod-2col-inner2-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-2col7-style {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      background-color: #fffdf2;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style2 {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      background-color: #f6f6f6;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style3 {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      background-color: #fff9ee;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style4 {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      background-color: #e6f8ff;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style5 {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      background-color: #fBf3c8;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style6 {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      background-color: #ffefe5;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style7 {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #c9e0ff;
+      background-color: transparent;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style8 {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #f99317;
+      background-color: transparent;
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-2col7-style9 {
+  .mod-2col-wrap2 {
+  > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #f2d028;
+      background-color: transparent;
+      padding: 15px;
+    }
+  }
+}
+
+
+//  mod-2col16 の mixin一式
+@mixin mod-2col16-common-style {
+  @extend %cf;
+  margin-top: 10px;
+  > .mod-2col-inner {
+    float: right;
+    width: floor($baseSideWidth * 0.37);
+    margin-left: 10px;
+     > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+  > .mod-2col-inner2 {
+     > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+  .ex-imgSize_S2S & {
+    > .mod-2col-inner {
+      width: floor($baseSideWidth * 0.28);
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-inner {
+      float: left;
+      margin-right: 20px;
+      margin-left: 0;
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-inner {
+      margin-bottom: 12px;
+    }
+    > .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+}
+
+
+
+//  mod-2col17 の mixin一式
+@mixin mod-2col17-common-style {
+  margin-top: 30px;
+  @extend %cf;
+  > .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: 310px;
+      margin-left: 20px;
+      > .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      > .mod-2col-inner2-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-wrap {
+       .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+
+
+//  mod-2col22 の mixin一式
+@mixin mod-2col22-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: floor(($mainWidth - 60) / 4);
+    margin-right: 15px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: floor(($mainWidth - 60) / 4);
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+
+//  mod-2col25 の mixin一式
+@mixin mod-2col25-common-style {
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin-right: 10px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: floor(($mainWidth - 40) / 3);
+  }
+}
+
+
+//  mod-2col26 の mixin一式
+@mixin mod-2col26-common-style {
+  @extend %cf;
+  margin-top: 25px;
+  > .mod-2col-inner {
+    float: right;
+    @if $layoutCode == "L25" {
+      width: 90px;
+    } @else if $layoutCode == "L30" {
+      width: 86px;
+    }
+    margin-left: 15px;
+     > .ex-first-child {
+      margin-top: 0 !important;
+       > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+     > .ex-first-child {
+      margin-top: 0 !important;
+       > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    .mod-2col-inner {
+      float: left;
+      margin-right: 15px;
+      margin-left: 0;
+    }
+  }
+  .ex-imgFloat & {
+     .mod-2col-inner {
+      margin-bottom: 12px;
+    }
+    .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+}
+
+
+
+//  mod-2col27 の mixin一式
+@mixin mod-2col27-common-style {
+  @extend %cf;
+  margin-top: 25px;
+  > .mod-2col-inner {
+    float: right;
+    width: 70px;
+    margin-left: 10px;
+     > .ex-first-child {
+      margin-top: 0 !important;
+       > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+     > .ex-first-child {
+      margin-top: 0 !important;
+       > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    .mod-2col-inner {
+      float: left;
+      margin-right: 10px;
+      margin-left: 0;
+    }
+  }
+  .ex-imgFloat & {
+     .mod-2col-inner {
+      margin-bottom: 12px;
+    }
+    .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+}
+
+
+
+//  mod-2col29 の mixin一式
+@mixin mod-2col29-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 20) / 2);
+      margin-right: 20px;
+      @include border-radius();
+      > .mod-2col-inner-2 {
+        padding: 15px;
+        > .mod-2col-inner-3 {
+           > .ex-first-child {
+            margin-top: 0 !important;
+             > .ex-first-child {
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 20) / 2);
+      @include border-radius();
+      > .mod-2col-inner2-2 {
+        padding: 15px;
+        > .mod-2col-inner2-3 {
+           > .ex-first-child {
+            margin-top: 0 !important;
+             > .ex-first-child {
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-2col29-style {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #ade9ef;
+      padding: 10px;
+      background-color: #ecfdff;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-2col29-style2 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #60bff0;
+      padding: 10px;
+      background-color: #ebfdff;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-2col29-style3 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #fd8e89;
+      padding: 10px;
+      background-color: #ffe0de;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-2col29-style4 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #abd2f6;
+      padding: 10px;
+      background-color: #ffffff;
+      background-image: url(img/mod-box/bg04.png);
+      background-repeat: repeat-x;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: transparent;
+    }
+  }
+}
+
+@mixin mod-2col29-style5 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #f4d34f;
+      padding: 10px;
+      background-color: #ffffff;
+      background-image: url(img/mod-box/bg04_2.png);
+      background-repeat: repeat-x;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: transparent;
+    }
+  }
+}
+
+@mixin mod-2col29-style6 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 1px solid #ffa19b;
+      padding: 10px;
+      background-color: #ffffff;
+      background-image: url(img/mod-box/bg04_3.png);
+      background-repeat: repeat-x;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: transparent;
+    }
+  }
+}
+
+@mixin mod-2col29-style7 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      padding: 3px;
+      background-color: transparent;
+      background-image: url(img/mod-box/bg08.png);
+      background-repeat: repeat;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-2col29-style8 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      padding: 3px;
+      background-color: transparent;
+      background-image: url(img/mod-box/bg08_2.png);
+      background-repeat: repeat;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: #ffffff;
+    }
+  }
+}
+
+@mixin mod-2col29-style9 {
+  .mod-2col-wrap2 {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      border: 0 none transparent;
+      padding: 3px;
+      background-color: transparent;
+      background-image: url(img/mod-box/bg08_3.png);
+      background-repeat: repeat;
+    }
+    .mod-2col-inner-2, .mod-2col-inner2-2 {
+       background-color: #ffffff;
+    }
+  }
+}
+
+
+
+//  mod-2col31 の mixin一式
+@mixin mod-2col31-common-style {
+  @extend %cf;
+  margin-top: 20px;
+  .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: floor($mainWidth * 0.39);
+      margin-left: 15px;
+      > .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      > .mod-2col-inner2-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+ .step2 &, .step4 &, .step6 &, .step8 &, .step10 & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgSize_2L & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.46);
+      }
+    }
+  }
+  .ex-imgSize_2S & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.31);
+      }
+    }
+  }
+  .ex-imgSize_2SS & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.23);
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgLayout_r & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: right;
+        margin-left: 15px;
+        margin-right: 0;
+      }
+    }
+  }
+  .ex-imgLayout_lr & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgLayout_lr .step2 &,
+  .ex-imgLayout_lr .step4 &,
+  .ex-imgLayout_lr .step6 &,
+  .ex-imgLayout_lr .step8 &,
+  .ex-imgLayout_lr .step10 & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: right;
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+  .ex-imgLayout_rl & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: right;
+        margin-left: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgLayout_rl .step2 &,
+  .ex-imgLayout_rl .step4 &,
+  .ex-imgLayout_rl .step6 &,
+  .ex-imgLayout_rl .step8 &,
+  .ex-imgLayout_rl .step10 & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+
+
+//  mod-2col32 の mixin一式
+@mixin mod-2col32-common-style {
+  display: table;
+  width: 100%;
+  margin-top: 5px;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: floor($baseSideWidth * 0.37);
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px;
+  }
+  .ex-imgSize_S2S & {
+    > .mod-2col-inner {
+      width: floor($baseSideWidth * 0.28);
+    }
+  }
+}
+
+
+//  mod-2col33 の mixin一式
+@mixin mod-2col33-common-style {
+  display: table;
+  width: 100%;
+  margin-top: 5px;
+  > .mod-2col-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    width: floor($baseSideWidth * 0.37);
+  }
+  .ex-imgSize_S2S & {
+    > .mod-2col-inner2 {
+      width: floor($baseSideWidth * 0.28);
+    }
+  }
+}
+
+//  mod-2col34 の mixin一式
+@mixin mod-2col34-common-style {
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: 530px;
+    margin-right: 10px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 440px;
+  }
+}
+
+//  mod-2col35 の mixin一式
+@mixin mod-2col35-common-style {
+  display: table;
+  margin-right: 0;
+  margin-left: auto;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: 220px;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: bottom;
+    width: 150px;
+    padding-left: 10px;
+  }
+}
+
+//  mod-2col36 の mixin一式
+@mixin mod-2col36-common-style {
+  display: table;
+  margin-left: 5px;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: 200px;
+    vertical-align: top;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    width: 240px;
+    padding-left: 15px;
+    vertical-align: top;
+  }
+}
+
+//  mod-2col37 の mixin一式
+@mixin mod-2col37-common-style {
+  display: table;
+  padding: 5px 10px;
+  @include border-radius();
+  margin-right: 0;
+  margin-left: auto;
+  > .mod-2col-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 210px;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 150px;
+    padding-left: 10px;
+  }
+}
+@mixin mod-2col37-style {
+  border: 1px solid #d0d6dc;
+  background-color: #fdfaeb;
+}
+
+
+
+//  mod-2col38 の mixin一式
+@mixin mod-2col38-common-style {
+  display: table;
+  margin-right: 0;
+  margin-left: auto;
+  > .mod-2col-inner {
+    display: table-cell;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    width: 275px;
+    padding-left: 10px;
+  }
+}
+
+
+//  mod-2col39 の mixin一式
+@mixin mod-2col39-common-style {
+  display: table;
+  margin-right: 0;
+  margin-left: auto;
+  > .mod-2col-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 260px;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 150px;
+    padding-left: 10px;
+  }
+}
+
+//  mod-2col40 の mixin一式
+@mixin mod-2col40-common-style {
+  @extend %cf;
+  > .mod-2col-inner {
+    float: left;
+    width: 710px;
+    margin-right: 15px;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 255px;
+    text-align: center;
+  }
+}
+
+@mixin mod-2col41-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      @if $layoutCode == "L25" {
+        width: 287px;
+      } @else if $layoutCode == "L30" {
+        width: 260px;
+      }
+      .mod-2col-inner-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      @if $layoutCode == "L25" {
+        width: 287px;
+      } @else if $layoutCode == "L30" {
+        width: 260px;
+      }
+      margin-left: 20px;
+       .mod-2col-inner2-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin mod-2col41-style {
+  //none;
+}
+
+@mixin mod-2col42-common-style {
+  @extend %cf;
+  margin-top: 25px;
+  .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: floor($mainWidth * 0.39);
+      margin-left: 20px;
+      .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      .mod-2col-inner2-2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .ex-imgSize_2L & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.39);
+      }
+    }
+  }
+  .ex-imgSize_2S & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.31);
+      }
+    }
+  }
+  .ex-imgSize_2SS & {
+    margin-right: 20px;
+    margin-left: 20px;
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.23);
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+  .ex-imgSize_2S.ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-left: 0;
+        @if $layoutCode == "L25" {
+          margin-right: 50px;
+        } @else if $layoutCode == "L30" {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  .ex-imgSize_2SS.ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.23);
+        float: left;
+        margin-left: 0;
+        @if $layoutCode == "L25" {
+          margin-right: 60px;
+        } @else if $layoutCode == "L30" {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+
+
+//  mod-2col43 の mixin一式
+@mixin mod-2col43-common-style {
+  @extend %cf;
+  display: table;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: 480px;
+    padding-right: 15px;
+    > .mod-image10 {
+      width: 463px;
+    }
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: bottom;
+    width: 500px;
+    @extend %cf;
+  }
+}
+
+//  mod-2col44 の mixin一式
+@mixin mod-2col44-common-style {
+  float: right;
+  > .mod-2col-inner {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: bottom;
+    width: 280px;
+  }
+}
+
+
+
+//  mod-2col45 の mixin一式
+@mixin mod-2col45-common-style {
+  @extend %cf;
+  margin-top: 20px;
+  > .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: floor($mainWidth * 0.39);
+      margin-left: 20px;
+      > .mod-2col-inner-2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      > .mod-2col-inner2-2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .ex-imgSize_2S & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.31);
+      }
+    }
+  }
+  .ex-imgSize_2SS & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.23);
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+@mixin mod-2col45-style {
+  @extend %cf;
+  margin-top: 20px;
+  > .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: 250px;
+      margin-left: 20px;
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+    }
+  }
+}
+
+
+//  mod-2col49 の mixin一式
+@mixin mod-2col49-common-style {
+  @extend %cf;
+  margin-top: 30px;
+  > .mod-2col-wrap {
+    > .mod-2col-wrap2 {
+      > .mod-2col-inner {
+        float: left;
+        width: floor(($mainWidth - 120) / 2);
+        margin-right: 40px;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+      > .mod-2col-inner2 {
+        float: right;
+        width: floor(($mainWidth - 120) / 2);
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
+//  mod-2col-spec の mixin一式
+@mixin mod-2col-spec-common-style {
+  @extend %cf;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 40) / 2);
+      margin-right: 40px;
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 40) / 2);
+    }
+  }
+}
+
+
+//  mod-2col-spec2 の mixin一式
+@mixin mod-2col-spec2-common-style {
+  @extend %cf;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 30) / 2);
+      margin-right: 30px;
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 30) / 2);
+    }
+  }
+}
+
+
+//  mod-2col-spec3 の mixin一式
+@mixin mod-2col-spec3-common-style {
+  @extend %cf;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 40) / 3);
+      margin-right: 30px;
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 40) / 3 * 2) + 10;
+    }
+  }
+}
+
+
+//  mod-2col-spec4 の mixin一式
+@mixin mod-2col-spec4-common-style {
+  @extend %cf;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 60) / 4);
+      margin-right: 30px;
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 60) / 4 * 3) + 30;
+    }
+  }
+}
+
+
+
+
+

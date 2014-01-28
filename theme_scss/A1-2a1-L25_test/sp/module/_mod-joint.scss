@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "../sp-style/mod-joint-style";
+
+.mod-joint-hikaku {
+  @include common-style-mod-joint;
+  @include module-style-mod-joint-hikaku;
+  .ex-style_#{$baseEx_01A1} & {
+  	@include deco-style01A1-mod-joint-hikaku;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+  	@include deco-style01A2-mod-joint-hikaku;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+  	@include deco-style01A3-mod-joint-hikaku;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+  	@include deco-style01B1-mod-joint-hikaku;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+  	@include deco-style01B2-mod-joint-hikaku;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+  	@include deco-style01B3-mod-joint-hikaku;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+  	@include deco-style01C1-mod-joint-hikaku;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+  	@include deco-style01C2-mod-joint-hikaku;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+  	@include deco-style01C3-mod-joint-hikaku;
+  }
+}
+
+.mod-joint-copy {
+  @include common-style-mod-joint;
+  @include module-style-mod-joint-copy;
+  .ex-style_#{$baseEx_01A1} & {
+  	@include deco-style01A1-mod-joint-copy;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+  	@include deco-style01A2-mod-joint-copy;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+  	@include deco-style01A3-mod-joint-copy;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+  	@include deco-style01B1-mod-joint-copy;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+  	@include deco-style01B2-mod-joint-copy;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+  	@include deco-style01B3-mod-joint-copy;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+  	@include deco-style01C1-mod-joint-copy;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+  	@include deco-style01C2-mod-joint-copy;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+  	@include deco-style01C3-mod-joint-copy;
+  }
+}

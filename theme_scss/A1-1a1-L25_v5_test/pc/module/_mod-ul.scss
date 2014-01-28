@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import "../pc-style/mod-ul-style";
+
+.mod-ul_ver2 {
+  @include common-style-mod-ul;
+  @include module-style-mod-ul;
+  .ex-style_01A1 & {@include deco-style01A1-mod-ul;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-ul;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-ul;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-ul;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-ul;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-ul;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-ul;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-ul;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-ul;}
+}
+
+
+.mod-ul-side {
+  @include common-style-mod-ul;
+  @include module-style-mod-ul-side;
+  .ex-style_01A1 & {@include deco-style01A1-mod-ul-side;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-ul-side;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-ul-side;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-ul-side;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-ul-side;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-ul-side;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-ul-side;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-ul-side;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-ul-side;}
+}
+
+.mod-ol_ver2 {
+  @include common-style-mod-ol;
+  @include module-style-mod-ol;
+  .ex-style_01A1 & {@include deco-style01A1-mod-ol;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-ol;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-ol;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-ol;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-ol;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-ol;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-ol;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-ol;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-ol;}
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+// .mod-ul {
+//   @extend .mod-ul;
+// }
+// .mod-ul2 {
+//   @extend .mod-ul-side;
+// }
+// .mod-ul4 {
+//   @extend .mod-ul;
+// }
+// .mod-ul5 {
+//   @extend .mod-ul;
+// }
+// .mod-ul6 {
+//   @extend .mod-ul;
+//   .mod-ul-inner2 {
+//     background-repeat: no-repeat;
+//   }
+//   ul {
+//     li {
+//       background-position: left 4px;
+//       font-weight: bold;
+//       font-size: $fontSizeL;
+//     }
+//   }
+  // .ex-style_01A1 & {@include deco-style01A1-mod-ul-in2;}
+  // .ex-style_01A2 & {@include deco-style01A2-mod-ul-in2;}
+  // .ex-style_01A3 & {@include deco-style01A3-mod-ul-in2;}
+  // .ex-style_01B1 & {@include deco-style01B1-mod-ul-in2;}
+  // .ex-style_01B2 & {@include deco-style01B2-mod-ul-in2;}
+  // .ex-style_01B3 & {@include deco-style01B3-mod-ul-in2;}
+  // .ex-style_01C1 & {@include deco-style01C1-mod-ul-in2;}
+  // .ex-style_01C2 & {@include deco-style01C2-mod-ul-in2;}
+  // .ex-style_01C3 & {@include deco-style01C3-mod-ul-in2;}
+
+// .mod-ol {
+//   @extend .mod-ol;
+// }
+// .mod-ol2 {
+//   @extend .mod-ol;
+//   margin: 20px 0 0 0;
+//   ol {
+//     counter-reset:li; //カウントリセット
+//   }
+//   li {
+//     margin-bottom: 10px;
+//     padding: 0;
+//     position: relative;
+//     list-style:none; //デフォルトナンバリングを消す
+//   }
+//   li:before {
+//     content:counter(li); //カウンターのインデックスを挿入
+//     counter-increment:li; //ナンバリングを生成
+//     position:absolute;
+//   }
+//   .ex-style_01A1 & {@include deco-style01A1-mod-ol-in2;}
+//   .ex-style_01A2 & {@include deco-style01A2-mod-ol-in2;}
+//   .ex-style_01A3 & {@include deco-style01A3-mod-ol-in2;}
+//   .ex-style_01B1 & {@include deco-style01B1-mod-ol-in2;}
+//   .ex-style_01B2 & {@include deco-style01B2-mod-ol-in2;}
+//   .ex-style_01B3 & {@include deco-style01B3-mod-ol-in2;}
+//   .ex-style_01C1 & {@include deco-style01C1-mod-ol-in2;}
+//   .ex-style_01C2 & {@include deco-style01C2-mod-ol-in2;}
+//   .ex-style_01C3 & {@include deco-style01C3-mod-ol-in2;}
+// }

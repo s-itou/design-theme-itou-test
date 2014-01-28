@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+//　pat-item-arrow
+//  : 矢印画像を目立たせるデザインパターン
+//
+//    ・arrow-simple（シンプル）
+//    ・arrow-grade（背景グラデーション）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-arrow-style.scss";
+
+// ----------------------------------
+//  pat-item-arrow の個別設定
+// ----------------------------------
+
+// シンプル
+@mixin pat-item-arrow-simple-1 { // オレンジ
+  @include common-style-pat-item-arrow;
+  @include deco-style-pat-item-arrow-simple-1;
+}
+@mixin pat-item-arrow-simple-2 { // 水色
+  @include common-style-pat-item-arrow;
+  @include deco-style-pat-item-arrow-simple-2;
+}
+@mixin pat-item-arrow-simple-3 { // ピンク
+  @include common-style-pat-item-arrow;
+  @include deco-style-pat-item-arrow-simple-3;
+}
+
+// グラデーション
+@mixin pat-item-arrow-grade-1 { // 水色
+  @include common-style-pat-item-arrow;
+  @include deco-style-pat-item-arrow-grade-1;
+}
+@mixin pat-item-arrow-grade-2 { // オレンジ
+  @include common-style-pat-item-arrow;
+  @include deco-style-pat-item-arrow-grade-2;
+}
+@mixin pat-item-arrow-grade-3 { // 黄色
+  @include common-style-pat-item-arrow;
+  @include deco-style-pat-item-arrow-grade-3;
+}
+@mixin pat-item-arrow-grade-4 { // ピンク
+  @include common-style-pat-item-arrow;
+  @include deco-style-pat-item-arrow-grade-4;
+}
+
+
+

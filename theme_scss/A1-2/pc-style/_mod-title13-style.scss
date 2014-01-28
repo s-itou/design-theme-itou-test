@@ -1,0 +1,189 @@
+
+
+//  mod-title13 の mixin一式
+@mixin mod-title13-common-style {
+  display: table;
+  .mod-title-inner {
+    display: table-cell;
+    vertical-align: top;
+    margin: 0;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .mod-title-inner-img {
+    margin-right: 5px;
+    width: 40px;
+  }
+  .mod-title-inner3 {
+    line-height: 1.0;
+    font-size: $fontSizeS + 1;
+  }
+  .mod-title-inner4 {
+    line-height: 1.5;
+    font-size: $fontSizeL + 7;
+    font-weight: bold;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .mod-title-inner5 {
+    line-height: 1.3;
+    font-size: $fontSizeS + 1;
+  }
+  p:first-child.mod-title-inner4 {//公開画面
+    font-size: $fontSizeL + 10;
+  }
+  .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {//編集画面上
+    font-size: $fontSizeL + 10;
+  }
+}
+
+
+
+@mixin mod-title13-style {
+  //none
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-title13-style2 {
+  //none
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-title13-style3 {
+  //none
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-title13-style4 {
+  //none
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-title13-style5 {
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-title13-style6 {
+  //none
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-title13-style7 {
+  //none
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-title13-style8 {
+  //none
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-title13-style9 {
+  //none
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #ffffff;
+  }
+}

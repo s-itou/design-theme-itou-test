@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+
+//  mod-link10 の mixin一式
+@mixin mod-link10-common-style {
+  margin-top: 10px !important;
+  p {
+    @if $layoutCode == "L25" or $layoutCode == "R25" {
+      padding-left: 15px;
+    } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+      padding-left: 14px;
+    }
+    @extend %inlineBlock;
+    line-height: 1.4;
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 17px;
+    @include box-sizing(border-box);
+    font-size: $fontSizeS;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link10-style {
+p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+@mixin mod-link10-style2 {
+p {
+    background-image: url("img/mod-link/bg_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+@mixin mod-link10-style3 {
+p {
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+@mixin mod-link10-style4 {
+p {
+    background-image: url("img/mod-link/bg10.png");
+  }
+  a &, a {
+    color: #335a93;
+  }
+}
+@mixin mod-link10-style5 {
+p {
+    background-image: url("img/mod-link/bg10_2.png");
+  }
+  a &, a {
+    color: #335a93;
+  }
+}
+@mixin mod-link10-style6 {
+p {
+    background-image: url("img/mod-link/bg10_3.png");
+  }
+  a &, a {
+    color: #335a93;
+  }
+}
+

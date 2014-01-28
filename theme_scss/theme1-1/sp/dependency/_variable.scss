@@ -1,0 +1,262 @@
+@charset "UTF-8";
+//★★★★★★★★★★★★★★★★とりいそぎ：村松エリア★★★★★★★★★★★★★★★★
+
+
+//FAQ大見出し
+$mq_index3Color: #f58804;
+//FAQ大見出し下線
+$mq_index2BdColor: #f58804;
+//FAQ装飾文字背景
+$mq_decTextBgColor: #59bfcd;
+$mq_decTextColor: #ffffff;
+//FAQボックス見出し
+$mq_boxIndexBgColor: #478cf8;
+
+//特徴:ボックス見出し
+$mt_BoxindexColor: #452305;
+
+//ボックス枠線３　お問い合せボックス・ボックス見出し
+
+$m_box3BdColor: #f7931d;
+//お問い合せボックス　見出し補足上
+$m_sup1Color: #2e7feb;
+//お問い合せボックス　見出し補足下
+$m_sup2Color: #f8efc6;
+
+//お問い合せボックス　枠線
+$m_box3BdColor: #f2e9aa;
+
+//お問い合せボックス　囲み部分
+$m_box3BgColor: #fffce9;
+
+//強調文章
+$m_boldColor: #f7931d;
+//★サイズの指定★
+//★★★★★★★★★★★★★★★★共通要素★★★★★★★★★★★★★★★★
+//全体の横幅
+$baseWidth: 980px;
+//メインエリアの横幅
+$baseMainWidth: 690px;
+$mainWidth: 640px;
+//サイドエリアの横幅
+$baseSideWidth: 215px;
+//mainのインデント
+$mainMargin: 0 25px 0 25px;
+
+//画像サイズの横幅（大大）
+$baseImgWidthLL: 980px;
+//画像サイズの横幅（大）
+$baseImgWidthL: 400px;
+//画像サイズの横幅（中）
+$baseImgWidthM: 270px;
+//画像サイズの横幅（小）
+$baseImgWidthS: 70px;
+
+//フォントサイズ 大
+$fontSizeL: 18px;
+//フォントサイズ 中（基本のフォントサイズ）
+$fontSizeM: 14px;//SP用
+//フォントサイズ 小
+$fontSizeS: 12px;
+
+//フォントサイズ 大  サイド
+$sideFontSizeL: 18px;//SP用
+//フォントサイズ 中（基本のフォントサイズ） サイド
+$sideFontSizeM: 14px;//SP用
+//フォントサイズ 小 サイド
+$sideFontSizeS: 12px;//SP用
+
+
+//★★★★★★★★★★★★★★★★エリア共通★★★★★★★★★★★★★★★★
+//全体の文字色
+$baseFontColor: #333333;
+//反転色
+$base2FontColor: #ffffff;
+//リンク色
+$linkColor: #335a93; //全体のリンク
+//バナー文字
+$bnrTextColor: #ffffff;
+
+
+//表背景色
+$tableBgColor: #c9e0ff;
+//表（診療時間）背景色
+$table2BgColor: #1d6fde;
+//バナー線共通
+$bnrBgColor: #ff7c76; //ピンク
+$bnr2BgColor: #3a7ff0; //青
+$bnr3BgColor: #a79d91; // ベージュ
+
+//リンクセット縦線
+$linkBdColor: #321b07;
+//表のボーダーカラー水色
+$tableBdColor: #c9e0ff;
+//診療時間表ボーダーカラー薄茶
+$table2BdColor: #d2ccaa;
+//診療時間表ボーダーカラー白th部分
+$table3BdColor: #ffffff;
+
+
+
+//★★★★★★★★★★★★★★★★メイン要素★★★★★★★★★★★★★★★★
+//電話番号
+$m_telColor: #f7931d;
+//アイコン大きめのリンク
+$m_linkColor: #321b07;
+//ページ見出し文字色
+$m_indexColor: #1b6fe0;
+//box内文字色
+$m_boxColor: #264e84;
+//大見出し
+$m_index2Color: #ff9000;
+//中見出し
+$m_index3Color: #331b07;
+//流れ見出し文字色
+$m_index4Color: #f7931d;
+//流れ中見出し文字色
+$m_index5Color: #333333;
+//流れ小見出し文字色
+$m_index6Color: #66c7d2;
+//表・画像・リスト見出し
+$m_index7Color: #352111;
+//小見出し文字色
+$m_index8Color: #352111;
+
+
+//装飾文章背景色
+$m_decTextColor: #539af9;
+//装飾見出し背景色
+$m_decIndexColor: #58bfcc;
+//ボックス囲い部分
+$m_boxBgColor: #ecfdff;
+//ボックス囲い部分2
+$m_box2BgColor: #ecfdff;
+//infoラベル
+$m_infoBgColor: #1d6fde;
+
+
+//ページ見出し下線色
+$m_indexBdColor: #bed6f6;
+//大見出し上線
+$m_index21BdColor: #f2c72a;
+//大見出し下線
+$m_index22BdColor: #dcd4c0;
+//中見出し下線
+$m_index3BdColor: #dedad1;
+//小見出し下線
+$m_index4BdColor: #352111;
+//ボックス枠線
+$m_boxBdColor: #ade9ef;
+//ボックス枠線2
+$m_box2BdColor: #ade9ef;
+
+
+//★★★★★★★★★★★★★★★★ヘッダー要素★★★★★★★★★★★★★★★★
+//電話番号
+$h_telColor: #f7931d;
+//サイトタイトル
+$h_titleColor: #f7931d;
+//誘導文
+$h_textColor: #f7931d;
+//gnav
+$h_menuColor: #452305;
+//infoラベル
+$h_infoBgColor: #1d6fde;
+//3連バナー
+$h_bnrBgColor: #a79d91; // ベージュ
+//★★★★★★★★★★★★★★★★サイド要素★★★★★★★★★★★★★★★★
+//電話番号
+$s_telColor: #f7931d;
+$s_tel2Color: #333333;
+$s_tel3Color: #f7931d;
+//サイドメニュー
+$s_menuColor: #2f141c;
+$s_menuColorh: #ffffff; //ホバー
+//画像見出し等
+$s_indexColor: #352111;
+//小見出し
+$s_index2Color: #331b07;
+//サイドバナー背景
+$s_bnrBgColor: #ffffff;
+//サイドメニュー見出し
+$s_indexmenuColor: #f16d0b;
+//強調文章
+$s_boldColor: #333333;
+//最上部ラベル
+$s_labelColor: #ffffff;
+
+
+//サイドエリアのボックス背景色
+$s_boxBgColor: #fffce9;
+
+//サイドメニュー項目
+$s_menuBgColor: #ffffff;
+$s_menuBgColorh: #cbbb92; //ホバー
+//サイドの表背景色
+$s_tableBdColor: #c9e0ff;
+
+//サイドボックス
+$s_boxBdColor: #dedad1;
+//ドット線
+$s_dotteBdColor: #d2ccaa;
+//小見出し下線
+$s_index2BdColor: #d9d6cf;
+//サイドバナー上線
+$s_bnrBdColor: #7297c9;
+//サイドバナー上線以外
+$s_bnr2BdColor: #dedad1;
+//サイドの表線色
+$s_tableBdColor: #c9e0ff;
+
+//★★★★★★★★★★★★★★★★フッター要素★★★★★★★★★★★★★★★★
+//電話番号
+$f_telColor: #333333;
+//サイトタイトル
+$f_titleColor: #f58804;
+//table診療時間th
+$f_tableColor: #ffffff;
+//フッター画像など見出し
+$f_indexColor: #333333;
+
+//フッターナビ
+$f_menuBgColor: #0e55b5;
+//infoラベル
+$f_infoBgColor: #1d6fde;
+
+//========================================//
+//　　　　　　　　　　　　　　　用途系　　　　　　　　　　　　　　　　　
+//========================================//
+
+//★★★★★★★★★★★★★★★★メイン要素★★★★★★★★★★★★★★★★
+//客声：ボックス見出し
+$mv_BoxindexColor: #f58804;
+//事例：ボックス見出し
+$mc_BoxindexColor: #426ca6;
+//特徴:ボックス見出し
+//$mt_boxIndexColor: ;
+
+//FAQ文字色　Q
+$mq_indexColor: #f7931d;
+$mq_faqIndexColor: #16305f;
+//FAQ文字色　A
+$mq_index2Color: #f48a00;
+$mq_faq2IndexColor: #fd9c99;
+
+
+//FAQボックス見出し背景色
+$mq_boxIndexBgColor: #f69c3a;
+//流れボックス見出し
+// $mq_decTextColor: #f69c3a;
+//事例見出し補足
+$mc_decIndexColor: #f16c0b;
+
+//紺： #16305F
+//橙: #F16C0B
+
+
+//★★★★★★★★★★★★★★★★とりいそぎ：永野エリア★★★★★★★★★★★★★★★★
+//囲い二重線色
+$doubleBdColor: #c9e0ff;
+
+//新着情報ラベル
+$newsBgColor: #f59e3b;

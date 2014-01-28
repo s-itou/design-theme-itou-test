@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-link2-style";
+
+.mod-link2 {
+  @include mod-link2-common-style;
+  @include mod-link2-style2;
+  .ex-style_01A2 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 &,
+  .ex-style_01C3 &,
+  .ex-style_c1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1B1 &,
+  .ex-style_i1B2 &,
+  .ex-style_i1B3 &,
+  .ex-style_i1C1 &,
+  .ex-style_i1C2 &,
+  .ex-style_i1C3 &,
+  .ex-style_v1A2 & {
+    @include mod-link2-style;
+  }
+  .ex-style_01A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_v1A3 & {
+    @include mod-link2-style3;
+  }
+}
+

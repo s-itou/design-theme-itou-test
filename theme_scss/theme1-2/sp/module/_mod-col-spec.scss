@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%default-col-spec-base {
+  padding: 10px 10px 0 10px;
+  border: 1px solid #cccccc;
+  border-top: 3px solid #f77b18;
+  @include border-radius();
+  background-color: #fffdf5;
+}
+
+%default-col-spec {
+  float: left;
+  width: 315px;
+  @extend %default-col-spec-base;
+}
+
+%default-col-spec2 {
+  float: left;
+  width: 235px;
+  @extend %default-col-spec-base;
+}
+
+%default-col-spec-icon{
+  width: 58px;
+  height: 57px;
+}
+
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+.mod-3col-spec {
+  @extend %cf;
+  //margin-bottom: 30px;
+  > .mod-3col-spec-inner {
+    @extend %default-col-spec;
+    margin-right: 17px;
+  }
+  > .mod-3col-spec-inner2 {
+    @extend %default-col-spec;
+    margin-right: 18px;
+  }
+  > .mod-3col-spec-inner3 {
+    @extend %default-col-spec;
+  }
+}
+
+.mod-4col-spec {
+  @extend %cf;
+  //margin-bottom: 30px;
+  > .mod-4col-spec-inner {
+    @extend %default-col-spec2;
+    margin-right: 13px;
+  }
+  > .mod-4col-spec-inner2 {
+    @extend %default-col-spec2;
+    margin-right: 13px;
+  }
+  > .mod-4col-spec-inner3 {
+    @extend %default-col-spec2;
+    margin-right: 14px;
+  }
+  > .mod-4col-spec-inner4 {
+    @extend %default-col-spec2;
+  }
+}
+
+
+.mod-3col-spec, .mod-4col-spec { //アイコン設定
+  .mod-col-spec-icon1-1 {
+    @extend %default-col-spec-icon;
+    background: url(img/mod-col-spec/01/bg.png) no-repeat;
+  }
+  .mod-col-spec-icon1-2 {
+    @extend %default-col-spec-icon;
+    background: url(img/mod-col-spec/01/bg02.png) no-repeat;
+  }
+  .mod-col-spec-icon1-3 {
+    @extend %default-col-spec-icon;
+    background: url(img/mod-col-spec/01/bg03.png) no-repeat;
+  }
+  .mod-col-spec-icon1-4 {
+    @extend %default-col-spec-icon;
+    background: url(img/mod-col-spec/01/bg04.png) no-repeat;
+  }
+  .mod-col-spec-icon2-1 {
+    @extend %default-col-spec-icon;
+    background: url(img/mod-col-spec/02/bg.png) no-repeat;
+  }
+  .mod-col-spec-icon2-2 {
+    @extend %default-col-spec-icon;
+    background: url(img/mod-col-spec/02/bg02.png) no-repeat;
+  }
+  .mod-col-spec-icon2-3 {
+    @extend %default-col-spec-icon;
+    background: url(img/mod-col-spec/02/bg03.png) no-repeat;
+  }
+  .mod-col-spec-icon2-4 {
+    @extend %default-col-spec-icon;
+    background: url(img/mod-col-spec/02/bg04.png) no-repeat;
+  }
+  //clear-fix
+  .mod-col-spec-box {
+    @extend %cf;
+    margin-bottom: 15px;
+    > div {
+      float: left;
+    }
+    > div　+ div {
+      float: left;
+    }
+  }
+}

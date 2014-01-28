@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@mixin mod-email7-common-style {
+word-break: break-all;
+  line-height: 1.0;
+  font-size: $sideFontSizeL - 1;
+  font-weight: bold;
+  margin-top: 10px !important;
+  padding: 0 0 0 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-email7-style {
+  color: #f7931d;
+  background-image: url("img/mod-email/bg.png");
+}
+@mixin mod-email7-style2 {
+  color: #333333;
+  background-image: url("img/mod-email/bg_2.png");
+}
+@mixin mod-email7-style3 {
+  color: #45320b;
+  background-image: url("img/mod-email/bg_3.png");
+}
+

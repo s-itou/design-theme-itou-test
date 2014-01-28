@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import "../pc-style/mod-set-link-style";
+
+// -----------------------------------
+//
+// mod-set-link の紐付けモジュール
+//
+// -----------------------------------
+
+// -----------------------------------
+// part-main-048 誘導リンク大
+// -----------------------------------
+.mod-set-link {
+  @include common-style-mod-set-link;
+  @include module-style-mod-set-link;
+}
+
+// -----------------------------------
+// part-side-028 サイドエリア誘導リンク単体
+// -----------------------------------
+.mod-set-link-side {
+  @include common-style-mod-set-link;
+  @include module-style-mod-set-link-side;
+}
+
+
+// ***********************************
+// 現行モジュールへのスタイル取り込み
+// ***********************************
+// .mod-box49 {
+//   @extend .mod-set-link;
+// }
+// .mod-box50 {
+//   @extend .mod-set-link-side;
+// }

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "compass";
+
+@import "./dependency/_variable-temporary";
+ //エラー回避のための暫定措置　最終的には消去する。
+@import "../../common/extend";
+@import "../pc/dependency/common-variable";
+@import "../pc/dependency/variable";
+@import "../pc/dependency/variable-cv2";
+@import "../pc/dependency/variable-cv3";
+@import "../pc/dependency/variable-d";
+@import "../pc/dependency/variable-dcv2";
+@import "../pc/dependency/variable-dcv3";
+@import "../pc/dependency/variable-d2";
+@import "../pc/dependency/variable-d2cv2";
+@import "../pc/dependency/variable-d2cv3";
+@import "dependency/common";
+
+//@import "module/mod-html";
+@import "module/mod-image";
+@import "module/mod-info";
+@import "module/mod-tel";
+@import "module/mod-html"; //telで作成したmixinを使用しているので位置を移動
+
+@import "module/ex-layout";
+@import "module/mod-box";
+@import "module/mod-2column";
+@import "module/mod-3column";
+@import "module/mod-4column";
+@import "module/mod-5column";
+
+@import "module/mod-h";
+@import "module/mod-h_v";
+@import "module/mod-h_4";
+
+@import "module/mod-bnr";
+@import "module/mod-link";
+@import "module/mod-table";
+@import "module/mod-rte";
+@import "module/mod-title";
+@import "module/mod-ul";
+@import "module/mod-nav";
+@import "module/mod-step";
+@import "module/mod-label";
+@import "module/mod-un";
+@import "module/mod-col-spec";
+@import "module/mod-form";
+
+@import "module/mod-sp";

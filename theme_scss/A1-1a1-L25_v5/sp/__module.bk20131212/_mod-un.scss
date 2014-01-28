@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import "../sp-style/mod-un-style";
+
+.mod-login {
+  @include mod-login-common-style;
+}
+
+.mod-card {
+  @include mod-card-common-style;
+  @include mod-card-style;
+  .ex-style_01A1 & {
+    @include mod-card-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-card-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-card-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-card-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-card-style4;
+  }
+  .ex-style_01B3 & {
+    @include mod-card-style5;
+  }
+  .ex-style_01C1 & {
+    @include mod-card-style6;
+  }
+  .ex-style_01C2 & {
+    @include mod-card-style7;
+  }
+  .ex-style_01C3 & {
+    @include mod-card-style8;
+  }
+}
+
+.mod-header-image {
+  @include mod-header-image-common-style;
+}
+
+.mod-copy {
+  @include mod-copy-common-style;
+  @include mod-copy-style;
+  .ex-style_01A1 & {
+    @include mod-copy-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-copy-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-copy-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-copy-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-copy-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-copy-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-copy-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-copy-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-copy-style9;
+  }
+}
+
+.mod-copy2 {
+  @include mod-copy2-common-style;
+  @include mod-copy2-style;
+  .ex-style_01A1 & {
+    @include mod-copy2-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-copy2-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-copy2-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-copy2-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-copy2-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-copy2-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-copy2-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-copy2-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-copy2-style9;
+  }
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@mixin mod-box-common-style {
+width: 100%;
+  background-position: center top;
+}
+
+@mixin mod-box-style {
+  background-image: url("./img/mod-box/bg.png");
+  background-repeat: no-repeat;
+}
+@mixin mod-box-style2 {
+  background-image: url("./img/mod-box/bg_2.png");
+  background-repeat: no-repeat;
+}
+@mixin mod-box-style3 {
+  background-image: url("./img/mod-box/bg_3.png");
+  background-repeat: no-repeat;
+}
+@mixin mod-box-style4 {
+  background-image: url("img/mod-box/bg09.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box-style5 {
+  background-image: url("img/mod-box/bg09_2.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box-style6 {
+  background-image: url("img/mod-box/bg09_3.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box-style7 {
+  background-image: url("img/mod-box/bg10.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box-style8 {
+  background-image: url("img/mod-box/bg10_2.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box-style9 {
+  background-image: url("img/mod-box/bg10_3.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box-style10 {
+  background-image: none;
+  background-repeat: no-repeat;
+}
+

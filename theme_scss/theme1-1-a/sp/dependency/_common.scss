@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+//全module共通
+.mod-body {
+  color: #333333;
+  font-size: $fontSizeM;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1.5;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  padding-top: 41px;
+  margin: 0;
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  div {
+    @include box-sizing(border-box);
+  }
+  p {
+    margin: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+  }
+  a {
+    color: $linkColor;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  img {
+    vertical-align: bottom;
+  }
+  .ex-style_01A2a {
+    color: $baseFontColor2;
+  }
+  .ex-style_01A3a {
+    color: $baseFontColor3;
+  }
+}
+
+.mod-body {
+  //------------------
+  // mod-margin-top
+  // 部品間の余白調整
+  //------------------
+  .mod-margin1 {
+    margin-top: 15px !important;
+  }
+  .mod-margin2 {
+    margin-top: 30px !important;
+  }
+  .mod-margin3 {
+    margin-top: 45px !important;
+  }
+
+  //------------------
+  // HTML記述のmarginクラス
+  //------------------
+  .mod-mbA {
+    margin-bottom: 0 !important;
+  }
+  .mod-mbB {
+    margin-bottom: 5px !important;
+  }
+  .mod-mbC {
+    margin-bottom: 10px !important;
+  }
+  .mod-mbD {
+    margin-bottom: 15px !important;
+  }
+  .mod-mbE {
+    margin-bottom: 20px !important;
+  }
+  .mod-mbF {
+    margin-bottom: 25px !important;
+  }
+  .mod-mbG {
+    margin-bottom: 30px !important;
+  }
+  .mod-mbH {
+    margin-bottom: 45px !important;
+  }
+}
+
+//装飾パターン、カラバリのデフォルト記述
+.mod-body {
+  .ex-style_01A3a,
+  .ex-style_01A3b,
+  .ex-style_01A3c,
+  .ex-style_01A3d,
+  .ex-style_v1A3a,
+  .ex-style_v1A3b,
+  .ex-style_v1A3c,
+  .ex-style_v1A3d,
+  .ex-style_c1A3a,
+  .ex-style_c1A3b,
+  .ex-style_c1A3c,
+  .ex-style_c1A3d,
+  .ex-style_i1A3a,
+  .ex-style_i1A3b,
+  .ex-style_i1A3c,
+  .ex-style_i1A3d,
+  .ex-style_d1A3a,
+  .ex-style_d1A3b,
+  .ex-style_d1A3c,
+  .ex-style_d1A3d,
+  .ex-style_q1A3a,
+  .ex-style_q1A3b,
+  .ex-style_q1A3c,
+  .ex-style_q1A3d {
+    color: #56534e;
+  }
+  .ex-style_01C3a,
+  .ex-style_01C3b,
+  .ex-style_01C3c,
+  .ex-style_01C3d,
+  .ex-style_v1C3a,
+  .ex-style_v1C3b,
+  .ex-style_v1C3c,
+  .ex-style_v1C3d,
+  .ex-style_c1C3a,
+  .ex-style_c1C3b,
+  .ex-style_c1C3c,
+  .ex-style_c1C3d,
+  .ex-style_i1C3a,
+  .ex-style_i1C3b,
+  .ex-style_i1C3c,
+  .ex-style_i1C3d,
+  .ex-style_d1C3a,
+  .ex-style_d1C3b,
+  .ex-style_d1C3c,
+  .ex-style_d1C3d,
+  .ex-style_q1C3a,
+  .ex-style_q1C3b,
+  .ex-style_q1C3c,
+  .ex-style_q1C3d {
+    color: #45320b;
+  }
+}
+

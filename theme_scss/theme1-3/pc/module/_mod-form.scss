@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+//mod-form
+//mod-form-items 及び mod-form-item のモジュール
+.mod-form {
+  margin-bottom: 30px;
+  .mod-form-items {
+    width: 586px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fffce9;
+    display: table;
+    @include box-sizing(border-box);
+    border: 1px solid #ddd9d0;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  .mod-form-item {
+    @include box-sizing(border-box);
+    width: 586px;
+    display: table-row;
+    border: 1px solid #ddd9d0;
+    .mod-form-label {
+    	display: table-cell;
+    	vertical-align: middle;
+    	border: 1px solid #ddd9d0;
+    	padding-left: 15px;
+      padding-right: 15px;
+      width: 240px;
+      @include box-sizing(border-box);
+    }
+    .mod-form-required {
+      margin-left: 8px;
+      background-color: #fc7d77;
+      @include border-radius(3px);
+      font-size: 11px;
+      text-align: center;
+      color: #ffffff;
+      width: 32px;
+      display: inline-block;
+      padding: 3px 2px 0px;
+    }
+    .mod-form-part {
+      display: table-cell;
+    	vertical-align: middle;
+    	border: 1px solid #ddd9d0;
+    	padding-left: 15px;
+      padding-right: 15px;
+      @include box-sizing(border-box);
+      input[type="text"] {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        @include box-sizing(border-box);
+        width: 200px;
+      }
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+        li {
+          display: inline;
+          input[type="radio"] {
+            margin-right: 4px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          + li > input[type="radio"] {
+            margin-left: 6px;
+          }
+          input[type="checkbox"] {
+            margin-right: 4px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+          + li > input[type="checkbox"]  {
+            margin-left: 6px;
+          }
+        }
+      }
+      select {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 96px;
+      }
+      textarea {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 310px;
+        height: 95px;
+      }
+    }
+  }
+  .mod-form-submit {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    .mod-form-submit-button {
+      width: 162px;
+      margin-right: auto;
+      margin-left: auto;
+      .submit-button {
+        background-image: url("img/mod-form/bg03.png");
+        background-repeat: no-repeat;
+        background-color: #ffffff;//ブラウザのデフォルトスタイル解除
+        border: 0px solid #ffffff;//ブラウザのデフォルトスタイル解除
+        width: 162px;
+        height: 30px;
+        &:hover {
+          cursor: pointer;
+          background-position: -162px 0;
+        }
+        &:active {
+          // cursor: pointer;
+          background-position: -324px 0;
+        }
+      }
+    }
+    .mod-form-confirm-btn {
+      width: 197px;
+      margin-right: auto;
+      margin-left: auto;
+      .mod-form-edit {
+        background-image: url("img/mod-form/bg02.png");
+        background-repeat: no-repeat;
+        background-color: #ffffff;//ブラウザのデフォルトスタイル解除
+        border: 0px solid #ffffff;//ブラウザのデフォルトスタイル解除
+        width: 86px;
+        height: 30px;
+        margin-right:20px;
+        &:hover {
+          cursor: pointer;
+          background-position: -86px 0;
+        }
+        &:active {
+          // cursor: pointer;
+          background-position: -172px 0;
+        }
+      }
+      .mod-form-send {
+        background-image: url("img/mod-form/bg.png");
+        background-repeat: no-repeat;
+        background-color: #ffffff;//ブラウザのデフォルトスタイル解除
+        border: 0px solid #ffffff;//ブラウザのデフォルトスタイル解除
+        width: 86px;
+        height: 30px;
+        &:hover {
+          cursor: pointer;
+          background-position: -86px 0;
+        }
+        &:active {
+          // cursor: pointer;
+          background-position: -172px 0;
+        }
+      }
+    }
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-form-item {
+      background-color: #ffffff;
+      border: 1px solid #b29e3b;
+      .mod-form-label {
+        background-color: #f2e18b;
+        border: 1px solid #b29e3b;
+      }
+      .mod-form-part {
+        border: 1px solid #b29e3b;
+      }
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-form-item {
+      background-color: #ffffff;
+      border: 1px solid #f6cd77;
+      .mod-form-label {
+        border: 1px solid #f6cd77;
+        background-color: #ffdd9d;
+      }
+      .mod-form-part {
+        border: 1px solid #f6cd77;
+      }
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-form-item {
+      background-color: #ffffff;
+      border: 1px solid #8aa9e3;
+      .mod-form-label {
+        border: 1px solid #8aa9e3;
+        color: #ffffff;
+        background-image: url(img/mod-form/bg04.png);
+        background-repeat: repeat-y;
+      }
+      .mod-form-part {
+        border: 1px solid #8aa9e3;
+      }
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-form-item {
+      background-color: #ffffff;
+      border: 1px solid #62cad9;
+      .mod-form-label {
+        border: 1px solid #62cad9;
+        color: #ffffff;
+        background-image: url(img/mod-form/bg04_2.png);
+        background-repeat: repeat-y;
+      }
+      .mod-form-part {
+        border: 1px solid #62cad9;
+      }
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-form-item {
+      background-color: #ffffff;
+      border: 1px solid #5ca4de;
+      .mod-form-label {
+        border: 1px solid #5ca4de;
+        color: #ffffff;
+        background-image: url(img/mod-form/bg04_3.png);
+        background-repeat: repeat-y;
+      }
+      .mod-form-part {
+        border: 1px solid #5ca4de;
+      }
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-form-item {
+      color: #ffffff;
+      background-color: #ffffff;
+      .mod-form-label {
+        color: #ffffff;
+        background-image: url(img/mod-form/bg05.png);
+        background-repeat: repeat;
+      }
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-form-item {
+      color: #ffffff;
+      background-color: #e3f6f8;
+      .mod-form-label {
+        color: #ffffff;
+        background-image: url(img/mod-form/bg05_2.png);
+        background-repeat: repeat;
+      }
+      .mod-form-required {
+        background-color: #355995;
+      }
+
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-form-item {
+      color: #ffffff;
+      background-color: #fdf6e4;
+      .mod-form-label {
+        color: #ffffff;
+        background-image: url(img/mod-form/bg05_3.png);
+        background-repeat: repeat;
+      }
+      .mod-form-required {
+        background-color: #519dce;
+      }
+    }
+  }
+}
+

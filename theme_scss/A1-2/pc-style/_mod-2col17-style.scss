@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@mixin mod-2col17-common-style {
+margin-top: 30px;
+  @extend %cf;
+  > .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: 310px;
+      margin-left: 20px;
+      > .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      > .mod-2col-inner2-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-wrap {
+       .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+

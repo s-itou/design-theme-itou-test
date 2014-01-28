@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-tel20-style";
+
+.mod-tel20 {
+  @include mod-tel20-common-style;
+  .ex-style_01A2 & {
+    @include mod-tel20-style;
+  }
+}
+

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@mixin mod-2col31-common-style {
+@extend %cf;
+  margin-top: 20px;
+  .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: 250px;
+      margin-left: 15px;
+      > .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      > .mod-2col-inner2-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .step2 &, .step4 &, .step6 &, .step8 &, .step10 & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgSize_2L & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: 300px;
+      }
+    }
+  }
+  .ex-imgSize_2S & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: 200px;
+      }
+    }
+  }
+  .ex-imgSize_2SS & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: 150px;
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgLayout_r & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: right;
+        margin-left: 15px;
+        margin-right: 0;
+      }
+    }
+  }
+  .ex-imgLayout_lr & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgLayout_lr .step2 &,
+  .ex-imgLayout_lr .step4 &,
+  .ex-imgLayout_lr .step6 &,
+  .ex-imgLayout_lr .step8 &,
+  .ex-imgLayout_lr .step10 & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: right;
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+  .ex-imgLayout_rl & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: right;
+        margin-left: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  .ex-imgLayout_rl .step2 &,
+  .ex-imgLayout_rl .step4 &,
+  .ex-imgLayout_rl .step6 &,
+  .ex-imgLayout_rl .step8 &,
+  .ex-imgLayout_rl .step10 & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin-bottom: 12px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+

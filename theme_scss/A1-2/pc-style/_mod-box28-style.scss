@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@mixin mod-box28-common-style {
+width: 100%;
+  @include border-radius();
+  .mod-box-inner {
+   @include border-radius();
+   text-align: center;
+  }
+}
+
+@mixin mod-box28-style {
+border: 1px solid #ff8809;
+  .mod-box-inner {
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    background-image: url("img/mod-box/bg15.png");
+    background-repeat: repeat-x;
+    background-color: #ffb260;
+  }
+}
+

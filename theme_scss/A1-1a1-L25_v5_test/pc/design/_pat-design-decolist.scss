@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// pat-design-decolist の定義
+//
+//   ・デザインパターン
+//   ・mod-set-decolist内にincludeされる使い方を想定
+//   ・他のsetモジュール（お客さまの声、等）でも使われる可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// -----------------------------------
+
+// -----------------------------------
+// pat-design-decolistの装飾スタイル
+// -----------------------------------
+
+@mixin deco-style-pat-design-decolist-1 {
+  padding: 15px; // リボンタイトル用背景調整
+  .mod-box-inner {
+    .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          .mod-h_4-inner3 {
+            background-image: none;
+            background-color: transparent;
+          }
+        }
+      }
+      .mod-ul_ver2 {
+        margin: 10px 0 0;
+      }
+      .mod-rte_ver2 {
+        margin: 10px 0 0;
+      }
+    }
+  }
+}
+@mixin deco-style-pat-design-decolist-2 {
+  .mod-box-inner {
+    .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          margin: 0;
+          .mod-h_4-inner3 {
+            background-image: none;
+            background-color: transparent;
+          }
+        }
+      }
+      .mod-ul_ver2 {
+        margin: 10px 0 0;
+        .mod-ul-inner {
+          padding: 0;
+        }
+      }
+      .mod-rte_ver2 {
+        margin: 10px 0 0;
+      }
+    }
+  }
+}
+@mixin deco-style-pat-design-decolist-3 {
+  .mod-box-inner {
+    .mod-box-inner2 {
+      .mod-set-h4 {
+        .mod-box-in2 {
+          .mod-h_4-inner3 {
+            background-image: none;
+            background-color: transparent;
+          }
+        }
+      }
+      .mod-ul_ver2 {
+        margin: 10px 0 0;
+        background-color: transparent;
+        border: none;
+      }
+      .mod-rte_ver2 {
+        margin: 10px 0 0;
+      }
+    }
+  }
+}
+
+
+// -----------------------------------
+// pat-design-decolistの個別設定
+// -----------------------------------
+@mixin pat-design-decolist-1 {
+  @include pat-item-waku-kado-simple-orange-bgc;
+  .mod-box-in2 {@include pat-item-midashi-ribbon-1;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-none-bgc-white;
+    @include pat-item-list-check-1;
+  }
+  @include deco-style-pat-design-decolist-1;
+}
+@mixin pat-design-decolist-2 {
+  @include pat-item-waku-kado-simple-green-bgc;
+  .mod-box-in2 {@include pat-item-midashi-ribbon-2;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-none-bgc-white;
+    @include pat-item-list-check-2;
+  }
+  @include deco-style-pat-design-decolist-1;
+}
+@mixin pat-design-decolist-3 {
+  @include pat-item-waku-kado-simple-orange-bgc-2;
+  .mod-box-in2 {@include pat-item-midashi-ribbon-3;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-none-bgc-white;
+    @include pat-item-list-check-3;
+  }
+  @include deco-style-pat-design-decolist-1;
+}
+@mixin pat-design-decolist-4 {
+  @include pat-item-waku-jouge-image-blue-bgc;
+  .mod-box-in2 {@include pat-item-midashi-image-1;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-kado-none-grade-blue;
+    @include pat-item-list-check-4;
+  }
+  @include deco-style-pat-design-decolist-2;
+}
+@mixin pat-design-decolist-5 {
+  @include pat-item-waku-jouge-image-green-bgc;
+  .mod-box-in2 {@include pat-item-midashi-image-2;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-kado-none-grade-green;
+    @include pat-item-list-check-5;
+  }
+  @include deco-style-pat-design-decolist-2;
+}
+@mixin pat-design-decolist-6 {
+  @include pat-item-waku-jouge-image-yellow-bgc;
+  .mod-box-in2 {@include pat-item-midashi-image-3;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-kado-none-grade-orange;
+    @include pat-item-list-check-6;
+  }
+  @include deco-style-pat-design-decolist-2;
+}
+@mixin pat-design-decolist-7 {
+  @include pat-item-waku-kado-simple-orange-bgimg;
+  .mod-box-in2 {@include pat-item-midashi-border-4;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-board-orange;
+    @include pat-item-list-check-7;
+  }
+  @include deco-style-pat-design-decolist-3;
+}
+@mixin pat-design-decolist-8 {
+  @include pat-item-waku-kado-simple-green-bgimg;
+  .mod-box-in2 {@include pat-item-midashi-border-5;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-board-yellow;
+    @include pat-item-list-check-8;
+  }
+  @include deco-style-pat-design-decolist-3;
+}
+@mixin pat-design-decolist-9 {
+  @include pat-item-waku-kado-simple-orange-bgimg-2;
+  .mod-box-in2 {@include pat-item-midashi-border-4;}
+  .mod-ul_ver2 {
+    @include pat-item-waku-board-brown;
+    @include pat-item-list-check-9;
+  }
+  @include deco-style-pat-design-decolist-3;
+}
+

@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+// ----------------------------
+// mod-3col
+//必須レイアウト記述→margin-top
+//必須デザイン記述→なし
+// ----------------------------
+
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-3col(inner1重)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----common-style-----//
+@mixin common-style-mod-3col {
+  //---必須レイアウト記述-----//
+  margin: 30px 0 0 0;
+  //----必須デザイン記述-----//
+  //---------------------//
+  @extend %cf;
+  .mod-3col-inner {
+    float: left;
+    margin: 0 20px 0 0;
+    width: floor(($mainWidth - 40) / 3);
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    margin: 0 20px 0 0;
+    width: floor(($mainWidth - 40) / 3);
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 40) / 3);
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+//-----module-style-----//
+//mod-3col
+@mixin module-style-mod-3col {
+  //現状記述なし
+}
+
+//mod-3col-footer
+@mixin module-style-mod-3col-footer {
+  position: relative;
+  height: 210px;
+ .mod-3col-inner {
+    margin: 0 30px 0 0;
+    width: 330px;
+  }
+  .mod-3col-inner2 {
+    margin: 0 30px 0 0;
+    width: 260px;
+  }
+  .mod-3col-inner2 {
+    width: 330px;
+  }
+}
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-3col(inner2重)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----common-style-----//(未使用)
+@mixin common-style-mod-3col-in1 {
+  //---必須レイアウト記述-----//
+  margin: 30px 0 0 0;
+  //----必須デザイン記述-----//
+  //---------------------//
+  @extend %cf;
+  .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin: 0 20px 0 0;
+    .mod-3col-inner-2 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin: 0 20px 0 0;
+    .mod-3col-inner2-2 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 40) / 3);
+    .mod-3col-inner3-2 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+//-----module-style-----//
+@mixin module-style-mod-3col-in1 {
+  //現状記述なし
+}
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-3col(inner3重)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----common-style-----//
+@mixin common-style-mod-3col-in2 {
+  //---必須レイアウト記述-----//
+  margin: 30px 0 0 0;
+  //----必須デザイン記述-----//
+  //---------------------//
+  @extend %cf;
+  .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin: 0 20px 0 0;
+    .mod-3col-inner-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 40) / 3);
+    margin: 0 20px 0 0;
+    .mod-3col-inner2-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 40) / 3);
+    .mod-3col-inner3-3 {
+       > .ex-first-child {
+        margin-top: 0 !important;
+         > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+//-----module-style-----//
+@mixin module-style-mod-3col-in2 {
+  //現状記述なし
+}

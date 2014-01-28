@@ -1,0 +1,35 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// mod-set-tel の共通定義
+//
+// -----------------------------------
+
+@mixin common-style-mod-set-tel {
+}
+
+@mixin common-style-mod-set-tel-2col {
+  .mod-2col50-in2-inset {
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        @if $layoutCode == "L25" {
+          width: 287px;
+        } @else if $layoutCode == "L30" {
+          width: 260px;
+        }
+      }
+      > .mod-2col-inner2 {
+        @if $layoutCode == "L25" {
+          width: 287px;
+          } @else if $layoutCode == "L30" {
+            width: 260px;
+        }
+      }
+    }
+  }
+}
+
+@mixin common-style-mod-set-tel-side {
+}
+
+

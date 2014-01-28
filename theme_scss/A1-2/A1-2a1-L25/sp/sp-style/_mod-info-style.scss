@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+@mixin mod-info7-common-style {
+  margin-top: 15px;
+  th {
+    font-weight: normal;
+    vertical-align: top;
+    width: 26%;
+    padding: 0 0 10px;
+    p {
+      padding: 0 8px;
+      @include border-radius();
+    }
+  }
+  td {
+    vertical-align: top;
+    width: 59%;
+    padding: 0 0 10px;
+    p {
+      padding: 1px 0 0 10px;
+    }
+  }
+  tr:last-child {
+    th, td {
+      padding: 0;
+    }
+  }
+}
+@mixin mod-info7-style {
+th {
+    > p {
+      color: #ffffff;
+      background-color: #5f140a;
+    }
+  }
+}
+@mixin mod-info7-style2 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #3c3c3c;
+    }
+  }
+}
+@mixin mod-info7-style3 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #325073;
+    }
+  }
+}
+@mixin mod-info7-style4 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #0b2745;
+    }
+  }
+}
+@mixin mod-info7-style5 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #325074;
+    }
+  }
+}
+@mixin mod-info7-style6 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #260e0e;
+    }
+  }
+}
+@mixin mod-info7-style7 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #666666;
+    }
+  }
+}
+@mixin mod-info7-style8 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #0f375f;
+    }
+  }
+}
+@mixin mod-info7-style9 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #46140b;
+    }
+  }
+}
+
+
+//  mod-info8 の mixin一式
+@mixin mod-info8-common-style {
+  margin-top: 10px;
+  .mod-info-inner {
+    text-align: center;
+    width: 140px;
+    margin-right: 15px;
+    @include border-radius();
+  }
+  .mod-info-inner2 {
+    margin-top: 10px;
+  }
+}
+@mixin mod-info8-style {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #5f140a;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style2 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #3c3c3c;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style3 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: #325073;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style4 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: url("img/mod-info/bg.png");
+    background-repeat: repeat-x;
+    background-color: #722416;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style5 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #085b66;
+    background-image: url("img/mod-info/bg_2.png");
+    background-repeat: repeat-x;
+    background-color: #f8e693;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style6 {
+border-bottom: 0 none transparent;
+  .mod-info-inner {
+    color: #ffffff;
+    background-image: url("img/mod-info/bg_3.png");
+    background-repeat: repeat-x;
+    background-color: #722416;
+    background-position: left top;
+  }
+}
+@mixin mod-info8-style7 {
+border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #781b0e;
+    background-image: url("img/mod-info/bg03.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+@mixin mod-info8-style8 {
+border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #325073;
+    background-image: url("img/mod-info/bg03_2.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+@mixin mod-info8-style9 {
+border-bottom: 1px dotted #cccccc;
+  .mod-info-inner {
+    color: #0f375f;
+    background-image: url("img/mod-info/bg03_3.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: left 6px;
+  }
+}
+
+
+
+//  mod-info9 の mixin一式
+@mixin mod-info9-common-style {
+  margin-top: 10px;
+  > p {
+    &:first-child {
+      text-align: center;
+      width: 140px;
+      @include border-radius();
+    }
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}
+
+@mixin mod-info9-style {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #5f140a;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style2 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #3c3c3c;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style3 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #325073;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style4 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #892815;
+    background-image: url("img/mod-info/bg.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style5 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #085b66;
+    background-color: #f8e693;
+    background-image: url("img/mod-info/bg_2.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style6 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #722416;
+    background-image: url("img/mod-info/bg_3.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style7 {
+border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #781b0e;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+@mixin mod-info9-style8 {
+border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #325073;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03_2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+@mixin mod-info9-style9 {
+border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #0f375f;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03_3.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+
+
+//  mod-info10 の mixin一式
+//新規部品・未対応
+@mixin mod-info10-common-style {
+  margin-top: 10px;
+  th {
+    font-weight: normal;
+    vertical-align: top;
+    width: 25%;
+    padding: 10px 0 0;
+    p {
+      font-size: 14px;
+      padding: 0 3px;
+      @include border-radius(3px);
+    }
+  }
+  td {
+    vertical-align: top;
+    max-width: 50%;
+    padding: 10px 0 0;
+    p {
+      font-size: 14px;
+      padding: 0 0 1px 7px;
+    }
+  }
+  tr:first-child {
+    th, td {
+      padding: 0;
+    }
+  }
+}
+@mixin mod-info10-style {
+  th p {
+    color: #ffffff;
+    background-color: #325074;
+  }
+  td p {
+    color: #ffffff;
+  }
+}
+
+//  mod-info11 の mixin一式
+//新規部品　未対応
+@mixin mod-info11-common-style {
+  margin-top: 10px;
+  th {
+    font-weight: normal;
+    vertical-align: top;
+    width: 25%;
+    padding: 10px 0 0;
+    p {
+      font-size: 14px;
+      padding: 0 3px;
+      @include border-radius(3px);
+    }
+  }
+  td {
+    vertical-align: top;
+    max-width: 50%;
+    padding: 10px 0 0;
+    p {
+      font-size: 14px;
+      padding: 0 0 6px 7px;
+    }
+  }
+  tr:first-child {
+    th, td {
+      padding: 0;
+    }
+  }
+}
+@mixin mod-info11-style {
+  th p {
+    color: #ffffff;
+    background-color: #ff8809;
+  }
+  td p {
+    color: #333333;
+  }
+}
+
+//  mod-info12 の mixin一式
+//新規部品　未対応
+@mixin mod-info12-common-style {
+  margin-top: 10px;
+  th {
+    font-weight: normal;
+    vertical-align: top;
+    width: 25%;
+    padding: 10px 0 0;
+    p {
+      padding: 0 3px;
+      font-size: 14px;
+      @include border-radius(3px);
+    }
+  }
+  td {
+    vertical-align: top;
+    max-width: 50%;
+    padding: 10px 0 0;
+    p {
+      padding: 0 0 6px 7px;
+      font-size: 14px;
+    }
+  }
+  tr:first-child {
+    th, td {
+      padding: 0;
+    }
+  }
+}
+
+@mixin mod-info12-style {
+  th p {
+    color: #ffffff;
+    background-color: #ff8809;
+  }
+  td p {
+    color: #333333;
+  }
+}

@@ -1,0 +1,32 @@
+@mixin mod-box37-style45 {
+  //none
+  width: 100%;
+  margin-top: 30px ;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}

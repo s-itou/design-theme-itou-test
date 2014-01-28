@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+
+
+
+//  mod-text28 の mixin一式
+@mixin mod-text28-common-style {
+  font-size: $fontSizeL;
+}
+@mixin mod-text28-style {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style2 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style3 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style4 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style5 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style6 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style7 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style8 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-text28-style9 {
+  color: #ffffff;
+}
+
+
+
+//  mod-tel31 の mixin一式
+@mixin mod-tel32-common-style {
+  display: table;
+  margin: 0 auto;
+  i {
+    display: table-cell;
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .mod-tel-inner {
+    display: table-cell;
+    padding-left: 5px;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+  }
+}
+
+@mixin mod-tel32-style5 {
+ // none
+  .mod-icon_ftel {
+    background-image: url("img/mod-tel/_32/bg_b_2.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_32/bg02_b_2.png");
+  }
+  .mod-tel-inner {
+    color: #ffffff;
+  }
+}
+@mixin mod-tel32-style {
+  @include mod-tel32-style5; // none
+}
+@mixin mod-tel32-style2 {
+  @include mod-tel32-style5; // none
+}
+@mixin mod-tel32-style3 {
+  @include mod-tel32-style5; // none
+}
+@mixin mod-tel32-style4 {
+  @include mod-tel32-style5; // none
+}
+// @mixin mod-tel32-style5 {上に記載}
+@mixin mod-tel32-style6 {
+  @include mod-tel32-style5; // none
+}
+@mixin mod-tel32-style7 {
+  @include mod-tel32-style5; // none
+}
+@mixin mod-tel32-style8 {
+  @include mod-tel32-style5; // none
+}
+@mixin mod-tel32-style9 {
+  @include mod-tel32-style5; // none
+}
+
+
+
+
+//  mod-bnr38 の mixin一式
+@mixin mod-bnr38-common-style {
+  @include border-radius();
+  display: inline-block;
+  min-width: 150px;
+  margin-top: 10px;
+  &:hover {
+    opacity: 0.80;
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    max-height: 45px;
+    line-height: 1.4;
+    @include border-radius;
+    padding: 5px 10px 5px 25px;
+    text-align: left;
+  }
+}
+
+@mixin mod-bnr38-style5 {
+  border: 1px solid #5771a2;
+  background-image: url("img/mod-bnr/_39/bg_b_2.png");
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-color: #3c4e78;
+  font-size: $fontSizeS;
+  .mod-bnr-inner {
+    border: 1px solid #344464;
+    color: #ffffff;
+    background-image: url("img/mod-bnr/_39/bg02_b_2.png");
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+  }
+}
+@mixin mod-bnr38-style {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style2 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style3 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style4 {
+  @include mod-bnr38-style5; // none
+}
+// @mixin mod-bnr38-style5 {上に記載}
+@mixin mod-bnr38-style6 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style7 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style8 {
+  @include mod-bnr38-style5; // none
+}
+@mixin mod-bnr38-style9 {
+  @include mod-bnr38-style5; // none
+}
+
+
+
+//  mod-2col46 の mixin一式
+@mixin mod-2col46-common-style {
+  display: table;
+  width: 100%;
+  .mod-2col-inner {
+    min-width: 370px;
+    overflow: hidden;
+    margin-right: 30px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-inner2 {
+    display: table-cell;
+    min-width: 580px;
+    vertical-align: bottom;
+    @extend %cf;
+  }
+}
+//  mod-2col47 の mixin一式
+@mixin mod-2col47-common-style {
+  float: right;
+  .mod-2col-inner {
+    display: table-cell;
+    vertical-align: bottom;
+    min-width: 300px;
+    max-width: 300px;
+    padding-right: 30px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: bottom;
+    min-width: 260px;
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+

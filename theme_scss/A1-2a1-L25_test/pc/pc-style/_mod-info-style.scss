@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+
+//info基本形（メインエリア） 現在は１モジュールだけのcommonですが、サンクスページ部品用として追加予定
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin common-style-mod-info {
+  margin: 10px 0 0 0;
+  th {
+    padding: 0 0 10px 0;
+    vertical-align: top;
+    font-weight: normal;
+    > p {
+      @include border-radius();
+      padding: 0 20px 0 20px;
+      width: 60px;
+      text-align: center;
+      font-size: $fontSizeM;
+    }
+  }
+  td {
+    padding: 1px 0 10px 10px;
+    max-width: 220px;
+    vertical-align: top;
+    font-size: $fontSizeM;
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//info基本形（メインエリア）
+@mixin module-style-mod-info {}
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//info基本形（メインエリア）
+@mixin deco-style01A1-mod-info {
+  th {
+    > p {
+      background-color: #1d6fde;
+      color: #ffffff;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A2-mod-info {
+  th {
+    > p {
+    background-color: #ffe876;
+    color: #365997;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A3-mod-info {
+  th {
+    > p {
+    background-color: #519dce;
+    color: #ffffff;
+    }
+  }
+  td {
+    color: #56534e;
+  }
+}
+
+@mixin deco-style01B1-mod-info {
+  th {
+    > p {
+    background-color: #3C66BA;
+    color: #ffffff;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+
+@mixin deco-style01B2-mod-info {
+  th {
+    > p {
+    background-color: #095C66;
+    color: #ffffff;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B3-mod-info {
+  th {
+    > p {
+    background-color: #443308;
+    color: #ffffff;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C1-mod-info {
+  th {
+    > p {
+    background-color: #5596f6;
+    color: #ffffff;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C2-mod-info {
+  th {
+    > p {
+    background-color: #5bc8d3;
+    color: #ffffff;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C3-mod-info {
+  th {
+    > p {
+    background-color: #f2d028;
+    color: #45320b;
+    }
+  }
+  td {
+    color: #45320b;
+  }
+}
+
+
+
+//ヘッダーエリア専用のinfo
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-style-mod-info-header {
+  th {
+    vertical-align: top;
+    font-weight: normal;
+    > p {
+      @include border-radius(3px);
+      padding: 0;
+      width: 48px;
+      color: #ffffff;
+      text-align: center;
+      font-size: $fontSizeS - 1;
+    }
+  }
+  td {
+    padding: 0 0 0 7px;
+    max-width: 135px;
+    font-size: $fontSizeS;
+  }
+}
+
+
+
+
+
+
+//ヘッダーエリア専用のinfo
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin module-style-mod-info-header {
+  th {
+    > p {
+      padding: 0 3px 0 3px;
+    }
+  }
+  td {
+    max-width: 158px;
+  }
+}
+
+@mixin module-style-mod-info-header-top {
+  th {
+    display: table;
+    > p {
+      display: table-cell;
+      height: 36px;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+@mixin module-style-mod-info-header-bottom {
+  margin-top: 5px;
+  &.ex-first-child {
+    margin-top: 0 !important;
+  }
+  th {
+    display: table;
+    > p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//ヘッダーエリア専用のinfo
+@mixin deco-style01A1-mod-info-header {
+  th {
+    > p {
+      background-color: #ff8809;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+@mixin deco-style01A2-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
+@mixin deco-style01A3-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
+@mixin deco-style01B1-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
+@mixin deco-style01B2-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
+@mixin deco-style01B3-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
+@mixin deco-style01C1-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
+@mixin deco-style01C2-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
+@mixin deco-style01C3-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
+
+
+
+
+//新着情報用
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-style-mod-info-news {
+  margin: 10px 0 0 0;
+  > p:first-child { //info9のinnerにクラス名が指定されていなかったので要素特定
+    @include border-radius();
+    text-align: center;
+    width: 140px;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin module-style-mod-info-news {
+  @extend %cf;
+  > p:first-child {
+    float: left;
+    margin:0 15px 0 0;
+  }
+  > p + p {
+    float: left;
+    overflow: hidden;
+  }
+}
+
+@mixin module-style-mod-info-news2 {
+  > p + p {
+    margin: 10px 0 0 0;
+  }
+}
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin deco-style01A1-mod-info-news {
+  > p:first-child {
+    background-color: #f59e3b;
+    background-image: none;
+    color: #ffffff;
+  }
+  > p + p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A2-mod-info-news {
+  > p:first-child {
+    background-color: #ffe876;
+    background-image: none;
+    color: #333333;
+  }
+  > p + p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A3-mod-info-news {
+  > p:first-child {
+    background-color: #519dce;
+    background-image: none;
+    color: #ffffff;
+  }
+  > p + p {
+    color: #56534e;
+  }
+}
+
+@mixin deco-style01B1-mod-info-news {
+  > p:first-child {
+    background-color: #3a66b7;
+    background-image: url("img/mod-info/bg.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: #ffffff;
+  }
+  > p + p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B2-mod-info-news {
+  > p:first-child {
+    background-color: #FEEB91;
+    background-image: url("img/mod-info/bg_2.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: #085b66;
+  }
+  > p + p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B3-mod-info-news {
+  > p:first-child {
+    background-color: #7CB4D8;
+    background-image: url("img/mod-info/bg_3.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: #ffffff;
+  }
+  > p + p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C1-mod-info-news {
+  border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    background-image: url("img/mod-info/bg03.png");
+    background-position: left 6px;
+    background-repeat: no-repeat;
+    color: #f7931d;
+  }
+  > p + p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C2-mod-info-news {
+  border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    background-image: url("img/mod-info/bg03_2.png");
+    background-position: left 6px;
+    background-repeat: no-repeat;
+    color: #067e87;
+  }
+  > p + p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C3-mod-info-news {
+  border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    background-image: url("img/mod-info/bg03_3.png");
+    background-position: left 6px;
+    background-repeat: no-repeat;
+    color: #416ca3;
+  }
+  > p + p {
+    color: #45320b;
+  }
+}

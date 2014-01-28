@@ -1,0 +1,779 @@
+@charset "UTF-8";
+
+//  mod-box の mixin一式
+@mixin mod-box-common-style {
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+//  mod-box2 の mixin一式
+@mixin mod-box2-common-style {
+  //指定なし
+}
+@mixin mod-box2-style {
+}
+
+//  mod-box3 の mixin一式
+@mixin mod-box3-common-style {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px 15px 0 15px;
+}
+
+//  mod-box4 の mixin一式
+@mixin mod-box4-common-style {
+  width: 100%;
+  padding-top: 1px;
+}
+
+//  mod-box6 の mixin一式
+@mixin mod-box6-common-style {
+  width: 100%;
+}
+
+//  mod-box7 の mixin一式
+@mixin mod-box7-common-style {
+  width: 100%;
+  @include border-radius();
+}
+@mixin mod-box7-style {
+  padding: 10px;
+  background-color: #ecfdff;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #ade9ef;
+  >.mod-box-inner {
+    padding: 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box7-style2 {
+  padding: 10px;
+  background-color: #e3f6f8;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #ade9ef;
+  >.mod-box-inner {
+    padding: 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box7-style3 {
+  padding: 10px;
+  background-color: #fff0e4;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #dedad1;
+  >.mod-box-inner {
+    padding: 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box7-style4 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  border: 1px solid #abd2f6;
+  >.mod-box-inner {
+    padding: 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box7-style5 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  border: 1px solid #f4d34f;
+  >.mod-box-inner {
+    padding: 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box7-style6 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  border: 1px solid #ffa09a;
+  >.mod-box-inner {
+    padding: 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box7-style7 {
+  padding: 0;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  border: 0 none transparent;
+  >.mod-box-inner {
+    padding: 0;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+//  mod-box8 の mixin一式
+@mixin mod-box8-common-style {
+  width: 100%;
+  margin-top: 20px;
+  @include border-radius();
+}
+@mixin mod-box8-style {
+  padding: 10px;
+  background-color: #ecfdff;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #ade9ef;
+  > .mod-box-inner{
+    padding: 10px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box8-style2 {
+  padding: 10px;
+  background-color: #e3f6f8;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #ade9ef;
+  > .mod-box-inner{
+    padding: 10px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box8-style3 {
+  padding: 10px;
+  background-color: #fff0e4;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #dedad1;
+  > .mod-box-inner{
+    padding: 10px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box8-style4 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  border: 1px solid #abd2f6;
+  > .mod-box-inner{
+    padding: 10px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box8-style5 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  border: 1px solid #f4d34f;
+  > .mod-box-inner{
+    padding: 10px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box8-style6 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  border: 1px solid #ffa09a;
+  > .mod-box-inner{
+    padding: 10px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box8-style7 {
+  padding: 3px;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08.png");
+  background-repeat: repeat;
+  border: 0 none transparent;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box8-style8 {
+  padding: 3px;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_2.png");
+  background-repeat: repeat;
+  border: 0 none transparent;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box8-style9 {
+  padding: 3px;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_3.png");
+  background-repeat: repeat;
+  border: 0 none transparent;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+//  mod-box12 の mixin一式
+@mixin mod-box12-common-style {
+  width: 100%;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 10px 10px 1px;
+    background-color: #ffffff;
+  }
+}
+@mixin mod-box12-style {
+  background-color: #fffce9;
+  border: 1px solid #dedad1;
+}
+@mixin mod-box12-style2 {
+  background-color: #f6f6f6;
+  border: 1px solid #cbd8d9;
+}
+@mixin mod-box12-style3 {
+  background-color: #fffef4;
+  border: 1px solid #dedad1;
+}
+
+//  mod-box13 の mixin一式
+@mixin mod-box13-common-style {
+  width: 100%;
+  margin-top: 10px;
+}
+
+//  mod-box14 の mixin一式
+@mixin mod-box14-common-style {
+  margin: 0 -15px;
+  padding: 0 15px;
+}
+@mixin mod-box14-style {
+  background-color: #2e7fec;
+}
+@mixin mod-box14-style2 {
+  background-color: #69ced8;
+}
+@mixin mod-box14-style3 {
+  background-color: #f37f1c;
+}
+
+//  mod-box16 の mixin一式
+@mixin mod-box16-common-style {
+  width: 112px;
+  height: 47px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin mod-box16-style {
+  background-image: url("img/mod-box/bg02.png");
+}
+@mixin mod-box16-style2 {
+  background-image: url("img/mod-box/bg02_2.png");
+}
+@mixin mod-box16-style3 {
+  background-image: url("img/mod-box/bg02_3.png");
+}
+@mixin mod-box16-style4 {
+  background-image: url("img/mod-box/bg05.png");
+}
+@mixin mod-box16-style5 {
+  background-image: url("img/mod-box/bg05_2.png");
+}
+@mixin mod-box16-style6 {
+  background-image: url("img/mod-box/bg05_3.png");
+}
+@mixin mod-box16-style7 {
+  background-image: url("img/mod-box/bg06.png");
+}
+@mixin mod-box16-style8 {
+  background-image: url("img/mod-box/bg06_2.png");
+}
+@mixin mod-box16-style9 {
+  background-image: url("img/mod-box/bg06_3.png");
+}
+@mixin mod-box16-style10 {
+  background-image: url("img/mod-box/bg17.png");
+}
+
+//  mod-box17 の mixin一式
+@mixin mod-box17-common-style {
+  width: 100%;
+  margin-top: 20px;
+  @include border-radius();
+}
+@mixin mod-box17-style {
+  padding: 10px;
+  background-color: #ecfdff;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #ade9ef;
+  >.mod-box-inner {
+    padding: 15px 15px 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style2 {
+  padding: 10px;
+  background-color: #ebfdff;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #60bff0;
+  >.mod-box-inner {
+    padding: 15px 15px 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style3 {
+  padding: 10px;
+  background-color: #ffe0de;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #fd8e89;
+  >.mod-box-inner {
+    padding: 15px 15px 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style4 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  border: 1px solid #abd2f6;
+  >.mod-box-inner {
+    padding: 5px 10px 15px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box17-style5 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  border: 1px solid #f4d34f;
+  >.mod-box-inner {
+    padding: 5px 10px 15px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box17-style6 {
+  padding: 10px;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  border: 1px solid #ffa19b;
+  >.mod-box-inner {
+    padding: 5px 10px 15px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box17-style7 {
+  padding: 3px;
+  background-color: none;
+  background-image: url("img/mod-box/bg08.png");
+  background-repeat: repeat;
+  border: 0 none transparent;
+  >.mod-box-inner {
+    padding: 15px 15px 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style8 {
+  padding: 3px;
+  background-color: none;
+  background-image: url("img/mod-box/bg08_2.png");
+  background-repeat: repeat;
+  border: 0 none transparent;
+  >.mod-box-inner {
+    padding: 15px 15px 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style9 {
+  padding: 3px;
+  background-color: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  background-repeat: repeat;
+  border: 0 none transparent;
+  >.mod-box-inner {
+    padding: 15px 15px 15px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+//  mod-box19 の mixin一式
+@mixin mod-box19-common-style {
+  width: 100%;
+  padding: 15px;
+  @include border-radius();
+}
+@mixin mod-box19-style {
+  background-color: #fffce9;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #f7931d;
+}
+@mixin mod-box19-style2 {
+  background-color: #f8feff;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #1891a1;
+}
+@mixin mod-box19-style3 {
+  background-color: #fffced;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #ff994b;
+}
+@mixin mod-box19-style4 {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  border: 1px solid #abd2f6;
+}
+@mixin mod-box19-style5 {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  border: 1px solid #f4d34f;
+}
+@mixin mod-box19-style6 {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  border: 1px solid #ffa09a;
+}
+@mixin mod-box19-style7 {
+  background-color: #fffce9;
+  background-image: none;
+  background-repeat: repeat;
+  border: 1px solid #d1c9a4;
+}
+
+//  mod-box20 の mixin一式
+@mixin mod-box20-common-style {
+  width: 100%;
+  margin-top: 20px;
+  @include border-radius();
+}
+@mixin mod-box20-style {
+  border: 0 none transparent;
+}
+@mixin mod-box20-style2 {
+  border: 2px solid #b29e3b;
+}
+@mixin mod-box20-style3 {
+  border: 2px solid #f6cd77;
+}
+@mixin mod-box20-style4 {
+  border: 2px solid #355591;
+}
+@mixin mod-box20-style5 {
+  border: 2px solid #448dc9;
+}
+
+//  mod-box22 の mixin一式
+@mixin mod-box22-common-style {
+  padding-top: 1px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #ffffff;
+}
+
+//  mod-box23 の mixin一式
+@mixin mod-box23-common-style {
+  width: 100%;
+  padding-top: 1px;
+}
+@mixin mod-box23-style {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+}
+@mixin mod-box23-style2 {
+  background-color: #426ca6;
+  background-image: url("img/mod-box/bg07.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box23-style3 {
+  background-color: #3fadba;
+  background-image: url("img/mod-box/bg07_2.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box23-style4 {
+  background-color: #fef691;
+  background-image: url("img/mod-box/bg07_3.png");
+  background-repeat: repeat-x;
+}
+
+//  mod-box24 の mixin一式
+@mixin mod-box24-common-style {
+  width: 100%;
+  padding-top: 1px;
+}
+@mixin mod-box24-style {
+  background-image: none;
+  background-repeat: repeat;
+}
+@mixin mod-box24-style2 {
+  background-image: url("img/mod-box/bg09.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box24-style3 {
+  background-image: url("img/mod-box/bg09_2.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box24-style4 {
+  background-image: url("img/mod-box/bg09_3.png");
+  background-repeat: repeat-x;
+}
+
+//  mod-box25 の mixin一式
+@mixin mod-box25-common-style {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1px;
+}
+
+//  mod-box26 の mixin一式
+@mixin mod-box26-common-style {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//  mod-box27 の mixin一式
+@mixin mod-box27-common-style {
+  width: 100%;
+  padding: 5px 10px;
+  @include border-radius();
+  text-align: center;
+}
+@mixin mod-box27-style {
+  border: 1px solid #d0d6dc;
+  background-color: #fdfaeb;
+}
+
+//  mod-box28 の mixin一式
+@mixin mod-box28-common-style {
+  width: 100%;
+  .mod-box-inner {
+   text-align: center;
+  }
+}
+@mixin mod-box28-style {
+}
+
+//  mod-box29 の mixin一式
+@mixin mod-box29-common-style {
+  padding: 0 15px;
+  margin: 0 -15px;
+}
+@mixin mod-box29-style {
+  background-color: #2e7fec;
+}
+
+//  mod-box30 の mixin一式
+@mixin mod-box30-common-style {
+}
+
+//  mod-box31 の mixin一式
+@mixin mod-box31-common-style {
+}
+
+//  mod-box32 の mixin一式
+@mixin mod-box32-common-style {
+}
+
+//  mod-box33 の mixin一式
+@mixin mod-box33-common-style {
+  width: 100%;
+  padding-top: 1px
+}
+
+//  mod-box34 の mixin一式
+@mixin mod-box34-common-style {
+  width: 100%;
+  padding-top: 1px
+}
+
+//  mod-box35 の mixin一式
+@mixin mod-box35-common-style {
+  width: 100%;
+  padding-top: 1px
+}
+
+//  mod-box36 の mixin一式
+@mixin mod-box36-common-style {
+}
+
+//  mod-box37 の mixin一式
+@mixin mod-box37-common-style {
+}
+@mixin mod-box37-style {
+  margin-right: 0;
+  background-color: transparent;
+  border: 0 none transparent;
+}
+@mixin mod-box37-style2 {
+  margin-right: 0;
+  background-color: #fffdf2;
+  border: 0 none transparent;
+}
+@mixin mod-box37-style3 {
+  margin-right: -15px;
+  background-color: #f6f6f6;
+  border: 0 none transparent;
+}
+@mixin mod-box37-style4 {
+  margin-right: -15px;
+  background-color: #fff9ee;
+  border: 0 none transparent;
+}
+@mixin mod-box37-style5 {
+  margin-right: 0;
+  background-color: #e6f8ff;
+  border: 0 none transparent;
+}
+@mixin mod-box37-style6 {
+  margin-right: 0;
+  background-color: #fbf3c8;
+  border: 0 none transparent;
+}
+@mixin mod-box37-style7 {
+  margin-right: 0;
+  background-color: #ffefe5;
+  border: 0 none transparent;
+}
+@mixin mod-box37-style8 {
+  margin-right: 0;
+  background-color: transparent;
+  border: 1px solid #c9e0ff;
+}
+@mixin mod-box37-style9 {
+  margin-right: 0;
+  background-color: transparent;
+  border: 1px solid #f99317;
+}
+@mixin mod-box37-style10 {
+  margin-right: 0;
+  background-color: transparent;
+  border: 1px solid #f2d028;
+}
+@mixin mod-box37-style11 {
+  margin-right: 0;
+  background-color: #ffffff;
+  border: 2px solid #84b5fe;
+}
+@mixin mod-box37-style12 {
+  margin-right: 0;
+  background-color: #fff5ec;
+  border: 1px solid #ffc789;
+}
+@mixin mod-box37-style13 {
+  margin-right: 0;
+  background-color: #ffffff;
+  border: 2px solid #84b5fe;
+}
+
+//  mod-box38 の mixin一式
+@mixin mod-box38-common-style {
+}
+
+//  mod-box39 の mixin一式
+@mixin mod-box39-common-style {
+}
+
+//  mod-box40 の mixin一式
+@mixin mod-box40-common-style {
+}
+
+//  mod-box41 の mixin一式
+@mixin mod-box41-common-style {
+}
+
+//  mod-box42 の mixin一式
+@mixin mod-box42-common-style {
+}
+
+//  mod-box43 の mixin一式
+@mixin mod-box43-common-style {
+}
+
+//  mod-box44 の mixin一式
+@mixin mod-box44-common-style {
+}
+@mixin mod-box44-style {
+  margin-left: 67px;
+}
+@mixin mod-box44-style2 {
+  margin-left: 60px;
+}
+
+//  mod-box45 の mixin一式
+@mixin mod-box45-common-style {
+  width: 100%;
+  padding: 15px 20px 20px;
+  > .mod-box-inner {
+    > .ex-first-child {
+      margin-top: 0;
+      > .ex-first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+@mixin mod-box45-style {
+  background-color: #ffffff;
+  text-align: left;
+}
+@mixin mod-box45-style2 {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+//  mod-box46 の mixin一式
+@mixin mod-box46-common-style {
+  padding: 0 25px;
+}
+
+//  mod-box47 の mixin一式
+@mixin mod-box47-common-style {
+  width: 100%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}

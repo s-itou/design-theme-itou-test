@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-h_3F1-style";
+
+.mod-h_3F1 {
+  @include mod-h_3F1-common-style;
+}
+
+@include _mod-h_3F1-common-style;
+

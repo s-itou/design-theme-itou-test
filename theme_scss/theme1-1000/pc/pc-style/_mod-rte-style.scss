@@ -1,0 +1,1053 @@
+@charset "UTF-8";
+
+//  mod-rte の mixin一式
+@mixin mod-rte-common-style {
+  // margin-bottom: 30px !important;//test
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+//  mod-rte2 の mixin一式
+@mixin mod-rte2-common-style {
+  // margin-bottom: 25px !important;//test
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+//  mod-rte3 の mixin一式
+@mixin mod-rte3-common-style {
+  text-align: right;
+  // margin-bottom: 25px !important;//test
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+
+
+//  mod-rte4 の mixin一式
+@mixin mod-rte4-common-style {
+  text-align: center;
+  // margin-bottom: 25px !important;//test
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+@mixin mod-rte4-style {
+  color: #333333;
+}
+
+@mixin mod-rte4-style2 {
+  color: #333333;
+}
+
+@mixin mod-rte4-style3 {
+  color: #333333;
+}
+
+@mixin mod-rte4-style4 {
+  color: #56534e;
+}
+
+@mixin mod-rte4-style5 {
+  color: #ffffff;
+}
+
+@mixin mod-rte4-style6 {
+  color: #ffffff;
+}
+
+@mixin mod-rte4-style7 {
+  color: #443308;
+}
+
+@mixin mod-rte4-style8 {
+  color: #333333;
+}
+
+@mixin mod-rte4-style9 {
+  color: #333333;
+}
+
+@mixin mod-rte4-style10 {
+  color: #45320b;
+}
+
+
+//  mod-rte5 の mixin一式
+@mixin mod-rte5-common-style {
+  // margin-bottom: 25px !important;//test
+  @include border-radius();
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+@mixin mod-rte5-style {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #539af9;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style2 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #539af9;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style3 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #3ab2bf;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style4 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #ffa658;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style5 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #3c66ba;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style6 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #2e4e87;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style7 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #337FB2;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style8 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #fffce9;
+  border: 1px solid #d1c9a4;
+}
+
+@mixin mod-rte5-style9 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #e3f6f8;
+  border: 1px solid #7ed1d9;
+}
+
+@mixin mod-rte5-style10 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #dce9fb;
+  border: 1px solid #c8dffe;
+}
+
+@mixin mod-rte5-style11 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #59bfcd;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style12 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #ffeb84;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style13 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #519dce;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style14 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #f69e3c;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style15 {
+  color: #331f13;
+  padding: 10px 15px;
+  background-color: #f9e89d;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style16 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #FE9D97;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style17 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #fffce9;
+  border: 1px solid #d1c9a4;
+}
+
+@mixin mod-rte5-style18 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #e3f6f8;
+  border: 1px solid #7ed1d9;
+}
+
+@mixin mod-rte5-style19 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #dce9fb;
+  border: 1px solid #c8dffe;
+}
+
+@mixin mod-rte5-style20 {
+  color: #352111;
+  padding: 15px 15px;
+  background-color: #fffce9;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style21 {
+  color: #294470;
+  padding: 15px 15px;
+  background-color: #e3f6f8;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style22 {
+  color: #45320b;
+  padding: 15px 15px;
+  background-color: #fef6b2;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style23 {
+  color: #331f13;
+  padding: 10px 15px;
+  background-color: #f7de5e;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style24 {
+  color: #331f13;
+  padding: 10px 15px;
+  background-color: #f9e89d;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style25 {
+  color: #331f13;
+  padding: 10px 15px;
+  background-color: #f7de5e;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style26 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #fffce9;
+  border: 1px solid #d1c9a4;
+}
+
+@mixin mod-rte5-style27 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #e3f6f8;
+  border: 1px solid #7ed1d9;
+}
+
+@mixin mod-rte5-style28 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #dce9fb;
+  border: 1px solid #c8dffe;
+}
+
+@mixin mod-rte5-style29 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #3ab2bf;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style30 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #3ab2bf;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style31 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #ffa658;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style32 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #f69e3c;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style33 {
+  color: #331f13;
+  padding: 10px 15px;
+  background-color: #f9e89d;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style34 {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #FE9D97;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte5-style35 {
+  color: #333333;
+  padding: 10px 15px;
+  background-color: #fffce9;
+  border: 1px solid #d1c9a4;
+}
+
+@mixin mod-rte5-style36 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #e3f6f8;
+  border: 1px solid #7ed1d9;
+}
+
+@mixin mod-rte5-style37 {
+  color: #45320b;
+  padding: 10px 15px;
+  background-color: #dce9fb;
+  border: 1px solid #c8dffe;
+}
+
+
+
+//  mod-rte7 の mixin一式
+@mixin mod-rte7-common-style {
+  padding: 10px;
+  // margin-bottom: 25px !important;//test
+  @include border-radius();
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+@mixin mod-rte7-style {
+  border: 0px none transparent;
+  background-color: #539af9;
+  color: #ffffff;
+}
+
+@mixin mod-rte7-style2 {
+  border: 0px none transparent;
+  background-color: #539af9;
+  color: #ffffff;
+}
+
+@mixin mod-rte7-style3 {
+  border: 0px none transparent;
+  background-color: #3ab2bf;
+  color: #ffffff;
+}
+
+@mixin mod-rte7-style4 {
+  border: 0px none transparent;
+  background-color: #ffa658;
+  color: #ffffff;
+}
+
+@mixin mod-rte7-style5 {
+  border: 0px none transparent;
+  background-color: #3c66ba;
+  color: #ffffff;
+}
+
+@mixin mod-rte7-style6 {
+  border: 0px none transparent;
+  background-color: #2e4e87;
+  color: #ffffff;
+}
+
+@mixin mod-rte7-style7 {
+  border: 0px none transparent;
+  background-color: #337FB2;
+  color: #ffffff;
+}
+
+@mixin mod-rte7-style8 {
+  border: 1px solid #d1c9a4;
+  background-color: #fffce9;
+  color: #333333;
+}
+
+@mixin mod-rte7-style9 {
+  border: 1px solid #7ed1d9;
+  background-color: #e3f6f8;
+  color: #45320b;
+}
+
+@mixin mod-rte7-style10 {
+  border: 1px solid #c8dffe;
+  background-color: #dce9fb;
+  color: #45320b;
+}
+
+
+
+//  mod-rte8 の mixin一式
+@mixin mod-rte8-common-style {
+  padding: 10px 10px;
+  // margin-bottom: 25px !important;//test
+  @include border-radius();
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+@mixin mod-rte8-style {
+  border: 0px none transparent;
+  background-color: #539af9;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style2 {
+  border: 0px none transparent;
+  background-color: #539af9;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style3 {
+  border: 0px none transparent;
+  background-color: #3ab2bf;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style4 {
+  border: 0px none transparent;
+  background-color: #ffa658;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style5 {
+  border: 0px none transparent;
+  background-color: #3c66ba;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style6 {
+  border: 0px none transparent;
+  background-color: #2e4e87;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style7 {
+  border: 0px none transparent;
+  background-color: #337FB2;
+  color: #ffffff;
+}
+
+@mixin mod-rte8-style8 {
+  border: 1px solid #d1c9a4;
+  background-color: #fffce9;
+  color: #333333;
+}
+
+@mixin mod-rte8-style9 {
+  border: 1px solid #7ed1d9;
+  background-color: #e3f6f8;
+  color: #45320b;
+}
+
+@mixin mod-rte8-style10 {
+  border: 1px solid #c8dffe;
+  background-color: #dce9fb;
+  color: #45320b;
+}
+
+
+//  mod-rte9 の mixin一式
+@mixin mod-rte9-common-style {
+  padding: 15px 15px;
+  // margin-bottom: 25px !important;//test
+  @include border-radius();
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+@mixin mod-rte9-style {
+  border: 0px none transparent;
+  background-color: #fffce9;
+  color: #352111;
+}
+
+@mixin mod-rte9-style2 {
+  border: 0px none transparent;
+  background-color: #fffce9;
+  color: #352111;
+}
+
+@mixin mod-rte9-style3 {
+  border: 0px none transparent;
+  background-color: #e3f6f8;
+  color: #294470;
+}
+
+@mixin mod-rte9-style4 {
+  border: 0px none transparent;
+  background-color: #fef6b2;
+  color: #45320b;
+}
+
+@mixin mod-rte9-style5 {
+  border: 0px none transparent;
+  background-color: #f7de5e;
+  color: #331f13;
+}
+
+@mixin mod-rte9-style6 {
+  border: 0px none transparent;
+  background-color: #f9e89d;
+  color: #331f13;
+}
+
+@mixin mod-rte9-style7 {
+  border: 0px none transparent;
+  background-color: #f7de5e;
+  color: #331f13;
+}
+
+@mixin mod-rte9-style8 {
+  border: 1px solid #5596f6;
+  background-color: #c8dffe;
+  color: #352111;
+}
+
+@mixin mod-rte9-style9 {
+  border: 1px solid #f2d028;
+  background-color: #fef8da;
+  color: #352111;
+}
+
+@mixin mod-rte9-style10 {
+  border: 1px solid #f79316;
+  background-color: #ffe9d6;
+  color: #352111;
+}
+
+
+//  mod-rte10 の mixin一式
+@mixin mod-rte10-common-style {
+  @include border-radius();
+  padding: 10px 10px;
+  // margin-bottom: 25px !important;//test
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+@mixin mod-rte10-style {
+  color: #352111;
+  background-color: #fffce9;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte10-style2 {
+  color: #352111;
+  background-color: #fffce9;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte10-style3 {
+  color: #294470;
+  background-color: #e3f6f8;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte10-style4 {
+  color: #45320b;
+  background-color: #fef6b2;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte10-style5 {
+  color: #331f13;
+  background-color: #f7de5e;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte10-style6 {
+  color: #331f13;
+  background-color: #f9e89d;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte10-style7 {
+  color: #331f13;
+  background-color: #f9e89d;
+  border: 0px none transparent;
+}
+
+@mixin mod-rte10-style8 {
+  color: #352111;
+  background-color: #c8dffe;
+  border: 1px solid #5596f6;
+}
+
+@mixin mod-rte10-style9 {
+  color: #352111;
+  background-color: #fef8da;
+  border: 1px solid #f2d028;
+}
+
+@mixin mod-rte10-style10 {
+  color: #352111;
+  background-color: #ffe9d6;
+  border: 1px solid #f79316;
+}
+
+
+//  mod-rte11 の mixin一式
+@mixin mod-rte11-common-style {
+  // margin-bottom: 25px !important;//test
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+
+//  mod-rte12 の mixin一式
+@mixin mod-rte12-common-style {
+  // margin-bottom: 25px !important;//test
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+@mixin mod-rte12-style {
+  color: #333333;
+}
+
+@mixin mod-rte12-style2 {
+  color: #333333;
+}
+
+@mixin mod-rte12-style3 {
+  color: #333333;
+}
+
+@mixin mod-rte12-style4 {
+  color: #56534e;
+}
+
+@mixin mod-rte12-style5 {
+  color: #ffffff;
+}
+
+@mixin mod-rte12-style6 {
+  color: #ffffff;
+}
+
+@mixin mod-rte12-style7 {
+  color: #443308;
+}
+
+@mixin mod-rte12-style8 {
+  color: #333333;
+}
+
+@mixin mod-rte12-style9 {
+  color: #333333;
+}
+
+@mixin mod-rte12-style10 {
+  color: #45320b;
+}
+
+
+//  mod-rte13 の mixin一式
+@mixin mod-rte13-common-style {
+  // margin-bottom: 25px !important;//test
+  text-align: right;
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+@mixin mod-rte13-style {
+  color: #333333;
+}
+
+@mixin mod-rte13-style2 {
+  color: #333333;
+}
+
+@mixin mod-rte13-style3 {
+  color: #333333;
+}
+
+@mixin mod-rte13-style4 {
+  color: #56534e;
+}
+
+@mixin mod-rte13-style5 {
+  color: #ffffff;
+}
+
+@mixin mod-rte13-style6 {
+  color: #ffffff;
+}
+
+@mixin mod-rte13-style7 {
+  color: #443308;
+}
+
+@mixin mod-rte13-style8 {
+  color: #333333;
+}
+
+@mixin mod-rte13-style9 {
+  color: #333333;
+}
+
+@mixin mod-rte13-style10 {
+  color: #45320b;
+}
+
+
+//  mod-text の mixin一式
+@mixin mod-text-common-style {
+  font-size: $fontSizeS + 1;
+  // margin-bottom: 25px !important;//test
+}
+
+
+
+//  mod-text2 の mixin一式
+@mixin mod-text2-common-style {
+  font-size: $fontSizeS + 1;
+  // margin-bottom: 10px !important;//test
+}
+
+@mixin mod-text2-style {
+  .area-header & {
+    color: #333333;
+  }
+}
+
+@mixin mod-text2-style2 {
+  .area-header & {
+    color: #333333;
+  }
+}
+
+@mixin mod-text2-style3 {
+  .area-header & {
+    color: #333333;
+  }
+}
+
+@mixin mod-text2-style4 {
+  .area-header & {
+    color: #56534e;
+  }
+}
+
+@mixin mod-text2-style5 {
+  .area-header & {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-text2-style6 {
+  .area-header & {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-text2-style7 {
+  .area-header & {
+    color: #443308;
+  }
+}
+
+@mixin mod-text2-style8 {
+  .area-header & {
+    color: #333333;
+  }
+}
+
+@mixin mod-text2-style9 {
+  .area-header & {
+    color: #333333;
+  }
+}
+
+@mixin mod-text2-style10 {
+  .area-header & {
+    color: #45320b;
+  }
+}
+
+
+//  mod-text4 の mixin一式
+@mixin mod-text4-common-style {
+  font-size: $fontSizeS + 1;
+  text-align: center;
+  // margin-bottom: 10px !important;//test
+}
+
+
+
+//  mod-text5 の mixin一式
+@mixin mod-text5-common-style {
+  // margin-bottom: 30px !important;//test
+}
+
+@mixin mod-text5-style {
+  color: #333333;
+}
+
+@mixin mod-text5-style2 {
+  color: #333333;
+}
+
+@mixin mod-text5-style3 {
+  color: #333333;
+}
+
+@mixin mod-text5-style4 {
+  color: #56534e;
+}
+
+@mixin mod-text5-style5 {
+  color: #ffffff;
+}
+
+@mixin mod-text5-style6 {
+  color: #ffffff;
+}
+
+@mixin mod-text5-style7 {
+  color: #443308;
+}
+
+@mixin mod-text5-style8 {
+  color: #333333;
+}
+
+@mixin mod-text5-style9 {
+  color: #333333;
+}
+
+@mixin mod-text5-style10 {
+  color: #45320b;
+}
+
+
+//  mod-text7 の mixin一式
+@mixin mod-text7-common-style {
+  text-align: center;
+  // margin-bottom: 30px !important;//test
+}
+
+
+//  mod-text8 の mixin一式
+@mixin mod-text8-common-style {
+  font-size: $fontSizeL;
+  // margin-bottom: 10px !important;//test
+}
+
+@mixin mod-text8-style {
+  color: #f7931d;
+}
+
+@mixin mod-text8-style2 {
+  color: #f7931d;
+}
+
+@mixin mod-text8-style3 {
+  color: #0b7d89;
+}
+
+@mixin mod-text8-style4 {
+  color: #f7931d;
+}
+
+@mixin mod-text8-style5 {
+  color: #ffffff;
+}
+
+@mixin mod-text8-style6 {
+  color: #ffffff;
+}
+
+@mixin mod-text8-style7 {
+  color: #443308;
+}
+
+@mixin mod-text8-style8 {
+  color: #333333;
+}
+
+@mixin mod-text8-style9 {
+  color: #0c7d8b;
+}
+
+@mixin mod-text8-style10 {
+  color: #2b4369;
+}
+
+
+//  mod-text9 の mixin一式
+@mixin mod-text9-common-style {
+  color: #ffffff;
+  font-size: $fontSizeM - 2;
+}
+
+
+//  mod-text10 の mixin一式
+@mixin mod-text10-common-style {
+  color: #ffffff;
+  font-size: $fontSizeM - 2;
+  text-align: center;
+}
+
+
+//  mod-text11 の mixin一式
+@mixin mod-text11-common-style {
+  color: #ffffff;
+  font-size: $fontSizeM - 2;
+  text-align: right;
+}
+
+//  mod-text14 の mixin一式
+@mixin mod-text14-common-style {
+  // margin-bottom: 15px !important;//test
+  font-size: $fontSizeL + 6;
+  font-weight: bold;
+}
+
+@mixin mod-text14-style {
+  color: #f7931d;
+}
+
+@mixin mod-text14-style2 {
+  color: #f7931d;
+}
+
+@mixin mod-text14-style3 {
+  color: #f2c900;
+}
+
+@mixin mod-text14-style4 {
+  color: #fd8e89;
+}
+
+@mixin mod-text14-style5 {
+  color: #f7931d;
+}
+
+@mixin mod-text14-style6 {
+  color: #f7931d;
+}
+
+@mixin mod-text14-style7 {
+  color: #f7931d;
+}
+
+@mixin mod-text14-style8 {
+  color: #0c7c8a;
+}
+
+@mixin mod-text14-style9 {
+  color: #097d8a;
+}
+
+@mixin mod-text14-style10 {
+  color: #f7931d;
+}
+
+//  mod-text17 の mixin一式
+@mixin mod-text17-common-style {
+  text-align: center;
+}
+
+
+//  mod-text18 の mixin一式
+@mixin mod-text18-common-style {
+  // margin-bottom: 15px !important;//test
+  font-size: $sideFontSizeL - 1;
+  font-weight: bold;
+}
+
+@mixin mod-text18-style {
+  color: #333333;
+}
+
+@mixin mod-text18-style2 {
+  color: #333333;
+}
+
+@mixin mod-text18-style3 {
+  color: #56534e;
+}
+
+@mixin mod-text18-style4 {
+  color: #56534e;
+}
+
+//  mod-text19 の mixin一式
+@mixin mod-text19-common-style {
+  text-align: center;
+}
+
+@mixin mod-text19-style {
+  color: #ffffff;
+}
+
+
+
+//  mod-text20 の mixin一式
+@mixin mod-text20-common-style {
+  text-align: center;
+}
+
+@mixin mod-text20-style {
+  color: #333333;
+}
+
+//  mod-text21 の mixin一式
+@mixin mod-text21-common-style {
+  text-align: center;
+  font-size: 13px;
+}
+
+@mixin mod-text21-style {
+  color: #333333;
+}

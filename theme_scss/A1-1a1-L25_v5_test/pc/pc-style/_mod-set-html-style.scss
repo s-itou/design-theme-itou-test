@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+// ***********************
+//   mod-set-html
+// ***********************
+
+// ----------------------------
+// common-style
+// ----------------------------
+@mixin common-style-mod-set-html {
+  padding: 1px 0 0 0;
+}
+
+// ----------------------------
+// module-style
+// ----------------------------
+@mixin module-style-mod-set-html {
+}
+
+@mixin module-style-mod-set-html-header {
+  width: 980px;
+  margin: 0 auto;
+}
+
+@mixin module-style-mod-set-html-footer {
+  width: 980px;
+  margin: 0 auto;
+}
+
+@mixin module-style-mod-set-html-side {
+}

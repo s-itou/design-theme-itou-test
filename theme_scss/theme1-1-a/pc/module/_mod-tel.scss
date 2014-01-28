@@ -1,0 +1,2739 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%default-number-base{
+  margin: 0;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+}
+%default-number {
+  @extend %default-number-base;
+  font-size: 32px;
+  color: $f_telColor;
+}
+%default-number2 {
+  @extend %default-number-base;
+  font-size: 32px;
+  color: $h_telColor;
+}
+%default-number3 {
+  @extend %default-number-base;
+  font-size: 22px;
+  color: $f_telColor;
+}
+%default-number4 {
+  @extend %default-number-base;
+  font-size: $sideFontSizeL - 1;
+  font-weight: bold;
+  color: $s_telColor;
+}
+%default-number5 {
+  @extend %default-number-base;
+  font-size: 25px;
+  color: $m_telColor;
+}
+%default-number6 {
+  @extend %default-number-base;
+  font-size: $sideFontSizeL - 1;
+  color: $s_tel2Color;
+}
+%default-number7 {
+  @extend %default-number-base;
+  font-size: $sideFontSizeL + 22;
+  color: $m_telColor;
+}
+%default-number8 {
+  @extend %default-number-base;
+  font-size: $sideFontSizeL + 2;
+  color: $s_tel3Color !important;
+}
+%default-address {
+  @extend %default-number-base;
+  font-size: 20px;
+  color: $f_telColor;
+}
+%default-address2 {
+  @extend %default-number-base;
+  font-size: 16px;
+  color: $f_telColor;
+}
+%default-address3 {
+  @extend %default-number-base;
+  font-size: $sideFontSizeL - 1;
+  color: $h_telColor;
+}
+%default-address4 {
+  @extend %default-number-base;
+  color: $s_tel2Color;
+}
+%default-goro {
+  font-size: 13px;
+  line-height: 1.0;
+  margin-bottom: 3px;
+}
+%default-goro2 {
+  font-size: 12px;
+  line-height: 1.0;
+  margin-bottom: 3px;
+}
+%default-goro3 {
+  font-size: $sideFontSizeS;
+  line-height: 1.0;
+  margin-bottom: 2px;
+}
+%default-goro4 {
+  font-size: $fontSizeM - 1;
+  line-height: 1.0;
+  margin-bottom: 3px;
+}
+
+%cv-tel3-s {  // カラバリ橙 サイド3
+  color: $s_tel2Color3;
+}
+
+
+
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+//------------------
+// mod-ftel
+//------------------
+
+//フッター
+.mod-ftel {
+  margin-bottom: 10px;
+  padding-left: 40px;
+  @include background("mod-ftel/bg02.png", $position-y: bottom);
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $df_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $df_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $df_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//フッター
+.mod-ftel2 {
+  margin-bottom: 10px;
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $df_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $df_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $df_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//ヘッダー
+.mod-ftel3 {
+  margin-bottom: 10px;
+  padding: 0 0 0 35px;
+  @include background("mod-ftel/bg02.png", $position-y: bottom);
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $h_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $h_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $d_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $d_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $d_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor3;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-ftel-inner2 {
+      color: #284469;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: #f7931d;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: #519dce;
+    }
+  }
+}
+
+//ヘッダー
+.mod-ftel4 {
+  margin-bottom: 10px;
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $h_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $h_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $d_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $d_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $d_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $d_telColor3;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-ftel-inner2 {
+      color: #284469;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: #f7931d;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: #519dce;
+    }
+  }
+}
+
+//フッター
+.mod-ftel7 {
+  margin-bottom: 10px;
+  padding-left: 35px;
+  @include background("mod-ftel/bg03.png", $position-y: bottom);
+  .mod-ftel-inner {
+    @extend %default-goro2;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number3;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-ftel/bg03.png");
+    .mod-ftel-inner {
+      color: $df_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-ftel/bg03.png");
+    .mod-ftel-inner {
+      color: $df_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-ftel/bg03.png");
+    .mod-ftel-inner {
+      color: $df_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//フッター
+.mod-ftel8 {
+  margin-bottom: 10px;
+  .mod-ftel-inner {
+    @extend %default-goro2;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number3;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-ftel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-ftel-inner {
+      color: $df_punColor;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-ftel-inner {
+      color: $df_punColor2;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-ftel-inner {
+      color: $df_punColor3;
+    }
+    .mod-ftel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+.mod-ftel9 {
+  margin-bottom: 10px;
+  padding: 0 0 0 40px;
+  @include background("mod-ftel/bg04.png", $position-y: bottom);
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number5;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+.mod-ftel10 {
+  margin-bottom: 10px;
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number5;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+//サイド
+.mod-ftel11 {
+  margin-bottom: 5px;
+  padding: 0 0 0 30px;
+  @include background("mod-ftel/bg.png", $position-y: bottom);
+  .mod-ftel-inner {
+    @extend %default-goro3;
+    margin-bottom: 4px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number4;
+    padding-top: 2px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $s_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $s_telColor3;
+    }
+  }
+}
+
+.mod-ftel12 {
+  margin-bottom: 5px;
+  .mod-ftel-inner {
+    @extend %default-goro3;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number4;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $s_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $s_telColor3;
+    }
+  }
+}
+
+.mod-ftel13 {
+  margin-bottom: 15px;
+  padding: 0 0 0 45px;
+  @include background("mod-ftel/bg05.png", $position-y: bottom);
+  .mod-ftel-inner {
+    @extend %default-goro4;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number7;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+.mod-ftel14 {
+  margin-bottom: 15px;
+  .mod-ftel-inner {
+    @extend %default-goro4;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number7;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+.mod-ftel15 {
+  margin-bottom: 5px !important;
+  padding: 0 0 0 30px;
+  @include background("mod-ftel/bg.png", $position-y: bottom);
+  .mod-ftel-inner {
+    @extend %default-goro3;
+    margin-bottom: 4px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number8;
+    padding-top: 2px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $s_tel3Color2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $s_tel3Color3;
+    }
+  }
+}
+
+.mod-ftel16 {
+  margin-bottom: 5px !important;
+  .mod-ftel-inner {
+    @extend %default-goro3;
+    margin-bottom: 4px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number8;
+    padding-top: 2px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-ftel-inner2 {
+      color: $s_tel3Color2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-ftel-inner2 {
+      color: $s_tel3Color3;
+    }
+  }
+}
+
+
+
+//------------------
+// mod-tel
+//------------------
+
+//フッター
+.mod-tel {
+  margin-bottom: 10px;
+  padding-left: 40px;
+  @include background("mod-tel/bg02.png", $position-y: bottom);
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-tel/bg02_2.png");
+    .mod-tel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-tel/bg02_3.png");
+    .mod-tel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-tel/bg09.png");
+    .mod-tel-inner {
+      color: $df_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-tel/bg09_2.png");
+    .mod-tel-inner {
+      color: $df_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-tel/bg09_3.png");
+    .mod-tel-inner {
+      color: $df_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+//フッター
+.mod-tel2 {
+  margin-bottom: 10px;
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-tel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-tel-inner {
+      color: $df_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-tel-inner {
+      color: $df_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-tel-inner {
+      color: $df_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner {
+      color: #45320b;
+    }
+    .mod-tel-inner2 {
+      color: #45320b;
+    }
+  }
+}
+
+
+//ヘッダー
+.mod-tel3 {
+  margin-bottom: 10px;
+  padding-left: 35px;
+  @include background("mod-tel/bg04.png", $position-y: bottom);
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url("img/mod-tel/bg04_2.png");
+    .mod-tel-inner2 {
+      color: $h_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url("img/mod-tel/bg04_3.png");
+    .mod-tel-inner2 {
+      color: $h_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-tel/bg09.png");
+    .mod-tel-inner {
+      color: $d_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-tel/bg09_2.png");
+    .mod-tel-inner {
+      color: $d_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-tel/bg09_3.png");
+    .mod-tel-inner {
+      color: $d_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor3;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-tel-inner2 {
+      color: #284469;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-tel/bg11_2.png");
+    .mod-tel-inner2 {
+      color: #f7931d
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-tel/bg11_3.png");
+    .mod-tel-inner2 {
+      color: #519dce;
+    }
+  }
+}
+
+//ヘッダー
+.mod-tel4 {
+  margin-bottom: 10px;
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $h_telColor2;
+    }
+  }
+   .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $h_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-tel-inner {
+      color: $d_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-tel-inner {
+      color: $d_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-tel-inner {
+      color: $d_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $d_telColor3;
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    .mod-tel-inner2 {
+      color: #284469;
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-tel-inner2 {
+      color: #f7931d
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner2 {
+      color: #519dce;
+    }
+  }
+}
+
+//フッター
+.mod-tel7 {
+  margin-bottom: 10px;
+  padding: 5px 0 0 35px;
+  @include background("mod-tel/bg03.png", $position-y: bottom);
+  .mod-tel-inner {
+    @extend %default-goro2;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number3;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-tel/bg03_2.png");
+    .mod-tel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-tel/bg03_3.png");
+    .mod-tel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-tel/bg10.png");
+    .mod-tel-inner {
+      color: $df_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-tel/bg10_2.png");
+    .mod-tel-inner {
+      color: $df_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-tel/bg10_3.png");
+    .mod-tel-inner {
+      color: $df_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner {
+      color: #45320b;
+    }
+    .mod-tel-inner2 {
+      color: #45320b;
+    }
+  }
+}
+
+
+//フッター
+.mod-tel8 {
+  margin-bottom: 10px;
+  .mod-tel-inner {
+    @extend %default-goro2;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number3;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    .mod-tel-inner2 {
+      color: $f_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    .mod-tel-inner2 {
+      color: $f_telColor3;
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    .mod-tel-inner {
+      color: $df_punColor;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor;
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    .mod-tel-inner {
+      color: $df_punColor2;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor2;
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    .mod-tel-inner {
+      color: $df_punColor3;
+    }
+    .mod-tel-inner2 {
+      color: $df_telColor3;
+    }
+  }
+}
+
+
+//メイン
+.mod-tel11 {
+  margin-bottom: 10px;
+  padding: 0 0 0 40px;
+  @include background("mod-tel/bg05.png", $position-y: bottom);
+  .mod-tel-inner {
+    @extend %default-goro;
+    margin-bottom: 0;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number5;
+    padding-top: 5px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-tel/bg05_2.png);
+    .mod-tel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-tel/bg05_3.png);
+    .mod-tel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+
+//メイン
+.mod-tel12 {
+  margin-bottom: 10px;
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number5;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+//サイド
+.mod-tel13 {
+  margin-bottom: 5px;
+  padding: 0 0 0 30px;
+  @include background("mod-tel/bg08.png", $position-y: bottom);
+  .mod-tel-inner {
+    @extend %default-goro3;
+    margin-bottom: 0;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number4;
+    padding-top: 6px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-tel/bg08_2.png);
+    .mod-tel-inner2 {
+      color: $s_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-tel/bg08_3.png);
+    .mod-tel-inner2 {
+      color: $s_telColor3;
+    }
+  }
+}
+
+.mod-tel14 {
+  margin-bottom: 5px;
+  .mod-tel-inner {
+    @extend %default-goro3;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number4;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $s_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $s_telColor3;
+    }
+  }
+}
+
+.mod-tel15 {
+  margin-bottom: 15px;
+  padding: 0 0 0 45px;
+  @include background("mod-tel/bg06.png", $position-y: bottom);
+  .mod-tel-inner {
+    @extend %default-goro4;
+    margin-bottom: 0;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number7;
+    padding-top: 2px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-tel/bg06_2.png);
+    .mod-tel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-tel/bg06_3.png);
+    .mod-tel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+.mod-tel16 {
+  margin-bottom: 15px;
+  .mod-tel-inner {
+    @extend %default-goro4;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number7;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $m_telColor2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $m_telColor3;
+    }
+  }
+}
+
+.mod-tel17 {
+  margin-bottom: 5px;
+  padding: 0 0 0 30px;
+  @include background("mod-tel/bg08.png", $position-y: bottom);
+  .mod-tel-inner {
+    @extend %default-goro3;
+    margin-bottom: 0;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number8;
+    padding-top: 6px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-tel/bg08_2.png);
+    .mod-tel-inner2 {
+      color: $s_tel3Color2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-tel/bg08_3.png);
+    .mod-tel-inner2 {
+      color: $s_tel3Color3;
+    }
+  }
+}
+
+.mod-tel18 {
+  margin-bottom: 5px;
+  .mod-tel-inner {
+    @extend %default-goro3;
+    margin-bottom: 0;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number8;
+    padding-top: 6px;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    .mod-tel-inner2 {
+      color: $s_tel3Color2;
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    .mod-tel-inner2 {
+      color: $s_tel3Color3;
+    }
+  }
+}
+
+
+
+//------------------
+// mod-fax
+//------------------
+
+//ヘッダー
+.mod-fax {
+  @extend %default-number2;
+  margin-bottom: 10px !important;
+  padding: 5px 0 0 35px;
+  @include background("mod-fax/bg02.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url("img/mod-fax/bg02_2.png");
+    color: $h_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url("img/mod-fax/bg02_3.png");
+    color: $h_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-fax/bg07.png");
+    color: $d_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-fax/bg07_2.png");
+    color: $d_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-fax/bg07_3.png");
+    color: $d_telColor3;
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    color: #284469;
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-fax/bg09_2.png");
+    color: #f7931d
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-fax/bg09_3.png");
+    color: #519dce;
+  }
+}
+
+//ヘッダー
+.mod-fax2 {
+  @extend %default-number2;
+  margin-bottom: 10px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $h_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $h_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $d_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $d_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $d_telColor3;
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    color: #284469;
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: #f7931d
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #519dce;
+  }
+}
+
+//フッター
+.mod-fax3 {
+  @extend %default-number;
+  margin-bottom: 10px !important;
+  padding: 5px 0 0 35px;
+  @include background("mod-fax/bg03.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url(img/mod-fax/bg03_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url(img/mod-fax/bg03_3.png);
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_SupColor;
+    background-image: url(img/mod-fax/bg07.png);
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_SupColor2;
+    background-image: url(img/mod-fax/bg07_2.png);
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: #443308;
+    background-image: url(img/mod-fax/bg07_3.png);
+  }
+}
+
+//フッター
+.mod-fax4 {
+  @extend %default-number;
+  margin-bottom: 10px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_SupColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_SupColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_SupColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-fax5 {
+  @extend %default-number3;
+  margin-bottom: 10px !important;
+  padding: 5px 0 0 35px;
+  @include background("mod-fax/bg04.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url(img/mod-fax/bg04_3.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url(img/mod-fax/bg04_3.png);
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+     background-image: url("img/mod-fax/bg08.png");
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+     background-image: url("img/mod-fax/bg08_2.png");
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+     background-image: url("img/mod-fax/bg08_3.png");
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-fax6 {
+  @extend %default-number3;
+  margin-bottom: 10px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+
+.mod-fax7 {
+  @extend %default-number5;
+  margin-bottom: 10px !important;
+  padding: 5px 0 0 40px;
+  @include background("mod-fax/bg05.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+    background-image: url(img/mod-fax/bg05_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-fax/bg05_3.png);
+    color: $m_telColor3;
+  }
+}
+
+.mod-fax8 {
+  @extend %default-number5;
+  margin-bottom: 10px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $m_telColor3;
+  }
+}
+
+//フッター
+.mod-fax9 {
+  @extend %default-number4;
+  margin-bottom: 5px !important;
+  padding: 3px 0 0 30px;
+  @include background("mod-fax/bg.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-fax/bg_2.png);
+    color: $s_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-fax/bg_3.png);
+    color: $s_telColor3;
+  }
+}
+
+.mod-fax10 {
+  @extend %default-number4;
+  margin-bottom: 5px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_telColor3;
+  }
+}
+
+.mod-fax11 {
+  @extend %default-number6;
+  margin-bottom: 5px !important;
+  padding: 3px 0 0 30px;
+  @include background("mod-fax/bg06.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-fax/bg06_2.png);
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-fax/bg06_3.png);
+    color: $s_tel2Color3;
+  }
+}
+
+.mod-fax12 {
+  @extend %default-number6;
+  margin-bottom: 5px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+  }
+}
+
+
+
+
+//------------------
+// mod-cell
+//------------------
+
+//フッター
+.mod-cell {
+  margin-bottom: 10px !important;
+  padding: 9px 0 0 40px;
+  @extend %default-number;
+  @include background("mod-cell/bg02.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url("img/mod-cell/bg02_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url("img/mod-cell/bg02_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-cell/bg07.png");
+      color: $d_punColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-cell/bg07_2.png");
+      color: $d_punColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-cell/bg07_3.png");
+      color: $d_punColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-cell2 {
+  margin-bottom: 10px !important;
+  @extend %default-number;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $d_punColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $d_punColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $d_punColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//ヘッダー
+.mod-cell3 {
+  @extend %default-number2;
+  margin-bottom: 10px !important;
+  padding: 9px 0 0 35px;
+  @include background("mod-cell/bg04.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $h_telColor2;
+    background-image: url("img/mod-cell/bg04_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $h_telColor3;
+    background-image: url("img/mod-cell/bg04_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    background-image: url("img/mod-cell/bg07.png");
+    color: $d_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    background-image: url("img/mod-cell/bg07_2.png");
+    color: $d_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    background-image: url("img/mod-cell/bg07_3.png");
+    color: $d_telColor3;
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    color: #284469;
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    background-image: url("img/mod-cell/bg09_2.png");
+    color: #f7931d
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    background-image: url("img/mod-cell/bg09_3.png");
+    color: #519dce;
+  }
+}
+
+//ヘッダー
+.mod-cell4 {
+  @extend %default-number2;
+  margin-bottom: 10px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $h_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $h_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $d_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $d_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $d_telColor3;
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    color: #284469;
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: #f7931d
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #519dce;
+  }
+}
+
+//フッター
+.mod-cell7 {
+  @extend %default-number3;
+  margin-bottom: 10px !important;
+  padding: 9px 0 0 35px;
+  @include background("mod-cell/bg03.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url("img/mod-cell/bg03_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url("img/mod-cell/bg03_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: #ffffff;
+    background-image: url("img/mod-cell/bg08.png");
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+    background-image: url("img/mod-cell/bg08_2.png");
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+    background-image: url("img/mod-cell/bg08_3.png");
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-cell8 {
+  @extend %default-number3;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//メイン
+.mod-cell9 {
+  @extend %default-number5;
+  margin-bottom: 10px !important;
+  padding: 5px 0 0 40px;
+  @include background("mod-cell/bg05.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+    background-image: url(img/mod-cell/bg05_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-cell/bg05_3.png);
+    color: $m_telColor3;
+  }
+}
+
+.mod-cell10 {
+  @extend %default-number5;
+  margin-bottom: 10px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $m_telColor3;
+  }
+}
+
+
+//サイド
+.mod-cell11 {
+  @extend %default-number4;
+  min-height: 18px;
+  margin-bottom: 5px !important;
+  padding: 5px 0 0 30px;
+  @include background("mod-cell/bg.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-cell/bg_2.png);
+    color: $s_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-cell/bg_3.png);
+    color: $s_telColor3;
+  }
+}
+
+.mod-cell12 {
+  @extend %default-number4;
+  margin-bottom: 5px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_telColor3;
+  }
+}
+
+.mod-cell13 {
+  @extend %default-number6;
+  min-height: 18px;
+  margin-bottom: 5px !important;
+  padding: 5px 0 0 30px;
+  @include background("mod-cell/bg06.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-cell/bg06_2.png);
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-cell/bg06_3.png);
+    color: $s_tel2Color3;
+  }
+}
+
+.mod-cell14 {
+  @extend %default-number6;
+  margin-bottom: 5px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+  }
+}
+
+
+//フッター
+.mod-email {
+  margin-bottom: 10px !important;
+  padding-left: 40px;
+  @extend %default-address;
+  @include background("mod-email/bg02.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url("img/mod-email/bg02_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url("img/mod-email/bg02_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+    background-image: url("img/mod-email/bg07.png");
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+    background-image: url("img/mod-email/bg07_2.png");
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+    background-image: url("img/mod-email/bg07_3.png");
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-email2 {
+  @extend %default-address;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-email3 {
+  @extend %default-address2;
+  padding: 2px 0 2px 35px;
+  @include background("mod-email/bg03.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+    background-image: url("img/mod-email/bg03_2.png");
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+    background-image: url("img/mod-email/bg03_3.png");
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+    background-image: url("img/mod-email/bg06.png");
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+    background-image: url("img/mod-email/bg06_2.png");
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+    background-image: url("img/mod-email/bg06_3.png");
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+//フッター
+.mod-email4 {
+  @extend %default-address2;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d &,
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    color: $f_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d &,
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: $f_telColor3;
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    color: $df_telColor;
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    color: $df_telColor2;
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    color: $df_telColor3;
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    color: #45320b;
+  }
+}
+
+.mod-email5 {
+  margin-bottom: 10px !important;
+  padding: 1px 0 2px 40px;
+  @extend %default-address;
+  @include background("mod-email/bg04.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+    background-image: url(img/mod-email/bg04_2.png);
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-email/bg04_3.png);
+    color: $m_telColor3;
+  }
+}
+
+
+.mod-email6 {
+  margin-bottom: 10px !important;
+  @extend %default-address;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $m_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $m_telColor3;
+  }
+}
+
+.mod-email7 {
+  @extend %default-number4;
+  margin-bottom: 5px !important;
+  padding: 0 0 0 30px;
+  @include background("mod-email/bg.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-email/bg_2.png);
+    color: $s_telColor2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-email/bg_3.png);
+    color: $s_telColor3;
+  }
+}
+
+.mod-email8 {
+  @extend %default-number4;
+  margin-bottom: 5px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    color: $s_tel2Color3;
+  }
+}
+
+//フッター
+.mod-email9 {
+  @extend %default-address4;
+  margin-bottom: 5px !important;
+  padding: 0 0 0 30px;
+  @include background("mod-email/bg05.png", $position-y: center);
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    background-image: url(img/mod-email/bg05_2.png);
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    background-image: url(img/mod-email/bg05_3.png);
+    color: $s_tel2Color3;
+  }
+}
+
+.mod-email10 {
+  @extend %default-address4;
+  margin-bottom: 5px !important;
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    color: $s_tel2Color2;
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {;
+    color: $s_tel2Color3;
+  }
+}

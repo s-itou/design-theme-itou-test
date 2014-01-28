@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-fax12-style";
+
+.mod-fax12 {
+  @include mod-fax12-common-style;
+  @include mod-fax12-style2;
+  .ex-style_01A2 & {
+    @include mod-fax12-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-fax12-style3;
+  }
+}
+

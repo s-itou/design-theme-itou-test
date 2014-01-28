@@ -1,0 +1,25 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// mod-set-credit の共通定義
+//
+// -----------------------------------
+
+@mixin common-style-mod-set-credit {
+  @extend %cf;
+  padding: 10px 7px 10px 7px;
+  .mod-img:first-child {
+    margin: 0 !important;
+  }
+  .mod-img {
+    float: left;
+    margin: 0 0 0 10px !important; //もとのmod-imgにimportantがあるため打ち消しに
+    img {
+      @if $layoutCode == "L25" {
+        width: 60px;
+      } @else if $layoutCode == "L30" {
+        width: 54px;
+      }
+    }
+  }
+}

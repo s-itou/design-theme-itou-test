@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import "../pc-style/mod-html-style";
+
+
+.mod-html {
+  @include mod-html-common-style;
+  @include mod-html-style;
+  .ex-style_01A1 & {
+    @include mod-html-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-html-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-html-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-html-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-html-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-html-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-html-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-html-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-html-style10;
+  }
+}
+
+
+.mod-html2 {
+  @include mod-html2-common-style;
+  @include mod-html2-style;
+  .ex-style_01A1 & {
+    @include mod-html2-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-html2-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-html2-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-html2-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-html2-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-html2-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-html2-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-html2-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-html2-style10;
+  }
+}
+
+
+.mod-html3 {
+  @include mod-html3-common-style;
+}
+
+
+.mod-html4 {
+  @include mod-html4-common-style;
+  @include mod-html4-style;
+  .ex-style_01A1 & {
+    @include mod-html4-style2;
+  }
+  .ex-style_01A2 & {
+    @include mod-html4-style3;
+  }
+  .ex-style_01A3 & {
+    @include mod-html4-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-html4-style5;
+  }
+  .ex-style_01B2 & {
+    @include mod-html4-style6;
+  }
+  .ex-style_01B3 & {
+    @include mod-html4-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-html4-style8;
+  }
+  .ex-style_01C2 & {
+    @include mod-html4-style9;
+  }
+  .ex-style_01C3 & {
+    @include mod-html4-style10;
+  }
+}
+
+
+.mod-html5 {
+  @include mod-html5-common-style;
+}
+
+
+.mod-html-spec {
+  @include mod-html-spec-common-style;
+}
+
+
+

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@mixin mod-box27-common-style {
+width: 100%;
+  padding: 5px 10px;
+  @include border-radius();
+  text-align: center;
+}
+
+@mixin mod-box27-style {
+border: 1px solid #d0d6dc;
+  background-color: #fdfaeb;
+}
+

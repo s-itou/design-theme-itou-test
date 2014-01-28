@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-rte4-style";
+
+.mod-rte4 {
+  @include mod-rte4-common-style;
+  .ex-style_01A2 & {
+    @include mod-rte4-style;
+  }
+}
+

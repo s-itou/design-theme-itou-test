@@ -1,0 +1,1125 @@
+@charset "UTF-8";
+
+
+//  mod-link の mixin一式
+@mixin mod-link-common-style {
+  // @extend %inlineBlock;
+  padding-left: 20px;
+  line-height: 1.4;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  p {
+    min-width: 15px;
+  }
+  a & {
+    &:hover {
+      p {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@mixin mod-link-style {
+  background-image: url("img/mod-link/bg.png");
+  a & {
+    color: #335a93;
+  }
+  a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-style2 {
+  background-image: url("img/mod-link/bg.png");
+  a & {
+    color: #335a93;
+  }
+  a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-style3 {
+  background-image: url("img/mod-link/bg_2.png");
+  a & {
+    color: #294470;
+  }
+  a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link-style4 {
+  background-image: url("img/mod-link/bg_3.png");
+  a & {
+    color: #45320b;
+  }
+  a {
+    color: #45320b;
+  }
+}
+
+@mixin mod-link-style5 {
+  background-image: url("img/mod-link/bg.png");
+  a & {
+    color: #335a93;
+  }
+  a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-style6 {
+  background-image: url("img/mod-link/bg.png");
+  a & {
+    color: #335a93;
+  }
+  a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-style7 {
+  background-image: url("img/mod-link/bg.png");
+  a & {
+    color: #335a93;
+  }
+  a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-style8 {
+  background-image: url("img/mod-link/bg.png");
+  a & {
+    color: #335a93;
+  }
+  a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-style9 {
+  background-image: url("img/mod-link/bg.png");
+  a & {
+    color: #335a93;
+  }
+  a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-style10 {
+  background-image: url("img/mod-link/bg.png");
+  a & {
+    color: #335a93;
+  }
+  a {
+    color: #335a93;
+  }
+}
+
+
+
+
+//  mod-link2 の mixin一式
+@mixin mod-link2-common-style {
+  p {
+    @extend %inlineBlock;
+    padding-left: 20px;
+    line-height: 1.4;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: left 4px;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link2-style {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link2-style2 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link2-style3 {
+  p {
+    background-image: url("img/mod-link/bg_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link2-style4 {
+  p {
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+@mixin mod-link2-style5 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link2-style6 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link2-style7 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link2-style8 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link2-style9 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link2-style10 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+
+//  mod-link4 の mixin一式 //削除予定
+@mixin mod-link4-common-style {
+  @extend %inlineBlock;
+  max-width: 100%;
+  @include box-sizing(border-box);
+  min-height: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 10px 0 13px;
+  color: #1d6fde;
+  font-size: $fontSizeS + 1;
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  p {
+    min-width: 15px;
+  }
+  a &, a {
+    text-decoration: underline;
+  }
+}
+
+@mixin mod-link4-style {
+  background-image: url("img/mod-link/bg05.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link4-style2 {
+  background-image: url("img/mod-link/bg05.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link4-style3 {
+  background-image: url("img/mod-link/bg05.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link4-style4 {
+  background-image: url("img/mod-link/bg05.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link4-style5 {
+  background-image: url("img/mod-link/bg10.png");
+  a &, a {
+    color: #f2d028;
+  }
+}
+
+@mixin mod-link4-style6 {
+  background-image: url("img/mod-link/bg10_2.png");
+  a &, a {
+    color: #f2d028;
+  }
+}
+
+@mixin mod-link4-style7 {
+  background-image: url("img/mod-link/bg10_3.png");
+  a &, a {
+    color: #f37f1c;
+  }
+}
+
+@mixin mod-link4-style8 {
+  background-image: url("img/mod-link/bg05.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link4-style9 {
+  background-image: url("img/mod-link/bg05.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link4-style10 {
+  background-image: url("img/mod-link/bg05.png");
+  a &, a {
+    color: #335a93;
+  }
+}
+
+
+//  mod-link7 の mixin一式
+@mixin mod-link7-common-style {
+  margin-bottom: 15px;
+  p {
+    @extend %inlineBlock;
+    font-size: $fontSizeL;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    background-repeat: no-repeat;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link7-style {
+  p {
+    height: 30px;
+    padding: 2px 0 0 40px;
+    background-position: left 0px;
+    background-image: url("img/mod-link/bg06.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link7-style2 {
+  p {
+    height: 30px;
+    padding: 2px 0 0 40px;
+    background-position: left 0px;
+    background-image: url("img/mod-link/bg06.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link7-style3 {
+  p {
+    height: 30px;
+    padding: 2px 0 0 40px;
+    background-position: left 0px;
+    background-image: url("img/mod-link/bg06_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link7-style4 {
+  p {
+    height: 30px;
+    padding: 2px 0 0 40px;
+    background-position: left 0px;
+    background-image: url("img/mod-link/bg06_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+@mixin mod-link7-style5 {
+  p {
+    height: 30px;
+    padding: 2px 0 0 40px;
+    background-position: 0 5px;
+    background-image: url("img/mod-link/bg09.png");
+  }
+  a p, a {
+    color: #15305f;
+  }
+}
+
+@mixin mod-link7-style6 {
+  p {
+    height: 30px;
+    padding: 2px 0 0 40px;
+    background-position: 0 5px;
+    background-image: url("img/mod-link/bg09_2.png");
+  }
+  a p, a {
+    color: #2B436F;
+  }
+}
+
+@mixin mod-link7-style7 {
+  p {
+    height: 30px;
+    padding: 2px 0 0 40px;
+    background-position: 0 5px;
+    background-image: url("img/mod-link/bg09_3.png");
+  }
+  a p, a {
+    color: #37280b;
+  }
+}
+
+@mixin mod-link7-style8 {
+  p {
+    height: 39px;
+    padding: 5px 5px 5px 50px;
+    background-position: left 0px;
+    background-image: url("img/mod-link/bg08.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link7-style9 {
+  p {
+    height: 39px;
+    padding: 5px 5px 5px 50px;
+    background-position: left 0px;
+    background-image: url("img/mod-link/bg08_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link7-style10 {
+  p {
+    height: 39px;
+    padding: 5px 5px 5px 50px;
+    background-position: left 0px;
+    background-image: url("img/mod-link/bg08_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+
+
+//  mod-link8 の mixin一式
+@mixin mod-link8-common-style {
+  @extend %inlineBlock;
+  line-height: 1.4;
+  display: table !important;
+  max-width: 100%;
+  @include box-sizing(border-box);
+  padding-left: 15px;
+  font-size: $sideFontSizeM;
+  background-position: left 2px;
+  background-repeat: no-repeat;
+  p {
+    @extend %inlineBlock;
+    min-height: 21px;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link8-style {
+  background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link8-style2 {
+  background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link8-style3 {
+  background-image: url("img/mod-link/bg_2.png");
+  a, a & {
+    color: #294470;
+  }
+}
+
+@mixin mod-link8-style4 {
+  background-image: url("img/mod-link/bg_3.png");
+  a, a & {
+    color: #45320b;
+  }
+}
+
+@mixin mod-link8-style5 {
+  background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link8-style6 {
+  background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link8-style7 {
+  background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link8-style8 {
+  background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link8-style9 {
+  background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link8-style10 {
+  background-image: url("img/mod-link/bg.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+
+
+
+
+
+
+//  mod-link10 の mixin一式
+@mixin mod-link10-common-style {
+  p {
+    @extend %inlineBlock;
+    line-height: 1.4;
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 17px;
+    @include box-sizing(border-box);
+    padding-left: 15px;
+    font-size: $fontSizeS;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link10-style {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link10-style2 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link10-style3 {
+  p {
+    background-image: url("img/mod-link/bg_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link10-style4 {
+  p {
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+@mixin mod-link10-style5 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link10-style6 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link10-style7 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link10-style8 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link10-style9 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link10-style10 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+
+//  mod-link11 の mixin一式
+@mixin mod-link11-common-style {
+  p {
+    @extend %inlineBlock;
+    line-height: 1.4;
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    padding-left: 15px;
+    font-size: $sideFontSizeM;
+    min-height: 21px;
+    min-width: 15px;
+  }
+}
+
+@mixin mod-link11-style {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link11-style2 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link11-style3 {
+  p {
+    background-image: url("img/mod-link/bg_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link11-style4 {
+  p {
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+@mixin mod-link11-style5 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link11-style6 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link11-style7 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link11-style8 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link11-style9 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link11-style10 {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+
+
+//  mod-link-set の mixin一式
+@mixin mod-link-set-common-style {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: right;
+  p {
+    @extend %inlineBlock;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    margin-bottom: 10px;
+    padding: 0 10px 0 25px;
+    font-size: $fontSizeM - 1;
+    text-align: left;
+    line-height: 1.4;
+    background-position: 7px 3px;
+    background-repeat: no-repeat;
+    min-width: 15px;
+  }
+  > p:last-child {
+    padding-right: 0 !important;
+    border: none !important;
+  }
+}
+
+@mixin mod-link-set-style {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-set-style2 {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-set-style3 {
+  p {
+    border-right: 1px solid #1a2758;
+    background-image: url("img/mod-link/bg07_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link-set-style4 {
+  p {
+    border-right: 1px solid #ffa658;
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-set-style5 {
+  p {
+    border-right: 1px solid #ffffff;
+    background-image: url("img/mod-link/bg11.png");
+  }
+  a p, a {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-link-set-style6 {
+  p {
+    border-right: 1px solid #ffffff;
+    background-image: url("img/mod-link/bg11_2.png");
+  }
+  a p, a {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-link-set-style7 {
+  p {
+    border-right: 1px solid #443308;
+    background-image: url("img/mod-link/bg11_3.png");
+  }
+  a p, a {
+    color: #443308;
+  }
+}
+
+@mixin mod-link-set-style8 {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg07.png");
+  }
+  a p, a {
+    color: #321b07;
+  }
+}
+
+@mixin mod-link-set-style9 {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg07_2.png");
+  }
+  a p, a {
+    color: #321b07;
+  }
+}
+
+@mixin mod-link-set-style10 {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg07_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+
+//  mod-link-set2 の mixin一式
+// @mixin mod-link-set2-common-style {
+//   p {
+//     padding-left: 20px;
+//     line-height: 1.4;
+//     min-height: 20px;
+//     background-repeat: no-repeat;
+//     background-position: left 4px;
+//     min-width: 15px;
+//     margin-bottom: 10px;
+//   }
+// }
+
+
+// @mixin mod-link-set2-style {
+//   p {
+//     background-image: url("img/mod-link/bg.png");
+//   }
+//   a p, a {
+//     color: #335a93;
+//   }
+// }
+
+// @mixin mod-link-set2-style2 {
+//   p {
+//     background-image: url("img/mod-link/bg.png");
+//   }
+//   a p, a {
+//     color: #335a93;
+//   }
+// }
+
+// @mixin mod-link-set2-style3 {
+//   p {
+//     background-image: url("img/mod-link/bg_2.png");
+//   }
+//   a p, a {
+//     color: #294470;
+//   }
+// }
+
+// @mixin mod-link-set2-style4 {
+//   p {
+//     background-image: url("img/mod-link/bg_3.png");
+//   }
+//   a p, a {
+//     color: #45320b;
+//   }
+// }
+
+// @mixin mod-link-set2-style5 {
+//   p {
+//     background-image: url("img/mod-link/bg.png");
+//   }
+//   a p, a {
+//     color: #335a93;
+//   }
+// }
+
+// @mixin mod-link-set2-style6 {
+//   p {
+//     background-image: url("img/mod-link/bg.png");
+//   }
+//   a p, a {
+//     color: #335a93;
+//   }
+// }
+
+// @mixin mod-link-set2-style7 {
+//   p {
+//     background-image: url("img/mod-link/bg.png");
+//   }
+//   a p, a {
+//     color: #335a93;
+//   }
+// }
+
+// @mixin mod-link-set2-style8 {
+//   p {
+//     background-image: url("img/mod-link/bg.png");
+//   }
+//   a p, a {
+//     color: #335a93;
+//   }
+// }
+
+// @mixin mod-link-set2-style9 {
+//   p {
+//     background-image: url("img/mod-link/bg.png");
+//   }
+//   a p, a {
+//     color: #335a93;
+//   }
+// }
+
+// @mixin mod-link-set2-style10 {
+//   p {
+//     background-image: url("img/mod-link/bg.png");
+//   }
+//   a p, a {
+//     color: #335a93;
+//   }
+// }
+
+
+
+
+
+//  mod-link-set4 の mixin一式
+@mixin mod-link-set4-common-style {
+  display: table;
+  p {
+    display: table-cell;
+    max-width: 125px;
+    margin-bottom: 10px;
+    padding: 0 10px 0 25px;
+    @include box-sizing(border-box);
+    font-size: $fontSizeM - 2;
+    line-height: 1.4;
+    background-position: 7px 3px;
+    background-repeat: no-repeat;
+    min-width: 15px;
+  }
+  > p:first-child {
+    padding: 0 10px 0 18px;
+    background-position: 0 3px;
+  }
+  > p:last-child {
+    padding-right: 0 !important;
+    border: none !important;
+  }
+}
+
+@mixin mod-link-set4-style {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-set4-style2 {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link-set4-style3 {
+  p {
+    border-right: 1px solid #1a2758;
+    background-image: url("img/mod-link/bg07_2.png");
+  }
+  a p, a {
+    color: #294470;
+  }
+}
+
+@mixin mod-link-set4-style4 {
+  p {
+    border-right: 1px solid #ffa658;
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+@mixin mod-link-set4-style5 {
+  p {
+    border-right: 1px solid #ffffff;
+    background-image: url("img/mod-link/bg11.png");
+  }
+  a p, a {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-link-set4-style6 {
+  p {
+    border-right: 1px solid #ffffff;
+    background-image: url("img/mod-link/bg11_2.png");
+  }
+  a p, a {
+    color: #ffffff;
+  }
+}
+
+@mixin mod-link-set4-style7 {
+  p {
+    border-right: 1px solid #443308;
+    background-image: url("img/mod-link/bg11_3.png");
+  }
+  a p, a {
+    color: #443308;
+  }
+}
+
+@mixin mod-link-set4-style8 {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #321b07;
+  }
+}
+
+@mixin mod-link-set4-style9 {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #321b07;
+  }
+}
+
+@mixin mod-link-set4-style10 {
+  p {
+    border-right: 1px solid #321b07;
+    background-image: url("img/mod-link/bg.png");
+  }
+  a p, a {
+    color: #45320b;
+  }
+}
+
+
+

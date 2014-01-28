@@ -1,0 +1,385 @@
+@charset "UTF-8";
+
+//  mod-form の mixin一式
+@mixin mod-form-common-style {
+  width: 100%;
+  margin-top: 15px;
+  .mod-form-items {
+    margin-bottom: 15px;
+  }
+  .mod-form-item {
+    .mod-form-label {
+      @extend %cf;
+      padding: 5px 10px;
+      display: block;
+    }
+    .mod-form-name {
+      width: 85%;
+      float: right;
+      display: block;
+      padding-top: 2px;
+      &:only-child {
+        width: 100%;
+      }
+    }
+    .mod-form-required {
+      color: #ffffff;
+      font-size: 10px;
+      text-align: center;
+      width: 30px;
+      padding: 1px;
+      @include border-radius(3px);
+      display: inline-block;
+    }
+    .mod-form-part {
+      width: auto;
+      padding: 10px 10px 20px;
+      display: block;
+      .mod-form-description {
+        margin-top: 5px;
+        color: #666666;
+        font-size: 11px;
+      }
+      input[type="text"], textarea {
+        font-size: 16px;
+        width: 100% !important;
+        padding: 5px;
+        @include box-sizing(border-box);
+      }
+      ul {
+        padding: 0;
+        margin: 0  0 0 -20px;
+        list-style-type: none;
+        li {
+          margin-bottom: 10px;
+          display: inline-block;
+          padding-left: 49px;
+          text-indent: -49px;
+          input[type="radio"], input[type="checkbox"] {
+            width: 25px;
+            height: 25px;
+            margin: -2px 5px 0 20px;
+            & + label {
+              font-size: 14px;
+              vertical-align: top;
+            }
+          }
+          input[type="radio"] {
+            @include border-radius(15px);
+          }
+        }
+      }
+      select {
+        font-size: 16px;
+        vertical-align: top;
+        min-width: 40%;
+      }
+    }
+  }
+  .mod-form-submit {
+    width: 100%;
+    .mod-form-submit-button {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      input {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;//ブラウザのデフォルトスタイル解除
+        border: 1px solid #a5a8ad;//ブラウザのデフォルトスタイル解除
+        @include border-radius();
+        width: 162px;
+        min-height: 30px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: #334766;
+          cursor: pointer;
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+    }
+    .mod-form-confirm-button {
+      text-align: center;
+      width: 100%;
+      .mod-form-edit {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;//ブラウザのデフォルトスタイル解除
+        border: 1px solid #a5a8ad;//ブラウザのデフォルトスタイル解除
+        @include border-radius();
+        min-width: 86px;
+        min-height: 30px;
+        margin-right:20px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: #334766;
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+      .mod-form-send {
+        background-image: url("img/mod-form/bg06.png");
+        background-repeat: repeat-x;
+        background-color: #ced3d9;//ブラウザのデフォルトスタイル解除
+        border: 1px solid #a5a8ad;//ブラウザのデフォルトスタイル解除
+        @include border-radius();
+        min-width: 86px;
+        min-height: 30px;
+        color: #333333;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        @include text-shadow(1px 1px 1px #ffffff);
+        &:hover {
+          color: #334766;
+          cursor: pointer;
+          background-image: url("img/mod-form/bg07.png");
+          background-color: #cee4ff;
+          border: 1px solid #a5caff;
+        }
+        &:active {
+          background-image: url("img/mod-form/bg08.png");
+          background-color: #98a3b3;
+          border: 1px solid #7a828f;
+        }
+      }
+    }
+    .mod-form-submit-footer {
+      margin-top: 5px;
+      color: #666666;
+      font-size: 12px;
+    }
+  }
+}
+@mixin mod-form-style {
+  background-color: transparent;
+  .mod-form-items {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+  }
+  .mod-form-item {
+    background-color: transparent;
+    .mod-form-label {
+      background-color: #f2f2f2;
+      background-image:none;
+      border-top: 0 none transparent;
+      border-bottom: 0 none transparent;
+      color: #333333;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+  }
+}
+@mixin mod-form-style2 {
+  background-color: transparent;
+  .mod-form-items {
+    border-top: 0 none transparent;
+    border-bottom: 1px solid #b29e3b;
+    border-left: 1px solid #b29e3b;
+    border-right: 1px solid #b29e3b;
+  }
+  .mod-form-item {
+    background-color: #ffffff;
+    .mod-form-label {
+      background-color: #f2e18b;
+      background-image:none;
+      border-top: 1px solid #b29e3b;
+      border-bottom: 1px solid #b29e3b;
+      color: #333333;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+  }
+}
+@mixin mod-form-style3 {
+  background-color: transparent;
+  .mod-form-items {
+    border-top: 0 none transparent;
+    border-bottom: 1px solid #f6cd77;
+    border-left: 1px solid #f6cd77;
+    border-right: 1px solid #f6cd77;
+  }
+  .mod-form-item {
+    background-color: #ffffff;
+    .mod-form-label {
+      background-color: #ffdd9d;
+      background-image:none;
+      border-top: 1px solid #f6cd77;
+      border-bottom: 1px solid #f6cd77;
+      color: #56534e;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+  }
+}
+@mixin mod-form-style4 {
+  background-color: transparent;
+  .mod-form-items {
+    border-top: 0 none transparent;
+    border-bottom: 1px solid #8aa9e3;
+    border-left: 1px solid #8aa9e3;
+    border-right: 1px solid #8aa9e3;
+  }
+  .mod-form-item {
+    background-color: #ffffff;
+    .mod-form-label {
+      background-color: #f2f2f2;
+      background-image: url("img/mod-form/bg04.png");
+      border-top: 1px solid #8aa9e3;
+      border-bottom: 1px solid #8aa9e3;
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+  }
+}
+@mixin mod-form-style5 {
+  background-color: transparent;
+  .mod-form-items {
+    border-top: 0 none transparent;
+    border-bottom: 1px solid #62cad9;
+    border-left: 1px solid #62cad9;
+    border-right: 1px solid #62cad9;
+  }
+  .mod-form-item {
+    background-color: #ffffff;
+    .mod-form-label {
+      background-color: #f2f2f2;
+      background-image: url("img/mod-form/bg04_2.png");
+      border-top: 1px solid #62cad9;
+      border-bottom: 1px solid #62cad9;
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+  }
+}
+
+
+@mixin mod-form-style6 {
+  background-color: transparent;
+  .mod-form-items {
+    border-top: 0 none transparent;
+    border-bottom: 1px solid #5ca4de;
+    border-left: 1px solid #5ca4de;
+    border-right: 1px solid #5ca4de;
+  }
+  .mod-form-item {
+    background-color: #ffffff;
+    .mod-form-label {
+      background-color: #f2f2f2;
+      background-image: url("img/mod-form/bg04_3.png");
+      border-top: 1px solid #5ca4de;
+      border-bottom: 1px solid #5ca4de;
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+  }
+}
+
+
+@mixin mod-form-style7 {
+  background-color: transparent;
+  .mod-form-items {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+  }
+  .mod-form-item {
+    background-color: #ffffff;
+    .mod-form-label {
+      background-color: #f2f2f2;
+      background-image: url("img/mod-form/bg05.png");
+      border-top: 0 none transparent;
+      border-bottom: 0 none transparent;
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #fc7d77;
+    }
+  }
+}
+
+
+@mixin mod-form-style8 {
+  background-color: #e3f6f8;
+  .mod-form-items {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+  }
+  .mod-form-item {
+    background-color: #e3f6f8;
+    .mod-form-label {
+      background-color: #f2f2f2;
+      background-image: url("img/mod-form/bg05_2.png");
+      border-top: 0 none transparent;
+      border-bottom: 0 none transparent;
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #355995;
+    }
+  }
+}
+
+
+@mixin mod-form-style9 {
+  background-color: #fdf6e4;
+  .mod-form-items {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+  }
+  .mod-form-item {
+    background-color: #fdf6e4;
+    .mod-form-label {
+      background-color: #f2f2f2;
+      background-image: url("img/mod-form/bg05_3.png");
+      border-top: 0 none transparent;
+      border-bottom: 0 none transparent;
+      color: #ffffff;
+    }
+    .mod-form-required {
+      background-color: #519dce;
+    }
+  }
+}
+
+

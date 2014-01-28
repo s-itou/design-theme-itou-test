@@ -1,0 +1,2311 @@
+@charset "UTF-8";
+
+//  mod-table の mixin一式
+@mixin mod-table-common-style {
+  margin-top: 10px;
+  padding: 1px;
+  table {
+    width: 100%;
+    font-size: $fontSizeM;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    tr:first-child {
+      th:first-child {
+        width: 30%;
+      }
+      td:first-child {
+        width: 30%;
+      }
+    }
+    th {
+      padding: 8px 10px;
+      font-weight: normal;
+      text-align: left;
+    }
+    td {
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+  }
+}
+@mixin mod-table-style {
+  border: 1px solid #c9e0ff;
+  color: #333333;
+  table {
+    border: 1px solid #c9e0ff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c9e0ff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #c9e0ff;
+        }
+      }
+    }
+    th {
+      background-color: #c9e0ff;
+      background-image: none;
+      background-repeat: repeat;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table-style2 {
+  border: 1px solid #c4ecf0;
+  color: #333333;
+  table {
+    border: 1px solid #c4ecf0;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c4ecf0;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      background-color: #c4ecf0;
+      background-image: none;
+      background-repeat: repeat;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      border: 1px solid #c4ecf0;
+    }
+  }
+}
+@mixin mod-table-style3 {
+  border: 1px solid #ffcda2;
+  color: #333333;
+  table {
+    border: 1px solid #ffcda2;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffcda2;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+    }
+    th {
+      background-color: #ffcda2;
+      background-image: none;
+      background-repeat: repeat;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      border: 1px solid #ffcda2;
+    }
+  }
+}
+@mixin mod-table-style4 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #ffffff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      background-color: #a8bbe3;
+      background-image: url("img/mod-table/bg02.png");
+      background-repeat: repeat-x;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table-style5 {
+  border: 1px solid #a3e0e9;
+  color: #0b7c8a;
+  table {
+    border: 1px solid #a3e0e9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #a3e0e9;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #a3e0e9;
+        }
+      }
+    }
+    th {
+      background-color: #a3e0e9;
+      background-image: url("img/mod-table/bg02_2.png");
+      background-repeat: repeat-x;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      border: 1px solid #a3e0e9;
+    }
+  }
+}
+@mixin mod-table-style6 {
+  border: 1px solid #f7de6a;
+  color: #45310c;
+  table {
+    border: 1px solid #f7de6a;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f7de6a;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #f7de6a;
+        }
+      }
+    }
+    th {
+      background-color: #f7de6a;
+      background-image: url("img/mod-table/bg02_3.png");
+      background-repeat: repeat-x;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      border: 1px solid #f7de6a;
+    }
+  }
+}
+@mixin mod-table-style7 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #8bb8e4;
+    tr:first-child {
+      th {
+        border-top: 1px solid #8bb8e4;
+        border-bottom: 1px solid #8bb8e4;
+        &:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+    }
+    th {
+      background-color: #c9e0ff;
+      background-image: url("img/mod-table/bg04.png");
+      background-repeat: repeat-x;
+      border-top: 1px solid #8bb8e4;
+      border-right: 1px solid #8bb8e4;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table-style8 {
+  border: 1px solid #7ed1d9;
+  color: #333333;
+  table {
+    border: 1px solid #7ed1d9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #7ed1d9;
+        border-bottom: 1px solid #7ed1d9;
+        &:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+    }
+    th {
+      background-color: #c4ecf0;
+      background-image: url("img/mod-table/bg04_2.png");
+      background-repeat: repeat-x;
+      border-top: 1px solid #7ed1d9;
+      border-right: 1px solid #7ed1d9;
+    }
+    td {
+      border: 1px solid #7ed1d9;
+    }
+  }
+}
+@mixin mod-table-style9 {
+  border: 1px solid #f9d5b5;
+  color: #45320b;
+  table {
+    border: 1px solid #f9d5b5;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f9d5b5;
+        border-bottom: 1px solid #f9d5b5;
+        &:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+    }
+    th {
+      background-color: #fdf6e4;
+      background-image: url("img/mod-table/bg04_3.png");
+      background-repeat: repeat-x;
+      border-top: 1px solid #f9d5b5;
+      border-right: 1px solid #f9d5b5;
+    }
+    td {
+      border: 1px solid #f9d5b5;
+    }
+  }
+}
+
+//  mod-table4 の mixin一式
+@mixin mod-table4-common-style {
+  width: 100%;
+  margin-top: 10px;
+  padding: 1px;
+  table {
+    width: 100%;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    font-size: $sideFontSizeM;
+    tr:first-child {
+      th {
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+    th {
+      padding: 8px 3px;
+      font-weight: normal;
+      text-align: left;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      padding: 8px 3px;
+      vertical-align: top;
+    }
+  }
+}
+@mixin mod-table4-style {
+  border: 1px solid #c9e0ff;
+  table {
+    border: 1px solid #c9e0ff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c9e0ff;
+        &:last-child {
+          border-right: 1px solid #c9e0ff;
+        }
+      }
+    }
+    th {
+      background-color: #c9e0ff;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table4-style2 {
+  border: 1px solid #ffea83;
+  table {
+    border: 1px solid #ffea83;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffea83;
+        &:last-child {
+          border-right: 1px solid #ffea83;
+        }
+      }
+    }
+    th {
+      background-color: #ffea83;
+    }
+    td {
+      border: 1px solid #ffea83;
+    }
+  }
+}
+@mixin mod-table4-style3 {
+  border: 1px solid #fdcecc;
+  table {
+    border: 1px solid #fdcecc;
+    tr:first-child {
+      th {
+        border-top: 1px solid #fdcecc;
+        &:last-child {
+          border-right: 1px solid #fdcecc;
+        }
+      }
+    }
+    th {
+      background-color: #fdcecc;
+    }
+    td {
+      border: 1px solid #fdcecc;
+    }
+  }
+}
+
+//  mod-table5 の mixin一式
+@mixin mod-table5-common-style {
+  width: 100%;
+  margin-top: 10px;
+  padding: 1px;
+  table {
+    width: 100%;
+    font-size: $fontSizeM;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    tr:first-child {
+      th:first-child,
+      td:first-child {
+        width: 55%;
+      }
+    }
+    th {
+      text-align: left;
+      padding: 8px;
+      font-weight: normal;
+    }
+    td {
+      padding: 8px;
+      vertical-align: top;
+    }
+  }
+}
+@mixin mod-table5-style {
+  border: 1px solid #c9e0ff;
+  color: #333333;
+  table {
+    border: 1px solid #c9e0ff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c9e0ff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #c9e0ff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c9e0ff;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table5-style2 {
+  border: 1px solid #c4ecf0;
+  color: #333333;
+  table {
+    border: 1px solid #c4ecf0;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c4ecf0;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c4ecf0;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c4ecf0;
+    }
+  }
+}
+@mixin mod-table5-style3 {
+  border: 1px solid #ffcda2;
+  color: #333333;
+  table {
+    border: 1px solid #ffcda2;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffcda2;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #ffcda2;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #ffcda2;
+    }
+  }
+}
+@mixin mod-table5-style4 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #ffffff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a8bbe3;
+      background-image: url("mod-table/bg02.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table5-style5 {
+  border: 1px solid #a3e0e9;
+  color: #0b7c8a;
+  table {
+    border: 1px solid #a3e0e9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #a3e0e9;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #a3e0e9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a3e0e9;
+      background-image: url("mod-table/bg02_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #a3e0e9;
+    }
+  }
+}
+@mixin mod-table5-style6 {
+  border: 1px solid #f7de6a;
+  color: #45310c;
+  table {
+    border: 1px solid #f7de6a;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f7de6a;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #f7de6a;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #f7de6a;
+      background-image: url("mod-table/bg02_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f7de6a;
+    }
+  }
+}
+@mixin mod-table5-style7 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #8bb8e4;
+    tr:first-child {
+      th {
+        border-top: 1px solid #8bb8e4;
+        border-bottom: 1px solid #8bb8e4;
+        &:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #8bb8e4;
+      border-right: 1px solid #8bb8e4;
+      background-color: #c9e0ff;
+      background-image: url("mod-table/bg04.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table5-style8 {
+  border: 1px solid #7ed1d9;
+  color: #333333;
+  table {
+    border: 1px solid #7ed1d9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #7ed1d9;
+        border-bottom: 1px solid #7ed1d9;
+        &:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #7ed1d9;
+      border-right: 1px solid #7ed1d9;
+      background-color: #c4ecf0;
+      background-image: url("mod-table/bg04_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #7ed1d9;
+    }
+  }
+}
+@mixin mod-table5-style9 {
+  border: 1px solid #f9d5b5;
+  color: #45320b;
+  table {
+    border: 1px solid #f9d5b5;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f9d5b5;
+        border-bottom: 1px solid #f9d5b5;
+        &:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #f9d5b5;
+      border-right: 1px solid #f9d5b5;
+      background-color: #fdf6e4;
+      background-image: url("mod-table/bg04_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f9d5b5;
+    }
+  }
+}
+
+//  mod-table6 の mixin一式
+@mixin mod-table6-common-style {
+  width: 100%;
+  margin-top: 10px;
+  padding: 1px;
+  table {
+    width: 100%;
+    font-size: $fontSizeM;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    tr:first-child {
+      th:first-child,
+      td:first-child {
+        width: 45%;
+      }
+    }
+    th {
+      padding: 8px;
+      font-weight: normal;
+      text-align: left;
+    }
+    td {
+      padding: 8px;
+      vertical-align: top;
+    }
+  }
+}
+@mixin mod-table6-style {
+  border: 1px solid #c9e0ff;
+  color: #333333;
+  table {
+    border: 1px solid #c9e0ff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c9e0ff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #c9e0ff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c9e0ff;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table6-style2 {
+  border: 1px solid #c4ecf0;
+  color: #333333;
+  table {
+    border: 1px solid #c4ecf0;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c4ecf0;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c4ecf0;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c4ecf0;
+    }
+  }
+}
+@mixin mod-table6-style3 {
+  border: 1px solid #c9e0ff;
+  color: #333333;
+  table {
+    border: 1px solid #ffcda2;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffcda2;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #ffcda2;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #ffcda2;
+    }
+  }
+}
+@mixin mod-table6-style4 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #ffffff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a8bbe3;
+      background-image: url("mod-table/bg02.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table6-style5 {
+  border: 1px solid #a3e0e9;
+  color: #0b7c8a;
+  table {
+    border: 1px solid #a3e0e9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #a3e0e9;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #a3e0e9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a3e0e9;
+      background-image: url("mod-table/bg02_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #a3e0e9;
+    }
+  }
+}
+@mixin mod-table6-style6 {
+  border: 1px solid #f7de6a;
+  color: #45310c;
+  table {
+    border: 1px solid #f7de6a;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f7de6a;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #f7de6a;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #f7de6a;
+      background-image: url("mod-table/bg02_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f7de6a;
+    }
+  }
+}
+@mixin mod-table6-style7 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #8bb8e4;
+    tr:first-child {
+      th {
+        border-top: 1px solid #8bb8e4;
+        border-bottom: 1px solid #8bb8e4;
+        &:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #8bb8e4;
+      border-right: 1px solid #8bb8e4;
+      background-color: #c9e0ff;
+      background-image: url("mod-table/bg04.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table6-style8 {
+  border: 1px solid #7ed1d9;
+  color: #333333;
+  table {
+    border: 1px solid #7ed1d9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #7ed1d9;
+        border-bottom: 1px solid #7ed1d9;
+        &:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #7ed1d9;
+      border-right: 1px solid #7ed1d9;
+      background-color: #c4ecf0;
+      background-image: url("mod-table/bg04_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table6-style9 {
+  border: 1px solid #f9d5b5;
+  color: #333333;
+  table {
+    border: 1px solid #f9d5b5;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f9d5b5;
+        border-bottom: 1px solid #f9d5b5;
+        &:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #f9d5b5;
+      border-right: 1px solid #f9d5b5;
+      background-color: #fdf6e4;
+      background-image: url("mod-table/bg04_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f9d5b5;
+    }
+  }
+}
+
+//  mod-table7 の mixin一式
+@mixin mod-table7-common-style {
+  width: 100%;
+  margin-top: 10px;
+  padding: 1px;
+  table {
+    width: 100%;
+    font-size: $fontSizeM;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    tr:first-child {
+      th:first-child {
+        width: 45%;
+        border-bottom: 1px solid #c9e0ff;
+      }
+      td:first-child {
+        width: 45%;
+      }
+    }
+    th {
+      text-align: left;
+      padding: 8px;
+      font-weight: normal;
+    }
+    td {
+      padding: 8px;
+      vertical-align: top;
+    }
+  }
+}
+@mixin mod-table7-style {
+  border: 1px solid #c9e0ff;
+  color: #333333;
+  table {
+    border: 1px solid #c9e0ff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c9e0ff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #c9e0ff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c9e0ff;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table7-style2 {
+  border: 1px solid #c4ecf0;
+  color: #333333;
+  table {
+    border: 1px solid #c4ecf0;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c4ecf0;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c4ecf0;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c4ecf0;
+    }
+  }
+}
+@mixin mod-table7-style3 {
+  border: 1px solid #ffcda2;
+  color: #333333;
+  table {
+    border: 1px solid #ffcda2;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffcda2;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #ffcda2;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #ffcda2;
+    }
+  }
+}
+@mixin mod-table7-style4 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #ffffff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a8bbe3;
+      background-image: url("mod-table/bg02.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table7-style5 {
+  border: 1px solid #a3e0e9;
+  color: #0b7c8a;
+  table {
+    border: 1px solid #a3e0e9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #a3e0e9;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #a3e0e9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a3e0e9;
+      background-image: url("mod-table/bg02_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #a3e0e9;
+    }
+  }
+}
+@mixin mod-table7-style6 {
+  border: 1px solid #f7de6a;
+  color: #45310c;
+  table {
+    border: 1px solid #f7de6a;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f7de6a;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #f7de6a;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #f7de6a;
+      background-image: url("mod-table/bg02_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f7de6a;
+    }
+  }
+}
+@mixin mod-table7-style7 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #8bb8e4;
+    tr:first-child {
+      th {
+        border-top: 1px solid #8bb8e4;
+        border-bottom: 1px solid #8bb8e4;
+        &:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #8bb8e4;
+      border-right: 1px solid #8bb8e4;
+      background-color: #c9e0ff;
+      background-image: url("mod-table/bg04.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table7-style8 {
+  border: 1px solid #7ed1d9;
+  color: #333333;
+  table {
+    border: 1px solid #7ed1d9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #7ed1d9;
+        border-bottom: 1px solid #7ed1d9;
+        &:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #7ed1d9;
+      border-right: 1px solid #7ed1d9;
+      background-color: #c4ecf0;
+      background-image: url("mod-table/bg04_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #7ed1d9;
+    }
+  }
+}
+@mixin mod-table7-style9 {
+  border: 1px solid #f9d5b5;
+  color: #45320b;
+  table {
+    border: 1px solid #f9d5b5;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f9d5b5;
+        border-bottom: 1px solid #f9d5b5;
+        &:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #f9d5b5;
+      border-right: 1px solid #f9d5b5;
+      background-color: #fdf6e4;
+      background-image: url("mod-table/bg04_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f9d5b5;
+    }
+  }
+}
+
+//  mod-table8 の mixin一式
+@mixin mod-table8-common-style {
+  width: 100%;
+  margin-top: 10px;
+  padding: 1px;
+  table {
+    width: 100%;
+    font-size: $sideFontSizeM;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    th {
+      padding: 8px 3px;
+      font-weight: normal;
+      text-align: left;
+    }
+    td {
+      padding: 8px 3px;
+      vertical-align: top;
+    }
+  }
+}
+@mixin mod-table8-style {
+  border: 1px solid #c9e0ff;
+  color: #333333;
+  table {
+    border: 1px solid #c9e0ff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c9e0ff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #c9e0ff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c9e0ff;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table8-style2 {
+  border: 1px solid #c4ecf0;
+  color: #333333;
+  table {
+    border: 1px solid #c4ecf0;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c4ecf0;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c4ecf0;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c4ecf0;
+    }
+  }
+}
+@mixin mod-table8-style3 {
+  border: 1px solid #ffcda2;
+  color: #333333;
+  table {
+    border: 1px solid #ffcda2;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffcda2;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #ffcda2;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #ffcda2;
+    }
+  }
+}
+@mixin mod-table8-style4 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #ffffff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a8bbe3;
+      background-image: url("mod-table/bg02.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table8-style5 {
+  border: 1px solid #a3e0e9;
+  color: #0b7c8a;
+  table {
+    border: 1px solid #a3e0e9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #a3e0e9;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #a3e0e9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a3e0e9;
+      background-image: url("mod-table/bg02_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #a3e0e9;
+    }
+  }
+}
+@mixin mod-table8-style6 {
+  border: 1px solid #f7de6a;
+  color: #45310c;
+  table {
+    border: 1px solid #f7de6a;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f7de6a;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #f7de6a;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #f7de6a;
+      background-image: url("mod-table/bg02_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f7de6a;
+    }
+  }
+}
+@mixin mod-table8-style7 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #8bb8e4;
+    tr:first-child {
+      th {
+        border-top: 1px solid #8bb8e4;
+        border-bottom: 1px solid #8bb8e4;
+        &:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #8bb8e4;
+      border-right: 1px solid #8bb8e4;
+      background-color: #c9e0ff;
+      background-image: ur"mod-table/bg04.png";
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table8-style8 {
+  border: 1px solid #7ed1d9;
+  color: #333333;
+  table {
+    border: 1px solid #7ed1d9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #7ed1d9;
+        border-bottom: 1px solid #7ed1d9;
+        &:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #7ed1d9;
+      border-right: 1px solid #7ed1d9;
+      background-color: #c4ecf0;
+      background-image: url("mod-table/bg04_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #7ed1d9;
+    }
+  }
+}
+@mixin mod-table8-style9 {
+  border: 1px solid #f9d5b5;
+  color: #45320b;
+  table {
+    border: 1px solid #f9d5b5;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f9d5b5;
+        border-bottom: 1px solid #f9d5b5;
+        &:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #f9d5b5;
+      border-right: 1px solid #f9d5b5;
+      background-color: #fdf6e4;
+      background-image: url("mod-table/bg04_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f9d5b5;
+    }
+  }
+}
+
+//  mod-table9 の mixin一式
+@mixin mod-table9-common-style {
+  margin-top: 10px;
+  table {
+    width: 100%;
+    table-layout: fixed;
+    tr {
+      border-bottom: 1px dotted #dedad1;
+      &:first-child {
+        border-bottom: 1px dotted #dedad1 !important;
+        th:first-child,
+        td:first-child {
+          width: 40%;
+        }
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+    th {
+      padding: 10px 0 8px;
+      font-weight: normal;
+      text-align: left;
+      vertical-align: top;
+    }
+    td {
+      padding: 10px 0 8px;
+      vertical-align: top;
+    }
+  }
+}
+
+//  mod-table10 の mixin一式
+@mixin mod-table10-common-style {
+  margin-top: 10px;
+  table {
+    font-size: $fontSizeS + 1;
+    width: 100%;
+    table-layout: fixed;
+    tr {
+      border-bottom: 1px dotted #dedad1;
+      &:first-child {
+        border-bottom: 1px dotted #dedad1 !important;
+        th:first-child,
+        td:first-child {
+          width: 40%;
+        }
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+    th {
+      padding: 10px 0 8px;
+      font-weight: normal;
+      text-align: left;
+      vertical-align: top;
+    }
+    td {
+      padding: 10px 0 8px;
+      vertical-align: top;
+    }
+  }
+}
+
+//  mod-table11 の mixin一式
+@mixin mod-table11-common-style {
+  margin-top: 10px;
+  table {
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    tr:first-child {
+      font-size: $fontSizeM;
+      > th:first-child {
+        width: 30%;
+        padding: 10px 5px;
+      }
+      > td:first-child {
+        width: 30%;
+        padding: 10px 5px;
+      }
+    }
+    tr {
+      th:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+      td:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+    }
+    th {
+      font-weight: normal;
+    }
+    td {
+      font-weight: bold;
+    }
+    tbody {
+      tr:first-child {
+        th {
+        font-size: $fontSizeM;
+        }
+        td {
+          font-size: $fontSizeM;
+        }
+      }
+      tr:first-child ~ tr {
+        th:first-child {
+        font-size: $fontSizeM;
+        }
+        td:first-child {
+          font-size: $fontSizeM;
+        }
+        th {
+          width: auto;
+          padding: 10px 5px;
+          font-size: $fontSizeS + 1;
+        }
+        td {
+          width: 48px;
+          padding: 10px 5px;
+          font-size: $fontSizeS + 1;
+        }
+      }
+    }
+    thead + tbody {
+      tr:first-child, tr {
+        th:first-child {
+          font-size: $fontSizeM;
+        }
+        td:first-child {
+          font-size: $fontSizeM;
+        }
+        th {
+          width: auto;
+          padding: 10px 5px;
+          font-size: $fontSizeS + 1;
+        }
+        td {
+          width: 48px;
+          padding: 10px 5px;
+          font-size: $fontSizeS + 1;
+        }
+      }
+    }
+  }
+}
+@mixin mod-table11-style {
+  table {
+    color: #333333;
+    background-image: none;
+    tr:first-child {
+      th {
+        color: #ffffff;
+        background-color: #1d6fde;
+        background-image: none;
+        background-repeat: repeat;
+        border-top: 1px solid #d2ccaa;
+        border-bottom: 1px solid #d2ccaa;
+        border-left: 1px solid #d2ccaa;
+        &:last-child {
+          border-right: 1px solid #d2ccaa;
+        }
+      }
+    }
+    th {
+      color: #ffffff;
+      background-color: #1d6fde;
+      border-top: 1px solid #d2ccaa;
+      border-right: 1px solid #d2ccaa;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #d2ccaa;
+    }
+  }
+}
+@mixin mod-table11-style2 {
+  table {
+    color: #333333;
+    background-image: none;
+    tr:first-child {
+      th {
+        color: #333333;
+        background-color: #ffe254;
+        background-image: none;
+        background-repeat: repeat;
+        border-top: 1px solid #d1b422;
+        border-bottom: 1px solid #d1b422;
+        border-left: 1px solid #d1b422;
+        &:last-child {
+          border-right: 1px solid #d1b422;
+        }
+      }
+    }
+    th {
+      color: #333333;
+      background-color: #ffe254;
+      border-top: 1px solid #d1b422;
+      border-right: 1px solid #d1b422;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #d1b422;
+    }
+  }
+}
+@mixin mod-table11-style3 {
+  table {
+    color: #333333;
+    background-image: none;
+    tr:first-child {
+      th {
+        color: #ffffff;
+        background-color: #509dcd;
+        background-image: none;
+        background-repeat: repeat;
+        border-top: 1px solid #6390ce;
+        border-bottom: 1px solid #6390ce;
+        border-left: 1px solid #6390ce;
+        &:last-child {
+          border-right: 1px solid #6390ce;
+        }
+      }
+    }
+    th {
+      color: #ffffff;
+      background-color: #509dcd;
+      border-top: 1px solid #6390ce;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #6390ce;
+    }
+  }
+}
+@mixin mod-table11-style4 {
+  table {
+    color: #333333;
+    background-image: none;
+    tr:first-child {
+      th {
+        color: #333333;
+        background-color: #a8bbe3;
+        background-image: url("img/mod-table/bg02.png");
+        background-repeat: repeat-x;
+        border-top: 1px solid #8bb8e4;
+        border-bottom: 1px solid #8bb8e4;
+        border-left: 1px solid #8bb8e4;
+        &:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+    }
+    th {
+      color: #ffffff;
+      border-top: 1px solid #8bb8e4;
+      border-right: 1px solid #8bb8e4;
+      background-color: #a8bbe3;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table11-style5 {
+  table {
+    color: #0b7c8a;
+    background-image: none;
+    tr:first-child {
+      th {
+        color: #0b7c8a;
+        background-color: #a3e0e9;
+        background-image: url("img/mod-table/bg02_2.png");
+        background-repeat: repeat-x;
+        border-top: 1px solid #a3e0e9;
+        border-bottom: 1px solid #a3e0e9;
+        border-left: 1px solid #a3e0e9;
+        &:last-child {
+          border-right: 1px solid #a3e0e9;
+        }
+      }
+    }
+    th {
+      color: #ffffff;
+      background-color: #a3e0e9;
+      border-top: 1px solid #a3e0e9;
+      border-right: 1px solid #a3e0e9;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #a3e0e9;
+    }
+  }
+}
+@mixin mod-table11-style6 {
+  table {
+    color: #45310c;
+    background-image: none;
+    tr:first-child {
+      th {
+        color: #45310c;
+        background-color: #f7de6a;
+        background-image: url("img/mod-table/bg02_3.png");
+        background-repeat: repeat-x;
+        border-top: 1px solid #f7de6a;
+        border-bottom: 1px solid #f7de6a;
+        border-left: 1px solid #f7de6a;
+        &:last-child {
+          border-right: 1px solid #f7de6a;
+        }
+      }
+    }
+    th {
+      color: #ffffff;
+      background-color: #f7de6a;
+      border-top: 1px solid #f7de6a;
+      border-right: 1px solid #f7de6a;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #f7de6a;
+    }
+  }
+}
+@mixin mod-table11-style7 {
+  table {
+    color: #333333;
+    background-image: url("img/mod-table/bg03.png");
+    tr:first-child {
+      th {
+        color: #ffffff;
+        background-color: transparent;
+        background-image: none;
+        background-repeat: repeat;
+        border-top: 1px solid #d2ccaa;
+        border-bottom: 1px solid #d2ccaa;
+        border-left: 1px solid #d2ccaa;
+        &:last-child {
+          border-right: 1px solid #d2ccaa;
+        }
+      }
+    }
+    th {
+      color: #ffffff;
+      background-color: transparent;
+      border-top: 1px solid #d2ccaa;
+      border-right: 1px solid #d2ccaa;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #d2ccaa;
+    }
+  }
+}
+@mixin mod-table11-style8 {
+  table {
+    color: #333333;
+    background-image: url("img/mod-table/bg03_2.png");
+    tr:first-child {
+      th {
+        color: #45320b;
+        background-color: transparent;
+        background-image: none;
+        background-repeat: repeat;
+        border-top: 1px solid #d2ccaa;
+        border-bottom: 1px solid #d2ccaa;
+        border-left: 1px solid #d2ccaa;
+        &:last-child {
+          border-right: 1px solid #d2ccaa;
+        }
+      }
+    }
+    th {
+      color: #45320b;
+      background-color: transparent;
+      border-top: 1px solid #d2ccaa;
+      border-right: 1px solid #d2ccaa;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #d2ccaa;
+    }
+  }
+}
+@mixin mod-table11-style9 {
+  table {
+    color: #333333;
+    background-image: url("img/mod-table/bg03_3.png");
+    tr:first-child {
+      th {
+        color: #ffffff;
+        background-color: transparent;
+        background-image: none;
+        background-repeat: repeat;
+        border-top: 1px solid #d2ccaa;
+        border-bottom: 1px solid #d2ccaa;
+        border-left: 1px solid #d2ccaa;
+        background-color: transparent;
+        background-image: none;
+        background-repeat: repeat;
+        &:last-child {
+          border-right: 1px solid #d2ccaa;
+        }
+      }
+    }
+    th {
+      color: #ffffff;
+      background-color: transparent;
+      border-top: 1px solid #d2ccaa;
+      border-right: 1px solid #d2ccaa;
+    }
+    td {
+      background-color: #ffffff;
+      border: 1px solid #d2ccaa;
+    }
+  }
+}
+
+//  mod-table12 の mixin一式
+@mixin mod-table12-common-style {
+  width: 100%;
+  margin-top: 10px;
+  padding: 1px;
+  table {
+    width: 100%;
+    font-size: $sideFontSizeM;
+    text-align: center;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    tr:first-child {
+      th {
+        border-bottom: 1px solid #ffffff;
+        &:first-child {
+          width: 30%;
+        }
+      }
+      td:first-child {
+        width: 30%;
+      }
+    }
+    th {
+      padding: 2px;
+      vertical-align: middle;
+      font-weight: normal;
+      text-align: center;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+    td {
+      padding: 8px 2px;
+      vertical-align: middle;
+      background-color: #ffffff;
+    }
+  }
+}
+@mixin mod-table12-style {
+  border: 1px solid #c9e0ff;
+  table {
+    border: 1px solid #c9e0ff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c9e0ff;
+        &:last-child {
+          border-right: 1px solid #c9e0ff;
+        }
+      }
+    }
+    th {
+      background-color: #c9e0ff;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table12-style2 {
+  border: 1px solid #ffea83;
+  table {
+    border: 1px solid #ffea83;
+    tr:first-child {
+      th {
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffea83;
+        }
+      }
+    }
+    th {
+      background-color: #ffea83;
+    }
+    td {
+      border: 1px solid #ffea83;
+    }
+  }
+}
+@mixin mod-table12-style3 {
+  border: 1px solid #fdcecc;
+  table {
+    border: 1px solid #fdcecc;
+    tr:first-child {
+      th {
+        border-top: 1px solid #fdcecc;
+        &:last-child {
+          border-right: 1px solid #fdcecc;
+        }
+      }
+    }
+    th {
+      background-color: #fdcecc;
+    }
+    td {
+      border: 1px solid #fdcecc;
+    }
+  }
+}
+
+//  mod-table13 の mixin一式
+@mixin mod-table13-common-style {
+  width: 100%;
+  margin-top: 10px;
+  padding: 1px;
+  table {
+    width: 100%;
+    font-size: $fontSizeM;
+    font-weight: normal;
+    vertical-align: middle;
+    table-layout: fixed;
+    tr:first-child {
+      th:first-child,
+      td:first-child {
+        width: 38%;
+      }
+    }
+    th {
+      text-align: left;
+      padding: 6px;
+      font-weight: normal;
+    }
+    td {
+      padding: 4px;
+      vertical-align: top;
+    }
+  }
+}
+@mixin mod-table13-style {
+  border: 1px solid #c9e0ff;
+  color: #333333;
+  table {
+    border: 1px solid #c9e0ff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c9e0ff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #c9e0ff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c9e0ff;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c9e0ff;
+    }
+  }
+}
+@mixin mod-table13-style2 {
+  border: 1px solid #c4ecf0;
+  color: #333333;
+  table {
+    border: 1px solid #c4ecf0;
+    tr:first-child {
+      th {
+        border-top: 1px solid #c4ecf0;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c4ecf0;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c4ecf0;
+    }
+  }
+}
+@mixin mod-table13-style3 {
+  border: 1px solid #ffcda2;
+  color: #333333;
+  table {
+    border: 1px solid #ffcda2;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffcda2;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffcda2;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #ffcda2;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #ffcda2;
+    }
+  }
+}
+@mixin mod-table13-style4 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #ffffff;
+    tr:first-child {
+      th {
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a8bbe3;
+      background-image: url("mod-table/bg02.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table13-style5 {
+  border: 1px solid #a3e0e9;
+  color: #0b7c8a;
+  table {
+    border: 1px solid #a3e0e9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #a3e0e9;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #a3e0e9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #a3e0e9;
+      background-image: url("mod-table/bg02_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #a3e0e9;
+    }
+  }
+}
+@mixin mod-table13-style6 {
+  border: 1px solid #f7de6a;
+  color: #45310c;
+  table {
+    border: 1px solid #f7de6a;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f7de6a;
+        border-bottom: 1px solid #ffffff;
+        &:last-child {
+          border-right: 1px solid #f7de6a;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #f7de6a;
+      background-image: url("mod-table/bg02_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f7de6a;
+    }
+  }
+}
+@mixin mod-table13-style7 {
+  border: 1px solid #8bb8e4;
+  color: #333333;
+  table {
+    border: 1px solid #8bb8e4;
+    tr:first-child {
+      th {
+        border-top: 1px solid #8bb8e4;
+        border-bottom: 1px solid #8bb8e4;
+        &:last-child {
+          border-right: 1px solid #8bb8e4;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #8bb8e4;
+      border-right: 1px solid #8bb8e4;
+      background-color: #c9e0ff;
+      background-image: url("mod-table/bg04.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #8bb8e4;
+    }
+  }
+}
+@mixin mod-table13-style8 {
+  border: 1px solid #7ed1d9;
+  color: #333333;
+  table {
+    border: 1px solid #7ed1d9;
+    tr:first-child {
+      th {
+        border-top: 1px solid #7ed1d9;
+        border-bottom: 1px solid #7ed1d9;
+        &:last-child {
+          border-right: 1px solid #7ed1d9;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #7ed1d9;
+      border-right: 1px solid #7ed1d9;
+      background-color: #c4ecf0;
+      background-image: url("mod-table/bg04_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #7ed1d9;
+    }
+  }
+}
+@mixin mod-table13-style9 {
+  border: 1px solid #f9d5b5;
+  color: #45320b;
+  table {
+    border: 1px solid #f9d5b5;
+    tr:first-child {
+      th {
+        border-top: 1px solid #f9d5b5;
+        border-bottom: 1px solid #f9d5b5;
+        &:last-child {
+          border-right: 1px solid #f9d5b5;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #f9d5b5;
+      border-right: 1px solid #f9d5b5;
+      background-color: #fdf6e4;
+      background-image: url("mod-table/bg04_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #f9d5b5;
+    }
+  }
+}
+
+//  mod-table14 の mixin一式
+@mixin mod-table14-common-style {
+  margin-top: 10px;
+  table {
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    line-height: 1.3;
+    tr:first-child {
+      font-size: $fontSizeS + 1;
+      > th:first-child {
+        width: 30%;
+        padding: 5px 2px;
+      }
+      > td:first-child {
+        width: 30%;
+        padding: 5px 2px;
+      }
+    }
+    tr {
+      th:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+      td:first-child {
+        font-weight: normal;
+        text-align: left;
+      }
+    }
+    th {
+      font-weight: normal;
+    }
+    td {
+      font-weight: bold;
+    }
+    tbody {
+      tr:first-child {
+        th {
+        font-size: $fontSizeS + 1;
+        }
+        td {
+          font-size: $fontSizeS + 1;
+        }
+      }
+      tr:first-child ~ tr {
+        th:first-child {
+        font-size: $fontSizeS + 1;
+        }
+        td:first-child {
+          font-size: $fontSizeS + 1;
+        }
+        th {
+          width: auto;
+          padding: 5px 2px;
+          font-size: $fontSizeS + 1;
+        }
+        td {
+          width: 48px;
+          padding: 5px 2px;
+          font-size: $fontSizeS + 1;
+        }
+      }
+    }
+    thead + tbody {
+      tr:first-child, tr {
+        th:first-child {
+          font-size: $fontSizeS + 1;
+        }
+        td:first-child {
+          font-size: $fontSizeS + 1;
+        }
+        th {
+          width: auto;
+          padding: 5px 2px;
+          font-size: $fontSizeS + 1;
+        }
+        td {
+          width: 48px;
+          padding: 5px 5px;
+          font-size: $fontSizeS + 1;
+        }
+      }
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-table14-style {
+  table {
+    color: #333333;
+    background-image: none;
+    tr:first-child {
+      th {
+        border-top: 1px solid #d2ccaa;
+        border-bottom: 1px solid #d2ccaa;
+        border-left: 1px solid #d2ccaa;
+        background-color: #1d6fde;
+        background-image: none;
+        background-repeat: repeat;
+        color: #ffffff;
+      }
+      th:last-child {
+        border-right: 1px solid #d2ccaa;
+      }
+    }
+    th {
+      border-top: 1px solid #d2ccaa;
+      border-right: 1px solid #d2ccaa;
+      color: #ffffff;
+      background-color: #1d6fde;
+    }
+    td {
+      border: 1px solid #d2ccaa;
+      background-color: #ffffff;
+    }
+  }
+}

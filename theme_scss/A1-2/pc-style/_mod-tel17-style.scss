@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@mixin mod-tel17-common-style {
+margin-top: 10px;
+  .mod-tel-inner {
+    font-size: $sideFontSizeS;
+    line-height: 1.0;
+    padding: 0 0 0 30px;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    font-weight: bold;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: $sideFontSizeL + 2;
+    padding: 6px 0 0 30px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
+
+@mixin mod-tel17-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #5f140a;
+    background-image: url("img/mod-tel/bg08.png");
+  }
+}
+@mixin mod-tel17-style2 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #5f140a;
+    background-image: url("img/mod-tel/bg08_2.png");
+  }
+}
+@mixin mod-tel17-style3 {
+  .mod-tel-inner {
+    color: #56534e;
+  }
+  .mod-tel-inner2 {
+    color: #5f140a;
+    background-image: url("img/mod-tel/bg08_3.png");
+  }
+}
+@mixin mod-tel17-style4 {
+  .mod-tel-inner {
+    color: #45320b;
+  }
+  .mod-tel-inner2 {
+    color: #f7931d;
+    background-image: url("img/mod-tel/bg08.png");
+  }
+}
+

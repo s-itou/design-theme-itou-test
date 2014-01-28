@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-text19-style";
+
+.mod-text19 {
+  @include mod-text19-common-style;
+  .ex-style_01A2 & {
+    @include mod-text19-style;
+  }
+}
+

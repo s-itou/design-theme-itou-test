@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// pat-design-case の定義
+//
+//   ・case 事例　の部品に当てるデザインパターン
+//   ・mod-set-case内にincludeされる使い方を想定
+//   ・他のsetモジュール（お客さまの声、等）でも使われる可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// -----------------------------------
+
+@import "../pattern/pat-item-h4";
+
+// -----------------------------------
+// pat-design-caseの装飾スタイル
+// -----------------------------------
+@mixin deco-style-pat-design-case {
+  //打ち消しはここに
+  .mod-h_4_ver2 {
+    .mod-h_4-inner {
+      > p {
+        padding: 0;
+      }
+    }
+    .mod-h_4-inner3 {
+      @include border-radius(0);
+      background-image: none;
+      background-color: none;
+      margin: 0;
+      padding: 0;
+    }
+    .mod-h_4-inner4 {
+      margin: 0;
+    }
+  }
+}
+
+@mixin deco-style-pat-design-case-2col {
+  //打ち消しはここに
+  .mod-h_4_ver2 {
+    .mod-h_4-inner {
+      > p {
+        padding: 0;
+      }
+    }
+    .mod-h_4-inner3 {
+      @include border-radius(0);
+      background-image: none;
+      background-color: none;
+      margin: 0;
+      padding: 0;
+      &.ex-first-child {
+        .mod-h {
+          font-size: $fontSizeL + 4;
+        }
+      }
+    }
+    .mod-h_4-inner4 {
+      margin: 0;
+    }
+  }
+}
+
+@mixin deco-style-pat-design-case-3col {
+  //打ち消しはここに
+  .mod-h_4_ver2 {
+    .mod-h_4-inner {
+      > p {
+        padding: 0;
+      }
+    }
+    .mod-h_4-inner3 {
+      @include border-radius(0);
+      background-image: none;
+      background-color: none;
+      margin: 0;
+      padding: 0;
+      .mod-h {
+        font-size: $fontSizeM + 1;
+      }
+      &.ex-first-child {
+        .mod-h {
+          font-size: $fontSizeL + 4;
+        }
+      }
+    }
+    .mod-h_4-inner4 {
+      margin: 0;
+    }
+  }
+}
+
+// -----------------------------------
+// pat-design-caseの個別設定
+// -----------------------------------
+@mixin pat-design-case-1 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-1;}
+  @include deco-style-pat-design-case;
+}
+@mixin pat-design-case-2 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-2;}
+  @include deco-style-pat-design-case;
+}
+@mixin pat-design-case-3 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-3;}
+  @include deco-style-pat-design-case;
+}
+@mixin pat-design-case-4 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-4;}
+  @include deco-style-pat-design-case;
+}
+@mixin pat-design-case-5 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-5;}
+  @include deco-style-pat-design-case;
+}
+@mixin pat-design-case-6 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-6;}
+  @include deco-style-pat-design-case;
+}
+@mixin pat-design-case-7 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-7;}
+  @include deco-style-pat-design-case;
+}
+@mixin pat-design-case-8 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-8;}
+  @include deco-style-pat-design-case;
+}
+@mixin pat-design-case-9 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-9;}
+  @include deco-style-pat-design-case;
+}
+
+
+
+@mixin pat-design-case-2col-1 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-1;}
+  @include deco-style-pat-design-case-2col;
+}
+@mixin pat-design-case-2col-2 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-2;}
+  @include deco-style-pat-design-case-2col;
+}
+@mixin pat-design-case-2col-3 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-3;}
+  @include deco-style-pat-design-case-2col;
+}
+@mixin pat-design-case-2col-4 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-4;}
+  @include deco-style-pat-design-case-2col;
+}
+@mixin pat-design-case-2col-5 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-5;}
+  @include deco-style-pat-design-case-2col;
+}
+@mixin pat-design-case-2col-6 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-6;}
+  @include deco-style-pat-design-case-2col;
+}
+@mixin pat-design-case-2col-7 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-7;}
+  @include deco-style-pat-design-case-2col;
+}
+@mixin pat-design-case-2col-8 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-8;}
+  @include deco-style-pat-design-case-2col;
+}
+@mixin pat-design-case-2col-9 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-9;}
+  @include deco-style-pat-design-case-2col;
+}
+
+
+
+@mixin pat-design-case-3col-1 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-1;}
+  @include deco-style-pat-design-case-3col;
+}
+@mixin pat-design-case-3col-2 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-2;}
+  @include deco-style-pat-design-case-3col;
+}
+@mixin pat-design-case-3col-3 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-3;}
+  @include deco-style-pat-design-case-3col;
+}
+@mixin pat-design-case-3col-4 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-4;}
+  @include deco-style-pat-design-case-3col;
+}
+@mixin pat-design-case-3col-5 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-5;}
+  @include deco-style-pat-design-case-3col;
+}
+@mixin pat-design-case-3col-6 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-6;}
+  @include deco-style-pat-design-case-3col;
+}
+@mixin pat-design-case-3col-7 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-7;}
+  @include deco-style-pat-design-case-3col;
+}
+@mixin pat-design-case-3col-8 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-8;}
+  @include deco-style-pat-design-case-3col;
+}
+@mixin pat-design-case-3col-9 {
+  .mod-h_4_ver2 {@include pat-item-h4-icon-case-9;}
+  @include deco-style-pat-design-case-3col;
+}

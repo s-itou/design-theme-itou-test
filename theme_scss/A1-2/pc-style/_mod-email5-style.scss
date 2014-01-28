@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@mixin mod-email5-common-style {
+padding: 1px 0 2px 40px;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-email5-style {
+  color: #333333;
+  background-image: url("img/mod-email/bg04.png");
+}
+@mixin mod-email5-style2 {
+  color: #010911;
+  background-image: url("img/mod-email/bg04_2.png");
+}
+@mixin mod-email5-style3 {
+  color: #222222;
+  background-image: url("img/mod-email/bg04_3.png");
+}
+@mixin mod-email5-style4 {
+  color: #333333;
+  background-image: url("img/mod-email/bg18.png");
+}
+@mixin mod-email5-style5 {
+  color: #333333;
+  background-image: url("img/mod-email/bg18_2.png");
+}
+@mixin mod-email5-style6 {
+  color: #333333;
+  background-image: url("img/mod-email/bg18_3.png");
+}
+

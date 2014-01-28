@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+
+//  mod-ol2 の mixin一式
+@mixin mod-ol2-common-style {
+  margin-top: 20px;
+  ol {
+    counter-reset:li; //カウントリセット
+  }
+  li {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 0;
+  }
+  li {
+    > p {
+      margin-top: 12px;
+    }
+    > p:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@mixin mod-ol2-style5 {
+  //none
+  ol {
+    padding-left: 10px;
+  }
+  li {
+    padding: 8px 10px 10px 40px;
+    background-color: #e9eaeb;
+    border: 1px solid #cdd0d1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    display: block;
+    text-align: center;
+    background:url(img/mod-ol/_02/bg_b_2.png) no-repeat left 2px;
+    color:#ffffff;
+    width: 46px;
+    height: 29px;
+    top: 0;
+    left: -11px;
+    font-size: $fontSizeL + 2;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+  }
+  //ex-styleが外れた時の挙動を考慮し、commonでなくこちらへ記述
+  li {
+    list-style:none; //デフォルトナンバリングを消す
+  }
+  li:before {
+    content:counter(li); //カウンターのインデックスを挿入
+    counter-increment:li; //ナンバリングを生成
+    position:absolute;
+  }
+}
+@mixin mod-ol2-style {
+  @include mod-ol2-style5; // none
+}
+@mixin mod-ol2-style2 {
+  @include mod-ol2-style5; // none
+}
+@mixin mod-ol2-style3 {
+  @include mod-ol2-style5; // none
+}
+@mixin mod-ol2-style4 {
+  @include mod-ol2-style5; // none
+}
+// @mixin mod-ol2-style5 {上に記載}
+@mixin mod-ol2-style6 {
+  @include mod-ol2-style5; // none
+}
+@mixin mod-ol2-style7 {
+  @include mod-ol2-style5; // none
+}
+@mixin mod-ol2-style8 {
+  @include mod-ol2-style5; // none
+}
+@mixin mod-ol2-style9 {
+  @include mod-ol2-style5; // none
+}

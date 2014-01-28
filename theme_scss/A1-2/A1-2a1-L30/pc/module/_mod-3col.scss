@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-3col-style";
+
+.mod-3col {
+  @include mod-3col-common-style;
+  @include mod-3col-style;
+  .ex-style_i1A1 & {
+    @include mod-3col-style2;
+  }
+  .ex-style_i1A2 & {
+    @include mod-3col-style3;
+  }
+  .ex-style_i1A3 & {
+    @include mod-3col-style4;
+  }
+  .ex-style_i1B1 & {
+    @include mod-3col-style5;
+  }
+  .ex-style_i1B2 & {
+    @include mod-3col-style6;
+  }
+  .ex-style_i1B3 & {
+    @include mod-3col-style7;
+  }
+  .ex-style_i1C1 & {
+    @include mod-3col-style8;
+  }
+  .ex-style_i1C2 & {
+    @include mod-3col-style9;
+  }
+  .ex-style_i1C3 & {
+    @include mod-3col-style10;
+  }
+}
+

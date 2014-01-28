@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@mixin mod-2col16-common-style {
+@extend %cf;
+  margin-top: 10px;
+  > .mod-2col-inner {
+    float: right;
+    width: 80px;
+    margin-left: 10px;
+     > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+  > .mod-2col-inner2 {
+     > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+  .ex-imgSize_S2S & {
+    > .mod-2col-inner {
+      width: 60px;
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-inner {
+      float: left;
+      margin-right: 20px;
+      margin-left: 0;
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-inner {
+      margin-bottom: 12px;
+    }
+    > .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+}
+
+

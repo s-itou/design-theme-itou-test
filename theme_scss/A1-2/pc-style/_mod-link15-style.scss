@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@mixin mod-link15-common-style {
+  margin-top: 10px !important;
+  line-height: 1.4;
+  max-width: 100%;
+  @include box-sizing(border-box);
+  padding-left: 15px;
+  font-size: $sideFontSizeM;
+  background-position: left 3px;
+  background-repeat: no-repeat;
+  p {
+    min-height: 21px;
+    min-width: 15px;
+    color: #154e86;
+  }
+  > .ex-first-child {
+    margin-top: 15px !important;
+  }
+  .step1 & {
+    margin-top: 15px !important;
+  }
+}
+
+@mixin mod-link15-style {
+background-image: url("img/mod-link/_15/bg_a_2.png");
+  a, a & {
+    color: #335a93;
+  }
+}
+@mixin mod-link15-style2 {
+background-image: url("img/mod-link/_15/bg_a_2.png");
+  a, a & {
+    color: #294470;
+  }
+}
+@mixin mod-link15-style3 {
+background-image: url("img/mod-link/_15/bg_a_2.png");
+  a, a & {
+    color: #45320b;
+  }
+}
+

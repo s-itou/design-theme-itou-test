@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+@mixin mod-h_4_22-common-style {
+  display: table;
+  margin-top: 30px;
+  i {
+    display: table-cell;
+    background-repeat: no-repeat;
+    height: 57px;
+  }
+  .mod-h_4-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    > p {
+      font-size: $fontSizeS;
+    }
+    .mod-h_4-inner3 {
+      .mod-h {
+        font-size: $fontSizeL + 6;
+      }
+    }
+    > p[data-cms-switchable="true"] + .mod-h_4-inner3, > p + .mod-h_4-inner3 {//編集画面上,公開画面
+      .mod-h {
+        font-size: $fontSizeL;
+      }
+    }
+    > p[data-cms-switchable="false"] + .mod-h_4-inner3 {//編集画面上
+      .mod-h {
+        font-size: $fontSizeL + 6;
+      }
+    }
+  }
+  .mod-h {
+    font-size: $fontSizeL + 6;
+    overflow: hidden;
+    line-height: 1.2;
+    word-break: break-all;
+    @include box-sizing(border-box);
+  }
+}
+
+@mixin mod-h_4_22-style {
+  min-height: 0;
+  height: auto;
+  i {
+    background-position: left center;
+    min-width: 57px;
+    background-color: transparent;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 10px;
+    background-color: transparent;
+    @include border-radius(0);
+    > p {
+      padding-left: 0;
+      color: #333333;
+    }
+  }
+  .mod-h {
+    padding: 0;
+    border-bottom: 1px solid #dedad1;
+    border-right: 0 none transparent;
+    @include border-radius(0);
+    background-image: none;
+    background-repeat: repeat;
+    background-color: transparent;
+    color: #333333;
+    font-weight: bold;
+  }
+}
+@mixin mod-h_4_22-style2 {
+  min-height: 0;
+  height: auto;
+  i {
+    background-position: left center;
+    min-width: 57px;
+    background-color: transparent;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 10px;
+    background-color: transparent;
+    @include border-radius(0);
+    > p {
+      padding-left: 0;
+      color: #333333;
+    }
+  }
+  .mod-h {
+    padding: 0;
+    border-bottom: 1px solid #dedad1;
+    border-right: 0 none transparent;
+    @include border-radius(0);
+    background-image: none;
+    background-repeat: repeat;
+    background-color: transparent;
+    color: #172846;
+    font-weight: bold;
+  }
+}
+@mixin mod-h_4_22-style3 {
+  min-height: 0;
+  height: auto;
+  i {
+    background-position: left center;
+    min-width: 57px;
+    background-color: transparent;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 10px;
+    background-color: transparent;
+    @include border-radius(0);
+    > p {
+      padding-left: 0;
+      color: #56534e;
+    }
+  }
+  .mod-h {
+    padding: 0;
+    border-bottom: 1px solid #dedad1;
+    border-right: 0 none transparent;
+    @include border-radius(0);
+    background-image: none;
+    background-repeat: repeat;
+    background-color: transparent;
+    color: #45320b;
+    font-weight: bold;
+  }
+}
+@mixin mod-h_4_22-style4 {
+  min-height: 0;
+  height: auto;
+  i {
+    background-position: left center;
+    min-width: 57px;
+    background-color: transparent;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 0;
+    background-color: transparent;
+    @include border-radius(0);
+    > p {
+      padding-left: 10px;
+      color: #333333;
+    }
+  }
+  .mod-h {
+    padding: 2px 10px;
+    border-bottom: 0 none transparent;
+    border-right: 1px solid #dedad1;
+    @include border-radius(0 15px 15px 0);
+    background-image: url("img/mod-h_4/bg11.png");
+    background-repeat: repeat-x;
+    background-color: #2484e7;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+@mixin mod-h_4_22-style5 {
+  min-height: 0;
+  height: auto;
+  i {
+    background-position: left center;
+    min-width: 57px;
+    background-color: transparent;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 0;
+    background-color: transparent;
+    @include border-radius(0);
+    > p {
+      padding-left: 10px;
+      color: #333333;
+    }
+  }
+  .mod-h {
+    padding: 2px 10px;
+    border-bottom: 0 none transparent;
+    border-right: 1px solid #dedad1;
+    @include border-radius(0 15px 15px 0);
+    background-image: url("img/mod-h_4/bg11_2.png");
+    background-repeat: repeat-x;
+    background-color: #6f94be;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+@mixin mod-h_4_22-style6 {
+  min-height: 0;
+  height: auto;
+  i {
+    background-position: left center;
+    min-width: 57px;
+    background-color: transparent;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 0;
+    background-color: transparent;
+    @include border-radius(0);
+    > p {
+      padding-left: 10px;
+      color: #333333;
+    }
+  }
+  .mod-h {
+    padding: 2px 10px;
+    border-bottom: 0 none transparent;
+    border-right: 1px solid #dedad1;
+    @include border-radius(0 15px 15px 0);
+    background-image: url("img/mod-h_4/bg11_3.png");
+    background-repeat: repeat-x;
+    background-color: #722416;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+@mixin mod-h_4_22-style7 {
+  min-height: 66px;
+  height: 66px;
+  i {
+    background-position: center;
+    min-width: 65px;
+    background-color: #0f375f;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 0;
+    background-color: #0f375f;
+    @include border-radius(0 3px 3px 0);
+    > p {
+      padding-left: 10px;
+      color: #ffffff;
+    }
+  }
+  .mod-h {
+    padding: 3px 20px 3px 10px;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+    @include border-radius(0);
+    background-image: none;
+    background-repeat: repeat;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+@mixin mod-h_4_22-style8 {
+  min-height: 66px;
+  height: 66px;
+  i {
+    background-position: center;
+    min-width: 65px;
+    background-color: #092037;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 0;
+    background-color: #092037;
+    @include border-radius(0 3px 3px 0);
+    > p {
+      padding-left: 10px;
+      color: #ffffff;
+    }
+  }
+  .mod-h {
+    padding: 3px 20px 3px 10px;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+    @include border-radius(0);
+    background-image: none;
+    background-repeat: repeat;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+@mixin mod-h_4_22-style9 {
+  min-height: 66px;
+  height: 66px;
+  i {
+    background-position: center;
+    min-width: 65px;
+    background-color: #3f0c06;
+  }
+  .mod-h_4-inner {
+    vertical-align: middle;
+    padding-left: 0;
+    background-color: #3f0c06;
+    @include border-radius(0 3px 3px 0);
+    > p {
+      padding-left: 10px;
+      color: #ffffff;
+    }
+  }
+  .mod-h {
+    padding: 3px 20px 3px 10px;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+    @include border-radius(0);
+    background-image: none;
+    background-repeat: repeat;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-tel
+// mod-tel-iiX を前提としたデザインパターン
+//
+//    ・tel-M（Mサイズのデザイン）
+//    ・tel-ii-footer（フッター用のデザイン）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-tel-style.scss";
+
+// -------------------------------------
+//  pat-item-tel-M の個別設定
+// -------------------------------------
+@mixin pat-item-tel-M-1 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-1;
+}
+@mixin pat-item-tel-M-2 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-2;
+}
+@mixin pat-item-tel-M-3 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-3;
+}
+@mixin pat-item-tel-M-4 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-4;
+}
+@mixin pat-item-tel-M-5 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-5;
+}
+@mixin pat-item-tel-M-6 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-6;
+}
+@mixin pat-item-tel-M-7 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-7;
+}
+@mixin pat-item-tel-M-8 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-8;
+}
+@mixin pat-item-tel-M-9 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-M;
+  @include deco-sytle-pat-item-tel-M-9;
+}
+
+
+// -------------------------------------
+//  pat-item-tel-ii-footer の個別設定
+// -------------------------------------
+@mixin pat-item-tel-ii-footer-1 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii-footer;
+  @include deco-sytle-pat-item-tel-ii-footer-1;
+}
+@mixin pat-item-tel-ii-footer-2 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii-footer;
+  @include deco-sytle-pat-item-tel-ii-footer-2;
+}
+@mixin pat-item-tel-ii-footer-3 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii-footer;
+  @include deco-sytle-pat-item-tel-ii-footer-3;
+}
+@mixin pat-item-tel-ii-footer-4 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii-footer;
+  @include deco-sytle-pat-item-tel-ii-footer-4;
+}
+@mixin pat-item-tel-ii-footer-5 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii-footer;
+  @include deco-sytle-pat-item-tel-ii-footer-5;
+}
+@mixin pat-item-tel-ii-footer-6 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii-footer;
+  @include deco-sytle-pat-item-tel-ii-footer-6;
+}
+@mixin pat-item-tel-ii-footer-7 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii-footer;
+  @include deco-sytle-pat-item-tel-ii-footer-7;
+}

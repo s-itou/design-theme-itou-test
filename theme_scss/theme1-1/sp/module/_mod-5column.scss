@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+
+%default-5col-inner {
+  // float: left;
+  // width: 132px;
+  // padding-left: 20px;
+  //@include background("mod-column/bg.png", $position-x: left, $position-y: center);
+  @include background("mod-column/spbg.png", $position-x: 50%, $position-y: bottom);
+   background-size: 39px 16px;
+    padding-bottom : 30px;//SP用ここから
+    margin-bottom : 20px;
+  // :after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 44px;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   margin: -20px 0;
+  //   @include background("mod-column/bg.png", $position-x: 50%, $position-y: top);
+  //   -webkit-transform: rotate(90deg);
+  //   -moz-transform: rotate(90deg);
+  //   -ms-transform: rotate(90deg);
+  //   -o-transform: rotate(90deg);
+  //   transform: rotate(90deg);//SP用
+  // }
+}
+.mod-5col {
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-5col-inner {
+    @extend %default-5col-inner;
+    // float: left;
+    // width: 112px;
+  .mod-bnr7{//SP
+    margin-bottom: 10px !important;//SP
+    }//SP
+  }
+  > .mod-5col-inner2 {
+    @extend %default-5col-inner;
+      .mod-bnr7{//SP
+    margin-bottom: 10px !important;//SP
+    }//SP
+  }
+  > .mod-5col-inner3 {
+    @extend %default-5col-inner;
+  .mod-bnr7{//SP
+    margin-bottom: 10px !important;//SP
+    }//SP
+  }
+  > .mod-5col-inner4 {
+    @extend %default-5col-inner;
+  .mod-bnr7{//SP
+    margin-bottom: 10px !important;//SP
+    }//SP
+  }
+  > .mod-5col-inner5 {
+    // @extend %default-5col-inner;
+  .mod-bnr7{//SP
+    margin-bottom: 10px !important;//SP
+    }//SP
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-5col-inner {
+      // :after {
+        @include background("mod-column/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner2 {
+      // :after {
+        @include background("mod-column/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner3 {
+      // :after {
+        @include background("mod-column/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner4 {
+      // :after {
+        @include background("mod-column/spbg_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_013 &,
+  .ex-style_01A3 & {
+    > .mod-5col-inner {
+      // :after {
+        @include background("mod-column/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner2 {
+      // :after {
+        @include background("mod-column/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner3 {
+      // :after {
+        @include background("mod-column/bg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner4 {
+      // :after {
+        @include background("mod-column/spbg_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    > .mod-5col-inner {
+      // :after {
+        @include background("mod-column/spbg02.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner2 {
+      // :after {
+        @include background("mod-column/spbg02.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner3 {
+      // :after {
+        @include background("mod-column/spbg02.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner4 {
+      // :after {
+        @include background("mod-column/spbg02.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    > .mod-5col-inner {
+      // :after {
+        @include background("mod-column/spbg02_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner2 {
+      // :after {
+        @include background("mod-column/spbg02_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner3 {
+      // :after {
+        @include background("mod-column/spbg02_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner4 {
+      // :after {
+        @include background("mod-column/spbg02_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    > .mod-5col-inner {
+      // :after {
+        @include background("mod-column/spbg02_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner2 {
+      // :after {
+        @include background("mod-column/spbg02_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner3 {
+      // :after {
+        @include background("mod-column/spbg02_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner4 {
+      // :after {
+        @include background("mod-column/spbg02_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    > .mod-5col-inner {
+      // :after {
+        @include background("mod-column/spbg03.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner2 {
+      // :after {
+        @include background("mod-column/spbg03.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner3 {
+      // :after {
+        @include background("mod-column/spbg03.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner4 {
+      // :after {
+        @include background("mod-column/spbg03.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    > .mod-5col-inner {
+      // :after {
+        @include background("mod-column/spbg03_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner2 {
+      // :after {
+        @include background("mod-column/spbg03_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner3 {
+      // :after {
+        @include background("mod-column/spbg03_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner4 {
+      // :after {
+        @include background("mod-column/spbg03_2.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    > .mod-5col-inner {
+      // :after {
+        @include background("mod-column/spbg03_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner2 {
+      // :after {
+        @include background("mod-column/spbg03_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner3 {
+      // :after {
+        @include background("mod-column/spbg03_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+    > .mod-5col-inner4 {
+      // :after {
+        @include background("mod-column/spbg03_3.png", $position-x: 50%, $position-y: bottom);
+      // }
+    }
+  }
+}

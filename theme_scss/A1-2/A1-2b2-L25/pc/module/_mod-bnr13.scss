@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-bnr13-style";
+
+.mod-bnr13 {
+  @include mod-bnr13-common-style;
+  @include mod-bnr13-style2;
+  .ex-style_01A2 & {
+    @include mod-bnr13-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr13-style3;
+  }
+}
+

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+
+// --------------------------------------------------------------------------
+// pat-design-form の装飾スタイル
+// --------------------------------------------------------------------------
+
+// mod-copy-M の装飾
+@mixin deco-style-pat-design-form {
+  padding: 25px 25px 0;
+}
+
+@mixin deco-style-pat-design-form2 {
+  padding: 0 25px 0;
+}
+// --------------------------------------------------------------------------
+// pat-design-formの個別設定
+// --------------------------------------------------------------------------
+
+@mixin pat-design-form-1 {
+  @include pat-item-waku-kadomaru-simple-green;
+  @include deco-style-pat-design-form;
+}
+@mixin pat-design-form-2 {
+  @include pat-item-waku-kadomaru-simple-gold;
+  @include deco-style-pat-design-form;
+}
+@mixin pat-design-form-3 {
+  @include pat-item-waku-kadomaru-simple-orange;
+  @include deco-style-pat-design-form;
+}
+@mixin pat-design-form-4 {
+  @include pat-item-waku-kadomaru-simple-blue;
+  @include deco-style-pat-design-form;
+}
+@mixin pat-design-form-5 {
+  @include pat-item-waku-kadomaru-simple-green;
+  @include deco-style-pat-design-form;
+}
+@mixin pat-design-form-6 {
+  @include pat-item-waku-kadomaru-simple-blue-2;
+  @include deco-style-pat-design-form;
+}
+@mixin pat-design-form-7 {
+  //枠なし
+  @include deco-style-pat-design-form2;
+}
+@mixin pat-design-form-8 {
+  //枠なし
+  @include deco-style-pat-design-form2;
+}
+@mixin pat-design-form-9 {
+  //枠なし
+  @include deco-style-pat-design-form2;
+}

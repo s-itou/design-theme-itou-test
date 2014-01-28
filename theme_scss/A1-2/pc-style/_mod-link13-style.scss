@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+//  mod-link13 の mixin一式
+@mixin mod-link13-common-style {
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    padding-left: 20px;
+    font-size: 15px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+  line-height: 1.4;
+  margin-top: 20px !important;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  @include box-sizing(border-box);
+  p {
+    min-width: 15px;
+  }
+  .ex-imgFloat & {
+    overflow: hidden;
+  }
+  a &, a {
+    color: #335a93;
+  }
+}
+
+@mixin mod-link13-style {
+  background-image: url("img/mod-link/bg.png");
+}
+@mixin mod-link13-style2 {
+  background-image: url("img/mod-link/bg_2.png");
+}
+@mixin mod-link13-style3 {
+  background-image: url("img/mod-link/bg_3.png");
+}
+@mixin mod-link13-style4 {
+  background-image: url("img/mod-link/bg10.png");
+}
+@mixin mod-link13-style5 {
+  background-image: url("img/mod-link/bg10_2.png");
+}
+@mixin mod-link13-style6 {
+  background-image: url("img/mod-link/bg10_3.png");
+}
+

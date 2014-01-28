@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "../sp-style/mod-tel-style";
+
+//##################################################
+//  mod-tel-ii-footer
+//##################################################
+.mod-tel-ii-footer {
+  @include common-style-mod-tel-ii-footer;
+  @include module-style-mod-tel-ii-footer;
+  .ex-style_#{$baseEx_01A1} & {@include pat-item-tel-ii-footer-1;}
+  .ex-style_#{$baseEx_01A2} & {@include pat-item-tel-ii-footer-2;}
+  .ex-style_#{$baseEx_01A3} & {@include pat-item-tel-ii-footer-3;}
+  .ex-style_#{$baseEx_01B1} & {@include pat-item-tel-ii-footer-4;}
+  .ex-style_#{$baseEx_01B2} & {@include pat-item-tel-ii-footer-4;}
+  .ex-style_#{$baseEx_01B3} & {@include pat-item-tel-ii-footer-4;}
+  .ex-style_#{$baseEx_01C1} & {@include pat-item-tel-ii-footer-5;}
+  .ex-style_#{$baseEx_01C2} & {@include pat-item-tel-ii-footer-6;}
+  .ex-style_#{$baseEx_01C3} & {@include pat-item-tel-ii-footer-7;}
+}

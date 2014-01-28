@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import "../sp-style/mod-2column-style";
+
+//##################################################
+//  mod-2col-footer
+//##################################################
+.mod-2col-footer {
+  @include common-style-mod-2col-footer;
+  @include module-style-mod-2col-footer;
+  .ex-style_#{$baseEx_01A1} & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_#{$baseEx_01A2} & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_#{$baseEx_01A3} & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_#{$baseEx_01B1} & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_#{$baseEx_01B2} & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_#{$baseEx_01B3} & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_#{$baseEx_01C1} & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_#{$baseEx_01C2} & {@include deco-style01A1-mod-2col-footer;}
+  .ex-style_#{$baseEx_01C3} & {@include deco-style01A1-mod-2col-footer;}
+}
+
+
+//##################################################
+//  mod-2col-table-footer
+//##################################################
+.mod-2col-table-footer {
+  @include common-style-mod-2col-table-footer;
+  @include module-style-mod-2col-table-footer;
+  .ex-style_#{$baseEx_01A1} & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_#{$baseEx_01A2} & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_#{$baseEx_01A3} & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_#{$baseEx_01B1} & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_#{$baseEx_01B2} & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_#{$baseEx_01B3} & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_#{$baseEx_01C1} & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_#{$baseEx_01C2} & {@include deco-style01A1-mod-2col-table-footer;}
+  .ex-style_#{$baseEx_01C3} & {@include deco-style01A1-mod-2col-table-footer;}
+}

@@ -1,0 +1,72 @@
+.area-all {
+  margin: 0 auto;
+}
+
+.area-header {
+  /*width: 100%;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:0;
+  /*background-image: url("img/area-header/bg.png");*/
+  /*background-repeat: repeat-x;*/
+  /*border-top: solid 4px #2e7fec;*/
+}
+
+.area-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-top: 20px;*/
+  /*background-image: url("img/area-container/bg.png");*/
+  background-repeat: repeat-y;
+  *zoom: 1;
+}
+.area-container:before, .area-container:after {
+  content: "";
+  display: table;
+}
+.area-container:after {
+  clear: both;
+}
+
+.area-main {
+  /*float: none;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:0;
+  /*スマホ用の余白作成*/
+  /*width: 100%;*/
+  /*padding: 0;*/
+  /*background-image: url("img/area-main/bg.png");*/
+  background-repeat: no-repeat;
+}
+
+.area-side-left {
+  float: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*margin: 0 15px;*/
+  /*width: 100%;*/
+  padding:0;/* スマホ用余白 */
+  background-color: #eff5fe;
+  background-image: url("img/area-side/bg.png");
+  background-repeat: repeat-x;
+}
+
+.area-footer {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  border-top: 1px solid #dedad1;
+  color: #333333;
+  background-color: #fbf6e9;
+  min-height: 50px;/* SP用 */
+}
+.area-footer div[class^="area-footer-inner"] {
+  margin: 0 auto;
+}

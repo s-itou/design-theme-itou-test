@@ -1,0 +1,712 @@
+@charset "UTF-8";
+
+//  mod-box57 の mixin一式
+@mixin mod-box57-common-style {
+  margin-top: 30px;
+  background-repeat: repeat-x;
+  border: 1px solid #f2d028;
+  @include border-radius();
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box57-style {
+  //none
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+@mixin mod-box57-style2 {
+  //none
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+@mixin mod-box57-style3 {
+  //none
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+@mixin mod-box57-style4 {
+  //none
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+@mixin mod-box57-style5 {
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+@mixin mod-box57-style6 {
+  //none
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+@mixin mod-box57-style7 {
+  //none
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+@mixin mod-box57-style8 {
+  //none
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+@mixin mod-box57-style9 {
+  //none
+  background-image: url("img/mod-box/_57/bg_b_2.png");
+}
+
+
+
+
+//  mod-box58 の mixin一式
+@mixin mod-box58-common-style {
+  margin-left: 67px;
+}
+
+
+
+//  mod-h_4_29 の mixin一式
+@mixin mod-h_4_29-common-style {
+  display: table;
+  margin-top: 20px;
+  i {
+    display: table-cell;
+    background-position: left center;
+    background-repeat: no-repeat;
+    min-width: 67px;
+    height: 57px;
+  }
+  .mod-h_4-inner {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 30px;
+    > p {
+      font-size: $fontSizeS;
+      padding-left: 0;
+    }
+    > p[data-cms-switchable="true"] + .mod-h_4-inner3, > p + .mod-h_4-inner3 {//編集画面上,公開画面
+      .mod-h {
+        font-size: $fontSizeL;
+      }
+    }
+    > p[data-cms-switchable="false"] + .mod-h_4-inner3 {//編集画面上
+      .mod-h {
+        font-size: $fontSizeL + 7;
+      }
+    }
+  }
+  .mod-h {
+    font-size: $fontSizeL + 7;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+
+@mixin mod-h_4_29-style {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style2 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+    .mod-h {
+      color: #333333;
+    }
+  }
+}
+@mixin mod-h_4_29-style3 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style4 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style5 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style6 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style7 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style8 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style9 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+
+
+//  mod-icon_num3 の mixin一式
+@mixin mod-icon_num3-common-style {
+  .mod-icon_num3 {
+    .step1 &, .step2 &, .step3 &, .step4 &, .step5 &,
+    .step6 &, .step7 &, .step8 &, .step9 &, .step10 & {
+      background-position-y: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+@mixin mod-icon_num3-style {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg02.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg03.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg04.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg05.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg06.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg07.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg08.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg09.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg10.png);
+    }
+  }
+}
+
+
+@mixin mod-icon_num3-style2 {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg_2.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg02_2.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg03_2.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg04_2.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg05_2.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg06_2.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg07_2.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg08_2.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg09_2.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg10_2.png);
+    }
+  }
+}
+
+@mixin mod-icon_num3-style3 {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg_3.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg02_3.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg03_3.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg04_3.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg05_3.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg06_3.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg07_3.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg08_3.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg09_3.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/8/bg10_3.png);
+    }
+  }
+}
+
+@mixin mod-icon_num3-style4 {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg02.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg03.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg04.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg05.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg06.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg07.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg08.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg09.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg10.png);
+    }
+  }
+}
+
+@mixin mod-icon_num3-style5 {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg_2.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg02_2.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg03_2.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg04_2.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg05_2.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg06_2.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg07_2.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg08_2.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg09_2.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg10_2.png);
+    }
+  }
+}
+
+@mixin mod-icon_num3-style6 {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg_3.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg02_3.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg03_3.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg04_3.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg05_3.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg06_3.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg07_3.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg08_3.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg09_3.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/12/bg10_3.png);
+    }
+  }
+}
+
+@mixin mod-icon_num3-style7 {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg02.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg03.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg04.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg05.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg06.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg07.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg08.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg09.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg10.png);
+    }
+  }
+}
+
+@mixin mod-icon_num3-style8 {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg_2.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg02_2.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg03_2.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg04_2.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg05_2.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg06_2.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg07_2.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg08_2.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg09_2.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg10_2.png);
+    }
+  }
+}
+
+@mixin mod-icon_num3-style9 {
+  .step1 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg_3.png);
+    }
+  }
+  .step2 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg02_3.png);
+    }
+  }
+  .step3 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg03_3.png);
+    }
+  }
+  .step4 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg04_3.png);
+    }
+  }
+  .step5 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg05_3.png);
+    }
+  }
+  .step6 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg06_3.png);
+    }
+  }
+  .step7 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg07_3.png);
+    }
+  }
+  .step8 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg08_3.png);
+    }
+  }
+  .step9 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg09_3.png);
+    }
+  }
+  .step10 {
+    .mod-icon_num3 {
+      background-image: url(img/mod-h_4/26/bg10_3.png);
+    }
+  }
+}
+
+//  mod-rte38 の mixin一式
+@mixin mod-rte38-common-style {
+  margin-top: 10px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-rte38-style {
+  color: #333333;
+}
+@mixin mod-rte38-style2 {
+  //none
+  color: #ffffff;
+}
+

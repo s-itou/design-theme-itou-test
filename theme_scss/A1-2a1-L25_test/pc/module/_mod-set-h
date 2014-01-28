@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "../pc-style/mod-set-h-style";
+
+.mod-set-h1 {
+  @include module-style-mod-set-h1;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-set-h1;
+  }
+}
+
+.mod-set-h1-header {  // 部品としてこのsetが直接指定される
+  @include module-style-mod-set-h1-header;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-set-h1-header;
+  }
+}
+
+.mod-set-h2,
+.mod-set-h3,
+.mod-set-h4,
+.mod-set-h5 {
+  @include common-style-mod-set-h;
+}
+

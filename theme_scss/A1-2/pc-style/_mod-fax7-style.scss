@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@mixin mod-fax7-common-style {
+font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  margin-top: 10px !important;
+  padding: 5px 0 0 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-fax7-style {
+  color: #333333;
+  background-image: url("img/mod-fax/bg05.png");
+}
+@mixin mod-fax7-style2 {
+  color: #010911;
+  background-image: url("img/mod-fax/bg05_2.png");
+}
+@mixin mod-fax7-style3 {
+  color: #222222;
+  background-image: url("img/mod-fax/bg05_3.png");
+}
+@mixin mod-fax7-style4 {
+  color: #333333;
+  background-image: url("img/mod-fax/bg18.png");
+}
+@mixin mod-fax7-style5 {
+  color: #333333;
+  background-image: url("img/mod-fax/bg18_2.png");
+}
+@mixin mod-fax7-style6 {
+  color: #333333;
+  background-image: url("img/mod-fax/bg18_3.png");
+}
+
+

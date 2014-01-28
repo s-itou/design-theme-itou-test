@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%default-4col-inner-base {
+  padding: 10px 10px 0 10px;
+  border: 1px solid #cccccc;
+  border-top: 3px solid #f77b18;
+  @include border-radius();
+  background-color: #fffdf5;
+}
+
+%default-4col-inner {
+  float: left;
+  width: 235px;
+  @extend %default-4col-inner-base;
+}
+
+%default-4col-inner2 {
+  float: left;
+  width: 151px; //layout手動
+  padding-left: 18px;
+  @include background("mod-column/bg.png", $position-x: left, $position-y: center);
+}
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+
+.mod-4col { //メイン4等分 未完成 m-64 B部品
+  @extend %cf;
+  > .mod-4col-inner {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+  }
+  > .mod-4col-inner2 {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+  }
+  > .mod-4col-inner3 {
+    float: right;
+    width: 200px;
+  }
+  > .mod-4col-inner4 {
+    float: right;
+    width: 200px;
+  }
+}
+
+.mod-4col2 { //フッター４等分
+  @extend %cf;
+  > .mod-4col-inner {
+    float: left;
+    width: 230px;
+    margin-right: 20px;
+  }
+  > .mod-4col-inner2 {
+    float: left;
+    width: 230px;
+    margin-right: 20px;
+  }
+  > .mod-4col-inner3 {
+    float: left;
+    width: 230px;
+    margin-right: 20px;
+  }
+  > .mod-4col-inner4 {
+    float: left;
+    width: 230px;
+  }
+}
+
+
+.mod-4col3 {
+  @extend %cf;
+  > .mod-4col3-inner {
+    @extend %default-4col-inner;
+    margin-right: 13px;
+  }
+  > .mod-4col3-inner2 {
+    @extend %default-4col-inner;
+    margin-right: 13px;
+  }
+  > .mod-4col3-inner3 {
+    @extend %default-4col-inner;
+    margin-right: 14px;
+  }
+  > .mod-4col3-inner4 {
+    @extend %default-4col-inner;
+  }
+}
+
+
+.mod-4col4 {
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-4col-inner {
+    float: left;
+    width: 133px; //layout手動
+  }
+  > .mod-4col-inner2 {
+    @extend %default-4col-inner2;
+  }
+  > .mod-4col-inner3 {
+    @extend %default-4col-inner2;
+  }
+  > .mod-4col-inner4 {
+    @extend %default-4col-inner2;
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01a2c &,
+  .ex-style_01A2d & {
+    > .mod-4col-inner2, > .mod-4col-inner3 ,> .mod-4col-inner4 {
+      background-image: url(img/mod-column/bg_2.png);
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01a3c &,
+  .ex-style_01A3d & {
+    > .mod-4col-inner2, > .mod-4col-inner3 ,> .mod-4col-inner4 {
+      background-image: url(img/mod-column/bg_3.png);
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    > .mod-4col-inner2, > .mod-4col-inner3 ,> .mod-4col-inner4 {
+      background-image: url(img/mod-column/bg02.png);
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    > .mod-4col-inner2, > .mod-4col-inner3 ,> .mod-4col-inner4 {
+      background-image: url(img/mod-column/bg02_2.png);
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    > .mod-4col-inner2, > .mod-4col-inner3 ,> .mod-4col-inner4 {
+      background-image: url(img/mod-column/bg02_3.png);
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    > .mod-4col-inner2, > .mod-4col-inner3 ,> .mod-4col-inner4 {
+      background-image: url(img/mod-column/bg03.png);
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    > .mod-4col-inner2, > .mod-4col-inner3 ,> .mod-4col-inner4 {
+      background-image: url(img/mod-column/bg03_2.png);
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    > .mod-4col-inner2, > .mod-4col-inner3 ,> .mod-4col-inner4 {
+      background-image: url(img/mod-column/bg03_3.png);
+    }
+  }
+}
+

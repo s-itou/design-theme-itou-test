@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-bnr10-style";
+
+.mod-bnr10 {
+  @include mod-bnr10-common-style;
+  @include mod-bnr10-style;
+  .ex-style_01A2 & {
+    @include mod-bnr10-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr10-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr10-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr10-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr10-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr10-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr10-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr10-style9;
+  }
+}
+

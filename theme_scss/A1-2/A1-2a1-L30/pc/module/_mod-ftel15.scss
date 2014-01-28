@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-ftel15-style";
+
+.mod-ftel15 {
+  @include mod-ftel15-common-style;
+  @include mod-ftel15-style;
+}
+

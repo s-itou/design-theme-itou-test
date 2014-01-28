@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+
+// -----------------------------------
+// part-main-165 mod-2col7
+// mod-set-faq-2col
+// -----------------------------------
+@import "../pc-style/mod-2column-style";
+%common-style-mod-set-faq-2col {
+	@include common-style-mod-2col50-in2;
+}
+
+//セットの基本的な枠組みなど、プレスホルダー化した方がいい。どこに置くべきだろうか

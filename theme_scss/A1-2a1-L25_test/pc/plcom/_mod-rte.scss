@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//文章＋画像2colは1カラムと同じ（そのまま）
+
+%common-style-mod-rte-for-2col { //2列50%,2列中の文章＋画像
+  .mod-rte_ver2
+  // .mod-rte19, //暫定ボックス見出し下2列用
+  // .mod-rte21, //暫定小見出し下2列用
+  // .mod-rte24  //暫定見出し下以外の2列用
+  {
+    > p {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+%common-style-mod-rte-for-3col { //3,4,5列,3列中の文章＋画像
+  .mod-rte_ver2
+  // .mod-rte20, //暫定ボックス見出し下3列用
+  // .mod-rte22, //暫定小見出し下3列用
+  // .mod-rte25  //暫定見出し下以外の3列用
+  {
+    margin: 15px 0 0 0;
+    > p {
+      margin: 8px 0 0 0;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+%common-style-mod-rte-koramu-for-2col { //2列50%,2列中の文章＋画像
+  .mod-rte-koramu
+  //.mod-rte8 //暫定
+  {
+    padding: 10px;
+    > p {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+%common-style-mod-rte-koramu-for-3col { //3,4,5列,3列中の文章＋画像
+  .mod-rte-koramu
+  //.mod-rte7 //暫定
+  {
+    margin: 15px 0 0 0;
+    padding: 10px;
+    > p {
+      margin: 8px 0 0 0;
+      line-height: 1.5;
+    }
+  }
+}

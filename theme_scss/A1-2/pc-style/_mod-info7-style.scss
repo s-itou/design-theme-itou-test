@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@mixin mod-info7-common-style {
+margin-top: 10px;
+  th {
+    font-weight: normal;
+    vertical-align: top;
+    padding-bottom: 10px;
+    > p {
+      width: 60px;
+      padding: 0 20px;
+      text-align: center;
+      @include border-radius();
+    }
+  }
+  td {
+    vertical-align: top;
+    padding: 1px 0 10px 10px;
+    max-width: 220px;
+    color: #333333;
+  }
+}
+
+@mixin mod-info7-style {
+th {
+    > p {
+      color: #ffffff;
+      background-color: #5f140a;
+    }
+  }
+}
+@mixin mod-info7-style2 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #3c3c3c;
+    }
+  }
+}
+@mixin mod-info7-style3 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #325073;
+    }
+  }
+}
+@mixin mod-info7-style4 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #0b2745;
+    }
+  }
+}
+@mixin mod-info7-style5 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #325074;
+    }
+  }
+}
+@mixin mod-info7-style6 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #260e0e;
+    }
+  }
+}
+@mixin mod-info7-style7 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #666666;
+    }
+  }
+}
+@mixin mod-info7-style8 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #0f375f;
+    }
+  }
+}
+@mixin mod-info7-style9 {
+th {
+    > p {
+    color: #ffffff;
+    background-color: #46140b;
+    }
+  }
+}
+

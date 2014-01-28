@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@mixin mod-title8-common-style {
+margin-top: 5px;
+  display: table;
+  .mod-title8-inner {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.0;
+    vertical-align: middle;
+    margin: 0;
+    display: table-cell;
+    .mod-title8-inner-img {
+    width: 40px;
+    margin-right: 5px;
+    }
+  }
+}
+
+@mixin mod-title8-style {
+.mod-title8-inner {
+    color: #222222;
+  }
+}
+@mixin mod-title8-style2 {
+.mod-title8-inner {
+    color: #333333;
+  }
+}
+@mixin mod-title8-style3 {
+.mod-title8-inner {
+    color: #200805;
+  }
+}
+

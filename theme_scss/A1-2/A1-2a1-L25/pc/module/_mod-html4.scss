@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-html4-style";
+
+.mod-html4 {
+  @include mod-html4-common-style;
+  @include mod-html4-style;
+  .ex-style_01A2 & {
+    @include mod-html4-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-html4-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-html4-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-html4-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-html4-style6;
+  }
+}
+

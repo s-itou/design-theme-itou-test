@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@mixin mod-ul5-common-style {
+margin-top: 10px;
+  ul {
+    margin: 0;
+    padding-left: 0;
+    li {
+      padding-top: 2px;
+      list-style-type: none;
+      background-repeat: no-repeat;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-ul5-style {
+@include border-radius(0);
+  border: 0 none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg.png");
+    background-position: left 8px;
+  }
+}
+@mixin mod-ul5-style2 {
+@include border-radius(0);
+  border: 0 none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg_2.png");
+    background-position: left 8px;
+  }
+}
+@mixin mod-ul5-style3 {
+@include border-radius(0);
+  border: 0 none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg_3.png");
+    background-position: left 8px;
+  }
+}
+@mixin mod-ul5-style4 {
+@include border-radius(0);
+  border: 0 none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg04.png");
+    background-position: left 8px;
+  }
+}
+@mixin mod-ul5-style5 {
+@include border-radius(0);
+  border: 0 none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg04_2.png");
+    background-position: left 8px;
+  }
+}
+@mixin mod-ul5-style6 {
+@include border-radius(0);
+  border: 0 none transparent;
+  background-color: transparent;
+  padding: 0;
+  li {
+    margin-left: 15px;
+    padding-left: 15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg04_3.png");
+    background-position: left 8px;
+  }
+}
+@mixin mod-ul5-style7 {
+@include border-radius();
+  border: 1px solid #aebdce;
+  background-color: #d7e1ec;
+  padding: 10px;
+  li {
+    margin-left: 5px;
+    padding-left: 18px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg06.png");
+    background-position: left 2px;
+  }
+}
+@mixin mod-ul5-style8 {
+@include border-radius();
+  border: 1px solid #aaaaaa;
+  background-color: #ececec;
+  padding: 10px;
+  li {
+    margin-left: 5px;
+    padding-left: 18px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg06_2.png");
+    background-position: left 2px;
+  }
+}
+@mixin mod-ul5-style9 {
+@include border-radius();
+  border: 1px solid #cccccc;
+  background-color: #f8f3e0;
+  padding: 10px;
+  li {
+    margin-left: 5px;
+    padding-left: 18px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg06_3.png");
+    background-position: left 2px;
+  }
+}
+

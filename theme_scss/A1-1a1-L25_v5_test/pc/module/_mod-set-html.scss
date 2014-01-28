@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import "../pc-style/mod-set-html-style.scss";
+
+
+.mod-set-html {
+  @include common-style-mod-set-html;
+  @include module-style-mod-set-html;
+}
+
+.mod-set-html-header {
+  @include common-style-mod-set-html;
+  @include module-style-mod-set-html-header;
+}
+
+.mod-set-html-footer {
+  @include common-style-mod-set-html;
+  @include module-style-mod-set-html-footer;
+}
+
+.mod-set-html-side {
+  @include common-style-mod-set-html;
+  @include module-style-mod-set-html-side;
+}
+
+.mod-box25 {
+  @extend .mod-set-html-footer;
+}
+.mod-box26 {
+  @extend .mod-set-html-header;
+}
+.mod-box33 {
+  @extend .mod-set-html;
+}
+.mod-box42 {
+  @extend .mod-set-html-side;
+}

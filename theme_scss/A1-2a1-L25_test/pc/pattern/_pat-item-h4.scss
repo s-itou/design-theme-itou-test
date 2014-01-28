@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-h4
+//
+//    ・mod-h4-in2 を前提としたデザインパターン
+//
+//    ・h4-ribbon（リボン系３重背景）
+//    ・h4-image（画像背景）
+//    ・h4-border（ボーダー）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/pat-item-h4-style";
+
+// -------------------------------------
+//  pat-item-h4の個別設定
+// -------------------------------------
+//汎用的なボックス見出し
+@mixin pat-item-h4-1 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-1;
+}
+@mixin pat-item-h4-2 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-2;
+}
+@mixin pat-item-h4-3 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-3;
+}
+@mixin pat-item-h4-4 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-4;
+}
+@mixin pat-item-h4-5 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-5;
+}
+@mixin pat-item-h4-6 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-6;
+}
+@mixin pat-item-h4-7 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-7;
+}
+@mixin pat-item-h4-8 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-8;
+}
+@mixin pat-item-h4-9 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-9;
+}
+
+// 背景グラデーション
+@mixin pat-item-h4-gurade-1 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-gurade;
+  @include deco-style-pat-item-h4-gurade-1;
+}
+@mixin pat-item-h4-gurade-2 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-gurade;
+  @include deco-style-pat-item-h4-gurade-2;
+}
+@mixin pat-item-h4-gurade-3 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-gurade;
+  @include deco-style-pat-item-h4-gurade-3;
+}
+
+//汎用的なボックス見出し
+@mixin pat-item-h4-kaku-1 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-1;
+}
+@mixin pat-item-h4-kaku-2 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-2;
+}
+@mixin pat-item-h4-kaku-3 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-3;
+}
+@mixin pat-item-h4-kaku-4 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-4;
+}
+@mixin pat-item-h4-kaku-5 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-5;
+}
+@mixin pat-item-h4-kaku-6 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-6;
+}
+@mixin pat-item-h4-kaku-7 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-7;
+}
+@mixin pat-item-h4-kaku-8 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-8;
+}
+@mixin pat-item-h4-kaku-9 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku;
+  @include deco-style-pat-item-h4-kaku-9;
+}
+
+// ボックス見出しcase
+@mixin pat-item-h4-icon-case-1 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-1;
+}
+@mixin pat-item-h4-icon-case-2 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-2;
+}
+@mixin pat-item-h4-icon-case-3 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-3;
+}
+@mixin pat-item-h4-icon-case-4 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-4;
+}
+@mixin pat-item-h4-icon-case-5 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-5;
+}
+@mixin pat-item-h4-icon-case-6 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-6;
+}
+@mixin pat-item-h4-icon-case-7 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-7;
+}
+@mixin pat-item-h4-icon-case-8 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-8;
+}
+@mixin pat-item-h4-icon-case-9 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-case-9;
+}
+
+// ボックス見出しvoice
+@mixin pat-item-h4-icon-voice-1 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-1;
+}
+@mixin pat-item-h4-icon-voice-2 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-2;
+}
+@mixin pat-item-h4-icon-voice-3 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-3;
+}
+@mixin pat-item-h4-icon-voice-4 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-4;
+}
+@mixin pat-item-h4-icon-voice-5 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-5;
+}
+@mixin pat-item-h4-icon-voice-6 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-6;
+}
+@mixin pat-item-h4-icon-voice-7 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-7;
+}
+@mixin pat-item-h4-icon-voice-8 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-8;
+}
+@mixin pat-item-h4-icon-voice-9 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-icon-voice-9;
+}
+
+
+
+// pat-item-h4-simple (補足なし)　の共通スタイル
+@mixin pat-item-h4-simple-border-1 {
+  @include common-style-pat-item-h4-shimple;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-1;
+}
+@mixin pat-item-h4-simple-border-2 {
+  @include common-style-pat-item-h4-shimple;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-2;
+}
+@mixin pat-item-h4-simple-border-3 {
+  @include common-style-pat-item-h4-shimple;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-3;
+}
+@mixin pat-item-h4-simple-border-4 {
+  @include common-style-pat-item-h4-shimple;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-4;
+}
+
+
+// -------------------------------------
+//  pat-item-h4-sideの個別設定
+// -------------------------------------
+@mixin pat-item-h4-side-1 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-1;
+}
+@mixin pat-item-h4-side-2 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-2;
+}
+@mixin pat-item-h4-side-3 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-3;
+}
+@mixin pat-item-h4-side-4 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-4;
+}
+@mixin pat-item-h4-side-5 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-5;
+}
+@mixin pat-item-h4-side-6 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-6;
+}
+@mixin pat-item-h4-side-7 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-7;
+}
+@mixin pat-item-h4-side-8 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-8;
+}
+@mixin pat-item-h4-side-9 {
+  @include common-style-pat-item-h4-simple-border;
+  @include module-style-pat-item-h4-simple-border;
+  @include deco-style-pat-item-h4-simple-border-9;
+}
+
+
+// -------------------------------------
+//  pat-item-h4-sideの個別設定
+// -------------------------------------
+@mixin pat-item-h4-side-1 {
+  @include common-style-pat-item-h4-side;
+  @include module-style-pat-item-h4-side;
+  @include deco-style-pat-item-h4-side-1;
+}
+@mixin pat-item-h4-side-2 {
+  @include common-style-pat-item-h4-side;
+  @include module-style-pat-item-h4-side;
+  @include deco-style-pat-item-h4-side-2;
+}
+@mixin pat-item-h4-side-3 {
+  @include common-style-pat-item-h4-side;
+  @include module-style-pat-item-h4-side;
+  @include deco-style-pat-item-h4-side-3;
+}

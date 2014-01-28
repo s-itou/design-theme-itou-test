@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-box29-style";
+
+
+.mod-box29 {
+  @include mod-box29-common-style;
+  @include mod-box29-style;
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include mod-box29-style;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01C2 & {
+    @include mod-box29-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box29-style3;
+  }
+  .ex-style_01B2 & {
+    @include mod-box29-style4;
+  }
+  .ex-style_01B3 & {
+    @include mod-box29-style5;
+  }
+  .ex-style_01C3 & {
+    @include mod-box29-style6;
+  }
+}

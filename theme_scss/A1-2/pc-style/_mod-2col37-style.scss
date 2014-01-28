@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@mixin mod-2col37-common-style {
+display: table;
+  padding: 5px 10px;
+  @include border-radius();
+  margin-right: 0;
+  margin-left: auto;
+  > .mod-2col-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 210px;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 150px;
+    padding-left: 10px;
+  }
+}
+
+@mixin mod-2col37-style {
+border: 1px solid #d0d6dc;
+  background-color: #fdfaeb;
+}
+

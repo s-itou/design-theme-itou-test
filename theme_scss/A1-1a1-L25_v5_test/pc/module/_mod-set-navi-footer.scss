@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-navi-footer の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-footer-style";
+@import "../design/pat-design-navi-footer";
+
+
+// -----------------------------------
+// footer用ナビゲーション (fnav)
+// -----------------------------------
+
+//元 fnav
+.mod-set-navi-footer {
+  @extend %common-style-mod-set-navi-footer !optional;
+  &.ex-style_01A1 {
+    @include pat-design-navi-footer-1
+  }
+  &.ex-style_01A2 {
+    @include pat-design-navi-footer-2
+  }
+  &.ex-style_01A3 {
+    @include pat-design-navi-footer-3
+  }
+  &.ex-style_01B1 {
+    @include pat-design-navi-footer-1
+  }
+  &.ex-style_01B2 {
+    @include pat-design-navi-footer-2
+  }
+  &.ex-style_01B3 {
+    @include pat-design-navi-footer-3
+  }
+  &.ex-style_01C1 {
+    @include pat-design-navi-footer-1
+  }
+  &.ex-style_01C2 {
+    @include pat-design-navi-footer-2
+  }
+  &.ex-style_01C3 {
+    @include pat-design-navi-footer-3
+  }
+  &.ex-style_02A1 {
+    @include pat-design-navi-footer-4
+  }
+  &.ex-style_02A2 {
+    @include pat-design-navi-footer-5
+  }
+  &.ex-style_02A3 {
+    @include pat-design-navi-footer-6
+  }
+  &.ex-style_02B1 {
+    @include pat-design-navi-footer-7
+  }
+  &.ex-style_02B2 {
+    @include pat-design-navi-footer-8
+  }
+  &.ex-style_02B3 {
+    @include pat-design-navi-footer-9
+  }
+  &.ex-style_02C1 {
+    @include pat-design-navi-footer-10
+  }
+  &.ex-style_02C2 {
+    @include pat-design-navi-footer-11
+  }
+  &.ex-style_02C3 {
+    @include pat-design-navi-footer-12
+  }
+}

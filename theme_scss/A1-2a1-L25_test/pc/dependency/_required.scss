@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// 必須設定用 mixin
+//
+// --------------------------------------------------------------------------
+
+// フォント設定
+// font-size, font-weight, text-align, line-height
+@mixin common-set-font($set-size:$fontSizeM, $set-weight:normal, $set-align:left, $set-height:1.6) {
+  font-size: $set-size;
+  font-weight: $set-weight;
+  text-align: $set-align;
+  line-height: $set-height;
+}
+
+// リンク設定
+// a color, a:hover color, a:hover text-decoration
+@mixin common-set-link($set-color1, $set-color2:$set-color1, $set-deco:underline) {
+  a {
+    color: $set-color1;
+  }
+  a:hover {
+    color: $set-color2;
+    text-decoration: $set-deco;
+  }
+}
+

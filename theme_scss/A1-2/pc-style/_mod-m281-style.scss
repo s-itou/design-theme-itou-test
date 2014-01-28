@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+// mod-m281
+@mixin mod-m281-box-common-style {
+  margin-top: 30px;
+  width: 100%;
+  .mod-m281-h_5 {
+    margin-top: 25px;
+    display: table;
+    .mod-h_5-inner {
+      display: table-cell;
+      vertical-align: middle;
+      > p {
+        font-size: $fontSizeS;
+      }
+    }
+    .mod-h_5_inner3 {
+      margin-top: 3px;
+    }
+    .mod-h {
+      line-height: 1.2;
+      font-size: $fontSizeL;
+    }
+    i {
+      display: table-cell;
+      height: 17px;
+    }
+    .mod-icon_0 {
+      min-width: 0;
+    }
+    .mod-h_5-inner4 {
+      margin-top: 3px !important
+    }
+  }
+  .mod-m281-2col {
+    margin: 0 20px;
+    @extend %cf;
+    .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: right;
+        width: 250px;
+        margin-left: 20px;
+        .mod-2col-inner-2 {
+           > .ex-first-child {
+            margin-top: 0 !important;
+             > .ex-first-child {
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+      > .mod-2col-inner2 {
+        overflow: hidden;
+        .mod-2col-inner2-2 {
+          > .ex-first-child {
+            margin-top: 0 !important;
+             > .ex-first-child {
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+    .ex-imgSize_2S & {
+      > .mod-2col-wrap {
+        > .mod-2col-inner {
+          width: 200px;
+        }
+      }
+    }
+    .ex-imgSize_2SS & {
+      > .mod-2col-wrap {
+        > .mod-2col-inner {
+          width: 150px;
+        }
+      }
+    }
+    .ex-imgLayout_l & {
+      > .mod-2col-wrap {
+        > .mod-2col-inner {
+          float: left;
+          margin-right: 20px;
+          margin-left: 0;
+        }
+      }
+    }
+    .ex-imgFloat & {
+      > .mod-2col-wrap {
+        > .mod-2col-inner {
+          margin-bottom: 12px;
+        }
+        > .mod-2col-inner2 {
+          overflow: visible;
+        }
+      }
+    }
+  }
+  .mod-m281-image {
+    img {
+      width: 100%; 
+    }
+  }
+  .mod-m281-text {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px !important;
+  }
+  .mod-m281-h_5_2 {
+    margin-top: 30px;
+    .mod-h {
+      font-weight: bold;
+      font-size: $fontSizeM;
+      line-height: 1.2;
+    }
+    .mod-icon_dental {
+      height: 19px;
+    }
+  }
+  .mod-m281-ul {
+    margin-top: 20px;
+    ul {
+      margin: 0;
+      padding-left: 0;
+    }
+    li {
+      margin-left: 20px;
+      margin-top: 2px;
+      list-style-type: none;
+      background-repeat: no-repeat;
+      font-size: $fontSizeM - 1;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    > p {
+      margin-top: 12px;
+    }
+    > p:first-child {
+      margin-top: 0;
+    }
+  }
+  .mod-m281-bnr {
+    @include border-radius();
+    display: inline-block;
+    min-width: 200px;
+    margin-top: 20px;
+    &:hover {
+      opacity: 0.80;
+    }
+    a:hover, a:hover p {
+      text-decoration: none;
+    }
+    .mod-bnr-inner {
+      max-height: 60px;
+      line-height: 1.4;
+      @include border-radius;
+      padding: 7px 5px 5px 25px;
+    }
+  }
+  .mod-m281-rte, .mod-m281-rte2 {
+    margin-top: 20px;
+  } 
+}
+
+@mixin mod-m281-box-style5 {
+  padding: 2px;
+  background-image: url("img/mod-m281/mod-box/bg02_b_2.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #0b2845;
+  .mod-box-inner {
+    background-image: url("img/mod-m281/mod-box/bg_b_2.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .mod-box-inner2 {
+    background-image: url("img/mod-m281/mod-box/bg_b_2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 30px 0 25px;
+  }
+  .mod-m281-text {
+    color: #ffffff;
+  }
+  .mod-m281-h_5 {
+    .mod-h_5-inner {
+      width: 100%;
+      padding-left: 0;
+      border-top: 0 none transparent;
+      border-bottom: 0 none transparent;
+      border-right: 0 none transparent;
+      border-left: 0 none transparent;
+      > p {
+        color: #7a7a7a;
+        margin-left: 0;
+      }
+      > p:first-child {
+        border-bottom: 0 none transparent;
+      }
+    }
+    .mod-h_5-inner3 {
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      padding: 0;
+      overflow: visible;
+      @include border-radius(0);
+      display: block;
+    }
+    .mod-h {
+      display: block;
+      word-break: normal;
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff;
+      border-top: 0 none transparent;
+      border-left: 0 none transparent;
+      border-right: 0 none transparent;
+      padding: 0 0 5px;
+      background-color: transparent;
+    }
+     .mod-icon_1 {
+      min-width: 0;
+      background-image: none;
+      background-position: left top;
+      background-repeat: no-repeat;
+      border-left: 0 none transparent;
+    }
+     .mod-icon_2 {
+      min-width: 13px;
+      background-image: url("img/mod-h_5/bg21_v.png");
+      background-position: left top;
+      background-repeat: repeat-y;
+      border-left: 0 none transparent;
+    }
+     .mod-icon_3 {
+      min-width: 6px;
+      background-image: none;
+      background-position: left top;
+      background-repeat: no-repeat;
+      border-left: 10px solid #426ca6;
+    }
+  }
+  .mod-m281-rte {
+    color: #ffffff;
+  }
+  .mod-m281-h_5_2 {
+    .mod-h {
+      color: #ffffff;
+    }
+    .mod-icon_2 {
+      height: 20px;
+      background-image: url("img/mod-h_5/bg07_v.png");
+      background-position: center top;
+    }
+    .mod-icon_3 {
+      height: 20px;
+      background-image: url("img/mod-h_5/bg08_v.png");
+      background-position: center 1px;
+    }
+    .mod-icon_4 {
+      height: 20px;
+      background-image: url("img/mod-h_5/bg09_v.png");
+      background-position: center 2px;
+    }
+    .mod-icon_5 {
+      height: 20px;
+      background-image: url("img/mod-h_5/bg10_v.png");
+      background-position: center 4px;
+    }
+    .mod-icon_dental {
+      height: 20px;
+      background-image: url("img/mod-h_5/bg06_v.png");
+      background-position: left top;
+    }
+  }
+  .mod-m281-ul {
+    padding: 0;
+    border: none;
+    @include border-radius(0);
+    background-color: transparent;
+    li {
+      color: #ffffff;
+      padding-left:15px;
+      background-image: url("img/mod-m281/mod-ul/bg_b_2.png");
+      background-position: left 5px;
+      margin-left: 10px;
+    }
+  }
+  .mod-m281-rte2 {
+    color: #ffffff;
+  }
+  .mod-m281-bnr {
+    border: 1px solid #7c94bd;
+    background-image: url("img/mod-m281/mod-bnr/bg_b_2.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-color: #3c4e78;
+    .mod-bnr-inner {
+      border: 1px solid #afb9c7;
+      color: #ffffff;
+      font-size: $fontSizeS + 1;
+      background-image: url("img/mod-m281/mod-bnr/bg02_b_2.png");
+      background-repeat: no-repeat;
+      background-position: 7px 7px;
+    }
+  }
+}
+
+
+@mixin mod-m281-box-style {
+  @include mod-m281-box-style5; // none
+}
+@mixin mod-m281-box-style2 {
+  @include mod-m281-box-style5; // none
+}
+@mixin mod-m281-box-style3 {
+  @include mod-m281-box-style5; // none
+}
+@mixin mod-m281-box-style4 {
+  @include mod-m281-box-style5; // none
+}
+// @mixin mod-m281-box-style5 {上に記載}
+@mixin mod-m281-box-style6 {
+  @include mod-m281-box-style5; // none
+}
+@mixin mod-m281-box-style7 {
+  @include mod-m281-box-style5; // none
+}
+@mixin mod-m281-box-style8 {
+  @include mod-m281-box-style5; // none
+}
+@mixin mod-m281-box-style9 {
+  @include mod-m281-box-style5; // none
+}

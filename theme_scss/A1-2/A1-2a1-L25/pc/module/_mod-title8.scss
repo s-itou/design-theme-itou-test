@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-title8-style";
+
+.mod-title8 {
+  @include mod-title8-common-style;
+  @include mod-title8-style;
+  .ex-style_01C1 & {
+    @include mod-title8-style2;
+  }
+  .ex-style_01C3 & {
+    @include mod-title8-style3;
+  }
+}
+

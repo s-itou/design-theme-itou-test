@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+//  mod-html の mixin一式
+@mixin mod-html-common-style {
+  margin-bottom: 10px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  overflow: auto;
+  @include box-sizing(border-box);
+  iframe {
+    width: 100% !important;
+    border: 1px solid #cccccc;
+    @include box-sizing(border-box);
+  }
+  a {
+    color: #333333 !important;
+    font-size: $fontSizeM !important;
+    text-decoration: none;
+    text-align: center !important;
+    width: 100%;
+    padding: 12px 30px 12px 10px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px, 100%;
+    border: 1px solid #cccccc;
+    @include border-radius();
+    display: block;
+    @include box-sizing(border-box);
+  }
+}
+@mixin mod-html-style {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style2 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style3 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style4 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style5 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style6 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style7 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style8 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style9 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html-style10 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+
+//  mod-html2 の mixin一式
+@mixin mod-html2-common-style {
+  margin-bottom: 10px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  overflow: auto;
+  @include box-sizing(border-box);
+  iframe {
+    width: 100% !important;
+    border: 1px solid #cccccc;
+    @include box-sizing(border-box);
+  }
+  a {
+    color: #333333 !important;
+    font-size: $fontSizeM !important;
+    text-decoration: none;
+    text-align: center !important;
+    width: 100%;
+    padding: 12px 30px 12px 10px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px, 100%;
+    border: 1px solid #cccccc;
+    @include border-radius();
+    display: block;
+    @include box-sizing(border-box);
+  }
+}
+@mixin mod-html2-style {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style2 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style3 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style4 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style5 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style6 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style7 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style8 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style9 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html2-style10 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+
+//  mod-html3 の mixin一式
+@mixin mod-html3-common-style {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  @include box-sizing(border-box);
+  iframe {
+    width: 100%;
+    border: 1px solid #cccccc;
+    @include box-sizing(border-box);
+  }
+}
+
+//  mod-html4 の mixin一式
+@mixin mod-html4-common-style {
+  width: 100%;
+  max-height: 300px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  overflow: auto;
+  @include box-sizing(border-box);
+  iframe {
+    width: 100%;
+    border: 1px solid #cccccc;
+    @include box-sizing(border-box);
+  }
+  a {
+    color: #333333 !important;
+    font-size: $fontSizeM !important;
+    text-decoration: none;
+    text-align: center !important;
+    width: 100%;
+    padding: 12px 30px 12px 10px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px, 100%;
+    border: 1px solid #cccccc;
+    @include border-radius();
+    display: block;
+    @include box-sizing(border-box);
+  }
+}
+@mixin mod-html4-style {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style2 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style3 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style4 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style5 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style6 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style7 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style8 {
+  a {
+    background-image: url("img/mod-link/spbg.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/spbg.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/spbg.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style9 {
+  a {
+    background-image: url("img/mod-link/bg_2.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_2.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_2.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+@mixin mod-html4-style10 {
+  a {
+    background-image: url("img/mod-link/bg_3.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url("img/mod-link/bg_3.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url("img/mod-link/bg_3.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  }
+}
+
+//  mod-html5 の mixin一式
+@mixin mod-html5-common-style {
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+  @include box-sizing(border-box);
+  iframe {
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    @include box-sizing(border-box);
+    .b4cm-player{
+      height: 100px;
+    }
+  }
+  small{
+    a{
+      text-align: center;
+    }
+  }
+  a {
+    color: #333333 !important;
+    font-size: $fontSizeM !important;
+    text-decoration: none;
+    text-align: center !important;
+    width: 100%;
+    padding: 12px 30px 12px 10px;
+    background-image: url(img/mod-link/bg.png), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+    background-image: url(img/mod-link/bg.png), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+    background-image: url(img/mod-link/bg.png), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #cccccc;
+    @include border-radius();
+    display: block;
+    @include box-sizing(border-box);
+  }
+}
+
+//  mod-html-spec の mixin一式
+@mixin mod-html-spec-common-style {
+  margin: 0 -15px;
+  overflow: auto;
+  > div,
+  > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}

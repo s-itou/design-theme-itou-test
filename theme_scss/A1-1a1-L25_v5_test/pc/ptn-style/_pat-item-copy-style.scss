@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-copy
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-copy の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-copy {
+  margin-top: 5px;
+  text-align: center;
+  .mod-copy-inner {
+    padding: 0;
+  }
+  p {
+    margin: 0;
+    font-weight: bold;
+    font-size: $fontSizeL + 10;
+    line-height: 1.2;
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-copy の共通デザイン
+// -------------------------------------
+
+// キャッチコピー背景波
+@mixin module-style-pat-item-copy-nami {
+  padding: 10px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+// キャッチコピー背景両端装飾
+@mixin module-style-pat-item-copy-sayu-image {
+  padding: 5px 0;
+  .mod-copy-inner {
+    margin-left: 4px;
+    background-color: transparent;
+    background-position: left center;
+    background-repeat: no-repeat;
+    .mod-copy-inner2 {
+      margin-right: 4px;
+      background-color: transparent;
+      background-position: right center;
+      background-repeat: no-repeat;
+
+    }
+  }
+}
+
+// キャッチコピー背景グラデーション
+@mixin module-style-pat-item-copy-grade {
+  padding: 10px;
+  background-repeat: repeat-y;
+}
+
+// キャッチコピー背景繰り返し
+@mixin module-style-pat-item-copy-repeat {
+  padding: 10px;
+  background-repeat: repeat;
+}
+
+// キャッチコピー背景繰り返し内枠あり
+@mixin module-style-pat-item-copy-futoimg-bgc {
+  padding: 5px;
+  background-position: left top;
+  background-repeat: repeat;
+  .mod-copy-inner {
+    padding: 10px;
+    .mod-copy-inner2 {
+      margin: 0;
+    }
+  }
+}
+
+
+// -------------------------------------
+// pat-item-copy の装飾スタイル
+// -------------------------------------
+
+// キャッチコピー波の背景装飾
+@mixin deco-style-pat-item-copy-nami-1 {
+  background-image: url("img/mod-copy/_02/bg_a.png");
+  p {
+    color: #5596f6;
+  }
+}
+@mixin deco-style-pat-item-copy-nami-2 {
+  background-image: url("img/mod-copy/_02/bg_a_2.png");
+  p {
+    color: #274c7e;
+  }
+}
+@mixin deco-style-pat-item-copy-nami-3 {
+  background-image: url("img/mod-copy/_02/bg_a_3.png");
+  p {
+    color: #f59c1c;
+  }
+}
+
+// キャッチコピー背景両端装飾
+@mixin deco-style-pat-item-copy-sayu-image-1 {
+  border: 1px solid #2e4a72;
+  background-color: #2e4a72;
+  .mod-copy-inner {
+    background-image: url(img/mod-copy/_01/bg_b.png);
+    .mod-copy-inner2 {
+      background-image: url(img/mod-copy/_01/bg02_b.png);
+    }
+  }
+  p {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-copy-sayu-image-2 {
+  border: 1px solid #c7e9ee;
+  background-color: #418189;
+  .mod-copy-inner {
+    background-image: url(img/mod-copy/_01/bg_b_2.png);
+    .mod-copy-inner2 {
+      background-image: url(img/mod-copy/_01/bg02_b_2.png);
+    }
+  }
+  p {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-copy-sayu-image-3 {
+  border: 1px solid #fde082;
+  background-color: #fcf1c2;
+  .mod-copy-inner {
+    background-image: url(img/mod-copy/_01/bg02_b_3.png);
+    .mod-copy-inner2 {
+      background-image: url(img/mod-copy/_01/bg_b_3.png);
+    }
+  }
+  p {
+    color: #443308;
+  }
+}
+
+// キャッチコピー背景グラデーション
+@mixin deco-style-pat-item-copy-grade-1 {
+  background-image: url("img/mod-copy/_02/bg_b.png");
+  p {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-copy-grade-2 {
+  background-image: url("img/mod-copy/_02/bg_b_2.png");
+  p {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-copy-grade-3 {
+  background-image: url("img/mod-copy/_02/bg_b_3.png");
+  p {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-copy-grade-4 {
+  background-image: url("img/mod-copy/_01/bg_a.png");
+  p {
+    color: #2e7feb;
+  }
+}
+@mixin deco-style-pat-item-copy-grade-5 {
+  background-image: url("img/mod-copy/_01/bg_a_2.png");
+  p {
+    color: #274c7e;
+  }
+}
+@mixin deco-style-pat-item-copy-grade-6 {
+  background-image: url("img/mod-copy/_01/bg_a_3.png");
+  p {
+    color: #3d2612;
+  }
+}
+
+// キャッチコピー背景繰り返し画像
+@mixin deco-style-pat-item-copy-repeat-1 {
+  background-image: url("img/mod-copy/_02/bg_c.png");
+  p {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-copy-repeat-2 {
+  background-image: url("img/mod-copy/_02/bg_c_2.png");
+  p {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-copy-repeat-3 {
+  background-image: url("img/mod-copy/_02/bg_c_3.png");
+  p {
+    color: #ffffff;
+  }
+}
+
+// キャッチコピー画像太枠（内枠あり）
+@mixin deco-style-pat-item-copy-futoimg-bgc-1 {
+  background-image: url(img/mod-copy/_01/bg_c.png);
+  .mod-copy-inner {
+    background-color: #5596f6;
+  }
+  p {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-copy-futoimg-bgc-2 {
+  background-image: url(img/mod-copy/_01/bg_c_2.png);
+  .mod-copy-inner {
+    background-color: #fcf4c6;
+  }
+  p {
+    color: #42330a;
+  }
+}
+@mixin deco-style-pat-item-copy-futoimg-bgc-3 {
+  background-image: url(img/mod-copy/_01/bg_c_3.png);
+  .mod-copy-inner {
+    background-color: #f27f1b;
+  }
+  p {
+    color: #ffffff;
+  }
+}
+

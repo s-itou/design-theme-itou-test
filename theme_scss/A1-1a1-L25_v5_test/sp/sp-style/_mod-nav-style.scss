@@ -1,0 +1,1095 @@
+@charset "UTF-8";
+
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// //mod-navi-header
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+
+// //-----commom-style-----//
+
+// @mixin common-style-mod-navi-header {
+//   .mod-navi-inner {
+//     margin: 0 auto;
+//     padding: 2px 0;
+//     width: 980px;
+//     ul {
+//       @include box-sizing(border-box);
+//       display: table;
+//       margin: 0;
+//       padding: 0 2px 0 0;
+//       width: 980px;
+//       height: 49px;
+//       background-position: right center;
+//       background-repeat: no-repeat;
+//       list-style-type: none;
+//       text-align: left;
+//       li {
+//         @include word-break(break-all);
+//         @include box-sizing(border-box);
+//         display: table-cell;
+//         padding: 0;
+//         background-position: left center;
+//         background-repeat: no-repeat;
+//         vertical-align: middle;
+//         font-size: $fontSizeM - 1 !important;
+//         &:hover {
+//           background-position: left center;
+//           background-repeat: no-repeat;
+//         }
+//         span {
+//           display: block;
+//           overflow: hidden;
+//           padding: 0 5px 0 24px;
+//           max-height: 146px;
+//           background-position: left center;
+//           background-repeat: no-repeat;
+//           line-height: 1.3;
+//           a {
+//             display: block;
+//             margin: 0 -5px 0 -24px;
+//             padding: 2px 5px 1px 24px;
+//             max-height: 122px;
+//             text-decoration: none;
+//             line-height: 1.3;
+//           }
+//         }
+//         &.state-current {
+//           background-position: left center;
+//           background-repeat: no-repeat;
+//         }
+//         &.state-em {
+//           background-position: left center;
+//           font-weight: bold;
+//           &:hover {
+//             background-position: left center;
+//             font-weight: normal;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //-----module-style-----//
+// @mixin module-style-mod-navi-header {
+//   li {
+//     max-width: 550px;
+//   }
+// }
+
+// @mixin module-style-mod-navi-fix-header {
+//   li {
+//     width: 196px;
+//   }
+// }
+
+
+
+// //-----deco-style-----//
+// @mixin deco-style01A1-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       @include text-shadow(1px 1px 1px #ffffff);
+//       background-image: url("img/mod-gnav/new/bg03.png");
+//       color: #452305;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg03.png");
+//         &:hover {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg06.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg05.png");
+//           a {
+//             color: #452305;
+//           }
+//         }
+//         &.state-current {
+//           @include border-radius();
+//           @include text-shadow(1px 1px 1px #ffffff);
+//           background-image: url("img/mod-gnav/new/bg04.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg17.png");
+//           &:hover {
+//             @include border-radius();
+//             @include text-shadow(1px 1px 1px #ffffff);
+//             background-image: url("img/mod-gnav/new/bg06.png");
+//             color: #452305;
+//             a {
+//               color: #452305;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #e24a00;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01A2-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       background-image: url("img/mod-gnav/new/bg03_2.png");
+//       color: #ffffff;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg03_2.png");
+//         &:hover {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg06_2.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg05_2.png");
+//           a {
+//             color: #ffffff;
+//           }
+//         }
+//         &.state-current {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg04_2.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg17_2.png");
+//           &:hover {
+//             @include border-radius();
+//             background-image: url("img/mod-gnav/new/bg06_2.png");
+//             color: #ffffff;
+//             a {
+//               color: #ffffff;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #05393e;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01A3-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       @include text-shadow(1px 1px 1px #ffffff);
+//       background-image: url("img/mod-gnav/new/bg03_3.png");
+//       color: #563110;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg03_3.png");
+//         &:hover {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg06_3.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg05_3.png");
+//           a {
+//             color: #563110;
+//           }
+//         }
+//         &.state-current {
+//           @include border-radius();
+//           @include text-shadow(1px 1px 1px #ffffff);
+//           background-image: url("img/mod-gnav/new/bg04_3.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg17_3.png");
+//           &:hover {
+//             @include border-radius();
+//             background-image: url("img/mod-gnav/new/bg06_3.png");
+//             color: #453205;
+//             a {
+//               color: #453205;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #e24a00;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01B1-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       @include text-shadow(1px 1px 1px #ffffff);
+//       background-image: url("img/mod-gnav/new/bg08.png");
+//       color: #2d4a72;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg08.png");
+//         &:hover {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg09.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg11.png");
+//           a {
+//             color: #2d4a72;
+//           }
+//         }
+//         &.state-current {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg10.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg18.png");
+//           &:hover {
+//             @include border-radius();
+//             background-image: url("img/mod-gnav/new/bg09.png");
+//             color: #335a93;
+//             a {
+//               color: #335a93;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #e24a00;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01B2-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       @include text-shadow(1px 1px 1px #ffffff);
+//       background-image: url("img/mod-gnav/new/bg08.png");
+//       color: #0B7D88;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg08.png");
+//         &:hover {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg09_2.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg11_2.png");
+//           a {
+//             color: #0B7D88;
+//           }
+//         }
+//         &.state-current {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg10_2.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg18.png");
+//           &:hover {
+//             @include border-radius();
+//             background-image: url("img/mod-gnav/new/bg09_2.png");
+//             color: #0B7D88;
+//             a {
+//               color: #0B7D88;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #e24a00;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01B3-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       @include text-shadow(1px 1px 1px #ffffff);
+//       background-image: url("img/mod-gnav/new/bg08.png");
+//       color: #443308;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg08.png");
+//         &:hover {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg09_3.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg11_3.png");
+//           a {
+//             color: #443308;
+//           }
+//         }
+//         &.state-current {
+//           @include border-radius();
+//           background-image: url("img/mod-gnav/new/bg10_3.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg18.png");
+//           &:hover {
+//             @include border-radius();
+//             background-image: url("img/mod-gnav/new/bg09_3.png");
+//             color: #443308;
+//             a {
+//               color: #443308;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #e24a00;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01C1-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       background-image: url("img/mod-gnav/new/bg13.png");
+//       color: #ffffff;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg13.png");
+//         &:hover {
+//           background-image: url("img/mod-gnav/new/bg15.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg14.png");
+//           a {
+//             color: #ffffff;
+//           }
+//         }
+//         &.state-current {
+//           background-image: url("img/mod-gnav/new/bg16.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg19.png");
+//           &:hover {
+//             background-image: url("img/mod-gnav/new/bg15.png");
+//             color: #ffffff;
+//             a {
+//               color: #ffffff;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #f2d028;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01C2-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       background-image: url("img/mod-gnav/new/bg13_2.png");
+//       color: #ffffff;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg13_2.png");
+//         &:hover {
+//           background-image: url("img/mod-gnav/new/bg15_2.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg14.png");
+//           a {
+//             color: #ffffff;
+//           }
+//         }
+//         &.state-current {
+//           background-image: url("img/mod-gnav/new/bg16_2.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg19_2.png");
+//           &:hover {
+//             background-image: url("img/mod-gnav/new/bg15_2.png");
+//             color: #ffffff;
+//             a {
+//               color: #ffffff;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #05393e;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01C3-mod-navi-header {
+//   .mod-navi-inner {
+//     ul {
+//       background-image: url("img/mod-gnav/new/bg13_3.png");
+//       color: #ffffff;
+//       li {
+//         background-image: url("img/mod-gnav/new/bg13_3.png");
+//         &:hover {
+//           background-image: url("img/mod-gnav/new/bg15_3.png");
+//         }
+//         span {
+//           background-image: url("img/mod-gnav/new/bg14.png");
+//           a {
+//             color: #ffffff;
+//           }
+//         }
+//         &.state-current {
+//           background-image: url("img/mod-gnav/new/bg16_3.png");
+//         }
+//         &.state-em {
+//           background-image: url("img/mod-gnav/new/bg19_3.png");
+//           &:hover {
+//             background-image: url("img/mod-gnav/new/bg15_3.png");
+//             color: #ffffff;
+//             a {
+//               color: #ffffff;
+//             }
+//           }
+//           span {
+//             background-image: none;
+//             a {
+//               color: #3b330a;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// //mod-side-menu
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+
+// //-----commom-style-----//
+
+// @mixin common-style-mod-side-menu {
+//   padding: 0 0 15px;
+//   ul, li {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//   }
+// }
+
+
+// //-----module-style-----//
+
+// @mixin module-style-mod-side-menu {
+//   font-size: $sideFontSizeM + 2;
+//   line-height: 1.4;
+//   > .mod-side-menu-list {
+//     > ul > li {
+//       margin: 5px 9px;
+//       &:first-child {
+//         margin: 0 9px 5px;
+//       }
+//       > .mod-side-menu-item {
+//         @include border-radius();
+//         display: block;
+//         padding: 9px 10px 7px 25px;
+//         background-position: 8px 13px;
+//         background-repeat: no-repeat;
+//         zoom: 1;
+//         a {
+//           @include box-sizing(border-box);
+//           display: block;
+//           width: auto;
+//           &:hover {
+//             @include border-radius();
+//             @include box-sizing(border-box);
+//             margin: -9px -11px -8px -25px;
+//             padding: 9px 10px 7px 25px;
+//             background-position: 8px 13px;
+//             background-repeat: no-repeat;
+//             text-decoration: none;
+//           }
+//         }
+//       }
+//       > .mod-side-menu-list {
+//         > ul {
+//           > li {
+//             margin: 0 0 10px;
+//             list-style: none;
+//             > .mod-side-menu-item {
+//               display: block;
+//               padding: 8px 10px 6px 29px;
+//               background-position: 15px 15px;
+//               background-repeat: no-repeat;
+//               a {
+//                 &:hover {
+//                   text-decoration: underline;
+//                 }
+//               }
+//             }
+//             > .mod-side-menu-list {
+//               > ul {
+//                 > li {
+//                   list-style: none;
+//                   > .mod-side-menu-item {
+//                     display: block;
+//                     padding: 4px 10px 4px 44px;
+//                     background-position: 29px 12px;
+//                     background-repeat: no-repeat;
+//                     a {
+//                       &:hover {
+//                         text-decoration: underline;
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin module-style-mod-handmenu-side {
+//   font-size: $sideFontSizeM + 2;
+//   line-height: 1.4;
+//   > .mod-side-menu-list {
+//     > ul > div > div > li {
+//       margin: 5px 9px;
+//       &:first-child {
+//         margin: 0 9px 5px;
+//       }
+//       > .mod-side-menu-item {
+//         @include border-radius();
+//         display: block;
+//         padding: 9px 10px 7px 25px;
+//         background-position: 8px 13px;
+//         background-repeat: no-repeat;
+//         zoom: 1;
+//         a {
+//           @include box-sizing(border-box);
+//           display: block;
+//           width: auto;
+//           &:hover {
+//             @include border-radius();
+//             @include box-sizing(border-box);
+//             margin: -9px -11px -8px -25px;
+//             padding: 9px 10px 7px 25px;
+//             background-position: 8px 13px;
+//             background-repeat: no-repeat;
+//             text-decoration: none;
+//             p {
+//               text-decoration: none;
+//             }
+//           }
+//         }
+//       }
+//       > .mod-side-menu-list {
+//         > ul {
+//           > li {
+//             margin: 0 0 10px;
+//             list-style: none;
+//             > .mod-side-menu-item {
+//               display: block;
+//               padding: 8px 10px 6px 29px;
+//               background-position: 15px 15px;
+//               background-repeat: no-repeat;
+//               a {
+//                 &:hover {
+//                   text-decoration: underline;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// //-----deco-style-----//
+
+// //----- side-menu -----//
+// @mixin deco-style01A1-mod-side-menu {
+//   border: 1px solid #dedad1;
+//   border-top: none;
+//   background-color: #fffce9;
+//   > .mod-side-menu-list {
+//     > ul > li {
+//       > .mod-side-menu-item {
+//         border-right: 1px solid #b2b2b2;
+//         border-bottom: 1px solid #b2b2b2;
+//         background-color: #ffffff;
+//         background-image: url("img/mod-side-menu-box/new/bg04.png");
+//         color: #2f141c;
+//         a {
+//           color: #2f141c;
+//           &:hover {
+//             border-top: 1px solid #ab9d7b;
+//             border-left: 1px solid #ab9d7b;
+//             background-color: #d6cda7;
+//             background-image: url("img/mod-side-menu-box/new/bg04.png");
+//             color: #321b07;
+//           }
+//         }
+//         &.state-current {
+//           border-top: 1px solid #938d73;
+//           border-right: none;
+//           border-bottom: none;
+//           border-left: 1px solid #938d73;
+//           background-color: #cbbb92;
+//           background-image: url("img/mod-side-menu-box/new/bg05.png");
+//           &:hover {
+//             background-image: url("img/mod-side-menu-box/new/bg05.png");
+//           }
+//           a {
+//             color: #ffffff;
+//             &:hover {
+//               border-top: 1px solid #d6cda7;
+//               border-left: 1px solid #d6cda7;
+//               color: #321b07;
+//             }
+//           }
+//         }
+//       }
+//       > .mod-side-menu-list {
+//         > ul > li {
+//           border-bottom: 1px dotted #cccccc;
+//           > .mod-side-menu-item {
+//             background-image: url("img/mod-side-menu-box/new/bg06.png");
+//             color: #2f141c;
+//             a {
+//               color: #2f141c;
+//             }
+//             &.state-current {
+//               a {
+//                 color: #f27f1b;
+//                 font-weight: bold;
+//               }
+//             }
+//           }
+//           > .mod-side-menu-list {
+//             > ul > li {
+//               > .mod-side-menu-item {
+//                 background-image: url("img/mod-side-menu-box/new/bg07.png");
+//                 color: #2f141c;
+//                 a {
+//                   color: #2f141c;
+//                 }
+//                 &.state-current {
+//                   a {
+//                     color: #f27f1b;
+//                     font-weight: bold;
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01A2-mod-side-menu {
+//   border: 1px solid #dedad1;
+//   border-top: none;
+//   background-color: #f6f6f6;
+//   > .mod-side-menu-list {
+//     > ul > li {
+//       > .mod-side-menu-item {
+//         border-right: 1px solid #b2b2b2;
+//         border-bottom: 1px solid #b2b2b2;
+//         background-color: #ffffff;
+//         background-image: url("img/mod-side-menu-box/new/bg04_2.png");
+//         color: #294470;
+//         a {
+//           color: #294470;
+//           &:hover {
+//             border-top: 1px solid #ab9d7b;
+//             border-left: 1px solid #ab9d7b;
+//             background-color: #aceef5;
+//             background-image: url("img/mod-side-menu-box/new/bg08_2.png");
+//             color: #294470;
+//           }
+//         }
+//         &.state-current {
+//           border-top: 1px solid #57adb6;
+//           border-right: none;
+//           border-bottom: none;
+//           border-left: 1px solid #57adb6;
+//           background-color: #67ced9;
+//           background-image: url("img/mod-side-menu-box/new/bg05_2.png");
+//           &:hover {
+//             background-image: url("img/mod-side-menu-box/new/bg05_2.png");
+//           }
+//           a {
+//             color: #ffffff;
+//             &:hover {
+//               border-top: 1px solid #aceef5;
+//               border-left: 1px solid #aceef5;
+//               color: #294470;
+//             }
+//           }
+//         }
+//       }
+//       > .mod-side-menu-list {
+//         > ul > li {
+//           border-bottom: 1px dotted #cccccc;
+//           > .mod-side-menu-item {
+//             background-image: url("img/mod-side-menu-box/new/bg06_2.png");
+//             color: #294470;
+//             a {
+//               color: #294470;
+//             }
+//             &.state-current {
+//               a {
+//                 color: #67ced9;
+//                 font-weight: bold;
+//               }
+//             }
+//           }
+//           > .mod-side-menu-list {
+//             > ul > li {
+//               > .mod-side-menu-item {
+//                 background-image: url("img/mod-side-menu-box/new/bg07_2.png");
+//                 color: #294470;
+//                 a {
+//                   color: #294470;
+//                 }
+//                 &.state-current {
+//                   a {
+//                     color: #67ced9;
+//                     font-weight: bold;
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01A3-mod-side-menu {
+//   border: 1px solid #dedad1;
+//   border-top: none;
+//   background-color: #fffef4;
+//   > .mod-side-menu-list {
+//     > ul > li {
+//       > .mod-side-menu-item {
+//         border-right: 1px solid #b2b2b2;
+//         border-bottom: 1px solid #b2b2b2;
+//         background-color: #ffffff;
+//         background-image: url("img/mod-side-menu-box/new/bg04_3.png");
+//         color: #45320b;
+//         a {
+//           color: #45320b;
+//           &:hover {
+//             border-top: 1px solid #ab9d7b;
+//             border-left: 1px solid #ab9d7b;
+//             background-color: #fef7c1;
+//             background-image: url("img/mod-side-menu-box/new/bg08_3.png");
+//             color: #45320b;
+//           }
+//         }
+//         &.state-current {
+//           border-top: 1px solid #9c8b47;
+//           border-right: none;
+//           border-bottom: none;
+//           border-left: 1px solid #9c8b47;
+//           background-color: #fef291;
+//           background-image: url("img/mod-side-menu-box/new/bg05_3.png");
+//           &:hover {
+//             background-image: url("img/mod-side-menu-box/new/bg05_3.png");
+//           }
+//           a {
+//             color: #45320b;
+//             &:hover {
+//               border-top: 1px solid #fef7c1;
+//               border-left: 1px solid #fef7c1;
+//               color: #45320b;
+//             }
+//           }
+//         }
+//       }
+//       > .mod-side-menu-list {
+//         > ul > li {
+//           border-bottom: 1px dotted #cccccc;
+//           > .mod-side-menu-item {
+//             background-image: url("img/mod-side-menu-box/new/bg06_3.png");
+//             color: #45320b;
+//             a {
+//               color: #45320b;
+//             }
+//             &.state-current {
+//               a {
+//                 color: #ffa658;
+//                 font-weight: bold;
+//               }
+//             }
+//           }
+//           > .mod-side-menu-list {
+//             > ul > li {
+//               > .mod-side-menu-item {
+//                 background-image: url("img/mod-side-menu-box/new/bg07_3.png");
+//                 color: #45320b;
+//                 a {
+//                   color: #45320b;
+//                 }
+//                 &.state-current {
+//                   a {
+//                     color: #ffa658;
+//                     font-weight: bold;
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //----- handmenu-side -----//
+// @mixin deco-style01A1-mod-handmenu-side {
+//   border: 1px solid #dedad1;
+//   border-top: none;
+//   background-color: #fffce9;
+//   > .mod-side-menu-list {
+//     > ul > div > div > li {
+//       > .mod-side-menu-item {
+//         border-right: 1px solid #b2b2b2;
+//         border-bottom: 1px solid #b2b2b2;
+//         background-color: #ffffff;
+//         background-image: url("img/mod-side-menu-box/new/bg04.png");
+//         color: #2f141c;
+//         a {
+//           color: #2f141c;
+//           &:hover {
+//             border-top: 1px solid #ab9d7b;
+//             border-left: 1px solid #ab9d7b;
+//             background-color: #d6cda7;
+//             background-image: url("img/mod-side-menu-box/new/bg04.png");
+//             color: #321b07;
+//           }
+//         }
+//       }
+//       > .mod-side-menu-list {
+//         > ul > li {
+//           border-bottom: 1px dotted #cccccc;
+//           > .mod-side-menu-item {
+//             background-image: url("img/mod-side-menu-box/new/bg06.png");
+//             color: #2f141c;
+//             a {
+//               color: #2f141c;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01A2-mod-handmenu-side {
+//   border: 1px solid #dedad1;
+//   border-top: none;
+//   background-color: #f6f6f6;
+//   > .mod-side-menu-list {
+//     > ul > div > div > li {
+//       > .mod-side-menu-item {
+//         border-right: 1px solid #b2b2b2;
+//         border-bottom: 1px solid #b2b2b2;
+//         background-color: #ffffff;
+//         background-image: url("img/mod-side-menu-box/new/bg04_2.png");
+//         color: #294470;
+//         a {
+//           color: #294470;
+//           &:hover {
+//             border-top: 1px solid #ab9d7b;
+//             border-left: 1px solid #ab9d7b;
+//             background-color: #aceef5;
+//             background-image: url("img/mod-side-menu-box/new/bg08_2.png");
+//             color: #294470;
+//           }
+//         }
+//       }
+//       > .mod-side-menu-list {
+//         > ul > li {
+//           border-bottom: 1px dotted #cccccc;
+//           > .mod-side-menu-item {
+//             background-image: url("img/mod-side-menu-box/new/bg06_2.png");
+//             color: #294470;
+//             a {
+//               color: #294470;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @mixin deco-style01A3-mod-handmenu-side {
+//   border: 1px solid #dedad1;
+//   border-top: none;
+//   background-color: #fffef4;
+//   > .mod-side-menu-list {
+//     > ul > div > div > li {
+//       > .mod-side-menu-item {
+//         border-right: 1px solid #b2b2b2;
+//         border-bottom: 1px solid #b2b2b2;
+//         background-color: #ffffff;
+//         background-image: url("img/mod-side-menu-box/new/bg04_3.png");
+//         color: #45320b;
+//         a {
+//           color: #45320b;
+//           &:hover {
+//             border-top: 1px solid #ab9d7b;
+//             border-left: 1px solid #ab9d7b;
+//             background-color: #fef7c1;
+//             background-image: url("img/mod-side-menu-box/new/bg08_3.png");
+//             color: #45320b;
+//           }
+//         }
+//       }
+//       > .mod-side-menu-list {
+//         > ul > li {
+//           border-bottom: 1px dotted #cccccc;
+//           > .mod-side-menu-item {
+//             background-image: url("img/mod-side-menu-box/new/bg06_3.png");
+//             color: #45320b;
+//             a {
+//               color: #45320b;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-navi-footer
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----commom-style-----//
+
+@mixin common-style-mod-navi-footer {
+  ul {
+  	@include box-sizing(border-box);
+    margin: 14px auto;
+    padding: 0;
+  }
+  li {
+  	list-style: none;
+    text-align: center;
+    font-weight: normal;
+    font-size: $fontSizeM - 1;
+    line-height: 1.6;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  span {
+  	@include box-sizing(border-box);
+    display: block;
+  	padding: 10px 10%;
+    a {
+      display: block;
+      margin: -10px -10%;
+      padding: 10px 10%;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//-----module-style-----//
+@mixin module-style-mod-navi-footer {
+  ul {
+    border: solid 1px #cccccc;
+  }
+  li {
+  	border-bottom: solid 1px #cccccc;
+    background-color: #eeeeee;
+  }
+  span {
+  	color: #333333;
+  	a {
+  	  color: #333333;
+      &:hover {
+        color: #333333;
+      }
+  	}
+
+  	a[href] {
+  	  @include background-size(21px 21px, 100% 100%);
+  	  background-position: 95% 50%;
+      background-repeat: no-repeat;
+  	}
+  }
+}
+
+
+//-----deco-style-----//
+@mixin deco-style01A1-mod-navi-footer {
+  span {
+  	a[href] {
+      background-image: url("img/mod-fnav/menu_link.png");
+  	}
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

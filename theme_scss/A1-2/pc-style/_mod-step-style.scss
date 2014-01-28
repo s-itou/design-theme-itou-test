@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@mixin mod-step-common-style {
+margin-top: 30px;
+  .mod-step-inner {
+    width: 100%;
+    padding-top: 65px;
+    background-repeat: no-repeat;
+  }
+  .step1 {
+    > div {
+      padding-top: 0 !important;
+      background-image: none !important;
+    }
+  }
+}
+
+@mixin mod-step-style {
+.mod-step-inner {
+    background-position: center 20px;
+    background-image: url("img/mod-step/01/bg11.png");
+  }
+}
+@mixin mod-step-style2 {
+.mod-step-inner {
+    background-position: center 20px;
+    background-image: url("img/mod-step/01/bg11_2.png");
+  }
+}
+@mixin mod-step-style3 {
+.mod-step-inner {
+    background-position: center 20px;
+    background-image: url("img/mod-step/01/bg11_3.png");
+  }
+}
+@mixin mod-step-style4 {
+.mod-step-inner {
+    background-position: center 20px;
+    background-image: url("img/mod-step/01/bg12.png");
+  }
+}
+@mixin mod-step-style5 {
+.mod-step-inner {
+    background-position: center 20px;
+    background-image: url("img/mod-step/01/bg12_2.png");
+  }
+}
+@mixin mod-step-style6 {
+.mod-step-inner {
+    background-position: center 20px;
+    background-image: url("img/mod-step/01/bg13.png");
+  }
+}
+@mixin mod-step-style7 {
+.mod-step-inner {
+    background-position: center top;
+    background-image: url("img/mod-step/01/bg13_2.png");
+  }
+}
+@mixin mod-step-style8 {
+.mod-step-inner {
+    background-position: center top;
+    background-image: url("img/mod-step/01/bg13_3.png");
+  }
+}
+

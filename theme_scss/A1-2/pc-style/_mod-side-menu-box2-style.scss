@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@mixin mod-side-menu-box2-common-style {
+  width: 100%;
+  padding: 10px 0 0;
+  background-position: left top;
+  background-repeat: no-repeat;
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .mod-side-menu-box2-h {
+    min-height: 10px;
+    .mod-side-menu-box2-h-inner {
+      padding: 2px 10px;
+      .mod-h {
+        color: #ffffff;
+        font-size: $fontSizeM;
+      }
+    }
+  }
+  .mod-side-menu-box2-b {
+    height: 10px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+  .mod-side-menu2 {
+    color: #333333;
+    font-size: $sideFontSizeM + 1;
+    padding: 5px 9px 11px;
+    border: 1px solid #cdd0d1;
+    > .mod-side-menu-list > ul > div > div > li {
+      padding-top: 8px;
+      //border-top: 1px dashed #bcbec0;
+    }
+    > .mod-side-menu-list > ul > div > div {
+      border-top: 1px dashed #bcbec0;
+      &:first-child {
+        border-top: 0 none transparent;
+      }
+      &:last-child > li > .mod-side-menu-item + .mod-side-menu-list {
+        > ul > li {
+          border: none;
+          border-top: 1px dashed #bcbec0;
+          &:first-child {
+            border-top: 0 none transparent;
+          }
+        }
+      }
+    }
+    > .mod-side-menu-list > ul > div > div > li > .mod-side-menu-item {
+      display: block;
+      padding: 5px 5px 3px 25px;
+      margin-bottom: 8px;
+      background-position: 7px 9px;
+      background-repeat: no-repeat;
+      &.state-current {
+        background-position: 7px 9px;
+        background-repeat: no-repeat;
+        color: #ffffff;
+      }
+      > a {
+        color: #333333;
+        padding: 5px 5px 3px 25px;
+        margin-top: -5px;
+        margin-bottom: -3px;
+        margin-left: -25px;
+        display: block;
+        &:hover {
+          text-decoration: none;
+          background-position: 7px 9px;
+          background-repeat: no-repeat;
+          p {
+            text-decoration: none;
+          }
+        }
+      }
+      + .mod-side-menu-list {
+        border-top: 1px dashed #bcbec0;
+        > ul > li {
+          margin-left: 18px;
+          border-bottom: 1px dashed #bcbec0;
+          > .mod-side-menu-item {
+            display: block;
+            padding: 9px 11px 6px;
+            background-position: 0 15px;
+            background-repeat: no-repeat;
+            &.state-current p {
+              font-weight: bold;
+            }
+            > a {
+              color: #333333;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-side-menu-box2-style {
+  background-image: url("img/mod-side-menu-box/_02/bg.png");
+  .mod-side-menu-box2-h {
+    background-color: #393939;
+  }
+  .mod-side-menu-box2-b {
+    background-image: url("img/mod-side-menu-box/_02/bg02.png");
+  }
+  .mod-side-menu2 {
+    background-color: #f8f7f3;
+    > .mod-side-menu-list > ul > div > div > li > .mod-side-menu-item {
+      background-image: url("img/mod-side-menu-box/_02/bg04.png");
+      &.state-current {
+        background-color: #808285;
+        background-image: url("img/mod-side-menu-box/_02/bg08.png");
+      }
+      > a:hover {
+        background-color: #cccccc;
+        background-image: url("img/mod-side-menu-box/_02/bg08.png");
+      }
+      + .mod-side-menu-list {
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #f8f7f3;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li > .mod-side-menu-item {
+          background-image: url("img/mod-side-menu-box/_02/bg06.png");
+          &.state-current p {
+            color: #5f140a;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin mod-side-menu-box2-style2 {
+  background-image: url("img/mod-side-menu-box/_02/bg_2.png");
+  .mod-side-menu-box2-h {
+    background-color: #0f375f;
+  }
+  .mod-side-menu-box2-b {
+    background-image: url("img/mod-side-menu-box/_02/bg02_2.png");
+  }
+  .mod-side-menu2 {
+    background-color: #e9eaeb;
+    > .mod-side-menu-list > ul > div > div > li > .mod-side-menu-item {
+      background-image: url("img/mod-side-menu-box/_02/bg04_2.png");
+      &.state-current {
+        background-color: #4873a6;
+        background-image: url("img/mod-side-menu-box/_02/bg08_2.png");
+      }
+      > a:hover {
+        background-color: #bddbfd;
+        background-image: url("img/mod-side-menu-box/_02/bg08_2.png");
+      }
+      + .mod-side-menu-list {
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #e9eaeb;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li > .mod-side-menu-item {
+          background-image: url("img/mod-side-menu-box/_02/bg06_2.png");
+          &.state-current p {
+            color: #0f375f;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin mod-side-menu-box2-style3 {
+  background-image: url("img/mod-side-menu-box/_02/bg_3.png");
+  .mod-side-menu-box2-h {
+    background-color: #5f140a;
+  }
+  .mod-side-menu-box2-b {
+    background-image: url("img/mod-side-menu-box/_02/bg02_3.png");
+  }
+  .mod-side-menu2 {
+    background-color: #f8f7f3;
+    > .mod-side-menu-list > ul > div > div > li > .mod-side-menu-item {
+      background-image: url("img/mod-side-menu-box/_02/bg04_3.png");
+      &.state-current {
+        background-color: #a82614;
+        background-image: url("img/mod-side-menu-box/_02/bg08_3.png");
+      }
+      > a:hover {
+        background-color: #fbd2cc;
+        background-image: url("img/mod-side-menu-box/_02/bg08_3.png");
+      }
+      + .mod-side-menu-list {
+        &:after {
+          content: "";
+          height: 0;
+          border-bottom: 1px solid #f8f7f3;
+          display: block;
+          position: relative;
+          top: 1px;
+        }
+        > ul > li > .mod-side-menu-item {
+          background-image: url("img/mod-side-menu-box/_02/bg06_3.png");
+          &.state-current p {
+            color: #5f140a;
+          }
+        }
+      }
+    }
+  }
+}
+

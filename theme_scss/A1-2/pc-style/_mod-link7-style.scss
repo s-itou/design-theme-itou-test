@@ -1,0 +1,627 @@
+@charset "UTF-8";
+
+
+//  mod-link7 の mixin一式
+@mixin mod-link7-common-style {
+  text-align: center;
+  .mod-link-inner {
+    @extend %inlineBlock;
+    text-align: left;
+    .mod-link-inner2 {
+      margin-top: 10px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      .mod-link-inner3, .mod-link-inner6 {
+        font-size: $fontSizeM - 1;
+        line-height: 1.2;
+        a:hover{
+          text-decoration: none;
+        }
+      }
+      .mod-link-inner4 {
+        position: relative;
+        margin: 0;
+        background-position: left center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        font-size: $fontSizeL;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+@mixin mod-link7-style {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg_a.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style2 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg_a_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style3 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg_a_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style4 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -10px;
+        content: url("img/mod-link/_07/bg_b.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style5 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -10px;
+        content: url("img/mod-link/_07/bg_b_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style6 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #260e0e;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -10px;
+        content: url("img/mod-link/_07/bg_b_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style7 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // 基本アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -14px;
+        content: url("img/mod-link/_07/bg_c.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style8 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+   .mod-link-inner3, .mod-link-inner6 {
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -14px;
+        content: url("img/mod-link/_07/bg_c_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style9 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -14px;
+        content: url("img/mod-link/_07/bg_c_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style10 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_a.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style11 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #530f07;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_a_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style12 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_a_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style13 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_b.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style14 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_b_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style15 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_b_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style16 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_c.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style17 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_c_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style18 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 30px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 40px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 40px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -15px;
+        content: url("img/mod-link/_07/bg02_c_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style19 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #5f140a;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 135px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_a.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style20 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #530f07;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 135px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_a_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style21 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #5f140a;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 135px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_a_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style22 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 135px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_b.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style23 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 135px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_b_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style24 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 60px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 135px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 135px;
+      color: #0b2a4d;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -30px;
+        content: url("img/mod-link/_07/bg03_b_3.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style25 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 43px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding-left: 125px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding: 3px 0 3px 125px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -22px;
+        content: url("img/mod-link/_07/bg03_c.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style26 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 43px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding: 3px 0 3px 125px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding-left: 125px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -22px;
+        content: url("img/mod-link/_07/bg03_c_2.png");
+      }
+    }
+  }
+}
+@mixin mod-link7-style27 {
+  @include mod-link7-common-style;
+  .mod-link-inner2 {
+    min-height: 43px;
+    .mod-link-inner3, .mod-link-inner6 {
+      padding: 3px 0 3px 125px;
+      color: #333333;
+    }
+    .mod-link-inner4 {
+      padding-left: 125px;
+      color: #154e86;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+        margin-top: -22px;
+        content: url("img/mod-link/_07/bg03_c_3.png");
+      }
+    }
+  }
+}
+

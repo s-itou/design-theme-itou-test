@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+
+@import "../ptn-style/_pat-item-header-box-style.scss";
+
+// -------------------------------------
+//  pat-item-midashiの個別設定
+// -------------------------------------
+
+//ヘッダーピクチャやスライド動画の背景
+@mixin pat-item-header-box-blue {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-box-blue;
+}
+@mixin pat-item-header-box-gleen {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-box-gleen;
+}
+@mixin pat-item-header-box-orange {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-orange;
+}
+@mixin pat-item-header-box-blue-2 {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-box-blue-2;
+}
+@mixin pat-item-header-box-gleen-2 {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-box-gleen-2;
+}
+@mixin pat-item-header-box-orange-2 {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-orange-2;
+}
+@mixin pat-item-header-box-blue-3 {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-box-blue-3;
+}
+@mixin pat-item-header-box-gleen-3 {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-box-gleen-3;
+}
+@mixin pat-item-header-box-orange-3 {
+  @include common-style-pat-item-header-box;
+  @include deco-style-pat-item-header-orange-3;
+}
+
+//ex-style_0000専用
+@mixin pat-item-header-box-none {}

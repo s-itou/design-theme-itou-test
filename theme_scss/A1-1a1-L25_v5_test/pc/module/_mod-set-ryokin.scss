@@ -1,0 +1,141 @@
+@charset "UTF-8";
+// --------------------------------------------------------------------------
+//
+// mod-set-ryokin の紐付けモジュール
+//
+// --------------------------------------------------------------------------
+
+@import "../pc-style/mod-set-ryokin-style";
+
+// --------------------------------------------------------------------------
+// part-main-002
+// 営業時間
+// --------------------------------------------------------------------------
+
+.mod-set-ryokin {
+  @include common-style-mod-set-ryokin;
+  .ex-style_01A1 & {
+    .mod-table_ver2 {
+      @include pat-item-table-1;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .ex-style_01A2 & {
+    .mod-table_ver2 {
+      @include pat-item-table-2;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .ex-style_01A3 & {
+    .mod-table_ver2 {
+      @include pat-item-table-3;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .ex-style_01B1 & {
+    .mod-table_ver2 {
+      @include pat-item-table-4;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .ex-style_01B2 & {
+    .mod-table_ver2 {
+      @include pat-item-table-5;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .ex-style_01B3 & {
+    .mod-table_ver2 {
+      @include pat-item-table-6;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .ex-style_01C1 & {
+    .mod-table_ver2 {
+      @include pat-item-table-7;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .ex-style_01C2 & {
+    .mod-table_ver2 {
+      @include pat-item-table-8;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .ex-style_01C3 & {
+    .mod-table_ver2 {
+      @include pat-item-table-9;
+      table {
+        tr:first-child {
+          > th:first-child,
+          > td:first-child {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+div[data-parts-name*="part-main-231"] .mod-box37,
+div[data-parts-name*="part-main-232"] .mod-box37 {
+  @extend .mod-set-ryokin;
+}

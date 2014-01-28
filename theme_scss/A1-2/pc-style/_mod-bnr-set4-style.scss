@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@mixin mod-bnr-set4-common-style {
+@extend %cf;
+  .mod-bnr-inner {
+    float: left;
+    margin-left: 9px;
+    margin-right: 9px;
+    max-height: 111px;
+    @include border-radius();
+    background-position: left top;
+    margin-top: 20px;
+    @if $layoutCode == "L25" or $layoutCode == "R25" {
+      width: 280px;
+    } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+      width: 254px;
+    }
+    &:hover {
+      opacity: 0.80;
+      -ms-filter: "alpha(opacity=80)";
+      a:hover {
+        p {
+          text-decoration: none;
+        }
+      }
+    }
+    .mod-bnr-inner2 {
+      @if $layoutCode == "L25" or $layoutCode == "R25" {
+        padding: 10px 15px;
+        font-size: $fontSizeM - 2;
+      } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+        padding: 10px 10px;
+        font-size: $fontSizeM - 3;
+      }
+      overflow: hidden;
+      line-height: 1.4;
+      @include border-radius();
+      strong {
+        font-size: $fontSizeL;
+      }
+    }
+  }
+}
+
+@mixin mod-bnr-set4-style {
+.mod-bnr-inner {
+    border: 1px solid #0f375f;
+    background-image: url("img/mod-bnr/bg.png");
+    background-repeat: repeat-x;
+    background-color: #0b294c;
+    max-height: none;
+    overflow: visible;
+    .mod-bnr-inner2 {
+      max-height: 150px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+}
+@mixin mod-bnr-set4-style2 {
+.mod-bnr-inner {
+    border: 1px solid #781b0e;
+    background-image: url("img/mod-bnr/bg_2.png");
+    background-repeat: repeat-x;
+    background-color: #64130a;
+    max-height: none;
+    overflow: visible;
+    .mod-bnr-inner2 {
+      max-height: 150px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+}
+@mixin mod-bnr-set4-style3 {
+.mod-bnr-inner {
+    border: 1px solid #200805;
+    background-image: url("img/mod-bnr/bg_3.png");
+    background-repeat: repeat-x;
+    background-color: #170503;
+    max-height: none;
+    overflow: visible;
+    .mod-bnr-inner2 {
+      max-height: 150px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+}
+@mixin mod-bnr-set4-style4 {
+.mod-bnr-inner {
+    border: 0 none transparent;
+    background-image: url("img/mod-bnr/bg12.png");
+    background-repeat: repeat-x;
+    background-color: #3a7ff0;
+    overflow: hidden;
+    .mod-bnr-inner2 {
+      max-height: 150px;
+      border: 0 none transparent;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}
+@mixin mod-bnr-set4-style5 {
+.mod-bnr-inner {
+    border: 0 none transparent;
+    background-image: url("img/mod-bnr/bg12_2.png");
+    background-repeat: repeat-x;
+    background-color: #3a7ff0;
+    overflow: hidden;
+    .mod-bnr-inner2 {
+      max-height: 150px;
+      border: 0 none transparent;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}
+@mixin mod-bnr-set4-style6 {
+.mod-bnr-inner {
+    border: 0 none transparent;
+    background-image: url("img/mod-bnr/bg12_3.png");
+    background-repeat: repeat-x;
+    background-color: #3a7ff0;
+    overflow: hidden;
+    .mod-bnr-inner2 {
+      max-height: 150px;
+      border: 0 none transparent;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}
+@mixin mod-bnr-set4-style7 {
+.mod-bnr-inner {
+    border: 0px none transparent;
+    background-image: url("img/mod-bnr/bg15.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    overflow: hidden;
+    .mod-bnr-inner2 {
+      max-height: 109px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+}
+@mixin mod-bnr-set4-style8 {
+.mod-bnr-inner {
+    border: 0px none transparent;
+    background-image: url("img/mod-bnr/bg15_2.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    overflow: hidden;
+    .mod-bnr-inner2 {
+      max-height: 109px;
+      border: 1px solid #ddbeb5;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+}
+@mixin mod-bnr-set4-style9 {
+.mod-bnr-inner {
+    border: 0px none transparent;
+    background-image: url("img/mod-bnr/bg15_3.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    overflow: hidden;
+    .mod-bnr-inner2 {
+      max-height: 109px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+}

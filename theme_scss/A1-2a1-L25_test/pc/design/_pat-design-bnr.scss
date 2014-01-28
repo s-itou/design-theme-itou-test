@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-design-bnr の定義
+//
+//   ・デザインパターン
+//   ・mod-set-bnr 内にincludeされる使い方を想定
+//   ・他のsetモジュール（お客さまの声、等）でも使われる可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+// pat-design-bnr-x3 の共通スタイル
+// --------------------------------------------------------------------------
+@mixin common-style-pat-design-bnr-x3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child > .ex-first-child .mod-3col-in2 {
+        margin-top: 0 !important; //step1のmargin-topのに
+      }
+      .mod-3col-in2 {
+        margin: 10px 0 0 0;
+        .mod-3col-inner,
+        .mod-3col-inner2 {
+          margin: 0 10px 0 0;
+        }
+        .mod-link_ver2 {
+          p {
+            background-position: 3px 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------------------------------
+// pat-design-bnr-x3 の装飾スタイル
+// --------------------------------------------------------------------------
+@mixin deco-style-pat-design-bnr-x3-1 {
+  > .mod-box-inner {
+    padding: 6px 4px 6px 4px;
+    > .mod-box-inner2 {
+      padding: 17px 5px 17px 5px;
+      .mod-3col-in2 {
+        .mod-3col-inner,
+        .mod-3col-inner2 {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-design-bnr-x3-2 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 23px 9px 23px 9px;
+      .mod-3col-in2 {
+        .mod-3col-inner,
+        .mod-3col-inner2 {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-design-bnr-x3-3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 21px 7px 21px 7px;
+      .mod-3col-in2 {
+        .mod-3col-inner,
+        .mod-3col-inner2 {
+          margin: 0 9px 0 0;
+        }
+      }
+    }
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-bnr の個別設定
+// --------------------------------------------------------------------------
+@mixin pat-design-bnr-x3-1 {
+  @include pat-item-waku-kadomaru-futo-gray;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-1;
+}
+@mixin pat-design-bnr-x3-2 {
+  @include pat-item-waku-kadomaru-futo-blue;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-1;
+}
+@mixin pat-design-bnr-x3-3 {
+  @include pat-item-waku-kadomaru-futo-pink;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-1;
+}
+@mixin pat-design-bnr-x3-4 {
+  @include pat-item-waku-kadomaru-simple-gray-grade;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-2;
+}
+@mixin pat-design-bnr-x3-5 {
+  @include pat-item-waku-kadomaru-simple-yellow-grade;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-2;
+}
+@mixin pat-design-bnr-x3-6 {
+  @include pat-item-waku-kadomaru-simple-gray-grade;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-2;
+}
+@mixin pat-design-bnr-x3-7 {
+  @include pat-item-waku-kadomaru-image-gray;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-3;
+}
+@mixin pat-design-bnr-x3-8 {
+  @include pat-item-waku-kadomaru-image-gray;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-3;
+}
+@mixin pat-design-bnr-x3-9 {
+  @include pat-item-waku-kadomaru-image-pink;
+  @include common-style-pat-design-bnr-x3;
+  @include deco-style-pat-design-bnr-x3-3;
+}
+

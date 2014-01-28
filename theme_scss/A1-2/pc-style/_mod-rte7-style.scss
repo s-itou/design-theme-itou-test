@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@mixin mod-rte7-common-style {
+padding: 10px;
+  margin-top: 15px;
+  @include border-radius();
+  > p {
+    margin-top: 8px;
+    line-height: 1.5em;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte7-style {
+  border: 1px solid #52241b;
+  background-color: #efefef;
+color: #52241b;
+}
+@mixin mod-rte7-style2 {
+  border: 1px solid #e18836;
+  background-color: #f5ede7;
+color: #333333;
+}
+@mixin mod-rte7-style3 {
+  border: 1px solid #781b0e;
+  background-color: #fff3f1;
+color: #333333;
+}
+@mixin mod-rte7-style4 {
+  border: 1px solid #0f365f;
+  background-color: #e8ebed;
+color: #0f365f;
+}
+@mixin mod-rte7-style5 {
+  border: 0 none transparent;
+  background-color: #efefef;
+color: #163a61;
+}
+@mixin mod-rte7-style6 {
+  border: 0 none transparent;
+  background-color: #eeeeee;
+color: #333333;
+}
+@mixin mod-rte7-style7 {
+  border: 1px solid #aebdce;
+  background-color: #d7e1ec;
+color: #333333;
+}
+@mixin mod-rte7-style8 {
+  border: 1px solid #aaaaaa;
+  background-color: #ececec;
+  color: #333333;
+}
+@mixin mod-rte7-style9 {
+  border: 1px solid #cccccc;
+  background-color: #f8f3e0;
+color: #333333;
+}
+@mixin mod-rte7-style10 {
+  border:0 none transparent;
+  background-color: #f2eeda;
+  color: #333333;
+}
+@mixin mod-rte7-style11 {
+  border: 0 none transparent;
+  background-color: #ffffcc;
+  color: #333333;
+}
+@mixin mod-rte7-style12 {
+  padding: 10px 15px;
+  border: 0 none transparent;
+  background-color: #d7e1ec;
+  color: #333333;
+}
+@mixin mod-rte7-style13 {
+  padding: 10px 15px;
+  border: 1px solid #0F365D;
+  background-color: #EAEAF2;
+  color: #11375C;
+}
+@mixin mod-rte7-style14 {
+  padding: 10px 15px;
+  border: 1px solid #0F365D;
+  background-color: #efefef;
+  color: #163a61;
+}
+@mixin mod-rte7-style15 {
+  padding: 10px 15px;
+  border: 0 none transparent;
+  background-color: #E8DFB6;
+  color: #333333;
+}
+@mixin mod-rte7-style16 {
+color: #52241b;
+  padding: 10px 15px;
+  background-color: #efefef;
+  border: 1px solid #52241b;
+}

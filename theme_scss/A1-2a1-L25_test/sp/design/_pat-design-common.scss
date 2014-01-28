@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-design-common の定義
+//
+//   ・デザインパターン
+//   ・mod-set-design 内にincludeされる使い方を想定
+//   ・他のsetモジュール（お客さまの声、等）でも使われる可能性あり
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+// pat-design-common の個別設定
+// --------------------------------------------------------------------------
+@mixin pat-design-common-1 {
+  .mod-ol_ver2 {@include pat-item-list-number-1;}
+}
+@mixin pat-design-common-2 {
+  .mod-ol_ver2 {@include pat-item-list-number-2;}
+}
+@mixin pat-design-common-3 {
+  .mod-ol_ver2 {@include pat-item-list-number-3;}
+}
+@mixin pat-design-common-4 {
+  .mod-ol_ver2 {@include pat-item-list-number-4;}
+}
+@mixin pat-design-common-5 {
+  .mod-ol_ver2 {@include pat-item-list-number-5;}
+}
+@mixin pat-design-common-6 {
+  .mod-ol_ver2 {@include pat-item-list-number-6;}
+}
+@mixin pat-design-common-7 {
+  .mod-ol_ver2 {@include pat-item-list-number-7;}
+}
+@mixin pat-design-common-8 {
+  .mod-ol_ver2 {@include pat-item-list-number-8;}
+}
+@mixin pat-design-common-9 {
+  .mod-ol_ver2 {@include pat-item-list-number-9;}
+}
+

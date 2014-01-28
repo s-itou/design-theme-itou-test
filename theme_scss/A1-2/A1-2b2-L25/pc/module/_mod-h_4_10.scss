@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-h_4_10-style";
+
+.mod-h_4_10 {
+  @include mod-h_4_10-common-style;
+  @include mod-h_4_10-style2;
+  .ex-style_01A2 & {
+    @include mod-h_4_10-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-h_4_10-style3;
+  }
+  .ex-style_01B2 & {
+    @include mod-h_4_10-style4;
+  }
+  .ex-style_01B1 & {
+    @include mod-h_4_10-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-h_4_10-style6;
+  }
+  .ex-style_01C2 & {
+    @include mod-h_4_10-style7;
+  }
+  .ex-style_01C1 & {
+    @include mod-h_4_10-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-h_4_10-style9;
+  }
+}
+

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@mixin mod-title10-common-style {
+display: table;
+  margin-top: 15px;
+  .mod-title-inner {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    > p:first-child.mod-title-inner4 {//公開画面
+      font-size: $fontSizeL + 10;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {//編集画面上
+      font-size: $fontSizeL + 10;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+  .mod-title-inner-img {
+    margin-right: 5px;
+    width: 40px;
+  }
+  .mod-title-inner3 {
+    line-height: 1.0;
+    margin: 0 0 5px;
+    font-size: $fontSizeS + 1;
+  }
+  .mod-title-inner4 {
+    line-height: 1.0;
+    margin: 0 0 5px;
+    font-size: $fontSizeL + 7;
+    font-weight: bold;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@mixin mod-title10-style {
+.mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    color: #6a3d04;
+    a {
+      color: #6a3d04;
+    }
+  }
+}
+

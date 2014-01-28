@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import "../pc-style/mod-html-style";
+
+
+.mod-html {
+  @include mod-html-common-style;
+  @include mod-html-style;
+  .ex-style_01A1 & {
+    @include mod-html-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-html-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-html-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-html-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-html-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-html-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-html-style;
+  }
+  .ex-style_01C2 & {
+    @include mod-html-style;
+  }
+  .ex-style_01C3 & {
+    @include mod-html-style;
+  }
+}
+
+
+.mod-html3 {
+  @include mod-html3-common-style;
+}
+
+
+.mod-html4 {
+  @include mod-html4-common-style;
+  @include mod-html4-style;
+  .ex-style_01A1 & {
+    @include mod-html4-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-html4-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-html4-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-html4-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-html4-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-html4-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-html4-style;
+  }
+  .ex-style_01C2 & {
+    @include mod-html4-style;
+  }
+  .ex-style_01C3 & {
+    @include mod-html4-style;
+  }
+}
+
+
+.mod-html5 {
+  @include mod-html5-common-style;
+}
+
+.mod-html6 {
+  @include mod-html6-common-style;
+  @include mod-html6-style;
+  .ex-style_01A1 & {
+    @include mod-html6-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-html6-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-html6-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-html6-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-html6-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-html6-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-html6-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-html6-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-html6-style9;
+  }
+}
+
+
+.mod-html-spec {
+  @include mod-html-spec-common-style;
+}
+
+

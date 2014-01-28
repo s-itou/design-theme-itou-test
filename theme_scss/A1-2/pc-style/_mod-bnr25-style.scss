@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+//  mod-bnr25 の mixin一式
+@mixin mod-bnr25-common-style {
+  @include border-radius();
+  background-position: left top;
+  @if $layoutCode == "L25" or $layoutCode == "R25" {
+    width: 150px;
+  } @else if $layoutCode == "L30" or $layoutCode == "R30" {
+    width: 130px;
+  }
+  margin-top: 20px;
+  &:hover {
+    opacity: 0.80;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    max-height: 53px;
+    border: 1px solid #ffffff;
+    line-height: 1.4;
+    @include border-radius();
+    background-repeat: no-repeat;
+    padding: 5px 5px 4px 30px;
+  }
+}
+
+@mixin mod-bnr25-style {
+border: 1px solid #3c3c3c;
+  background-image: url("img/mod-bnr/bg03.png");
+  background-repeat: repeat-x;
+  background-color: #2e2e2e;
+  .mod-bnr-inner {
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg04.png");
+    background-position: 10px 9px;
+    border: 1px solid #b6b6b6;
+  }
+}
+@mixin mod-bnr25-style2 {
+border: 1px solid #325073;
+  background-image: url("img/mod-bnr/bg03_2.png");
+  background-repeat: repeat-x;
+  background-color: #264060;
+  .mod-bnr-inner {
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg04_2.png");
+    background-position: 10px 9px;
+    border: 1px solid #b3bcc8;
+  }
+}
+@mixin mod-bnr25-style3 {
+border: 1px solid #781b0e;
+  background-image: url("img/mod-bnr/bg03_3.png");
+  background-repeat: repeat-x;
+  background-color: #65140a;
+  .mod-bnr-inner {
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg04_3.png");
+    background-position: 10px 9px;
+    border: 1px solid #d6b5af;
+  }
+}
+@mixin mod-bnr25-style4 {
+border: 1px solid #000000;
+  background-image: url("img/mod-bnr/bg03.png");
+  background-repeat: repeat-x;
+  background-color: #010305;
+  .mod-bnr-inner {
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg13.png");
+    background-position: 10px 6px;
+    border: 1px solid #a6a7a7;
+  }
+}
+@mixin mod-bnr25-style5 {
+border: 1px solid #7196c0;
+  background-image: url("img/mod-bnr/bg08_2.png");
+  background-repeat: repeat-x;
+  background-color: #143c65;
+  .mod-bnr-inner {
+    color: #085B66;
+    background-image: url("img/mod-bnr/bg13.png");
+    background-position: 10px 6px;
+    border: 1px solid #adbac8;
+  }
+}
+@mixin mod-bnr25-style6 {
+border: 1px solid #982110;
+  background-image: url("img/mod-bnr/bg03_3.png");
+  background-repeat: repeat-x;
+  background-color: #531107;
+  .mod-bnr-inner {
+    color: #ffffff;
+    background-image: url("img/mod-bnr/bg13.png");
+    background-position: 10px 6px;
+    border: 1px solid #3d0d05;
+  }
+}
+@mixin mod-bnr25-style7 {
+border: 1px solid #3c3c3c;
+  background-image: url("img/mod-bnr/bg21.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  .mod-bnr-inner {
+    color: #ffffff;
+    background-image: none;
+    background-position: 10px 9px;
+    border: 1px solid #c5c5c5;
+  }
+}
+@mixin mod-bnr25-style8 {
+ border: 1px solid #0f375f;
+  background-image: url("img/mod-bnr/bg21_2.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  .mod-bnr-inner {
+    color: #ffffff;
+    background-image: none;
+    background-position: 10px 9px;
+    border: 1px solid #adbcc9;
+  }
+}
+@mixin mod-bnr25-style9 {
+border: 1px solid #781b0e;
+  background-image: url("img/mod-bnr/bg21_3.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  .mod-bnr-inner {
+    color: #ffffff;
+    background-image: none;
+    background-position: 10px 9px;
+    border: 1px solid #d1b3ad;
+  }
+}

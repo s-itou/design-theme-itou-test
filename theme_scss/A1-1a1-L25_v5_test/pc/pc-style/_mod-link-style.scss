@@ -1,0 +1,897 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-link
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----commom-style-----//
+
+@mixin common-style-mod-link {
+  margin-top: 10px; //ex-argin対応のためショートハンド不使用
+  p {
+    @include box-sizing(border-box);
+    min-width: 15px;
+    min-height: 20px;
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    line-height: 1.4;
+  }
+}
+
+//-----module-style-----//
+@mixin module-style-mod-link {
+  p {
+    @if $layoutCode == "L25" {
+      padding: 0 0 0 20px;
+      font-size: $fontSizeM;
+    } @else if $layoutCode == "L30" {
+      padding: 0 0 0 16px;
+      font-size: $fontSizeM - 1;
+    }
+    .ex-imgFloat & { //回り込みあり対応
+      overflow: hidden;
+    }
+  }
+}
+
+@mixin module-style-mod-link-1st {
+  margin-top: 20px;//ex-argin対応のためショートハンド不使用
+  p {
+    @if $layoutCode == "L25" {
+      padding: 0 0 0 20px;
+      font-size: $fontSizeM;
+    } @else if $layoutCode == "L30" {
+      padding: 0 0 0 16px;
+      font-size: $fontSizeM - 1;
+    }
+  }
+}
+
+@mixin module-style-mod-link-2nd {
+  p {
+    @if $layoutCode == "L25" {
+      font-size: $fontSizeM;
+      padding: 0 0 0 20px;
+    } @else if $layoutCode == "L30" {
+      font-size: $fontSizeM - 1;
+      padding: 0 0 0 16px;
+    }
+  }
+}
+
+@mixin module-style-mod-link-list {
+  p {
+    @if $layoutCode == "L25" {
+      font-size: $fontSizeM;
+      padding: 0 0 0 20px;
+    } @else if $layoutCode == "L30" {
+      font-size: $fontSizeM - 1;
+      padding: 0 0 0 16px;
+    }
+  }
+}
+
+@mixin module-style-mod-link-hyo {
+  p {
+    @if $layoutCode == "L25" {
+      font-size: $fontSizeM;
+      padding: 0 0 0 20px;
+    } @else if $layoutCode == "L30" {
+      font-size: $fontSizeM - 1;
+      padding: 0 0 0 16px;
+    }
+  }
+}
+
+@mixin module-style-mod-link-pic {
+  p {
+    @extend %inlineBlock;
+    @if $layoutCode == "L25" {
+      padding: 0 0 0 20px;
+      background-position: left 4px;
+      font-size: $fontSizeM;
+    } @else if $layoutCode == "L30" {
+      padding: 0 0 0 16px;
+      background-position: left 2px;
+      font-size: $fontSizeS + 1;
+    }
+  }
+}
+
+@mixin module-style-mod-link-back {
+  margin: 15px 0 0 0;
+  text-align: right;
+  p {
+    @extend %inlineBlock;
+    padding: 0 0 0 15px;
+    min-height: 21px;
+    max-width: 100%;
+    font-size: $fontSizeM;
+  }
+}
+
+//-----deco-style-----//
+
+@mixin deco-style01A1-mod-link {
+  p {
+    background-image: url("img/mod-link/bg.png");
+  }
+  a {
+    color: #335a93;
+  }
+}
+@mixin deco-style01A2-mod-link {
+  p {
+    background-image: url("img/mod-link/bg_2.png");
+  }
+  a {
+    color: #294470;
+  }
+}
+@mixin deco-style01A3-mod-link {
+  p {
+    background-image: url("img/mod-link/bg_3.png");
+  }
+  a {
+    color: #45320b;
+  }
+}
+//aがdivの外についた時用
+@mixin deco-style01A1-mod-link-a {
+  color: #335a93;
+}
+//aがdivの外についた時用
+@mixin deco-style01A2-mod-link-a {
+  color: #294470;
+}
+//aがdivの外についた時用
+@mixin deco-style01A3-mod-link-a {
+  color: #45320b;
+}
+
+
+// mod-link-back
+@mixin deco-style01A1-mod-link-back {
+  p {
+    background-image: url("img/mod-link/bg12.png");
+  }
+  a {
+    color: #335a93;
+  }
+}
+@mixin deco-style01A2-mod-link-back {
+  p {
+    background-image: url("img/mod-link/bg12_2.png");
+  }
+  a {
+    color: #294470;
+  }
+}
+@mixin deco-style01A3-mod-link-back {
+  p {
+    background-image: url("img/mod-link/bg12_3.png");
+  }
+  a {
+    color: #45320b;
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-link-yudo
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----commom-style-----//
+
+@mixin common-style-mod-link-yudo {
+  text-align: center;
+  .mod-link-inner {
+    @extend %inlineBlock;
+    text-align: left;
+  }
+  .mod-link-inner2 {
+    margin: 10px 0 0 0;
+    min-height: 30px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 40px;
+    font-size: $fontSizeM - 1;
+    line-height: 1.2;
+    a:hover{
+      text-decoration: none;
+    }
+  }
+  .mod-link-inner4 {
+    position: relative;
+    padding: 3px 0 3px 40px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: $fontSizeL;
+    line-height: 1.2;
+    &:before { // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+  }
+}
+
+//-----module-style-----//
+
+@mixin module-style-mod-link-yudo {
+  //現状記述なし
+}
+
+//-----deco-style-----//
+
+@mixin deco-style01A1-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #f3882b;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #335a93;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg_a.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #335a93;
+  }
+}
+@mixin deco-style01A2-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #0b7d89;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #294470;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg_a_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #294470;
+  }
+}
+@mixin deco-style01A3-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #321b07;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #335a93;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg_a_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #335a93;
+  }
+}
+@mixin deco-style01B1-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #333333;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #16305F;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -10px 0 0 0;
+      content: url("img/mod-link/_07/bg_b.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #16305F;
+  }
+}
+@mixin deco-style01B2-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #333333;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #2b436f;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -10px 0 0 0;
+      content: url("img/mod-link/_07/bg_b_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #2b436f;
+  }
+}
+@mixin deco-style01B3-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #37280b;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #337fb2;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -10px 0 0 0;
+      content: url("img/mod-link/_07/bg_b_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #337fb2;
+  }
+}
+@mixin deco-style01C1-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #f3882b;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -14px 0 0 0;
+      content: url("img/mod-link/_07/bg_c.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+@mixin deco-style01C2-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #0b7d89;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -14px 0 0 0;
+      content: url("img/mod-link/_07/bg_c_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+@mixin deco-style01C3-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #45320b;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -14px 0 0 0;
+      content: url("img/mod-link/_07/bg_c_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+@mixin deco-style02A1-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #f3882b;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #335a93;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_a.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #335a93;
+  }
+}
+@mixin deco-style02A2-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #0b7d89;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #294470;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_a_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #294470;
+  }
+}
+@mixin deco-style02A3-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #321b07;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #335a93;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_a_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #335a93;
+  }
+}
+@mixin deco-style02B1-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #333333;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #16305F;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_b.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #16305F;
+  }
+}
+@mixin deco-style02B2-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #333333;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #2b436f;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_b_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #2b436f;
+  }
+}
+@mixin deco-style02B3-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #37280b;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #337fb2;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_b_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #337fb2;
+  }
+}
+@mixin deco-style02C1-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #f3882b;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_c.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+@mixin deco-style02C2-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #0b7d89;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_c_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+@mixin deco-style02C3-mod-link-yudo {
+  .mod-link-inner3, .mod-link-inner6 {
+    color: #45320b;
+  }
+  .mod-link-inner4 {
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -15px 0 0 0;
+      content: url("img/mod-link/_07/bg02_c_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+@mixin deco-style03A1-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 60px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 135px;
+    color: #f3882b;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 135px;
+    a {
+      color: #335a93;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -30px 0 0 0;
+      content: url("img/mod-link/_07/bg03_a.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #335a93;
+  }
+}
+@mixin deco-style03A2-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 60px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 135px;
+    color: #0b7d89;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 135px;
+    a {
+      color: #294470;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -30px 0 0 0;
+      content: url("img/mod-link/_07/bg03_a_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #294470;
+  }
+}
+@mixin deco-style03A3-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 60px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 135px;
+    color: #321b07;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 135px;
+    a {
+      color: #335a93;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -30px 0 0 0;
+      content: url("img/mod-link/_07/bg03_a_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #335a93;
+  }
+}
+@mixin deco-style03B1-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 60px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 135px;
+    color: #333333;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 135px;
+    a {
+      color: #16305F;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -30px 0 0 0;
+      content: url("img/mod-link/_07/bg03_b.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #16305F;
+  }
+}
+@mixin deco-style03B2-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 60px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 135px;
+    color: #333333;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 135px;
+    a {
+      color: #2b436f;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -30px 0 0 0;
+      content: url("img/mod-link/_07/bg03_b_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #2b436f;
+  }
+}
+@mixin deco-style03B3-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 60px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 135px;
+    color: #37280b;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 135px;
+    a {
+      color: #337fb2;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -30px 0 0 0;
+      content: url("img/mod-link/_07/bg03_b_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #337fb2;
+  }
+}
+@mixin deco-style03C1-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 43px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 125px;
+    color: #f3882b;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 125px;
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -22px 0 0 0;
+      content: url("img/mod-link/_07/bg03_c.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+@mixin deco-style03C2-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 43px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 125px;
+    color: #0b7d89;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 125px;
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -22px 0 0 0;
+      content: url("img/mod-link/_07/bg03_c_2.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+@mixin deco-style03C3-mod-link-yudo {
+  .mod-link-inner2 {
+    min-height: 43px;
+  }
+  .mod-link-inner3, .mod-link-inner6 {
+    padding: 0 0 0 125px;
+    color: #45320b;
+  }
+  .mod-link-inner4 {
+    padding: 3px 0 3px 125px;
+    a {
+      color: #154e86;
+    }
+    &:before {
+      // アイコン画像の高さの半分を指定（小数点以下切り上げ）
+      margin: -22px 0 0 0;
+      content: url("img/mod-link/_07/bg03_c_3.png");
+    }
+  }
+  a .mod-link-inner4 {
+    color: #154e86;
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-link-side
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-side-style-mod-link {
+  margin: 10px 0 0 0;
+  p {
+    @include box-sizing(border-box);
+    padding: 0 0 0 15px;
+    min-width: 15px;
+    min-height: 21px;
+    max-width: 100%;
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    font-size: $sideFontSizeM;
+    line-height: 1.4;
+  }
+}
+
+//-----module-style-----//
+
+@mixin module-style-mod-link-side {
+  //現状記述なし
+}
+
+@mixin module-style-mod-link-pic-side {
+  p {
+    @extend %inlineBlock;
+  }
+}
+@mixin module-style-mod-link-list-side {
+  p {
+    @extend %inlineBlock;
+  }
+}
+@mixin module-style-mod-link-hyo-side {
+  p {
+    @extend %inlineBlock;
+  }
+}
+
+//-----deco-style-----//
+
+//mod-link-side
+@mixin deco-style01A1-mod-link-side {
+  p{
+    background-image: url("img/mod-link/bg17.png");
+  }
+  a {
+    color: #335a93;
+  }
+}
+@mixin deco-style01A2-mod-link-side {
+  p{
+    background-image: url("img/mod-link/bg17_2.png");
+  }
+  a {
+    color: #294470;
+  }
+}
+@mixin deco-style01A3-mod-link-side {
+  p {
+    background-image: url("img/mod-link/bg17_3.png");
+  }
+  a {
+    color: #45320b;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//↓統合前にあったモジュール。いずれ削除。
+
+// @mixin module-style-mod-link-yoso-2col {
+//   p {
+//     @extend %inlineBlock;
+//     min-height: 17px;
+//     max-width: 100%;
+//     background-position: left 1px;
+//     font-size: $fontSizeS;
+//     @if $layoutCode == "L25" {
+//       padding: 0 0 0 15px;
+//     } @else if $layoutCode == "L30" {
+//       padding: 0 0 0 14px;
+//     }
+//   }
+// }
+
+
+// @mixin module-style-mod-link-side2 {
+//   p {
+//     background-position: left 3px;
+//   }
+//   > .ex-first-child {
+//     margin: 15px 0 0 0 !important;
+//   }
+//   .step1 & {
+//     margin: 15px 0 0 0 !important;
+//   }
+// }
+
+
+
+//mod-link-side2
+// @mixin deco-style01A1-mod-link-side2 {
+//   p {
+//     background-image: url("img/mod-link/bg18.png");
+//   }
+//   a &, a {
+//     color: #335a93;
+//   }
+// }
+// @mixin deco-style01A2-mod-link-side2 {
+//   p {
+//   background-image: url("img/mod-link/bg18_2.png");
+//   }
+//   a &, a {
+//     color: #294470;
+//   }
+// }
+// @mixin deco-style01A3-mod-link-side2 {
+//   p {
+//   background-image: url("img/mod-link/bg18_3.png");
+//   }
+//   a &, a {
+//     color: #45320b;
+//   }
+// }
+

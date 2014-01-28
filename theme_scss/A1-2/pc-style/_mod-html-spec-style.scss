@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@mixin mod-html-spec-common-style {
+overflow: auto;
+  width: 100%;
+  > div, > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-h_2D3-style";
+
+.mod-h_2D3 {
+  @include mod-h_2D3-common-style;
+}
+
+@include _mod-h_2D3-common-style;
+

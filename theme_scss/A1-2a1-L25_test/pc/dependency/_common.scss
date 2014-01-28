@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+
+//全module共通
+
+//_sourceと重複しているためコメントアウト　将来的にすべて新担ったら復帰させる必要がある
+// .mod-body {
+//   color: #333333;
+//   font-size: $fontSizeM;
+//   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+//   line-height: 1.6;
+//   word-wrap: break-word;
+//   background-color: #ffffff;
+//   margin: 0;
+//   table {
+//     border-spacing: 0;
+//     border-collapse: collapse;
+//   }
+//   div {
+//     @include box-sizing(border-box);
+//   }
+//   p {
+//     margin: 0;
+//   }
+//   h1, h2, h3, h4, h5, h6 {
+//     margin: 0;
+//     font-weight: normal;
+//   }
+//   a {
+//     color: #335a93;
+//     text-decoration: none;
+//     &:hover {
+//       text-decoration: underline;
+//       p {
+//         text-decoration: underline;
+//       }
+//     }
+//   }
+//   img {
+//     vertical-align: bottom;
+//   }
+//   div[contenteditable=true],
+//   p[contenteditable=true],
+//   h1[contenteditable=true],
+//   h2[contenteditable=true],
+//   h3[contenteditable=true],
+//   h4[contenteditable=true],
+//   h5[contenteditable=true] {
+//     a[name] {
+//       display: block;
+//       min-height: 15px;
+//     }
+//   }
+// }
+
+// .mod-body {
+//   //------------------
+//   // mod-margin-top
+//   // 部品間の余白調整
+//   //------------------
+//   .mod-margin1 {
+//     margin-top: 15px !important;
+//   }
+//   .mod-margin2 {
+//     margin-top: 30px !important;
+//   }
+//   .mod-margin3 {
+//     margin-top: 45px !important;
+//   }
+
+// }
+
+
+
+//-------------------------------------------------
+// 見出し用プレスホルダー
+//-------------------------------------------------
+
+// %default-icon2 {
+//   display: table;
+//   vertical-align: middle;
+//   i {
+//     display: table-cell;
+//   }
+//   > div {
+//     display: table-cell;
+//     vertical-align: middle;
+//     > p {
+//       font-size: 13px;
+//       padding-left: 0;
+//       margin: 0 !important;
+//     }
+//   }
+// }
+
+// %default-h_5_3 {
+// display: table;
+//   i {
+//     display: table-cell;
+//     min-width: 25px;
+//     background-repeat: no-repeat;
+//   }
+//   .mod-icon_0, .mod-icon_1 {
+//     min-width: 0;
+//   }
+//   .mod-h {
+//     min-width: 30px;
+//     display: table-cell;
+//     vertical-align: middle;
+//     line-height: 1.5;
+//   }
+// }
+
+
+// //------------------
+// ex-align-center mod.scssでは見出しよりも上において（ポイント）　
+//　ショートハンド、だめ、絶対
+//------------------
+
+.ex-align-center {
+  //&.mod-link2, &.mod-link7, &.mod-link10, &.mod-link11,
+  &.mod-link-pic, &.mod-link-yudo, &.mod-link-pic-side {//連番モジュール名は暫定対応
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  //&.mod-link13,
+  &.mod-link_ver2, &.mod-link-1st, &.mod-link-2nd {//連番モジュール名は暫定対応
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+  //&.mod-bnr23,&.mod-bnr25,
+  &.mod-bnr_ver2 {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+}
+
+//------------------
+// ex-align-left
+//------------------
+
+.ex-align-left {}
+
+//------------------
+// ex-align-right
+//------------------
+
+.ex-align-right {
+  //&.mod-link13,
+  &.mod-link_ver2, &.mod-link-1st, &.mod-link-2nd {//連番モジュール名は暫定対応
+    display: table;
+    margin-right: 0;
+    margin-left: auto;
+    text-align:left;
+  }
+  //&.mod-bnr23,&.mod-bnr25,
+  &.mod-bnr_ver2 {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: left;
+  }
+}
+
+

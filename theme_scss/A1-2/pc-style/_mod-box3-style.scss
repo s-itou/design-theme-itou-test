@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@mixin mod-box3-common-style {
+width: $mainWidth;
+  padding-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+    &.ex-first-part > .mod-box-inner {
+  > .mod-box-inner2 {
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+          margin-top: 0 !important;
+        > .ex-first-child {
+            margin-top: 0 !important;
+            > .ex-first-child {
+              margin-top: 0 !important;
+              > .ex-first-child {
+                margin-top: 0 !important;
+                > .ex-first-child {
+                   margin-top: 0 !important;
+                   > .ex-first-child {
+                     margin-top: 0 !important;
+                     > .ex-first-child {
+                     margin-top: 0 !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

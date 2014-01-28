@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@mixin mod-2col-spec2-common-style {
+@extend %cf;
+  .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 30) / 2);
+      margin-right: 30px;
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 30) / 2);
+    }
+  }
+}
+
+

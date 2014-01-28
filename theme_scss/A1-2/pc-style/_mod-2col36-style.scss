@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@mixin mod-2col36-common-style {
+display: table;
+  margin-left: 5px;
+  > .mod-2col-inner {
+    display: table-cell;
+    width: 200px;
+    vertical-align: top;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    width: 240px;
+    padding-left: 15px;
+    vertical-align: top;
+  }
+}
+
+

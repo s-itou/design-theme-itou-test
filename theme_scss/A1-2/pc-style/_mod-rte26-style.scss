@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@mixin mod-rte26-common-style {
+  margin-top: 20px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte26-style {
+  margin-left: 67px;
+}
+@mixin mod-rte26-style2 {
+  margin-left: 47px;
+}
+
+

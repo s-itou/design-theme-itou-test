@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+//  mod-login の mixin一式
+@mixin mod-login-common-style {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 3px;
+  a {
+    color: #335a93;
+  }
+}
+
+//  mod-card の mixin一式
+@mixin mod-card-common-style {
+  @extend %cf;
+  width: 100%;
+  margin-top: 10px;
+  padding: 3px 3px;
+  > p {
+    width: 40px;
+    display: inline-block;
+  }
+}
+@mixin mod-card-style {
+border: 3px double #cccccc;
+}
+@mixin mod-card-style2 {
+border: 3px double #dae3ed;
+}
+@mixin mod-card-style3 {
+border: 3px double #ebd6d2;
+}
+@mixin mod-card-style4 {
+border: 3px double #5f140a;
+}
+@mixin mod-card-style5 {
+border: 3px double #f2d028;
+}
+@mixin mod-card-style6 {
+border: 3px double #260e0e;
+}
+@mixin mod-card-style7 {
+border: 1px dotted #666666;
+}
+@mixin mod-card-style8 {
+border: 1px dotted #96c0ed;
+}
+@mixin mod-card-style9 {
+border: 1px dotted #812a1e;
+}
+
+//  mod-header-image の mixin一式
+@mixin mod-header-image-common-style {
+  @extend %cf;
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+//  mod-copy の mixin一式
+//新規部品　未対応
+@mixin mod-copy-common-style {
+  width: 100%;
+  text-align: center;
+}
+@mixin mod-copy-style {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style2 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg_2.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style3 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #3d2612;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style4 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style5 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style6 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style7 {
+  margin-top: 0px;
+  background-image: url("img/mod-copy/bg02_3.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #f27f1b;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style8 {
+  margin-top: 0px;
+  background-image: url("img/mod-copy/bg02_3.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #f27f1b;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style9 {
+  margin-top: 0px;
+  background-image: url("img/mod-copy/bg02_3.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #f27f1b;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+//  mod-copy2 の mixin一式
+//新規部品　未対応
+@mixin mod-copy2-common-style {
+  width: 100%;
+  text-align: center;
+}
+
+@mixin mod-copy2-style {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style2 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style3 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg04_3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #f59c1c;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style4 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style5 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style6 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style7 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style8 {
+  // //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style9 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}

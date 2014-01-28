@@ -1,0 +1,1138 @@
+@charset "UTF-8";
+
+//------mixin一覧 ここから------------
+//白背景用のグラデーション
+@mixin tel-button($imgUrl,$position-x: 20px, $position-y: 15px) { //spカラバリ対策
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+}
+
+//暗い背景用のグラデーション
+@mixin tel-button2($imgUrl,$position-x: 20px, $position-y: 15px) { //spカラバリ対策
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, linear-gradient(#eeeeee, #d9d9d9, #eeeeee);
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, -webkit-gradient(linear,left top,left bottom,from(#eeeeee),color-stop(0.5,#d9d9d9),to(#eeeeee));
+  background: url(img/#{$imgUrl}) $position-x $position-y no-repeat, -moz-linear-gradient(top,#eeeeee 0%,#d9d9d9 50%,#eeeeee 100%);
+}
+//------mixin一覧 ここまで------------
+
+
+
+
+//------プレイスホルダー一覧 ここから------------
+%default-number-base{
+  margin: 0;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  text-decolation: none;
+}
+%default-number {
+  @extend %default-number-base;
+  font-size: 24px;
+  color: #ff0000;
+}
+%default-number2 {
+  @extend %default-number-base;
+  font-size: 24px;
+  color: #ff0000;
+}
+%default-number3 { //SP用
+ @extend %default-number-base;
+ font-size: 20px;
+ color: #333333;
+}
+%default-number4 {
+  @extend %default-number-base;
+  font-size: 24px;
+  color: #ff0000;
+}
+%default-number5 { //SP用
+  @extend %default-number-base;
+  font-size: 20px;
+  color: #ff0000;
+}
+%default-number6 { //SP用
+  @extend %default-number-base;
+  font-size: 22px;
+  color: #ff0000;
+}
+%default-address {
+  @extend %default-number-base;
+  font-size: 20px;
+  color: #ff0000;
+}
+%default-goro {
+  font-size: 13px;
+  word-break: break-all;
+  padding: 4px 0 0 0;
+}
+%default-goro2 {
+  font-size: 12px;
+  // line-height: 1.0;
+  word-break: break-all;
+  //margin-bottom: 3px;
+  padding: 4px 0 0 0;//SP用
+}
+%default-numberline {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto;
+  text-align:center;
+}
+//------プレイスホルダー一覧 ここまで------------
+
+
+
+
+
+
+
+//------デフォルトtel設定 ここから------------
+//ftelアイコンあり
+%default-sp-ftel {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 20px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    @extend %default-number;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    @extend %default-number;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+}
+
+//ftelアイコンなし
+%default-sp-ftel2 {
+  @extend %default-numberline;
+  position: relative;//sp対応
+  padding: 5px 5px 8px; //SP
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    @extend %default-number;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    @extend %default-number;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number;
+  }
+}
+
+//ftelアイコンあり サイド・メイン用
+%default-sp-ftel3 {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  @include tel-button("mod-ftel/spbg02.png", 10px, 20px);
+  background-size: 31px 25px, 100%;
+  .mod-ftel-inner {
+    @extend %default-goro2;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    @extend %default-number6;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    @extend %default-number6;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number6;
+  }
+}
+
+//ftelアイコンなし サイド・メイン用
+%default-sp-ftel4 {
+  @extend %default-numberline;
+  position: relative;//sp対応
+  padding: 5px 5px 8px; //SP
+  margin-bottom: 10px;
+  height: 60px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-ftel-inner {
+    @extend %default-goro2;
+  }
+  > p:first-child.mod-ftel-inner2 { //sp対応
+    @extend %default-number6;
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    @extend %default-number6;
+    position: relative;
+    top: 15px;
+  }
+  .mod-ftel-inner2 {
+    @extend %default-number6;
+  }
+}
+
+
+//telアイコンあり
+%default-sp-tel {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  @include tel-button("mod-tel/spbg02.png", 20px, 15px);
+  background-size: 31px 29px, 100%;
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+}
+
+//telアイコンなし
+%default-sp-tel2 {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  height: 60px;
+  padding: 5px 5px 8px; //SP
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    @extend %default-goro;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number;
+  }
+}
+
+
+//telアイコンあり サイド用
+%default-sp-tel3 {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  padding: 5px 5px 8px 35px; //SP
+  height: 60px;
+  @include tel-button("mod-tel/spbg04.png", 10px, 15px);
+  background-size: 31px 32px, 100%;
+  .mod-tel-inner {
+    @extend %default-goro2;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number6;
+  }
+}
+
+//telアイコンなし サイド用
+%default-sp-tel4 {
+  @extend %default-numberline;
+  position: relative; //sp対応
+  margin-bottom: 10px;
+  height: 60px;
+  padding: 5px 5px 8px; //SP
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    @extend %default-goro2;
+  }
+  > p:first-child.mod-tel-inner2 { //sp対応
+    position: relative;
+    top: 15px;
+  }
+  > p[data-cms-switchable-use="false"] + p { //sp対応管理画面
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    @extend %default-number6;
+  }
+}
+
+
+
+//cellアイコンあり
+%default-sp-cell {
+  @extend %default-numberline;
+  @extend %default-number;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  @include tel-button("mod-cell/spbg02.png", 20px, 15px);
+  background-size: 31px 31px, 100%;
+}
+
+//cellアイコンなし
+%default-sp-cell2 {
+  margin-bottom: 10px;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @extend %default-numberline;
+  @extend %default-number;
+  @include background-image(linear-gradient(top, #fff, #eee));
+}
+
+//cellアイコンあり サイド用
+%default-sp-cell3 {
+  @extend %default-numberline;
+  @extend %default-number6;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  @include tel-button("mod-cell/spbg04.png", 10px, 15px);
+  background-size: 31px 31px, 100%;
+}
+
+//アイコンなし　サイド用
+%default-sp-cell4 {
+  margin-bottom: 10px;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @extend %default-numberline;
+  @extend %default-number6;
+  @include background-image(linear-gradient(top, #fff, #eee));
+}
+
+
+//faxアイコンあり
+%default-sp-fax {
+  @extend %default-number3;
+  width:100%;
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    height: 18px;
+    z-index: 3;
+    @include background("mod-fax/spbg04.png");
+    background-size: 22px 18px;
+    display: block;
+    position: relative;
+    top: 0px;
+    left: -5px;
+  }
+}
+
+//faxアイコンなし
+%default-sp-fax2 {
+  @extend %default-number3;
+  width:100%;//SP用ここから
+  margin: 5px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+}
+
+//faxアイコンあり
+%default-sp-fax3 {
+  @extend %default-number3;
+  width:100%;
+  margin: 10px 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    height: 18px;
+    z-index: 3;
+    @include background("mod-fax/spbg02.png");
+    background-size: 22px 18px;
+    display: block;
+    position: relative;
+    top: 0px;
+    left: -5px;
+  }
+}
+
+//emailアイコンあり
+%default-sp-email {
+  @extend %default-numberline;
+  @extend %default-address;
+  @include box-sizing(border-box);
+  padding:  0 0 40px; //sp対応
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  color: transparent !important; //sp対応
+  @include tel-button("mod-email/spbg02.png", 20px ,18px);
+  background-size: 31px 23px, 100%;
+}
+
+//emailアイコンなし
+%default-sp-email2 {
+  margin-bottom: 10px　!important;
+  @include box-sizing(border-box);
+  padding: 0 0 0 0; //sp対応
+  height: 60px;
+  color: transparent !important;
+  @extend %default-numberline;
+  @extend %default-address;
+  @include background-image(linear-gradient(top, #fff, #eee));
+}
+
+//emailアイコンあり
+%default-sp-email3 {
+  @extend %default-numberline;
+  @extend %default-address;
+  @include box-sizing(border-box);
+  padding:  0 0 40px; //sp対応
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin-bottom: 10px !important;
+  color: transparent !important; //sp対応
+  @include tel-button("mod-email/spbg04_3.png", 10px ,18px);
+  background-size: 30px 23px, 100%;
+}
+
+
+
+//------デフォルトtel設定 ここまで------------
+
+.mod-ftel { @extend %default-sp-ftel }
+.mod-ftel2 { @extend %default-sp-ftel2 }
+.mod-ftel3 { @extend %default-sp-ftel }
+.mod-ftel4 { @extend %default-sp-ftel2 }
+.mod-ftel5 { @extend %default-sp-ftel }
+.mod-ftel6 { @extend %default-sp-ftel2 }
+.mod-ftel7 { @extend %default-sp-ftel }
+.mod-ftel8 { @extend %default-sp-ftel2 }
+.mod-ftel9 { @extend %default-sp-ftel3 }
+.mod-ftel10 { @extend %default-sp-ftel4 }
+.mod-ftel11 { @extend %default-sp-ftel3 }
+.mod-ftel12 { @extend %default-sp-ftel4 }
+.mod-ftel13 { @extend %default-sp-ftel3 }
+.mod-ftel14 { @extend %default-sp-ftel4 }
+.mod-ftel15 { @extend %default-sp-ftel3 }
+.mod-ftel16 { @extend %default-sp-ftel4 }
+
+.mod-tel {
+  @extend %default-sp-tel;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-tel/spbg02_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    @include tel-button("mod-tel/spbg04_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    @include tel-button("mod-tel/spbg02_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+}
+.mod-tel2 { @extend %default-sp-tel2 }
+.mod-tel3 {
+  @extend %default-sp-tel;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-tel/spbg04_2.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-tel/spbg02_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    @include tel-button("mod-tel/spbg04_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    @include tel-button("mod-tel/spbg04.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    @include tel-button("mod-tel/spbg11_2.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    @include tel-button("mod-tel/spbg11_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+}
+.mod-tel4 { @extend %default-sp-tel2 }
+.mod-tel5 { @extend %default-sp-tel }
+.mod-tel6 { @extend %default-sp-tel2 }
+.mod-tel7 {
+  @extend %default-sp-tel;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-tel/spbg02_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    @include tel-button("mod-tel/spbg04_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    @include tel-button("mod-tel/spbg02_3.png", 20px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+}
+.mod-tel8 { @extend %default-sp-tel2 }
+.mod-tel11 {
+  @extend %default-sp-tel3;
+  @include tel-button("mod-tel/spbg02.png", 10px, 15px);
+  background-size: 31px 29px, 100%;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-tel/spbg05_2.png", 10px, 15px);
+    background-size: 29px 30px, 100%;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-tel/spbg05_3.png", 10px, 15px);
+    background-size: 29px 30px, 100%;
+  }
+}
+
+.mod-tel12 { @extend %default-sp-tel4 }
+.mod-tel13 {
+  @extend %default-sp-tel3;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-tel/spbg04_2.png", 10px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+}
+.mod-tel14 { @extend %default-sp-tel4 }
+.mod-tel15 {
+  @extend %default-sp-tel3;
+  @include tel-button("mod-tel/spbg02.png", 10px, 15px);
+  background-size: 31px 29px, 100%;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-tel/spbg05_2.png", 10px, 15px);
+    background-size: 31px 29px, 100%;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-tel/spbg05_3.png", 10px, 15px);
+    background-size: 31px 29px, 100%;
+  }
+}
+.mod-tel16 { @extend %default-sp-tel4 }
+.mod-tel17 {
+  @extend %default-sp-tel3;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-tel/spbg04_2.png", 10px, 15px);
+    background-size: 31px 32px, 100%;
+  }
+}
+.mod-tel18 { @extend %default-sp-tel4 }
+
+.mod-fax {
+  @extend %default-sp-fax;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg02_2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg02_3.png");
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: #ffffff;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg07_3.png");
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg02.png");
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg09_2.png");
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg09_3.png");
+    }
+  }
+}
+
+.mod-fax2 {
+  @extend %default-sp-fax2;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: #ffffff;
+  }
+}
+
+.mod-fax3 {
+  @extend %default-sp-fax;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg03_3.png");
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: #ffffff;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg07_3.png");
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg03_3.png");
+    }
+  }
+}
+.mod-fax4 {
+  @extend %default-sp-fax2;
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    color: #ffffff;
+  }
+}
+.mod-fax5 {
+  @extend %default-sp-fax;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg04.png");
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg07_3.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg03_3.png");
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg03_3.png");
+    }
+  }
+}
+.mod-fax6 { @extend %default-sp-fax2 }
+.mod-fax7 {
+  @extend %default-sp-fax;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg05_2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg05_3.png");
+    }
+  }
+}
+.mod-fax8 { @extend %default-sp-fax2 }
+.mod-fax9 {
+  @extend %default-sp-fax3;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg02_2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg05_3.png");
+    }
+  }
+}
+.mod-fax10 { @extend %default-sp-fax2 }
+.mod-fax11 {
+  @extend %default-sp-fax;
+  &:before {
+      background-image: url("img/mod-fax/spbg03.png");
+    }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    &:before {
+      background-image: url("img/mod-fax/spbg03_3.png");
+    }
+  }
+}
+.mod-fax12 { @extend %default-sp-fax2 }
+
+.mod-cell {
+  @extend %default-sp-cell;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+}
+.mod-cell2 { @extend %default-sp-cell2 }
+.mod-cell3 {
+  @extend %default-sp-cell;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-cell/spbg04_2.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    @include tel-button("mod-cell/spbg04.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    @include tel-button("mod-cell/spbg09_2.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    @include tel-button("mod-cell/spbg09_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+}
+.mod-cell4 { @extend %default-sp-cell2 }
+.mod-cell5 { @extend %default-sp-cell }
+.mod-cell6 { @extend %default-sp-cell2 }
+.mod-cell7 {
+  @extend %default-sp-cell;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 20px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+}
+.mod-cell8 { @extend %default-sp-cell2 }
+.mod-cell9 {
+  @extend %default-sp-cell3;
+  @include tel-button("mod-cell/spbg02.png", 10px, 15px);
+  background-size: 31px 31px, 100%;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-cell/spbg05_2.png", 10px, 15px);
+    background-size: 28px 28px, 100%;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-cell/spbg05_3.png", 10px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+}
+
+.mod-cell10 { @extend %default-sp-cell4 }
+.mod-cell11 {
+  @extend %default-sp-cell3;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-cell/spbg04_2.png", 10px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-cell/spbg05_3.png", 10px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+}
+.mod-cell12 { @extend %default-sp-cell4 }
+.mod-cell13{
+  @extend %default-sp-cell3;
+  @include tel-button("mod-cell/spbg02.png", 10px, 15px);
+  background-size: 31px 31px, 100%;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-cell/spbg02_3.png", 10px, 15px);
+    background-size: 31px 31px, 100%;
+  }
+}
+.mod-cell14 { @extend %default-sp-cell4 }
+
+
+.mod-email:before,.mod-email3:before,
+.mod-email5:before,.mod-email7:before,
+.mod-email9:before {
+  content: "";
+  display: block;
+  height: 61px;
+  background-image: url(img/mod-email/sp_bg02.png);
+  background-size: 150px 38px;
+  background-position: 60% center;
+  background-repeat: no-repeat;
+}
+.mod-email2:before,.mod-email4:before,
+.mod-email6:before,.mod-email8:before,
+.mod-email10:before {
+  content: "";
+  display: block;
+  height: 61px;
+  background-image: url(img/mod-email/sp_bg02.png);
+  background-size: 150px 38px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.mod-email {
+  @extend %default-sp-email;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-email/spbg02_3.png", 20px ,18px);
+    background-size: 31px 23px, 100%;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    @include tel-button("mod-email/spbg07_3.png", 20px ,18px);
+    background-size: 31px 23px, 100%;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    @include tel-button("mod-email/spbg02_3.png", 20px, 15px);
+    background-size: 31px 23px, 100%;
+  }
+}
+.mod-email2 { @extend %default-sp-email2 }
+.mod-email3 {
+  @extend %default-sp-email;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-email/spbg02_3.png", 20px ,18px);
+    background-size: 31px 23px, 100%;
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    @include tel-button("mod-email/spbg07_3.png", 20px ,18px);
+    background-size: 30px 23px, 100%;
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    @include tel-button("mod-email/spbg02_3.png", 20px, 15px);
+    background-size: 31px 23px, 100%;
+  }
+}
+.mod-email4 { @extend %default-sp-email2 }
+.mod-email5 {
+  @extend %default-sp-email3;
+  @include tel-button("mod-email/spbg04.png", 10px ,18px);
+  background-size: 30px 23px, 100%;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-email/spbg04_2.png", 10px ,18px);
+    background-size: 30px 23px, 100%;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-email/spbg04_3.png", 10px ,18px);
+    background-size: 30px 23px, 100%;
+  }
+}
+
+.mod-email6 { @extend %default-sp-email2 }
+.mod-email7 {
+  @extend %default-sp-email3;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    @include tel-button("mod-email/spbg_2.png", 10px ,18px);
+    background-size: 30px 22px, 100%;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    @include tel-button("mod-email/spbg04_3.png", 10px ,18px);
+    background-size: 30px 22px, 100%;
+  }
+}
+.mod-email8 { @extend %default-sp-email2 }
+.mod-email9 {
+  @extend %default-sp-email3;
+  @include tel-button("mod-email/spbg02.png", 10px ,18px);
+  background-size: 30px 23px, 100%;
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+  @include tel-button("mod-email/spbg02_3.png", 10px ,18px);
+  background-size: 30px 21px, 100%;
+  }
+}
+.mod-email10 { @extend %default-sp-email2 }

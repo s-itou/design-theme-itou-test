@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-box14-style";
+
+.mod-box14 {
+  @include mod-box14-common-style;
+  .ex-style_01A2 & {
+    @include mod-box14-style;
+  }
+}
+

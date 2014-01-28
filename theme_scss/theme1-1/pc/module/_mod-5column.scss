@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%default-5col-inner {
+  float: left;
+  width: 132px;
+  padding-left: 20px;
+  @include background("mod-column/bg.png", $position-x: left, $position-y: center);
+}
+
+
+//------プレイスホルダー一覧 ここまで------------
+
+.mod-5col {
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-5col-inner {
+    float: left;
+    width: 112px;
+  }
+  > .mod-5col-inner2 {
+    @extend %default-5col-inner;
+  }
+  > .mod-5col-inner3 {
+    @extend %default-5col-inner;
+  }
+  > .mod-5col-inner4 {
+    @extend %default-5col-inner;
+  }
+  > .mod-5col-inner5 {
+    @extend %default-5col-inner;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg_2.png);
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_013 &,
+  .ex-style_01A3 & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg_3.png);
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg02.png);
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg02_2.png);
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg02_3.png);
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg03.png);
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg03_2.png);
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg03_3.png);
+    }
+  }
+}

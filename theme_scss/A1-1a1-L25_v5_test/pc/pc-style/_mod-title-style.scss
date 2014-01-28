@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//  mod-title
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//----- common-style -----//
+//  元mod-title8
+@mixin common-style-mod-title {
+  margin: 5px 0 0 0;
+  display: table;
+  .mod-title-inner {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.0;
+    vertical-align: middle;
+    margin: 0;
+    display: table-cell;
+    .mod-title-inner-img {
+      width: 40px;
+      margin: 0 0 0 5px;
+    }
+  }
+}
+
+//----- module-style -----//
+@mixin module-style-mod-title {}
+@mixin module-style-mod-title-footer { };
+
+//----- deco-style -----//
+@mixin deco-style01A1-mod-title {
+  .mod-title8-inner {
+    color: #f58804;
+  }
+}
+
+@mixin deco-style01A2-mod-title {
+  .mod-title8-inner {
+    color: #365a8a;
+  }
+}
+
+@mixin deco-style01A3-mod-title {
+  .mod-title8-inner {
+    color: #45320b;
+  }
+}
+
+@mixin deco-style01C1-mod-title {
+  .mod-title8-inner {
+    color: #426ca6;
+  }
+}
+
+@mixin deco-style01C2-mod-title {
+  .mod-title8-inner {
+    color: #0b7d89;
+  }
+}
+
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// // mod-title-footer
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// //—————————common-style—————————
+// //  元　mod-title12
+//   @mixin common-style-mod-title-footer {
+//     margin-top: 5px;
+//     display: table;
+//     .mod-title-inner {
+//       display: table-cell;
+//       margin: 0;
+//     }
+//     .mod-title-inner2 {
+//       display: table-cell;
+//       vertical-align: middle;
+//       margin: 0;
+//     }
+//     .mod-title-inner-img {
+//       margin: 0 0 0 5px;
+//       height: 40px;
+//       max-width: 160px;
+//     }
+//     .mod-title-inner3 {
+//       font-size: $fontSizeS + 1;
+//       line-height: 1.0;
+//     }
+//     .mod-title-inner4 {
+//       margin: 5px 0 0 0;
+//       line-height: 1.0;
+//       font-size: $fontSizeL + 7;
+//       font-weight: bold;
+//       a {
+//         &:hover {
+//           text-decoration: none;
+//         }
+//       }
+//     }
+//     p:first-child.mod-title-inner4 {//公開画面
+//       font-size: $fontSizeL + 10;
+//       line-height: 1.5;
+//       margin: 0;
+//     }
+//     .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {//編集画面上
+//       font-size: $fontSizeL + 10;
+//       line-height: 1.5;
+//       margin: 0;
+//     }
+//   }
+
+//   //—————————module-style—————————
+//   @mixin mudule-style-mod-title-footer {}
+
+//   //—————————deco-style—————————
+
+//   @mixin deco-style01A1-mod-title-footer{
+//     .mod-title-inner3 {
+//       color: #333333;
+//     }
+//     .mod-title-inner4 {
+//       color: #6a3d04;
+//       a {
+//         color: #6a3d04;
+//       }
+//     }
+//   }
+//   @mixin deco-style01A2-mod-title-footer {
+//     .mod-title-inner3 {
+//       color: #333333;
+//     }
+//     .mod-title-inner4 {
+//       color: #333333;
+//       a {
+//         color: #333333;
+//       }
+//     }
+//   }
+//   @mixin deco-style01A3-mod-title-footer {
+//     .mod-title-inner3 {
+//       color: #333333;
+//     }
+//     .mod-title-inner4 {
+//       color: #45320b;
+//       a {
+//         color: #45320b;
+//       }
+//     }
+//   }
+//   @mixin deco-style01B1-mod-title-footer {
+//     .mod-title-inner3 {
+//       color: #ffffff;
+//     }
+//     .mod-title-inner4 {
+//       color: #ffffff;
+//       a {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+//   @mixin deco-style01B2-mod-title-footer {
+//     .mod-title-inner3 {
+//       color: #ffffff;
+//     }
+//     .mod-title-inner4 {
+//       color: #ffffff;
+//       a {
+//         color: #ffffff;
+//       }
+//     }
+//   }
+//   @mixin deco-style01B3-mod-title-footer {
+//     .mod-title-inner3 {
+//       color: #443308;
+//     }
+//     .mod-title-inner4 {
+//       color: #45320b;
+//       a {
+//         color: #45320b;
+//       }
+//     }
+//   }
+//   @mixin deco-style01C1-mod-title-footer {
+//     .mod-title-inner3 {
+//       color: #333333;
+//     }
+//     .mod-title-inner4 {
+//       color: #284469;
+//       a {
+//         color: #284469;
+//       }
+//     }
+//   }
+//   @mixin deco-style01C2-mod-title-footer {
+//     .mod-title-inner3 {
+//       color: #333333;
+//     }
+//     .mod-title-inner4 {
+//       color: #0b7d89;
+//       a {
+//         color: #0b7d89;
+//       }
+//     }
+//   }
+//   @mixin deco-style01C3-mod-title-footer {
+//     .mod-title-inner3 {
+//       color: #333333;
+//     }
+//     .mod-title-inner4 {
+//       color: #45320b;
+//       a {
+//         color: #45320b;
+//       }
+//     }
+//   }
+
+
+
+
+

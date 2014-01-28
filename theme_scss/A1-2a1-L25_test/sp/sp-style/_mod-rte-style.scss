@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+//旧方式のコピーのため要改修
+
+//##################################################
+//  mod-rte
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-rte {
+  margin-top: 20px;
+  h1 span,
+  h2 span {
+    font-size: $fontSizeL + 2 !important;
+  }
+  h3 span {
+    font-size: $fontSizeL !important;
+  }
+  h4 span,
+  h5 span {
+    font-size: $fontSizeM + 2 !important;
+  }
+  p {
+    margin-top: 15px;
+    font-size: $fontSizeM !important;
+    line-height: 1.6;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+    img {
+      max-width: 100%;
+    }
+    span {
+      font-size: $fontSizeM !important;
+    }
+  }
+  th, td {
+    vertical-align: top;
+  }
+}
+
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-rte {}
+
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-rte {
+  color: #56534e;
+}
+@mixin deco-style01B1-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01B2-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01B3-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01C1-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01C2-mod-rte {
+  color: #333333;
+}
+@mixin deco-style01C3-mod-rte {
+  color: #45320b;
+}
+
+
+
+//##################################################
+//  mod-rte-koramu
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-rte-koramu {
+  @include border-radius();
+  margin-top: 15px !important;
+  padding: 10px 15px;
+  a {
+    text-decoration: underline;
+  }
+  h1 span,
+  h2 span {
+    font-size: $fontSizeL + 2 !important;
+  }
+  h3 span {
+    font-size: $fontSizeL !important;
+  }
+  h4 span,
+  h5 span {
+    font-size: $fontSizeM + 2 !important;
+  }
+  p {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+    img {
+      max-width: 100%;
+    }
+    span {
+      font-size: $fontSizeM !important;
+    }
+  }
+  th, td {
+    vertical-align: top;
+  }
+}
+
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-rte-koramu {}
+
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-rte-koramu {
+  border: 1px solid #a2c7f9;
+  background-color: #eff5fe;
+  color: #333333;
+}
+@mixin deco-style01A2-mod-rte-koramu {
+  border: 1px solid #97dfe7;
+  background-color: #e8fafa;
+  color: #333333;
+}
+@mixin deco-style01A3-mod-rte-koramu {
+  border: 1px solid #fdf6e5;
+  background-color: #e7eef8;
+  color: #56534e;
+}
+@mixin deco-style01B1-mod-rte-koramu {
+  border: 1px solid #a8bfdc;
+  background-color: #e7eef8;
+  color: #333333;
+}
+@mixin deco-style01B2-mod-rte-koramu {
+  border: 1px solid #67ced9;
+  background-color: #dafafa;
+  color: #333333;
+}
+@mixin deco-style01B3-mod-rte-koramu {
+  border: 1px solid #ffca99;
+  background-color: #fff6e5;
+  color: #333333;
+}
+@mixin deco-style01C1-mod-rte-koramu {
+  border: 1px solid #d1c9a4;
+  background-color: #fffce9;
+  color: #333333;
+}
+@mixin deco-style01C2-mod-rte-koramu {
+  border: 1px solid #7ed1d9;
+  background-color: #e3f6f8;
+  color: #45320b;
+}
+@mixin deco-style01C3-mod-rte-koramu {
+  border: 1px solid #c8dffe;
+  background-color: #dce9fb;
+  color: #45320b;
+}
+@mixin deco-stylei1B1-mod-rte-koramu {
+  border: 0 none transparent;
+  background-color: #f69e3c;
+  color: #ffffff;
+}
+@mixin deco-stylei1B2-mod-rte-koramu {
+  border: 0 none transparent;
+  background-color: #f9e89d;
+  color: #331f13;
+}
+@mixin deco-stylei1B3-mod-rte-koramu {
+  border: 0 none transparent;
+  background-color: #FE9D97;
+  color: #ffffff;
+}

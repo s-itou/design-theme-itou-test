@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+//------プレイスホルダー一覧 ここから------------
+
+%default-5col-inner {
+  float: left;
+  width: 121px; //layout手動
+  padding-left: 20px;
+  @include background("mod-column/bg.png", $position-x: left, $position-y: center);
+}
+
+
+//------プレイスホルダー一覧 ここまで------------
+
+.mod-5col {
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-5col-inner {
+    float: left;
+    width: 101px; //layout手動
+  }
+  > .mod-5col-inner2 {
+    @extend %default-5col-inner;
+  }
+  > .mod-5col-inner3 {
+    @extend %default-5col-inner;
+  }
+  > .mod-5col-inner4 {
+    @extend %default-5col-inner;
+  }
+  > .mod-5col-inner5 {
+    float: left;
+    width: 120px; //layout手動
+    padding-left: 19px; //layout手動
+    @include background("mod-column/bg.png", $position-x: left, $position-y: center);
+  }
+  .ex-style_01A2a &,
+  .ex-style_01A2b &,
+  .ex-style_01A2c &,
+  .ex-style_01A2d & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg_2.png);
+    }
+  }
+  .ex-style_01A3a &,
+  .ex-style_01A3b &,
+  .ex-style_01A3c &,
+  .ex-style_01A3d & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg_3.png);
+    }
+  }
+  .ex-style_01B1a &,
+  .ex-style_01B1b &,
+  .ex-style_01B1c &,
+  .ex-style_01B1d & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg02.png);
+    }
+  }
+  .ex-style_01B2a &,
+  .ex-style_01B2b &,
+  .ex-style_01B2c &,
+  .ex-style_01B2d & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg02_2.png);
+    }
+  }
+  .ex-style_01B3a &,
+  .ex-style_01B3b &,
+  .ex-style_01B3c &,
+  .ex-style_01B3d & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg02_3.png);
+    }
+  }
+  .ex-style_01C1a &,
+  .ex-style_01C1b &,
+  .ex-style_01C1c &,
+  .ex-style_01C1d & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg03.png);
+    }
+  }
+  .ex-style_01C2a &,
+  .ex-style_01C2b &,
+  .ex-style_01C2c &,
+  .ex-style_01C2d & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg03_2.png);
+    }
+  }
+  .ex-style_01C3a &,
+  .ex-style_01C3b &,
+  .ex-style_01C3c &,
+  .ex-style_01C3d & {
+    > .mod-5col-inner2, > .mod-5col-inner3 , > .mod-5col-inner4, > .mod-5col-inner5 {
+      background-image: url(img/mod-column/bg03_3.png);
+    }
+  }
+}

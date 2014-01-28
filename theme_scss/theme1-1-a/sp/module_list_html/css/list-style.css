@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.name-h {
+  width: 980px;
+  background-color: gray;
+  padding: 0 5px;
+  line-height: 1.5;
+  margin: 20px auto 5px auto;
+}
+
+.name-m {
+  margin: 20px auto 5px auto;
+  background-color: gray;
+  padding: 0 5px;
+  line-height: 1.5;
+  color: white;
+}
+.name-m-ex {
+  margin: 20px auto 5px 20px;
+  background-color: silver;
+  padding: 0 5px;
+  line-height: 1.5;
+}
+.name-m-ex + div, .name-m-ex + p {
+  margin-left: 20px;
+}

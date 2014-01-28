@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import "../../pc-style/part-main-255-style";
+
+
+.mod-dl {
+  @include mod-dl-common-style;
+  @include mod-dl-style;
+  .ex-style_01A1 & {
+    @include mod-dl-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-dl-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-dl-style;
+  }
+  .ex-style_01B1 & {
+    @include mod-dl-style;
+  }
+  .ex-style_01B2 & {
+    @include mod-dl-style;
+  }
+  .ex-style_01B3 & {
+    @include mod-dl-style;
+  }
+  .ex-style_01C1 & {
+    @include mod-dl-style2;
+  }
+  .ex-style_01C2 & {
+    @include mod-dl-style3;
+  }
+  .ex-style_01C3 & {
+    @include mod-dl-style4;
+  }
+}
+
+.mod-dl2 {
+  @include mod-dl2-common-style;
+  @include mod-dl2-style;
+  .ex-style_01A1 & {
+    @include mod-dl2-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-dl2-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-dl2-style;
+  }
+  .ex-style_01B1 & {
+    @include mod-dl2-style;
+  }
+  .ex-style_01B2 & {
+    @include mod-dl2-style;
+  }
+  .ex-style_01B3 & {
+    @include mod-dl2-style;
+  }
+  .ex-style_01C1 & {
+    @include mod-dl2-style2;
+  }
+  .ex-style_01C2 & {
+    @include mod-dl2-style3;
+  }
+  .ex-style_01C3 & {
+    @include mod-dl2-style4;
+  }
+}
+
+
+.mod-text27 {
+  @include mod-text27-common-style;
+}

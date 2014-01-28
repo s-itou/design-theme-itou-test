@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@mixin mod-em-common-style {
+width: 100%;
+  margin-top: 30px;
+  .mod-em-inner2 {
+    @include border-radius();
+  }
+}
+
+@mixin mod-em-style {
+.mod-em-inner {
+    padding: 10px;
+    border: 1px solid #ade9ef;
+    @include border-radius();
+    background-color: #ecfdff;
+    background-image: none;
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #264e84;
+    background-color: #ffffff;
+  }
+}
+@mixin mod-em-style2 {
+.mod-em-inner {
+    padding: 10px;
+    border: 1px solid #b29e3b;
+    @include border-radius();
+    background-color: #fee4ba;
+    background-image: none;
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #56534e;
+    background-color: #ffffff;
+  }
+}
+@mixin mod-em-style3 {
+.mod-em-inner {
+    padding: 10px;
+    border: 1px solid #fd8e89;
+    @include border-radius();
+    background-color: #ffe0de;
+    background-image: none;
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #45320b;
+    background-color: #ffffff;
+  }
+}
+@mixin mod-em-style4 {
+.mod-em-inner {
+    padding: 20px 25px;
+    border: none;
+    @include border-radius(8px);
+    background-color: #1e4182;
+    background-image: url("img/mod-un/bg14.png");
+    background-repeat: no-repeat;
+    min-height: 153px;
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+@mixin mod-em-style5 {
+ .mod-em-inner {
+    padding: 20px 25px;
+    border: none;
+    @include border-radius(8px);
+    background-color: #3da1b0;
+    background-image: url("img/mod-un/bg14_2.png");
+    background-repeat: no-repeat;
+    min-height: 153px;
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+@mixin mod-em-style6 {
+.mod-em-inner {
+    padding: 20px 25px;
+    border: none;
+    @include border-radius(8px);
+    background-color: #fea452;
+    background-image: url("img/mod-un/bg14_3.png");
+    background-repeat: no-repeat;
+    min-height: 153px;
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+@mixin mod-em-style7 {
+.mod-em-inner {
+    padding: 6px;
+    border: none;
+    @include border-radius();
+    background-color: transparent;
+    background-image: url("img/mod-un/bg13.png");
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #264e84;
+    background-color: #ffffff;
+  }
+}
+@mixin mod-em-style8 {
+.mod-em-inner {
+    padding: 6px;
+    border: none;
+    @include border-radius();
+    background-color: transparent;
+    background-image: url("img/mod-un/bg13_2.png");
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #333333;
+    background-color: #ffffff;
+  }
+}
+@mixin mod-em-style9 {
+.mod-em-inner {
+    padding: 6px;
+    border: none;
+    @include border-radius();
+    background-color: transparent;
+    background-image: url("img/mod-un/bg13_3.png");
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #45320b;
+    background-color: #ffffff;
+  }
+}
+

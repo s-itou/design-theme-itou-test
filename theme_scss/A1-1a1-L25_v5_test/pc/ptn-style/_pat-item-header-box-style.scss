@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+
+// -------------------------------------
+// pat-item-header-box の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-header-box {
+  background-position: center top;
+  background-repeat: repeat-x;
+}
+
+// -------------------------------------
+//  pat-item-header-box の個別デザイン
+// -------------------------------------
+@mixin deco-style-pat-item-header-box-blue {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg.png");
+  background-repeat: no-repeat;
+}
+@mixin deco-style-pat-item-header-box-gleen {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg_2.png");
+  background-repeat: no-repeat;
+}
+@mixin deco-style-pat-item-header-orange {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg_3.png");
+  background-repeat: no-repeat;
+}
+@mixin deco-style-pat-item-header-box-blue-2 {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg09.png");
+}
+@mixin deco-style-pat-item-header-box-gleen-2 {
+  background-color: #ffffff;
+ background-image: url("img/mod-box/bg09_2.png");
+}
+@mixin deco-style-pat-item-header-orange-2 {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg09_3.png");
+}
+@mixin deco-style-pat-item-header-box-blue-3 {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg10.png");
+}
+@mixin deco-style-pat-item-header-box-gleen-3 {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg10_2.png");
+}
+@mixin deco-style-pat-item-header-orange-3 {
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg10_3.png");
+}

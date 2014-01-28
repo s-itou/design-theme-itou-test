@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-2col37-style";
+
+.mod-2col37 {
+  @include mod-2col37-common-style;
+  .ex-style_01A2 & {
+    @include mod-2col37-style;
+  }
+}
+

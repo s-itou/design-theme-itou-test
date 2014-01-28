@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+//ステップの流れ中見出し
+.mod-label {
+  margin-bottom: 20px;
+  .mod-h {
+    color: #66c7d2;
+    font-weight: bold;
+    font-size: $fontSizeL - 1;
+  }
+}
+
+
+//サイドボックスの青い見出し
+.mod-label2 {
+  max-height: 120px;
+  overflow: hidden;
+  @include background("mod-label/bg.png");
+  padding: 5px 10px;
+  .mod-h {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: $sideFontSizeL + 2;
+    @include text-shadow(1px 1px 2px #222222);
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    background-image: url("img/mod-label/bg_2.png");
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    background-image: url("img/mod-label/bg_3.png");
+  }
+}
+
+//mod-label3 抜け番
+
+//mod-label4 抜け番
+
+//headerぶち抜き用
+.mod-label5 {
+  margin-bottom: 15px;
+  .mod-h {
+    color: #ff6800;
+    font-weight: bold;
+  }
+}

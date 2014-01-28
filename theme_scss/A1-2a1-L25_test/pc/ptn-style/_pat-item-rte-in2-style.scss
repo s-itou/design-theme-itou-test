@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-rte-in2
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-rte-in2 の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-rte-in2 {
+  background-color: transparent;
+  color: #333333;
+  font-size: $fontSizeS + 1;
+  line-height: 1.6;
+  margin: 25px auto 0 auto;
+  text-align: left;
+  width: 395px;
+  .mod-rte-inner {
+    padding: 10px 15px;
+      .mod-rte-inner2 {
+      > p {
+        line-height: 1.6;
+        margin: 15px 0 0;
+      }
+      > p:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-rte-in2 の共通デザイン
+// -------------------------------------
+
+// ドット用
+@mixin module-style-pat-item-rte-in2-1 {
+  padding: 1px 0 1px;
+}
+
+// 二重線用
+@mixin module-style-pat-item-rte-in2-2 {
+  padding: 10px 15px;
+}
+
+// -------------------------------------
+// pat-item-rte-in2  の装飾スタイル
+// -------------------------------------
+// ドット
+@mixin deco-style-pat-item-rte-in2-dotted-1 {
+  border-top: 2px dotted #5596f6;
+  border-bottom: 2px dotted #5596f6;
+  color: #4f4f4f;
+}
+@mixin deco-style-pat-item-rte-in2-dotted-2 {
+  border-top: 2px dotted #d1b422;
+  border-bottom: 2px dotted #d1b422;
+  color: #4f4f4f;
+}
+@mixin deco-style-pat-item-rte-in2-dotted-3 {
+  border-top: 2px dotted #ffc38d;
+  border-bottom: 2px dotted #ffc38d;
+  color: #4f4f4f;
+}
+
+// 二重
+@mixin deco-style-pat-item-rte-in2-double-1 {
+  border-top: 3px double #5f140a;
+  border-bottom: 3px double #5f140a;
+  color: #333333;
+}
+@mixin deco-style-pat-item-rte-in2-double-2 {
+  border-top: 3px double #bea31f;
+  border-bottom: 3px double #bea31f;
+  color: #333333;
+}
+@mixin deco-style-pat-item-rte-in2-double-3 {
+  border-top: 3px double #5f140a;
+  border-bottom: 3px double #5f140a;
+  color: #446d9d;
+}
+@mixin deco-style-pat-item-rte-in2-double-4 {
+  border-top: 3px double #e66d24;
+  border-bottom: 3px double #e66d24;
+  color: #435d7e;
+}
+@mixin deco-style-pat-item-rte-in2-double-5 {
+  border-top: 3px double #200805;
+  border-bottom: 3px double #200805;
+  color: #9f392a;
+}

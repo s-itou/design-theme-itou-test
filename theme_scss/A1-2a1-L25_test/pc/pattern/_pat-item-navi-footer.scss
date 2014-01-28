@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-navi-footer
+//
+//    ・ナビゲーションの背景デザイン
+//    ・mod-navi-footerと一緒に利用する事
+//     を前提としたデザインパターン
+//
+//    ・navi-footer（フッターメニューの枠のデザイン）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-navi-footer-style.scss";
+
+// -------------------------------------
+//  pat-item-navi-footer の個別設定
+// -------------------------------------
+
+
+// mod-set-navi-footer
+// navi-footer ex-style1,4,7
+@mixin pat-item-navi-footer-kado-black {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado;
+  @include deco-style-pat-item-navi-footer-kado-black;
+}
+
+// navi-footer ex-style2,5,8
+@mixin pat-item-navi-footer-kado-blue {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado;
+  @include deco-style-pat-item-navi-footer-kado-blue;
+}
+
+// navi-footer ex-style3,6,9
+@mixin pat-item-navi-footer-kado-red {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado;
+  @include deco-style-pat-item-navi-footer-kado-red;
+}
+
+
+// mod-set-navi-top-footer
+
+// ex-style1
+@mixin pat-item-navi-footer-kado-image-blue {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-blue;
+}
+
+// ex-style2
+@mixin pat-item-navi-footer-kado-image-blue-2 {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-blue-2;
+}
+
+// ex-style3
+@mixin pat-item-navi-footer-kado-image-orange {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-orange;
+}
+
+// ex-style4
+@mixin pat-item-navi-footer-kado-image-blue-3 {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-blue-3;
+}
+
+// ex-style5
+@mixin pat-item-navi-footer-kado-image-blue-4 {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-blue-4;
+}
+
+// ex-style6
+@mixin pat-item-navi-footer-kado-image-orange-2 {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-orange-2;
+}
+
+// ex-style7
+@mixin pat-item-navi-footer-kado-image-blue-5 {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-blue-5;
+}
+
+// ex-style8
+@mixin pat-item-navi-footer-kado-image-blue-6 {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-blue-6;
+}
+
+// ex-style9
+@mixin pat-item-navi-footer-kado-image-orange-3 {
+  @include common-style-pat-item-navi-footer;
+  @include module-style-pat-item-navi-footer-kado-image;
+  @include deco-style-pat-item-navi-footer-kado-image-orange-3;
+}
+
+
+
+
+
+

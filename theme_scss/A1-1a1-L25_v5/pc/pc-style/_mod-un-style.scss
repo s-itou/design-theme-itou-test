@@ -1,0 +1,672 @@
+@charset "UTF-8";
+
+//  mod-em の mixin一式
+@mixin mod-login-common-style {
+  padding-top: 5px;
+  font-size: $fontSizeS;
+  text-align: right;
+  a {
+    color: #335a93;
+  }
+}
+
+
+//  mod-em の mixin一式
+@mixin mod-em-common-style {
+  width: 100%;
+  margin-top: 30px;
+  .mod-em-inner2 {
+    @include border-radius();
+  }
+}
+
+@mixin mod-em-style {
+  .mod-em-inner {
+    padding: 10px;
+    border: 1px solid #ade9ef;
+    @include border-radius();
+    background-color: #ecfdff;
+    background-image: none;
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #264e84;
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-em-style2 {
+  .mod-em-inner {
+    padding: 10px;
+    border: 1px solid #b29e3b;
+    @include border-radius();
+    background-color: #fee4ba;
+    background-image: none;
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #56534e;
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-em-style3 {
+  .mod-em-inner {
+    padding: 10px;
+    border: 1px solid #fd8e89;
+    @include border-radius();
+    background-color: #ffe0de;
+    background-image: none;
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 25px 20px;
+    color: #45320b;
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-em-style4 {
+  .mod-em-inner {
+    padding: 20px 25px;
+    border: none;
+    @include border-radius(8px);
+    background-color: #1e4182;
+    background-image: url("img/mod-un/bg14.png");
+    background-repeat: no-repeat;
+    min-height: 153px;
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+
+@mixin mod-em-style5 {
+  .mod-em-inner {
+    padding: 20px 25px;
+    border: none;
+    @include border-radius(8px);
+    background-color: #3da1b0;
+    background-image: url("img/mod-un/bg14_2.png");
+    background-repeat: no-repeat;
+    min-height: 153px;
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+
+@mixin mod-em-style6 {
+  .mod-em-inner {
+    padding: 20px 25px;
+    border: none;
+    @include border-radius(8px);
+    background-color: #fea452;
+    background-image: url("img/mod-un/bg14_3.png");
+    background-repeat: no-repeat;
+    min-height: 153px;
+  }
+  .mod-em-inner2 {
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+
+@mixin mod-em-style7 {
+  .mod-em-inner {
+    padding: 6px;
+    border: none;
+    @include border-radius();
+    background-color: transparent;
+    background-image: url("img/mod-un/bg13.png");
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #264e84;
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-em-style8 {
+  .mod-em-inner {
+    padding: 6px;
+    border: none;
+    @include border-radius();
+    background-color: transparent;
+    background-image: url("img/mod-un/bg13_2.png");
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #333333;
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-em-style9 {
+  .mod-em-inner {
+    padding: 6px;
+    border: none;
+    @include border-radius();
+    background-color: transparent;
+    background-image: url("img/mod-un/bg13_3.png");
+    background-repeat: repeat;
+    min-height: 0;
+  }
+  .mod-em-inner2 {
+    padding: 15px;
+    color: #45320b;
+    background-color: #ffffff;
+  }
+}
+
+
+//  mod-card の mixin一式
+@mixin mod-card-common-style {
+  @extend %cf;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 7px 10px 7px;
+  > p:first-child {
+    margin-left: 0 !important;
+  }
+}
+
+@mixin mod-card-style {
+  border: 3px double #c9e0ff;
+}
+
+@mixin mod-card-style2 {
+  border: 3px double #426ca6;
+}
+
+@mixin mod-card-style3 {
+  border: 3px double #519dce;
+}
+
+@mixin mod-card-style4 {
+  border: 3px double #f1d128;
+}
+
+@mixin mod-card-style5 {
+  border: 3px double #F1D128;
+}
+
+@mixin mod-card-style6 {
+  border: 3px double #FF994C;
+}
+
+@mixin mod-card-style7 {
+  border: 1px dotted #c9e0ff;
+}
+
+@mixin mod-card-style8 {
+  border: 1px dotted #f2d028;
+}
+
+@mixin mod-card-style9 {
+  border: 1px dotted #ffa658;
+}
+
+
+//  mod-header-image の mixin一式
+@mixin mod-header-image-common-style {
+  @extend %cf;
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+
+
+//  mod-copy の mixin一式
+@mixin mod-copy-common-style {
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+  .mod-copy-inner {
+    .mod-copy-inner2 {
+      margin: 0;
+      background-image: none;
+      p {
+        font-size: $fontSizeL + 10;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+@mixin mod-copy-style {
+  padding: 5px 0 5px 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(img/mod-copy/_01/bg_a.png);
+  background-repeat: repeat-y;
+  background-position: left top;
+  .mod-copy-inner {
+    margin: 0;
+    background-color: transparent;
+    background-image: none;
+    .mod-copy-inner2 {
+      margin: 0;
+      background-image: none;
+      p {
+        color: #2e7feb;
+      }
+    }
+  }
+}
+@mixin mod-copy-style2 {
+  padding: 5px 0 5px 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(img/mod-copy/_01/bg_a_2.png);
+  background-repeat: repeat-y;
+  background-position: left top;
+  .mod-copy-inner {
+    margin: 0;
+    background-color: transparent;
+    background-image: none;
+    .mod-copy-inner2 {
+      margin: 0;
+      background-image: none;
+      p {
+        color: #274c7e;
+      }
+    }
+  }
+}
+@mixin mod-copy-style3 {
+  padding: 5px 0 5px 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(img/mod-copy/_01/bg_a_3.png);
+  background-repeat: repeat-y;
+  background-position: left top;
+  .mod-copy-inner {
+    margin: 0;
+    background-color: transparent;
+    background-image: none;
+    .mod-copy-inner2 {
+      margin: 0;
+      background-image: none;
+      p {
+        color: #3d2612;
+      }
+    }
+  }
+}
+@mixin mod-copy-style4 {
+  padding: 5px 0 5px 0;
+  border: 1px solid #2e4a72;
+  background-color: #2e4a72;
+  background-image: none;
+  .mod-copy-inner {
+    margin-left: 4px;
+    background-color: transparent;
+    background-image: url(img/mod-copy/_01/bg_b.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    .mod-copy-inner2 {
+      margin-right: 4px;
+      background-image: url(img/mod-copy/_01/bg02_b.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}
+@mixin mod-copy-style5 {
+  padding: 5px 0 5px 0;
+  border: 1px solid #c7e9ee;
+  background-color: #418189;
+  background-image: none;
+  .mod-copy-inner {
+    margin-left: 4px;
+    background-color: transparent;
+    background-image: url(img/mod-copy/_01/bg_b_2.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    .mod-copy-inner2 {
+      margin-right: 4px;
+      background-image: url(img/mod-copy/_01/bg02_b_2.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}
+@mixin mod-copy-style6 {
+  padding: 5px 0 5px 0;
+  border: 1px solid #fde082;
+  background-color: #fcf1c2;
+  background-image: none;
+  .mod-copy-inner {
+    margin-left: 4px;
+    background-color: transparent;
+    background-image: url(img/mod-copy/_01/bg_b_3.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    .mod-copy-inner2 {
+      margin-right: 4px;
+      background-image: url(img/mod-copy/_01/bg02_b_3.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+      p {
+        color: #443308;
+      }
+    }
+  }
+}
+@mixin mod-copy-style7 {
+  padding: 5px;
+  background-image: url(img/mod-copy/_01/bg_c.png);
+  background-repeat: repeat;
+  background-position: left top;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #5596f6;
+    background-image: none;
+    .mod-copy-inner2 {
+      margin: 0;
+      background-image: none;
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}
+@mixin mod-copy-style8 {
+  padding: 5px;
+  background-image: url(img/mod-copy/_01/bg_c_2.png);
+  background-repeat: repeat;
+  background-position: left top;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #fcf4c6;
+    background-image: none;
+    .mod-copy-inner2 {
+      margin: 0;
+      background-image: none;
+      p {
+        color: #42330a;
+      }
+    }
+  }
+}
+@mixin mod-copy-style9 {
+  padding: 5px;
+  background-image: url(img/mod-copy/_01/bg_c_3.png);
+  background-repeat: repeat;
+  background-position: left top;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #f27f1b;
+    background-image: none;
+    .mod-copy-inner2 {
+      margin: 0;
+      background-image: none;
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+
+//  mod-copy2 の mixin一式
+@mixin mod-copy2-common-style {
+  width: 100%;
+  text-align: center;
+}
+@mixin mod-copy2-style {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_a.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #5596f6;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style2 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_a_2.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #274c7e;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style3 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_a_3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #f59c1c;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style4 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_b.png");
+  background-repeat: repeat;
+  background-position: left top;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style5 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_b_2.png");
+  background-repeat: repeat;
+  background-position: left top;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style6 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_b_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style7 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_c.png");
+  background-repeat: repeat;
+  background-position: left top;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style8 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_c_2.png");
+  background-repeat: repeat;
+  background-position: left top;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy2-style9 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/_02/bg_c_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: $fontSizeL + 10;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+
+@mixin mod-dl-common-style {
+  margin-top: 20px;
+  display: table;
+  .mod-dl-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      margin-right: 10px !important;
+      float: left;
+    }
+  }
+  .mod-dl-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 20px;
+    > p {
+      padding-left: 5px;
+      font-size: $fontSizeL + 2;
+    }
+  }
+}
+@mixin mod-dl-style {
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+
+@mixin mod-dl-style2 {
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}
+
+@mixin mod-dl2-common-style {
+  margin-top: 20px;
+  display: table;
+  .mod-dl-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      margin-right: 10px !important;
+    }
+  }
+  .mod-dl-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 20px;
+    > p {
+      padding-left: 5px;
+    }
+  }
+}
+@mixin mod-dl2-style {
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin mod-dl2-style2 {
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}

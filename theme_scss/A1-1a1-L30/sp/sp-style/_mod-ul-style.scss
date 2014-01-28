@@ -1,0 +1,581 @@
+@charset "UTF-8";
+
+//  mod-ul の mixin一式
+@mixin mod-ul-common-style {
+  margin-top: 10px;
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    margin-left: 20px;
+    margin-top: 2px;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  ol {
+    margin-left: 15px;
+    padding-left: 0;
+    > li {
+      background-image: none;
+      padding-left: 0;
+      list-style-type: decimal !important;
+    }
+  }
+}
+
+@mixin mod-ul-style {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-position: left 8px;
+    background-image: url("img/mod-ul/bg.png");
+  }
+}
+
+
+@mixin mod-ul-style2 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-position: left 8px;
+    background-image: url("img/mod-ul/bg_2.png");
+  }
+}
+
+@mixin mod-ul-style3 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #56534e;
+    padding-left:15px;
+    background-position: left 8px;
+    background-image: url("img/mod-ul/bg_3.png");
+  }
+}
+
+@mixin mod-ul-style4 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-position: left 8px;
+    background-image: url("img/mod-ul/bg04.png");
+  }
+}
+
+@mixin mod-ul-style5 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-position: left 8px;
+    background-image: url("img/mod-ul/bg04_2.png");
+  }
+}
+
+@mixin mod-ul-style6 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-position: left 8px;
+    background-image: url("img/mod-ul/bg04_3.png");
+  }
+}
+
+@mixin mod-ul-style7 {
+  padding: 10px;
+  border: 1px solid #d1c9a4;
+  border-radius: 5px;
+  background-color: #fffce9;
+  li {
+    color: #333333;
+    padding-left:18px;
+    background-position: left 2px;
+    background-image: url("img/mod-ul/bg06.png");
+  }
+}
+
+@mixin mod-ul-style8 {
+  padding: 10px;
+  border: 1px solid #7ed1d9;
+  border-radius: 5px;
+  background-color: #e3f6f8;
+  li {
+    color: #45320b;
+    padding-left:18px;
+    background-position: left 2px;
+    background-image: url("img/mod-ul/bg06_2.png");
+  }
+}
+
+@mixin mod-ul-style9 {
+  padding: 10px;
+  border: 1px solid #c8dffe;
+  border-radius: 5px;
+  background-color: #dce9fb;
+  li {
+    color: #45320b;
+    padding-left:18px;
+    background-position: left 2px;
+    background-image: url("img/mod-ul/bg06_3.png");
+  }
+}
+
+
+
+
+//  mod-ul2 の mixin一式
+@mixin mod-ul2-common-style {
+  margin-top: 10px;
+  ul {
+    padding-left: 0;
+    li {
+      margin-top: 5px;
+      margin-left: 15px;
+      padding-left:15px;
+      list-style: none;
+      font-size: 13px;
+      background-repeat: no-repeat;
+      background-position: left 5px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  ol {
+    margin-left: 15px;
+    padding-left: 0;
+    > li {
+      background-image: none;
+      padding-left: 0;
+      list-style-type: decimal !important;
+    }
+  }
+}
+
+@mixin mod-ul2-style {
+  li {
+    background-image: url("img/mod-ul/bg02.png");
+  }
+}
+
+@mixin mod-ul2-style2 {
+  li {
+    background-image: url("img/mod-ul/bg02_2.png");
+  }
+}
+
+@mixin mod-ul2-style3 {
+  li {
+    background-image: url("img/mod-ul/bg02_3.png");
+  }
+}
+
+
+
+//  mod-ul3 の mixin一式
+@mixin mod-ul3-common-style {
+  margin-top: 10px;
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    margin-left: 20px;
+    margin-top: 2px;
+    padding-left:15px;
+    list-style-type: none;
+    background-image: url("img/mod-ul/bg.png");
+    background-position: left 8px;
+    background-repeat: no-repeat;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  a {
+    color: #333333;
+  }
+  ol {
+    margin-left: 15px;
+    padding-left: 0;
+    > li {
+      background-image: none;
+      padding-left: 0;
+      list-style-type: decimal !important;
+    }
+  }
+}
+
+
+
+
+//  mod-ul4 の mixin一式
+@mixin mod-ul4-common-style {
+  margin-top: 10px;
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    margin-left: 15px;
+    margin-top: 2px;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-position: left 8px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  ol {
+    margin-left: 15px;
+    padding-left: 0;
+    > li {
+      background-image: none;
+      padding-left: 0;
+      list-style-type: decimal !important;
+    }
+  }
+}
+
+@mixin mod-ul4-style {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg.png");
+  }
+}
+
+@mixin mod-ul4-style2 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg_2.png");
+  }
+}
+
+@mixin mod-ul4-style3 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #56534e;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg_3.png");
+  }
+}
+
+@mixin mod-ul4-style4 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04.png");
+  }
+}
+
+@mixin mod-ul4-style5 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04_2.png");
+  }
+}
+
+@mixin mod-ul4-style6 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04_3.png");
+  }
+}
+
+@mixin mod-ul4-style7 {
+  padding: 10px;
+  border: 1px solid #d1c9a4;
+  border-radius: 5px;
+  background-color: #fffce9;
+  li {
+    color: #333333;
+    padding-left:18px;
+    background-image: url("img/mod-ul/bg06.png");
+  }
+}
+
+@mixin mod-ul4-style8 {
+  padding: 10px;
+  border: 1px solid #7ed1d9;
+  border-radius: 5px;
+  background-color: #e3f6f8;
+  li {
+    color: #45320b;
+    padding-left:18px;
+    background-image: url("img/mod-ul/bg06_2.png");
+  }
+}
+
+@mixin mod-ul4-style9 {
+  padding: 10px;
+  border: 1px solid #c8dffe;
+  border-radius: 5px;
+  background-color: #dce9fb;
+  li {
+    color: #45320b;
+    padding-left:18px;
+    background-image: url("img/mod-ul/bg06_3.png");
+  }
+}
+
+
+
+
+//  mod-ul5 の mixin一式
+@mixin mod-ul5-common-style {
+  margin-top: 10px;
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    margin-left: 15px;
+    margin-top: 2px;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-position: left 8px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  ol {
+    margin-left: 15px;
+    padding-left: 0;
+    > li {
+      background-image: none;
+      padding-left: 0;
+      list-style-type: decimal !important;
+    }
+  }
+}
+
+@mixin mod-ul5-style {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg.png");
+  }
+}
+
+
+@mixin mod-ul5-style2 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg_2.png");
+  }
+}
+
+@mixin mod-ul5-style3 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #56534e;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg_3.png");
+  }
+}
+
+@mixin mod-ul5-style4 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04.png");
+  }
+}
+
+@mixin mod-ul5-style5 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04_2.png");
+  }
+}
+
+@mixin mod-ul5-style6 {
+  padding: 0;
+  border: 0 none transparent;
+  border-radius: 0;
+  background-color: transparent;
+  li {
+    color: #333333;
+    padding-left:15px;
+    background-image: url("img/mod-ul/bg04_3.png");
+  }
+}
+
+@mixin mod-ul5-style7 {
+  padding: 10px;
+  border: 1px solid #d1c9a4;
+  border-radius: 5px;
+  background-color: #fffce9;
+  li {
+    color: #333333;
+    padding-left:18px;
+    background-image: url("img/mod-ul/bg06.png");
+  }
+}
+
+@mixin mod-ul5-style8 {
+  padding: 10px;
+  border: 1px solid #7ed1d9;
+  border-radius: 5px;
+  background-color: #e3f6f8;
+  li {
+    color: #45320b;
+    padding-left:18px;
+    background-image: url("img/mod-ul/bg06_2.png");
+  }
+}
+
+@mixin mod-ul5-style9 {
+  padding: 10px;
+  border: 1px solid #c8dffe;
+  border-radius: 5px;
+  background-color: #dce9fb;
+  li {
+    color: #45320b;
+    padding-left:18px;
+    background-image: url("img/mod-ul/bg06_3.png");
+  }
+}
+
+
+
+//  mod-ol の mixin一式
+@mixin mod-ol-common-style {
+  margin-top: 10px;
+  ol {
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+  li {
+    margin-top: 2px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin mod-ol-style {
+  ol {
+    color: #333333;
+  }
+}
+
+@mixin mod-ol-style2 {
+  ol {
+    color: #56534e;
+  }
+}
+
+@mixin mod-ol-style3 {
+  ol {
+    color: #f16c0b;
+  }
+}
+
+@mixin mod-ol-style4 {
+  ol {
+    color: #0c7d87;
+  }
+}
+
+@mixin mod-ol-style5 {
+  ol {
+    color: #337fb2;
+  }
+}
+
+
+@mixin mod-ol-style6 {
+  ol {
+    color: #45320b;
+  }
+}
+
+
+
+
+
+
+
+

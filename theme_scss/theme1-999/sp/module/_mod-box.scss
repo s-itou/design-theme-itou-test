@@ -1,0 +1,894 @@
+@charset "UTF-8";
+@import "../sp-style/mod-box-style";
+
+.mod-box {
+  @include mod-box-common-style;
+}
+
+.mod-box2 {
+  @include mod-box2-common-style;
+  @include mod-box2-style;
+  .ex-style_01A1 & {
+    @include mod-box2-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box2-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-box2-style;
+  }
+  .ex-style_01B1 & {
+    @include mod-box2-style2;
+  }
+  .ex-style_01B2 & {
+    @include mod-box2-style2;
+  }
+  .ex-style_01B3 & {
+    @include mod-box2-style3;
+  }
+  .ex-style_01C1 & {
+    @include mod-box2-style;
+  }
+  .ex-style_01C2 & {
+    @include mod-box2-style;
+  }
+  .ex-style_01C3 & {
+    @include mod-box2-style;
+  }
+}
+
+.mod-box3 {
+  @include mod-box3-common-style;
+}
+
+.mod-box4 {
+  @include mod-box4-common-style;
+}
+
+.mod-box6 {
+  @include mod-box6-common-style;
+}
+
+.mod-box7 {
+  @include mod-box7-common-style;
+  @include mod-box7-style;
+  .ex-style_01A1 & {
+    @include mod-box7-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box7-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box7-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-box7-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-box7-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-box7-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-box7-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-box7-style7;
+  }
+  .ex-style_01C3 & {
+    @include mod-box7-style7;
+  }
+}
+
+.mod-box8 {
+  @include mod-box8-common-style;
+  @include mod-box8-style;
+  .ex-style_01A1 & {
+    @include mod-box8-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box8-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box8-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-box8-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-box8-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-box8-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-box8-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-box8-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-box8-style9;
+  }
+}
+
+.mod-box12 {
+  @include mod-box12-common-style;
+  @include mod-box12-style;
+  .ex-style_01A1 & {
+    @include mod-box12-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box12-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box12-style3;
+  }
+}
+
+.mod-box13 {
+  @include mod-box13-common-style;
+}
+
+.mod-box14 {
+  @include mod-box14-common-style;
+  @include mod-box14-style;
+  &.ex-style_01A1 {
+    @include mod-box14-style;
+  }
+  &.ex-style_01A2 {
+    @include mod-box14-style2;
+  }
+  &.ex-style_01A3 {
+    @include mod-box14-style3;
+  }
+  &.ex-style_01B1 {
+    @include mod-box14-style;
+  }
+  &.ex-style_01B2 {
+    @include mod-box14-style2;
+  }
+  &.ex-style_01B3 {
+    @include mod-box14-style3;
+  }
+  &.ex-style_01C1 {
+    @include mod-box14-style;
+  }
+  &.ex-style_01C2 {
+    @include mod-box14-style2;
+  }
+  &.ex-style_01C3 {
+    @include mod-box14-style3;
+  }
+}
+
+.mod-box16 {
+  @include mod-box16-common-style;
+  @include mod-box16-style;
+  .ex-style_01A1 & {
+    @include mod-box16-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box16-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box16-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-box16-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-box16-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-box16-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-box16-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-box16-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-box16-style9;
+  }
+  .ex-style_g4A1 & {
+    @include mod-box16-style10;
+  }
+  .ex-style_g4A2 & {
+    @include mod-box16-style11;
+  }
+  .ex-style_g4A3 & {
+    @include mod-box16-style12;
+  }
+  .ex-style_g4B1 & {
+    @include mod-box16-style13;
+  }
+  .ex-style_g4B2 & {
+    @include mod-box16-style14;
+  }
+  .ex-style_g4B3 & {
+    @include mod-box16-style15;
+  }
+  .ex-style_g4C1 & {
+    @include mod-box16-style16;
+  }
+  .ex-style_g4C2 & {
+    @include mod-box16-style17;
+  }
+  .ex-style_g4C3 & {
+    @include mod-box16-style18;
+  }
+}
+
+.mod-box17 {
+  @include mod-box17-common-style;
+  @include mod-box17-style;
+  .ex-style_01A1 & {
+    @include mod-box17-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box17-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box17-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-box17-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-box17-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-box17-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-box17-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-box17-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-box17-style9;
+  }
+}
+
+.mod-box19 {
+  @include mod-box19-common-style;
+  @include mod-box19-style;
+  .ex-style_01A1 & {
+    @include mod-box19-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box19-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box19-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-box19-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-box19-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-box19-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-box19-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-box19-style7;
+  }
+  .ex-style_01C3 & {
+    @include mod-box19-style7;
+  }
+}
+
+.mod-box20 {
+  @include mod-box20-common-style;
+  @include mod-box20-style;
+  .ex-style_01A1 & {
+    @include mod-box20-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box20-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box20-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-box20-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-box20-style;
+  }
+  .ex-style_01B3 & {
+    @include mod-box20-style5;
+  }
+  .ex-style_01C1 & {
+    @include mod-box20-style;
+  }
+  .ex-style_01C2 & {
+    @include mod-box20-style;
+  }
+  .ex-style_01C3 & {
+    @include mod-box20-style;
+  }
+}
+
+.mod-box22 {
+  @include mod-box22-common-style;
+}
+
+.mod-box23 {
+  @include mod-box23-common-style;
+  @include mod-box23-style;
+  &.ex-style_01A1 {
+    @include mod-box23-style;
+  }
+  &.ex-style_01A2 {
+    @include mod-box23-style;
+  }
+  &.ex-style_01A3 {
+    @include mod-box23-style;
+  }
+  &.ex-style_01B1 {
+    @include mod-box23-style2;
+  }
+  &.ex-style_01B2 {
+    @include mod-box23-style3;
+  }
+  &.ex-style_01B3 {
+    @include mod-box23-style4;
+  }
+  &.ex-style_01C1 {
+    @include mod-box23-style;
+  }
+  &.ex-style_01C2 {
+    @include mod-box23-style;
+  }
+  &.ex-style_01C3 {
+    @include mod-box23-style;
+  }
+}
+
+.mod-box24 {
+  @include mod-box24-common-style;
+  @include mod-box24-style;
+  &.ex-style_01A1 {
+    @include mod-box24-style;
+  }
+  &.ex-style_01A2 {
+    @include mod-box24-style;
+  }
+  &.ex-style_01A3 {
+    @include mod-box24-style;
+  }
+  &.ex-style_01B1 {
+    @include mod-box24-style2;
+  }
+  &.ex-style_01B2 {
+    @include mod-box24-style3;
+  }
+  &.ex-style_01B3 {
+    @include mod-box24-style4;
+  }
+  &.ex-style_01C1 {
+    @include mod-box24-style;
+  }
+  &.ex-style_01C2 {
+    @include mod-box24-style;
+  }
+  &.ex-style_01C3 {
+    @include mod-box24-style;
+  }
+}
+
+.mod-box25 {
+  @include mod-box25-common-style;
+}
+
+.mod-box26 {
+  @include mod-box26-common-style;
+}
+
+.mod-box27 {
+  @include mod-box27-common-style;
+  @include mod-box27-style;
+}
+
+.mod-box28 {
+  @include mod-box28-common-style;
+  @include mod-box28-style;
+}
+
+.mod-box29 {
+  @include mod-box29-common-style;
+  @include mod-box29-style;
+  .ex-style_01A1 & {
+    @include mod-box29-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box29-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box29-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-box29-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-box29-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-box29-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-box29-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-box29-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-box29-style9;
+  }
+}
+
+.mod-box30 {
+  @include mod-box30-common-style;
+}
+
+.mod-box31 {
+  @include mod-box31-common-style;
+}
+
+.mod-box32 {
+  @include mod-box32-common-style;
+}
+
+.mod-box33 {
+  @include mod-box33-common-style;
+}
+
+.mod-box34 {
+  @include mod-box34-common-style;
+}
+
+.mod-box35 {
+  @include mod-box35-common-style;
+}
+
+.mod-box36 {
+  @include mod-box36-common-style;
+}
+
+.mod-box37 {
+  @include mod-box37-common-style;
+  @include mod-box37-style;
+  .ex-style_i1A1 & {
+    @include mod-box37-style2;
+  }
+  .ex-style_i1A2 & {
+    @include mod-box37-style3;
+  }
+  .ex-style_i1A3 & {
+    @include mod-box37-style4;
+  }
+  .ex-style_i1B1 & {
+    @include mod-box37-style5;
+  }
+  .ex-style_i1B2 & {
+    @include mod-box37-style6;
+  }
+  .ex-style_i1B3 & {
+    @include mod-box37-style7;
+  }
+  .ex-style_i1C1 & {
+    @include mod-box37-style8;
+  }
+  .ex-style_i1C2 & {
+    @include mod-box37-style9;
+  }
+  .ex-style_i1C3 & {
+    @include mod-box37-style10;
+  }
+  .ex-style_t4A1 & {
+    @include mod-box37-style11;
+  }
+  .ex-style_t1A1 & {
+    @include mod-box37-style13;
+  }
+  .ex-style_t5A1 & {
+    @include mod-box37-style16;
+  }
+  .ex-style_t5A2 & {
+    @include mod-box37-style17;
+  }
+  .ex-style_t5A3 & {
+    @include mod-box37-style18;
+  }
+  .ex-style_t5B1 & {
+    @include mod-box37-style19;
+  }
+  .ex-style_t5B2 & {
+    @include mod-box37-style20;
+  }
+  .ex-style_t5B3 & {
+    @include mod-box37-style21;
+  }
+  .ex-style_t5C1 & {
+    @include mod-box37-style22;
+  }
+  .ex-style_t5C2 & {
+    @include mod-box37-style23;
+  }
+  .ex-style_t5C3 & {
+    @include mod-box37-style14;
+  }
+  .ex-style_g4A1 &,
+  .ex-style_p3A1 & {
+    @include mod-box37-style12;
+  }
+  .ex-style_g4A2 &,
+  .ex-style_p3A2 & {
+    @include mod-box37-style60;
+  }
+  .ex-style_g4A3 &,
+  .ex-style_p3A3 & {
+    @include mod-box37-style61;
+  }
+  .ex-style_g4B1 &,
+  .ex-style_p3B1 & {
+    @include mod-box37-style62;
+  }
+  .ex-style_g4B2 &,
+  .ex-style_p3B2 & {
+    @include mod-box37-style63;
+  }
+  .ex-style_g4B3 &,
+  .ex-style_p3B3 & {
+    @include mod-box37-style64;
+  }
+  .ex-style_g4C1 &,
+  .ex-style_p3C1 & {
+    @include mod-box37-style65;
+  }
+  .ex-style_g4C2 &,
+  .ex-style_p3C2 & {
+    @include mod-box37-style66;
+  }
+  .ex-style_g4C3 &,
+  .ex-style_p3C3 & {
+    @include mod-box37-style15;
+  }
+  .ex-style_x2A1 & {
+    @include mod-box37-style24;
+  }
+  .ex-style_x2A2 & {
+    @include mod-box37-style25;
+  }
+  .ex-style_x2A3 & {
+    @include mod-box37-style26;
+  }
+  .ex-style_x2B1 & {
+    @include mod-box37-style27;
+  }
+  .ex-style_x2B2 & {
+    @include mod-box37-style28;
+  }
+  .ex-style_x2B3 & {
+    @include mod-box37-style29;
+  }
+  .ex-style_x2C1 & {
+    @include mod-box37-style30;
+  }
+  .ex-style_x2C2 & {
+    @include mod-box37-style31;
+  }
+  .ex-style_x2C3 & {
+    @include mod-box37-style32;
+  }
+  .ex-style_p2A1 & {
+    @include mod-box37-style33;
+  }
+  .ex-style_p2A2 & {
+    @include mod-box37-style34;
+  }
+  .ex-style_p2A2 & {
+    @include mod-box37-style35;
+  }
+  .ex-style_p2B1 & {
+    @include mod-box37-style36;
+  }
+  .ex-style_p2B2 & {
+    @include mod-box37-style37;
+  }
+  .ex-style_p2B2 & {
+    @include mod-box37-style38;
+  }
+  .ex-style_p2C1 & {
+    @include mod-box37-style39;
+  }
+  .ex-style_p2C2 & {
+    @include mod-box37-style40;
+  }
+  .ex-style_p2C3 & {
+    @include mod-box37-style41;
+  }
+  .ex-style_t6A1 & {
+    @include mod-box37-style42;
+  }
+  .ex-style_t6A2 & {
+    @include mod-box37-style43;
+  }
+  .ex-style_t6A3 & {
+    @include mod-box37-style44;
+  }
+  .ex-style_t6B1 & {
+    @include mod-box37-style45;
+  }
+  .ex-style_t6B2 & {
+    @include mod-box37-style46;
+  }
+  .ex-style_t6B3 & {
+    @include mod-box37-style47;
+  }
+  .ex-style_t6C1 & {
+    @include mod-box37-style48;
+  }
+  .ex-style_t6C2 & {
+    @include mod-box37-style49;
+  }
+  .ex-style_t6C3 & {
+    @include mod-box37-style50;
+  }
+  .ex-style_g2A1 & {
+    @include mod-box37-style51;
+  }
+  .ex-style_g2A2 & {
+    @include mod-box37-style52;
+  }
+  .ex-style_g2A3 & {
+    @include mod-box37-style53;
+  }
+  .ex-style_g2B1 & {
+    @include mod-box37-style54;
+  }
+  .ex-style_g2B2 & {
+    @include mod-box37-style55;
+  }
+  .ex-style_g2B3 & {
+    @include mod-box37-style56;
+  }
+  .ex-style_g2C1 & {
+    @include mod-box37-style57;
+  }
+  .ex-style_g2C2 & {
+    @include mod-box37-style58;
+  }
+  .ex-style_g2C3 & {
+    @include mod-box37-style59;
+  }
+  .ex-style_p4A1 & {
+    @include mod-box37-style67;
+  }
+  .ex-style_p4A2 & {
+    @include mod-box37-style68;
+  }
+  .ex-style_p4A3 & {
+    @include mod-box37-style69;
+  }
+  .ex-style_p4B1 & {
+    @include mod-box37-style70;
+  }
+  .ex-style_p4B2 & {
+    @include mod-box37-style71;
+  }
+  .ex-style_p4B3 & {
+    @include mod-box37-style72;
+  }
+  .ex-style_p4C1 & {
+    @include mod-box37-style73;
+  }
+  .ex-style_p4C2 & {
+    @include mod-box37-style74;
+  }
+  .ex-style_p4C3 & {
+    @include mod-box37-style75;
+  }
+}
+
+.mod-box38 {
+  @include mod-box38-common-style;
+}
+
+.mod-box39 {
+  @include mod-box39-common-style;
+}
+
+.mod-box40 {
+  @include mod-box40-common-style;
+}
+
+.mod-box41 {
+  @include mod-box41-common-style;
+}
+
+.mod-box42 {
+  @include mod-box42-common-style;
+}
+
+.mod-box43 {
+  @include mod-box43-common-style;
+}
+
+.mod-box44 {
+  @include mod-box44-common-style;
+  .ex-style_p4A1 &,
+  .ex-style_p4A2 &,
+  .ex-style_p4A3 &,
+  .ex-style_p4B1 &,
+  .ex-style_p4B2 &,
+  .ex-style_p4B3 &,
+  .ex-style_p4C1 &,
+  .ex-style_p4C2 &,
+  .ex-style_p4C3 & {
+    @include mod-box44-style;
+  }
+}
+
+.mod-box45 {
+  @include mod-box45-common-style;
+  @include mod-box45-style;
+  .ex-style_t4A1 & {
+    @include mod-box45-style2;
+  }
+  .ex-style_t4A2 & {
+    @include mod-box45-style3;
+  }
+  .ex-style_t4A3 & {
+    @include mod-box45-style4;
+  }
+  .ex-style_t4B1 & {
+    @include mod-box45-style5;
+  }
+  .ex-style_t4B2 & {
+    @include mod-box45-style6;
+  }
+  .ex-style_t4B3 & {
+    @include mod-box45-style7;
+  }
+  .ex-style_t4C1 & {
+    @include mod-box45-style8;
+  }
+  .ex-style_t4C2 & {
+    @include mod-box45-style9;
+  }
+  .ex-style_t4C3 & {
+    @include mod-box45-style10;
+  }
+  .ex-style_t5A1 & {
+    @include mod-box45-style11;
+  }
+  .ex-style_t5A2 & {
+    @include mod-box45-style12;
+  }
+  .ex-style_t5A3 & {
+    @include mod-box45-style13;
+  }
+  .ex-style_t5B1 & {
+    @include mod-box45-style14;
+  }
+  .ex-style_t5B2 & {
+    @include mod-box45-style15;
+  }
+  .ex-style_t5B3 & {
+    @include mod-box45-style16;
+  }
+  .ex-style_t5C1 & {
+    @include mod-box45-style17;
+  }
+  .ex-style_t5C2 & {
+    @include mod-box45-style18;
+  }
+  .ex-style_t5C3 & {
+    @include mod-box45-style19;
+  }
+  .ex-style_t6A1 & {
+    @include mod-box45-style20;
+  }
+  .ex-style_t6A2 & {
+    @include mod-box45-style21;
+  }
+  .ex-style_t6A3 & {
+    @include mod-box45-style22;
+  }
+  .ex-style_t6B1 & {
+    @include mod-box45-style23;
+  }
+  .ex-style_t6B2 & {
+    @include mod-box45-style24;
+  }
+  .ex-style_t6B3 & {
+    @include mod-box45-style25;
+  }
+  .ex-style_t6C1 & {
+    @include mod-box45-style26;
+  }
+  .ex-style_t6C2 & {
+    @include mod-box45-style27;
+  }
+  .ex-style_t6C3 & {
+    @include mod-box45-style28;
+  }
+}
+
+.mod-box46 {
+  @include mod-box46-common-style;
+  @include mod-box46-style;
+  &.ex-style_01A1 {
+    @include mod-box46-style;
+  }
+  &.ex-style_01A2 {
+    @include mod-box46-style2;
+  }
+  &.ex-style_01A3 {
+    @include mod-box46-style3;
+  }
+  &.ex-style_01B1 {
+    @include mod-box46-style4;
+  }
+  &.ex-style_01B2 {
+    @include mod-box46-style5;
+  }
+  &.ex-style_01B3 {
+    @include mod-box46-style6;
+  }
+  &.ex-style_01C1 {
+    @include mod-box46-style7;
+  }
+  &.ex-style_01C2 {
+    @include mod-box46-style8;
+  }
+  &.ex-style_01C3 {
+    @include mod-box46-style9;
+  }
+}
+
+.mod-box47 {
+  @include mod-box47-common-style;
+}
+
+.mod-box48 {
+  @include mod-box48-common-style;
+  @include mod-box48-style;
+  .ex-style_p3A1 & {
+    @include mod-box48-style;
+  }
+  .ex-style_p3A2 & {
+    @include mod-box48-style2;
+  }
+  .ex-style_p3A3 & {
+    @include mod-box48-style3;
+  }
+  .ex-style_p3B1 & {
+    @include mod-box48-style4;
+  }
+  .ex-style_p3B2 & {
+    @include mod-box48-style5;
+  }
+  .ex-style_p3B3 & {
+    @include mod-box48-style6;
+  }
+  .ex-style_p3C1 & {
+    @include mod-box48-style7;
+  }
+  .ex-style_p3C2 & {
+    @include mod-box48-style8;
+  }
+  .ex-style_p3C3 & {
+    @include mod-box48-style9;
+  }
+}

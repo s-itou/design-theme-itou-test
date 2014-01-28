@@ -1,0 +1,319 @@
+@charset "UTF-8";
+// ----------------------------
+// mod-2col
+//必須レイアウト記述→margin-top
+//必須デザイン記述→なし
+// ----------------------------
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-2col(inner1重)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----common-style-----//
+@mixin common-style-mod-2col {
+  //---必須レイアウト記述-----//
+  // margin: 0 0 0 0; すべてmodule-syuleで記述しているためコメントアウト
+  //----必須デザイン記述-----//
+  //---------------------//
+  @extend %cf;
+  > .mod-2col-inner {
+    float: right;
+    margin: 0 0 0 20px;
+    width: floor($mainWidth * 0.39);
+  }
+  > .mod-2col-inner2 {
+    overflow: hidden;
+  }
+}
+
+//-----module-style-----//
+
+@mixin module-style-mod-2col {
+  //inner1重の2col（文章＋画像用）現状単体で存在はしない
+  margin: 20px 0 0 0;
+  .ex-imgSize_2L & {
+    > .mod-2col-inner {
+      width: floor($mainWidth * 0.46);
+    }
+  }
+  .ex-imgSize_2S & {
+    > .mod-2col-inner {
+      width: floor($mainWidth * 0.31);
+    }
+  }
+  .ex-imgSize_2SS & {
+    > .mod-2col-inner {
+      width: floor($mainWidth * 0.23);
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-inner {
+      float: left;
+      margin: 0 20px 0 0;
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-inner {
+      margin: 0 0 12px 0;
+    }
+    > .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+}
+
+@mixin module-style-mod-2col50 {
+  margin: 0;
+  > .mod-2col-inner {
+    float: left;
+    width: 475px;
+    margin: 0 30px 0 0;
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: 475px;
+  }
+}
+@mixin module-style-mod-2col-side {
+  margin: 10px 0 0 0;
+  > .mod-2col-inner {
+    width: floor($baseSideWidth * 0.37);
+    margin: 0 0 0 10px;
+  }
+  > .mod-2col-inner2 {
+     > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+  .ex-imgSize_S2S & {
+    > .mod-2col-inner {
+      width: floor($baseSideWidth * 0.28);
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-inner {
+      float: left;
+      margin: 0 10px 0 0;
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-inner {
+      margin: 0 0 12px 10px;
+    }
+    > .mod-2col-inner2 {
+      overflow: visible;
+    }
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-2col(inner2重)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----common-style-----//
+
+@mixin common-style-mod-2col-in1 {
+  //---必須レイアウト記述-----//
+  margin: 20px 0 0 0;
+  //----必須デザイン記述-----//
+  //---------------------//
+  @extend %cf;
+  > .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: right;
+      width: floor($mainWidth * 0.39);
+      margin: 0 0 0 20px;
+      > .mod-2col-inner-2 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      overflow: hidden;
+      > .mod-2col-inner2-2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+              > .ex-first-child {
+              margin-top: 0 !important;
+                > .ex-first-child {
+                  margin-top: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ex-imgSize_2L & {//表には無効
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.46);
+      }
+    }
+  }
+  .ex-imgSize_2S & {//表には無効
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.31);
+      }
+    }
+  }
+  .ex-imgSize_2SS & {//表には無効
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        width: floor($mainWidth * 0.23);
+      }
+    }
+  }
+  .ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        float: left;
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+  .ex-imgFloat & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin: 0 0 12px 20px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+//-----module-style-----//
+
+@mixin module-style-mod-2col-in1 {
+  //現状記述なし
+}
+
+@mixin module-style-mod-2col-in1-hyo {
+  > .mod-2col-wrap {
+    > .mod-2col-inner {
+      width: 310px;
+    }
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-2col(inner3重)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----common-style-----//
+
+@mixin common-style-mod-2col50-in2 {
+  //---必須レイアウト記述-----//
+  margin: 30px 0 0 0;
+  //----必須デザイン記述-----//
+  //---------------------//
+  @extend %cf;
+  .mod-2col-wrap {
+    > .mod-2col-inner {
+      float: left;
+      width: floor(($mainWidth - 40) / 2);
+      .mod-2col-inner-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      float: right;
+      width: floor(($mainWidth - 40) / 2);
+      margin: 0 0 0 40px;
+       .mod-2col-inner2-3 {
+         > .ex-first-child {
+          margin-top: 0 !important;
+           > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin module-style-mod-2col50-in2 {
+  //現状記述の必要なし
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//  mod-2col-footer
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+//----- common-style -----//
+@mixin common-style-mod-2col-footer {
+  display: table;
+  width: 100%;
+  .mod-2col-inner {
+    overflow: hidden;
+    margin-right: 30px;
+    min-width: 370px;
+    > .ex-first-child {
+      &, > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-inner2 {
+    display: table-cell;
+    min-width: 580px;
+    vertical-align: bottom;
+  }
+}
+
+//----- module-style -----//
+@mixin module-style-mod-2col-footer { }
+
+//----- deco-style -----//
+@mixin deco-style01A1-mod-2col-footer { }
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//  mod-2col-table-footer
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+//----- common-style -----//
+@mixin common-style-mod-2col-table-footer {
+  float: right;
+  .mod-2col-inner {
+    display: table-cell;
+    padding-right: 30px;
+    min-width: 300px;
+    max-width: 300px;
+    vertical-align: bottom;
+    > .ex-first-child {
+      &, > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-inner2 {
+    display: table-cell;
+    min-width: 260px;
+    max-width: 280px;
+    vertical-align: bottom;
+    text-align: center;
+  }
+}
+
+//----- module-style -----//
+@mixin module-style-mod-2col-table-footer { }
+
+//----- deco-style -----//
+@mixin deco-style01A1-mod-2col-table-footer { }

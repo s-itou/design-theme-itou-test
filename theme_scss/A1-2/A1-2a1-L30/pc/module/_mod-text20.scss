@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-text20-style";
+
+.mod-text20 {
+  @include mod-text20-common-style;
+  @include mod-text20-style;
+}
+

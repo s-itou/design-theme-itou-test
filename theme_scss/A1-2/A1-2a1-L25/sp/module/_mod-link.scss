@@ -1,0 +1,597 @@
+@charset "UTF-8";
+@import "../sp-style/mod-link-style";
+
+.mod-link {
+  @include mod-link-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link-style3; }
+    @else { @include mod-link-style; }
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_q1A1} &,
+  .ex-style_#{$baseEx_v1A1} &,
+  .ex-style_#{$baseEx_c1A1} &,
+  .ex-style_#{$baseEx_d1A1} &,
+  .ex-style_#{$baseEx_i1A1} & {
+    @include mod-link-style;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_q1A2} &,
+  .ex-style_#{$baseEx_v1A2} &,
+  .ex-style_#{$baseEx_c1A2} &,
+  .ex-style_#{$baseEx_d1A2} &,
+  .ex-style_#{$baseEx_i1A2} & {
+    @include mod-link-style2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_q1A3} &,
+  .ex-style_#{$baseEx_v1A3} &,
+  .ex-style_#{$baseEx_c1A3} &,
+  .ex-style_#{$baseEx_d1A3} &,
+  .ex-style_#{$baseEx_i1A3} & {
+    @include mod-link-style3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_q1B1} &,
+  .ex-style_#{$baseEx_v1B1} &,
+  .ex-style_#{$baseEx_c1B1} &,
+  .ex-style_#{$baseEx_d1B1} &,
+  .ex-style_#{$baseEx_i1B1} & {
+    @include mod-link-style;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_q1B2} &,
+  .ex-style_#{$baseEx_v1B2} &,
+  .ex-style_#{$baseEx_c1B2} &,
+  .ex-style_#{$baseEx_d1B2} &,
+  .ex-style_#{$baseEx_i1B2} & {
+    @include mod-link-style2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_q1B3} &,
+  .ex-style_#{$baseEx_v1B3} &,
+  .ex-style_#{$baseEx_c1B3} &,
+  .ex-style_#{$baseEx_d1B3} &,
+  .ex-style_#{$baseEx_i1B3} & {
+    @include mod-link-style3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_q1C1} &,
+  .ex-style_#{$baseEx_v1C1} &,
+  .ex-style_#{$baseEx_c1C1} &,
+  .ex-style_#{$baseEx_d1C1} &,
+  .ex-style_#{$baseEx_i1C1} & {
+    @include mod-link-style;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_q1C2} &,
+  .ex-style_#{$baseEx_v1C2} &,
+  .ex-style_#{$baseEx_c1C2} &,
+  .ex-style_#{$baseEx_d1C2} &,
+  .ex-style_#{$baseEx_i1C2} & {
+    @include mod-link-style2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_q1C3} &,
+  .ex-style_#{$baseEx_v1C3} &,
+  .ex-style_#{$baseEx_c1C3} &,
+  .ex-style_#{$baseEx_d1C3} & {
+    @include mod-link-style3;
+  }
+}
+
+.mod-link2 {
+  @include mod-link2-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link2-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link2-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link2-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link2-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link2-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link2-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link2-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link2-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link2-style3; }
+    @else { @include mod-link2-style; }
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_v1A1} &,
+  .ex-style_#{$baseEx_c1A1} &,
+  .ex-style_#{$baseEx_i1A1} & {
+    @include mod-link2-style;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_v1A2} &,
+  .ex-style_#{$baseEx_c1A2} &,
+  .ex-style_#{$baseEx_i1A2} & {
+    @include mod-link2-style2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_v1A3} &,
+  .ex-style_#{$baseEx_c1A3} &,
+  .ex-style_#{$baseEx_i1A3} & {
+    @include mod-link2-style3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_v1B1} &,
+  .ex-style_#{$baseEx_c1B1} &,
+  .ex-style_#{$baseEx_i1B1} &,
+  .ex-style_#{$baseEx_p4B1} & {
+    @include mod-link2-style;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_v1B2} &,
+  .ex-style_#{$baseEx_c1B2} &,
+  .ex-style_#{$baseEx_i1B2} & {
+    @include mod-link2-style2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_v1B3} &,
+  .ex-style_#{$baseEx_c1B3} &,
+  .ex-style_#{$baseEx_i1B3} & {
+    @include mod-link2-style3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_v1C1} &,
+  .ex-style_#{$baseEx_c1C1} &,
+  .ex-style_#{$baseEx_i1C1} & {
+    @include mod-link2-style;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_v1C2} &,
+  .ex-style_#{$baseEx_c1C2} &,
+  .ex-style_#{$baseEx_i1C2} & {
+    @include mod-link2-style2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_v1C3} &,
+  .ex-style_#{$baseEx_c1C3} &,
+  .ex-style_#{$baseEx_i1C3} & {
+    @include mod-link2-style3;
+  }
+}
+
+.mod-link7 {
+  @include mod-link7-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link7-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link7-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link7-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link7-style4; }
+    @else if $defaultTheme == "01B2" { @include mod-link7-style5; }
+    @else if $defaultTheme == "01B3" { @include mod-link7-style6; }
+    @else if $defaultTheme == "01C1" { @include mod-link7-style7; }
+    @else if $defaultTheme == "01C2" { @include mod-link7-style8; }
+    @else if $defaultTheme == "01C3" { @include mod-link7-style9; }
+    @else { @include mod-link7-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-link7-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-link7-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-link7-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-link7-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-link7-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-link7-style6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-link7-style7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-link7-style8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-link7-style9;
+  }
+  .ex-style_#{$baseEx_02A1} & {
+    @include mod-link7-style10;
+  }
+  .ex-style_#{$baseEx_02A2} & {
+    @include mod-link7-style11;
+  }
+  .ex-style_#{$baseEx_02A3} & {
+    @include mod-link7-style12;
+  }
+  .ex-style_#{$baseEx_02B1} & {
+    @include mod-link7-style13;
+  }
+  .ex-style_#{$baseEx_02B2} & {
+    @include mod-link7-style14;
+  }
+  .ex-style_#{$baseEx_02B3} & {
+    @include mod-link7-style15;
+  }
+  .ex-style_#{$baseEx_02C1} & {
+    @include mod-link7-style16;
+  }
+  .ex-style_#{$baseEx_02C2} & {
+    @include mod-link7-style17;
+  }
+  .ex-style_#{$baseEx_02C3} & {
+    @include mod-link7-style18;
+  }
+  .ex-style_#{$baseEx_03A1} & {
+    @include mod-link7-style19;
+  }
+  .ex-style_#{$baseEx_03A2} & {
+    @include mod-link7-style20;
+  }
+  .ex-style_#{$baseEx_03A3} & {
+    @include mod-link7-style21;
+  }
+  .ex-style_#{$baseEx_03B1} & {
+    @include mod-link7-style22;
+  }
+  .ex-style_#{$baseEx_03B2} & {
+    @include mod-link7-style23;
+  }
+  .ex-style_#{$baseEx_03B3} & {
+    @include mod-link7-style24;
+  }
+  .ex-style_#{$baseEx_03C1} & {
+    @include mod-link7-style25;
+  }
+  .ex-style_#{$baseEx_03C2} & {
+    @include mod-link7-style26;
+  }
+  .ex-style_#{$baseEx_03C3} & {
+    @include mod-link7-style27;
+  }
+}
+
+.mod-link8 {
+  @include mod-link8-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link8-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link8-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link8-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link8-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link8-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link8-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link8-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link8-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link8-style3; }
+    @else { @include mod-link8-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-link8-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-link8-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-link8-style3;
+  }
+}
+
+.mod-link10 {
+  @include mod-link10-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link10-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link10-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link10-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link10-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link10-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link10-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link10-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link10-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link10-style3; }
+    @else { @include mod-link10-style; }
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_q1A1} &,
+  .ex-style_#{$baseEx_v1A1} &,
+  .ex-style_#{$baseEx_c1A1} & {
+    @include mod-link10-style;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_q1A2} &,
+  .ex-style_#{$baseEx_v1A2} &,
+  .ex-style_#{$baseEx_c1A2} & {
+    @include mod-link10-style2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_q1A3} &,
+  .ex-style_#{$baseEx_v1A3} &,
+  .ex-style_#{$baseEx_c1A3} & {
+    @include mod-link10-style3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_q1B1} &,
+  .ex-style_#{$baseEx_v1B1} &,
+  .ex-style_#{$baseEx_c1B1} & {
+    @include mod-link10-style;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_q1B2} &,
+  .ex-style_#{$baseEx_v1B2} &,
+  .ex-style_#{$baseEx_c1B2} & {
+    @include mod-link10-style2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_q1B3} &,
+  .ex-style_#{$baseEx_v1B3} &,
+  .ex-style_#{$baseEx_c1B3} & {
+    @include mod-link10-style3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_q1C1} &,
+  .ex-style_#{$baseEx_v1C1} &,
+  .ex-style_#{$baseEx_c1C1} & {
+    @include mod-link10-style;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_q1C2} &,
+  .ex-style_#{$baseEx_v1C2} &,
+  .ex-style_#{$baseEx_c1C2} & {
+    @include mod-link10-style2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_q1C3} &,
+  .ex-style_#{$baseEx_v1C3} &,
+  .ex-style_#{$baseEx_c1C3} & {
+    @include mod-link10-style3;
+  }
+}
+
+.mod-link11 {
+  @include mod-link11-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link11-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link11-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link11-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link11-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link11-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link11-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link11-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link11-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link11-style3; }
+    @else { @include mod-link11-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-link11-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-link11-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-link11-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-link11-style;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-link11-style2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-link11-style3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-link11-style;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-link11-style2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-link11-style3;
+  }
+}
+
+.mod-link12 {
+  @include mod-link12-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link12-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link12-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link12-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link12-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link12-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link12-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link12-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link12-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link12-style3; }
+    @else { @include mod-link12-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-link12-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-link12-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-link12-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-link12-style;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-link12-style2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-link12-style3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-link12-style;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-link12-style2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-link12-style3;
+  }
+}
+
+
+.mod-link13 {
+  @include mod-link13-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link13-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link13-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link13-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link13-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link13-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link13-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link13-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link13-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link13-style3; }
+    @else { @include mod-link13-style; }
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_q1A1} &,
+  .ex-style_#{$baseEx_v1A1} &,
+  .ex-style_#{$baseEx_c1A1} &,
+  .ex-style_#{$baseEx_d1A1} &,
+  .ex-style_#{$baseEx_i1A1} & {
+    @include mod-link13-style;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_q1A2} &,
+  .ex-style_#{$baseEx_v1A2} &,
+  .ex-style_#{$baseEx_c1A2} &,
+  .ex-style_#{$baseEx_d1A2} &,
+  .ex-style_#{$baseEx_i1A2} & {
+    @include mod-link13-style2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_q1A3} &,
+  .ex-style_#{$baseEx_v1A3} &,
+  .ex-style_#{$baseEx_c1A3} &,
+  .ex-style_#{$baseEx_d1A3} &,
+  .ex-style_#{$baseEx_i1A3} & {
+    @include mod-link13-style3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_q1B1} &,
+  .ex-style_#{$baseEx_v1B1} &,
+  .ex-style_#{$baseEx_c1B1} &,
+  .ex-style_#{$baseEx_d1B1} &,
+  .ex-style_#{$baseEx_i1B1} & {
+    @include mod-link13-style;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_q1B2} &,
+  .ex-style_#{$baseEx_v1B2} &,
+  .ex-style_#{$baseEx_c1B2} &,
+  .ex-style_#{$baseEx_d1B2} &,
+  .ex-style_#{$baseEx_i1B2} & {
+    @include mod-link13-style2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_q1B3} &,
+  .ex-style_#{$baseEx_v1B3} &,
+  .ex-style_#{$baseEx_c1B3} &,
+  .ex-style_#{$baseEx_d1B3} &,
+  .ex-style_#{$baseEx_i1B3} & {
+    @include mod-link13-style3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_q1C1} &,
+  .ex-style_#{$baseEx_v1C1} &,
+  .ex-style_#{$baseEx_c1C1} &,
+  .ex-style_#{$baseEx_d1C1} &,
+  .ex-style_#{$baseEx_i1C1} & {
+    @include mod-link13-style;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_q1C2} &,
+  .ex-style_#{$baseEx_v1C2} &,
+  .ex-style_#{$baseEx_c1C2} &,
+  .ex-style_#{$baseEx_d1C2} &,
+  .ex-style_#{$baseEx_i1C2} & {
+    @include mod-link13-style2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_q1C3} &,
+  .ex-style_#{$baseEx_v1C3} &,
+  .ex-style_#{$baseEx_c1C3} &,
+  .ex-style_#{$baseEx_d1C3} & {
+    @include mod-link13-style3;
+  }
+}
+
+.mod-link14 {
+  @include mod-link14-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link14-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link14-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link14-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link14-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link14-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link14-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link14-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link14-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link14-style3; }
+    @else { @include mod-link14-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-link14-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-link14-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-link14-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-link14-style;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-link14-style2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-link14-style3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-link14-style;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-link14-style2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-link14-style3;
+  }
+}
+
+.mod-link15 {
+  @include mod-link15-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link15-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link15-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link15-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link15-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link15-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link15-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link15-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link15-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link15-style3; }
+    @else { @include mod-link15-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-link15-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-link15-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-link15-style3;
+  }
+}
+
+.mod-link16 {
+  @include mod-link16-common-style;
+  @if $defaultTheme == "01A1" { @include mod-link16-style; }
+    @else if $defaultTheme == "01A2" { @include mod-link16-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-link16-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-link16-style; }
+    @else if $defaultTheme == "01B2" { @include mod-link16-style2; }
+    @else if $defaultTheme == "01B3" { @include mod-link16-style3; }
+    @else if $defaultTheme == "01C1" { @include mod-link16-style; }
+    @else if $defaultTheme == "01C2" { @include mod-link16-style2; }
+    @else if $defaultTheme == "01C3" { @include mod-link16-style3; }
+    @else { @include mod-link16-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-link16-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-link16-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-link16-style3;
+  }
+}

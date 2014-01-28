@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import "../pc-style/mod-nav-style";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-navi-header
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//旧 mod-gnav
+.mod-navi-fix-header {
+  @include common-style-mod-navi-header;
+  @include module-style-mod-navi-fix-header;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-navi-header;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-navi-header;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-navi-header;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01B1-mod-navi-header;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01B2-mod-navi-header;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01B3-mod-navi-header;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01C1-mod-navi-header;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01C2-mod-navi-header;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C3-mod-navi-header;
+  }
+}
+
+//旧 mod-gnav2
+.mod-navi-header {
+  @include common-style-mod-navi-header;
+  @include module-style-mod-navi-header;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-navi-header;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-navi-header;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-navi-header;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01B1-mod-navi-header;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01B2-mod-navi-header;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01B3-mod-navi-header;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01C1-mod-navi-header;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01C2-mod-navi-header;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C3-mod-navi-header;
+  }
+}
+
+
+
+
+
+//旧方式とのconflict解除のための暫定記述(解消後は、削除)
+.mod-set-navi-side {
+
+  //旧 mod-sidemenu-box
+  .mod-side-menu {
+    @include common-style-mod-side-menu;
+    @include module-style-mod-side-menu;
+  }
+  &.ex-style_01A1 .mod-side-menu {
+    @include deco-style01A1-mod-side-menu;
+  }
+  &.ex-style_01A2 .mod-side-menu {
+    @include deco-style01A2-mod-side-menu;
+  }
+  &.ex-style_01A3 .mod-side-menu {
+    @include deco-style01A3-mod-side-menu;
+  }
+  &.ex-style_01B1 .mod-side-menu {
+    @include deco-style01A1-mod-side-menu;
+  }
+  &.ex-style_01B2 .mod-side-menu {
+    @include deco-style01A2-mod-side-menu;
+  }
+  &.ex-style_01B3 .mod-side-menu {
+    @include deco-style01A3-mod-side-menu;
+  }
+  &.ex-style_01C1 .mod-side-menu {
+    @include deco-style01A1-mod-side-menu;
+  }
+  &.ex-style_01C2 .mod-side-menu {
+    @include deco-style01A2-mod-side-menu;
+  }
+  &.ex-style_01C3 .mod-side-menu {
+    @include deco-style01A3-mod-side-menu;
+  }
+}
+
+//旧方式とのconflict解除のための暫定記述(解消後は、削除)
+.mod-set-navi-side {
+
+  //旧 mod-hand-sidemenu
+  .mod-handmenu-side {
+    @include common-style-mod-side-menu;
+    @include module-style-mod-handmenu-side;
+  }
+  &.ex-style_01A1 .mod-handmenu-side {
+    @include deco-style01A1-mod-handmenu-side;
+  }
+  &.ex-style_01A2 .mod-handmenu-side {
+    @include deco-style01A2-mod-handmenu-side;
+  }
+  &.ex-style_01A3 .mod-handmenu-side {
+    @include deco-style01A3-mod-handmenu-side;
+  }
+  &.ex-style_01B1 .mod-handmenu-side {
+    @include deco-style01A1-mod-handmenu-side;
+  }
+  &.ex-style_01B2 .mod-handmenu-side {
+    @include deco-style01A2-mod-handmenu-side;
+  }
+  &.ex-style_01B3 .mod-handmenu-side {
+    @include deco-style01A3-mod-handmenu-side;
+  }
+  &.ex-style_01C1 .mod-handmenu-side {
+    @include deco-style01A1-mod-handmenu-side;
+  }
+  &.ex-style_01C2 .mod-handmenu-side {
+    @include deco-style01A2-mod-handmenu-side;
+  }
+  &.ex-style_01C3 .mod-handmenu-side {
+    @include deco-style01A3-mod-handmenu-side;
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-navi-footer
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//旧 mod-fnav
+.mod-navi-footer {
+  @include common-style-mod-navi-footer;
+  @include module-style-mod-navi-footer;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-navi-footer;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-navi-footer;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-navi-footer;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-navi-footer;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-navi-footer;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-navi-footer;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-navi-footer;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-navi-footer;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-navi-footer;
+  }
+  .ex-style_02A1 & {
+    @include deco-style01A1-mod-navi-footer;
+  }
+  .ex-style_02A2 & {
+    @include deco-style01A2-mod-navi-footer;
+  }
+  .ex-style_02A3 & {
+    @include deco-style01A3-mod-navi-footer;
+  }
+  .ex-style_02B1 & {
+    @include deco-style01A1-mod-navi-footer;
+  }
+  .ex-style_02B2 & {
+    @include deco-style01A2-mod-navi-footer;
+  }
+  .ex-style_02B3 & {
+    @include deco-style01A3-mod-navi-footer;
+  }
+  .ex-style_02C1 & {
+    @include deco-style01A1-mod-navi-footer;
+  }
+  .ex-style_02C2 & {
+    @include deco-style01A2-mod-navi-footer;
+  }
+  .ex-style_02C3 & {
+    @include deco-style01A3-mod-navi-footer;
+  }
+}
+
+
+
+
+
+//旧方式とのconflict解除のための暫定コメントアウト(解消後は、コメントイン)
+// //旧 mod-sidemenu-box
+// .mod-side-menu {
+//   @include common-style-mod-side-menu;
+//   @include module-style-mod-side-menu;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-side-menu;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-side-menu;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-side-menu;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01A1-mod-side-menu;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01A2-mod-side-menu;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01A3-mod-side-menu;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01A1-mod-side-menu;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01A2-mod-side-menu;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01A3-mod-side-menu;
+//   }
+// }
+
+//旧方式とのconflict解除のための暫定コメントアウト(解消後は、コメントイン)
+// //旧 mod-hand-sidemenu
+// .mod-handmenu-side {
+//   @include common-style-mod-side-menu;
+//   @include module-style-mod-handmenu-side;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-handmenu-side;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-handmenu-side;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-handmenu-side;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01A1-mod-handmenu-side;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01A2-mod-handmenu-side;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01A3-mod-handmenu-side;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01A1-mod-handmenu-side;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01A2-mod-handmenu-side;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01A3-mod-handmenu-side;
+//   }
+// }
+
+

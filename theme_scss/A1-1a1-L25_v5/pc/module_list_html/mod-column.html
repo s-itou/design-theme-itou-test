@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mod-column</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../../../theme/A1-1a1-L25_v5/pc/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../../../theme/A1-1a1-L25_v5/pc/mod.css" />
+<link rel="stylesheet" type="text/css" href="css/list-style.css" />
+
+<style>
+	.module-name-h {
+		width:980px;
+		background-color: orange;
+		line-height: 1.5;
+		margin: 20px auto 0 auto;
+	}
+
+	.module-name-m {
+		width:640px;
+		background-color: orange;
+		line-height: 1.5;
+		margin: 20px auto 0 auto;
+	}
+	.module-name-s {
+		width:215px;
+		background-color: orange;
+		line-height: 1.5;
+		margin: 20px auto 0 auto;
+	}
+	.module-name-h2 {
+		width:475px;
+		background-color: orange;
+		line-height: 1.5;
+		margin: 20px auto 0 auto;
+	}
+
+	.module-name-h + .mod-box1 {
+		background-color: #eee;
+	}
+	.module-name-h + .mod-box2 {
+		background-color: #eee;
+	}
+
+	.mod-box2 .mod-2col, .mod-3col-inner3 {
+		background-color: #eee;
+	}
+	.mod-2col-inner, .mod-3col-inner {
+		background-color: #ddd;
+	}
+	.mod-2col-inner2, .mod-3col-inner2 {
+		background-color: #ddd;
+	}
+	.mod-box3 {
+		background-color: #eee;
+	}
+	.mod-box2 .mod-2col3 {
+		background-color: #ccc;
+	}
+	.mod-box3 .mod-2col4 {
+		background-color: #ccc;
+	}
+	.mod-4col {
+		width: 640px;
+		margin: auto;
+	}
+	.mod-4col-inner {
+		background-color: #ddd;
+	}
+	.mod-4col-inner2 {
+		background-color: #eee;
+	}
+	.mod-4col-inner3 {
+		background-color: #aaa;
+	}
+	.mod-4col-inner4 {
+		background-color: #999;
+	}
+	.mod-box4 {
+		width: 640px;
+		margin-left:auto;
+		margin-right: auto;
+		background-color: #eee;
+	}
+	.mod-box6 {
+		background-color: #eee;
+		width: 980px;
+		margin: 0 auto;
+	}
+
+
+
+
+</style>
+<script type="text/javascript" src="scripts/shCore.js"></script>
+<script type="text/javascript" src="scripts/shBrushXml.js"></script>
+<link type="text/css" rel="stylesheet" href="styles/shCore.css" />
+<link type="text/css" rel="stylesheet" href="styles/shCoreDjango.css">
+<script type="text/javascript">
+SyntaxHighlighter.all();
+</script>
+</head>
+<body class="mod-body">
+
+	<nav class="mod-fnav">
+	<ul>
+	<li><span><a href="./mod-rte_text.html">rte_text</a></span></li>
+	<li><span><a href="./mod-column.html">column</a></span></li>
+	<li><span><a href="./mod-h.html">h</a></span></li>
+	<li><span><a href="./mod-h-set.html">h-set</a></span></li>
+	<li><span><a href="./mod-title.html">title</a></span></li>
+	<li><span><a href="./mod-image.html">image</a></span></li>
+	<li><span><a href="./mod-html.html">html</a></span></li>
+	<li><span><a href="./mod-link.html">link</a></span></li>
+	<li><span><a href="./mod-bnr.html">bnr</a></span></li>
+	<li><span><a href="./mod-table.html">table</a></span></li>
+	<li><span><a href="./mod-ul.html">ul</a></span></li>
+	<li><span><a href="./mod-info.html">info</a></span></li>
+	<li><span><a href="./mod-tel.html">tel</a></span></li>
+	<li><span><a href="./mod-label.html">label</a></span></li>
+	<li><span><a href="./mod-nav.html">nav</a></span></li>
+	<li><span><a href="./mod-step.html">step</a></span></li>
+	<li><span><a href="./mod-un.html">un</a></span></li>
+	<li><span><a href="./mod-set.html">set</a></span></li>
+	</ul>
+	</nav>
+
+<!--
+	＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊モジュール一覧はここから＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+-->
+
+<div class="area-all">
+
+	<header class="area-header">
+		<div class="area-header-inner" data-cms-contents="page-header[0]">
+
+			<!-- ★mod-box -->
+			<p class="module-name-h">mod-box mb:0;</p>
+			<div class="mod-box">
+				<div class="mod-box2">
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>//この部分は削除して使用する</div>
+			</div>
+
+			<p class="module-name-h">◆mod-box23 ex-style_01B1b （装飾バリエーションA）</p>
+					<div class="mod-box23 ex-style_01B1a">
+				<div class="mod-box2">
+					箱(box)型のモジュール
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br><br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br><br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br><br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br><br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					箱(box)型のモジュール
+					//この部分は削除して使用する</div>
+			</div>
+			<pre class="brush:xml">
+			<div class="mod-box"></div>
+			</pre>
+
+			<div class="mod-box2">
+
+				<!-- ★mod-box2 -->
+				<p class="module-name-h">mod-box2 mb:0;</p>
+				<div class="mod-box2">
+					箱(box)型のモジュール
+					<br>
+					ヘッダー・フッター領域用　幅980px margin-left,right:auto;（サイトの横位置中央に配置される）
+					<br>//この部分は削除して使用する
+				</div>
+				<p class="module-name-h">◆mod-box ex-style_01B1b （装飾バリエーションA）</p>
+					<div class="mod-box2 ex-style_01B1a">
+					箱(box)型のモジュール
+					<br>
+					ヘッダー・フッター領域用　幅980px margin-left,right:auto;（サイトの横位置中央に配置される）
+					<br>//この部分は削除して使用する
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+					<br>
+					ヘッダー領域用（ヘッダー領域でテーマ独自の背景画像が設定される）
+					<br>
+					箱(box)型のモジュール
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-box2"></div>
+				</pre>
+
+				<!-- ★mod-box6 -->
+				<p class="module-name-h">mod-box6 mb:10px;</p>
+				<div class="mod-box6">
+					箱(box)型のモジュール
+					<br>
+					margin-bottom:10px;をとるためのbox.主にヘッダーで使用
+					<br>//この部分は削除して使用する
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-box6"></div>
+				</pre>
+
+				<!-- ★mod-2col -->
+				<p class="module-name-h">mod-2col</p>
+				<div class="mod-box2">
+					<div class="mod-2col">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							フッター・ヘッダー領域用
+							<br>
+							左カラム　幅:475px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							フッター・ヘッダー領域用
+							<br>
+							右カラム 幅:max-width:475px
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+				</div>
+
+				<!-- ★mod-2col2 -->
+				<p class="module-name-h">mod-2col2 mb:0;</p>
+				<div class="mod-2col2">
+					<div class="mod-2col-inner">
+						2column分割用のモジュール
+						<br>
+						フッター 475px左右分割
+						<br>
+						左カラム
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-2col-inner2">
+						2column分割用のモジュール
+						<br>
+						フッター 475px左右分割
+						<br>
+						右カラム
+						<br>//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-2col2">
+				<div class="mod-2col-inner"></div>
+				<div class="mod-2col-inner2"></div>
+				</div>
+				</pre>
+
+				<!-- ★mod-2col10 -->
+				<p class="module-name-h">mod-2col10 mb0</p>
+				<div class="mod-2col10">
+					<div class="mod-2col-inner">
+						2column分割用のモジュール
+						<br>
+						フッター・ヘッダー領域用
+						<br>
+						左カラム　幅:380px
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-2col-inner2">
+						2column分割用のモジュール
+						<br>
+						フッター・ヘッダー領域用
+						<br>
+						右カラム 幅:width:570px
+						<br>
+						//この部分は削除して使用する
+
+						<p class="module-name-m">mod-2col11 mb0</p>
+						<div class="mod-2col11">
+							<div class="mod-2col-inner">
+								2column分割用のモジュール
+								<br>
+								フッター・ヘッダー領域用
+								<br>
+								左カラム　幅:290px
+								<br>//この部分は削除して使用する
+							</div>
+							<div class="mod-2col-inner2">
+								2column分割用のモジュール
+								<br>
+								フッター・ヘッダー領域用
+								<br>
+								右カラム 幅:width:250px
+								<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<pre class="brush:xml">
+						<div class="mod-2col11">
+						<div class="mod-2col-inner"></div>
+						<div class="mod-2col-inner2"></div>
+						</div>
+						</pre>
+
+						<p class="module-name-m">mod-2col14 mb0</p>
+						<div class="mod-2col14">
+							<div class="mod-2col-inner">
+								2column分割用のモジュール
+								<br>
+								フッター・ヘッダー領域用
+								<br>
+								左カラム　幅:250px
+								<br>//この部分は削除して使用する
+							</div>
+							<div class="mod-2col-inner2">
+								2column分割用のモジュール
+								<br>
+								フッター・ヘッダー領域用
+								<br>
+								右カラム 幅:width:290px
+								<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<pre class="brush:xml">
+						<div class="mod-2col14">
+						<div class="mod-2col-inner"></div>
+						<div class="mod-2col-inner2"></div>
+						</div>
+						</pre>
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-2col10">
+				<div class="mod-2col-inner"></div>
+				<div class="mod-2col-inner2"></div>
+				</div>
+				</pre>
+
+			<!-- ★mod-2col18 -->
+					<p class="module-name-m">mod-2co18 mb:10px; 回り込みなし</p>
+					<div class="mod-2col18">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							右カラム：幅120px,mr15px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							回り込みなし//この部分は削除して使用する<br>
+							まわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなし
+							まわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなし
+							まわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなし
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col18">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-2col18 -->
+					<p class="module-name-m">mod-2co18 ex-style_Aa0 mb:10px; 回り込みあり</p>
+					<div class="ex-style_Aa0">
+					<div class="mod-2col18">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							右カラム：幅120px,mr15px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							回り込みなし//この部分は削除して使用する<br>
+							まわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみあり
+						</div>
+					</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col18 ex-style_Aa0">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-2col18 -->
+					<p class="module-name-m">mod-2co18 ex-style_Ad0 mb:10px; 回り込みなし</p>
+					<div class="ex-style_Ad0">
+					<div class="mod-2col18">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							左カラム：幅120px,mr15px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							回り込みなし//この部分は削除して使用する<br>
+							まわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなし
+							まわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなし
+							まわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなしまわりこみなし
+						</div>
+					</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col18 ex-style_Ad0">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-2col18 -->
+					<p class="module-name-m">mod-2co18 ex-style_Ac0 mb:10px; 回り込みあり</p>
+					<div class="ex-style_Ac0">
+					<div class="mod-2col18">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							左カラム：幅120px,mr15px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							回り込みなし//この部分は削除して使用する<br>
+							まわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみあり
+						</div>
+					</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col18 ex-style_Ac0">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+
+					<!-- ★mod-3col3 -->
+					<p class="module-name-m">mod-3co13</p>
+					<div class="mod-3col3">
+						<div class="mod-3col3-inner">
+							3column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							幅315px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-3col3-inner2">
+							3column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							幅315px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-3col3-inner3">
+							3column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							幅315px
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-3col13">
+					<div class="mod-3col3-inner"></div>
+					<div class="mod-3col3-inner2"></div>
+					<div class="mod-3col3-inner3"></div>
+					</div>
+					</pre>
+
+
+					<!-- ★mod-4col3 -->
+					<p class="module-name-m">mod-4co13</p>
+					<div class="mod-4col3">
+						<div class="mod-4col3-inner">
+							4column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							幅235px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-4col3-inner2">
+							4column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							幅235px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-4col3-inner3">
+							4column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							幅235px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-4col3-inner4">
+							4column分割用のモジュール
+							<br>
+							ヘッダー領域用
+							<br>
+							幅235px
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-4col13">
+					<div class="mod-4col3-inner"></div>
+					<div class="mod-4col3-inner2"></div>
+					<div class="mod-4col3-inner3"></div>
+					<div class="mod-4col3-inner4"></div>
+					</div>
+					</pre>
+
+
+		<!-- ヘッダーエリアここまで -->
+			</div>
+		</div><!-- /area-header-inner -->
+	</header><!-- /area-header -->
+
+
+	<div class="area-container">
+
+		<div class="area-main">
+			<div class="area-main-inner" data-cms-contents="master-main[0]">
+
+				<div class="mod-box4">
+
+					<!-- ★mod-box3 -->
+					<p class="module-name-m">mod-box3 mb:0px;</p>
+					<div class="mod-box3">
+						箱(box)型のモジュール
+						<br>
+						メイン領域用　幅640px margin-left,right:auto;（サイトの横位置中央に配置される）
+						<br>//この部分は削除して使用する
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-box3"></div>
+					</pre>
+
+					<!-- ★mod-box4 -->
+					<p class="module-name-m">mod-box4 mb:0;</p>
+					<div class="mod-box4">
+						箱(box)型のモジュール
+						<br>
+						幅 100%設定：メインエリアでは入るboxに規定される。ここでは、640px
+						<br>//この部分は削除して使用する
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-box4"></div>
+					</pre>
+
+					<!-- ★mod-box5 -->
+					<p class="module-name-m">mod-box5 mb:30px</p>
+					<div class="mod-box5">
+						箱(box)型のモジュール
+						<br>
+						幅 100%設定：メインエリアでは入るboxに規定される。ここでは、640px
+						<br>//この部分は削除して使用する
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-box5"></div>
+					</pre>
+
+					<!-- ★mod-box7 -->
+					<p class="module-name-m">mod-box7 mb:0;</p>
+					<div class="mod-box7">
+						<div class="mod-box-inner">
+							箱(box)型のモジュール
+							<br>
+							幅100％
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<p class="name-m-ex">mod-box7 mb:0; ex-style_01B1a</p>
+					<div class="ex-style_01B1a">
+						<div class="mod-box7">
+						<div class="mod-box-inner">
+							箱(box)型のモジュール
+							<br>
+							幅100％
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-box7">
+					<div class="mod-box-inner">
+					</div>
+					</div>
+					</pre>
+
+					<!-- ★mod-box8 -->
+					<p class="module-name-m">mod-box8 mb:0;</p>
+					<div class="mod-box8">
+						<div class="mod-box-inner">
+							箱(box)型のモジュール
+							<br>
+							幅100％
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<p class="name-m-ex">mod-box8 mb:0; ex-style_01B1a</p>
+					<div class="ex-style_01B1a">
+						<div class="mod-box8">
+						<div class="mod-box-inner">
+							箱(box)型のモジュール
+							<br>
+							幅100％
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-box8">
+					<div class="mod-box-inner">
+					</div>
+					</div>
+					</pre>
+
+					<!-- ★mod-box17 -->
+					<p class="module-name-m">mod-box17 mb:0;</p>
+					<div class="mod-box17">
+						<div class="mod-box-inner">
+							箱(box)型のモジュール
+							<br>
+							幅100％
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<p class="name-m-ex">mod-box17 mb:0; ex-style_01B1a</p>
+					<div class="ex-style_01B1a">
+						<div class="mod-box17">
+						<div class="mod-box-inner">
+							箱(box)型のモジュール
+							<br>
+							幅100％
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					</div>
+					<p class="name-m-ex">mod-box17 mb:0; ex-style_01B2a</p>
+					<div class="ex-style_01B2a">
+						<div class="mod-box17">
+						<div class="mod-box-inner">
+							箱(box)型のモジュール
+							<br>
+							幅100％
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-box17">
+					<div class="mod-box-inner">
+					</div>
+					</div>
+					</pre>
+
+					<!-- ★mod-box9 -->
+					<p class="module-name-m">mod-box9 mb:25;</p>
+					<div class="mod-box9">
+						箱(box)型のモジュール
+						<br>
+						幅100％
+						<br>//この部分は削除して使用する
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-box9"></div>
+					</pre>
+
+				<!-- ★mod-box15 -->
+				<p class="module-name-h">mod-box15 mb:10px;</p>
+				<div class="mod-box15">
+					箱(box)型のモジュール（装飾用）
+					<br>
+					<br>//この部分は削除して使用する
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-box15"></div>
+				</pre>
+
+				<!-- ★mod-box16 -->
+				<p class="module-name-h">mod-box16 mb:25px;</p>
+				<div class="mod-box16">
+				</div>
+				<p class="name-m-ex">mod-box16 ex-style_01B1a</p>
+					<div class="ex-style_01B1a">
+						<div class="mod-box16">
+				</div>
+					</div>
+				<pre class="brush:xml">
+				<div class="mod-box16"></div>
+				</pre>
+
+				<!-- ★mod-box18 -->
+				<p class="module-name-h">mod-box18 mb:0;</p>
+				<div class="mod-box18">
+					黄色い背景色つきボックス
+				</div>
+				<p class="name-m-ex">mod-box18 ex-style_i1B1a</p>
+					<div class="ex-style_i1B1a">
+						<div class="mod-box18">
+							黄色い背景色つきボックス
+				</div>
+					</div>
+				<pre class="brush:xml">
+				<div class="mod-box18"></div>
+				</pre>
+
+				<!-- ★mod-box19 -->
+				<p class="module-name-h">mod-box19 mb:0;</p>
+				<div class="mod-box19">
+					黄色背景色・ボーダーつきボックス
+				</div>
+				<p class="name-m-ex">mod-box19 ex-style_01B1a</p>
+					<div class="ex-style_01B1a">
+						<div class="mod-box19">
+					<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+							<br>//この部分は削除して使用する
+				</div>
+					</div>
+				<pre class="brush:xml">
+				<div class="mod-box19"></div>
+				</pre>
+
+					<!-- ★mod-2col4 -->
+					<p class="module-name-m">mod-2col4 mb:10px;</p>
+					<div class="mod-2col4">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅250px,mr15px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							回り込みなし//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col4">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-2col6 -->
+					<p class="module-name-m">mod-2col6 mb:0px;</p>
+					<div class="mod-2col6">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅200px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅指定なし
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col6">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-2col7 -->
+					<p class="module-name-m">mod-2col7 mb:0px;</p>
+					<div class="mod-2col7">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							<p class="module-name-m">mod-2col8 mb:0px;</p>
+							<div class="mod-2col8">
+								<div class="mod-2col-inner">
+									2column分割用のモジュール
+									<br>
+									メイン領域用
+									<br>
+									左カラム：幅205px
+									<br>//この部分は削除して使用する
+								</div>
+								<div class="mod-2col-inner2">
+									2column分割用のモジュール
+									<br>
+									メイン領域用
+									<br>
+									右カラム：幅90px
+									<br>//この部分は削除して使用する
+								</div>
+							</div>
+						<pre class="brush:xml">
+						<div class="mod-2col8">
+						<div class="mod-2col-inner"></div>
+						<div class="mod-2col-inner2"></div>
+						</div>
+						</pre>
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅310px(2等分)
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col7">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+
+
+
+					<!-- ★mod-2col19 -->
+					<p class="module-name-m">mod-2col19 mb:0px;</p>
+					<div class="mod-2col19">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅350px
+							margin-right: 20px;
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：257px
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col19">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+
+					<!-- ★mod-2col17 -->
+					<p class="module-name-m">mod-2col17 mb:0px;</p>
+					<div class="mod-2col17">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール回り込み系
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール回り込み系
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col17">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+
+<!-- ★mod-2col20 -->
+					<p class="module-name-m">mod-2col20 mb:30px;</p>
+					<div class="mod-2col20">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅300px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅300px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col20">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+<!-- ★mod-2col21 -->
+					<p class="module-name-m">mod-2col21 mb:30px;</p>
+					<div class="mod-2col21">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅305px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅305px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col21">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+<!-- ★mod-2col22 -->
+					<p class="module-name-m">mod-2col22 mb:0px;</p>
+					<div class="mod-2col22">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅145px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅145px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col22">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+
+<!-- ★mod-2col23 -->
+					<p class="module-name-m">mod-2col23 mb:30px;</p>
+					<div class="mod-2col23">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅145px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅465px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+<pre class="brush:xml">
+<div class="mod-2col23">
+<div class="mod-2col-inner"></div>
+<div class="mod-2col-inner2"></div>
+</div>
+</pre>
+
+
+<!-- ★mod-2col24 -->
+					<p class="module-name-m">mod-2col24 mb:30px;</p>
+					<div class="mod-2col24">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅200px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅410px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+<pre class="brush:xml">
+<div class="mod-2col24">
+<div class="mod-2col-inner"></div>
+<div class="mod-2col-inner2"></div>
+</div>
+</pre>
+
+<!-- ★mod-2col24 -->
+					<p class="module-name-m">mod-2col25 mb:0px;</p>
+					<div class="mod-2col25">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅200px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅200px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+<pre class="brush:xml">
+<div class="mod-2col25">
+<div class="mod-2col-inner"></div>
+<div class="mod-2col-inner2"></div>
+</div>
+</pre>
+
+
+
+<p class="module-name-m">mod-2col26 mb:0px;</p>
+							<div class="mod-2col26">
+								<div class="mod-2col-inner">
+									2column分割用のモジュール
+									<br>
+									メイン領域用
+									<br>
+									右カラム：幅90px
+									<br>//この部分は削除して使用する
+								</div>
+								<div class="mod-2col-inner2">
+									2column分割用のモジュール
+									<br>
+									メイン領域用
+									<br>
+									左カラム：幅205px
+									<br>//この部分は削除して使用する
+								</div>
+							</div>
+						<pre class="brush:xml">
+						<div class="mod-2col26">
+						<div class="mod-2col-inner"></div>
+						<div class="mod-2col-inner2"></div>
+						</div>
+						</pre>
+
+						<p class="module-name-m">mod-2col27 mb:0px;</p>
+							<div class="mod-2col27">
+								<div class="mod-2col-inner">
+									2column分割用のモジュール
+									<br>
+									メイン領域用
+									<br>
+									右カラム：幅70px
+									<br>//この部分は削除して使用する
+								</div>
+								<div class="mod-2col-inner2">
+									2column分割用のモジュール
+									<br>
+									メイン領域用
+									<br>
+									左カラム：幅120px
+									<br>//この部分は削除して使用する
+								</div>
+							</div>
+						<pre class="brush:xml">
+						<div class="mod-2col27">
+						<div class="mod-2col-inner"></div>
+						<div class="mod-2col-inner2"></div>
+						</div>
+						</pre>
+
+
+
+
+					<p class="module-name-m">mod-2col29 </p>
+					<div class="mod-2col29">
+						<div class="mod-2col-inner">
+							<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					  </div>
+						<div class="mod-2col-inner3">
+							<div class="mod-2col-inner4">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅310px(2等分)
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					</div>
+					<p class="name-m-ex">mod-2col29 mb:0; ex-style_01B1a</p>
+					<div class="ex-style_01B1a">
+						<div class="mod-2col29">
+						<div class="mod-2col-inner">
+							<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					  </div>
+						<div class="mod-2col-inner3">
+							<div class="mod-2col-inner4">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅310px(2等分)
+							<br>//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+					</div>
+					</div>
+					<p class="name-m-ex">mod-2col29 mb:0; ex-style_01B2a</p>
+					<div class="ex-style_01B2a">
+						<div class="mod-2col29">
+						<div class="mod-2col-inner">
+							<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					  </div>
+						<div class="mod-2col-inner3">
+							<div class="mod-2col-inner4">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅310px(2等分)
+							<br>//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+							column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+					</div>
+					</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col29">
+					<div class="mod-2col-inner">
+						<div class="mod-2col-inner2">
+						</div>
+					</div>
+					<div class="mod-2col-inner3">
+						<div class="mod-2col-inner4">
+						</div>
+					</div>
+					</div>
+					</pre>
+
+
+
+
+
+					<p class="module-name-m">mod-2col30 </p>
+					<div class="mod-2col30">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅310px(2等分)
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅310px(2等分)
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col30">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+<div class="ex-style_01A1a">
+	<div class="step1">
+					<p class="module-name-m">mod-2col31 a1</p>
+					<div class="mod-2col31">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅250px
+							<br>
+							step：奇数右　偶数左
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅指定なし
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+	</div>
+</div>
+	<div class="step4">
+					<p class="module-name-m">mod-2col31 a4</p>
+					<div class="mod-2col31">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅250px
+							<br>
+							step：奇数右　偶数左
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅指定なし
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					</div>
+<div class="ex-style_01A1c">
+	<div class="step1">
+					<p class="module-name-m">mod-2col31 c1</p>
+					<div class="mod-2col31">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅250px
+							<br>
+							step：奇数右　偶数左
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅指定なし
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+	</div>
+	<div class="step2">
+					<p class="module-name-m">mod-2col31 c2</p>
+					<div class="mod-2col31">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅250px
+							<br>
+							step：奇数右　偶数左
+						</div>
+						<div class="mod-2col-inner2">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅指定なし
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+	</div>
+</div>
+					<pre class="brush:xml">
+					<div class="mod-2col31">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+
+
+					<!-- ★mod-3col -->
+					<p class="module-name-m">mod-3col mb:0px;</p>
+					<div class="mod-3col">
+						<div class="mod-3col-inner">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-3col-inner2">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							真ん中カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-3col-inner3">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-3col">
+					<div class="mod-3col-inner"></div>
+					<div class="mod-3col-inner2"></div>
+					<div class="mod-3col-inner3"></div>
+					</div>
+					</pre>
+
+
+
+					<!-- ★mod-3col -->
+					<p class="module-name-m">mod-3col4 mb:0px;</p>
+					<div class="mod-3col4">
+						<div class="mod-3col-inner">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅145px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-3col-inner2">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							真ん中カラム：幅145px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-3col-inner3">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅145px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-3col4">
+					<div class="mod-3col-inner"></div>
+					<div class="mod-3col-inner2"></div>
+					<div class="mod-3col-inner3"></div>
+					</div>
+					</pre>
+
+					<p class="module-name-m">mod-3col5 <p>
+					<div class="mod-3col5">
+						<div class="mod-3col-inner">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-3col-inner2">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							真ん中カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-3col-inner3">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-3col5">
+					<div class="mod-3col-inner"></div>
+					<div class="mod-3col-inner2"></div>
+					<div class="mod-3col-inner3"></div>
+					</div>
+					</pre>
+
+					<p class="module-name-m">mod-3col6 <p>
+					<div class="mod-3col6">
+						<div class="mod-3col-inner">
+							<div class="mod-3col-inner2">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<div class="mod-3col-inner3">
+							<div class="mod-3col-inner4">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							真ん中カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<div class="mod-3col-inner5">
+							<div class="mod-3col-inner6">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+					</div>
+					<p class="name-m-ex">mod-3col6 mb:0; ex-style_01B1a</p>
+					<div class="ex-style_01B1a">
+						<div class="mod-3col6">
+						<div class="mod-3col-inner">
+							<div class="mod-3col-inner2">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<div class="mod-3col-inner3">
+							<div class="mod-3col-inner4">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							真ん中カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<div class="mod-3col-inner5">
+							<div class="mod-3col-inner6">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+					</div>
+					</div>
+					<p class="name-m-ex">mod-3col6 mb:0; ex-style_01B2a</p>
+					<div class="ex-style_01B2a">
+						<div class="mod-3col6">
+						<div class="mod-3col-inner">
+							<div class="mod-3col-inner2">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							左カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<div class="mod-3col-inner3">
+							<div class="mod-3col-inner4">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							真ん中カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<div class="mod-3col-inner5">
+							<div class="mod-3col-inner6">
+							3column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅200px(3等分)
+							<br>//この部分は削除して使用する
+							</div>
+						</div>
+					</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-3col5">
+					<div class="mod-3col-inner">
+					<div class="mod-3col-inner2">
+					</div>
+					</div>
+					<div class="mod-3col-inner3">
+					<div class="mod-3col-inner4">
+					</div>
+					</div>
+					<div class="mod-3col-inner5">
+					<div class="mod-3col-inner6">
+					</div>
+					</div>
+					</div>
+					</pre>
+
+
+				<!-- ★mod-4col2 -->
+				<p class="module-name-h">mod-4col4 mb:0px;</p>
+				<div class="mod-4col4">
+					<div class="mod-4col-inner">
+						4column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						左カラム：幅165px
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-4col-inner2">
+						4column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						真ん中カラム：幅165px(padding-left20px)
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-4col-inner3">
+						4column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						右カラム：幅165px(padding-left20px)
+						<br>
+						//この部分は削除して使用する
+					</div>
+					<div class="mod-4col-inner4">
+						4column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						右カラム：幅165px(padding-left20px)
+						<br>
+						//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-4col4">
+				<div class="mod-4col-inner">
+				</div>
+				<div class="mod-4col-inner2">
+				</div>
+				<div class="mod-4col-inner3">
+				</div>
+				<div class="mod-4col-inner4">
+				</div>
+				</div>
+				</pre>
+
+
+				<!-- ★mod-5col -->
+				<p class="module-name-h">mod-5col mb:0px;</p>
+				<div class="mod-5col">
+					<div class="mod-5col-inner">
+						5column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						左カラム：幅112px
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-5col-inner2">
+						5column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						真ん中カラム：幅112px(padding-left20px)
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-5col-inner3">
+						5column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						右カラム：幅112px(padding-left20px)
+						<br>
+						//この部分は削除して使用する
+					</div>
+					<div class="mod-5col-inner4">
+						5column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						右カラム：幅112px(padding-left20px)
+						<br>
+						//この部分は削除して使用する
+					</div>
+					<div class="mod-5col-inner5">
+						5column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						右カラム：幅112px(padding-left20px)
+						<br>
+						//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-5col">
+				<div class="mod-5col-inner">
+				</div>
+				<div class="mod-5col-inner2">
+				</div>
+				<div class="mod-5col-inner3">
+				</div>
+				<div class="mod-5col-inner4">
+				</div>
+				<div class="mod-5col-inner5">
+				</div>
+				</div>
+				</pre>
+
+
+
+					<!-- ★mod-2col4 -->
+					<div class="ex-style_01A1a">
+						<p class="module-name-m">mod-2col4 01A1a mb:0px;</p>
+						<div class="mod-2col4">
+							<div class="mod-2col-inner">
+								2column分割用のモジュール
+								<br>
+								メイン領域用
+								<br>
+								右カラム：幅250px,mr15px
+								<br>//この部分は削除して使用する
+							</div>
+							<div class="mod-2col-inner2">
+								<div class="mod-hC3" data-cms-editable="heading" data-cms-switchable="true" data-cms-switchable-label="小見出し" data-cms-switchable-use="true">
+									<h4 class="mod-h" contenteditable="true">小見出し</h4>
+								</div>
+								2column分割用のモジュール,メイン領域用
+								<br>まわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみあり//この部分は削除して使用する
+							</div>
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col4 ex-style_Aa0">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-2col4 -->
+					<div class="ex-style_01A1d">
+						<p class="module-name-m">mod-2col4 01A1d mb:0px;</p>
+						<div class="mod-2col4">
+							<div class="mod-2col-inner">
+								2column分割用のモジュール
+								<br>
+								メイン領域用
+								<br>
+								右カラム：幅250px,mr15px
+								<br>//この部分は削除して使用する
+							</div>
+							<div class="mod-2col-inner2">
+								<div class="mod-hC3" data-cms-editable="heading" data-cms-switchable="true" data-cms-switchable-label="小見出し" data-cms-switchable-use="true">
+									<h4 class="mod-h" contenteditable="true">小見出し</h4>
+								</div>
+								2column分割用のモジュール
+								<br>
+								メイン領域用
+								<br>
+								回り込みなし回り込みなし回り込みなし回り込みなし回り込みなし回り込みなし回り込みなし回り込みなし//この部分は削除して使用する
+							</div>
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col4 ex-style_Ad0">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-2col4 -->
+					<div class="ex-style_01A1c">
+						<p class="module-name-m">mod-2col4 01A1c mb:0px;</p>
+						<div class="mod-2col4">
+							<div class="mod-2col-inner">
+								2column分割用のモジュール
+								<br>
+								メイン領域用
+								<br>
+								右カラム：幅250px,mr15px
+								<br>//この部分は削除して使用する
+							</div>
+							<div class="mod-2col-inner2">
+								<div class="mod-hC3" data-cms-editable="heading" data-cms-switchable="true" data-cms-switchable-label="小見出し" data-cms-switchable-use="true">
+									<h4 class="mod-h" contenteditable="true">小見出し</h4>
+								</div>
+								2column分割用のモジュール、メイン領域用
+								<br>まわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみありまわりこみあり//この部分は削除して使用する
+							</div>
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col4 ex-style_Ac0">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-2col4 -->
+					<p class="module-name-m">mod-2col4 素 mb:25px;</p>
+					<div class="mod-2col4">
+						<div class="mod-2col-inner">
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							右カラム：幅250px,mr15px
+							<br>//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							<div class="mod-hC3" data-cms-editable="heading" data-cms-switchable="true" data-cms-switchable-label="小見出し" data-cms-switchable-use="true">
+								<h4 class="mod-h" contenteditable="true">小見出し</h4>
+							</div>
+							2column分割用のモジュール
+							<br>
+							メイン領域用
+							<br>
+							回り込みなし回り込みなし回り込みなし回り込みなし回り込みなし回り込みなし回り込みなし回り込みなし//この部分は削除して使用する
+						</div>
+					</div>
+					<pre class="brush:xml">
+					<div class="mod-2col4">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2"></div>
+					</div>
+					</pre>
+
+					<!-- ★mod-box20 -->
+					<p class="module-name-m">mod-box20 padding:25px 25px 0; border: 2px solid #7ed1d9</p>
+					<div class="mod-box20" style="height:100px;"></div>
+					<pre class="brush:xml">
+					<div class="mod-box20"></div>
+					</pre>
+
+
+
+
+				</div>
+
+			</div><!-- /div.area-main-inner -->
+		</div><!-- /div.area-main -->
+
+		<div class="area-side-left">
+			<div class="area-side-left-inner" data-cms-contents="master-sub[0]">
+
+				<!-- ★mod-box10 -->
+				<p class="module-name-s">mod-box10 mb:0; padding-top:5px;</p>
+				<div class="mod-box10">
+					<div class="mod-box-inner">
+						箱(box)型のモジュール
+						<br>
+						幅100％
+						<br>//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-box10">
+				<div class="mod-box-inner">
+				</div>
+				</div>
+				</pre>
+
+				<!-- ★mod-box11 -->
+				<p class="module-name-s">mod-box11 mb:15</p>
+				<div class="mod-box11">
+					<div class="mod-box-inner">
+						箱(box)型のモジュール
+						<br>
+						幅100％
+						<br>//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-box11"></div>
+				</pre>
+
+				<!-- ★mod-box12 -->
+				<p class="module-name-s">mod-box12 mb:0; padding-top:10px;</p>
+				<div class="mod-box12">
+					<div class="mod-box-inner">
+						箱(box)型のモジュール
+						<br>
+						幅100％
+						<br>//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-box12">
+				<div class="mod-box-inner">
+				</div>
+				</div>
+				</pre>
+
+				<!-- ★mod-2col15  -->
+				<p class="module-name-s">mod-2col15 mb:15</p>
+				<div class="mod-2col15">
+					<div class="mod-2col-inner">2col分割用、右側80PX　mb15</div>
+					<div class="mod-2col-inner2">メイン領域用 回り込みあり //この部分は削除して使用する</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-2col15">
+				<div class="mod-2col-inner"></div>
+				<div class="mod-2col-inner2"></div>
+				</div>
+				</pre>
+
+				<!-- ★mod-2col16  -->
+				<p class="module-name-s">mod-2col16 mb:10</p>
+				<div class="mod-2col16">
+					<div class="mod-2col-inner">2col分割用、右側80PX　mb10</div>
+					<div class="mod-2col-inner2">メイン領域用 回り込みあり //この部分は削除して使用する</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-2col16">
+				<div class="mod-2col-inner"></div>
+				<div class="mod-2col-inner2"></div>
+				</div>
+				</pre>
+
+					<p class="module-name-m">mod-2col32 </p>
+					<div style="width:173px;">
+					<div class="mod-2col32">
+						<div class="mod-2col-inner">
+							画像用エリア
+							<br>
+							左カラム：幅80px
+							<br>
+							//この部分は削除して使用する
+						</div>
+						<div class="mod-2col-inner2">
+							ああああ
+						</div>
+					</div>
+				    </div>
+					<pre class="brush:xml">
+					<div class="mod-2col32">
+					<div class="mod-2col-inner"></div>
+					<div class="mod-2col-inner2">
+					</div>
+					</div>
+					</pre>
+
+			</div><!-- //area-side-left-inner -->
+		</div><!-- //area-side-left -->
+
+	</div><!-- //area-container -->
+
+
+	<footer class="area-footer">
+		<div class="area-footer-inner">
+
+			<div class="mod-box2">
+
+				<!-- ★mod-box1 -->
+				<p class="module-name-h">mod-box2 mb:0;</p>
+				<div class="mod-box2">
+					ヘッダー・フッター領域用　幅980px margin-left,right:auto;（サイトの横位置中央に配置される）
+					<br>//この部分は削除して使用する
+				</div>
+				<p class="module-name-h">mod-box2 mb:0; ex-style_01B1a</p>
+				<div class="ex-style_01B1a">
+					<div class="mod-box2">
+					ヘッダー・フッター領域用　幅980px margin-left,right:auto;（サイトの横位置中央に配置される）
+					<br>//この部分は削除して使用する
+				</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-box2"></div>
+				</pre>
+
+				<!-- ★mod-box13 -->
+				<p class="module-name-s">mod-box13 mb:20;</p>
+				<div class="mod-box13">
+					箱(box)型のモジュール
+					<br>
+					幅100％
+					<br>//この部分は削除して使用する
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-box13">
+				</div>
+				</pre>
+
+				<!-- ★mod-2col -->
+				<p class="module-name-h">mod-2col mb:0;</p>
+				<div class="mod-2col">
+					<div class="mod-2col-inner">
+						2column分割用のモジュール
+						<br>
+						フッター 475px左右分割
+						<br>
+						左カラム
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-2col-inner2">
+						2column分割用のモジュール
+						<br>
+						フッター 475px左右分割
+						<br>
+						右カラム
+						<br>//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-2col">
+				<div class="mod-2col-inner"></div>
+				<div class="mod-2col-inner2"></div>
+				</div>
+				</pre>
+
+				<!-- ★mod-2col13 -->
+				<p class="module-name-h">mod-2col13 ヘッダーフッター自由記入欄用　mb:30;</p>
+				<div class="mod-2col13">
+					<div class="mod-2col-inner">
+						2column分割用のモジュール
+						<br>
+						フッター 475px左右分割
+						<br>
+						左カラム
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-2col-inner2">
+						2column分割用のモジュール
+						<br>
+						フッター 475px左右分割
+						<br>
+						右カラム
+						<br>//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-2col13">
+				<div class="mod-2col-inner"></div>
+				<div class="mod-2col-inner2"></div>
+				</div>
+				</pre>
+
+				<!-- ★mod-2col2 -->
+				<p class="module-name-h">mod-2col2 + mod-2col3 mb:0;</p>
+				<div class="mod-2col2">
+					<div class="mod-2col-inner">
+						<p class="module-name-h2">mod-2col3</p>
+						<div class="mod-2col3">
+							<div class="mod-2col-inner">
+								<p>左カラム　幅:120px</p>
+								<img src="http://cambelt.co/120x120" alt="120px" />
+							</div>
+							<div class="mod-2col-inner2">
+								2column分割用のモジュール
+								<br>
+								幅335px
+								<br>
+								右カラム
+								<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<pre class="brush:xml">
+						<div class="mod-2col3">
+						<div class="mod-2col-inner"></div>
+						<div class="mod-2col-inner2"></div>
+						</div>
+						</pre>
+
+						<p class="module-name-h2">mod-2col5 mb:30px;</p>
+						<div class="mod-2col5">
+							<div class="mod-2col-inner">
+								<p>左カラム　幅:120px</p>
+								<img src="http://cambelt.co/120x120" alt="120px" />
+							</div>
+							<div class="mod-2col-inner2">
+								2column分割用のモジュール
+								<br>
+								※table-cell使用
+								<br>
+								幅335px
+								<br>
+								右カラム
+								<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<pre class="brush:xml">
+						<div class="mod-2col5">
+						<div class="mod-2col-inner"></div>
+						<div class="mod-2col-inner2"></div>
+						</div>
+						</pre>
+					</div>
+					<div class="mod-2col-inner2">
+						2column分割用のモジュール
+						<br>
+						フッター 475px左右分割
+						<br>
+						右カラム
+						<br>//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-2col2">
+				<div class="mod-2col-inner"></div>
+				<div class="mod-2col-inner2"></div>
+				</div>
+				</pre>
+
+				<!-- ★mod-3col2 -->
+				<p class="module-name-h">mod-3col2 mb:0px;</p>
+				<div class="mod-3col2">
+					<div class="mod-3col-inner">
+						3column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						左カラム：幅300px(3等分)
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-3col-inner2">
+						3column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						真ん中カラム：幅300px(3等分)
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-3col-inner3">
+						3column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						右カラム：幅300px(3等分)
+						<br>
+						//この部分は削除して使用する
+
+						<p class="module-name-h2">mod-2col12 mb:30px;</p>
+						<div class="mod-2col12">
+							<div class="mod-2col-inner">
+								<p>左カラム　幅:70px</p>
+								<img src="http://cambelt.co/120x120" alt="120px" />
+							</div>
+							<div class="mod-2col-inner2">
+								2column分割用のモジュール
+								<br>
+								※table-cell使用
+								<br>
+								幅215px
+								<br>
+								右カラム
+								<br>//この部分は削除して使用する
+							</div>
+						</div>
+						<pre class="brush:xml">
+						<div class="mod-2col12">
+						<div class="mod-2col-inner"></div>
+						<div class="mod-2col-inner2"></div>
+						</div>
+						</pre>
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-3col2">
+				<div class="mod-3col-inner"></div>
+				<div class="mod-3col-inner2"></div>
+				<div class="mod-3col-inner3"></div>
+				</div>
+				</pre>
+
+
+				<!-- ★mod-4col2 -->
+				<p class="module-name-h">mod-4col2 mb:0px;</p>
+				<div class="mod-4col2">
+					<div class="mod-4col-inner">
+						4column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						左カラム：幅230px(3等分)
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-4col-inner2">
+						4column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						真ん中カラム：幅230px(3等分)
+						<br>//この部分は削除して使用する
+					</div>
+					<div class="mod-4col-inner3">
+						4column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						右カラム：幅230px(3等分)
+						<br>
+						//この部分は削除して使用する
+					</div>
+					<div class="mod-4col-inner4">
+						4column分割用のモジュール
+						<br>
+						メイン領域用
+						<br>
+						右カラム：幅230px(3等分)
+						<br>
+						//この部分は削除して使用する
+					</div>
+				</div>
+				<pre class="brush:xml">
+				<div class="mod-4col2">
+				<div class="mod-4col-inner">
+				</div>
+				<div class="mod-4col-inner2">
+				</div>
+				<div class="mod-4col-inner3">
+				</div>
+				<div class="mod-4col-inner4">
+				</div>
+				</div>
+				</pre>
+
+
+
+			</div>
+
+
+		</div><!-- /area-footer-inner -->
+	</footer><!-- /area-footer -->
+
+</div><!--//area-all-->
+
+</body>
+</html>

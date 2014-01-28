@@ -1,0 +1,45 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// mod-set-bnr の共通定義
+//
+// -----------------------------------
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-set-bnr-x3
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// ----------------------------
+// common-style
+// ----------------------------
+%common-style-mod-set-bnr-x3 {
+  margin: 30px 0 0 0;
+}
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-set-bnr-side
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// ----------------------------
+// common-style
+// ----------------------------
+//共通項なし
+
+// ----------------------------
+// module-style
+// ----------------------------
+
+// mod-set-bnr-side
+@mixin module-style-mod-set-bnr-side {
+  padding: 1px 0 0 0;
+  width: 100%;
+  &.ex-first-part {
+    > div > .ex-first-child > .ex-first-child {
+      margin-top: 0 !important;
+    }
+    > div > .ex-first-child a > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}

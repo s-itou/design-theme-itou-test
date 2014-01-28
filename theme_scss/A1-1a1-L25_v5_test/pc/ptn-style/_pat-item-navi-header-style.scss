@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-navi-header（通常デザイン）
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-navi-header の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-navi-header {
+
+}
+
+
+
+// -------------------------------------
+// pat-item-navi-header の共通デザイン
+// -------------------------------------
+
+@mixin module-style-pat-item-navi-header-kado-image {
+  max-height: 150px;
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+
+
+// -------------------------------------
+// pat-item-navi-header の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-navi-header-kado-image-yellow {
+  background-image: url("img/mod-gnav/new/bg.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-blue {
+  background-image: url("img/mod-gnav/new/bg_2.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-yellow-2 {
+  background-image: url("img/mod-gnav/new/bg_3.png");
+  background-color: #f9f3e2;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 1px solid #e9e7dd;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-gray {
+  background-image: url("img/mod-gnav/new/bg07.png");
+  background-color: #cecece;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-blue-2 {
+  background-image: url("img/mod-gnav/new/bg12.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #2058a4;
+  border-top: 1px solid #d6f0f4;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-blue-3 {
+  background-image: url("img/mod-gnav/new/bg12_2.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #43949e;
+  border-top: 1px solid #d6f0f4;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-orange {
+  background-image: url("img/mod-gnav/new/bg12_3.png");
+  background-color: #f9f3e2;
+  border-bottom: 1px solid #f7931d;
+  border-top: 1px solid #f89e35;
+}
+

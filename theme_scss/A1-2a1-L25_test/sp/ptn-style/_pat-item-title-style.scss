@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-title
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-title の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-title { }
+
+
+// -------------------------------------
+//  pat-item-title の共通デザイン
+// -------------------------------------
+
+@mixin module-style-pat-item-title-1 {
+  display: table;
+  .mod-title-inner-img {
+    margin-right: 5px;
+    width: 40px;
+  }
+  .mod-title-inner {
+    display: table-cell;
+    margin: 0;
+    vertical-align: top;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    margin: 0;
+    vertical-align: middle;
+  }
+  .mod-title-inner3 {
+    font-size: $fontSizeS + 1;
+  }
+  .mod-title-inner4 {
+    font-weight: bold;
+    font-size: $fontSizeL + 7;
+    line-height: 1.0;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .mod-title-inner5 {
+    margin-top: 5px;
+    font-size: $fontSizeS + 1;
+  }
+  p:first-child.mod-title-inner4 {
+    margin: 0;
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+  }
+  .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {
+    margin: 0;
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+  }
+}
+
+
+// -------------------------------------
+// pat-item-title の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-title-black-1 {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    &, a {
+      color: #222222;
+    }
+  }
+  .mod-title-inner5 {
+    color: #999999;
+  }
+}
+@mixin deco-style-pat-item-title-white-1 {
+  .mod-title-inner3 {
+    color: #ffffff;
+  }
+  .mod-title-inner4 {
+    &, a {
+      color: #ffffff;
+    }
+  }
+  .mod-title-inner5 {
+    color: #999999;
+  }
+}
+@mixin deco-style-pat-item-title-blue-1 {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    &, a {
+      color: #284469;
+    }
+  }
+  .mod-title-inner5 {
+    color: #999999;
+  }
+}
+@mixin deco-style-pat-item-title-blue-2 {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    &, a {
+      color: #0d7d8b;
+    }
+  }
+  .mod-title-inner5 {
+    color: #999999;
+  }
+}
+@mixin deco-style-pat-item-title-brown-1 {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    &, a {
+      color: #6a3d04;
+    }
+  }
+  .mod-title-inner5 {
+    color: #999999;
+  }
+}
+@mixin deco-style-pat-item-title-brown-2 {
+  .mod-title-inner3 {
+    color: #333333;
+  }
+  .mod-title-inner4 {
+    &, a {
+      color: #45310c;
+    }
+  }
+  .mod-title-inner5 {
+    color: #999999;
+  }
+}
+@mixin deco-style-pat-item-title-brown-2-2 {
+  .mod-title-inner3 {
+    color: #45310c;
+  }
+  .mod-title-inner4 {
+    &, a {
+      color: #45310c;
+    }
+  }
+  .mod-title-inner5 {
+    color: #999999;
+  }
+}

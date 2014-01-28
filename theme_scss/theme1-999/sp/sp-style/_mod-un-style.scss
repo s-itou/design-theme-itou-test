@@ -1,0 +1,389 @@
+@charset "UTF-8";
+
+//  mod-login の mixin一式
+@mixin mod-login-common-style {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 3px;
+  a {
+    color: #335a93;
+  }
+}
+
+//  mod-card の mixin一式
+@mixin mod-card-common-style {
+  @extend %cf;
+  width: 100%;
+  margin-top: 10px;
+  padding: 3px 3px;
+  > p {
+    width: 40px;
+    display: inline-block;
+  }
+}
+@mixin mod-card-style {
+  border: 3px double #c9e0ff;
+}
+@mixin mod-card-style2 {
+  border: 3px double #426ca6;
+}
+@mixin mod-card-style3 {
+  border: 3px double #519dce;
+}
+@mixin mod-card-style4 {
+  border: 3px double #f1d128;
+}
+@mixin mod-card-style5 {
+  border: 3px double #ff994c;
+}
+@mixin mod-card-style6 {
+  border: 1px dotted #c9e0ff;
+}
+@mixin mod-card-style7 {
+  border: 1px dotted #f2d028;
+}
+@mixin mod-card-style8 {
+  border: 1px dotted #ffa658;
+}
+
+//  mod-header-image の mixin一式
+@mixin mod-header-image-common-style {
+  @extend %cf;
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+//  mod-copy の mixin一式
+@mixin mod-copy-common-style {
+  width: 100%;
+  text-align: center;
+}
+@mixin mod-copy-style {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style2 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg_2.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style3 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #3d2612;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style4 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style5 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style6 {
+  margin-top: 5px;
+  background-image: url("img/mod-copy/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px 0;
+  .mod-copy-inner {
+    background-color: transparent;
+  }
+  p {
+    color: #2e7feb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style7 {
+  margin-top: 0px;
+  background-image: url("img/mod-copy/bg02_3.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #f27f1b;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style8 {
+  margin-top: 0px;
+  background-image: url("img/mod-copy/bg02_3.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #f27f1b;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style9 {
+  margin-top: 0px;
+  background-image: url("img/mod-copy/bg02_3.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 5px;
+  .mod-copy-inner {
+    padding: 10px;
+    background-color: #f27f1b;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+@mixin mod-copy-style10 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style11 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style12 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg04_3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #f59c1c;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style13 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style14 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style15 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style16 {
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style17 {
+  // //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+@mixin mod-copy-style18 {
+  //none
+  margin-top: 15px;
+  background-image: url("img/mod-copy/bg03.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding: 10px;
+  .mod-copy-inner {
+    padding: 0;
+    background-color: transparent;
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}

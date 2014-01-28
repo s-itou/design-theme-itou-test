@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+//　pat-item-copy
+//  : 文章を目立たせるデザインパターン
+//
+//    ・nami　　：　波の背景画像を置いたパターン
+//    ・grade　 ：　グラデーションの背景画像を置いたパターン
+//    ・repeat　：　単色の背景色をひいたパターン
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-copy-style.scss";
+
+// -------------------------------------
+//  pat-item-copy の個別設定
+// -------------------------------------
+
+// キャッチコピー背景波
+@mixin pat-item-copy-nami-1 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-nami;
+  @include deco-style-pat-item-copy-nami-1;
+}
+@mixin pat-item-copy-nami-2 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-nami;
+  @include deco-style-pat-item-copy-nami-2;
+}
+@mixin pat-item-copy-nami-3 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-nami;
+  @include deco-style-pat-item-copy-nami-3;
+}
+
+
+// キャッチコピー背景両端装飾
+@mixin pat-item-copy-sayu-image-1 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-sayu-image;
+  @include deco-style-pat-item-copy-sayu-image-1;
+}
+@mixin pat-item-copy-sayu-image-2 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-sayu-image;
+  @include deco-style-pat-item-copy-sayu-image-2;
+}
+@mixin pat-item-copy-sayu-image-3 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-sayu-image;
+  @include deco-style-pat-item-copy-sayu-image-3;
+}
+
+
+// キャッチコピー背景グラデーション
+@mixin pat-item-copy-grade-1 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-grade;
+  @include deco-style-pat-item-copy-grade-1;
+}
+@mixin pat-item-copy-grade-2 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-grade;
+  @include deco-style-pat-item-copy-grade-2;
+}
+@mixin pat-item-copy-grade-3 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-grade;
+  @include deco-style-pat-item-copy-grade-3;
+}
+@mixin pat-item-copy-grade-4 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-grade;
+  @include deco-style-pat-item-copy-grade-4;
+}
+@mixin pat-item-copy-grade-5 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-grade;
+  @include deco-style-pat-item-copy-grade-5;
+}
+@mixin pat-item-copy-grade-6 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-grade;
+  @include deco-style-pat-item-copy-grade-6;
+}
+
+
+// キャッチコピー背景繰り返し
+@mixin pat-item-copy-repeat-1 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-repeat;
+  @include deco-style-pat-item-copy-repeat-1;
+}
+@mixin pat-item-copy-repeat-2 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-repeat;
+  @include deco-style-pat-item-copy-repeat-2;
+}
+@mixin pat-item-copy-repeat-3 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-repeat;
+  @include deco-style-pat-item-copy-repeat-3;
+}
+
+
+// キャッチコピー画像太枠（内枠あり）
+@mixin pat-item-copy-futoimg-bgc-1 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-futoimg-bgc;
+  @include deco-style-pat-item-copy-futoimg-bgc-1;
+}
+@mixin pat-item-copy-futoimg-bgc-2 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-futoimg-bgc;
+  @include deco-style-pat-item-copy-futoimg-bgc-2;
+}
+@mixin pat-item-copy-futoimg-bgc-3 {
+  @include common-style-pat-item-copy;
+  @include module-style-pat-item-copy-futoimg-bgc;
+  @include deco-style-pat-item-copy-futoimg-bgc-3;
+}
+

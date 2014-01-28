@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import "../pc-style/mod-image-style";
+
+
+.mod-img {
+  @include common-style-mod-img;
+  @include module-style-mod-img;
+}
+.mod-img-map {
+  @include common-style-mod-img;
+  @include module-style-mod-img-map;
+}
+.mod-img-side {
+  @include common-style-mod-img;
+  @include module-style-mod-img-side;
+}
+.mod-img-map-side {
+  @include common-style-mod-img;
+  @include module-style-mod-img-map-side;
+}
+.mod-img-header {
+  @include common-style-mod-img;
+  @include module-style-mod-img-header;
+}
+.mod-img-site-header {
+  @include common-style-mod-img;
+  @include module-style-mod-img-site-header;
+}
+.mod-img-in1 {
+  @include common-style-mod-img-in1;
+  @include module-style-mod-img-in1;
+  .ex-style_01A1 & {@include deco-style01A1-mod-img-in1;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-img-in1;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-img-in1;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-img-in1;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-img-in1;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-img-in1;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-img-in1;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-img-in1;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-img-in1;}
+}
+.mod-img-sp-header {
+  @include common-style-mod-img-sp-header;
+  @include module-style-mod-img-sp-header;
+}
+
+
+.mod-header-image {
+  @extend .mod-img-sp-header;
+}
+// .mod-image8 {
+//   @extend .mod-image;
+// }
+// .mod-image9 {
+//   @extend .mod-image;
+// }
+// .mod-image4 {
+//   @extend .mod-img-side; //差分調整
+//   margin-top: 0;
+// }
+// .mod-image11 {
+//   @extend .mod-img-side; //差分調整
+// }
+// .mod-image3 {
+//   @extend .mod-img-side; //差分調整
+//   width: 115px;
+//   margin: 5px auto 0 !important;
+// }
+// .mod-image {
+//   @extend .mod-img;
+// }
+// .mod-image6 {
+//   @extend .mod-img-in1;
+// }
+// .mod-image7 {//差分
+//   @extend .mod-img;
+//   img {
+//     @if $layoutCode == "L25" {
+//       width: 60px;
+//     } @else if $layoutCode == "L30" {
+//       width: 54px;
+//     }
+//     border-style: none;
+//   }
+// }
+// .mod-image10 {
+//   @extend .mod-img-header;
+//   text-align: left;
+// }
+// .mod-image-spec {
+//   @extend .mod-img-site-header;
+// }
+// .mod-image-spec3 {
+//   @extend .mod-img; //差分調整
+//   margin-right: -30px !important;
+//   padding-right: 30px;
+//   background-position: right center;
+//   background-repeat: no-repeat;
+// }
+// .mod-image-spec4 {
+//   @extend .mod-img; //差分調整
+//   margin-right: -25px !important;
+//   padding-right: 25px;
+//   background-position: right center;
+//   background-repeat: no-repeat;
+// }
+// .mod-image-spec5 {
+//   @extend .mod-img; //差分調整
+//   margin-right: -22px !important;
+//   padding-right: 22px;
+//   background-position: right center;
+//   background-repeat: no-repeat;
+// }
+
+//spacの矢印画像に関する記述ついては省略します

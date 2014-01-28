@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@mixin mod-h_4_21-common-style {
+  display: table;
+  margin-top: 30px;
+  i {
+    display: table-cell;
+    background-position: left center;
+    background-repeat: no-repeat;
+    min-width: 67px;
+    height: 57px;
+  }
+  .mod-h_4-inner {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 30px;
+    > p {
+      font-size: $fontSizeS;
+      padding-left: 0;
+    }
+    > p[data-cms-switchable="true"] + .mod-h_4-inner3, > p + .mod-h_4-inner3 {//編集画面上,公開画面
+      .mod-h {
+        font-size: $fontSizeL;
+      }
+    }
+    > p[data-cms-switchable="false"] + .mod-h_4-inner3 {//編集画面上
+      .mod-h {
+        font-size: $fontSizeL + 6;
+      }
+    }
+  }
+  .mod-h {
+    font-size: $fontSizeL + 6;
+    font-weight: bold;
+    overflow: hidden;
+  }
+}
+
+@mixin mod-h_4_21-style {
+  .mod-h_4-inner {
+    > p {
+      color: #575757;
+    }
+  }
+  .mod-h {
+    color: #53251d;
+  }
+}
+@mixin mod-h_4_21-style2 {
+  .mod-h_4-inner {
+    > p {
+      color: #666666;
+    }
+    .mod-h {
+      color: #222222;
+    }
+  }
+}
+@mixin mod-h_4_21-style3 {
+  .mod-h_4-inner {
+    > p {
+      color: #707070;
+    }
+  }
+  .mod-h {
+    color: #010911;
+  }
+}
+@mixin mod-h_4_21-style4 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_21-style5 {
+  .mod-h_4-inner {
+    > p {
+      color: #260e0e;
+    }
+  }
+  .mod-h {
+    color: #260e0e;
+  }
+}
+@mixin mod-h_4_21-style6 {
+  .mod-h_4-inner {
+    > p {
+      color: #707070;
+    }
+  }
+  .mod-h {
+    color: #350b06;
+  }
+}
+

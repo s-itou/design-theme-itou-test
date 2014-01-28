@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+//  mod-3col の mixin一式
+@mixin mod-3col-common-style {
+  @extend %cf;
+  > .mod-3col-inner {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+  }
+  > .mod-3col-inner2 {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+  }
+    > .mod-3col-inner3 {
+    float: right;
+    width: 200px;
+  }
+}
+
+@mixin mod-3col-style {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+@mixin mod-3col-style2 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #fffdf2;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style3 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #f6f6f6;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style4 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #fff9ee;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style5 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #e6f8ff;
+    padding: 15px;
+  }
+}
+
+
+@mixin mod-3col-style6 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #FBF3C8;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style7 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 0 none transparent;
+    background-color: #ffefe5;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style8 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #c9e0ff;
+    background-color: transparent;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style9 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #f99317;
+    background-color: transparent;
+    padding: 15px;
+  }
+}
+
+@mixin mod-3col-style10 {
+  .mod-3col-inner, .mod-3col-inner2, .mod-3col-inner3 {
+    border: 1px solid #f2d028;
+    background-color: transparent;
+    padding: 15px;
+  }
+}
+
+
+//  mod-3col2 の mixin一式
+@mixin mod-3col2-common-style {
+  @extend %cf;
+  > .mod-3col-inner {
+    float: left;
+    width: 300px;
+    margin-right: 40px;
+  }
+  > .mod-3col-inner2 {
+    float: left;
+    width: 300px;
+    margin-right: 40px;
+  }
+  > .mod-3col-inner3 {
+    float: right;
+    width: 300px;
+  }
+}
+
+
+//  mod-3col3 の mixin一式
+@mixin mod-3col3-common-style {
+  @extend %cf;
+  > .mod-3col3-inner {
+    float: left;
+    width: 315px;
+    padding: 10px 10px 0 10px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-top: 3px solid #f77b18;
+    @include border-radius();
+    background-color: #fffdf5;
+    margin-right: 17px;
+  }
+  > .mod-3col3-inner2 {
+    float: left;
+    width: 315px;
+    padding: 10px 10px 0 10px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-top: 3px solid #f77b18;
+    @include border-radius();
+    background-color: #fffdf5;
+    margin-right: 18px;
+  }
+  > .mod-3col3-inner3 {
+    float: left;
+    width: 315px;
+    padding: 10px 10px 0 10px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-top: 3px solid #f77b18;
+    @include border-radius();
+    background-color: #fffdf5;
+  }
+}
+
+
+//  mod-3col4 の mixin一式
+@mixin mod-3col4-common-style {
+  @extend %cf;
+  > .mod-3col-inner {
+    float: left;
+    width: 145px;
+    margin-right: 15px;
+  }
+  > .mod-3col-inner2 {
+    float: left;
+    width: 145px;
+    margin-right: 15px;
+  }
+  > .mod-3col-inner3 {
+    float: right;
+    width: 145px;
+  }
+}
+
+
+
+
+//  mod-3col6 の mixin一式
+@mixin mod-3col6-common-style {
+  @extend %cf;
+  margin-bottom: 30px;
+  > .mod-3col-inner {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    @include border-radius();
+    > .mod-3col-inner2 {
+      padding: 15px;
+    }
+  }
+  > .mod-3col-inner3 {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    @include border-radius();
+    > .mod-3col-inner4 {
+      padding: 15px;
+    }
+  }
+  > .mod-3col-inner5 {
+    float: right;
+    width: 200px;
+    @include border-radius();
+    > .mod-3col-inner6 {
+      padding: 15px;
+    }
+  }
+}
+
+@mixin mod-3col6-style {
+  > .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: 1px solid #ade9ef;
+    padding: 10px;
+    background-color: #ecfdff;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: #ffffff;
+  }
+}
+
+
+@mixin mod-3col6-style2 {
+  > .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: 1px solid #60bff0;
+    padding: 10px;
+    background-color: #ebfdff;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-3col6-style3 {
+> .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: 1px solid #fd8e89;
+    padding: 10px;
+    background-color: #ffe0de;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-3col6-style4 {
+  > .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: 1px solid #abd2f6;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url(img/mod-box/bg04.png);
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: transparent;
+  }
+}
+
+@mixin mod-3col6-style5 {
+  > .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: 1px solid #f4d34f;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url(img/mod-box/bg04_2.png);
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: transparent;
+  }
+}
+
+@mixin mod-3col6-style6 {
+  > .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: 1px solid #ffa19b;
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: url(img/mod-box/bg04_3.png);
+    background-repeat: repeat-x;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: transparent;
+  }
+}
+
+@mixin mod-3col6-style7 {
+  > .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url(img/mod-box/bg08.png);
+    background-repeat: repeat;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-3col6-style8 {
+  > .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url(img/mod-box/bg08_2.png);
+    background-repeat: repeat;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: #ffffff;
+  }
+}
+
+@mixin mod-3col6-style9 {
+  > .mod-3col-inner, > .mod-3col-inner3, > .mod-3col-inner5 {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    background-image: url(img/mod-box/bg08_3.png);
+    background-repeat: repeat;
+  }
+  .mod-3col-inner2, .mod-3col-inner4, .mod-3col-inner6 {
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,3039 @@
+@charset "UTF-8";
+
+
+//  mod-box の mixin一式
+@mixin mod-box-common-style {
+  width: 100%;
+  background-position: center top;
+}
+
+@mixin mod-box-style {
+  background-image: url("./img/mod-box/bg.png");
+  background-repeat: no-repeat;
+}
+
+@mixin mod-box-style2 {
+  background-image: url("./img/mod-box/bg_2.png");
+  background-repeat: no-repeat;
+}
+
+@mixin mod-box-style3 {
+  background-image: url("./img/mod-box/bg_3.png");
+  background-repeat: no-repeat;
+}
+
+@mixin mod-box-style4 {
+  background-image: url("img/mod-box/bg09.png");
+  background-repeat: repeat-x;
+}
+
+@mixin mod-box-style5 {
+  background-image: url("img/mod-box/bg09_2.png");
+  background-repeat: repeat-x;
+}
+
+@mixin mod-box-style6 {
+  background-image: url("img/mod-box/bg09_3.png");
+  background-repeat: repeat-x;
+}
+
+@mixin mod-box-style7 {
+  background-image: url("img/mod-box/bg10.png");
+  background-repeat: repeat-x;
+}
+
+@mixin mod-box-style8 {
+  background-image: url("img/mod-box/bg10_2.png");
+  background-repeat: repeat-x;
+}
+
+@mixin mod-box-style9 {
+  background-image: url("img/mod-box/bg10_3.png");
+  background-repeat: repeat-x;
+}
+@mixin mod-box-style10 {
+  background-image: none;
+  background-repeat: no-repeat;
+}
+
+
+//  mod-box2 の mixin一式
+@mixin mod-box2-common-style {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 0 25px 0;
+  background-repeat: repeat-y;
+}
+
+@mixin mod-box2-style {
+  .area-footer & {
+    background-image: none;
+  }
+}
+
+@mixin mod-box2-style2 {
+  .area-footer & {
+    background-image: url("img/mod-box/bg13.png");
+  }
+}
+
+@mixin mod-box2-style3 {
+  .area-footer & {
+    background-image: url("img/mod-box/bg14.png");
+  }
+}
+
+
+//  mod-box3 の mixin一式
+@mixin mod-box3-common-style {
+  width: $mainWidth;
+  padding-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  &.ex-first-part > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+          > .ex-first-child {
+            margin-top: 0 !important;
+            > .ex-first-child {
+              margin-top: 0 !important;
+              > .ex-first-child {
+                margin-top: 0 !important;
+                > .ex-first-child {
+                  margin-top: 0 !important;
+                  > .ex-first-child {
+                    margin-top: 0 !important;
+                    > .ex-first-child {
+                      margin-top: 0 !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//  mod-box4 の mixin一式
+@mixin mod-box4-common-style {
+  width: 100%;
+  padding-top: 1px;
+  &.ex-first-part {
+  > .mod-box-inner2 {
+    > .ex-first-child {
+      > .ex-first-child {
+        > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//  mod-box6 の mixin一式
+@mixin mod-box6-common-style {
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+//  mod-box7 の mixin一式
+@mixin mod-box7-common-style {
+  width: 100%;
+  @include border-radius();
+  .mod-box-inner2 {
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+@mixin mod-box7-style {
+  padding: 10px;
+  border: 1px solid #ade9ef;
+  background-color: #ecfdff;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+    padding: 10px;
+  }
+}
+
+@mixin mod-box7-style2 {
+  padding: 10px;
+  border: 1px solid #ade9ef;
+  background-color: #e3f6f8;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+    padding: 10px;
+  }
+}
+
+@mixin mod-box7-style3 {
+  padding: 10px;
+  border: 1px solid #dedad1;
+  background-color: #fff0e4;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+    padding: 10px;
+  }
+}
+
+@mixin mod-box7-style4 {
+  padding: 10px;
+  border: 1px solid #abd2f6;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+    padding: 10px;
+  }
+}
+
+@mixin mod-box7-style5 {
+  padding: 10px;
+  border: 1px solid #F4D34F;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+    padding: 10px;
+  }
+}
+
+@mixin mod-box7-style6 {
+  padding: 10px;
+  border: 1px solid #FFA09A;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+    padding: 10px;
+  }
+}
+
+@mixin mod-box7-style7 {
+  padding: 3px;
+  border: 0 none transparent;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+    padding: 15px;
+  }
+}
+
+
+//  mod-box8 の mixin一式
+@mixin mod-box8-common-style {
+  margin-top: 30px;
+  width: 100%;
+  @include border-radius();
+  .mod-box-inner2 {
+  > .ex-first-child {
+    > .ex-first-child {
+      > .ex-first-child {
+          margin-top: 0 !important;
+          > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-box8-style {
+  border: 1px solid #ade9ef;
+  background-color: #ecfdff;
+  background-image: none;
+  background-repeat: repeat;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+@mixin mod-box8-style2 {
+  border: 1px solid #ade9ef;
+  background-color: #e3f6f8;
+  background-image: none;
+  background-repeat: repeat;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+@mixin mod-box8-style3 {
+  border: 1px solid #dedad1;
+  background-color: #fff0e4;
+  background-image: none;
+  background-repeat: repeat;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+@mixin mod-box8-style4 {
+  border: 1px solid #abd2f6;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+
+@mixin mod-box8-style5 {
+  border: 1px solid #F4D34F;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+
+@mixin mod-box8-style6 {
+  border: 1px solid #FFA09A;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 20px 10px;
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+
+@mixin mod-box8-style7 {
+  border: 0 none transparent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08.png");
+  background-repeat: repeat;
+  padding: 3px;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius();
+  }
+}
+
+@mixin mod-box8-style8 {
+  border: 0 none transparent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_2.png");
+  background-repeat: repeat;
+  padding: 3px;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius();
+  }
+}
+
+@mixin mod-box8-style9 {
+  border: 0 none transparent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_3.png");
+  background-repeat: repeat;
+  padding: 3px;
+  > .mod-box-inner{
+    padding: 15px;
+    background-color: #ffffff;
+    @include border-radius();
+  }
+}
+
+
+//  mod-box12 の mixin一式
+@mixin mod-box12-common-style {
+  width: 100%;
+  padding: 10px;
+  > .mod-box-inner{
+    padding: 10px 10px 1px;
+    background-color: #ffffff;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box12-style {
+  border: 1px solid #dedad1;
+  background-color: #fffce9;
+}
+
+@mixin mod-box12-style2 {
+  border: 1px solid #cbd8d9;
+  background-color: #f6f6f6;
+}
+
+@mixin mod-box12-style3 {
+  border: 1px solid #dedad1;
+  background-color: #fffef4;
+}
+
+//  mod-box13 の mixin一式
+@mixin mod-box13-common-style {
+  width: 100%;
+  margin-top: 10px;
+  > div {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+
+//  mod-box14 の mixin一式
+@mixin mod-box14-common-style {
+  width: 100%;
+  padding: 3px 5px;
+}
+
+@mixin mod-box14-style {
+  background-color: #2e7fec;
+}
+
+@mixin mod-box14-style2 {
+  background-color: #69ced8;
+}
+
+@mixin mod-box14-style3 {
+  background-color: #f37f1c;
+}
+
+
+
+//  mod-box16 の mixin一式
+@mixin mod-box16-common-style {
+  width: 112px;
+  height: 47px;
+  background-repeat: no-repeat;
+}
+
+@mixin mod-box16-style {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg02.png");
+}
+
+@mixin mod-box16-style2 {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg02_2.png");
+}
+
+@mixin mod-box16-style3 {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg02_3.png");
+}
+
+@mixin mod-box16-style4 {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg05.png");
+}
+
+@mixin mod-box16-style5 {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg05_2.png");
+}
+
+@mixin mod-box16-style6 {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg05_3.png");
+}
+
+@mixin mod-box16-style7 {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg06.png");
+}
+
+@mixin mod-box16-style8 {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg06_2.png");
+}
+
+@mixin mod-box16-style9 {
+  margin: 25px auto 0;
+  background-image: url("img/mod-box/bg06_3.png");
+}
+
+
+
+//  mod-box17 の mixin一式
+@mixin mod-box17-common-style {
+  margin-top: 30px;
+  width: 100%;
+  @include border-radius();
+  > .mod-box-inner {
+    padding: 15px;
+  }
+}
+
+@mixin mod-box17-style {
+  padding: 10px;
+  border: 1px solid #ade9ef;
+  background-color: #ecfdff;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+@mixin mod-box17-style2 {
+  padding: 10px;
+  border: 1px solid #60bff0;
+  background-color: #ebfdff;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+@mixin mod-box17-style3 {
+  padding: 10px;
+  border: 1px solid #fd8e89;
+  background-color: #ffe0de;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+@mixin mod-box17-style4 {
+  padding: 10px;
+  border: 1px solid #abd2f6;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+
+@mixin mod-box17-style5 {
+  padding: 10px;
+  border: 1px solid #f4d34f;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+
+@mixin mod-box17-style6 {
+  padding: 10px;
+  border: 1px solid #ffa19b;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+
+@mixin mod-box17-style7 {
+  padding: 3px;
+  border: 0 none transprent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08.png");
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+@mixin mod-box17-style8 {
+  padding: 3px;
+  border: 0 none transprent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_2.png");
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+@mixin mod-box17-style9 {
+  padding: 3px;
+  border: 0 none transprent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_3.png");
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+
+//  mod-box19 の mixin一式
+@mixin mod-box19-common-style {
+  width: 100%;
+  padding: 15px;
+  @include border-radius();
+}
+
+@mixin mod-box19-style {
+  border: 1px solid #f2e9aa;
+  background-color: #fffce9;
+  background-repeat: repeat;
+  background-image: none;
+}
+
+@mixin mod-box19-style2 {
+  border: 1px solid #1891a1;
+  background-color: #f8feff;
+  background-repeat: repeat;
+  background-image: none;
+}
+
+@mixin mod-box19-style3 {
+  border: 1px solid #fdd200;
+  background-color: #fffced;
+  background-repeat: repeat;
+  background-image: none;
+}
+
+@mixin mod-box19-style4 {
+  border: 1px solid #abd2f6;
+  background-color: #ffffff;
+  background-repeat: repeat-x;
+  background-image: url("img/mod-box/bg04.png");
+}
+
+@mixin mod-box19-style5 {
+  border: 1px solid #F4D34F;
+  background-color: #ffffff;
+  background-repeat: repeat-x;
+  background-image: url("img/mod-box/bg04_2.png");
+}
+
+@mixin mod-box19-style6 {
+  border: 1px solid #FFA09A;
+  background-color: #ffffff;
+  background-repeat: repeat-x;
+  background-image: url("img/mod-box/bg04_3.png");
+}
+
+@mixin mod-box19-style7 {
+  border: 1px solid #d1c9a4;
+  background-color: #fffce9;
+  background-repeat: repeat;
+  background-image: none;
+}
+
+
+//  mod-box20 の mixin一式
+@mixin mod-box20-common-style {
+  margin-top: 30px;
+  width: 100%;
+  @include border-radius();
+  > .ex-first-child {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+
+@mixin mod-box20-style {
+  padding: 25px 25px 0;
+  border: 2px solid #7ed1d9;
+}
+
+@mixin mod-box20-style2 {
+  padding: 25px 25px 0;
+  border: 2px solid #b29e3b;
+}
+
+@mixin mod-box20-style3 {
+  padding: 25px 25px 0;
+  border: 2px solid #f6cd77;
+}
+
+@mixin mod-box20-style4 {
+  padding: 25px 25px 0;
+  border: 2px solid #355591;
+}
+
+@mixin mod-box20-style5 {
+  padding: 25px 25px 0;
+  border: 2px solid #448DC9;
+}
+
+@mixin mod-box20-style6 {
+padding: 0 25px 0;
+  border: 0 none transparent;
+}
+
+//  mod-box22 の mixin一式
+@mixin mod-box22-common-style {
+  width: 100%;
+  padding-top: 1px;
+}
+
+
+//  mod-box23 の mixin一式
+@mixin mod-box23-common-style {
+  width: 100%;
+}
+
+@mixin mod-box23-style {
+  background-image: none;
+  background-repeat: repeat;
+  background-color: transparent;
+}
+
+@mixin mod-box23-style2 {
+  background-image: url("img/mod-box/bg07.png");
+  background-repeat: repeat-x;
+  background-color: #426ca6;
+}
+
+@mixin mod-box23-style3 {
+  background-image: url("img/mod-box/bg07_2.png");
+  background-repeat: repeat-x;
+  background-color: #3fadba;
+}
+
+@mixin mod-box23-style4 {
+  background-image: url("img/mod-box/bg07_3.png");
+  background-repeat: repeat-x;
+  background-color: #fef691;
+}
+
+
+//  mod-box24 の mixin一式
+@mixin mod-box24-common-style {
+  width: 100%;
+  padding-top: 1px;
+}
+
+@mixin mod-box24-style {
+  background-image: none;
+  background-repeat: repeat;
+}
+
+@mixin mod-box24-style2 {
+  background-image: url(img/mod-box/bg09.png);
+  background-repeat: repeat-x;
+}
+
+@mixin mod-box24-style3 {
+  background-image: url(img/mod-box/bg09_2.png);
+  background-repeat: repeat-x;
+}
+
+@mixin mod-box24-style4 {
+  background-image: url(img/mod-box/bg09_3.png);
+  background-repeat: repeat-x;
+}
+
+
+//  mod-box25 の mixin一式
+@mixin mod-box25-common-style {
+  width: 980px;
+  padding-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//  mod-box26 の mixin一式
+@mixin mod-box26-common-style {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//  mod-box27 の mixin一式
+@mixin mod-box27-common-style {
+  width: 100%;
+  padding: 5px 10px;
+  @include border-radius();
+  text-align: center;
+}
+@mixin mod-box27-style {
+  border: 1px solid #d0d6dc;
+  background-color: #fdfaeb;
+}
+
+
+//  mod-box28 の mixin一式
+@mixin mod-box28-common-style {
+  width: 100%;
+  @include border-radius();
+  .mod-box-inner {
+   @include border-radius();
+   text-align: center;
+  }
+}
+
+@mixin mod-box28-style {
+  border: 1px solid #ff8809;
+  .mod-box-inner {
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    background-image: url(img/mod-box/bg15.png);
+    background-repeat: repeat-x;
+    background-color: #ffb260;
+  }
+}
+
+//  mod-box29 の mixin一式
+@mixin mod-box29-common-style {
+  width: 100%;
+  padding: 3px 5px;
+  min-height: 20px;
+}
+@mixin mod-box29-style {
+  background-color: #2e7fec;
+}
+@mixin mod-box29-style2 {
+  background-color: #69ced8;
+}
+@mixin mod-box29-style3 {
+  background-color: #f27f1b;
+}
+@mixin mod-box29-style4 {
+  background-color: #2e7fec;
+}
+@mixin mod-box29-style5 {
+  background-color: #69ced8;
+}
+@mixin mod-box29-style6 {
+  background-color: #f27f1b;
+}
+@mixin mod-box29-style7 {
+  background-color: #2e7fec;
+}
+@mixin mod-box29-style8 {
+  background-color: #69ced8;
+}
+@mixin mod-box29-style9 {
+  background-color: #f27f1b;
+}
+
+@mixin mod-box30-common-style { };
+
+
+@mixin mod-box31-common-style {
+  //ex-first-child対応のため例外記述
+  .step1 & {
+    .ex-style_p2A1 &,
+    .ex-style_p2A2 &,
+    .ex-style_p2A3 &,
+    .ex-style_p2B1 &,
+    .ex-style_p2B2 &,
+    .ex-style_p2B3 &,
+    .ex-style_p2C1 &,
+    .ex-style_p2C2 &,
+    .ex-style_p2C3 & {
+      .mod-box-inner2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box32-common-style {
+  margin-top: 20px
+}
+
+@mixin mod-box33-common-style {
+  width: 100%;
+  padding-top: 1px
+}
+
+@mixin mod-box34-common-style {
+  width: 100%;
+  padding-top: 1px
+}
+
+@mixin mod-box35-common-style {
+  width: 100%;
+  padding-top: 1px
+}
+
+@mixin mod-box36-common-style { };
+
+//  mod-box37 の mixin一式
+@mixin mod-box37-common-style {
+}
+
+@mixin mod-box37-style {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 0 none transparent;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        //例外として　margin-topの記述を行わない
+        > .ex-first-child {
+          //例外として　margin-topの記述を行わない
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style2 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: -15px;
+  padding: 15px;
+  background-color: #fffdf2;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 0 none transparent;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style3 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: -15px;
+  padding: 15px;
+  background-color: #f6f6f6;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 0 none transparent;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style4 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: -15px;
+  padding: 15px;
+  background-color: #fff9ee;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 0 none transparent;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style5 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 15px;
+  background-color: #e6f8ff;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 0 none transparent;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style6 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 15px;
+  background-color: #FBF3C8;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 0 none transparent;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style7 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 15px;
+  background-color: #ffefe5;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 0 none transparent;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style8 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 15px;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #c9e0ff;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style9 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 15px;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #f99317;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box37-style10 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 15px;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #f2d028;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: left top;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-box38-common-style { };
+@mixin mod-box39-common-style { };
+@mixin mod-box40-common-style { };
+@mixin mod-box41-common-style { };
+@mixin mod-box42-common-style { };
+@mixin mod-box43-common-style { };
+
+
+//  mod-box44 の mixin一式
+@mixin mod-box44-common-style {
+}
+
+@mixin mod-box44-style {
+  margin-left: 67px;
+}
+
+@mixin mod-box44-style2 {
+  margin-left: 60px;
+}
+
+
+//  mod-box45 の mixin一式
+@mixin mod-box45-common-style {}
+
+@mixin mod-box46-common-style {
+ padding: 25px 0;
+}
+@mixin mod-box46-style {
+  background-image: none;
+  background-repeat: repeat;
+  background-color: transparent;
+}
+@mixin mod-box46-style2 {
+  //noen
+  background-image: url("img/mod-box/bg11_3.png");
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+@mixin mod-box46-style3 {
+  background-image: none;
+  background-repeat: repeat;
+  background-color: #fffceb;
+}
+@mixin mod-box46-style4 {
+  //noen
+  background-image: url("img/mod-box/bg11_3.png");
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+@mixin mod-box46-style5 {
+  //none
+  background-image: url("img/mod-box/bg11.png");
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+@mixin mod-box46-style6 {
+  //noen
+  background-image: url("img/mod-box/bg11_2.png");
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+@mixin mod-box46-style7 {
+  background-image: url("img/mod-box/bg11.png");
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+@mixin mod-box46-style8 {
+  //none
+  background-image: url("img/mod-box/bg11_3.png");
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+@mixin mod-box46-style9 {
+  background-image: url("img/mod-box/bg11_3.png");
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+
+@mixin mod-box47-common-style {
+  width: $baseWidth;
+  margin: 0 auto;
+}
+
+//  mod-box48 の mixin一式
+@mixin mod-box48-common-style {
+  margin-top: 20px;
+  padding: 15px;
+}
+@mixin mod-box48-style {
+  border-left: none;
+  background-color: #ffffff;
+  @include border-radius(0);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0;
+  @include border-radius(0);
+  .mod-box-inner {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-box-inner2 {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-box48-style2 {
+  //none
+  border-left: none;
+  background-color: #ffffff;
+  @include border-radius(0);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0;
+  @include border-radius(0);
+  .mod-box-inner {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-box-inner2 {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-box48-style3 {
+  //none
+  border-left: none;
+  background-color: #ffffff;
+  @include border-radius(0);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0;
+  @include border-radius(0);
+  .mod-box-inner {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-box-inner2 {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-box48-style4 {
+  //none
+  border-left: none;
+  background-color: #ffffff;
+  @include border-radius(0);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0;
+  @include border-radius(0);
+  .mod-box-inner {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-box-inner2 {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-box48-style5 {
+  //none
+  border-left: none;
+  background-color: #ffffff;
+  @include border-radius(0);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0;
+  @include border-radius(0);
+  .mod-box-inner {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-box-inner2 {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-box48-style6 {
+  //none
+  border-left: none;
+  background-color: #ffffff;
+  @include border-radius(0);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0;
+  @include border-radius(0);
+  .mod-box-inner {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-box-inner2 {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-box48-style7 {
+  border-left: 1px solid #f7eadb;
+  background-color: transparent;
+  @include border-radius(0);
+  background-image: url("img/mod-box/28/bg02.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 0 0 33px;
+  > .mod-box-inner {
+    border-top: 1px solid #f7eadb;
+    border-right: 1px solid #f7eadb;
+    background-color: #ffffff;
+    background-image: url("img/mod-box/28/bg.png");
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    > .mod-box-inner2 {
+      padding: 15px 15px 0;
+      background-image: url("img/mod-box/28/bg.png");
+      background-repeat: no-repeat;
+      background-position: right 2px;
+    }
+  }
+}
+@mixin mod-box48-style8 {
+  //none
+  border-left: none;
+  background-color: #ffffff;
+  @include border-radius(0);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0;
+  @include border-radius(0);
+  .mod-box-inner {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .mod-box-inner2 {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-box48-style9 {
+  border-left: 1px solid #f7eadb;
+  background-color: transparent;
+  @include border-radius(0);
+  background-image: url("img/mod-box/28/bg02_3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 0 0 33px;
+  > .mod-box-inner {
+    border-top: 1px solid #f7eadb;
+    border-right: 1px solid #f7eadb;
+    background-color: #ffffff;
+    background-image: url("img/mod-box/28/bg_3.png");
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    > .mod-box-inner2 {
+      padding: 10px 0 0;
+      background-image: url("img/mod-box/28/bg_3.png");
+      background-repeat: no-repeat;
+      background-position: right 2px;
+    }
+  }
+}
+
+//  mod-box49 の mixin一式
+@mixin mod-box49-common-style {
+  padding-top: 1px;
+  width: 100%;
+  &.ex-first-part {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+    > div > div > div > .ex-first-child > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+//  mod-box50 の mixin一式
+@mixin mod-box50-common-style {
+  padding-top: 1px;
+  width: 100%;
+  &.ex-first-part {
+    > div > .ex-first-child > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+//  mod-box51 の mixin一式
+@mixin mod-box51-common-style {}
+
+//下記、t5A1~t5C2お問い合せボックス t5C3のみstyle14
+//  mod-box52 の mixin一式
+@mixin mod-box52-common-style {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1px;
+  @include border-radius();
+  > .mod-box-inner {
+    background-position: left top;
+    > .mod-box-inner2 {
+          > .ex-first-child {
+          margin-top: 0 !important;
+          > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-box52-style {
+  //none
+  background-color: #ec8104;
+  background-image: url("img/mod-box/bg19_3.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  border: none;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box52-style2 {
+  //none
+  background-color: #ec8104;
+  background-image: url("img/mod-box/bg19_3.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  border: none;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box52-style3 {
+  background-color: transparent;
+  border: 2px solid #ffc789;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  > .mod-box-inner {
+    background-color: #f28220;
+    background-image: url("img/mod-box/bg30_3.png");
+    background-repeat: repeat-x;
+    > .mod-box-inner2 {
+      padding: 0;
+    }
+  }
+}
+@mixin mod-box52-style4 {
+  //none
+  background-color: #ec8104;
+  border: none;
+  background-image: url("img/mod-box/bg19_3.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box52-style5 {
+  //none
+  background-color: #ec8104;
+  border: none;
+  background-image: url("img/mod-box/bg19_3.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box52-style6 {
+  //none
+  background-color: #ec8104;
+  border: none;
+  background-image: url("img/mod-box/bg19_3.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box52-style7 {
+  //none
+  background-color: #ec8104;
+  border: none;
+  background-image: url("img/mod-box/bg19_3.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box52-style8 {
+  //none
+  background-color: #ec8104;
+  border: none;
+  background-image: url("img/mod-box/bg19_3.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+
+@mixin mod-box52-style9 {
+  background-color: #ec8104;
+  background-image: url("img/mod-box/bg19_3.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  border: none;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    background-position: left top;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+
+
+//  mod-box53 の mixin一式
+@mixin mod-box53-common-style {
+  padding: 15px 20px 15px;
+  > .mod-box-inner {
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+@mixin mod-box53-style {
+  //none
+  @include border-radius();
+  width: auto;
+  text-align: left;
+  background-color: #fdf6e4;
+}
+@mixin mod-box53-style2 {
+  //none
+  @include border-radius();
+  width: auto;
+  text-align: left;
+  background-color: #fdf6e4;
+}
+@mixin mod-box53-style3 {
+  @include border-radius(0);
+  width: auto;
+  text-align: left;
+  background-color: #ffffff;
+}
+@mixin mod-box53-style4 {
+  //none
+  @include border-radius();
+  width: auto;
+  text-align: left;
+  background-color: #fdf6e4;
+}
+@mixin mod-box53-style5 {
+  //none
+  @include border-radius();
+  width: auto;
+  text-align: left;
+  background-color: #fdf6e4;
+}
+@mixin mod-box53-style6 {
+  //none
+  @include border-radius();
+  width: auto;
+  text-align: left;
+  background-color: #fdf6e4;
+}
+@mixin mod-box53-style7 {
+  //none
+  @include border-radius();
+  width: auto;
+  text-align: left;
+  background-color: #fdf6e4;
+}
+@mixin mod-box53-style8 {
+  //none
+  @include border-radius();
+  width: auto;
+  text-align: left;
+  background-color: #fdf6e4;
+}
+
+@mixin mod-box53-style9 {
+  @include border-radius();
+  width: auto;
+  text-align: left;
+  background-color: #fdf6e4;
+}
+
+
+
+//  mod-box54 の mixin一式
+@mixin mod-box54-common-style {
+  width: 112px;
+  height: 47px;
+  background-repeat: no-repeat;
+}
+
+@mixin mod-box54-style {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg17.png");
+  background-position: center top;
+}
+@mixin mod-box54-style2 {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg17.png");
+  background-position: center top;
+}
+@mixin mod-box54-style3 {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg17_3.png");
+  background-position: center top;
+}
+@mixin mod-box54-style4 {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg17.png");
+  background-position: center top;
+}
+@mixin mod-box54-style5 {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg17.png");
+  background-position: center top;
+}
+@mixin mod-box54-style6 {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg17.png");
+  background-position: center top;
+}
+@mixin mod-box54-style7 {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg22_3.png");
+  background-position: center top;
+}
+@mixin mod-box54-style8 {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg22_3.png");
+  background-position: center top;
+}
+@mixin mod-box54-style9 {
+  margin: 15px auto 0;
+  background-image: url("img/mod-box/bg22_3.png");
+  background-position: center top;
+}
+
+
+
+
+
+
+//  mod-box55 の mixin一式
+@mixin mod-box55-common-style {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+@mixin mod-box55-style {
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fff5ec;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #ffc789;
+}
+
+
+@mixin mod-box55-style2 {
+  width: $mainWidth - 20;
+  //none
+  padding: 15px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box55-style3 {
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fffbe2;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #ffc789;
+}
+@mixin mod-box55-style4 {
+  //none
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box55-style5 {
+  //none
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box55-style6 {
+  //none
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box55-style7 {
+  width: 100%;
+  padding: 15px 20px 20px;
+  background-color: #f7eadb;
+  background-image: url("img/mod-box/bg23.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box55-style8 {
+  //none
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+
+@mixin mod-box55-style9 {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+
+
+//  mod-box56 の mixin一式
+@mixin mod-box56-common-style {
+  width: 100%;
+  margin-top: 30px;
+  padding: 3px;
+  margin-left: 0;
+  margin-right: 0;
+  background-repeat: repeat;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      background-color: #ffffff;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+          > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box56-style {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 7px;
+    }
+  }
+}
+@mixin mod-box56-style2 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 7px;
+    }
+  }
+}
+@mixin mod-box56-style3 {
+  background-color: #fff6e5;
+  border: 1px solid #dedad1;
+  background-image: none;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 5px;
+    }
+  }
+}
+@mixin mod-box56-style4 {
+  //none
+
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 7px;
+    }
+  }
+}
+@mixin mod-box56-style5 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 7px;
+    }
+  }
+}
+@mixin mod-box56-style6 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 7px;
+    }
+  }
+}
+@mixin mod-box56-style7 {
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 7px;
+    }
+  }
+}
+@mixin mod-box56-style8 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 7px;
+    }
+  }
+}
+
+@mixin mod-box56-style9 {
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px 7px;
+    }
+  }
+}
+
+
+//  mod-box57 の mixin一式
+@mixin mod-box57-common-style {
+  width: 100%;
+  margin-top: 30px;
+  padding: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  background-repeat: repeat;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      background-color: #ffffff;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin mod-box57-style {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+@mixin mod-box57-style2 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+@mixin mod-box57-style3 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+@mixin mod-box57-style4 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+@mixin mod-box57-style5 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+@mixin mod-box57-style6 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+@mixin mod-box57-style7 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+@mixin mod-box57-style8 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+@mixin mod-box57-style9 {
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/bg08_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+}
+
+
+
+
+//  mod-box59 の mixin一式
+@mixin mod-box59-common-style {
+  width: 100%;
+  margin-top: 30px ;
+  padding: 30px 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+//  mod-box58 の mixin一式
+@mixin mod-box58-common-style {
+  margin-left: 67px;
+}
+
+
+@mixin mod-box59-style {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/25/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 66px;
+    background-color: transparent;
+    background-image: url("img/mod-box/25/bg02.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/25/bg03.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+@mixin mod-box59-style2 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/25/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 66px;
+    background-color: transparent;
+    background-image: url("img/mod-box/25/bg02.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/25/bg03.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+@mixin mod-box59-style3 {
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/26/bg_3.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 99px;
+    background-color: transparent;
+    background-image: url("img/mod-box/26/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/26/bg03_3.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+@mixin mod-box59-style4 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/25/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 66px;
+    background-color: transparent;
+    background-image: url("img/mod-box/25/bg02.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/25/bg03.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+@mixin mod-box59-style5 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/25/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 66px;
+    background-color: transparent;
+    background-image: url("img/mod-box/25/bg02.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/25/bg03.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+@mixin mod-box59-style6 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/25/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 66px;
+    background-color: transparent;
+    background-image: url("img/mod-box/25/bg02.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/25/bg03.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+@mixin mod-box59-style7 {
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/25/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 66px;
+    background-color: transparent;
+    background-image: url("img/mod-box/25/bg02.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/25/bg03.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+@mixin mod-box59-style8 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/25/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 66px;
+    background-color: transparent;
+    background-image: url("img/mod-box/25/bg02.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/25/bg03.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+@mixin mod-box59-style9 {
+  //none
+  background-color: transparent;
+  border: none;
+  background-image: url("img/mod-box/25/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @include border-radius(0);
+  > .mod-box-inner {
+    padding: 0 0 66px;
+    background-color: transparent;
+    background-image: url("img/mod-box/25/bg02.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    > .mod-box-inner2 {
+      padding: 0 15px 0;
+      background-color: transparent;
+      background-image: url("img/mod-box/25/bg03.png");
+      background-repeat: repeat-y;
+      background-position: left top;
+    }
+  }
+}
+
+
+
+//  mod-box60 の mixin一式
+@mixin mod-box60-common-style {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+@mixin mod-box60-style {
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fff5ec;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #ffc789;
+}
+
+
+@mixin mod-box60-style2 {
+  width: $mainWidth - 20;
+  //none
+  padding: 15px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box60-style3 {
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fffbe2;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #ffc789;
+}
+@mixin mod-box60-style4 {
+  //none
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box60-style5 {
+  //none
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box60-style6 {
+  //none
+  width: $mainWidth - 20;
+  padding: 15px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box60-style7 {
+  width: 100%;
+  padding: 15px 20px 20px;
+  background-color: #f7eadb;
+  background-image: url("img/mod-box/bg23.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+@mixin mod-box60-style8 {
+  //none
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+
+@mixin mod-box60-style9 {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fcf7d5;
+  background-image: url("img/mod-box/bg23_3.png");
+  background-repeat: repeat;
+  background-position: left top;
+  border: 1px solid #efde8e;
+}
+
+
+
+//  mod-box61 の mixin一式
+@mixin mod-box61-common-style {
+  margin-left: 67px;
+}
+
+
+
+
+//  mod-box62 の mixin一式
+@mixin mod-box62-common-style {
+  margin-top: 30px ;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin mod-box62-style {
+  //none
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box62-style2 {
+  //none
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box62-style3 {
+  //none
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box62-style4 {
+  //none
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box62-style5 {
+  //none
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box62-style6 {
+  //none
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box62-style7 {
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box62-style8 {
+  //none
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+@mixin mod-box62-style9 {
+  //none
+  background-color: #508de8;
+  border: none;
+  background-image: url("img/mod-box/bg19.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  @include border-radius();
+  > .mod-box-inner {
+    background-color: transparent;
+    background-image: url("img/mod-box/bg20.png");
+    background-repeat: repeat;
+    > .mod-box-inner2 {
+      padding: 5px;
+    }
+  }
+}
+
+
+//  mod-box63 の mixin一式
+@mixin mod-box63-common-style {
+  padding: 15px 20px 15px;
+  > .mod-box-inner {
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+
+
+@mixin mod-box63-style {
+  //none
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+@mixin mod-box63-style2 {
+  //none
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+@mixin mod-box63-style3 {
+  //none
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+@mixin mod-box63-style4 {
+  //none
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+@mixin mod-box63-style5 {
+  //none
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+@mixin mod-box63-style6 {
+ //none
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+@mixin mod-box63-style7 {
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+@mixin mod-box63-style8 {
+  //none
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+@mixin mod-box63-style9 {
+  //none
+  @include border-radius();
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+//  mod-box64 の mixin一式
+@mixin mod-box64-common-style {
+  margin-left: 67px;
+}
+
+
+//  mod-box65 の mixin一式
+@mixin mod-box65-common-style {
+  margin-top: 30px ;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin mod-box65-style {
+  //none
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}
+@mixin mod-box65-style2 {
+  //none
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}
+@mixin mod-box65-style3 {
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}
+@mixin mod-box65-style4 {
+  //none
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}
+@mixin mod-box65-style5 {
+  //none
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}
+@mixin mod-box65-style6 {
+  //none
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}
+@mixin mod-box65-style7 {
+  //none
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}
+@mixin mod-box65-style8 {
+  //none
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}
+@mixin mod-box65-style9 {
+  //none
+  background-color: transparent;
+  background-image: url("img/mod-box/29/bg_3.png");
+  background-repeat: repeat-y;
+  background-position: 5px top;
+  > .mod-box-inner {
+    padding: 0;
+    background-color: transparent;
+    background-image: url("img/mod-box/29/bg02_3.png");
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+  }
+}

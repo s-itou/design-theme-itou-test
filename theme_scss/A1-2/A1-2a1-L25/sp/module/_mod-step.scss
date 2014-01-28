@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import "../sp-style/mod-step-style";
+
+.mod-step {
+  @include mod-step-common-style;
+  @if $defaultTheme == "01A1" { @include mod-step-style; }
+    @else if $defaultTheme == "01A2" { @include mod-step-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-step-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-step-style4; }
+    @else if $defaultTheme == "01B2" { @include mod-step-style5; }
+    @else if $defaultTheme == "01B3" { @include mod-step-style4; }
+    @else if $defaultTheme == "01C1" { @include mod-step-style6; }
+    @else if $defaultTheme == "01C2" { @include mod-step-style7; }
+    @else if $defaultTheme == "01C3" { @include mod-step-style8; }
+    @else { @include mod-step-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-step-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-step-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-step-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-step-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-step-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-step-style4;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-step-style6;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-step-style7;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-step-style8;
+  }
+}
+

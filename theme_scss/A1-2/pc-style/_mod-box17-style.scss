@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@mixin mod-box17-common-style {
+margin-top: 30px;
+  width: 100%;
+  @include border-radius();
+  > .mod-box-inner {
+    padding: 15px;
+  }
+}
+
+@mixin mod-box17-style {
+padding: 10px;
+  border: 1px solid #ade9ef;
+  background-color: #ecfdff;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style2 {
+padding: 10px;
+  border: 1px solid #60bff0;
+  background-color: #ebfdff;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style3 {
+padding: 10px;
+  border: 1px solid #fd8e89;
+  background-color: #ffe0de;
+  background-image: none;
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style4 {
+padding: 10px;
+  border: 1px solid #abd2f6;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box17-style5 {
+padding: 10px;
+  border: 1px solid #f4d34f;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_2.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box17-style6 {
+padding: 10px;
+  border: 1px solid #ffa19b;
+  background-color: #ffffff;
+  background-image: url("img/mod-box/bg04_3.png");
+  background-repeat: repeat-x;
+  > .mod-box-inner {
+    background-color: transparent;
+    @include border-radius();
+  }
+}
+@mixin mod-box17-style7 {
+padding: 3px;
+  border: 0 none transparent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08.png");
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style8 {
+padding: 3px;
+  border: 0 none transparent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_2.png");
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+@mixin mod-box17-style9 {
+padding: 3px;
+  border: 0 none transparent;
+  background-color: transparent;
+  background-image: url("img/mod-box/bg08_3.png");
+  background-repeat: repeat;
+  > .mod-box-inner {
+    background-color: #ffffff;
+    @include border-radius(0);
+  }
+}
+

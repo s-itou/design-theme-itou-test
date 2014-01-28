@@ -1,0 +1,873 @@
+@charset "UTF-8";
+
+
+//------プレイスホルダー一覧 ここから------------
+
+//デフォルトの共通部分
+%default-link {
+  @extend %inlineBlock;
+  padding-left: 20px;
+  line-height: 1.4;
+  @include background("mod-link/bg.png", $position-y: 4px);
+  a & {
+    &:hover {
+      p {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//大アイコンの共通部分
+%default-link2 {
+  @extend %inlineBlock;
+  padding: 2px 0 0 40px;
+  font-size: $fontSizeL;
+  @include background("mod-link/bg06.png", $position-y: 0px);
+  a & {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//------プレイスホルダー一覧 ここまで------------
+
+
+
+//左寄せ
+.mod-link {
+  @extend %default-link;
+  margin-bottom: 10px !important;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 & {
+    background-image: url("img/mod-link/bg_2.png");
+    a & {
+      color: $linkColor2;
+    }
+    a {
+      color: $linkColor2;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 & {
+    background-image: url("img/mod-link/bg_3.png");
+    a & {
+      color: $linkColor3;
+    }
+    a {
+      color: $linkColor3;
+    }
+  }
+}
+
+
+// 中央寄せ
+.mod-link2 {
+  text-align: center;
+  >div, >a >div {
+    @extend %default-link;
+  }
+  >p:first-child, >a >p:first-child {
+    @extend %default-link; //旧対応
+  }
+  >
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_i1A2 & {
+    >div, >a >div {
+      background-image: url("img/mod-link/bg_2.png");
+    }
+    a {
+      color: $linkColor2;
+    }
+     >p:first-child, >a >p:first-child { //旧対応
+      background-image: url("img/mod-link/bg_2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_i1A3 & {
+    >div, >a >div {
+      background-image: url("img/mod-link/bg_3.png");
+    }
+    a {
+      color: $linkColor3;
+    }
+     >p:first-child, >a >p:first-child { //旧対応
+      background-image: url("img/mod-link/bg_3.png");
+    }
+  }
+}
+
+
+// 青
+.mod-link4 {
+  @extend %inlineBlock;
+  max-width: 100%;
+  @include box-sizing(border-box);
+  margin: 0;
+  padding: 0 10px 0 13px;
+  color: #1d6fde;
+  font-size: $fontSizeS + 1;
+  @include background("mod-link/bg05.png", $position-x: 4px, $position-y: 5px);
+  a &, a {
+    text-decoration: underline;
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    background-image: url("img/mod-link/bg10.png");
+     a &, a {
+      color: $dh_link2Color;
+      text-decoration: underline;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    background-image: url("img/mod-link/bg10_2.png");
+     a &, a {
+      color: $dh_link2Color2;
+      text-decoration: underline;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    background-image: url("img/mod-link/bg10_3.png");
+     a &, a {
+      color: $dh_link2Color3;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+//★mod-link5 抜け番★
+
+
+
+//大アイコン（中央寄せ）
+.mod-link7 {
+  text-align: center;
+  margin: 0 auto 15px auto;
+  div {
+    @extend %default-link2;
+    max-width: 100%;
+    @include box-sizing(border-box);
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    div {
+      background-image: url("img/mod-link/bg06_2.png");
+    }
+    a & {
+      color: $m_linkColor2;
+    }
+    a {
+      color: $m_linkColor2;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    div {
+      background-image: url("img/mod-link/bg06_3.png");
+    }
+    a & {
+      color: $m_linkColor3;
+    }
+    a {
+      color: $m_linkColor3;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    div {
+      background-image: url("img/mod-link/bg09.png");
+      background-position: 0 5px;
+    }
+    a & {
+      color: $d_linkLColor;
+    }
+    a {
+      color: $d_linkLColor;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    div {
+      background-image: url("img/mod-link/bg09_2.png");
+      background-position: 0 5px;
+    }
+    a & {
+      color: $d_linkLColor2;
+    }
+    a {
+      color: $d_linkLColor2;
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    div {
+      background-image: url("img/mod-link/bg09_3.png");
+      background-position: 0 5px;
+    }
+    a & {
+      color: #37280b;
+    }
+    a {
+      color: #37280b;
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    div {
+    height: 39px;
+    padding: 5px 5px 5px 50px;
+    background-image: url("img/mod-link/bg08.png");
+   }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    div {
+      height: 39px;
+      padding: 5px 5px 5px 50px;
+      background-image: url("img/mod-link/bg08_2.png");
+    }
+    a & {
+      color: #294470;
+    }
+    a {
+        color: #294470;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    div {
+      height: 39px;
+      padding: 5px 5px 5px 50px;
+      background-image: url("img/mod-link/bg08_3.png");
+    }
+    a & {
+      color: #45320b;
+    }
+    a {
+      color: #45320b;
+    }
+  }
+}
+
+
+//サイド左寄せ
+.mod-link8 {
+  @extend %default-link;
+  display: table !important;
+  max-width: 100%;
+  @include box-sizing(border-box);
+  margin-bottom: 10px !important;
+  padding-left: 15px;
+  font-size: $sideFontSizeM;
+  @include background("mod-link/bg.png", $position-y: 2px);
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    background-image: url("img/mod-link/bg_2.png");
+    a & {
+      color: $linkColor2;
+    }
+    a {
+      color: $linkColor2;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    background-image: url("img/mod-link/bg_3.png");
+    a & {
+      color: $linkColor3;
+    }
+    a {
+      color: $linkColor3;
+    }
+  }
+}
+
+
+//メイン左寄せ　overflow: hidden;つき
+.mod-link9 {
+  @extend %default-link;
+  margin-bottom: 10px !important;
+  overflow: hidden;
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 & {
+    background-image: url("img/mod-link/bg_2.png");
+    a & {
+      color: $linkColor2;
+    }
+    a {
+      color: $linkColor2;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 & {
+    background-image: url("img/mod-link/bg_3.png");
+    a & {
+      color: $linkColor3;
+    }
+    a {
+      color: $linkColor3;
+    }
+  }
+}
+
+
+.mod-link10 {
+  text-align: center;
+  div {
+    @include background("mod-link/bg.png", $position-y: 1px);
+    @extend %default-link;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    padding-left: 15px;
+    font-size: $fontSizeS;
+  }
+    >p:first-child, >a >p:first-child { //旧対応
+    @include background("mod-link/bg.png", $position-y: 1px);
+    @extend %default-link;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    padding-left: 15px;
+    font-size: $fontSizeS;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_c1A2 & {
+    div {
+      background-image: url("img/mod-link/bg_2.png");
+    }
+    a & {
+      color: $linkColor2;
+    }
+    a {
+      color: $linkColor2;
+    }
+    >p:first-child, >a >p:first-child { //旧対応
+      background-image: url("img/mod-link/bg_2.png");
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_c1A3 & {
+    div {
+      background-image: url("img/mod-link/bg_3.png");
+    }
+    a & {
+      color: $linkColor3;
+    }
+    a {
+      color: $linkColor3;
+    }
+     >p:first-child, >a >p:first-child { //旧対応
+      background-image: url("img/mod-link/bg_3.png");
+    }
+  }
+}
+
+.mod-link11 {
+  text-align: center;
+  div {
+    @extend %default-link;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    padding-left: 15px;
+    font-size: $sideFontSizeM;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    div {
+      background-image: url("img/mod-link/bg_2.png");
+    }
+    a & {
+      color: $linkColor2;
+    }
+    a {
+      color: $linkColor2;
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    div {
+      background-image: url("img/mod-link/bg_3.png");
+    }
+    a & {
+      color: $linkColor3;
+    }
+    a {
+      color: $linkColor3;
+    }
+  }
+}
+
+
+
+// ３つ横セット
+.mod-link-set {
+  margin: 10px 0 10px auto;
+  text-align: right;
+  div {
+    @extend %inlineBlock;
+    max-width: 100%;
+    @include box-sizing(border-box);
+    margin: 0;
+    padding: 0 10px 0 25px;
+    border-right: 1px solid $linkBdColor;
+    font-size: $fontSizeM - 1;
+    text-align: left;
+    line-height: 1.4;
+    @include background("mod-link/bg.png", $position-x: 7px, $position-y: 3px);
+    a & {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  > div:last-child {
+    padding-right: 0;
+    border: none;
+  }
+  > a:last-child > p {
+    padding-right: 0;
+    border: none;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    div {
+      background-image: url("img/mod-link/bg07_2.png");
+      border-right: 1px solid $linkBdColor2;
+      a & {
+        color: $linkColor2;
+      }
+      a {
+        color: $linkColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    div {
+      background-image: url("img/mod-link/bg_3.png");
+      border-right: 1px solid $linkBdColor3;
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    div {
+      background-image: url("img/mod-link/bg11.png");
+      border-right: 1px solid $dh_linkColor;
+      a & {
+        color: $dh_linkColor;
+      }
+      a {
+        color: $dh_linkColor;
+      }
+    }
+     div:last-child {
+      padding-right: 0;
+      border: none;
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    div {
+      background-image: url("img/mod-link/bg11_2.png");
+      border-right: 1px solid $dh_linkColor2;
+      a & {
+        color: $dh_linkColor2;
+      }
+      a {
+        color: $dh_linkColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    div {
+      background-image: url("img/mod-link/bg11_3.png");
+      border-right: 1px solid $dh_linkColor3;
+      a & {
+        color: $dh_linkColor3;
+      }
+      a {
+        color: $dh_linkColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    div {
+      background-image: url("img/mod-link/bg07.png");
+      a & {
+        color: #321b07;
+      }
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    div {
+      background-image: url("img/mod-link/bg07_2.png");
+      a & {
+        color: #321b07;
+      }
+      a {
+        color: #321b07;
+      }
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    div {
+      background-image: url("img/mod-link/bg07_3.png");
+      a & {
+        color: #45320b;
+      }
+      a {
+        color: #45320b;
+      }
+    }
+  }
+}
+
+
+// 2つ横セット
+.mod-link-set4 {
+  display: table;
+  margin-bottom: 10px;
+  a {
+    display: table-cell;
+  }
+  div {
+    display: table-cell;
+    max-width: 125px;
+    margin: 0;
+    padding: 0 10px 0 25px;
+    border-right: 1px solid $linkBdColor;
+    font-size: $fontSizeM - 2;
+    line-height: 1.4;
+    @include background("mod-link/bg.png", $position-x: 7px, $position-y: 3px);
+    a & {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  > div:first-child {
+    padding: 0 10px 0 18px;
+    @include background("mod-link/bg.png", $position-x: 0px, $position-y: 3px);
+  }
+  > a:first-child > p {
+    padding: 0 10px 0 18px;
+    @include background("mod-link/bg.png", $position-x: 0px, $position-y: 3px);
+  }
+  > div:last-child {
+    padding-right: 0;
+    border: none;
+  }
+  > a:last-child > p {
+    padding-right: 0;
+    border: none;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 &,
+  .ex-style_01A2 & {
+    div {
+      background-image: url("img/mod-link/bg07_2.png");
+      border-right: 1px solid $linkBdColor2;
+      a & {
+        color: $linkColor2;
+      }
+      a {
+        color: $linkColor2;
+      }
+    }
+  }
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 &,
+  .ex-style_01A3 & {
+    div {
+      background-image: url("img/mod-link/bg_3.png");
+      border-right: 1px solid $linkBdColor3;
+      a & {
+        color: $linkColor3;
+      }
+      a {
+        color: $linkColor3;
+      }
+    }
+  }
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 &,
+  .ex-style_01B1 & {
+    div {
+      background-image: url("img/mod-link/bg11.png");
+      border-right: 1px solid $dh_linkColor;
+      a & {
+        color: $dh_linkColor;
+      }
+      a {
+        color: $dh_linkColor;
+      }
+    }
+  }
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 &,
+  .ex-style_01B2 & {
+    div {
+      background-image: url("img/mod-link/bg11_2.png");
+      border-right: 1px solid $dh_linkColor2;
+      a & {
+        color: $dh_linkColor2;
+      }
+      a {
+        color: $dh_linkColor2;
+      }
+    }
+  }
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 &,
+  .ex-style_01B3 & {
+    div {
+      background-image: url("img/mod-link/bg11_3.png");
+      border-right: 1px solid $dh_linkColor3;
+      a & {
+        color: $dh_linkColor3;
+      }
+      a {
+        color: $dh_linkColor3;
+      }
+    }
+  }
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C1 & {
+    a & {
+      color: #321b07;
+    }
+    a {
+      color: #321b07;
+    }
+  }
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 &,
+  .ex-style_01C2 & {
+    a & {
+      color: #321b07;
+    }
+    a {
+      color: #321b07;
+    }
+  }
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 &,
+  .ex-style_01C3 & {
+    a & {
+      color: #45320b;
+    }
+    a {
+      color: #45320b;
+    }
+  }
+}
+
+
+// ２つ縦並びセット
+.mod-link-set2, .mod-link-set3, .mod-link-set8 {
+  margin-bottom: 0;
+  div {
+    display: table;
+  }
+  p.mod-link {
+    display: block; //旧ver　誘導リンクの対応
+  }
+}
+
+//二つ並び　中寄せ
+.mod-link-set9 {
+  margin: 0 auto;
+  display: table;
+  word-break: break-all;
+  div {
+    display: block;
+  }
+}
+
+//二つ並び　右寄せ
+.mod-link-set10 {
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: auto;
+  display: table;
+  word-break: break-all;
+  div {
+    display: block;
+  }
+}

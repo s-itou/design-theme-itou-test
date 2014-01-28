@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import "../sp-style/mod-sp-style";
+
+.mod-sp-viewchange {
+  @include mod-sp-viewchange-common-style;
+}
+
+.mod-sp-backto {
+  @include mod-sp-backto-common-style;
+}
+
+.mod-sp-accordion {
+  @include mod-sp-accordion-common-style;
+  @include mod-sp-accordion-style;
+  &.ex-style_01A2 {
+    @include mod-sp-accordion-style2;
+  }
+  &.ex-style_01B2 {
+    @include mod-sp-accordion-style2;
+  }
+  &.ex-style_01C2 {
+    @include mod-sp-accordion-style2;
+  }
+  &.ex-style_01A3 {
+    @include mod-sp-accordion-style3;
+  }
+  &.ex-style_01B3 {
+    @include mod-sp-accordion-style3;
+  }
+  &.ex-style_01C3 {
+    @include mod-sp-accordion-style3;
+  }
+}
+
+.mod-sp-accordion2 {
+  @include mod-sp-accordion2-common-style;
+  @include mod-sp-accordion2-style;
+  &.ex-style_01A2 {
+    @include mod-sp-accordion2-style2;
+  }
+  &.ex-style_01B2 {
+    @include mod-sp-accordion2-style2;
+  }
+  &.ex-style_01C2 {
+    @include mod-sp-accordion2-style2;
+  }
+  &.ex-style_01A3 {
+    @include mod-sp-accordion2-style3;
+  }
+  &.ex-style_01B3 {
+    @include mod-sp-accordion2-style3;
+  }
+  &.ex-style_01C3 {
+    @include mod-sp-accordion2-style3;
+  }
+}
+
+.mod-sp-accordion3 {
+  @include mod-sp-accordion3-common-style;
+  @include mod-sp-accordion3-style;
+  &.ex-style_01A2 {
+    @include mod-sp-accordion3-style2;
+  }
+  &.ex-style_01B2 {
+    @include mod-sp-accordion3-style2;
+  }
+  &.ex-style_01C2 {
+    @include mod-sp-accordion3-style2;
+  }
+  &.ex-style_01A3 {
+    @include mod-sp-accordion3-style3;
+  }
+  &.ex-style_01B3 {
+    @include mod-sp-accordion3-style3;
+  }
+  &.ex-style_01C3 {
+    @include mod-sp-accordion3-style3;
+  }
+}
+
+.mod-sp-accordion-hide {
+  @include mod-sp-accordion-hide-common-style;
+}
+
+.mod-sp-head-bar {
+  @include mod-sp-head-bar-common-style;
+  @include mod-sp-head-bar-style;
+  &.ex-style_01A2 {
+    @include mod-sp-head-bar-style2;
+  }
+  &.ex-style_01A3 {
+    @include mod-sp-head-bar-style3;
+  }
+  &.ex-style_01B2 {
+    @include mod-sp-head-bar-style2;
+  }
+  &.ex-style_01B3 {
+    @include mod-sp-head-bar-style3;
+  }
+  &.ex-style_01C2 {
+    @include mod-sp-head-bar-style2;
+  }
+  &.ex-style_01C3 {
+    @include mod-sp-head-bar-style3;
+  }
+}

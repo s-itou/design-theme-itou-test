@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+//------------------
+// .ex-imgFloat デフォルトは回りこみなし
+//------------------
+
+
+.ex-imgFloat { //回りこみ用の記述
+  .mod-2col-inner {
+    margin-bottom: 10px;
+    //回り込んだ場合の画像と文章の間の余白
+    //段落系の2colにはmargin-bottom :0;を付けてください（もともと2colは>を使っているのでポイントで勝てるはず）
+  }
+  .mod-2col-inner2 {
+    overflow: visible;
+    //「回りこみなし指定」がデフォルトなので、それを解除」
+  }
+}
+
+
+
+//------------------
+// .ex-imgLayout（デフォルトは画像右）
+//------------------
+
+.ex-imgLayout_l { //画像を左へ
+  .mod-2col-inner {
+    float: left; //画像を左へ
+    margin-right: 20px; //文章と画像の余白を変更
+    margin-left: 0; //画像が右にあった時の余白は解除
+  }
+}
+//段落系の2colはもともとfloat: leftの余白は20pxなので影響なし
+
+
+.ex-imgLayout_lr {
+  .mod-2col31 {
+    > .mod-2col-inner {
+      float: left;
+      margin-right: 15px;
+      margin-left: 0;
+    }
+    .step2, .step4, .step6, .step8, .step10 {
+      > .mod-2col-inner {
+        float: right;
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+//------------------
+// .ex-imgSize
+//------------------
+.ex-imgSize_L {
+  img {
+    width: 90%;
+  }
+}
+
+.ex-imgSize_M {
+  img {
+    width: 80%;
+  }
+}
+
+.ex-imgSize_S {
+  img {
+    width: 70%;
+  }
+}
+
+
+//2カラムの中にある画像
+.ex-imgSize_2L {
+  .mod-2col4,
+  .mod-2col6,
+  .mod-2col31 {
+    > .mod-2col-inner {
+      width: 300px;
+    }
+  }
+}
+
+.ex-imgSize_2S {
+  .mod-2col4,
+  .mod-2col6,
+  .mod-2col31 {
+    > .mod-2col-inner {
+      width: 200px;
+    }
+  }
+  .mod-2col15,
+  .mod-2col16,
+  .mod-2col32,
+  .mod-2col33 {
+    > .mod-2col-inner {
+      width: 60px;
+    }
+  }
+}
+
+.ex-imgSize_2SS {
+  .mod-2col4,
+  .mod-2col6,
+  .mod-2col31 {
+    > .mod-2col-inner {
+      width: 150px;
+    }
+  }
+}
+
+//見出しの対応
+.ex-imgSize_2L,
+.ex-imgSize_2S,
+.ex-imgSize_2SS {
+  .mod-h_4_2,
+  .mod-h_4_16,
+  .mod-h_4_17,
+  .mod-h_4_18,
+  .mod-h_4_19,
+  .mod-h_5_16,
+  .mod-h_5_17,
+  .mod-h_5_20,
+   {
+    width: auto;
+    overflow: hidden;
+  }
+}

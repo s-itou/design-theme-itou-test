@@ -1,0 +1,90 @@
+@charset "UTF-8";
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// common-side-style-mod-fax(グループ共通common)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-side-style-mod-fax {  // mod-faxの共通サイド用common
+  @if $layoutCode == "L25" {
+    font-size: $sideFontSizeL;
+  } @else if $layoutCode == "L30" {
+    font-size: $sideFontSizeL + 4;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-fax
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-fax {  // mod-faxの共通common
+  margin-top: 10px !important;
+  word-break: break-all;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.0;
+}
+//—————————module-style—————————
+@mixin module-style-mod-fax {
+}
+@mixin module-style-mod-fax-side {
+}
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-fax {
+  color: #333333;
+}
+@mixin deco-style01A2-mod-fax {
+  color: #333333;
+}
+@mixin deco-style01A3-mod-fax {
+  color: #45320b;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-fax-i
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+//mod-faxと同じ
+//—————————module-style—————————
+@mixin module-style-mod-fax-i {
+  padding: 5px 0 0 40px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+@mixin module-style-mod-fax-i-side {
+  padding: 3px 0 0 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+@mixin module-style-mod-fax-i-footer {
+  margin-top: 5px !important;
+  padding: 3px 0 0 35px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-size: 28px;
+}
+//—————————deco-style—————————
+//mod-fax-i
+@mixin deco-style01A1-mod-fax-i {
+  background-image: url(img/mod-fax/bg05.png);
+}
+@mixin deco-style01A2-mod-fax-i {
+  background-image: url(img/mod-fax/bg05_2.png);
+}
+@mixin deco-style01A3-mod-fax-i {
+  background-image: url(img/mod-fax/bg05_3.png);
+}
+//mod-fax-i-side
+@mixin deco-style01A1-mod-fax-i-side {
+  background-image: url(img/mod-fax/bg06.png);
+}
+@mixin deco-style01A2-mod-fax-i-side {
+  background-image: url(img/mod-fax/bg06_2.png);
+}
+@mixin deco-style01A3-mod-fax-i-side {
+  background-image: url(img/mod-fax/bg06_3.png);
+}
+//mod-fax-i-footer
+@mixin deco-style01A1-mod-fax-i-footer {
+  background-image: url(img/mod-fax/bg02.png);
+}
+
+
+

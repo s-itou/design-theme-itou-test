@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-ftel-ig
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-ftel-ig { //語呂ありアイコンあり
+  @extend %inlineBlock;
+  margin: 10px 0 0 0;
+  .mod-ftel-inner {
+    padding: 0 0 0 40px;
+    text-align: right;
+    font-size: $fontSizeM - 2;
+    line-height: 1.0;
+  }
+  .mod-ftel-inner2 {
+    margin: 3px 0 0 0;
+    background-repeat: no-repeat;
+    word-break: break-all;
+    font-weight: bold;
+    line-height: 1.0;
+  }
+}
+@mixin common-side-style-mod-ftel {
+  .mod-ftel-inner2 {
+    @if $layoutCode == "L25" {
+      font-size: $sideFontSizeL + 2;
+    } @else if $layoutCode == "L30" {
+      font-size: $sideFontSizeL + 8;
+    }
+  }
+}
+
+//—————————module-style—————————
+@mixin module-style-mod-ftel-ig { //9
+  .mod-ftel-inner2 {
+    padding: 0 0 0 40px;
+    background-position: left bottom;
+    font-weight: normal;
+    font-size: 25px;
+  }
+}
+@mixin module-style-mod-ftel-ig-side { //15
+  .mod-ftel-inner {
+    padding: 0 0 0 30px;
+    font-size: $sideFontSizeS;
+  }
+  .mod-ftel-inner2 {
+    padding: 2px 0 0 30px;
+    background-position: left center;
+    font-weight: bold;
+  }
+}
+//
+// //  mod-ftel17 の mixin一式
+// @mixin module-style-mod-ftel-ig-side { //17
+//   margin: 15px 0 0 0;
+//   .mod-ftel-inner {
+//     padding: 0 0 0 50px;
+//   }
+//   .mod-ftel-inner2 {
+//     padding: 0 0 0 50px;
+//     font-size: 40px;
+//     text-align: center;
+//     background-image: url("img/mod-ftel/bg06.png");
+//     background-position: 0 5px;
+//   }
+// }
+// //  mod-ftel19 の mixin一式
+// @mixin module-style-mod-ftel-ig-side { //19
+//   margin: 15px 0 0 0;
+//   .mod-ftel-inner2 {
+//     font-size: 30px;
+//     padding: 0 0 0 40px;
+//     background-image: url("img/mod-ftel/bg07.png");
+//   }
+// }
+//
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-ftel-ig { //ftel2共通 旧ftel9,10
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+    background-image: url("img/mod-ftel/bg04.png");
+  }
+}
+@mixin deco-style01A2-mod-ftel-ig {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #0b2d63;
+    background-image: url("img/mod-ftel/bg04.png");
+  }
+}
+@mixin deco-style01A3-mod-ftel-ig {
+  .mod-ftel-inner {
+    color: #56534e;
+  }
+  .mod-ftel-inner2 {
+    color: #45320b;
+    background-image: url("img/mod-ftel/bg04.png");
+  }
+}
+@mixin deco-style01C3-mod-ftel-ig {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+    background-image: url("img/mod-ftel/bg04.png");
+  }
+}
+
+@mixin deco-style01A1-mod-ftel-ig-side { //15,16共通
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f7931d;
+    background-image: url("img/mod-ftel/bg.png");
+  }
+}
+@mixin deco-style01A2-mod-ftel-ig-side {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #426ca6;
+    background-image: url("img/mod-ftel/bg.png");
+  }
+}
+@mixin deco-style01A3-mod-ftel-ig-side {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #eb5910;
+    background-image: url("img/mod-ftel/bg.png");
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-ftel-g
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-ftel-g { //語呂ありアイコンなし
+  @extend %inlineBlock;
+  margin: 10px 0 0 0;
+  .mod-ftel-inner {
+    text-align: right;
+    font-size: $fontSizeM - 2;
+    line-height: 1.0;
+  }
+  .mod-ftel-inner2 {
+    margin: 3px 0 0 0;
+    word-break: break-all;
+    font-weight: bold;
+    line-height: 1.0;
+  }
+}
+
+//—————————module-style—————————
+//  mod-ftel10 の mixin一式
+@mixin module-style-mod-ftel-g { //10
+  .mod-ftel-inner2 {
+    font-weight: normal;
+    font-size: 25px;
+  }
+}
+//  mod-ftel16 の mixin一式
+@mixin module-style-mod-ftel-g-side { //sode ftel16
+  .mod-ftel-inner {
+    font-size: $sideFontSizeS;
+  }
+  .mod-ftel-inner2 {
+    padding: 2px 0 0 0;
+  }
+}
+
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-ftel-g { //ftel2共通 旧ftel9,10
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+  }
+}
+@mixin deco-style01A2-mod-ftel-g {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #0b2d63;
+  }
+}
+@mixin deco-style01A3-mod-ftel-g {
+  .mod-ftel-inner {
+    color: #56534e;
+  }
+  .mod-ftel-inner2 {
+    color: #45320b;
+  }
+}
+@mixin deco-style01C3-mod-ftel-g {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A1-mod-ftel-g-side { //15,16共通
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f7931d;
+  }
+}
+@mixin deco-style01A2-mod-ftel-g-side {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #426ca6;
+  }
+}
+@mixin deco-style01A3-mod-ftel-g-side {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #eb5910;
+  }
+}
+
+
+
+//
+// //  mod-ftel18 の mixin一式
+// @mixin mod-ftel18-common-style { //18
+//   margin: 15px 0 0 0;
+//   .mod-ftel-inner2 {
+//     font-size: 40px;
+//     text-align: center;
+//   }
+// }
+// //  mod-ftel20 の mixin一式
+// @mixin mod-ftel20-common-style { //20
+//   margin: 15px 0 0 0;
+//   .mod-ftel-inner2 {
+//     font-size: 30px;
+//   }
+// }
+//
+
+//
+// //—————————deco-style—————————
+// @mixin deco-style01A1-mod-ftel-i { //17,18,19,20共通
+//   .mod-ftel-inner {
+//     color: #333333;
+//   }
+//   .mod-ftel-inner2 {
+//     color: #f58804;
+//   }
+// }
+//
+

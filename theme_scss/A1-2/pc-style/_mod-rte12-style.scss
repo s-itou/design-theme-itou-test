@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@mixin mod-rte12-common-style {
+> p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-rte12-style {
+  color: #333333;
+}
+@mixin mod-rte12-style2 {
+  color: #56534e;
+}
+@mixin mod-rte12-style3 {
+  color: #ffffff;
+}
+@mixin mod-rte12-style4 {
+  color: #443308;
+}
+@mixin mod-rte12-style5 {
+  color: #45320b;
+}
+

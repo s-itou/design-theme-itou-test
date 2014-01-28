@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+// ----------------------------
+// mod-5col
+//必須レイアウト記述→margin-top
+//必須デザイン記述→なし
+// ----------------------------
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-5col(1重)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-style-mod-5col {
+  //---必須レイアウト記述-----//
+  margin: 30px 0 0 0;
+  //----必須デザイン記述-----//
+  //---------------------//
+  @extend %cf;
+  .mod-5col-inner {
+    float: left;
+    width: floor(($mainWidth - 20 * 4) / 5);
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-5col-inner2, .mod-5col-inner3, .mod-5col-inner4, .mod-5col-inner5 {
+    float: left;
+    width: floor(($mainWidth - 20 * 4) / 5) + 20;
+    padding: 0 0 0 20px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+@mixin module-style-mod-5col {
+  //記述なし
+}

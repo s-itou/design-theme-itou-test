@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import "../sp-style/mod-3column-style";
+
+.mod-3col {
+  @include mod-3col-common-style;
+  @include mod-3col-style;
+  .ex-style_#{$baseEx_i1A1} & {
+    @include mod-3col-style2;
+  }
+  .ex-style_#{$baseEx_i1A2} & {
+    @include mod-3col-style3;
+  }
+  .ex-style_#{$baseEx_i1A3} & {
+    @include mod-3col-style4;
+  }
+  .ex-style_#{$baseEx_i1B1} & {
+    @include mod-3col-style5;
+  }
+  .ex-style_#{$baseEx_i1B2} & {
+    @include mod-3col-style6;
+  }
+  .ex-style_#{$baseEx_i1B3} & {
+    @include mod-3col-style7;
+  }
+  .ex-style_#{$baseEx_i1C1} & {
+    @include mod-3col-style8;
+  }
+  .ex-style_#{$baseEx_i1C2} & {
+    @include mod-3col-style9;
+  }
+  .ex-style_#{$baseEx_i1C3} & {
+    @include mod-3col-style10;
+  }
+}
+
+.mod-3col4 {
+  @include mod-3col4-common-style;
+}
+
+.mod-3col6 {
+  @include mod-3col6-common-style;
+  @if $defaultTheme == "01A1" { @include mod-3col6-style; }
+    @else if $defaultTheme == "01A2" { @include mod-3col6-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-3col6-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-3col6-style4; }
+    @else if $defaultTheme == "01B2" { @include mod-3col6-style5; }
+    @else if $defaultTheme == "01B3" { @include mod-3col6-style6; }
+    @else if $defaultTheme == "01C1" { @include mod-3col6-style7; }
+    @else if $defaultTheme == "01C2" { @include mod-3col6-style8; }
+    @else if $defaultTheme == "01C3" { @include mod-3col6-style9; }
+    @else { @include mod-3col6-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-3col6-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-3col6-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-3col6-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-3col6-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-3col6-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-3col6-style6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-3col6-style7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-3col6-style8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-3col6-style9;
+  }
+}
+
+.mod-3col7 {
+  @include mod-3col7-common-style;
+}
+
+.mod-3col8 {
+  @include mod-3col8-common-style;
+}
+
+.mod-3col9 {
+  @include mod-3col9-common-style;
+  @if $defaultTheme == "01A1" { @include mod-3col9-style; }
+    @else if $defaultTheme == "01A2" { @include mod-3col9-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-3col9-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-3col9-style4; }
+    @else if $defaultTheme == "01B2" { @include mod-3col9-style5; }
+    @else if $defaultTheme == "01B3" { @include mod-3col9-style6; }
+    @else if $defaultTheme == "01C1" { @include mod-3col9-style7; }
+    @else if $defaultTheme == "01C2" { @include mod-3col9-style8; }
+    @else if $defaultTheme == "01C3" { @include mod-3col9-style9; }
+    @else { @include mod-3col9-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-3col9-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-3col9-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-3col9-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-3col9-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-3col9-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-3col9-style6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-3col9-style7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-3col9-style8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-3col9-style9;
+  }
+}
+
+.mod-3col10 {
+  @include mod-3col10-common-style;
+}

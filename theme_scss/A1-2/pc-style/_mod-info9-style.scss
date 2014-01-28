@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@mixin mod-info9-common-style {
+margin-top: 10px;
+  > p:first-child {
+    width: 140px;
+    @include border-radius();
+    text-align: center;
+  }
+  > p + > p {
+    margin-top: 10px;
+  }
+}
+
+@mixin mod-info9-style {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #5f140a;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style2 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #3c3c3c;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style3 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #325073;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style4 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #892815;
+    background-image: url("img/mod-info/bg.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style5 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #085b66;
+    background-color: #f8e693;
+    background-image: url("img/mod-info/bg_2.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style6 {
+border-bottom: 0 none transparent;
+  > p:first-child {
+    color: #ffffff;
+    background-color: #722416;
+    background-image: url("img/mod-info/bg_3.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+  }
+}
+@mixin mod-info9-style7 {
+border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #781b0e;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+@mixin mod-info9-style8 {
+border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #325073;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03_2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+@mixin mod-info9-style9 {
+border-bottom: 1px dotted #cccccc;
+  > p:first-child {
+    color: #0f375f;
+    background-color: #ffffff;
+    background-image: url("img/mod-info/bg03_3.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+

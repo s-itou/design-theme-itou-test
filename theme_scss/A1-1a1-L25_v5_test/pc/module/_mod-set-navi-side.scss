@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-navi-side の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-side-style";
+@import "../design/pat-design-navi-side";
+
+
+// -----------------------------------
+// side用ナビゲーション
+// -----------------------------------
+
+//元 side-menu,side-menu2
+.mod-set-navi-side {
+  @extend %common-style-mod-set-navi-side !optional;
+  &.ex-style_01A1 {
+    @include pat-design-navi-side-1
+  }
+  &.ex-style_01A2 {
+    @include pat-design-navi-side-2
+  }
+  &.ex-style_01A3 {
+    @include pat-design-navi-side-3
+  }
+  &.ex-style_01B1 {
+    @include pat-design-navi-side-1
+  }
+  &.ex-style_01B2 {
+    @include pat-design-navi-side-2
+  }
+  &.ex-style_01B3 {
+    @include pat-design-navi-side-3
+  }
+  &.ex-style_01C1 {
+    @include pat-design-navi-side-1
+  }
+  &.ex-style_01C2 {
+    @include pat-design-navi-side-2
+  }
+  &.ex-style_01C3 {
+    @include pat-design-navi-side-3
+  }
+}

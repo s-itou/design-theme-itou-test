@@ -1,0 +1,94 @@
+@charset "UTF-8";
+// -----------------------------------
+// mod-set-case style
+// -----------------------------------
+
+// -----------------------------------
+// common-style
+// -----------------------------------
+@mixin common-style-mod-set-case {
+  margin: 30px 0 0 0;
+}
+
+// -----------------------------------
+// module-style
+// -----------------------------------
+@mixin module-style-mod-set-case {}
+@mixin module-style-mod-set-case-2col {}
+@mixin module-style-mod-set-case-3col {}
+
+// -----------------------------------
+// deco-style
+// -----------------------------------
+@mixin deco-style01A1-mod-set-case {
+  .mod-h_4 {
+    .mod-h_4-inner {
+      > p {
+        padding: 0;
+      }
+    }
+    .mod-h_4-inner3 {
+      @include border-radius(0);
+      background-image: none;
+      background-color: none;
+      margin: 0;
+      padding: 0;
+    }
+    .mod-h_4-inner4 {
+      margin: 0;
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-set-case-2col {
+  .mod-h_4 {
+    .mod-h_4-inner {
+      > p {
+        padding: 0;
+      }
+    }
+    .mod-h_4-inner3 {
+      @include border-radius(0);
+      background-image: none;
+      background-color: none;
+      margin: 0;
+      padding: 0;
+      &.ex-first-child {
+        .mod-h {
+          font-size: $fontSizeL + 4;
+        }
+      }
+    }
+    .mod-h_4-inner4 {
+      margin: 0;
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-set-case-3col {
+  .mod-h_4 {
+    .mod-h_4-inner {
+      > p {
+        padding: 0;
+      }
+    }
+    .mod-h_4-inner3 {
+      @include border-radius(0);
+      background-image: none;
+      background-color: none;
+      margin: 0;
+      padding: 0;
+      .mod-h {
+        font-size: $fontSizeM + 1;
+      }
+      &.ex-first-child {
+        .mod-h {
+          font-size: $fontSizeL + 4;
+        }
+      }
+    }
+    .mod-h_4-inner4 {
+      margin: 0;
+    }
+  }
+}

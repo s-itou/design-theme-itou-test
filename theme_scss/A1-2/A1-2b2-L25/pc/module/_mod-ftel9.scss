@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-ftel9-style";
+
+.mod-ftel9 {
+  @include mod-ftel9-common-style;
+  @include mod-ftel9-style2;
+  .ex-style_01A2 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 & {
+    @include mod-ftel9-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-ftel9-style3;
+  }
+}
+

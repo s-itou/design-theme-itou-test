@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-fukidashi の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../sp-style/mod-set-fukidashi-style";
+@import "../design/pat-design-fukidashi";
+
+
+// -----------------------------------
+// part-main-253
+// キャッチコピーリスト（吹き出し）
+// -----------------------------------
+
+.mod-set-fukidashi {
+  @extend %common-style-mod-set-fukidashi;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-design-fukidashi-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-design-fukidashi-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-design-fukidashi-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-design-fukidashi-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-design-fukidashi-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-design-fukidashi-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-design-fukidashi-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-design-fukidashi-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-design-fukidashi-9;
+  }
+}

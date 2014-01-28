@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@mixin mod-fnav2-common-style {
+  width: 100%;
+  height: 78px;
+  margin-top: -3px;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: url("img/mod-gnav/20/bg_2.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  .mod-fnav-inner {
+    width: $baseWidth + 300;
+    height: 78px;
+    margin: 0 auto;
+    background-image: url("img/mod-gnav/20/bg02_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px 0 5px 0;
+  } 
+  ul {
+    @extend %cf;
+    @extend %inlineBlock;
+    padding: 2px 0;
+    text-align: center;
+    background-image: url("img/mod-gnav/20/bg03_2.png");
+    background-position: right 7px;
+    background-repeat: no-repeat;
+    li:last-child {
+      padding-right: 10px;
+    }
+    li {
+      @extend %inlineBlock;
+      padding: 0 6px 0 10px;
+      color: #ffffff;
+      font-size: $fontSizeM - 1;
+      list-style: none;
+      background-image: url("img/mod-gnav/20/bg03_2.png");
+      background-position: left 3px;
+      background-repeat: no-repeat;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@mixin mod-fnav2-style {
+  li {
+    &.state-em {
+      a {
+        background-color: #222222;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style2 {
+  li {
+    &.state-em {
+      a {
+        background-color: #05203a;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style3 {
+  li {
+    &.state-em {
+      a {
+        background-color: #200805;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style4 {
+  li {
+    &.state-em {
+      a {
+        background-color: #222222;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style5 {
+  li {
+    &.state-em {
+      a {
+        background-color: #05203a;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style6 {
+  li {
+    &.state-em {
+      a {
+        background-color: #200805;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style7 {
+  li {
+    &.state-em {
+      a {
+        background-color: #200805;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style8 {
+  li {
+    &.state-em {
+      a {
+        background-color: #200805;
+      }
+    }
+  }
+}
+@mixin mod-fnav2-style9 {
+  li {
+    &.state-em {
+      a {
+        background-color: #200805;
+      }
+    }
+  }
+}

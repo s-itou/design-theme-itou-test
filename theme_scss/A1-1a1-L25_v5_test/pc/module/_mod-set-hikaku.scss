@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import "../pc-style/mod-set-hikaku";
+
+
+.mod-set-hikaku {
+  @include common-style-mod-set-hikaku;
+  @include module-style-mod-set-hikaku;
+  }
+
+.mod-set-hikaku-1vs1 {
+  @include common-style-mod-set-hikaku;
+  @include module-style-mod-set-hikaku-1vs1;
+  }
+
+.mod-set-hikaku-2vs2 {
+  @include common-style-mod-set-hikaku;
+  @include module-style-mod-set-hikaku-2vs2;
+  }
+  
+.mod-set-hikaku-1vs2 {
+  @include common-style-mod-set-hikaku;
+  @include module-style-mod-set-hikaku-1vs2;
+  }
+
+.mod-set-hikaku-1vs3 {
+  @include common-style-mod-set-hikaku;
+  @include module-style-mod-set-hikaku-1vs3;
+  }

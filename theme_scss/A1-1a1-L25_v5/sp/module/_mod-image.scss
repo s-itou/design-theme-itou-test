@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import "../sp-style/mod-image-style";
+
+.mod-image {
+  @include mod-image-common-style;
+}
+
+.mod-image3 {
+  @include mod-image3-common-style;
+}
+
+.mod-image4 {
+  @include mod-image4-common-style;
+}
+
+.mod-image6 {
+  @include mod-image6-common-style;
+  @if $defaultTheme == "01A1" { @include mod-image6-style; }
+    @else if $defaultTheme == "01A2" { @include mod-image6-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-image6-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-image6-style4; }
+    @else if $defaultTheme == "01B2" { @include mod-image6-style4; }
+    @else if $defaultTheme == "01B3" { @include mod-image6-style4; }
+    @else if $defaultTheme == "01C1" { @include mod-image6-style5; }
+    @else if $defaultTheme == "01C2" { @include mod-image6-style6; }
+    @else if $defaultTheme == "01C3" { @include mod-image6-style7; }
+    @else { @include mod-image6-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-image6-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-image6-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-image6-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-image6-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-image6-style4;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-image6-style4;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-image6-style5;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-image6-style6;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-image6-style7;
+  }
+}
+
+.mod-image7 {
+  @include mod-image7-common-style;
+}
+
+.mod-image8 {
+  @include mod-image8-common-style;
+}
+
+.mod-image9 {
+  @include mod-image9-common-style;
+}
+
+.mod-image10 {
+  @include mod-image10-common-style;
+}
+
+.mod-image-spec {
+  @include mod-image-spec-common-style;
+}
+
+.mod-image-spec3 {
+  @include mod-image-spec3-common-style;
+}
+
+.mod-image-spec4 {
+  @include mod-image-spec4-common-style;
+}
+
+.mod-image-spec5 {
+  @include mod-image-spec5-common-style;
+}

@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+//  mod-box57 の mixin一式
+@mixin mod-box57-common-style {
+  margin-top: 30px;
+  background-repeat: repeat-x;
+  border: 1px solid #f2d028;
+  @include border-radius();
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 20px;
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin mod-box57-style {
+  //none
+  background-image: url("img/mod-box/bg33_2.png");
+}
+@mixin mod-box57-style2 {
+  //none
+  background-image: url("img/mod-box/bg33_2.png");
+}
+@mixin mod-box57-style3 {
+  //none
+  background-image: url("img/mod-box/bg33_2.png");
+}
+@mixin mod-box57-style4 {
+  //none
+  background-image: url("img/mod-box/bg33_2.png");
+}
+@mixin mod-box57-style5 {
+  background-image: url("img/mod-box/bg33_2.png");
+}
+@mixin mod-box57-style6 {
+  //none
+  background-image: url("img/mod-box/bg33_2.png");
+}
+@mixin mod-box57-style7 {
+  //none
+  background-image: url("img/mod-box/bg33_2.png");
+}
+@mixin mod-box57-style8 {
+  //none
+  background-image: url("img/mod-box/bg33_2.png");
+}
+@mixin mod-box57-style9 {
+  //none
+  background-image: url("img/mod-box/bg33_2.png");
+}
+
+
+@mixin mod-box31-common-style {
+  //ex-first-child対応のため例外記述
+  .step1 & {
+    .mod-box-inner2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+
+//  mod-box58 の mixin一式
+@mixin mod-box58-common-style {
+}
+
+
+
+//  mod-h_4_29 の mixin一式
+@mixin mod-h_4_29-common-style {
+  display: table;
+  margin-top: 15px;
+  i {
+    display: table-cell;
+    background-position: left center;
+    background-repeat: no-repeat;
+    min-width: 67px;
+    height: 57px;
+  }
+  .mod-h_4-inner {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 30px;
+    > p {
+      font-size: $fontSizeS;
+      padding-left: 0;
+    }
+   }
+  .mod-h_4-inner2,
+  .mod-h_4-inner4 {
+    font-size: $fontSizeS;
+  }
+  .mod-h {
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+  }
+}
+
+
+@mixin mod-h_4_29-style {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style2 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+    .mod-h {
+      color: #333333;
+    }
+  }
+}
+@mixin mod-h_4_29-style3 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style4 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style5 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style6 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style7 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style8 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+@mixin mod-h_4_29-style9 {
+  //none
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h {
+    color: #333333;
+  }
+}
+
+
+
+//  mod-rte38 の mixin一式
+@mixin mod-rte38-common-style {
+  margin-top: 10px;
+  > p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+@mixin mod-rte38-style {
+  color: #333333;
+}
+@mixin mod-rte38-style2 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte38-style3 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte38-style4 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte38-style5 {
+  color: #ffffff;
+}
+@mixin mod-rte38-style6 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte38-style7 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte38-style8 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte38-style9 {
+  //none
+  color: #ffffff;
+}
+@mixin mod-rte38-style10 {
+  //none
+  color: #ffffff;
+}
+

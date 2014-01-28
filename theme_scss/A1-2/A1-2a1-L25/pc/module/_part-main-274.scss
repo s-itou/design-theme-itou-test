@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import "../../pc-style/part-main-274-style";
+
+.mod-box57 {
+  @include mod-box57-common-style;
+  @include mod-box57-style;
+  .ex-style_01A1 & {
+    @include mod-box57-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-box57-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-box57-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-box57-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-box57-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-box57-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-box57-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-box57-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-box57-style9;
+  }
+}
+
+.mod-box31 {
+  @include mod-box31-common-style;
+}
+
+.mod-box58 {
+  @include mod-box58-common-style;
+}
+
+.mod-h_4_29 {
+  @include mod-h_4_29-common-style;
+  @include mod-h_4_29-style;
+  .ex-style_01A2 & {
+    @include mod-h_4_29-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-h_4_29-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-h_4_29-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-h_4_29-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-h_4_29-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-h_4_29-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-h_4_29-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-h_4_29-style9;
+  }
+}
+
+//.mod-icon_num3　の step変更
+@include mod-icon_num3-common-style;
+@include mod-icon_num3-style;
+.ex-style_01A1 {
+  @include mod-icon_num3-style;
+}
+.ex-style_01A2 {
+  @include mod-icon_num3-style2;
+}
+.ex-style_01A3 {
+  @include mod-icon_num3-style3;
+}
+.ex-style_01B1 {
+  @include mod-icon_num3-style4;
+}
+.ex-style_01B2 {
+  @include mod-icon_num3-style5;
+}
+.ex-style_01B3 {
+  @include mod-icon_num3-style6;
+}
+.ex-style_01C1 {
+  @include mod-icon_num3-style7;
+}
+.ex-style_01C2 {
+  @include mod-icon_num3-style8;
+}
+.ex-style_01C3 {
+  @include mod-icon_num3-style9;
+}
+
+
+.mod-rte38 {
+  @include mod-rte38-common-style;
+  @include mod-rte38-style;
+  .ex-style_g4B1 &,
+  .ex-style_g4B2 &,
+  .ex-style_g4B3 & {
+    @include mod-rte38-style2;
+  }
+}
+
+
+

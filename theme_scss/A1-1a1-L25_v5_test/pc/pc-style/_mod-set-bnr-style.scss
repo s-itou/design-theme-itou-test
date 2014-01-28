@@ -1,0 +1,89 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// mod-set-bnr の共通定義
+//
+// -----------------------------------
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-set-bnr-x3
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// ----------------------------
+// common-style
+// ----------------------------
+%common-style-mod-set-bnr-x3 {
+  margin: 30px 0 0 0;
+}
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-set-bnr-side
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// ----------------------------
+// common-style
+// ----------------------------
+//共通項なし
+
+// ----------------------------
+// module-style
+// ----------------------------
+
+// mod-set-bnr-side
+@mixin module-style-mod-set-bnr-side {
+  padding: 1px 0 0 0;
+  &.ex-first-part {
+    > div > .ex-first-child > .ex-first-child {
+      margin-top: 0 !important;
+    }
+    > div > .ex-first-child a > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+  .mod-bnr-side, .mod-bnr31 {
+    background-repeat: repeat-x;
+    .mod-bnr-inner {
+      padding: 10px 5px 10px 30px;
+      max-height: 58px;
+      background-position: 10px 13px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+// ----------------------------
+// deco-style
+// ----------------------------
+@mixin deco-style01A1-mod-bnr-side {
+  .mod-bnr-side, .mod-bnr31 {
+    border: 1px solid #3a7ff0;
+    background-color: #3a7ff0;
+    background-image: url("img/mod-bnr/bg.png");
+    .mod-bnr-inner {
+      border: 1px solid #ffffff;
+      background-image: url("img/mod-bnr/bg02.png");
+    }
+  }
+}
+@mixin deco-style01A2-mod-bnr-side {
+  .mod-bnr-side, .mod-bnr31 {
+    border: 1px solid #55c2cf;
+    background-color: #55c2cf;
+    background-image: url("img/mod-bnr/bg_2.png");
+    .mod-bnr-inner {
+      border: 1px solid #ffffff;
+      background-image: url("img/mod-bnr/bg02_2.png");
+    }
+  }
+}
+@mixin deco-style01A3-mod-bnr-side {
+  .mod-bnr-side, .mod-bnr31 {
+    border: 1px solid #ff9547;
+    background-color: #ff9547;
+    background-image: url("img/mod-bnr/bg_3.png");
+    .mod-bnr-inner {
+      border: 1px solid #ffffff;
+      background-image: url("img/mod-bnr/bg02_3.png");
+    }
+  }
+}

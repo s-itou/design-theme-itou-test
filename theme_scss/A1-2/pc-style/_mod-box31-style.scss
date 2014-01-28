@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@mixin mod-box31-common-style {
+  //ex-first-child対応のため例外記述
+  .step1 & {
+    .ex-style_p2A1 &,
+    .ex-style_p2A2 &,
+    .ex-style_p2A3 &,
+    .ex-style_p2B1 &,
+    .ex-style_p2B2 &,
+    .ex-style_p2B3 &,
+    .ex-style_p2C1 &,
+    .ex-style_p2C2 &,
+    .ex-style_p2C3 &,
+    .ex-style_p3A1 &,
+    .ex-style_p3A2 &,
+    .ex-style_p3A3 &,
+    .ex-style_p3B1 &,
+    .ex-style_p3B2 &,
+    .ex-style_p3B3 &,
+    .ex-style_p3C1 &,
+    .ex-style_p3C2 &,
+    .ex-style_p3C3 & {
+      .mod-box-inner2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}

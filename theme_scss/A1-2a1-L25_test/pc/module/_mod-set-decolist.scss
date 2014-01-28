@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-list-deco の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-decolist-style";
+@import "../design/pat-design-decolist";
+
+
+// -----------------------------------
+// part-main-252
+// キャッチコピーリスト（装飾）
+// -----------------------------------
+
+.mod-set-list-deco {
+  @extend %common-style-mod-set-list-deco !optional;
+  .ex-style_01A1 & {
+    @include pat-design-decolist-1;
+  }
+  .ex-style_01A2 & {
+    @include pat-design-decolist-2;
+  }
+  .ex-style_01A3 & {
+    @include pat-design-decolist-3;
+  }
+  .ex-style_01B1 & {
+    @include pat-design-decolist-4;
+  }
+  .ex-style_01B2 & {
+    @include pat-design-decolist-5;
+  }
+  .ex-style_01B3 & {
+    @include pat-design-decolist-6;
+  }
+  .ex-style_01C1 & {
+    @include pat-design-decolist-7;
+  }
+  .ex-style_01C2 & {
+    @include pat-design-decolist-8;
+  }
+  .ex-style_01C3 & {
+    @include pat-design-decolist-9;
+  }
+}

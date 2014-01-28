@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "../pc-style/mod-title-style";
+
+
+.mod-title_ver2 {
+  @include common-style-mod-title;
+  @include module-style-mod-title;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-title;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-title;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-title;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-title;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-title;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-title;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01C1-mod-title;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01C2-mod-title;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-title;
+  }
+}
+
+.mod-title-footer {
+  // @include common-style-mod-title;
+  @include module-style-mod-title-footer;
+  .ex-style_01A1 & {@include pat-item-title-brown-1;}
+  .ex-style_01A2 & {@include pat-item-title-black-1;}
+  .ex-style_01A3 & {@include pat-item-title-brown-2;}
+  .ex-style_01B1 & {@include pat-item-title-white-1;}
+  .ex-style_01B2 & {@include pat-item-title-white-1;}
+  .ex-style_01B3 & {@include pat-item-title-brown-2;}
+  .ex-style_01C1 & {@include pat-item-title-blue-1;}
+  .ex-style_01C2 & {@include pat-item-title-blue-2;}
+  .ex-style_01C3 & {@include pat-item-title-brown-1;}
+}
+// .mod-title-footer {
+//   @include common-style-mod-title-footer;
+//   @include mudule-style-mod-title-footer;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-title-footer;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-title-footer;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-title-footer;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-title-footer;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-title-footer;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-title-footer;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-title-footer;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-title-footer;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-title-footer;
+//   }
+// }
+
+
+// .mod-title8 {
+//   @extend .mod-title_ver2;
+// }
+// .mod-title12 {
+//   @extend .mod-title-footer;
+// }

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@mixin mod-2col22-common-style {
+@extend %cf;
+  margin-top: 30px;
+  > .mod-2col-inner {
+    float: left;
+    width: floor(($mainWidth - 60) / 4);
+    margin-right: 15px;
+     > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+  > .mod-2col-inner2 {
+    float: right;
+    width: floor(($mainWidth - 60) / 4);
+     > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+

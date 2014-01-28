@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+//旧方式のコピーのため要改修
+
+//##################################################
+//  mod-link-yoso
+//  mod-link-pic
+//  mod-link-1st
+//  mod-link-2nd
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-link {
+  @include border-radius();
+  @include box-sizing(border-box);
+  display: block;
+  padding: 12px 40px 12px 10px;
+  border: 1px solid #cccccc;
+  background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  background-position: 95% 50%;
+  background-size: 17px 17px, 100%;
+  background-repeat: no-repeat;
+  p {
+    @include box-sizing(border-box);
+    min-width: 15px;
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-decoration: none;
+    font-size: $fontSizeM !important;
+    line-height: 1.4;
+    span, strong {
+      font-size: $fontSizeM !important;
+    }
+  }
+}
+
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-link {
+  margin-top: 10px;
+}
+
+@mixin module-style-mod-link-pic {
+  margin-top: 15px;
+  width: 95%;
+}
+
+@mixin module-style-mod-link-1st {
+  margin-top: 10px;
+  width: 95%;
+}
+
+@mixin module-style-mod-link-2nd {
+  margin-top: 10px;
+  width: 95%;
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-link {
+  a {
+    color: #335a93;
+  }
+}
+@mixin deco-style01A2-mod-link {
+  a {
+    color: #294470;
+  }
+}
+@mixin deco-style01A3-mod-link {
+  a {
+    color: #45320b;
+  }
+}
+@mixin deco-style01A1-mod-link-a {
+  color: #335a93;
+}
+//aがdivの外についた時用
+@mixin deco-style01A2-mod-link-a {
+  color: #294470;
+}
+//aがdivの外についた時用
+@mixin deco-style01A3-mod-link-a {
+  color: #45320b;
+}

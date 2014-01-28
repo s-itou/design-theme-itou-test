@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+// -----------------------------------
+// mod-table の紐付けモジュール
+// -----------------------------------
+
+@import "../pc-style/mod-table-style";
+@import "../pattern/pat-item-table";
+
+////////////////////////////////////////
+// MODULE MAPPING (mod-table)
+.mod-table_ver2 {
+  @include common-style-mod-table;
+  .ex-style01A1 & {
+    @include pat-item-table-1;
+  }
+  .ex-style01A2 & {
+    @include pat-item-table-2;
+  }
+  .ex-style01A3 & {
+    @include pat-item-table-3;
+  }
+  .ex-style01B1 & {
+    @include pat-item-table-4;
+  }
+  .ex-style01B2 & {
+    @include pat-item-table-5;
+  }
+  .ex-style01B3 & {
+    @include pat-item-table-6;
+  }
+  .ex-style01C1 & {
+    @include pat-item-table-7;
+  }
+  .ex-style01C2 & {
+    @include pat-item-table-8;
+  }
+  .ex-style01C3 & {
+    @include pat-item-table-9;
+  }
+}
+
+.mod-table-side {
+  @include common-style-mod-table;
+  .ex-style01A1 & {
+    @include pat-item-table-side-1;
+  }
+  .ex-style01A2 & {
+    @include pat-item-table-side-2;
+  }
+  .ex-style01A3 & {
+    @include pat-item-table-side-3;
+  }
+  .ex-style01B1 & {
+    @include pat-item-table-side-1;
+  }
+  .ex-style01B2 & {
+    @include pat-item-table-side-1;
+  }
+  .ex-style01B3 & {
+    @include pat-item-table-side-1;
+  }
+  .ex-style01C1 & {
+    @include pat-item-table-side-1;
+  }
+  .ex-style01C2 & {
+    @include pat-item-table-side-1;
+  }
+  .ex-style01C3 & {
+    @include pat-item-table-side-1;
+  }
+}
+
+// -------------------------------------
+//  既存モジュールへの対応
+// -------------------------------------
+//しなくてよい？
+
+
+
+// /　別ファイルで指定
+// ////////////////////////////////////////
+// // SET&COLUMN MAPPING
+// .mod-set-ryokin {
+//   .mod-table {
+//     @include module-style-mod-set-ryokin-table;
+//     .ex-style01A1 & {}
+//     .ex-style01A2 & {}
+//     .ex-style01A3 & {}
+//     .ex-style01B1 & {}
+//     .ex-style01B2 & {}
+//     .ex-style01B3 & {}
+//     .ex-style01C1 & {}
+//     .ex-style01C2 & {}
+//     .ex-style01C3 & {}
+//   }
+// }
+
+// .mod-set-schedule {
+//   .mod-table {
+//     @include module-style-mod-set-schedule-table;
+//     .ex-style01A1 & {
+//       @include pat-item-table-10;
+//     }
+//     .ex-style01A2 & {
+//       @include pat-item-table-11;
+//     }
+//     .ex-style01A3 & {
+//       @include pat-item-table-12;
+//     }
+//     .ex-style01B1 & {
+//       @include pat-item-table-13;
+//     }
+//     .ex-style01B2 & {
+//       @include pat-item-table-14;
+//     }
+//     .ex-style01B3 & {
+//       @include pat-item-table-15;
+//     }
+//     .ex-style01C1 & {
+//       @include pat-item-table-16;
+//     }
+//     .ex-style01C2 & {
+//       @include pat-item-table-17;
+//     }
+//     .ex-style01C3 & {
+//       @include pat-item-table-18;
+//     }
+//   }
+// }
+
+
+// .mod-set-company {
+//   .mod-table {
+//     @include module-style-mod-set-company-table;
+//     .ex-style01A1 & {}
+//     .ex-style01A2 & {}
+//     .ex-style01A3 & {}
+//     .ex-style01B1 & {}
+//     .ex-style01B2 & {}
+//     .ex-style01B3 & {}
+//     .ex-style01C1 & {}
+//     .ex-style01C2 & {}
+//     .ex-style01C3 & {}
+//   }
+// }
+
+// .mod-set-schedule-side {
+//   .mod-table-side {
+//     @include module-style-mod-set-schedule-side-table;
+//     .ex-style01A1 & {}
+//     .ex-style01A2 & {}
+//     .ex-style01A3 & {}
+//     .ex-style01B1 & {}
+//     .ex-style01B2 & {}
+//     .ex-style01B3 & {}
+//     .ex-style01C1 & {}
+//     .ex-style01C2 & {}
+//     .ex-style01C3 & {}
+//   }
+// }
+// */
+

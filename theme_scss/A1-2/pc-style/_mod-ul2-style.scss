@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@mixin mod-ul2-common-style {
+margin-top: 10px;
+  ul {
+    padding-left: 0;
+    margin: 0;
+    li {
+      margin-top: 5px;
+      margin-left: 15px;
+      padding-left:15px;
+      list-style: none;
+      font-size: 13px;
+      background-repeat: no-repeat;
+      background-position: left 5px;
+    }
+  }
+  > p {
+    margin-top: 12px;
+  }
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin mod-ul2-style {
+li {
+    background-image: url("img/mod-ul/bg02.png");
+  }
+}
+@mixin mod-ul2-style2 {
+li {
+    background-image: url("img/mod-ul/bg02_2.png");
+  }
+}
+@mixin mod-ul2-style3 {
+li {
+    background-image: url("img/mod-ul/bg02_3.png");
+  }
+}

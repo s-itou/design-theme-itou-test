@@ -1,0 +1,20 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// mod-set-fukidashi の共通定義
+//
+// -----------------------------------
+
+%common-style-mod-set-fukidashi {
+  width: 100%;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        &, > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+

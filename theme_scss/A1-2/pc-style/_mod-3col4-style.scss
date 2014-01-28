@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@mixin mod-3col4-common-style {
+  @extend %cf;
+  > .mod-3col-inner {
+    float: left;
+    width: floor(($mainWidth - 60) / 4);
+    margin-right: 15px;
+  }
+  > .mod-3col-inner2 {
+    float: left;
+    width: floor(($mainWidth - 60) / 4);
+    margin-right: 15px;
+  }
+  > .mod-3col-inner3 {
+    float: right;
+    width: floor(($mainWidth - 60) / 4);
+  }
+}
+
+

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-navi-header
+//
+//    ・ナビゲーションの背景デザイン
+//    ・mod-navi-header,mod-navi-fix-header
+//     を前提としたデザインパターン
+//
+//    ・navi-header（グローバルナビゲーションの背景デザイン）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-navi-header-style.scss";
+
+// -------------------------------------
+//  pat-item-navi-header の個別設定
+// -------------------------------------
+
+// navi-header ex-style1
+@mixin pat-item-navi-header-kado-image-black {
+  @include common-style-pat-item-navi-header;
+  @include module-style-pat-item-navi-header-kado-image;
+  @include deco-style-pat-item-navi-header-kado-image-black;
+}
+
+// navi-header ex-style2
+@mixin pat-item-navi-header-kado-image-blue {
+  @include common-style-pat-item-navi-header;
+  @include module-style-pat-item-navi-header-kado-image;
+  @include deco-style-pat-item-navi-header-kado-image-blue;
+}
+
+// navi-header ex-style3
+@mixin pat-item-navi-header-kado-image-red {
+  @include common-style-pat-item-navi-header;
+  @include module-style-pat-item-navi-header-kado-image;
+  @include deco-style-pat-item-navi-header-kado-image-red;
+}
+
+// navi-header ex-style4
+@mixin pat-item-navi-header-kado-image-gray {
+  @include common-style-pat-item-navi-header;
+  @include module-style-pat-item-navi-header-kado-image;
+  @include deco-style-pat-item-navi-header-kado-image-gray;
+}
+
+// navi-header ex-style5
+@mixin pat-item-navi-header-kado-image-black-2 {
+  @include common-style-pat-item-navi-header;
+  @include module-style-pat-item-navi-header-kado-image;
+  @include deco-style-pat-item-navi-header-kado-image-black-2;
+}
+
+// navi-header ex-style6
+@mixin pat-item-navi-header-kado-image-blue-2 {
+  @include common-style-pat-item-navi-header;
+  @include module-style-pat-item-navi-header-kado-image;
+  @include deco-style-pat-item-navi-header-kado-image-blue-2;
+}
+
+// navi-header ex-style7
+@mixin pat-item-navi-header-kado-image-red-2 {
+  @include common-style-pat-item-navi-header;
+  @include module-style-pat-item-navi-header-kado-image;
+  @include deco-style-pat-item-navi-header-kado-image-red-2;
+}
+

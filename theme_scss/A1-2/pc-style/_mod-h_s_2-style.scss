@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@mixin mod-h_s_2-common-style {
+  display: table;
+  margin-top: 20px;
+  width: 100%;
+  i {
+    display: table-cell;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_0,.mod-icon_1 {
+    min-width: 0;
+  }
+  .mod-h {
+    display: table-cell;
+    font-weight: bold;
+    font-size: $sideFontSizeM;
+  }
+  a {
+    display: table;
+    width: 100%;
+  }
+}
+
+@mixin mod-h_s_2-style {
+  .mod-icon_2 {
+    height: 17px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg07_v.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg08_v.png");
+    background-position: left top;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg09_v.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg10_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    min-width: 24px;
+    background-image: url("img/mod-h_5/bg06_v.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #46140b;
+  }
+}
+@mixin mod-h_s_2-style2 {
+  .mod-icon_2 {
+    height: 17px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg07_v2.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg08_v2.png");
+    background-position: left top;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg09_v2.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg10_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    min-width: 24px;
+    background-image: url("img/mod-h_5/bg06_v2.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #222222;
+  }
+}
+@mixin mod-h_s_2-style3 {
+  .mod-icon_2 {
+    height: 17px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg07_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg08_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg09_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    min-width: 20px;
+    background-image: url("img/mod-h_5/bg10_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    min-width: 24px;
+    background-image: url("img/mod-h_5/bg06_v3.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #010911;
+  }
+}
+
+
+@mixin _mod-h_s_2-common-style {
+
+}
+
+

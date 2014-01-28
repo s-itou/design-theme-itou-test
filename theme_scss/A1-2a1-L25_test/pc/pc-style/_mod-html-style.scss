@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-style-mod-html {
+  overflow: auto;
+  width: 100%;
+  small {
+    a {
+      @include box-sizing(border-box);
+      @include border-radius(3px);
+      @extend %inlineBlock;
+      padding: 10px 0 0 25px;
+      min-height: 40px;
+      background-repeat: no-repeat;
+      font-size: $fontSizeM - 1;
+    }
+  }
+  > div, > iframe {
+    //googleの設定の打ち消し　左右のみのためショートハンド不使用
+    display: block;
+    margin-right:auto !important;
+    margin-left:auto !important;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//基本形（メインエリア）
+@mixin module-style-mod-html {}
+@mixin module-style-mod-html-doga {
+  margin: 15px 0 0 0;
+}
+@mixin module-style-mod-html-map {
+  margin: 10px 0 0 0;
+  //IE8のみハック　bnrをつかうHTML地図部品用
+  html>/**/body & {
+    small a {
+      height: 40px;
+      min-height /*\**/: 29px\9;
+    }
+  }
+}
+@mixin module-style-mod-html-slide {}
+@mixin module-style-mod-html-side {}
+@mixin module-style-mod-html-slide-side {}
+@mixin module-style-mod-html-map-side {
+  margin: 10px 0 0 0;
+}
+@mixin module-style-mod-html-header {}
+@mixin module-style-mod-html-slide-header {}
+@mixin module-style-mod-html-footer {}
+@mixin module-style-mod-html-map-footer {
+  iframe {
+    //googleの設定の打ち消しのためimportant
+    margin-bottom: -23px;
+    width: 100% !important;
+    height: 190px !important;
+  }
+  small {
+    a {
+      padding: 10px 0 0 15px;
+      max-width: 100%;
+      background-position: left 2px;
+      font-size: $sideFontSizeM;
+    }
+  }
+}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+
+@mixin deco-style01A1-mod-html-map {
+  small {
+    a {
+      width: 200px;
+      border-right: 1px solid #bfbfbf;
+      border-bottom: 1px solid #bfbfbf;
+      background-color: #fffdf3;
+      background-image: url("img/mod-link/bg.png");
+      background-position: 9px 13px;
+      color: #333333 !important;
+    }
+  }
+}
+
+@mixin deco-style01A2-mod-html-map {
+  small {
+    a {
+      width: 200px;
+      border-right: 1px solid #bfbfbf;
+      border-bottom: 1px solid #bfbfbf;
+      background-color: #fffdf3;
+      background-image: url("img/mod-bnr/bg07_2.png");
+      background-position: 9px 13px;
+      color: #333333 !important;
+    }
+  }
+}
+
+@mixin deco-style01A3-mod-html-map {
+  small {
+    a {
+      width: 200px;
+      border-right: 1px solid #bfbfbf;
+      border-bottom: 1px solid #bfbfbf;
+      background-color: #fffdf3;
+      background-image: url("img/mod-bnr/bg07_3.png");
+      background-position: 9px 13px;
+      color: #333333 !important;
+    }
+  }
+}
+
+@mixin deco-style01B1-mod-html-map {
+  small {
+    a {
+      overflow: hidden;
+      width: 201px;
+      height: 41px;
+      border-right: none;
+      border-bottom: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg.png");
+      color: #ffffff !important;
+    }
+  }
+}
+
+@mixin deco-style01B2-mod-html-map {
+  small {
+    a {
+      overflow: hidden;
+      width: 201px;
+      height: 41px;
+      border-right: none;
+      border-bottom: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg_2.png");
+      color: #ffffff !important;
+    }
+  }
+}
+
+@mixin deco-style01B3-mod-html-map {
+  small {
+    a {
+      overflow: hidden;
+      width: 201px;
+      height: 41px;
+      border-right: none;
+      border-bottom: none;
+      background-color: transparent;
+      background-image: url("img/mod-html/bg_3.png");
+      color: #443308 !important;
+    }
+  }
+}
+
+
+@mixin deco-style01A1-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_a.png");
+      color: #45320b;
+      &:hover {
+        color: #45320b;
+      }
+    }
+  }
+}
+@mixin deco-style01A2-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_a_2.png");
+      color: #294470;
+      &:hover {
+        color: #294470;
+      }
+    }
+  }
+}
+@mixin deco-style01A3-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_a_3.png");
+      color: #294470;
+      &:hover {
+        color: #294470;
+      }
+    }
+  }
+}
+@mixin deco-style01B1-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_b.png");
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+@mixin deco-style01B2-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_b_2.png");
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+@mixin deco-style01B3-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_b_3.png");
+      color: #443308;
+      &:hover {
+        color: #443308;
+      }
+    }
+  }
+}
+@mixin deco-style01C1-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_c.png");
+      color: #45320b;
+      &:hover {
+        color: #45320b;
+      }
+    }
+  }
+}
+@mixin deco-style01C2-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_c_2.png");
+      color: #45320b;
+      &:hover {
+        color: #45320b;
+      }
+    }
+  }
+}
+@mixin deco-style01C3-mod-html-map-footer {
+  small {
+    a {
+      background-image: url("img/mod-html/_06/bg_c_3.png");
+      color: #45320b;
+      &:hover {
+        color: #45320b;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+//  mod-m279 の mixin一式
+@mixin mod-m279-box-common-style {
+  @include border-radius(3px);
+   margin-top: 20px;
+  .mod-m279-box2 {
+    .mod-m279-bnr, .mod-m279-bnr2 {
+      @include border-radius();
+      width: 195px;
+      &:hover {
+        opacity: 0.80;
+      }
+      a:hover, a:hover p {
+        text-decoration: none;
+      }
+      .mod-bnr-inner {
+        max-height: 42px;
+        color: #ffffff;
+        @include border-radius();
+        font-size: $fontSizeS + 1;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 18px;
+        padding-right: 5px;
+      }
+    }
+    .mod-m279-bnr {
+      margin-top: 15px;
+    }
+    .mod-m279-bnr2 {
+      margin-top: 10px;
+    }
+    .mod-m279-link, .mod-m279-link2 {
+      padding-left: 20px;
+      line-height: 1.4;
+      min-height: 20px;
+      background-repeat: no-repeat;
+      background-position: left 4px;
+      @include box-sizing(border-box);
+      p {
+        min-width: 15px;
+        color: #335a93;
+      }
+    }
+    .mod-m279-link {
+      margin-top: 15px !important;
+    }
+    .mod-m279-link2 {
+      margin-top: 5px !important;
+    }
+  }
+}
+@mixin mod-m279-box-style5 {
+  //none
+  border: 1px solid #0f375f;
+  background-color: #0f375f;
+  .mod-m279-h_4 {
+    padding: 0 10px;
+    .mod-h_4-inner2 {
+      display: table;
+      i {
+        display: table-cell;
+        background-image: url("img/mod-m279/mod-h_4/bg_b_2.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        min-width: 11px;
+      }
+      .mod-h {
+        display: table-cell;
+        color: #ffffff;
+        padding: 2px 0 0 5px;
+      }
+    }
+  }
+  .mod-m279-box2 {
+    padding: 15px 15px 10px 15px;
+    background-color: #ffffff;
+    .mod-m279-bnr, .mod-m279-bnr2 {
+      background-color: #0b2845;
+      border-top: 1px solid #8b99a7;
+      border-bottom: 1px solid #030f20;
+      border-right: 1px solid #05162a;
+      .mod-bnr-inner {
+        background-image: url("img/mod-m279/mod-bnr/bg_b_2.png");
+      }
+    }
+    .mod-m279-link, .mod-m279-link2 {
+      padding-right: 0;
+      background-image: url("img/mod-m279/mod-link/bg_b_2.png");
+      background-position: left 4px;
+      a &, a {
+        color: #335a93;
+      }
+    }
+  }
+}
+@mixin mod-m279-box-style {
+  @include mod-m279-box-style5; // none
+}
+@mixin mod-m279-box-style2 {
+  @include mod-m279-box-style5; // none
+}
+@mixin mod-m279-box-style3 {
+  @include mod-m279-box-style5; // none
+}
+@mixin mod-m279-box-style4 {
+  @include mod-m279-box-style5; // none
+}
+// @mixin mod-m279-box-style5 {上に記載}
+@mixin mod-m279-box-style6 {
+  @include mod-m279-box-style5; // none
+}
+@mixin mod-m279-box-style7 {
+  @include mod-m279-box-style5; // none
+}
+@mixin mod-m279-box-style8 {
+  @include mod-m279-box-style5; // none
+}
+@mixin mod-m279-box-style9 {
+  @include mod-m279-box-style5; // none
+}

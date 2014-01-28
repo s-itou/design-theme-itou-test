@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "../sp-style/part-main-279-style";
+
+.mod-m279-box {
+  @include mod-m279-common-style;
+  @include mod-m279-style;
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-m279-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-m279-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-m279-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-m279-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-m279-style6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-m279-style7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-m279-style8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-m279-style9;
+  }
+}
+

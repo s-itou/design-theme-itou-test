@@ -1,0 +1,707 @@
+@charset "UTF-8";
+@import "../pc-style/mod-bnr-style";
+
+.mod-bnr {
+  @include mod-bnr-common-style;
+  @include mod-bnr-style;
+  .ex-style_01A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_c1A1 &,
+  .ex-style_d1A1 &,
+  .ex-style_i1A1 & {
+    @include mod-bnr-style;
+  }
+  .ex-style_01A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_i1A2 & {
+    @include mod-bnr-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_i1A3 & {
+    @include mod-bnr-style3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_i1B1 & {
+    @include mod-bnr-style4;
+  }
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_i1B2 & {
+    @include mod-bnr-style5;
+  }
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_i1B3 & {
+    @include mod-bnr-style6;
+  }
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_i1C1 & {
+    @include mod-bnr-style7;
+  }
+  .ex-style_01C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_i1C2 & {
+    @include mod-bnr-style8;
+  }
+  .ex-style_01C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_i1C3 & {
+    @include mod-bnr-style9;
+  }
+  .ex-style_q1A1 &  {
+    @include mod-bnr-style;
+  }
+  .ex-style_q1A2 &  {
+    @include mod-bnr-style2;
+  }
+  .ex-style_q1A3 & {
+    @include mod-bnr-style3;
+  }
+  .ex-style_q1B1 & {
+    @include mod-bnr-style10;
+  }
+  .ex-style_q1B2 & {
+    @include mod-bnr-style11;
+  }
+  .ex-style_q1B3 & {
+    @include mod-bnr-style12;
+  }
+  .ex-style_q1C1 & {
+    @include mod-bnr-style7;
+  }
+  .ex-style_q1C2 & {
+    @include mod-bnr-style8;
+  }
+  .ex-style_q1C3 & {
+    @include mod-bnr-style9;
+  }
+}
+
+
+
+.mod-bnr7 {
+  @include mod-bnr7-common-style;
+  @include mod-bnr7-style;
+  .ex-style_01A1 &,
+  .ex-style_i1A1 & {
+    @include mod-bnr7-style;
+  }
+  .ex-style_01A2 &,
+  .ex-style_i1A2 & {
+    @include mod-bnr7-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_i1A3 & {
+    @include mod-bnr7-style3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_i1B1 & {
+    @include mod-bnr7-style4;
+  }
+  .ex-style_01B2 &,
+  .ex-style_i1B2 & {
+    @include mod-bnr7-style5;
+  }
+  .ex-style_01B3 &,
+  .ex-style_i1B3 & {
+    @include mod-bnr7-style6;
+  }
+  .ex-style_01C1 &,
+  .ex-style_i1C1 & {
+    @include mod-bnr7-style7;
+  }
+  .ex-style_01C2 &,
+  .ex-style_i1C2 & {
+    @include mod-bnr7-style8;
+  }
+  .ex-style_01C3 &,
+  .ex-style_i1C3 & {
+    @include mod-bnr7-style9;
+  }
+}
+
+
+.mod-bnr10 {
+  @include mod-bnr10-common-style;
+  @include mod-bnr10-style;
+  .ex-style_01A1 & {
+    @include mod-bnr10-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr10-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr10-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr10-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr10-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr10-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr10-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr10-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr10-style9;
+  }
+}
+
+
+.mod-bnr11 {
+  @include mod-bnr11-common-style;
+  @include mod-bnr11-style;
+  .ex-style_01A2 & {
+    @include mod-bnr11-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr11-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr11-style3;
+  }
+}
+
+
+.mod-bnr13 {
+  @include mod-bnr13-common-style;
+  @include mod-bnr13-style;
+  .ex-style_01A1 & {
+    @include mod-bnr13-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr13-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr13-style3;
+  }
+}
+
+
+.mod-bnr14 {
+  @include mod-bnr14-common-style;
+  @include mod-bnr14-style;
+  .ex-style_01A1 & {
+    @include mod-bnr14-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr14-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr14-style3;
+  }
+}
+
+
+.mod-bnr17 {
+  @include mod-bnr17-common-style;
+  @include mod-bnr17-style;
+  .ex-style_01A1 & {
+    @include mod-bnr17-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr17-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr17-style3;
+  }
+}
+
+
+.mod-bnr18 {
+  @include mod-bnr18-common-style;
+  @include mod-bnr18-style;
+  .ex-style_01A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_c1A1 & {
+    @include mod-bnr18-style;
+  }
+  .ex-style_01A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 & {
+    @include mod-bnr18-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 & {
+    @include mod-bnr18-style3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 & {
+    @include mod-bnr18-style4;
+  }
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 & {
+    @include mod-bnr18-style5;
+  }
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 & {
+    @include mod-bnr18-style6;
+  }
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 & {
+    @include mod-bnr18-style7;
+  }
+  .ex-style_01C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 & {
+    @include mod-bnr18-style8;
+  }
+  .ex-style_01C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 & {
+    @include mod-bnr18-style9;
+  }
+}
+
+.mod-bnr23 {
+  @include mod-bnr23-common-style;
+  @include mod-bnr23-style;
+  .ex-style_01A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_c1A1 &,
+  .ex-style_d1A1 &,
+  .ex-style_i1A1 &,
+  .ex-style_p3A1 & {
+    @include mod-bnr23-style;
+  }
+  .ex-style_01A2 &,
+  .ex-style_v1A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_p3A2 & {
+    @include mod-bnr23-style2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_v1A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_p3A3 & {
+    @include mod-bnr23-style3;
+  }
+  .ex-style_01B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_p3B1 & {
+    @include mod-bnr23-style4;
+  }
+  .ex-style_01B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_p3B2 & {
+    @include mod-bnr23-style5;
+  }
+  .ex-style_01B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_p3B3 & {
+    @include mod-bnr23-style6;
+  }
+  .ex-style_01C1 &,
+  .ex-style_v1C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_p3C1 & {
+    @include mod-bnr23-style7;
+  }
+  .ex-style_01C2 &,
+  .ex-style_v1C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_p3C2 & {
+    @include mod-bnr23-style8;
+  }
+  .ex-style_01C3 &,
+  .ex-style_v1C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_p3C3 & {
+    @include mod-bnr23-style9;
+  }
+  .ex-style_q1A1 &  {
+    @include mod-bnr23-style;
+  }
+  .ex-style_q1A2 &  {
+    @include mod-bnr23-style2;
+  }
+  .ex-style_q1A3 & {
+    @include mod-bnr23-style3;
+  }
+  .ex-style_q1B1 & {
+    @include mod-bnr23-style10;
+  }
+  .ex-style_q1B2 & {
+    @include mod-bnr23-style11;
+  }
+  .ex-style_q1B3 & {
+    @include mod-bnr23-style12;
+  }
+  .ex-style_q1C1 & {
+    @include mod-bnr23-style7;
+  }
+  .ex-style_q1C2 & {
+    @include mod-bnr23-style8;
+  }
+  .ex-style_q1C3 & {
+    @include mod-bnr23-style9;
+  }
+}
+
+
+
+.mod-bnr25 {
+  @include mod-bnr25-common-style;
+  @include mod-bnr25-style;
+  .ex-style_01A1 & {
+    @include mod-bnr25-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr25-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr25-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr25-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr25-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr25-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr25-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr25-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr25-style9;
+  }
+}
+
+
+
+.mod-bnr29 {
+  @include mod-bnr29-common-style;
+  @include mod-bnr29-style;
+}
+
+.mod-bnr30 {
+  @include mod-bnr30-common-style;
+  @include mod-bnr30-style;
+}
+
+
+.mod-bnr31 {
+  @include mod-bnr31-common-style;
+  @include mod-bnr31-style;
+  .ex-style_01A2 & {
+    @include mod-bnr31-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr31-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr31-style3;
+  }
+}
+
+.mod-bnr32 {
+  @include mod-bnr32-common-style;
+  @include mod-bnr32-style;
+  .ex-style_01A1 & {
+    @include mod-bnr32-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr32-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr32-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr32-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr32-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr32-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr32-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr32-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr32-style9;
+  }
+}
+
+.mod-bnr33 {
+  @include mod-bnr33-common-style;
+  @include mod-bnr33-style;
+  .ex-style_01A1 & {
+    @include mod-bnr33-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr33-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr33-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr33-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr33-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr33-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr33-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr33-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr33-style9;
+  }
+}
+
+.mod-bnr34 {
+  @include mod-bnr34-common-style;
+  @include mod-bnr34-style;
+  .ex-style_01A1 & {
+    @include mod-bnr34-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr34-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr34-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr34-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr34-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr34-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr34-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr34-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr34-style9;
+  }
+}
+
+
+.mod-bnr36 {
+  @include mod-bnr36-common-style;
+  @include mod-bnr36-style;
+  .ex-style_01A1 & {
+    @include mod-bnr36-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr36-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr36-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr36-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr36-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr36-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr36-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr36-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr36-style9;
+  }
+}
+
+.mod-bnr37 {
+  @include mod-bnr37-common-style;
+  @include mod-bnr37-style;
+  .ex-style_01A1 & {
+    @include mod-bnr37-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr37-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr37-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr37-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr37-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr37-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr37-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr37-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr37-style9;
+  }
+}
+
+.mod-bnr40 {
+  @include mod-bnr40-common-style;
+  @include mod-bnr40-style;
+  .ex-style_01A1 & {
+    @include mod-bnr40-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr40-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr40-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr40-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr40-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr40-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr40-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr40-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr40-style9;
+  }
+}
+
+.mod-bnr-set4 {
+  @include mod-bnr-set4-common-style;
+  @include mod-bnr-set4-style;
+  .ex-style_01A1 & {
+    @include mod-bnr-set4-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr-set4-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr-set4-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr-set4-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr-set4-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr-set4-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr-set4-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr-set4-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr-set4-style9;
+  }
+}
+
+.mod-bnr-set5 {
+  @include mod-bnr-set5-common-style;
+  @include mod-bnr-set5-style;
+  .ex-style_01A1 & {
+    @include mod-bnr-set5-style;
+  }
+  .ex-style_01A2 & {
+    @include mod-bnr-set5-style2;
+  }
+  .ex-style_01A3 & {
+    @include mod-bnr-set5-style3;
+  }
+  .ex-style_01B1 & {
+    @include mod-bnr-set5-style4;
+  }
+  .ex-style_01B2 & {
+    @include mod-bnr-set5-style5;
+  }
+  .ex-style_01B3 & {
+    @include mod-bnr-set5-style6;
+  }
+  .ex-style_01C1 & {
+    @include mod-bnr-set5-style7;
+  }
+  .ex-style_01C2 & {
+    @include mod-bnr-set5-style8;
+  }
+  .ex-style_01C3 & {
+    @include mod-bnr-set5-style9;
+  }
+}
+

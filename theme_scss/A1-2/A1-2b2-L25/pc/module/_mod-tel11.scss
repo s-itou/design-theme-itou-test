@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "../../pc-style/mod-tel11-style";
+
+.mod-tel11 {
+  @include mod-tel11-common-style;
+  @include mod-tel11-style2;
+  .ex-style_01A2 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 & {
+    @include mod-tel11-style;
+  }
+  .ex-style_01A3 & {
+    @include mod-tel11-style3;
+  }
+}
+

@@ -1,0 +1,1704 @@
+@charset "UTF-8";
+
+//  mod-ftel9 の mixin一式
+@mixin mod-ftel9-common-style {
+  @extend %inlineBlock;
+  margin-top: 10px;
+  .mod-ftel-inner {
+    font-size: 13px;
+    line-height: 1.0;
+    padding: 0 0 0 40px;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 25px;
+    padding: 0 0 0 40px;
+    background-image: url("img/mod-ftel/bg04.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin mod-ftel9-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+  }
+}
+
+@mixin mod-ftel9-style2 {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #0b2d63;
+  }
+}
+
+@mixin mod-ftel9-style3 {
+  .mod-ftel-inner {
+    color: #56534e;
+  }
+  .mod-ftel-inner2 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-ftel9-style4 {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+  }
+}
+
+
+
+//  mod-ftel10 の mixin一式
+@mixin mod-ftel10-common-style {
+  @extend %inlineBlock;
+  margin-top: 10px;
+  .mod-ftel-inner {
+    font-size: 13px;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 25px;
+  }
+}
+
+@mixin mod-ftel10-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+  }
+}
+
+@mixin mod-ftel10-style2 {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #0b2d63;
+  }
+}
+
+@mixin mod-ftel10-style3 {
+  .mod-ftel-inner {
+    color: #56534e;
+  }
+  .mod-ftel-inner2 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-ftel10-style4 {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #333333;
+  }
+}
+
+
+//  mod-ftel15 の mixin一式
+@mixin mod-ftel15-common-style {
+  @extend %inlineBlock;
+  margin-top: 10px !important;
+  .mod-ftel-inner {
+    font-size: $sideFontSizeS;
+    line-height: 1.0;
+    padding: 0 0 0 30px;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    font-weight: bold;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: $sideFontSizeL + 2;
+    padding: 2px 0 0 30px;
+    background-image: url("img/mod-ftel/bg.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin mod-ftel15-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f7931d;
+  }
+}
+
+@mixin mod-ftel15-style2 {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #426ca6;
+  }
+}
+
+@mixin mod-ftel15-style3 {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #eb5910;
+  }
+}
+
+
+
+//  mod-ftel16 の mixin一式
+@mixin mod-ftel16-common-style {
+  @extend %inlineBlock;
+  margin-top: 10px !important;
+  .mod-ftel-inner {
+    font-size: $sideFontSizeS;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    font-weight: bold;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: $sideFontSizeL + 2;
+    padding-top: 2px;
+  }
+}
+
+@mixin mod-ftel16-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f7931d;
+  }
+}
+
+@mixin mod-ftel16-style2 {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #426ca6;
+  }
+}
+
+@mixin mod-ftel16-style3 {
+  .mod-ftel-inner {
+    color: #45320b;
+  }
+  .mod-ftel-inner2 {
+    color: #eb5910;
+  }
+}
+
+
+//  mod-ftel17 の mixin一式
+@mixin mod-ftel17-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-ftel-inner {
+    padding-left: 50px;
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    padding-left: 50px;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("img/mod-ftel/bg06.png");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+  }
+}
+
+@mixin mod-ftel17-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-ftel18 の mixin一式
+@mixin mod-ftel18-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-ftel-inner {
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@mixin mod-ftel18-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-ftel19 の mixin一式
+@mixin mod-ftel19-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-ftel-inner {
+    padding-left: 40px;
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 40px;
+    background-image: url("img/mod-ftel/bg07.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin mod-ftel19-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    @extend %inlineBlock;
+    color: #f58804;
+  }
+}
+
+//  mod-ftel20 の mixin一式
+@mixin mod-ftel20-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-ftel-inner {
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+@mixin mod-ftel20-style {
+  .mod-ftel-inner {
+    color: #333333;
+  }
+  .mod-ftel-inner2 {
+    color: #f58804;
+  }
+}
+
+
+//  mod-tel11 の mixin一式
+@mixin mod-tel11-common-style {
+  @extend %inlineBlock;
+  margin-top: 10px;
+  .mod-tel-inner {
+    font-size: 13px;
+    line-height: 1.0;
+    padding: 0 0 0 40px;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 25px;
+    padding: 5px 0 0 40px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
+
+@mixin mod-tel11-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #333333;
+    background-image: url(img/mod-tel/bg05.png);
+  }
+}
+
+@mixin mod-tel11-style2 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #0b2d63;
+    background-image: url(img/mod-tel/bg05_2.png);
+  }
+}
+@mixin mod-tel11-style3 {
+  .mod-tel-inner {
+    color: #56534e;
+  }
+  .mod-tel-inner2 {
+    color: #45320b;
+    background-image: url(img/mod-tel/bg05_3.png);
+  }
+}
+
+@mixin mod-tel11-style4 {
+  .mod-tel-inner {
+    color: #45320b;
+  }
+  .mod-tel-inner2 {
+    color: #333333;
+    background-image: url(img/mod-tel/bg05.png);
+  }
+}
+
+
+//  mod-tel12 の mixin一式
+@mixin mod-tel12-common-style {
+  @extend %inlineBlock;
+  margin-top: 10px;
+  .mod-tel-inner {
+    font-size: 13px;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 25px;
+  }
+}
+
+@mixin mod-tel12-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #333333;
+  }
+}
+
+@mixin mod-tel12-style2 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #0b2d63;
+  }
+}
+@mixin mod-tel12-style3 {
+  .mod-tel-inner {
+    color: #56534e;
+  }
+  .mod-tel-inner2 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-tel12-style4 {
+  .mod-tel-inner {
+    color: #45320b;
+  }
+  .mod-tel-inner2 {
+    color: #333333;
+  }
+}
+
+
+
+//  mod-tel17 の mixin一式
+@mixin mod-tel17-common-style {
+  @extend %inlineBlock;
+  margin-top: 10px;
+  .mod-tel-inner {
+    font-size: $sideFontSizeS;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    font-weight: bold;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: $sideFontSizeL + 2;
+    padding: 6px 0 0 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position: left center;
+  }
+}
+
+@mixin mod-tel17-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f7931d;
+    background-image: url(img/mod-tel/bg08.png);
+  }
+}
+
+@mixin mod-tel17-style2 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #426ca6;
+    background-image: url(img/mod-tel/bg08_2.png);
+  }
+}
+@mixin mod-tel17-style3 {
+  .mod-tel-inner {
+    color: #56534e;
+  }
+  .mod-tel-inner2 {
+    color: #eb5910;
+    background-image: url(img/mod-tel/bg08_3.png);
+  }
+}
+
+//  mod-tel18 の mixin一式
+@mixin mod-tel18-common-style {
+  @extend %inlineBlock;
+  margin-top: 10px;
+  .mod-tel-inner {
+    font-size: $sideFontSizeS;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    font-weight: bold;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: $sideFontSizeL + 2;
+    padding-top: 6px;
+  }
+}
+
+@mixin mod-tel18-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f7931d;
+  }
+}
+
+@mixin mod-tel18-style2 {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #426ca6;
+  }
+}
+@mixin mod-tel18-style3 {
+  .mod-tel-inner {
+    color: #56534e;
+  }
+  .mod-tel-inner2 {
+    color: #eb5910;
+  }
+}
+
+
+
+//  mod-tel19 の mixin一式
+@mixin mod-tel19-common-style {
+  padding: 0 0 0 35px;
+  word-break: break-all;
+  line-height: 1.5;
+  font-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-tel19-style {
+  color: #333333;
+  background-image: url(img/mod-tel/bg12.png);
+}
+
+//  mod-tel20 の mixin一式
+@mixin mod-tel20-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 28px;
+}
+
+@mixin mod-tel20-style {
+  color: #ff8809;
+}
+
+//  mod-tel21 の mixin一式
+@mixin mod-tel21-common-style {
+  padding: 0 0 0 25px;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-tel21-style {
+  color: #ffffff;
+  background-image: url(img/mod-tel/bg13.png);
+}
+
+//  mod-tel22 の mixin一式
+@mixin mod-tel22-common-style {
+  display: table;
+  .mod-tel-inner {
+    display: table-cell;
+    vertical-align: top;
+    margin: 0;
+  }
+  .mod-tel-inner-img {
+    margin-right: 5px;
+    width: 60px;
+  }
+  .mod-tel-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .mod-tel-inner3 {
+    font-size: $fontSizeL;
+  }
+  .mod-tel-inner4 {
+    display: table;
+  }
+  i {
+    width: 23px;
+    display: table-cell;
+    padding-right: 5px;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+  .mod-tel-inner4-2 {
+    display: table-cell;
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: $fontSizeL + 14;
+  }
+}
+@mixin mod-tel22-style {
+  //none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg23.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin mod-tel22-style2 {
+  //none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg23_2.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin mod-tel22-style3 {
+  //none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg23_3.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin mod-tel22-style4 {
+  //none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg25.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin mod-tel22-style5 {
+  //none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg25_2.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin mod-tel22-style6 {
+  //none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg25_3.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin mod-tel22-style7 {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg24.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #284469;
+  }
+}
+@mixin mod-tel22-style8 {
+  //none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg24_2.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+@mixin mod-tel22-style9 {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg24_3.png");
+  }
+  .mod-tel-inner4-2 {
+    color: #45320b;
+  }
+}
+
+
+//  mod-tel23 の mixin一式
+@mixin mod-tel23-common-style {
+  padding: 0 0 0 32px;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 32px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-tel23-style {
+  color: #333333;
+  background-image: url(img/mod-tel/bg05_3.png);
+}
+
+//  mod-tel24 の mixin一式
+@mixin mod-tel24-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-tel-inner {
+    padding-left: 50px;
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    padding-left: 50px;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("img/mod-tel/bg14.png");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+  }
+}
+
+@mixin mod-tel24-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-tel25 の mixin一式
+@mixin mod-tel25-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-tel-inner {
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@mixin mod-tel25-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-tel24 の mixin一式
+@mixin mod-tel26-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-tel-inner {
+    padding-left:30px;
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left:30px;
+    background-image: url("img/mod-tel/bg15.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin mod-tel26-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    @extend %inlineBlock;
+    color: #f58804;
+  }
+}
+
+//  mod-tel27 の mixin一式
+@mixin mod-tel27-common-style {
+  @extend %inlineBlock;
+  margin-top: 15px !important;
+  .mod-tel-inner {
+    font-size: $sideFontSizeM + 1;
+    line-height: 1.0;
+    text-align: right;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+@mixin mod-tel27-style {
+  .mod-tel-inner {
+    color: #333333;
+  }
+  .mod-tel-inner2 {
+    color: #f58804;
+  }
+}
+
+//  mod-tel28 の mixin一式
+@mixin mod-tel28-common-style {
+  display: table;
+  i {
+    display: table-cell;
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .mod-tel-inner {
+    display: table-cell;
+    padding-left: 5px;
+  }
+  .mod-tel-inner-2 {
+    text-align: right;
+    font-size: $fontSizeS;
+    line-height: 1.0;
+  }
+  .mod-tel-inner-3 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 30px;
+  }
+}
+
+@mixin mod-tel28-style {
+ // none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg12.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-tel28-style2 {
+ // none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg12_2.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-tel28-style3 {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg12_3.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-tel28-style4 {
+ // none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg20.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-tel28-style5 {
+ // none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg20_2.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-tel28-style6 {
+ // none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg20_3.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+@mixin mod-tel28-style7 {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg21.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #284469;
+  }
+}
+
+@mixin mod-tel28-style8 {
+ // none
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg21_2.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+
+@mixin mod-tel28-style9 {
+  .mod-icon_ftel {
+    background-image: url("img/mod-ftel/bg02.png");
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/bg21_3.png");
+  }
+  .mod-tel-inner-2 {
+    color: #333333;
+  }
+  .mod-tel-inner-3 {
+    color: #45320b;
+  }
+}
+
+
+
+//  mod-tel29 の mixin一式
+@mixin mod-tel29-common-style {
+  margin-top: 10px;
+  display: table;
+  i {
+    display: table-cell;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .mod-tel-inner {
+    display: table-cell;
+  }
+  .mod-tel-inner-2 {
+    text-align: right;
+    font-size: $fontSizeS;
+    line-height: 1.0;
+  }
+  .mod-tel-inner-3 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #eb5910;
+  }
+}
+@mixin mod-tel29-style {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #eb5910;
+  }
+}
+
+@mixin mod-tel29-style2 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #eb5910;
+  }
+}
+@mixin mod-tel29-style3 {
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg22_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #3d2612;
+  }
+}
+
+@mixin mod-tel29-style4 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #eb5910;
+  }
+}
+
+@mixin mod-tel29-style5 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #eb5910;
+  }
+}
+
+@mixin mod-tel29-style6 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #eb5910;
+  }
+}
+
+@mixin mod-tel29-style7 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #eb5910;
+  }
+}
+
+@mixin mod-tel29-style8 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #eb5910;
+  }
+}
+@mixin mod-tel29-style9 {
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18_3.png");
+  }
+  .mod-tel-inner-3 {
+    color: #eb5910;
+  }
+}
+
+//  mod-tel30 の mixin一式
+@mixin mod-tel30-common-style {
+  margin-top: 10px;
+  display: table;
+  i {
+    display: table-cell;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .mod-tel-inner {
+    display: table-cell;
+  }
+  .mod-tel-inner-2 {
+    text-align: right;
+    font-size: $fontSizeS;
+    line-height: 1.0;
+  }
+  .mod-tel-inner-3 {
+    margin-top: 3px !important;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #eb5910;
+  }
+}
+@mixin mod-tel30-style {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+@mixin mod-tel30-style2 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+@mixin mod-tel30-style3 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+@mixin mod-tel30-style4 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+@mixin mod-tel30-style5 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+@mixin mod-tel30-style6 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+
+@mixin mod-tel30-style7 {
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+@mixin mod-tel30-style8 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+@mixin mod-tel30-style9 {
+ // none
+  .mod-icon_ftel {
+    width: 39px;
+    padding-left: 5px;
+    background-image: url("img/mod-ftel/bg08.png");
+  }
+  .mod-icon_tel {
+    width: 25px;
+    padding-left: 10px;
+    background-image: url("img/mod-tel/bg18.png");
+  }
+  .mod-tel-inner-3 {
+    color: #f27f1b;
+  }
+}
+
+
+
+//  mod-fax7 の mixin一式
+@mixin mod-fax7-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  margin-top: 10px !important;
+  padding: 5px 0 0 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-fax7-style {
+  color: #333333;
+  background-image: url(img/mod-fax/bg05.png);
+}
+
+@mixin mod-fax7-style2 {
+  color: #0b2d63;
+  background-image: url(img/mod-fax/bg05_2.png);
+}
+
+@mixin mod-fax7-style3 {
+  color: #45320b;
+  background-image: url(img/mod-fax/bg05_3.png);
+}
+
+
+//  mod-fax8 の mixin一式
+@mixin mod-fax8-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  margin-top: 10px !important;
+}
+
+@mixin mod-fax8-style {
+  color: #333333;
+}
+
+@mixin mod-fax8-style2 {
+  color: #0b2d63;
+}
+
+@mixin mod-fax8-style3 {
+  color: #45320b;
+}
+
+
+
+//  mod-fax11 の mixin一式
+@mixin mod-fax11-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: $sideFontSizeL;
+  margin-top: 10px !important;
+  padding: 3px 0 0 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-fax11-style {
+  color: #333333;
+  background-image: url(img/mod-fax/bg06.png);
+}
+
+@mixin mod-fax11-style2 {
+  color: #333333;
+  background-image: url(img/mod-fax/bg06_2.png);
+}
+
+@mixin mod-fax11-style3 {
+  color: #45320b;
+  background-image: url(img/mod-fax/bg06_3.png);
+}
+
+
+//  mod-fax12 の mixin一式
+@mixin mod-fax12-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: $sideFontSizeL;
+  margin-top: 10px !important;
+}
+
+@mixin mod-fax12-style {
+  color: #333333;
+}
+@mixin mod-fax12-style2 {
+  color: #45320b;
+}
+
+//  mod-fax13 の mixin一式
+@mixin mod-fax13-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 28px;
+  margin-top: 5px !important;
+  padding: 3px 0 0 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-fax13-style {
+  color: #333333;
+  background-image: url(img/mod-fax/bg02.png);
+}
+
+
+
+//  mod-cell9 の mixin一式
+@mixin mod-cell9-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  margin-top: 10px !important;
+  padding: 5px 0 0 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+
+@mixin mod-cell9-style {
+  color: #333333;
+  background-image: url(img/mod-cell/bg05.png);
+}
+
+@mixin mod-cell9-style2 {
+  color: #0b2d63;
+  background-image: url(img/mod-cell/bg05_2.png);
+}
+
+@mixin mod-cell9-style3 {
+  color: #45320b;
+  background-image: url(img/mod-cell/bg05_3.png);
+}
+
+
+
+//  mod-cell10 の mixin一式
+@mixin mod-cell10-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 25px;
+  margin-top: 10px !important;
+}
+
+@mixin mod-cell10-style {
+  color: #333333;
+}
+
+@mixin mod-cell10-style2 {
+  color: #0b2d63;
+}
+
+@mixin mod-cell10-style3 {
+  color: #45320b;
+}
+
+
+
+//  mod-cell13 の mixin一式
+@mixin mod-cell13-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: $sideFontSizeL;
+  min-height: 18px;
+  margin-top: 10px !important;
+  padding: 5px 0 0 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-cell13-style {
+  color: #333333;
+  background-image: url(img/mod-cell/bg06.png);
+}
+
+@mixin mod-cell13-style2 {
+  color: #333333;
+  background-image: url(img/mod-cell/bg06_2.png);
+}
+
+@mixin mod-cell13-style3 {
+  color: #45320b;
+  background-image: url(img/mod-cell/bg06_3.png);
+}
+
+
+
+//  mod-cell14 の mixin一式
+@mixin mod-cell14-common-style {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: $sideFontSizeL;
+  margin-top: 10px !important;
+}
+
+@mixin mod-cell14-style {
+  color: #333333;
+}
+
+@mixin mod-cell14-style2 {
+  color: #45320b;
+}
+
+//  mod-email5 の mixin一式
+@mixin mod-email5-common-style {
+  padding: 1px 0 2px 40px;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-email5-style {
+  color: #333333;
+  background-image: url(img/mod-email/bg04.png);
+}
+
+@mixin mod-email5-style2 {
+  color: #0b2d63;
+  background-image: url(img/mod-email/bg04_2.png);
+}
+
+@mixin mod-email5-style3 {
+  color: #45320b;
+  background-image: url(img/mod-email/bg04_3.png);
+}
+
+
+
+//  mod-email6 の mixin一式
+@mixin mod-email6-common-style {
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 20px;
+}
+
+@mixin mod-email6-style {
+  color: #333333;
+}
+
+@mixin mod-email6-style2 {
+  color: #0b2d63;
+}
+
+@mixin mod-email6-style3 {
+  color: #45320b;
+}
+
+
+
+//  mod-email9 の mixin一式
+@mixin mod-email9-common-style {
+  font-weight: normal;
+  font-size: $sideFontSizeL;
+  word-break: break-all;
+  line-height: 1.0;
+  margin-top: 10px !important;
+  padding: 0 0 0 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin mod-email9-style {
+  color: #333333;
+  background-image: url(img/mod-email/bg05.png);
+}
+
+@mixin mod-email9-style2 {
+  color: #333333;
+  background-image: url(img/mod-email/bg05_2.png);
+}
+
+@mixin mod-email9-style3 {
+  color: #45320b;
+  background-image: url(img/mod-email/bg05_3.png);
+}
+
+
+//  mod-email10 の mixin一式
+@mixin mod-email10-common-style {
+  font-size: $sideFontSizeL;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  margin-top: 10px !important;
+}
+
+@mixin mod-email10-style {
+  color: #333333;
+}
+
+@mixin mod-email10-style2 {
+  color: #45320b;
+}
+
+
