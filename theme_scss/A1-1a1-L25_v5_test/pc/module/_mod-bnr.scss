@@ -160,39 +160,37 @@
     @include deco-style01A3-mod-bnr-map;
   }
 }
-// .mod-bnr-side,
-// .mod-bnr-1st-side,
-// .mod-bnr-2nd-side {
-//   @include common-style-mod-bnr;
-//   @include module-style-mod-bnr-side;
-//   .ex-style_01A1 & {
-//     @include pat-item-bnr-mini-1;
-//   }
-//   .ex-style_01A2 & {
-//     @include pat-item-bnr-mini-2;
-//   }
-//   .ex-style_01A3 & {
-//     @include pat-item-bnr-mini-3;
-//   }
-//   .ex-style_01B1 & {
-//     @include pat-item-bnr-mini-1;
-//   }
-//   .ex-style_01B2 & {
-//     @include pat-item-bnr-mini-2;
-//   }
-//   .ex-style_01B3 & {
-//     @include pat-item-bnr-mini-3;
-//   }
-//   .ex-style_01C1 & {
-//     @include pat-item-bnr-mini-1;
-//   }
-//   .ex-style_01C2 & {
-//     @include pat-item-bnr-mini-2;
-//   }
-//   .ex-style_01C3 & {
-//     @include pat-item-bnr-mini-3;
-//   }
-// }
+.mod-bnr-side,
+.mod-bnr-1st-side,
+.mod-bnr-2nd-side {
+  .ex-style_01A1 & {
+    @include pat-item-bnr-f1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-bnr-f2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-bnr-f3;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-bnr-f1;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-bnr-f2;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-bnr-f3;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-bnr-f1;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-bnr-f2;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-bnr-f3;
+  }
+}
 // .mod-bnr-pic-side {
 //   @include common-style-mod-bnr;
 //   @include module-style-mod-bnr-pic-side;

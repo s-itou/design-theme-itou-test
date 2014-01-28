@@ -71,7 +71,7 @@
 // -------------------------------------
 @mixin pat-item-bnr-d1 { //デフォ1d1
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr2;
+  @include module-style-pat-item-bnr-d;
   @include size-style-pat-item-bnr;
   @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d1;
@@ -79,7 +79,7 @@
 
 @mixin pat-item-bnr-d2 { //デフォ1d2
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr2;
+  @include module-style-pat-item-bnr-d;
   @include size-style-pat-item-bnr;
   @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d2;
@@ -87,8 +87,33 @@
 
 @mixin pat-item-bnr-d3 { //デフォ1d3
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr2;
+  @include module-style-pat-item-bnr-d;
   @include size-style-pat-item-bnr;
   @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d3;
+}
+
+// -------------------------------------
+// pat-item-bnr-f
+// -------------------------------------
+@mixin pat-item-bnr-f1 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr-f;
+  @include size-style-pat-item-bnr-side;
+  @include insize-style-pat-item-bnr-f;
+  @include deco-style-pat-item-bnr-f1;
+}
+@mixin pat-item-bnr-f2 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr-f;
+  @include size-style-pat-item-bnr-side;
+  @include insize-style-pat-item-bnr-f;
+  @include deco-style-pat-item-bnr-f2;
+}
+@mixin pat-item-bnr-f3 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr-f;
+  @include size-style-pat-item-bnr-side;
+  @include insize-style-pat-item-bnr-f;
+  @include deco-style-pat-item-bnr-f3;
 }
