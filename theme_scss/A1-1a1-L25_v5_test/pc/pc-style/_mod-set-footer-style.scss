@@ -41,13 +41,8 @@
     }
   }
   .mod-bnr-footer {
-    position: static !important;
-    bottom: auto;
+    @extend %inlineBlock;
     margin: 10px 0 0;
-    min-width: 150px;
-    .mod-bnr-inner {
-      padding: 5px 10px 5px 25px;
-    }
   }
 }
 
@@ -61,9 +56,6 @@
 
 @mixin deco-style01A1-mod-set-company-footer {
   background-color: #fffdf1;
-  .mod-bnr-footer .mod-bnr-inner {
-    background-position: 7px 8px;
-  }
 }
 @mixin deco-style01A2-mod-set-company-footer {
   background-color: #f6f6f6;
@@ -73,30 +65,18 @@
 }
 @mixin deco-style01A3-mod-set-company-footer {
   background-color: #fffceb;
-  .mod-bnr-footer .mod-bnr-inner {
-    background-position: 7px 8px;
-  }
 }
 @mixin deco-style01B1-mod-set-company-footer {
   background-color: #3f669d;
   background-image: url("img/mod-box/_46/bg_b.png");
-  .mod-bnr-footer .mod-bnr-inner {
-    background-position: 7px 8px;
-  }
 }
 @mixin deco-style01B2-mod-set-company-footer {
   background-color: #3ca4b1;
   background-image: url("img/mod-box/_46/bg_b_2.png");
-  .mod-bnr-footer .mod-bnr-inner {
-    background-position: 7px 8px;
-  }
 }
 @mixin deco-style01B3-mod-set-company-footer {
   background-color: #f1e98a;
   background-image: url("img/mod-box/_46/bg_b_3.png");
-  .mod-bnr-footer .mod-bnr-inner {
-    background-position: 7px 8px;
-  }
 }
 @mixin deco-style01C1-mod-set-company-footer {
   background-color: #c5eef9;

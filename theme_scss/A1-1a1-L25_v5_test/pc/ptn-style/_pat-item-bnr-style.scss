@@ -85,7 +85,6 @@
   }
 }
 @mixin size-style-pat-item-bnr2 {
-  margin: 15px 0 0 0; //common打ち消し
   width: 260px;
   .mod-bnr-inner {
     max-height: 50px;
@@ -113,9 +112,7 @@
   }
 }
 @mixin size-style-pat-item-bnr-footer {
-  @extend %inlineBlock;
-  margin: 5px 0 0 0; //common打ち消し
-  min-width: 200px;
+  min-width: 150px;
   max-width: 300px;
   .mod-bnr-inner {
     max-height: 51px;
@@ -204,8 +201,8 @@
 }
 @mixin insize-style-pat-item-bnr-footer-b {
   .mod-bnr-inner {
-    padding: 7px 5px 6px 30px;
-    background-position: 9px 10px;
+    padding: 5px 10px 5px 25px;
+    background-position: 7px 8px;
   }
 }
 @mixin insize-style-pat-item-bnr-c {
@@ -222,7 +219,7 @@
 }
 @mixin insize-style-pat-item-bnr-footer-d {
   .mod-bnr-inner {
-    padding: 7px 5px 6px 30px;
+    padding: 5px 10px 5px 25px;
     background-position: left top;
   }
 }
