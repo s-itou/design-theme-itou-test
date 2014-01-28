@@ -605,6 +605,37 @@
     }
   }
 }
+@mixin deco-style-pat-item-bnr-d12 {
+  border: 1px solid #ff908a;
+  background-color: transparent;
+  background-image: url("img/_pat-item/bnr-mesh/bg.png");
+  .mod-bnr-inner {
+    border: 1px solid #ffdddc;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-d13 {
+  border: 1px solid #02a1b4;
+  background-color: transparent;
+  background-image: url("img/_pat-item/bnr-mesh/bg_2.png");
+  .mod-bnr-inner {
+    border: 1px solid #a7e3e9;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-d14 {
+  border: 1px solid #519dce;
+  background-color: transparent;
+  background-image: url("img/_pat-item/bnr-mesh/bg_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #d1e7f3;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+
 
 
 // -------------------------------------
