@@ -13,7 +13,7 @@
 // ----------------------------------
 
 // -------------------------------------
-// pat-item-bnr-b
+// pat-item-bnr-b 三角アイコン
 // -------------------------------------
 @mixin pat-item-bnr-b1 { //デフォ1a1
   @include common-style-pat-item-bnr;
@@ -40,7 +40,7 @@
 }
 
 // -------------------------------------
-// pat-item-bnr-c
+// pat-item-bnr-c 矢印アイコン
 // -------------------------------------
 @mixin pat-item-bnr-c1 { //デフォ1b1
   @include common-style-pat-item-bnr;
@@ -67,11 +67,11 @@
 }
 
 // -------------------------------------
-// pat-item-bnr-d
+// pat-item-bnr-d >>アイコン
 // -------------------------------------
 @mixin pat-item-bnr-d1 { //デフォ1d1
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-d;
+  @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr;
   @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d1;
@@ -79,7 +79,7 @@
 
 @mixin pat-item-bnr-d2 { //デフォ1d2
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-d;
+  @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr;
   @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d2;
@@ -87,33 +87,104 @@
 
 @mixin pat-item-bnr-d3 { //デフォ1d3
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-d;
+  @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr;
   @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d3;
 }
 
 // -------------------------------------
-// pat-item-bnr-f
+// pat-item-bnr-f 三角アイコン２（サイド）
 // -------------------------------------
-@mixin pat-item-bnr-f1 {
+@mixin pat-item-bnr-f1 { //青
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-f;
+  @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr-side;
   @include insize-style-pat-item-bnr-f;
   @include deco-style-pat-item-bnr-f1;
 }
-@mixin pat-item-bnr-f2 {
+@mixin pat-item-bnr-f2 { //緑
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-f;
+  @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr-side;
   @include insize-style-pat-item-bnr-f;
   @include deco-style-pat-item-bnr-f2;
 }
-@mixin pat-item-bnr-f3 {
+@mixin pat-item-bnr-f3 { //オレンジ
   @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-f;
+  @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr-side;
   @include insize-style-pat-item-bnr-f;
   @include deco-style-pat-item-bnr-f3;
+}
+
+// -------------------------------------
+// pat-item-bnr-h 三角アイコン４（メイン）
+// -------------------------------------
+@mixin pat-item-bnr-h1 { //青
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-h;
+  @include deco-style-pat-item-bnr-h1;
+}
+@mixin pat-item-bnr-h2 { //緑
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-h;
+  @include deco-style-pat-item-bnr-h2;
+}
+@mixin pat-item-bnr-h3 { //ピンク
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-h;
+  @include deco-style-pat-item-bnr-h3;
+}
+@mixin pat-item-bnr-h4 { //グレー
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-h;
+  @include deco-style-pat-item-bnr-h4;
+}
+@mixin pat-item-bnr-h5 { //緑
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-h;
+  @include deco-style-pat-item-bnr-h5;
+}
+@mixin pat-item-bnr-h6 { //薄黄
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-h;
+  @include deco-style-pat-item-bnr-h6;
+}
+
+// -------------------------------------
+// pat-item-bnr-i >>アイコン2（メイン）
+// -------------------------------------
+@mixin pat-item-bnr-i1 { //青
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-i;
+  @include deco-style-pat-item-bnr-i1;
+}
+@mixin pat-item-bnr-i2 { //黄
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-i;
+  @include deco-style-pat-item-bnr-i2;
+}
+@mixin pat-item-bnr-i3 { //オレンジ
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr2;
+  @include insize-style-pat-item-bnr-i;
+  @include deco-style-pat-item-bnr-i3;
 }
