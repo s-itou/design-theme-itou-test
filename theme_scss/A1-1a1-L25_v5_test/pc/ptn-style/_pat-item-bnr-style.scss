@@ -95,6 +95,16 @@
     }
   }
 }
+@mixin size-style-pat-item-bnr-side2 {
+  margin: 10px 0 0 0; //common打ち消し
+  width: auto;
+  .mod-bnr-inner {
+    max-height: 58px;
+    p {  //common打ち消し
+      font-size: $sideFontSizeM;
+    }
+  }
+}
 @mixin size-style-pat-item-bnr-footer {
   margin: 5px 0 0 0; //common打ち消し
   min-width: 200px;
@@ -115,6 +125,12 @@
   .mod-bnr-inner {
     padding: 11px 5px 10px 30px;
     background-position: 10px 15px;
+  }
+}
+@mixin insize-style-pat-item-bnr-side2-b {
+  .mod-bnr-inner {
+    padding: 10px 5px 10px 30px;
+    background-position: 10px 13px;
   }
 }
 @mixin insize-style-pat-item-bnr-footer-b {
@@ -196,6 +212,16 @@
   .mod-bnr-inner {
     border: 1px solid #c9e2f0;
     background-image: url("img/mod-bnr/bg04_3.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-side2-b4 { //サイド1a1 青
+  border: 1px solid #3a7ff0;
+  background-color: #3a7ff0;
+  background-image: url("img/mod-bnr/bg.png");
+  .mod-bnr-inner {
+    border: 1px solid #ffffff;
+    background-image: url("img/mod-bnr/bg02.png");
     color: #ffffff;
   }
 }
