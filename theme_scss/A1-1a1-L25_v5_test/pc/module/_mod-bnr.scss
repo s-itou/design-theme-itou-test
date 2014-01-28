@@ -164,31 +164,31 @@
 .mod-bnr-1st-side,
 .mod-bnr-2nd-side {
   .ex-style_01A1 & {
-    @include pat-item-bnr-f1;
+    @include pat-item-bnr-side-f1;
   }
   .ex-style_01A2 & {
-    @include pat-item-bnr-f2;
+    @include pat-item-bnr-side-f2;
   }
   .ex-style_01A3 & {
-    @include pat-item-bnr-f3;
+    @include pat-item-bnr-side-f3;
   }
   .ex-style_01B1 & {
-    @include pat-item-bnr-f1;
+    @include pat-item-bnr-side-f1;
   }
   .ex-style_01B2 & {
-    @include pat-item-bnr-f2;
+    @include pat-item-bnr-side-f2;
   }
   .ex-style_01B3 & {
-    @include pat-item-bnr-f3;
+    @include pat-item-bnr-side-f3;
   }
   .ex-style_01C1 & {
-    @include pat-item-bnr-f1;
+    @include pat-item-bnr-side-f1;
   }
   .ex-style_01C2 & {
-    @include pat-item-bnr-f2;
+    @include pat-item-bnr-side-f2;
   }
   .ex-style_01C3 & {
-    @include pat-item-bnr-f3;
+    @include pat-item-bnr-side-f3;
   }
 }
 // .mod-bnr-pic-side {
@@ -255,37 +255,35 @@
   }
 }
 
-// .mod-bnr-footer {
-//   @include common-style-mod-bnr;
-//   @include module-style-mod-bnr-footer;
-//   .ex-style_01A1 & {
-//     @include pat-item-bnr-grade-1;
-//   }
-//   .ex-style_01A2 & {
-//     @include pat-item-bnr-grade-2;
-//   }
-//   .ex-style_01A3 & {
-//     @include pat-item-bnr-grade-3;
-//   }
-//   .ex-style_01B1 & {
-//     @include pat-item-bnr-grade-4;
-//   }
-//   .ex-style_01B2 & {
-//     @include pat-item-bnr-grade-5;
-//   }
-//   .ex-style_01B3 & {
-//     @include pat-item-bnr-grade-6;
-//   }
-//   .ex-style_01C1 & {
-//     @include pat-item-bnr-mesh-1;
-//   }
-//   .ex-style_01C2 & {
-//     @include pat-item-bnr-mesh-2;
-//   }
-//   .ex-style_01C3 & {
-//     @include pat-item-bnr-mesh-1;
-//   }
-// }
+.mod-bnr-footer {
+  .ex-style_01A1 & {
+    //@include pat-item-bnr-grade-1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-bnr-b2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-bnr-footer-b7;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-bnr-footer-b8;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-bnr-footer-b8;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-bnr-footer-b9;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-bnr-footer-d7;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-bnr-footer-d8;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-bnr-footer-d7;
+  }
+}
 
 
 // .mod-bnr-2col {
