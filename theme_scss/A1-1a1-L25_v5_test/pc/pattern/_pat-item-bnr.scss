@@ -12,7 +12,9 @@
 //  pat-item-bnr の個別設定
 // ----------------------------------
 
-//
+// -------------------------------------
+// pat-item-bnr-b
+// -------------------------------------
 @mixin pat-item-bnr-b1 { //デフォ1a1
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr;
@@ -37,6 +39,9 @@
   @include deco-style-pat-item-bnr-b3;
 }
 
+// -------------------------------------
+// pat-item-bnr-c
+// -------------------------------------
 @mixin pat-item-bnr-c1 { //デフォ1b1
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr;
@@ -61,11 +66,14 @@
   @include deco-style-pat-item-bnr-c3;
 }
 
+// -------------------------------------
+// pat-item-bnr-d
+// -------------------------------------
 @mixin pat-item-bnr-d1 { //デフォ1d1
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr;
-  @include insize-style-pat-item-bnr-b;
+  @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d1;
 }
 
@@ -73,7 +81,7 @@
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr;
-  @include insize-style-pat-item-bnr-b;
+  @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d2;
 }
 
@@ -81,6 +89,6 @@
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr2;
   @include size-style-pat-item-bnr;
-  @include insize-style-pat-item-bnr-b;
+  @include insize-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d3;
 }
