@@ -66,6 +66,13 @@
     background-repeat: no-repeat;
   }
 }
+@mixin module-style-pat-item-bnr3 {
+  background-position: left -1px;
+  background-repeat: no-repeat;
+  .mod-bnr-inner {
+    background-repeat: no-repeat;
+  }
+}
 
 
 // -------------------------------------
@@ -234,7 +241,7 @@
 @mixin insize-style-pat-item-bnr-i {
   .mod-bnr-inner {
     padding: 4px 30px 2px 30px;
-    background-position: left -1px;
+    background-position: left top;
   }
 }
 
