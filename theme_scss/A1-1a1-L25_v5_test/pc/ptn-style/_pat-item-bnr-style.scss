@@ -308,6 +308,45 @@
     color: #ffffff;
   }
 }
+@mixin deco-style-pat-item-bnr-c4 { //1b1 青
+  border: 1px solid #347be8;
+  background-color: #2a6ae2;
+  background-image: url("img/_pat-item/bnr-grade/bg_2.png");
+  .mod-bnr-inner {
+    border: 1px solid #bfd7f8;
+    background-image: url("img/mod-bnr/bg13.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-c5 { //1b2 黄
+  border: 1px solid #f4d554;
+  background-color: #f1cb45;
+  background-image: url("img/_pat-item/bnr-grade/bg_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #fcf2ca;
+    background-image: url("img/mod-bnr/bg13.png");
+    color: #2b436e;
+    a { //common打ち消し
+      color: #2b436e;
+    }
+    a:hover {
+      color: #2b436e;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-c6 { //1b3 オレンジ
+  border: 1px solid #f38222;
+  background-color: #f38424;
+  background-image: url("img/_pat-item/bnr-grade/bg_4.png");
+  .mod-bnr-inner {
+    border: 1px solid #fde5d2;
+    background-image: url("img/mod-bnr/bg13.png");
+    color: #ffffff;
+  }
+}
+
+
+
 
 // -------------------------------------
 // deco-style-pat-item-bnr-d
