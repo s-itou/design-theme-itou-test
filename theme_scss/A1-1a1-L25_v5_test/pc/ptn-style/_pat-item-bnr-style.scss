@@ -255,7 +255,22 @@
     color: #ffffff;
   }
 }
-
+@mixin deco-style-pat-item-bnr-b14 { //1a2 黄
+  border: 1px solid #f2d028;
+  background-color: #ecc028;
+  background-image: url("img/_pat-item/bnr-grade/bg.png");
+  .mod-bnr-inner {
+    border: 1px solid #fdf8da;
+    background-image: url("img/_pat-item/bnr-grade/bg02.png");
+    color: #365997;
+    a { //common打ち消し
+      color: #365997;
+    }
+    a:hover {
+      color: #365997;
+    }
+  }
+}
 
 
 

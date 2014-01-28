@@ -86,6 +86,13 @@
   @include deco-style-pat-item-bnr-footer-b9;
 }
 
+@mixin pat-item-bnr-b14 { //1a2 黄
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-b;
+  @include deco-style-pat-item-bnr-b14;
+}
 
 
 // -------------------------------------
