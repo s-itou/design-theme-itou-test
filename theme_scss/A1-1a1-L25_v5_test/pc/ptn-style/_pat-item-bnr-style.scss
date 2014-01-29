@@ -79,23 +79,40 @@
 //  size-style-pat-item-bnr
 // -------------------------------------
 @mixin size-style-pat-item-bnr {
+  min-width: none;
+  max-width: none;
   width: 270px;
   .mod-bnr-inner {
     max-height: 65px;
   }
 }
 @mixin size-style-pat-item-bnr2 {
+  min-width: none;
+  max-width: none;
   width: 260px;
   .mod-bnr-inner {
     max-height: 50px;
   }
 }
+@mixin size-style-pat-item-bnr-box {
+  min-width: none;
+  max-width: 230px;
+  width: auto;
+  .mod-bnr-inner {
+    max-height: 47px;
+    p { //common打ち消し
+      font-size: 13px;
+    }
+  }
+}
 @mixin size-style-pat-item-bnr-side {
   margin: 10px 0 0 0; //common打ち消し
+  min-width: none;
+  max-width: none;
   width: auto;
   .mod-bnr-inner {
     max-height: 40px;
-    p {  //common打ち消し
+    p { //common打ち消し
       font-size: $sideFontSizeM;
       line-height: 1.6;
     }
@@ -103,6 +120,8 @@
 }
 @mixin size-style-pat-item-bnr-side2 {
   margin: 10px 0 0 0; //common打ち消し
+  min-width: none;
+  max-width: none;
   width: auto;
   .mod-bnr-inner {
     max-height: 58px;
@@ -114,27 +133,43 @@
 @mixin size-style-pat-item-bnr-footer {
   min-width: 150px;
   max-width: 300px;
+  width: auto;
   .mod-bnr-inner {
     max-height: 51px;
-    p {//common打ち消し
+    p {
       font-size: $fontSizeS + 1;
     }
   }
 }
 
+
 // -------------------------------------
 //  size-style-pat-item-bnr-for-2col
 // -------------------------------------
 @mixin size-style-pat-item-bnr-for-2col-L25 {
-  width: auto;
+  min-width: none;
   max-width: floor(($mainWidth - 40) / 3);
+  width: auto;
   .mod-bnr-inner {
     max-height: 53px;
   }
 }
-@mixin size-style-pat-item-bnr-for-2col-L30 {
+@mixin size-style-pat-item-bnr-box-for-2col-L25 {
+  min-width: none;
+  max-width: none;
   width: auto;
+  .mod-bnr-inner {
+    max-height: 46px;
+    p { //common打ち消し
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+
+@mixin size-style-pat-item-bnr-for-2col-L30 {
+  min-width: none;
   max-width: floor(($mainWidth - 40) / 3);
+  width: auto;
   .mod-bnr-inner {
     max-height: 53px;
     p { //common打ち消し
@@ -147,6 +182,8 @@
 //  size-style-pat-item-bnr-for-2colin3col
 // -------------------------------------
 @mixin size-style-pat-item-bnr-for-2colin3col-L25 {
+  min-width: none;
+  max-width: none;
   width: 120px;
   .mod-bnr-inner {
     max-height: 49px;
@@ -156,6 +193,8 @@
   }
 }
 @mixin size-style-pat-item-bnr-for-2colin3col-L30 {
+  min-width: none;
+  max-width: none;
   width: 102px;
   .mod-bnr-inner {
     max-height: 49px;
@@ -169,13 +208,17 @@
 //  size-style-pat-item-bnr-for-3col
 // -------------------------------------
 @mixin size-style-pat-item-bnr-for-3col-L25 {
+  min-width: none;
   max-width: floor(($mainWidth - 40) / 3);
+  width: auto;
   .mod-bnr-inner {
     max-height: 53px;
   }
 }
 @mixin size-style-pat-item-bnr-for-3col-L30 {
+  min-width: none;
   max-width: floor(($mainWidth - 40) / 3);
+  width: auto;
   .mod-bnr-inner {
     max-height: 53px;
     p { //common打ち消し
@@ -191,6 +234,12 @@
   .mod-bnr-inner {
     padding: 11px 5px 10px 30px;
     background-position: 10px 15px;
+  }
+}
+@mixin insize-style-pat-item-bnr-box-b {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
+    background-position: 10px 8px;
   }
 }
 @mixin insize-style-pat-item-bnr-side2-b {
@@ -211,9 +260,21 @@
     background-position: 10px 11px;
   }
 }
+@mixin insize-style-pat-item-bnr-box-c {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
+    background-position: 10px 6px;
+  }
+}
 @mixin insize-style-pat-item-bnr-d {
   .mod-bnr-inner {
     padding: 11px 5px 10px 30px;
+    background-position: left top;
+  }
+}
+@mixin insize-style-pat-item-bnr-box-d {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
     background-position: left top;
   }
 }
@@ -229,13 +290,13 @@
     background-position: left center;
   }
 }
-@mixin insize-style-pat-item-bnr-h {
+@mixin insize-style-pat-item-bnr2-h {
   .mod-bnr-inner {
     padding: 4px 30px 2px 30px;
     background-position: 9px 6px;
   }
 }
-@mixin insize-style-pat-item-bnr-i {
+@mixin insize-style-pat-item-bnr2-i {
   .mod-bnr-inner {
     padding: 4px 30px 2px 30px;
     background-position: left top;
@@ -249,6 +310,12 @@
   .mod-bnr-inner {
     padding: 5px 5px 4px 30px;
     background-position: 10px 9px;
+  }
+}
+@mixin insize-style-pat-item-bnr-box-for-2col-L25-b {
+  .mod-bnr-inner {
+    padding: 5px 5px 3px 25px;
+    background-position: 8px 8px;
   }
 }
 
@@ -266,6 +333,13 @@
   }
 }
 
+@mixin insize-style-pat-item-bnr-box-for-2col-L25-c {
+  .mod-bnr-inner {
+    padding: 5px 5px 3px 25px;
+    background-position: 8px 5px;
+  }
+}
+
 @mixin insize-style-pat-item-bnr-for-2col-L30-c {
   .mod-bnr-inner {
     padding: 5px 5px 4px 23px;
@@ -276,6 +350,13 @@
 @mixin insize-style-pat-item-bnr-for-2col-L25-d {
   .mod-bnr-inner {
     padding: 5px 5px 4px 30px;
+    background-position: left top;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-box-for-2col-L25-d {
+  .mod-bnr-inner {
+    padding: 5px 5px 3px 25px;
     background-position: left top;
   }
 }
@@ -457,7 +538,20 @@
     color: #ffffff;
   }
 }
-@mixin deco-style-pat-item-bnr-b14 { //1a2 黄
+
+
+//pat-item-bnr-box
+@mixin deco-style-pat-item-bnr-box-b14 { //1a1 ピンク
+  border: 1px solid #ff7c76;
+  background-color: #ff7c76;
+  background-image: url("img/mod-bnr/bg03.png");
+  .mod-bnr-inner {
+    border: 1px solid #ffdddc;
+    background-image: url("img/mod-bnr/bg04.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-box-b15 { //1a2 黄
   border: 1px solid #f2d028;
   background-color: #ecc028;
   background-image: url("img/_pat-item/bnr-grade/bg.png");
@@ -473,7 +567,16 @@
     }
   }
 }
-
+@mixin deco-style-pat-item-bnr-box-b16 { //1a3 青
+  border: 1px solid #408bc2;
+  background-color: #408bc2;
+  background-image: url("img/mod-bnr/bg03_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #c9e2f0;
+    background-image: url("img/mod-bnr/bg04_3.png");
+    color: #ffffff;
+  }
+}
 
 
 // -------------------------------------
@@ -510,7 +613,7 @@
     color: #ffffff;
   }
 }
-@mixin deco-style-pat-item-bnr-c4 { //1c1 青
+@mixin deco-style-pat-item-bnr-box-c4 { //1c1 青
   border: 1px solid #347be8;
   background-color: #2a6ae2;
   background-image: url("img/_pat-item/bnr-grade/bg_2.png");
@@ -520,7 +623,7 @@
     color: #ffffff;
   }
 }
-@mixin deco-style-pat-item-bnr-c5 { //1c2 黄
+@mixin deco-style-pat-item-bnr-box-c5 { //1c2 黄
   border: 1px solid #f4d554;
   background-color: #f1cb45;
   background-image: url("img/_pat-item/bnr-grade/bg_3.png");
@@ -536,7 +639,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-c6 { //1c3 オレンジ
+@mixin deco-style-pat-item-bnr-box-c6 { //1c3 オレンジ
   border: 1px solid #f38222;
   background-color: #f38424;
   background-image: url("img/_pat-item/bnr-grade/bg_4.png");
@@ -609,7 +712,9 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-d12 {
+
+//pat-item-bnr-box
+@mixin deco-style-pat-item-bnr-box-d12 {
   border: 1px solid #ff908a;
   background-color: transparent;
   background-image: url("img/_pat-item/bnr-mesh/bg.png");
@@ -619,7 +724,7 @@
     color: #ffffff;
   }
 }
-@mixin deco-style-pat-item-bnr-d13 {
+@mixin deco-style-pat-item-bnr-box-d13 {
   border: 1px solid #02a1b4;
   background-color: transparent;
   background-image: url("img/_pat-item/bnr-mesh/bg_2.png");
@@ -629,7 +734,7 @@
     color: #ffffff;
   }
 }
-@mixin deco-style-pat-item-bnr-d14 {
+@mixin deco-style-pat-item-bnr-box-d14 {
   border: 1px solid #519dce;
   background-color: transparent;
   background-image: url("img/_pat-item/bnr-mesh/bg_3.png");
@@ -653,7 +758,6 @@
   border-top: 1px solid #90b5e8;
   border-right: 1px solid #0b42b9;
   border-bottom: 1px solid #0b42b9;
-  border-left: 1px solid #0a56bd;
   background-color: #0a56bd;
   background-image: none;
   .mod-bnr-inner {
@@ -666,7 +770,6 @@
   border-top: 1px solid #87d2db;
   border-right: 1px solid #01758c;
   border-bottom: 1px solid #01758c;
-  border-left: 1px solid #02a1b4;
   background-color: #02a1b4;
   background-image: none;
   .mod-bnr-inner {
@@ -679,7 +782,6 @@
   border-top: 1px solid #f9c79a;
   border-right: 1px solid #eb5910;
   border-bottom: 1px solid #eb5910;
-  border-left: 1px solid #f3882b;
   background-color: #f3882b;
   background-image: none;
   .mod-bnr-inner {
@@ -696,7 +798,7 @@
 // -------------------------------------
 // deco-style-pat-item-bnr-h
 // -------------------------------------
-@mixin deco-style-pat-item-bnr-h1 { //青
+@mixin deco-style-pat-item-bnr2-h1 { //青
   border: 1px solid #a3c9fe;
   background-color: #d1e3fe;
   background-image: none;
@@ -712,7 +814,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-h2 { //緑
+@mixin deco-style-pat-item-bnr2-h2 { //緑
   border: 1px solid #7ed0d9;
   background-color: #c2eef2;
   background-image: none;
@@ -728,7 +830,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-h3 { //ピンク
+@mixin deco-style-pat-item-bnr2-h3 { //ピンク
   border: 1px solid #ff968f;
   background-color: #fdcecc;
   background-image: none;
@@ -744,7 +846,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-h4 { //グレー
+@mixin deco-style-pat-item-bnr2-h4 { //グレー
   border: 1px solid #889eb8;
   background-color: #c9c9c9;
   background-image: url("img/mod-bnr/_33/bg_b.png");
@@ -760,7 +862,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-h5 { //緑
+@mixin deco-style-pat-item-bnr2-h5 { //緑
   border: 1px solid #b9e4ea;
   background-color: #bcdfe4;
   background-image: url("img/mod-bnr/_33/bg_b_2.png");
@@ -776,7 +878,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-h6 { //薄黄
+@mixin deco-style-pat-item-bnr2-h6 { //薄黄
   border: 1px solid #cccc99;
   background-color: #e7e7ce;
   background-image: url("img/mod-bnr/_33/bg_b_3.png");
@@ -796,7 +898,7 @@
 // -------------------------------------
 // deco-style-pat-item-bnr-i
 // -------------------------------------
-@mixin deco-style-pat-item-bnr-i1 { //青
+@mixin deco-style-pat-item-bnr2-i1 { //青
   border: 1px solid #c9dfff;
   background-color: transparent;
   background-image: url("img/mod-bnr/_33/bg_c.png");
@@ -812,7 +914,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-i2 { //黄
+@mixin deco-style-pat-item-bnr2-i2 { //黄
   border: 1px solid #ffed67;
   background-color: transparent;
   background-image: url("img/mod-bnr/_33/bg_c_2.png");
@@ -828,7 +930,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-bnr-i3 { //オレンジ
+@mixin deco-style-pat-item-bnr2-i3 { //オレンジ
   border: 1px solid #ffc789;
   background-color: #ffe1c8;
   background-image: url("img/mod-bnr/_33/bg_c_3.png");
