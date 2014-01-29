@@ -6,11 +6,12 @@
 //##################################################
 //  mod-bnr_ver2
 //##################################################
+
 .mod-bnr_ver2 {
   @include common-style-mod-bnr;
   @include module-style-mod-bnr;
   .ex-style_#{$baseEx_01A1} & {
-    @include deco-style01A1-mod-bnr
+    @include deco-style01A1-mod-bnr;
   }
   .ex-style_#{$baseEx_01A2} & {
     @include deco-style01A2-mod-bnr;
@@ -71,5 +72,110 @@
   }
   .ex-style_#{$baseEx_01C3} & {
     @include deco-style01C3-mod-bnr-pic;
+  }
+}
+
+
+//##################################################
+//  mod-bnr-1st-side
+//  mod-bnr-2nd-side
+//##################################################
+.mod-bnr-1st-side {
+  @include common-style-mod-bnr-side;
+  @include module-style-mod-bnr-1st-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A1-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A2-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A3-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A1-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A2-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A3-mod-bnr-1st-side;
+  }
+}
+
+.mod-bnr-2nd-side {
+  @include common-style-mod-bnr-side;
+  @include module-style-mod-bnr-1st-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A1-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A2-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A3-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A1-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A2-mod-bnr-1st-side;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A3-mod-bnr-1st-side;
+  }
+}
+
+
+//##################################################
+//  mod-bnr-footer
+//##################################################
+.mod-bnr-footer {
+  @include common-style-mod-bnr;
+  @include module-style-mod-bnr-footer;
+  .ex-style_01A1 & {
+    @include pat-item-bnr-grade-1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-bnr-grade-2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-bnr-grade-3;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-bnr-grade-4;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-bnr-grade-5;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-bnr-grade-6;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-bnr-mesh-1;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-bnr-mesh-2;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-bnr-mesh-1;
   }
 }

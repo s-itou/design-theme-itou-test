@@ -1,69 +1,58 @@
 @charset "UTF-8";
 @import "../sp-style/mod-tel-style";
 
-.mod-ftel-g-side {
-	@include module-style-mod-ftel-g-side;
-}
-
-.mod-ftel-ig-side {
-	@include module-style-mod-ftel-ig-side;
-}
-
+//##################################################
+//  mod-tel-g-side
+//  mod-tel-ig-side
+//##################################################
 .mod-tel-g-side {
-	@include module-style-mod-tel-g-side;
+  @include module-style-mod-tel-g-side;
 }
 
 .mod-tel-ig-side {
-	@include module-style-mod-tel-ig-side;
-	.ex-style_01A1 & {
-		@include deco-style01A1-mod-tel-ig-side-style;
-	}	
-	.ex-style_01A2 & {
-		@include deco-style01A2-mod-tel-ig-side-style;
-	}
+  @include module-style-mod-tel-ig-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-tel-ig-side-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-tel-ig-side-style;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A1-mod-tel-ig-side-style;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A1-mod-tel-ig-side-style;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A1-mod-tel-ig-side-style;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A1-mod-tel-ig-side-style;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A1-mod-tel-ig-side-style;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A1-mod-tel-ig-side-style;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A1-mod-tel-ig-side-style;
+  }
 }
 
-.mod-cell-side {
-	@include module-style-mod-cell-side;
-}
-
-.mod-cell-i-side {
-	@include module-style-mod-cell-i-side;
-	.ex-style_01A1 & {
-		@include deco-style01A1-mod-cell-i-side;
-	}
-	.ex-style_01A2 & {
-		@include deco-style01A2-mod-cell-i-side;
-	}
-}
-
-.mod-email-side {
-	@include module-style-mod-email-side;
-}
-
-.mod-email-i-side {
-	@include module-style-mod-email-i-side;
-	.ex-style_01A1 & {
-		@include deco-style01A1-mod-email-i-side;
-	}
-	.ex-style_01A2 & {
-		@include deco-style01A2-mod-email-i-side;
-	}
-}
-
-.mod-fax-side {
-	@include module-style-mod-fax-side;
-}
-
-.mod-fax-i-side {
-	@include module-style-mod-fax-i-side;
-	.ex-style_01A1 & {
-		@include deco-style01A1-mod-fax-i-side;
-	}
-	.ex-style_01A2 & {
-		@include deco-style01A2-mod-fax-i-side;
-	}
-	.ex-style_01A3 & {
-		@include deco-style01A3-mod-fax-i-side;
-	}
+//##################################################
+//  mod-tel-ii-footer
+//##################################################
+.mod-tel-ii-footer {
+  @include common-style-mod-tel-ii-footer;
+  @include module-style-mod-tel-ii-footer;
+  .ex-style_#{$baseEx_01A1} & {@include pat-item-tel-ii-footer-1;}
+  .ex-style_#{$baseEx_01A2} & {@include pat-item-tel-ii-footer-2;}
+  .ex-style_#{$baseEx_01A3} & {@include pat-item-tel-ii-footer-3;}
+  .ex-style_#{$baseEx_01B1} & {@include pat-item-tel-ii-footer-4;}
+  .ex-style_#{$baseEx_01B2} & {@include pat-item-tel-ii-footer-4;}
+  .ex-style_#{$baseEx_01B3} & {@include pat-item-tel-ii-footer-5;}
+  .ex-style_#{$baseEx_01C1} & {@include pat-item-tel-ii-footer-6;}
+  .ex-style_#{$baseEx_01C2} & {@include pat-item-tel-ii-footer-7;}
+  .ex-style_#{$baseEx_01C3} & {@include pat-item-tel-ii-footer-8;}
 }

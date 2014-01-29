@@ -23,6 +23,28 @@
 
 
 
+// -----------------------------------
+// part-side-048 サイドボックス　リンク
+// -----------------------------------
+.mod-set-link-step-side {
+  @include common-style-mod-set-link-step-side;
+  &.ex-style_01A1,
+  &.ex-style_01B1,
+  &.ex-style_01C1 {
+    @include deco-style-mod-set-link-step-side-1;
+  }
+  &.ex-style_01A2,
+  &.ex-style_01B2,
+  &.ex-style_01C2 {
+    @include deco-style-mod-set-link-step-side-2;
+  }
+  &.ex-style_01A3,
+  &.ex-style_01B3,
+  &.ex-style_01C3 {
+    @include deco-style-mod-set-link-step-side-3;
+  }
+}
+
 // // ***********************************
 // // 現行モジュールへのスタイル取り込み
 // // ***********************************

@@ -1,18 +1,69 @@
 @charset "UTF-8";
+@import "../ptn-style/_pat-item-midashi-style.scss";
 
 // --------------------------------------------------------------------------
 //
 // pat-item-midashi
 //
+//    ・mod-h_4 に直接指定することを前提としたデザインパターン
 //    ・mod-h4-in2 を前提としたデザインパターン
+//
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+//
+// mod-h_4 に直接指定することを前提としたデザインパターン
+//
+//    ・midashi（シンプル背景）
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+//  pat-item-midashi-simple の個別設定
+// -------------------------------------
+
+// シンプル背景タイトル
+@mixin pat-item-midashi-simple-none-bgc-blue {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-1;
+  @include deco-style-module-style-pat-item-midashi-simple-none-bgc-blue;
+}
+@mixin pat-item-midashi-simple-none-bgc-blue-2 {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-1;
+  @include deco-style-module-style-pat-item-midashi-simple-none-bgc-blue-2;
+}
+@mixin pat-item-midashi-simple-none-bgc-pink {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-1;
+  @include deco-style-module-style-pat-item-midashi-simple-none-bgc-pink;
+}
+@mixin pat-item-midashi-simple-none-bgc-blue-3 {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-2;
+  @include deco-style-module-style-pat-item-midashi-simple-none-bgc-blue-3;
+}
+@mixin pat-item-midashi-simple-none-bgc-yellow {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-2;
+  @include deco-style-module-style-pat-item-midashi-simple-none-bgc-yellow;
+}
+@mixin pat-item-midashi-simple-none-bgc-yellow-2 {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-2;
+  @include deco-style-module-style-pat-item-midashi-simple-none-bgc-yellow-2;
+}
+
+
+// --------------------------------------------------------------------------
+//
+// mod-h4-in2 を前提としたデザインパターン
 //
 //    ・midashi-ribbon（リボン系３重背景）
 //    ・midashi-image（画像背景）
 //    ・midashi-border（ボーダー）
 //
 // --------------------------------------------------------------------------
-
-@import "../ptn-style/_pat-item-midashi-style.scss";
 
 // -------------------------------------
 //  pat-item-midashiの個別設定
@@ -125,4 +176,21 @@
   @include module-style-pat-item-midashi-border-2;
   @include deco-style-pat-item-midashi-border-8;
 }
+// 上下ボーダータイトル（文章装飾）
+@mixin pat-item-midashi-simple-border-blue {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-border;
+  @include deco-style-pat-item-midashi-simple-border-blue;
+}
+@mixin pat-item-midashi-simple-border-green {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-border;
+  @include deco-style-pat-item-midashi-simple-border-green;
+}
+@mixin pat-item-midashi-simple-border-brown {
+  @include common-style-pat-item-midashi-simple;
+  @include module-style-pat-item-midashi-simple-border;
+  @include deco-style-pat-item-midashi-simple-border-brown;
+}
+
 

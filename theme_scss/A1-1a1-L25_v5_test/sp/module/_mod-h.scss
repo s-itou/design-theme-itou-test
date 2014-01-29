@@ -3,6 +3,67 @@
 
 //旧方式のコピーのため要改修
 
+// ------------------------------
+//
+// block-style ex-alignにおける設定について
+// カラーでは変わらないがdesignごとに変わっていくるため。h_2,h_3では@mixin mod-h_2-01Aの単位でつけること推奨
+// それ以外ではそもそもぶち抜きでないので、commonでよいかと
+//
+// ------------------------------
+@mixin block-style-ex-align {  //左右に-25pxのマージンをとっていないもの。汎用的設定
+  &.ex-align-center {
+    text-align: center;
+    margin-left: auto;//align対応のためショートハンド不使用
+    margin-right: auto;
+  }
+  &.ex-align-right {
+    text-align: right;
+    margin-left: auto;//align対応のためショートハンド不使用
+  }
+  &.ex-align-left {
+    text-align: left;
+    margin-right: auto;//align対応のためショートハンド不使用
+  }
+}
+
+
+@mixin block-style-ex-align-buchinuki {  //左右に-25pxのマージンをとっていて、下線や囲みのあるタイプの見出し（theme1におけるh2,h3）
+  &.ex-align-center {
+    text-align: center;
+    margin-left: -25px;//align対応のためショートハンド不使用
+    margin-right: -25px;
+  }
+  &.ex-align-right {
+    text-align: right;
+    margin-left: -25px;//align対応のためショートハンド不使用
+    margin-right: -25px;
+  }
+  &.ex-align-left {
+    text-align: left;
+    margin-left: -25px;//align対応のためショートハンド不使用
+    margin-right: -25px;
+  }
+}
+
+@mixin block-style-ex-align-buchinuki-2 {  //左右に-25pxのマージンをとっていて、下線や囲みのないタイプの見出し（theme1におけるh2,h3）
+  &.ex-align-center {
+    text-align: center;
+    margin-left: auto;//align対応のためショートハンド不使用
+    margin-right: auto;
+  }
+  &.ex-align-right {
+    text-align: right;
+    margin-left: auto;//align対応のためショートハンド不使用
+    margin-right: -25px;
+  }
+  &.ex-align-left {
+    text-align: left;
+    margin-left: -25px;//align対応のためショートハンド不使用
+    margin-right: auto;
+  }
+}
+
+
 //##################################################
 //  mod-h_2_ver2
 //##################################################
@@ -243,5 +304,227 @@
   }
   .ex-style_01C3 & {
     @include deco-style-mod-h_5_pic_bottom_side-01A3;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_hyo_top
+//##################################################
+.mod-h_5_hyo_top {
+  @include mod-h_5_hyo-common-style;
+  @include mod-h_5_hyo;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_hyo-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_hyo-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_hyo-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_hyo-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_hyo-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_hyo-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_hyo-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_hyo-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_hyo-01C3;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_hyo_bottom
+//##################################################
+.mod-h_5_hyo_bottom {
+  @include mod-h_5_hyo-common-style;
+  @include mod-h_5_hyo;
+  @include mod-h_5_hyo_bottom;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_hyo-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_hyo-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_hyo-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_hyo-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_hyo-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_hyo-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_hyo-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_hyo-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_hyo-01C3;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_list_top
+//##################################################
+.mod-h_5_list_top {
+  @include mod-h_5_list-common-style;
+  @include mod-h_5_list;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_list-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_list-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_list-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_list-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_list-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_list-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_list-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_list-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_list-01C3;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_list_bottom
+//##################################################
+.mod-h_5_list_bottom {
+  @include mod-h_5_list-common-style;
+  @include mod-h_5_list;
+  @include mod-h_5_list_bottom;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_list-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_list-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_list-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_list-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_list-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_list-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_list-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_list-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_list-01C3;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_pic_top
+//##################################################
+.mod-h_5_pic_top {
+  @include mod-h_5_pic-common-style;
+  @include mod-h_5_pic;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_pic-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_pic-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_pic-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_pic-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_pic-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_pic-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_pic-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_pic-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_pic-01C3;
+  }
+  .mod-img + & { //mod-h_5_hyoの表下用記述
+    @include mod-h_5_hyo_bottom;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_pic_bottom
+//##################################################
+.mod-h_5_pic_bottom {
+  @include mod-h_5_pic-common-style;
+  @include mod-h_5_pic;
+  @include mod-h_5_pic_bottom;
+  .ex-style_01A1 & {
+    @include deco-style-mod-h_5_pic-01A1;
+  }
+  .ex-style_01A2 & {
+    @include deco-style-mod-h_5_pic-01A2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style-mod-h_5_pic-01A3;
+  }
+  .ex-style_01B1 & {
+    @include deco-style-mod-h_5_pic-01B1;
+  }
+  .ex-style_01B2 & {
+    @include deco-style-mod-h_5_pic-01B2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style-mod-h_5_pic-01B3;
+  }
+  .ex-style_01C1 & {
+    @include deco-style-mod-h_5_pic-01C1;
+  }
+  .ex-style_01C2 & {
+    @include deco-style-mod-h_5_pic-01C2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style-mod-h_5_pic-01C3;
   }
 }

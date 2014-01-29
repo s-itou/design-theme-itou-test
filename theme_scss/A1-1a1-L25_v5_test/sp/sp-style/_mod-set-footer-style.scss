@@ -1,78 +1,82 @@
 @charset "UTF-8";
 
-// ----------------------------
-//
-// mod-set-○○-footer
-//
-// ----------------------------
+//##################################################
+//  mod-set-○○-footer
+//##################################################
 
-// ----------------------------
-// common-style
-// ----------------------------
-// 共通項なし
+//////////////////////////////
+//  common-style
+@mixin common-style-mod-set-footer { }
 
-// ----------------------------
-// module-style
-// ----------------------------
-
+//////////////////////////////
+//  module-style
 @mixin module-style-mod-set-company-footer {
-  padding: 25px 0;
+  margin: 20px -15px 0;
+  padding: 25px 15px;
+  background-repeat: repeat-x;
+  .mod-box-footer {
+    padding: 0;
+  }
+  .mod-title-footer {
+    .mod-title-inner3 {
+      line-height: 1.0;
+    }
+    .mod-title-inner4 {
+      margin: 5px 0 0;
+    }
+  }
+  .mod-2col-table-footer {
+    .mod-text-footer {
+      margin-top: 5px !important;
+      &:first-child {
+        &, + .mod-text-footer {
+          margin-top: 0px !important;
+        }
+      }
+    }
+  }
+  .mod-bnr-footer {
+    position: static !important;
+    bottom: auto;
+  }
 }
 
 @mixin module-style-mod-set-copyright-footer {
   padding: 1px 0 0 0;
 }
 
-// ----------------------------
-// deco-style
-// ----------------------------
-
+//////////////////////////////
+//  deco-style
 @mixin deco-style01A1-mod-set-company-footer {
-  background-image: none;
-  background-repeat: repeat;
   background-color: #fffdf1;
 }
 @mixin deco-style01A2-mod-set-company-footer {
-  background-image: none;
-  background-repeat: repeat;
   background-color: #f6f6f6;
 }
 @mixin deco-style01A3-mod-set-company-footer {
-  background-image: none;
-  background-repeat: repeat;
   background-color: #fffceb;
 }
 @mixin deco-style01B1-mod-set-company-footer {
-  background-image: url("img/mod-box/_46/bg_b.png");
-  background-repeat: repeat-x;
   background-color: #3f669d;
+  background-image: url("img/mod-box/_46/bg_b.png");
 }
 @mixin deco-style01B2-mod-set-company-footer {
-  background-image: url("img/mod-box/_46/bg_b_2.png");
-  background-repeat: repeat-x;
   background-color: #3ca4b1;
+  background-image: url("img/mod-box/_46/bg_b_2.png");
 }
 @mixin deco-style01B3-mod-set-company-footer {
-  background-image: url("img/mod-box/_46/bg_b_3.png");
-  background-repeat: repeat-x;
   background-color: #f1e98a;
+  background-image: url("img/mod-box/_46/bg_b_3.png");
 }
 @mixin deco-style01C1-mod-set-company-footer {
-  background-image: url("img/mod-box/_46/bg_c.png");
-  background-repeat: repeat-x;
   background-color: #c5eef9;
+  background-image: url("img/mod-box/_46/bg_c.png");
 }
 @mixin deco-style01C2-mod-set-company-footer {
-  background-image: url("img/mod-box/_46/bg_c_2.png");
-  background-repeat: repeat-x;
   background-color: #b3d0f9;
+  background-image: url("img/mod-box/_46/bg_c_2.png");
 }
 @mixin deco-style01C3-mod-set-company-footer {
-  background-image: url("img/mod-box/_46/bg_c_3.png");
-  background-repeat: repeat-x;
   background-color: #ffd1a6;
+  background-image: url("img/mod-box/_46/bg_c_3.png");
 }
-
-
-
-

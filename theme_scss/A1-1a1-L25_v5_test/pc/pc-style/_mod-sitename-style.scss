@@ -1074,8 +1074,8 @@
 }
 
 @mixin deco-style01B3-mod-bnr-sitename {
-  border: 1px solid #fffa98;
-  background-color: #fffa98;
+  border: 1px solid #fef48b;
+  background-color: #fef48b;
   background-image: url("img/mod-sitename/bg_bnr_6.png");
   background-repeat: repeat-x;
   .mod-bnr-inner {
@@ -1255,6 +1255,16 @@
   }
 }
 
+@mixin deco-style01A1-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #ff8809;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: #ffffff;
+  }
+}
+
 @mixin deco-style01A2-mod-bnr-sitename-3 {
   border: 1px solid #7ed0d9;
   .mod-bnr-inner {
@@ -1262,6 +1272,16 @@
     background-color: #c2eef2;
     background-image: url("img/mod-sitename/bg_bnr_arr_20.png");
     color: #172846;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #0b7d89;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: #ffffff;
   }
 }
 
@@ -1275,11 +1295,31 @@
   }
 }
 
+@mixin deco-style01A3-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #519dce;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: #ffffff;
+  }
+}
+
 @mixin deco-style01B1-mod-bnr-sitename-3 {
   border: none;
   .mod-bnr-inner {
     border: none;
     background-color: #2b3f5b;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style01B1-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #4973c8;
     background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
     color: #ffffff;
   }
@@ -1315,6 +1355,16 @@
   }
 }
 
+@mixin deco-style01C1-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #3f88f7;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: #ffffff;
+  }
+}
+
 @mixin deco-style01C2-mod-bnr-sitename-3 {
   border: none;
   .mod-bnr-inner {
@@ -1322,6 +1372,16 @@
     background-color: #fff292;
     background-image: url("img/mod-sitename/bg_bnr_arr_26.png");
     color: #284469;
+  }
+}
+
+@mixin deco-style01C2-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #0b7d89;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: #ffffff;
   }
 }
 

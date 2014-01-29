@@ -232,3 +232,72 @@
     @include deco-style01A3-mod-link-a;
   }
 }
+
+//##################################################
+//  mod-link-1st-side
+//##################################################
+.mod-link-1st-side {
+  @include common-style-mod-link-side;
+  @include module-style-mod-link-1st-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-styl01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-styl01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-styl01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B1} a & {
+    @include deco-styl01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B2} a & {
+    @include deco-styl01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B3} a & {
+    @include deco-styl01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C1} a & {
+    @include deco-styl01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C2} a & {
+    @include deco-styl01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C3} a & {
+    @include deco-styl01A3-mod-link-1st-side;
+  }
+}
+//##################################################
+//  mod-link-2nd-side
+//##################################################
+.mod-link-2nd-side {
+  @include common-style-mod-link-side;
+  @include module-style-mod-link-1st-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-styl01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-styl01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-styl01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B1} a & {
+    @include deco-styl01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B2} a & {
+    @include deco-styl01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B3} a & {
+    @include deco-styl01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C1} a & {
+    @include deco-styl01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C2} a & {
+    @include deco-styl01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C3} a & {
+    @include deco-styl01A3-mod-link-1st-side;
+  }
+}

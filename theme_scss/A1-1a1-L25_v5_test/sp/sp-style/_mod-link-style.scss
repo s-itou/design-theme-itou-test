@@ -17,9 +17,8 @@
   display: block;
   padding: 12px 40px 12px 10px;
   border: 1px solid #cccccc;
-  background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
-  background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
-  background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  @include link-arrow("mod-link/spbg03.png");
+
   background-position: 95% 50%;
   background-size: 17px 17px, 100%;
   background-repeat: no-repeat;
@@ -47,17 +46,17 @@
 
 @mixin module-style-mod-link-pic {
   margin-top: 15px;
-  width: 95%;
+  width: 100%;
 }
 
 @mixin module-style-mod-link-1st {
   margin-top: 10px;
-  width: 95%;
+  width: 100%;
 }
 
 @mixin module-style-mod-link-2nd {
   margin-top: 10px;
-  width: 95%;
+  width: 100%;
 }
 
 //////////////////////////////////////////////////
@@ -86,5 +85,54 @@
 }
 //aがdivの外についた時用
 @mixin deco-style01A3-mod-link-a {
+  color: #45320b;
+}
+
+
+//##################################################
+//  mod-link-1st-side
+//  mod-link-2nd-side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-link-side {
+  line-height: 1.4;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 12px 40px 12px 10px;
+  margin-top: 10px;
+  background-image: url("img/mod-link/spbg03.png"), linear-gradient(#ffffff, #f6f6f6, #eeeeee);
+  background-image: url("img/mod-link/spbg03.png"), -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
+  background-image: url("img/mod-link/spbg03.png"), -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 17px 17px, 100%;
+  border: 1px solid #cccccc;
+  @include border-radius();
+  display: block;
+  @include box-sizing(border-box);
+  p {
+    font-size: 14px !important;
+    span {
+      font-size: 14px !important;
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-link-1st-side {}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-styl01A1-mod-link-1st-side {
+  color: #335a93;
+}
+@mixin deco-styl01A2-mod-link-1st-side {
+  color: #294470;
+}
+@mixin deco-styl01A3-mod-link-1st-side {
   color: #45320b;
 }

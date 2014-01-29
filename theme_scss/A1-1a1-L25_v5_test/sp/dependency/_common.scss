@@ -11,9 +11,16 @@
   padding-top: 41px;
   margin: 0;
   table {
-    width: 100% !important;
+    // width: 100% !important;
     border-spacing: 0;
     border-collapse: collapse;
+  }
+  [contenteditable=true] {
+    table {
+      width: 100% !important;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
   }
   div {
     @include box-sizing(border-box);
@@ -38,6 +45,27 @@
   }
 }
 
+//白背景用のグラデーション
+@mixin tel-button($imgUrl,$position-x: 20px, $position-y: 15px) { //spカラバリ対策
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee) left top repeat;
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee)) left top repeat;
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%) left top repeat;
+}
+
+//ii用背景グラデーション
+@mixin tel-button2() {
+  background: linear-gradient(#ffffff, #f6f6f6, #eeeeee)  left top repeat;
+  background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee)) left top repeat;
+  background: -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%) left top repeat;
+}
+
+// リンク用グラデーション
+@mixin link-arrow($imgUrl,$position-x: 20px, $position-y: 15px) { //spカラバリ対策
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee) left top repeat;
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee))  left top repeat;
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%)  left top repeat;
+}
+
 .mod-body {
   //------------------
   // mod-margin-top
@@ -53,5 +81,3 @@
     margin-top: 30px !important;
   }
 }
-
-

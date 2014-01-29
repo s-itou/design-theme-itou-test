@@ -6,6 +6,11 @@
 //  mod-part
 //##################################################
 
+div[class*="mod-part"] {
+  @extend %common-style-mod-part;
+}
+
+
 .mod-part-bnr-x2,
 .mod-part-bnr-x3,
 .mod-part-bunsyo,

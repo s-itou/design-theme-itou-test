@@ -7,7 +7,6 @@
 // -----------------------------------
 
 @import "../sp-style/mod-set-design-style";
-@import "../design/pat-design-common";
 
 
 // -----------------------------------
@@ -16,32 +15,227 @@
 // -----------------------------------
 
 .mod-set-design {
-  // @extend %common-style-mod-set-design;
   .ex-style_#{$baseEx_01A1} & {
-    @include pat-design-common-1;
+    .mod-ol_ver2 {@include pat-item-list-number-1;}
   }
   .ex-style_#{$baseEx_01A2} & {
-    @include pat-design-common-2;
+    .mod-ol_ver2 {@include pat-item-list-number-2;}
   }
   .ex-style_#{$baseEx_01A3} & {
-    @include pat-design-common-3;
+    .mod-ol_ver2 {@include pat-item-list-number-3;}
   }
   .ex-style_#{$baseEx_01B1} & {
-    @include pat-design-common-4;
+    .mod-ol_ver2 {@include pat-item-list-number-4;}
   }
   .ex-style_#{$baseEx_01B2} & {
-    @include pat-design-common-5;
+    .mod-ol_ver2 {@include pat-item-list-number-5;}
   }
   .ex-style_#{$baseEx_01B3} & {
-    @include pat-design-common-6;
+    .mod-ol_ver2 {@include pat-item-list-number-6;}
   }
   .ex-style_#{$baseEx_01C1} & {
-    @include pat-design-common-7;
+    .mod-ol_ver2 {@include pat-item-list-number-7;}
   }
   .ex-style_#{$baseEx_01C2} & {
-    @include pat-design-common-8;
+    .mod-ol_ver2 {@include pat-item-list-number-8;}
   }
   .ex-style_#{$baseEx_01C3} & {
-    @include pat-design-common-9;
+    .mod-ol_ver2 {@include pat-item-list-number-9;}
   }
 }
+
+// -----------------------------------
+// part-main-281,282
+// mod-set-design3,2col
+// -----------------------------------
+
+.mod-set-design3 {
+  @include common-style-mod-set-design3;
+  @include module-style-mod-set-design3;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-waku-kadomaru-simple-1;
+    .mod-h_4_ver2 {@include pat-item-h4-gurade-1;}
+    @include deco-style01A1-mod-set-design3;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-waku-kadomaru-simple-2;
+    .mod-h_4_ver2 {@include pat-item-h4-gurade-2;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-16;}
+    @include deco-style01A2-mod-set-design3;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-waku-kadomaru-simple-3;
+    .mod-h_4_ver2 {@include pat-item-h4-gurade-3;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-10;}
+    @include deco-style01A3-mod-set-design3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-waku-kado-jouge-beta-1;
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-17;}
+    @include deco-style01B1-mod-set-design3;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-waku-kado-jouge-beta-2;
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-18;}
+    @include deco-style01B2-mod-set-design3;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-waku-kado-jouge-beta-3;
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-19;}
+    @include deco-style01B3-mod-set-design3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-waku-kado-shimple-grade-1;
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-2;}
+    @include deco-style01C1-mod-set-design3;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-waku-kado-shimple-grade-2;
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-3;}
+    @include deco-style01C2-mod-set-design3;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-waku-kado-shimple-grade-3;
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-4;}
+    @include deco-style01C3-mod-set-design3;
+  }
+}
+
+
+.mod-set-design-2col {
+  @include common-style-mod-set-design;
+  @include module-style-mod-set-design-2col;
+  .ex-style_#{$baseEx_01A1} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kadomaru-simple-1;}
+    .mod-h_4_ver2 {@include pat-item-h4-gurade-1;}
+    @include deco-style01A1-mod-set-design-2col;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kadomaru-simple-2;}
+    .mod-h_4_ver2 {@include pat-item-h4-gurade-2;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-16;}
+    @include deco-style01A2-mod-set-design-2col;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kadomaru-simple-3;}
+    .mod-h_4_ver2 {@include pat-item-h4-gurade-3;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-10;}
+    @include deco-style01A3-mod-set-design-2col;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kado-jouge-beta-4;}
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-17;}
+    @include deco-style01B1-mod-set-design-2col;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kado-jouge-beta-5;}
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-18;}
+    @include deco-style01B2-mod-set-design-2col;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kado-jouge-beta-6;}
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
+    .mod-bnr_ver2 {@include pat-item-bnr-grade-19;}
+    @include deco-style01B3-mod-set-design-2col;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kado-shimple-grade-1;}
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-2;}
+    @include deco-style01C1-mod-set-design-2col;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kado-shimple-grade-2;}
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-3;}
+    @include deco-style01C2-mod-set-design-2col;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    .mod-2col-wrap > div > div {@include pat-item-waku-kado-shimple-grade-3;}
+    .mod-h_4_ver2 {@include pat-item-h4-simple-border-4;}
+    @include deco-style01C3-mod-set-design-2col;
+  }
+}
+
+
+
+// -----------------------------------
+// part-main-040
+// 汎用枠
+// -----------------------------------
+.mod-set-design4 {
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-waku-board-blue;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-none-bgc-blue;}
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-1;
+    @include deco-style-mod-set-design4-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-waku-board-blue-2;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-none-bgc-blue-2;}
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-1;
+    @include deco-style-mod-set-design4-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-waku-board-yellow-2;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-none-bgc-pink;}
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-1;
+    @include deco-style-mod-set-design4-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-waku-jouge-image-blue-bgc-2;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-none-bgc-blue-3;}
+    .mod-box_ver2 {@include pat-item-waku-kado-gray-bgimg;}
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-2;
+    @include deco-style-mod-set-design4-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-waku-jouge-image-green-bgc-2;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-none-bgc-yellow;}
+    .mod-box_ver2 {@include pat-item-waku-kado-gray-bgimg;}
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-2;
+    @include deco-style-mod-set-design4-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-waku-jouge-image-brown-bgc;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-none-bgc-yellow-2;}
+    .mod-box_ver2 {@include pat-item-waku-kado-gray-bgimg;}
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-2;
+    @include deco-style-mod-set-design4-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-waku-board-blue-3;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-border-blue;}
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-3;
+    @include deco-style-mod-set-design4-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-waku-board-blue-4;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-border-green;}
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-3;
+    @include deco-style-mod-set-design4-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-waku-board-orange-2;
+    .mod-h_4_ver2 {@include pat-item-midashi-simple-border-brown;}
+    .mod-ul_ver2 {
+      @include pat-item-waku-kadomaru-yellow-bgc;
+      @include pat-item-list-check-default-1;
+    }
+    @include common-style-mod-set-design4;
+    @include module-style-mod-set-design4-3;
+    @include deco-style-mod-set-design4-9;
+  }
+}
+

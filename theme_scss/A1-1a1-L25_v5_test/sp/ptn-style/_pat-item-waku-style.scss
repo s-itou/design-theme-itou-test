@@ -33,7 +33,27 @@
   margin: 20px 10px 0;
   padding: 15px;
 }
-@mixin module-style-pat-item-waku-simple-2 {}
+@mixin module-style-pat-item-waku-simple-2 { }
+
+// 背景画像（ペン）
+@mixin module-style-pat-item-waku-simple-bgimg {
+  padding: 0 3.3333% 72px;
+  width: 100%;
+  background-image: url(img/_pat-item/waku-kado/bg.png);
+  background-size: 75% auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  > div {
+    background-image: none;
+  }
+  .mod-2col-inner-2,
+  .mod-2col-inner2-2,
+  > .mod-rte_ver2 p {
+    background-position: left top;
+    background-size: 100% 30px;
+    background-repeat: repeat;
+  }
+}
 
 // 上下画像
 @mixin module-style-pat-item-waku-image {
@@ -60,6 +80,14 @@
     }
   }
 }
+// 上画像
+@mixin module-style-pat-item-waku-image-2 {
+  padding: 25px 2.8125% 17px;
+  width: 100%;
+  background-position: left top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 
 // 背景繰り返し
 @mixin module-style-pat-item-waku-repeat {
@@ -74,6 +102,22 @@
   background-repeat: repeat-x;
   > .mod-box-inner {
     padding: 15px;
+  }
+}
+
+// 背景ベタ
+@mixin module-style-pat-item-waku-beta {
+  margin: 30px 0 0 0;
+  padding: 2px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  > div {
+    background-position: center top;
+    background-repeat: no-repeat;
+    > div {
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -116,6 +160,80 @@
   }
 }
 
+// 背景グラデーション
+@mixin deco-style-pat-item-waku-kado-shimple-grade-1 {
+  padding: 2px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  background-image: url("img/_pat-item/waku-kado-shimple-grade/bg.png");
+  > div {
+    border-top: 3px solid #284469;
+  }
+}
+
+@mixin deco-style-pat-item-waku-kado-shimple-grade-2 {
+  padding: 2px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  background-image: url("img/_pat-item/waku-kado-shimple-grade/bg_2.png");
+  > div {
+    border-top: 3px solid #7ed0d9;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-shimple-grade-3 {
+  padding: 2px;
+  border: 1px solid #ffa258;
+  background-color: #ffffff;
+  background-image: url("img/_pat-item/waku-kado-shimple-grade/bg_3.png");
+  > div {
+    border-top: 3px solid #f37f1c;
+  }
+}
+
+@mixin deco-style-pat-item-waku-kadomaru-simple-blue-4 {
+  border: 1px solid #2e7fec;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-green-2 {
+  border: 1px solid #66c7d2;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-orange-2 {
+  border: 1px solid #f27f1d;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-blue-5 {
+  border: 1px solid #2366d3;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-green-3 {
+  border: 1px solid #138590;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-orange-3 {
+  border: 1px solid #f37f1c;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-gray {
+  border: 1px solid #cccccc;
+  background-color: #fffef6;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-green-4 {
+  border: 1px solid #7ed1d9;
+  background-color: #f5fafa;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-orange-4 {
+  border: 1px solid #f37f1c;
+  background-color: #fefaf0;
+}
+
+
+
+// 背景画像（ペン）
+@mixin deco-style-pat-item-waku-kado-gray-bgimg {
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  .mod-2col-inner-2,
+  .mod-2col-inner2-2,
+  > .mod-rte_ver2 p {
+    background-image: url(img/_pat-item/waku-kado/bg02.png);
+  }
+}
+
 // 上下画像
 @mixin deco-style-pat-item-waku-jouge-image-blue-bgc {
   border: none;
@@ -141,41 +259,21 @@
     background-image: url("img/mod-box/_55/bg02_b_3.png");
   }
 }
-@mixin deco-style-pat-item-waku-board-orange {
-  border-left: 1px solid #f7ebdb;
-  background-image: url("img/mod-box/_48/spbg_c.png");
-  > .mod-box-inner, .mod-ul-inner {
-    border-top: 1px solid #f7ebdb;
-    border-right: 1px solid #f7ebdb;
-    background-image: url("img/mod-box/_48/bg02_c.png");
-    > .mod-box-inner2, .mod-ul-inner2 {
-      background-image: url("img/mod-box/_48/bg02_c.png");
-    }
-  }
+// 上画像
+@mixin deco-style-pat-item-waku-jouge-image-blue-bgc-2 {
+  border: none;
+  background-color: #16305f;
+  background-image: url("img/_pat-item/waku-image/bg.png");
 }
-@mixin deco-style-pat-item-waku-board-yellow {
-  border-left: 1px solid #e6edee;
-  background-image: url("img/mod-box/_48/spbg_c_2.png");
-  > .mod-box-inner, .mod-ul-inner {
-    border-top: 1px solid #e6edee;
-    border-right: 1px solid #e6edee;
-    background-image: url("img/mod-box/_48/bg02_c_2.png");
-    > .mod-box-inner2, .mod-ul-inner2 {
-      background-image: url("img/mod-box/_48/bg02_c_2.png");
-    }
-  }
+@mixin deco-style-pat-item-waku-jouge-image-green-bgc-2 {
+  border: none;
+  background-color: #12626c;
+  background-image: url("img/_pat-item/waku-image/bg_2.png");
 }
-@mixin deco-style-pat-item-waku-board-brown {
-  border-left: 1px solid #f7eadb;
-  background-image: url("img/mod-box/_48/spbg_c_3.png");
-  > .mod-box-inner, .mod-ul-inner {
-    border-top: 1px solid #f7eadb;
-    border-right: 1px solid #f7eadb;
-    background-image: url("img/mod-box/_48/bg02_c_3.png");
-    > .mod-box-inner2, .mod-ul-inner2 {
-      background-image: url("img/mod-box/_48/bg02_c_3.png");
-    }
-  }
+@mixin deco-style-pat-item-waku-jouge-image-brown-bgc {
+  border: none;
+  background-color: #443308;
+  background-image: url("img/_pat-item/waku-image/bg_3.png");
 }
 
 // 背景繰り返し
@@ -204,7 +302,77 @@
   }
 }
 
-
+// 角・上下画像・背景色が濃いもの
+@mixin deco-style-pat-item-waku-kado-jouge-beta-1 {
+  background-image: url("img/_pat-item/waku-kado-jouge-beta/bg.png");
+  background-color: #1f4285;
+  border: 1px solid #1f4285;
+  > div {
+      background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02.png");
+    > div {
+      background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-kado-jouge-beta-2 {
+  background-image: url("img/_pat-item/waku-kado-jouge-beta/bg_2.png");
+  background-color: #11838e;
+  border: 1px solid #11838e;
+  > div {
+    background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02.png");
+    > div {
+      background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-kado-jouge-beta-3 {
+  background-image: url("img/_pat-item/waku-kado-jouge-beta/bg_3.png");
+  background-color: #fcda62;
+  border: 1px solid #fcda62;
+  > div {
+    background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02_3.png");
+    > div {
+      background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02_3.png");
+    }
+  }
+}
+//2col用
+@mixin deco-style-pat-item-waku-kado-jouge-beta-4 {
+  background-image: url("img/_pat-item/waku-kado-jouge-beta/bg_4.png");
+  background-color: #1f4285;
+  border: 1px solid #1f4285;
+  background-position: left top;
+  > div {
+      background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02.png");
+    > div {
+      background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-kado-jouge-beta-5 {
+  background-image: url("img/_pat-item/waku-kado-jouge-beta/bg_5.png");
+  background-color: #11838e;
+  border: 1px solid #11838e;
+  background-position: left top;
+  > div {
+    background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02.png");
+    > div {
+      background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-kado-jouge-beta-6 {
+  background-image: url("img/_pat-item/waku-kado-jouge-beta/bg_6.png");
+  background-color: #fcda62;
+  border: 1px solid #fcda62;
+  background-position: left top;
+  > div {
+    background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02_3.png");
+    > div {
+      background-image: url("img/_pat-item/waku-kado-jouge-beta/bg02_3.png");
+    }
+  }
+}
 
 
 // --------------------------------------------------------------------------
@@ -219,7 +387,7 @@
 
 @mixin common-style-pat-item-waku-kadomaru {
   @include border-radius(3px);
-  margin: 30px 0 0;
+  margin: 20px 0 0;
   padding: 0;
   width: 100%;
   background-position: left top;
@@ -259,6 +427,15 @@
     }
   }
 }
+//文章<装飾>-2,3の初期装飾で使う
+@mixin module-style-pat-item-waku-kadomaru-simple-3 {
+  margin: 15px auto 0 auto;
+  padding: 2px;
+  > div {
+    // padding: 10px;(set側で指定)
+  }
+}
+
 
 // 太枠角丸
 @mixin module-style-pat-item-waku-kadomaru-futo {
@@ -329,6 +506,7 @@
 @mixin deco-style-pat-item-waku-kadomaru-none-bgc-orange {
   background-color: #f3811e;
 }
+
 // 枠なし背景グラデーション
 @mixin deco-style-pat-item-waku-kadomaru-none-gurade-gold {
   background-color: #ffffff;
@@ -356,6 +534,50 @@
 @mixin deco-style-pat-item-waku-kadomaru-simple-orange {
   border: 2px solid #ffc789;
 }
+
+// 角丸背景色あり
+@mixin deco-style-pat-item-waku-kadomaru-blue-bgc {
+  border: 1px solid #c8dffe;
+  background-color: #dce9fb;
+}
+@mixin deco-style-pat-item-waku-kadomaru-yellow-bgc {
+  border: 1px solid #d1c9a4;
+  background-color: #fffce9;
+}
+@mixin deco-style-pat-item-waku-kadomaru-yellow-bgc-2 { // 背景白
+  border: 1px solid #d1c9a4;
+  background-color: #ffffff;
+}
+@mixin deco-style-pat-item-waku-kadomaru-green-bgc {
+  border: 1px solid #7ed1d9;
+  background-color: #e3f6f8;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-1 {
+  border: 1px solid #dedad1;
+  background-color: #fffce9;
+  > div {
+    border: 1px solid #f5f1e7;
+    background-color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-2 {
+  border: 1px solid #cbd8d9;
+  background-color: #f6f6f6;
+  > div {
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-3 {
+  border: 1px solid #dedad1;
+  background-color: #fffdee;
+  > div {
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+  }
+}
+
+// 太枠角丸
 @mixin deco-style-pat-item-waku-kadomaru-futo-yellow {
   border: 1px solid #dedad1;
   background-color: #fffce9;
@@ -363,7 +585,6 @@
     background-color: #ffffff;
   }
 }
-
 @mixin deco-style-pat-item-waku-kadomaru-futo-gray {
   border: 1px solid #cbd8d9;
   background-color: #f6f6f6;
@@ -371,7 +592,6 @@
     background-color: #ffffff;
   }
 }
-
 @mixin deco-style-pat-item-waku-kadomaru-futo-yellow-3 {
   border: 1px solid #dedad1;
   background-color: #fffef4;
@@ -546,6 +766,199 @@
     background-image: none;
   }
 }
+
+
+// --------------------------------------------------------------------------
+//
+// pat-item-waku-board
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-waku-board の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-waku-board {
+  // margin: 0;  // 枠パターンにより違うため、module側で指定
+  // padding: 0; // 枠パターンにより違うため、module側で指定
+}
+
+// -------------------------------------
+//  pat-item-waku-board の共通デザイン
+// -------------------------------------
+
+// ボーダー（ピン）
+@mixin module-style-pat-item-waku-board-1 {
+  margin: 20px 0 0;
+  padding: 0 0 25px;
+  background-position: center bottom;
+  background-size: 100% 33px;
+  background-repeat: no-repeat;
+  > div {
+    margin: 0;
+    padding: 0;
+    background-position: left 2px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    > div {
+      margin: 0;
+      padding: 15px 15px 0;
+      background-position: right 2px;
+      background-size: 14px 14px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+// ボーダー（バインダー）
+@mixin module-style-pat-item-waku-board-2 {
+  margin: 30px auto 0 auto;
+  padding: 58px 0 0;
+  width: 100%;
+  background-position: left top;
+  background-size: 100% 58px;
+  background-repeat: no-repeat;
+  > div {
+    margin: 0;
+    padding: 0 0 34px;
+    background-position: left bottom;
+    background-size: 100% 34px;
+    background-repeat: no-repeat;
+    > div {
+      margin: 0;
+      padding: 15px 6.25% 12px;
+      background-position: left top;
+      background-size: 100% 1px;
+      background-repeat: repeat-y;
+    }
+  }
+}
+// ボーダー（壁掛け）
+@mixin module-style-pat-item-waku-board-3 {
+  margin: 30px -3px 0 -3px;
+  padding: 76px 0 0 0;
+  width: 100%;
+  background-position: left top;
+  background-size: 100% 76px;
+  background-repeat: no-repeat;
+  > div {
+    margin: 0;
+    padding: 0 0 23px;
+    background-position: left bottom;
+    background-size: 100% 23px;
+    background-repeat: no-repeat;
+    > div {
+      overflow: hidden;
+      margin: 0;
+      padding: 10px 6.25%;
+      background-position: left top;
+      background-size: 100% 1px;
+      background-repeat: repeat-y;
+    }
+  }
+}
+
+// -------------------------------------
+// pat-item-waku-board の装飾スタイル
+// -------------------------------------
+
+// ボーダー（ピン）
+@mixin deco-style-pat-item-waku-board-orange {
+  border-left: 1px solid #f7ebdb;
+  background-image: url("img/mod-box/_48/spbg_c.png");
+  > div {
+    border-top: 1px solid #f7ebdb;
+    border-right: 1px solid #f7ebdb;
+    background-color: #ffffff;
+    background-image: url("img/mod-box/_48/bg02_c.png");
+    > div {
+      background-image: url("img/mod-box/_48/bg02_c.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-board-yellow {
+  border-left: 1px solid #e6edee;
+  background-image: url("img/mod-box/_48/spbg_c_2.png");
+  > div {
+    border-top: 1px solid #e6edee;
+    border-right: 1px solid #e6edee;
+    background-color: #ffffff;
+    background-image: url("img/mod-box/_48/bg02_c_2.png");
+    > div {
+      background-image: url("img/mod-box/_48/bg02_c_2.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-board-brown {
+  border-left: 1px solid #f7eadb;
+  background-image: url("img/mod-box/_48/spbg_c_3.png");
+  > div {
+    border-top: 1px solid #f7eadb;
+    border-right: 1px solid #f7eadb;
+    background-color: #ffffff;
+    background-image: url("img/mod-box/_48/bg02_c_3.png");
+    > div {
+      background-image: url("img/mod-box/_48/bg02_c_3.png");
+    }
+  }
+}
+// ボーダー（バインダー）
+@mixin deco-style-pat-item-waku-board-blue {
+  background-image: url("img/_pat-item/waku-board/bg.png");
+  > div {
+    background-image: url("img/_pat-item/waku-board/bg03.png");
+    > div {
+      background-image: url("img/_pat-item/waku-board/bg02.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-board-blue-2 {
+  background-image: url("img/_pat-item/waku-board/bg_2.png");
+  > div {
+    background-image: url("img/_pat-item/waku-board/bg03_2.png");
+    > div {
+      background-image: url("img/_pat-item/waku-board/bg02_2.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-board-yellow-2 {
+  background-image: url("img/_pat-item/waku-board/bg_3.png");
+  > div {
+    background-image: url("img/_pat-item/waku-board/bg03_3.png");
+    > div {
+      background-image: url("img/_pat-item/waku-board/bg02_3.png");
+    }
+  }
+}
+// ボーダー（壁掛け）
+@mixin deco-style-pat-item-waku-board-blue-3 {
+  background-image: url("img/_pat-item/waku-board/bg_4.png");
+  > div {
+    background-image: url("img/_pat-item/waku-board/bg03_4.png");
+    > div {
+      background-image: url("img/_pat-item/waku-board/bg02_4.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-board-blue-4 {
+  background-image: url("img/_pat-item/waku-board/bg_5.png");
+  > div {
+    background-image: url("img/_pat-item/waku-board/bg03_5.png");
+    > div {
+      background-image: url("img/_pat-item/waku-board/bg02_5.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-board-orange-2 {
+  background-image: url("img/_pat-item/waku-board/bg_6.png");
+  > div {
+    background-image: url("img/_pat-item/waku-board/bg03_6.png");
+    > div {
+      background-image: url("img/_pat-item/waku-board/bg02_6.png");
+    }
+  }
+}
+
+
 // --------------------------------------------------------------------------
 //
 // pat-item-waku-fukidashi

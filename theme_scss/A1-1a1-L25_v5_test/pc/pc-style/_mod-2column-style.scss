@@ -220,27 +220,29 @@
   //---------------------//
   @extend %cf;
   .mod-2col-wrap {
-    > .mod-2col-inner {
-      float: left;
-      width: floor(($mainWidth - 40) / 2);
-      .mod-2col-inner-3 {
-         > .ex-first-child {
-          margin-top: 0 !important;
+    .mod-2col-wrap2 {
+      > .mod-2col-inner {
+        float: left;
+        width: floor(($mainWidth - 40) / 2);
+        .mod-2col-inner-3 {
            > .ex-first-child {
             margin-top: 0 !important;
+             > .ex-first-child {
+              margin-top: 0 !important;
+            }
           }
         }
       }
-    }
-    > .mod-2col-inner2 {
-      float: right;
-      width: floor(($mainWidth - 40) / 2);
-      margin: 0 0 0 40px;
-       .mod-2col-inner2-3 {
-         > .ex-first-child {
-          margin-top: 0 !important;
+      > .mod-2col-inner2 {
+        float: right;
+        width: floor(($mainWidth - 40) / 2);
+        margin: 0 0 0 40px;
+         .mod-2col-inner2-3 {
            > .ex-first-child {
             margin-top: 0 !important;
+             > .ex-first-child {
+              margin-top: 0 !important;
+            }
           }
         }
       }

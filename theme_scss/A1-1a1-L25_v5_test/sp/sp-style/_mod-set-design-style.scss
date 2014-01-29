@@ -5,6 +5,711 @@
 //
 // -----------------------------------
 
-%common-style-mod-set-design {
+
+// --------------------------------------------------------------------------
+// mod-set-design
+// --------------------------------------------------------------------------
+@mixin common-style-mod-set-design {
+  //業務チームから見出し等がSWでoffになっても最低限この余白をとるようとの依頼
+  margin: 20px 0 0;
+}
+// --------------------------------------------------------------------------
+// mod-set-design2
+// --------------------------------------------------------------------------
+@mixin common-style-mod-set-design2 {
+  //業務チームから見出し等がSWでoffになっても最低限この余白をとるようとの依頼
+  margin: 20px 0 0;
+}
+
+// --------------------------------------------------------------------------
+// mod-set-design3
+// --------------------------------------------------------------------------
+@mixin common-style-mod-set-design3 {
+  .mod-box-inner2 {
+    > .ex-first-child {
+     margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+// -----------------------------------
+// module-style
+// -----------------------------------
+@mixin module-style-mod-set-design3 {
+  margin: 20px 0 0 0;
+  .mod-ul_ver2 {
+    li {
+      background-repeat: no-repeat;
+    }
+  }
+  .mod-bnr_ver2 {
+    margin-top: $fontSizeM !important; //ex-alignを上書きしないため
+  }
+}
+
+@mixin module-style-mod-set-design-2col {
+  margin: 20px 0 0 0;
+  .mod-2col-wrap {
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      > .mod-2col-inner-2, > .mod-2col-inner2-2 {
+        > .mod-2col-inner-3, > .mod-2col-inner2-3 {
+          > .mod-box_ver2 {
+            margin: 0;
+            > .ex-first-child {
+              margin-top: 0 !important;
+               > .ex-first-child {
+                margin-top: 0 !important;
+              }
+            }
+            > .mod-2col_ver2 > .mod-2col-inner,
+            > .mod-2col_ver2 > .mod-2col-inner2 {
+              > .ex-first-child {
+                margin-top: 0 !important;
+                 > .ex-first-child {
+                  margin-top: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mod-ul_ver2 {
+    li {
+      background-repeat: no-repeat;
+    }
+  }
+  .mod-bnr_ver2 {
+    margin-top: $fontSizeM !important; //ショートハンド不使用:ex-alignを上書きしないため,!important:itemの打ち消し
+  }
+  .mod-img {
+    //未
+  }
+}
+
+// -----------------------------------
+// deco-style
+// -----------------------------------
+@mixin deco-style01A1-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 15px 10px;
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;
+    background-color: transparent;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+    }
+  }
+}
+@mixin deco-style01A2-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 15px 10px;
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;
+    background-color: transparent;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+    }
+  }
+}
+@mixin deco-style01A3-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 15px 10px;
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;
+    background-color: transparent;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+    }
+  }
+}
+@mixin deco-style01B1-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 30px 20px 25px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
+      background-position: left 5px;
+      color: #ffffff;
+      list-style: none;
+      &:after {
+        background-image: none;
+        height: 0;
+      }
+    }
+  }
+}
+@mixin deco-style01B2-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 30px 20px 25px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
+      background-position: left 5px;
+      color: #ffffff;
+      list-style: none;
+      &:after {
+        background-image: none;
+        height: 0;
+      }
+    }
+  }
+}
+@mixin deco-style01B3-mod-set-design3 {
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      padding: 30px 20px 25px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
+      background-position: left 5px;
+      color: #ffffff;
+      list-style: none;
+      &:after {
+        background-image: none;
+        height: 0;
+      }
+    }
+  }
+}
+@mixin deco-style01C1-mod-set-design3 {
+  > .mod-box-inner {
+    padding: 0;
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      border: none;
+      background-image: url("img/_mod/set-design3/ul/bg_c_1.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+      background-size: auto;
+    }
+  }
+}
+@mixin deco-style01C2-mod-set-design3 {
+  > .mod-box-inner {
+    padding: 0;
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      border: none;
+      background-image: url("img/_mod/set-design3/ul/bg_c_2.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+      background-size: auto;
+    }
+  }
+}
+@mixin deco-style01C3-mod-set-design3 {
+  > .mod-box-inner {
+    padding: 0;
+    > .mod-box-inner2 {
+      padding: 20px;
+    }
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      border: none;
+      background-image: url("img/_mod/set-design3/ul/bg_c_3.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+      background-size: auto;
+    }
+  }
+}
+
+
+
+@mixin deco-style01A1-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 15px 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      margin: 0;
+      background-color: transparent;
+      padding: 4px 0 2px 7px;
+    }
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+    }
+  }
+}
+@mixin deco-style01A2-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 15px 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      margin: 0;
+      background-color: transparent;
+      padding: 4px 0 2px 7px;
+    }
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+    }
+  }
+}
+@mixin deco-style01A3-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 15px 10px;
+  }
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      margin: 0;
+      background-color: transparent;
+      padding: 4px 0 2px 7px;
+    }
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+    }
+  }
+}
+@mixin deco-style01B1-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px 10px;
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
+      background-position: left 5px;
+      color: #ffffff;
+      list-style: none;
+      &:after {
+        background-image: none;
+        height: 0;
+      }
+    }
+  }
+}
+@mixin deco-style01B2-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px 10px;
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #ffffff;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
+      background-position: left 5px;
+      color: #ffffff;
+      list-style: none;
+      &:after {
+        background-image: none;
+        height: 0;
+      }
+    }
+  }
+}
+@mixin deco-style01B3-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px 10px;
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
+    color: #443308;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
+      background-position: left 5px;
+      color: #443308;
+      list-style: none;
+      &:after {
+        background-image: none;
+        height: 0;
+      }
+    }
+  }
+}
+@mixin deco-style01C1-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px;
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      border: none;
+      background-image: url("img/_mod/set-design3/ul/bg_c_1.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+      background-size: auto;
+    }
+  }
+}
+@mixin deco-style01C2-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px;
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      border: none;
+      background-image: url("img/_mod/set-design3/ul/bg_c_2.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+      background-size: auto;
+    }
+  }
+}
+@mixin deco-style01C3-mod-set-design-2col {
+  .mod-box_ver2 {
+    padding: 20px;
+  }
+  .mod-h_4-inner3 {
+    @include border-radius(0px);
+    margin: 0px;
+    padding: 0;
+    background-image: none;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(0px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    li {
+      margin: 2px 10px 0 10px;
+      padding: 0 0 0 15px;
+      border: none;
+      background-image: url("img/_mod/set-design3/ul/bg_c_3.png");
+      background-position: left 5px;
+      color: #333333;
+      list-style: none;
+      background-size: auto;
+    }
+  }
+}
+
+
+
+
+
+
+// --------------------------------------------------------------------------
+// mod-set-design4
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// common-style
+// -------------------------------------
+@mixin common-style-mod-set-design4 {
+}
+
+// -------------------------------------
+// module-style
+// -------------------------------------
+@mixin module-style-mod-set-design4-1 {
+  .mod-box_ver2 {
+    margin: 6px 0 0;
+  }
+}
+@mixin module-style-mod-set-design4-2 {
+  .mod-box_ver2 {
+    margin: 14px 0 0;
+  }
+  .mod-rte_ver2 {
+    border-top: 1px dashed #9c9c9c;
+    padding: 15px 0 0;
+    &.ex-first-child {
+      border-top: none;
+      border-bottom: 1px dashed #9c9c9c;
+      padding: 0 0 15px;
+    }
+  }
+  .mod-2col-in1 {
+    .mod-rte_ver2 {
+      border: none;
+      padding: 0;
+    }
+  }
+}
+@mixin module-style-mod-set-design4-3 {
+  .mod-box_ver2 {
+    margin: 0;
+  }
+  .mod-ul_ver2 {
+    @include border-radius(5px);
+    margin: 10px 0 0;
+    padding: 10px 2.8735%;
+    ul {
+      li {
+        margin: 2px 0 0 5px;
+      }
+    }
+  }
+}
+
+// -------------------------------------
+// deco-style
+// -------------------------------------
+@mixin deco-style-mod-set-design4-1 {
+}
+@mixin deco-style-mod-set-design4-2 {
+}
+@mixin deco-style-mod-set-design4-3 {
+}
+@mixin deco-style-mod-set-design4-4 {
+}
+@mixin deco-style-mod-set-design4-5 {
+}
+@mixin deco-style-mod-set-design4-6 {
+}
+@mixin deco-style-mod-set-design4-7 {
+}
+@mixin deco-style-mod-set-design4-8 {
+}
+@mixin deco-style-mod-set-design4-9 {
 }
 

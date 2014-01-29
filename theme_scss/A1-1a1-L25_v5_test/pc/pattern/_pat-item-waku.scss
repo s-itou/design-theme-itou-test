@@ -297,6 +297,61 @@
   @include module-style-pat-item-waku-kadomaru-simple-3;
   @include deco-style-pat-item-waku-kadomaru-simple-3;
 }
+@mixin pat-item-waku-kadomaru-simple-blue-6 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-3;
+  @include deco-style-pat-item-waku-kadomaru-simple-blue-6;
+}
+
+
+//以下、.mod-set-news-bunsyo使用中
+@mixin pat-item-waku-kadomaru-simple-blue-4 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-blue-4;
+}
+@mixin pat-item-waku-kadomaru-simple-green-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-green-2;
+}
+@mixin pat-item-waku-kadomaru-simple-orange-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-orange-2;
+}
+@mixin pat-item-waku-kadomaru-simple-blue-5 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-blue-5;
+}
+@mixin pat-item-waku-kadomaru-simple-green-3 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-green-3;
+}
+@mixin pat-item-waku-kadomaru-simple-orange-3 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-orange-3;
+}
+@mixin pat-item-waku-kadomaru-simple-gray {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-gray;
+}
+@mixin pat-item-waku-kadomaru-simple-green-4 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-green-4;
+}
+@mixin pat-item-waku-kadomaru-simple-orange-4 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-orange-4;
+}
+
+
 
 // 角丸背景色あり
 @mixin pat-item-waku-kadomaru-blue-bgc {
@@ -392,6 +447,10 @@
   @include common-style-pat-item-waku-kadomaru;
   @include module-style-pat-item-waku-kadomaru-image;
   @include deco-style-pat-item-waku-kadomaru-image-orange;
+}
+@mixin pat-item-waku-kadomaru-image-01 {
+  //@include module-style-pat-item-waku-kadomaru-simple;
+  //@include 
 }
 
 

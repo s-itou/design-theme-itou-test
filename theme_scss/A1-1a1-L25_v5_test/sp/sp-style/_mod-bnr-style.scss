@@ -16,7 +16,7 @@
 
 
 //##################################################
-//  mod-bnr, mod-bnr-pic
+//  mod-bnr, mod-bnr-pic, mod-bnr-footer
 //##################################################
 
 //////////////////////////////////////////////////
@@ -31,7 +31,7 @@
 @mixin module-style-mod-bnr {
   @include border-radius();
   margin-top: 10px;
-  width: 95%;
+  width: 100%;
   text-align: center;
   > .mod-bnr-inner {
     @include border-radius();
@@ -82,6 +82,8 @@
     }
   }
 }
+
+@mixin module-style-mod-bnr-footer { }
 
 
 //////////////////////////////////////////////////
@@ -310,5 +312,74 @@
         color: #ffffff;
       }
     }
+  }
+}
+
+
+
+//##################################################
+// mod-bnr-1st-set
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-bnr-side {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  background-repeat: repeat-x;
+  @include border-radius();
+  .mod-bnr-inner {
+    color: #ffffff;
+    line-height: 1.4;
+    padding: 12px 35px 12px 10px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    border: 1px solid #ffffff;
+    @include border-radius();
+    overflow: hidden;
+    p {
+      font-size: 16px !important;
+      span {
+        font-size: 16px !important;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      opacity: 0.80;
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-bnr-1st-side {}
+
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-bnr-1st-side {
+  background-color: #3a7ff0;
+  background-image: url("img/mod-bnr/bg.png");
+  border: 1px solid #3a7ff0;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/spbg02.png");
+  }
+}
+@mixin deco-style01A2-mod-bnr-1st-side {
+  background-color: #3d6ea8;
+  background-image: url("img/mod-bnr/bg03_2.png");
+  border: 1px solid #3d6ea8;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/spbg02_2.png");
+  }
+}
+@mixin deco-style01A3-mod-bnr-1st-side {
+  background-color: #ff9547;
+  background-image: url("img/mod-bnr/bg_3.png");
+  border: 1px solid #ff9547;
+  .mod-bnr-inner {
+    background-image: url("img/mod-bnr/spbg02_3.png");
   }
 }

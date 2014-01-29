@@ -63,6 +63,37 @@
   @include module-style-pat-item-h4-shimple;
   @include deco-style-pat-item-h4-shimple-9;
 }
+@mixin pat-item-h4-10 {//faq,set-news
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-10;
+}
+@mixin pat-item-h4-11 {//set-news 比較も？
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-11;
+}
+@mixin pat-item-h4-12 {//set-news
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-12;
+}
+@mixin pat-item-h4-13 {//set-news
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-13;
+}
+@mixin pat-item-h4-14 {//set-news
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-shimple-14;
+}
+@mixin pat-item-h4_15 {//part-main-286
+  @include common-style-pat-item-h4-2;
+  @include module-style-pat-item-h4-shimple-2;
+  @include deco-style-pat-item-h4-shimple-15;
+}
+
 
 // 背景グラデーション
 @mixin pat-item-h4-gurade-1 {
@@ -127,7 +158,18 @@
   @include module-style-pat-item-h4-kaku;
   @include deco-style-pat-item-h4-kaku-9;
 }
-
+@mixin pat-item-h4-kaku-10 {
+  @include common-style-pat-item-h4;
+  @include deco-style-pat-item-h4-kaku-10;
+}
+@mixin pat-item-h4-kaku-11 {
+  @include common-style-pat-item-h4;
+  @include deco-style-pat-item-h4-kaku-11;
+}
+@mixin pat-item-h4-kaku-12 {
+  @include common-style-pat-item-h4;
+  @include deco-style-pat-item-h4-kaku-12;
+}
 // ボックス見出しcase
 @mixin pat-item-h4-icon-case-1 {
   @include common-style-pat-item-h4;
@@ -249,55 +291,6 @@
   @include common-style-pat-item-h4-shimple;
   @include module-style-pat-item-h4-shimple-border;
   @include deco-style-pat-item-h4-simple-border-5;
-}
-
-// -------------------------------------
-//  pat-item-h4-sideの個別設定
-// -------------------------------------
-@mixin pat-item-h4-side-1 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-1;
-}
-@mixin pat-item-h4-side-2 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-2;
-}
-@mixin pat-item-h4-side-3 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-3;
-}
-@mixin pat-item-h4-side-4 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-4;
-}
-@mixin pat-item-h4-side-5 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-5;
-}
-@mixin pat-item-h4-side-6 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-6;
-}
-@mixin pat-item-h4-side-7 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-7;
-}
-@mixin pat-item-h4-side-8 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-8;
-}
-@mixin pat-item-h4-side-9 {
-  @include common-style-pat-item-h4-simple-border;
-  @include module-style-pat-item-h4-simple-border;
-  @include deco-style-pat-item-h4-simple-border-9;
 }
 
 

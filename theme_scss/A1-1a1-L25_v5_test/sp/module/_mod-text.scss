@@ -19,3 +19,82 @@
   .ex-style_#{$baseEx_01C2} & { @include deco-style01C2-mod-text; }
   .ex-style_#{$baseEx_01C3} & { @include deco-style01C3-mod-text; }
 }
+
+//##################################################
+//  mod-text-kyocho-side
+//##################################################
+.mod-text-kyocho-side {
+  @include common-style-mod-text-side;
+  @include module-style-mod-text-kyocho-side;
+  .ex-style_#{$baseEx_01A1} & { @include deco-style01A1-mod-text-kyocho-pic; }
+  .ex-style_#{$baseEx_01A2} & { @include deco-style01A2-mod-text-kyocho-pic; }
+  .ex-style_#{$baseEx_01A3} & { @include deco-style01A2-mod-text-kyocho-pic; }
+  .ex-style_#{$baseEx_01B1} & { @include deco-style01A1-mod-text-kyocho-pic; }
+  .ex-style_#{$baseEx_01B2} & { @include deco-style01A2-mod-text-kyocho-pic; }
+  .ex-style_#{$baseEx_01B3} & { @include deco-style01A2-mod-text-kyocho-pic; }
+  .ex-style_#{$baseEx_01C1} & { @include deco-style01A1-mod-text-kyocho-pic; }
+  .ex-style_#{$baseEx_01C2} & { @include deco-style01A2-mod-text-kyocho-pic; }
+  .ex-style_#{$baseEx_01C3} & { @include deco-style01A2-mod-text-kyocho-pic; }
+}
+
+//##################################################
+//  mod-text-side
+//##################################################
+.mod-text-side {
+  @include common-style-mod-text-side;
+  @include module-style-mod-text-side;
+}
+
+
+//##################################################
+//  mod-text-footer
+//##################################################
+.mod-text-footer {
+  @include common-style-mod-text;
+  @include module-style-mod-text-footer;
+  .ex-style_01A1 & {@include deco-style01A1-mod-text-header;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-text-header;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-text-header;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-text-header;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-text-header;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-text-header;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-text-header;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-text-header;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-text-header;}
+}
+
+
+//##################################################
+//  mod-text-title-footer
+//##################################################
+.mod-text-title-footer {
+  @include common-style-mod-text;
+  @include module-style-mod-text-title-footer;
+  .ex-style_#{$baseEx_01A1} & {@include deco-style01A1-mod-text-header;}
+  .ex-style_#{$baseEx_01A2} & {@include deco-style01A2-mod-text-header;}
+  .ex-style_#{$baseEx_01A3} & {@include deco-style01A3-mod-text-header;}
+  .ex-style_#{$baseEx_01B1} & {@include deco-style01B1-mod-text-header;}
+  .ex-style_#{$baseEx_01B2} & {@include deco-style01B2-mod-text-header;}
+  .ex-style_#{$baseEx_01B3} & {@include deco-style01B3-mod-text-header;}
+  .ex-style_#{$baseEx_01C1} & {@include deco-style01C1-mod-text-header;}
+  .ex-style_#{$baseEx_01C2} & {@include deco-style01C2-mod-text-header;}
+  .ex-style_#{$baseEx_01C3} & {@include deco-style01C3-mod-text-header;}
+}
+
+
+//##################################################
+//  mod-text-kyocho-footer
+//##################################################
+.mod-text-kyocho-footer {
+  @include common-style-mod-text;
+  @include module-style-mod-text-kyocho-footer;
+  .ex-style_01A1 & {@include deco-style01A1-mod-text-kyocho-footer;}
+  .ex-style_01A2 & {@include deco-style01A2-mod-text-kyocho-footer;}
+  .ex-style_01A3 & {@include deco-style01A3-mod-text-kyocho-footer;}
+  .ex-style_01B1 & {@include deco-style01B1-mod-text-kyocho-footer;}
+  .ex-style_01B2 & {@include deco-style01B2-mod-text-kyocho-footer;}
+  .ex-style_01B3 & {@include deco-style01B3-mod-text-kyocho-footer;}
+  .ex-style_01C1 & {@include deco-style01C1-mod-text-kyocho-footer;}
+  .ex-style_01C2 & {@include deco-style01C2-mod-text-kyocho-footer;}
+  .ex-style_01C3 & {@include deco-style01C3-mod-text-kyocho-footer;}
+}

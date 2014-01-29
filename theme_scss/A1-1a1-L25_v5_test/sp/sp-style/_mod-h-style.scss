@@ -1,6 +1,40 @@
 @charset "UTF-8";
 
 //旧方式のコピーのため要改修
+//プレイスホルダー --------------------
+
+%default-icon2 {
+  display: table;
+  vertical-align: middle;
+  > i {
+    display: table-cell;
+  }
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      padding-left: 0;
+      margin: 0 !important;
+    }
+  }
+}
+
+%default-h_5_3 {
+display: table;
+  i {
+    display: table-cell;
+    min-width: 25px;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_0, .mod-icon_1 {
+    min-width: 0;
+  }
+  .mod-h {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+}
 
 //##################################################
 //  mod-h_2
@@ -26,7 +60,6 @@
 //////////////////////////////////////////////////
 //  COMMON-STYLE
 
-
 //////////////////////////////////////////////////
 //  MODULE-STYLE
 
@@ -35,6 +68,133 @@
 //  DECORATION-STYLE
 
 
+
+//##################################################
+//  mod-h_5_side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-h_5_side {
+  display: table;
+  margin-top: 15px;
+  padding: 4px 0 0 0 ;
+  i {
+    display: table-cell;
+    height: 17px;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_0 {
+    min-width: 0;
+  }
+  .mod-h {
+    width: 100%;
+    display: table-cell;
+    font-size: $fontSizeM + 2 !important;
+    span {
+      font-size: $fontSizeM + 2 !important;
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-h_5_side {
+  border-bottom: 1px solid #d9d6cf;
+  .mod-icon_1 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg.png");
+    background-position: left 1px;
+  }
+  .mod-icon_2 {
+    min-width: 28px;
+    background-image: url("img/mod-h_s/bg02.png");
+    background-position: left 3px;
+  }
+  .mod-icon_3 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg03.png");
+    background-position: left 2px;
+  }
+  .mod-icon_4 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg04.png");
+    background-position: 5px 3px;
+  }
+  .mod-icon_dental {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg05.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #331b07;
+  }
+}
+@mixin deco-style01A2-mod-h_5_side {
+  border-bottom: 1px solid #cbd8d9;
+  .mod-icon_1 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg_2.png");
+    background-position: left 1px;
+  }
+  .mod-icon_2 {
+    min-width: 28px;
+    background-image: url("img/mod-h_s/bg02_2.png");
+    background-position: left 3px;
+  }
+  .mod-icon_3 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg03_2.png");
+    background-position: left 2px;
+  }
+  .mod-icon_4 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg04_2.png");
+    background-position: 5px 3px;
+  }
+  .mod-icon_dental {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg05_2.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #355995;
+  }
+}
+@mixin deco-style01A3-mod-h_5_side {
+  border-bottom: 1px solid #dedad1;
+  .mod-icon_1 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg_3.png");
+    background-position: left 1px;
+  }
+  .mod-icon_2 {
+    min-width: 28px;
+    background-image: url("img/mod-h_s/bg02_3.png");
+    background-position: left 3px;
+  }
+  .mod-icon_3 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg03_3.png");
+    background-position: left 2px;
+  }
+  .mod-icon_4 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg04_3.png");
+    background-position: 5px 3px;
+  }
+  .mod-icon_dental {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg05_3.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #45320b;
+  }
+}
 
 //##################################################
 //  mod-h_5_pic_top_side
@@ -109,4 +269,978 @@
   .mod-h {
     color: #45320b;
   }
+}
+
+
+//##################################################
+//  mod-h_5_hyo
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+
+@mixin mod-h_5_hyo-common-style {
+  @include block-style-ex-align;
+  @extend %default-h_5_3;
+  margin-top: 15px;//align対応のためショートハンド不使用
+  .mod-h {
+    font-weight: bold;
+    font-size: $fontSizeM + 2;
+    line-height: 1.2;
+  }
+  .mod-icon_0, .mod-icon_1 {
+    min-width: 0;
+  }
+}
+
+//##################################################
+//  mod-h_5_list
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+
+@mixin mod-h_5_list-common-style {
+  @include block-style-ex-align;
+  @extend %default-h_5_3;
+  margin-top: 15px;//align対応のためショートハンド不使用
+  .mod-h {
+    font-weight: bold;
+    font-size: $fontSizeM + 2;
+    line-height: 1.2;
+  }
+  .mod-icon_0, .mod-icon_1 {
+    min-width: 0;
+  }
+}
+
+//##################################################
+//  mod-h_5_pic
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+
+@mixin mod-h_5_pic-common-style {
+  @include block-style-ex-align;
+  @extend %default-h_5_3;
+  margin-top: 30px;//align対応のためショートハンド不使用
+  .mod-h {
+    font-weight: bold;
+    font-size: $fontSizeM + 2;
+    line-height: 1.2;
+  }
+  .mod-icon_0, .mod-icon_1 {
+    min-width: 0;
+  }
+}
+
+@mixin mod-h_5_x1 {
+  //なし
+}
+@mixin deco-style-mod-h_5_x1-01A1 {
+  .mod-h {
+    color: #46140b;
+  }
+  .mod-icon_2 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg07_v.png");
+    background-position: center top;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg08_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg09_v.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg10_v.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg06_v.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x1-01A2 {
+  .mod-h {
+    color: #222222;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v2.png");
+    background-position: center top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg08_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg09_v2.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg10_v2.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    background-image: url("img/mod-h_5/bg06_v2.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x1-01A3 {
+  .mod-h {
+    color: #010911;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v3.png");
+    background-position: center top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg08_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg09_v3.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg10_v3.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    background-image: url("img/mod-h_5/bg06_v3.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x1-01B1 {
+  .mod-h {
+    color: #5a6e55;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x1-01B2 {
+  .mod-h {
+    color: #46140b;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v2.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v2.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x1-01B3 {
+  .mod-h {
+    color: #6d5b04;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v3.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x1-01C1 {
+  .mod-h {
+    color: #3c3c3c;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x1-01C2 {
+  .mod-h {
+    color: #375068;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v2.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v2.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x1-01C3 {
+  .mod-h {
+    color: #4b4b4b;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v3.png");
+    background-position: left top;
+  }
+}
+
+@mixin mod-h_5_x2 {
+  //なし
+}
+@mixin deco-style-mod-h_5_x2-01A1 {
+  .mod-h {
+    color: #46140b;
+  }
+  .mod-icon_2 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg07_v.png");
+    background-position: center 4px;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg08_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg09_v.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg10_v.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg06_v.png");
+    background-position: left 7px;
+  }
+}
+@mixin deco-style-mod-h_5_x2-01A2 {
+  .mod-h {
+    color: #222222;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v2.png");
+    background-position: center 4px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg08_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg09_v2.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg10_v2.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    background-image: url("img/mod-h_5/bg06_v2.png");
+    background-position: left 7px;
+  }
+}
+@mixin deco-style-mod-h_5_x2-01A3 {
+  .mod-h {
+    color: #010911;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v3.png");
+    background-position: center 4px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg08_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg09_v3.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg10_v3.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    background-image: url("img/mod-h_5/bg06_v3.png");
+    background-position: left 7px;
+  }
+}
+@mixin deco-style-mod-h_5_x2-01B1 {
+  .mod-h {
+    color: #5a6e55;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x2-01B2 {
+  .mod-h {
+    color: #371008;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v2.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v2.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x2-01B3 {
+  .mod-h {
+    color: #6d5b04;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v3.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v3.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x2-01C1 {
+  .mod-h {
+    color: #3c3c3c;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x2-01C2 {
+  .mod-h {
+    color: #375068;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v2.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v2.png");
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5_x2-01C3 {
+  .mod-h {
+    color: #4b4b4b;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v3.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v3.png");
+    background-position: left top;
+  }
+}
+
+//------------------------
+// mod-h_5_hyo
+//------------------------
+@mixin mod-h_5_hyo {
+  //なし
+}
+
+//mod-h_5_hyoの表下用記述
+@mixin mod-h_5_hyo_bottom {
+  margin-top: 10px; //align対応のためシュートハンド不使用
+}
+
+@mixin deco-style-mod-h_5_hyo-01A1 {
+  .mod-h {
+    color: #46140b;
+  }
+  .mod-icon_2 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg07_v.png");
+   background-position: center 4px;
+  }
+  .mod-icon_3 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg08_v.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg09_v.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg10_v.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 20px;
+    background-image: url("img/mod-h_5/bg06_v.png");
+    background-position: left 7px;
+  }
+}
+@mixin deco-style-mod-h_5_hyo-01A2 {
+  .mod-h {
+    color: #222222;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v2.png");
+    background-position: center 4px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg08_v2.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg09_v2.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg10_v2.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    background-image: url("img/mod-h_5/bg06_v2.png");
+    background-position: left 7px;
+  }
+}
+@mixin deco-style-mod-h_5_hyo-01A3 {
+  .mod-h {
+    color: #010911;
+  }
+  .mod-icon_2 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg07_v3.png");
+    background-position: center 4px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg08_v3.png");
+    background-position: center 1px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg09_v3.png");
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg10_v3.png");
+    background-position: center 4px;
+  }
+  .mod-icon_dental {
+    height: 19px;
+    background-image: url("img/mod-h_5/bg06_v3.png");
+    background-position: left 7px;
+  }
+}
+@mixin deco-style-mod-h_5_hyo-01B1 {
+  .mod-h {
+    color: #5a6e55;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v.png");
+    background-position: center 1px;
+  }
+}
+@mixin deco-style-mod-h_5_hyo-01B2 {
+  .mod-h {
+    color: #371008;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v2.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v2.png");
+    background-position: center 1px;
+  }
+}
+@mixin deco-style-mod-h_5_hyo-01B3 {
+  .mod-h {
+    color: #6d5b04;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg12_v3.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg13_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg14_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg15_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg11_v3.png");
+    background-position: center 1px;
+  }
+}
+@mixin deco-style-mod-h_5_hyo-01C1 {
+  .mod-h {
+    color: #3c3c3c;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v.png");
+    background-position: center 1px;
+  }
+}
+@mixin deco-style-mod-h_5_hyo-01C2 {
+  .mod-h {
+   color: #375068;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v2.png");
+    background-position: left 6px;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v2.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v2.png");
+    background-position: center 1px;
+  }
+}
+@mixin deco-style-mod-h_5_hyo-01C3 {
+  .mod-h {
+    color: #4b4b4b;
+  }
+  .mod-icon_2 {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg16_v3.png");
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg17_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_4 {
+    height: 16px;
+    background-image: url("img/mod-h_5/bg18_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_5 {
+    height: 17px;
+    background-image: url("img/mod-h_5/bg19_v3.png");
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    height: 21px;
+    background-image: url("img/mod-h_5/bg20_v3.png");
+    background-position: center 1px;
+  }
+}
+
+//------------------------
+// mod-h_5_list
+//------------------------
+@mixin mod-h_5_list {
+  //なし
+}
+
+//mod-h_5_listのリスト下用記述
+@mixin mod-h_5_list_bottom {
+  margin-top: 10px; //align対応のためシュートハンド不使用
+}
+//deco-styleは表・リスト・画像と同じ
+@mixin deco-style-mod-h_5_list-01A1 {
+  @include deco-style-mod-h_5_hyo-01A1;
+}
+@mixin deco-style-mod-h_5_list-01A2 {
+  @include deco-style-mod-h_5_hyo-01A2;
+}
+@mixin deco-style-mod-h_5_list-01A3 {
+  @include deco-style-mod-h_5_hyo-01A3;
+}
+@mixin deco-style-mod-h_5_list-01B1 {
+  @include deco-style-mod-h_5_hyo-01B1;
+}
+@mixin deco-style-mod-h_5_list-01B2 {
+  @include deco-style-mod-h_5_hyo-01B2;
+}
+@mixin deco-style-mod-h_5_list-01B3 {
+  @include deco-style-mod-h_5_hyo-01B3;
+}
+@mixin deco-style-mod-h_5_list-01C1 {
+  @include deco-style-mod-h_5_hyo-01C1;
+}
+@mixin deco-style-mod-h_5_list-01C2 {
+  @include deco-style-mod-h_5_hyo-01C2;
+}
+@mixin deco-style-mod-h_5_list-01C3 {
+  @include deco-style-mod-h_5_hyo-01C3;
+}
+
+//------------------------
+// mod-h_5_pic
+//------------------------
+@mixin mod-h_5_pic {
+  //なし
+}
+//mod-h_5_picの画像下用記述
+@mixin mod-h_5_pic_bottom {
+  margin-top: 10px; //align対応のためシュートハンド不使用
+}
+//deco-styleは表・リスト・画像と同じ
+@mixin deco-style-mod-h_5_pic-01A1 {
+  @include deco-style-mod-h_5_hyo-01A1;
+}
+@mixin deco-style-mod-h_5_pic-01A2 {
+  @include deco-style-mod-h_5_hyo-01A2;
+}
+@mixin deco-style-mod-h_5_pic-01A3 {
+  @include deco-style-mod-h_5_hyo-01A3;
+}
+@mixin deco-style-mod-h_5_pic-01B1 {
+  @include deco-style-mod-h_5_hyo-01B1;
+}
+@mixin deco-style-mod-h_5_pic-01B2 {
+  @include deco-style-mod-h_5_hyo-01B2;
+}
+@mixin deco-style-mod-h_5_pic-01B3 {
+  @include deco-style-mod-h_5_hyo-01B3;
+}
+@mixin deco-style-mod-h_5_pic-01C1 {
+  @include deco-style-mod-h_5_hyo-01C1;
+}
+@mixin deco-style-mod-h_5_pic-01C2 {
+  @include deco-style-mod-h_5_hyo-01C2;
+}
+@mixin deco-style-mod-h_5_pic-01C3 {
+  @include deco-style-mod-h_5_hyo-01C3;
 }

@@ -118,6 +118,9 @@
   }
   a {
     color: #335a93;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 @mixin deco-style01A2-mod-link {
@@ -126,6 +129,9 @@
   }
   a {
     color: #294470;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 @mixin deco-style01A3-mod-link {
@@ -134,19 +140,31 @@
   }
   a {
     color: #45320b;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 //aがdivの外についた時用
 @mixin deco-style01A1-mod-link-a {
   color: #335a93;
+  &:hover {
+    color: #f2d028;
+  }
 }
 //aがdivの外についた時用
 @mixin deco-style01A2-mod-link-a {
   color: #294470;
+  &:hover {
+    color: #f2d028;
+  }
 }
 //aがdivの外についた時用
 @mixin deco-style01A3-mod-link-a {
   color: #45320b;
+  &:hover {
+    color: #f2d028;
+  }
 }
 
 
@@ -157,6 +175,9 @@
   }
   a {
     color: #335a93;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 @mixin deco-style01A2-mod-link-back {
@@ -165,6 +186,9 @@
   }
   a {
     color: #294470;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 @mixin deco-style01A3-mod-link-back {
@@ -173,6 +197,9 @@
   }
   a {
     color: #45320b;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 
@@ -768,7 +795,7 @@
     min-width: 15px;
     min-height: 21px;
     max-width: 100%;
-    background-position: left 4px;
+    background-position: left 3px;
     background-repeat: no-repeat;
     font-size: $sideFontSizeM;
     line-height: 1.4;
@@ -806,6 +833,9 @@
   }
   a {
     color: #335a93;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 @mixin deco-style01A2-mod-link-side {
@@ -814,6 +844,9 @@
   }
   a {
     color: #294470;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 @mixin deco-style01A3-mod-link-side {
@@ -822,6 +855,9 @@
   }
   a {
     color: #45320b;
+    &:hover {
+      color: #f2d028;
+    }
   }
 }
 
