@@ -10051,12 +10051,11 @@
   background-repeat: no-repeat;
   background-potision: left top;
   .mod-h {
-    @include text-shadow(1px 1px 2px #222222);
     margin: 0 0 0 0;//最終的にcommonの記述が消されるのであれば必要　デフォルトの削除
-    font-weight: bold;
-    font-size: $sideFontSizeL + 2;
+    font-weight: normal;
+    font-size: $sideFontSizeL - 1;
     line-height: 1.6;
-    text-aline: left;
+    text-align: left;
   }
 }
 

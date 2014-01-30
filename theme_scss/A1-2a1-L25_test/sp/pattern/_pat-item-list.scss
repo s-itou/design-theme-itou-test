@@ -19,6 +19,55 @@
 //　　・以下の定義が、上位のモジュールから呼び出される
 // ----------------------------------
 
+// サークルリスト（デフォルト）
+@mixin pat-item-list-maru-default-1 {
+  @include common-style-pat-item-list-maru;
+  @include module-style-pat-item-list-maru-default;
+  @include deco-style-pat-item-list-maru-default-1;
+}
+@mixin pat-item-list-maru-default-2 {
+  @include common-style-pat-item-list-maru;
+  @include module-style-pat-item-list-maru-default;
+  @include deco-style-pat-item-list-maru-default-2;
+}
+@mixin pat-item-list-maru-default-3 {
+  @include common-style-pat-item-list-maru;
+  @include module-style-pat-item-list-maru-default;
+  @include deco-style-pat-item-list-maru-default-3;
+}
+@mixin pat-item-list-maru-default-4 {
+  @include common-style-pat-item-list-maru;
+  @include module-style-pat-item-list-maru-default;
+  @include deco-style-pat-item-list-maru-default-3;
+}
+@mixin pat-item-list-maru-default-5 {
+  @include common-style-pat-item-list-maru;
+  @include module-style-pat-item-list-maru-default;
+  @include deco-style-pat-item-list-maru-default-3;
+}
+@mixin pat-item-list-maru-default-6 {
+  @include common-style-pat-item-list-maru;
+  @include module-style-pat-item-list-maru-default;
+  @include deco-style-pat-item-list-maru-default-3;
+}
+
+// チェックリスト（デフォルト）
+@mixin pat-item-list-check-default-1 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-default;
+  @include deco-style-pat-item-list-check-default-1;
+}
+@mixin pat-item-list-check-default-2 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-default;
+  @include deco-style-pat-item-list-check-default-2;
+}
+@mixin pat-item-list-check-default-3 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-default;
+  @include deco-style-pat-item-list-check-default-3;
+}
+
 // チェックリスト
 @mixin pat-item-list-check-1 {
   @include common-style-pat-item-list-check;
@@ -35,6 +84,7 @@
   @include module-style-pat-item-list-check-1;
   @include deco-style-pat-item-list-check-3;
 }
+
 // チェックリスト（下線画像あり）
 @mixin pat-item-list-check-4 {
   @include common-style-pat-item-list-check;
@@ -51,6 +101,7 @@
   @include module-style-pat-item-list-check-2;
   @include deco-style-pat-item-list-check-6;
 }
+
 // チェックリスト（下破線あり）
 @mixin pat-item-list-check-7 {
   @include common-style-pat-item-list-check;
@@ -69,7 +120,6 @@
 }
 
 
-
 // 番号リスト
 @mixin pat-item-list-number-1 {
   @include common-style-pat-item-list-number;
@@ -86,6 +136,7 @@
   @include module-style-pat-item-list-number-1;
   @include deco-style-pat-item-list-number-3;
 }
+
 // 番号リスト（枠あり）
 @mixin pat-item-list-number-4 {
   @include common-style-pat-item-list-number;

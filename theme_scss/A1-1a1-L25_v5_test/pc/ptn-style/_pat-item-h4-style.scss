@@ -398,6 +398,25 @@
     font-weight: bold;
   }
 }
+@mixin deco-style-pat-item-h4-shimple-16 {
+  .mod-h_4-inner {
+    text-align: left;
+    > p {
+      // color: #333333;補足ありの見出しは現時点で不使用
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #61c4d0;
+    background-image: none;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+
+
 // -------------------------------------
 // pat-item-h4-gurade の装飾スタイル
 // -------------------------------------
@@ -865,6 +884,396 @@
     }
   }
 }
+
+
+
+
+@mixin module-style-pat-item-h4-design-sayu-iamge {
+
+}
+
+
+
+@mixin deco-style-pat-item-h4-design-1 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;// module // 01C1系で修正
+    padding: 0px;// module // 01A1系で修正
+    // background-color: #5596f6;//deco //削除
+    // position: relative; // deco
+    // min-height: 43px;// module //deco //287対応 //01C1系削除
+    width: 640px; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し //01A1系
+    background-image: none;//deco// commmon打ち消し
+    // background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    border: 2px solid #2e7fed;// deco 01A1系
+    .mod-h {
+      background-color: #2e7fed;// deco 01A1系記述追加
+      border-top: 1px solid #cfdff5;// deco 01A1系
+      border-right: 3px solid #cfdff5;// deco 01A1系
+      border-bottom: 1px solid #cfdff5;// deco 01A1系
+      border-left: 3px solid #cfdff5;// deco 01A1系
+      @include border-radius(3px);// deco 01A1系
+      font-size: $fontSizeL + 10;//module or deco //size変更
+      line-height: 1.2;//module  or deco//1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 7px 10px 5px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco or module
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-2 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//deco or module //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;// module // 01C1系で修正
+    padding: 0px;// module // 01A1系で修正
+    // background-color: #5596f6;//deco //削除
+    // position: relative; // deco
+    // min-height: 43px;// module //deco //287対応 //01C1系削除
+    width: 640px; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し //01A1系
+    background-image: none;//deco// commmon打ち消し
+    // background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    border: 2px solid #67ced9;// deco 01A1系
+    .mod-h {
+      background-color: #67ced9;// deco 01A1系記述追加
+      border-top: 1px solid #cef1f5;// deco 01A1系
+      border-right: 3px solid #cef1f5;// deco 01A1系
+      border-bottom: 1px solid #cef1f5;// deco 01A1系
+      border-left: 3px solid #cef1f5;// deco 01A1系
+      @include border-radius(3px);// deco 01A1系
+      font-size: $fontSizeL + 10;//module or deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 7px 10px 5px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-3 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;// module // 01C1系で修正
+    padding: 0px;// module // 01A1系で修正
+    // background-color: #5596f6;//deco //削除
+    // position: relative; // deco
+    // min-height: 43px;// module //deco //287対応 //01C1系削除
+    width: 640px; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し //01A1系
+    background-image: none;//deco// commmon打ち消し
+    // background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    border: 2px solid #f27f1b;// deco 01A1系
+    .mod-h {
+      background-color: #f27f1b;// deco 01A1系記述追加
+      border-top: 1px solid #f5e0ce;// deco 01A1系
+      border-right: 3px solid #f5e0ce;// deco 01A1系
+      border-bottom: 1px solid #f5e0ce;// deco 01A1系
+      border-left: 3px solid #f5e0ce;// deco 01A1系
+      @include border-radius(3px);// deco 01A1系
+      font-size: $fontSizeL + 10;//deco or module //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 7px 10px 5px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-4 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0 4px;// module
+    padding: 5px 0 2px;// module
+    border: 1px solid #2e4a72;//deco
+    background-color: #2e4a72;//deco
+    position: relative; // deco
+    min-height: 43px;// module //deco //287対応
+    width: 640px; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: none;//deco// commmon打ち消し
+    &:before {
+      content: url(img/mod-h_4/_35/bg_b.png);//deco//path変更
+      left: 0;// deco
+      position: absolute; //deco
+      top: 50%; //deco
+      margin-top: -13px; //deco
+    }
+    &:after {
+      content: url(img/mod-h_4/_35/bg02_b.png);//deco//path変更
+      right: 0; //deco
+      position: absolute;//deco
+      top: 50%;// deco
+      margin-top: -13px;//deco
+    }
+    .mod-h {
+      font-size: $fontSizeL + 10;//module or deco//size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 0 34px;//deco
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-5 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0 4px;// module
+    padding: 5px 0 2px;// module
+    border: 1px solid #c7e9ee;//deco
+    background-color: #418189;//deco
+    position: relative; // deco
+    min-height: 43px;// module //deco //287対応
+    width: 640px; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: none;//deco// commmon打ち消し
+    &:before {
+      content: url(img/mod-h_4/_35/bg_b_2.png);//deco//path変更
+      left: 0;// deco
+      position: absolute; //deco
+      top: 50%; //deco
+      margin-top: -13px; //deco
+    }
+    &:after {
+      content: url(img/mod-h_4/_35/bg02_b_2.png);//deco//path変更
+      right: 0; //deco
+      position: absolute;//deco
+      top: 50%;// deco
+      margin-top: -13px;//deco
+    }
+    .mod-h {
+      font-size: $fontSizeL + 10;//module or deco //size変更
+      line-height: 1.2;//module or deco//1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 0 34px;//deco
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-6 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//module deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0 4px;// module
+    padding: 5px 0 2px;// module
+    border: 1px solid #fde082;//deco
+    background-color: #fcf1c2;//deco
+    position: relative; // deco
+    min-height: 43px;// module //deco //287対応
+    width: 640px; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: none;//deco// commmon打ち消し
+    &:before {
+      content: url(img/mod-h_4/_35/bg_b_3.png);//deco//path変更
+      left: 0;// deco
+      position: absolute; //deco
+      top: 50%; //deco
+      margin-top: -13px; //deco
+    }
+    &:after {
+      content: url(img/mod-h_4/_35/bg02_b_3.png);//deco//path変更
+      right: 0; //deco
+      position: absolute;//deco
+      top: 50%;// deco
+      margin-top: -13px;//deco
+    }
+    .mod-h {
+      font-size: $fontSizeL + 10;//module or deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 0 34px;//deco
+      color: #443308;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-7 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;// module // 01C1系で修正
+    padding: 5px;// module // 01C1系で修正
+    // background-color: #5596f6;//deco //削除
+    // position: relative; // deco
+    // min-height: 43px;// module //deco //287対応
+    width: 640px; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: url(img/mod-h_4/_35/bg_c.png);//deco// commmon打ち消し
+    background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    .mod-h {
+      background-color: #5596f6;// deco 01C1系記述追加
+      font-size: $fontSizeL + 10;//module or  deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 10px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-8 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;// module // 01C1系で修正
+    padding: 5px;// module // 01C1系で修正
+    // background-color: #5596f6;//deco //削除
+    // position: relative; // deco
+    // min-height: 43px;// module //deco //287対応
+    width: 640px; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: url(img/mod-h_4/_35/bg_c_2.png);//deco// commmon打ち消し
+    background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    .mod-h {
+      background-color: #fcf4c6;// deco 01C1系記述追加
+      font-size: $fontSizeL + 10;//module or deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 10px;//deco // 01C1系で修正
+      color: #42330a;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-9 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    padding: 5px 0;// module
+    > p {
+      font-size: $fontSizeM + 1;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner3 {
+    margin: 0;// module // 01C1系で修正
+    padding: 5px;// module // 01C1系で修正
+    // background-color: #5596f6;//deco //削除
+    // position: relative; // deco
+    // min-height: 43px;// module //deco //287対応 //01C1系削除
+    width: 640px; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: url(img/mod-h_4/_35/bg_c_3.png);//deco// commmon打ち消し
+    background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    .mod-h {
+      background-color: #f27f1b;// deco 01C1系記述追加
+      font-size: $fontSizeL + 10;//module or deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 10px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 5px 0 0 0;//deco
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 

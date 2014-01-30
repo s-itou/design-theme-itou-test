@@ -63,6 +63,7 @@
       display: table-cell;
       position: relative;
       > .mod-2col-inner-2, > .mod-2col-inner2-2 {
+        margin: 0 !important; //item打ち消し+decoにかくと階層構造の点数が足りないため
         > .mod-2col-inner-3, > .mod-2col-inner2-3 {
           > .mod-box_ver2 {
             margin: 0;
@@ -462,6 +463,7 @@
     }
   }
   .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
     .mod-bnr-inner {
       padding: 5px 5px 3px 25px;
       background-position: 8px 8px;
@@ -496,6 +498,7 @@
     }
   }
   .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
     .mod-bnr-inner {
       padding: 5px 5px 3px 25px;
       background-position: 8px 8px;
@@ -581,6 +584,7 @@
     }
   }
   .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
     .mod-bnr-inner {
       padding: 5px 5px 3px 25px;
       background-position: 8px 5px;
@@ -625,6 +629,7 @@
     }
   }
   .mod-bnr_ver2 {
+    width: auto; //pat-itemのwidth270pxを打ち消し
     .mod-bnr-inner {
       padding: 5px 5px 3px 25px;
       background-position: 8px 5px;
@@ -775,13 +780,15 @@
 @mixin module-style-mod-set-design4-2 {
   .mod-box_ver2 {
     margin: 14px 0 0;
+    .ex-first-child {
+      margin-top: 0 !important; //これだけ枠デザインのため
+    }
   }
   .mod-rte_ver2 {
     border-top: 1px dashed #9c9c9c;
     padding: 15px 0 0;
     &.ex-first-child {
-      margin-top: 0;
-      padding: 15px 0 15px;
+      padding: 0 0 15px 0;
       border-top: none;
       border-bottom: 1px dashed #9c9c9c;
     }

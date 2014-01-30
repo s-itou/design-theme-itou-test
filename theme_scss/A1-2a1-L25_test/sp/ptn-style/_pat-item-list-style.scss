@@ -7,6 +7,102 @@
 // --------------------------------------------------------------------------
 
 // -------------------------------------
+// pat-item-list-maru の共通スタイル
+// -------------------------------------
+
+// サークルリスト
+@mixin common-style-pat-item-list-maru {
+  ul {
+    margin: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-list-maru の共通デザイン
+// -------------------------------------
+
+// サークルリスト（デフォルト）
+@mixin module-style-pat-item-list-maru-default {
+  ul {
+    padding: 0;
+    li {
+      margin: 2px 0 0 20px;
+      padding: 0 0 0 15px;
+      border-bottom: none;
+      background-position: left 8px;
+      background-repeat: no-repeat;
+      @include common-set-font($fontSizeM);
+    }
+  }
+}
+
+
+// -------------------------------------
+// pat-item-list-maru の装飾スタイル
+// -------------------------------------
+
+// サークルリスト（デフォルト）
+@mixin deco-style-pat-item-list-maru-default-1 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-maru-default-2 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg_2.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-maru-default-3 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg_3.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-maru-default-3 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg_4.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-maru-default-3 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg_5.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-maru-default-3 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg_6.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+
+
+// -------------------------------------
 // pat-item-list-check の共通スタイル
 // -------------------------------------
 
@@ -29,6 +125,20 @@
 //  pat-item-list-check の共通デザイン
 // -------------------------------------
 
+// チェックリスト（デフォルト）
+@mixin module-style-pat-item-list-check-default {
+  ul {
+    padding: 0;
+    li {
+      margin: 2px 0 0 5px;
+      padding: 0 0 0 18px;
+      border-bottom: none;
+      background-position: left 2px;
+      background-repeat: no-repeat;
+      @include common-set-font($fontSizeM);
+    }
+  }
+}
 // チェックリスト
 @mixin module-style-pat-item-list-check-1 {
   ul {
@@ -71,6 +181,34 @@
 // pat-item-list-check の装飾スタイル
 // -------------------------------------
 
+// チェックリスト（デフォルト）
+@mixin deco-style-pat-item-list-check-default-1 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-check/bg.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-default-2 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-check/bg_2.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+@mixin deco-style-pat-item-list-check-default-3 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-check/bg_3.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
 // チェックリスト
 @mixin deco-style-pat-item-list-check-1 {
   ul {

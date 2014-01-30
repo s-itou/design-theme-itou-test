@@ -25,6 +25,9 @@
 @mixin module-style-mod-text-pic {  //旧方式のコピーのため要改修
   text-align: center;
 }
+@mixin module-style-mod-text-footer {
+  margin-top: 0 !important;
+}
 @mixin module-style-mod-text-title-footer {
   margin-top: 5px !important;
 }
@@ -92,3 +95,89 @@
 @mixin deco-style01C3-mod-text-header {
   color: #333333;
 }
+
+
+//##################################################
+//  mod-text-kyocho-side
+//##################################################
+//////////////////////////////////////////////////
+//  common-style
+@mixin common-style-mod-text-kyocho-side {}
+
+//////////////////////////////////////////////////
+//  module-style
+@mixin module-style-mod-text-kyocho-side {
+  margin-top: 10px !important;
+  font-size: $sideFontSizeL - 1;
+  font-weight: bold;
+  h1 span {
+    font-size:20px !important;
+  }
+  h2 span {
+    font-size:20px !important;
+  }
+  h3 span {
+    font-size:18px !important;
+  }
+  h4 span {
+    font-size:16px !important;
+  }
+  h5 span {
+    font-size:16px !important;
+  }
+  p span {
+    font-size:14px !important;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-style
+@mixin deco-style01A1-mod-text-kyocho-side {
+  color: #010911;
+}
+@mixin deco-style01A2-mod-text-kyocho-side {
+  color: #46140b;
+}
+
+
+//##################################################
+//  mod-text-side
+//##################################################
+//////////////////////////////////////////////////
+//  common-style
+@mixin common-style-mod-text-side {
+  font-size: $fontSizeS + 1;
+  margin-top: 10px !important;
+  a {
+    text-decoration: none;
+  }
+  h1 span {
+    font-size:20px !important;
+  }
+  h2 span {
+    font-size:20px !important;
+  }
+  h3 span {
+    font-size:18px !important;
+  }
+  h4 span {
+    font-size:16px !important;
+  }
+  h5 span {
+    font-size:16px !important;
+  }
+  p span {
+    font-size:14px !important;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+//////////////////////////////////////////////////
+//  module-style
+@mixin module-style-mod-text-side {}
+

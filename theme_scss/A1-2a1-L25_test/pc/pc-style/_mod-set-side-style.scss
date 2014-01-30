@@ -64,3 +64,42 @@
 %common-style-mod-set-navi-side {
 }
 
+// -----------------------------------
+// part-side-048 サイドボックス　リンク
+// -----------------------------------
+@mixin common-style-mod-set-link-step-side {
+  .mod-set-step {
+    > .ex-first-child {
+      .mod-link-side {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@mixin deco-style-mod-set-link-step-side-1 {
+  .mod-set-step .mod-link-side {
+    p {
+      background-image: url("img/_mod/set_side/bg.png");
+      background-position: left 3px;
+    }
+  }
+}
+
+@mixin deco-style-mod-set-link-step-side-2 {
+  .mod-set-step .mod-link-side {
+    p {
+      background-image: url("img/_mod/set_side/bg_2.png");
+      background-position: left 3px;
+    }
+  }
+}
+
+@mixin deco-style-mod-set-link-step-side-3 {
+  .mod-set-step .mod-link-side {
+    p {
+      background-image: url("img/_mod/set_side/bg_3.png");
+      background-position: left 3px;
+    }
+  }
+}

@@ -4,6 +4,251 @@
 //
 // pat-item-midashi
 //
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+// mod-h_4 に直接指定することを前提としたデザイン
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-midashi-simple の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-midashi-simple {
+  margin: 0;
+  // padding: 6px 17px 4px; module-styleで定義
+  min-height: 50px;
+  .mod-h_4-inner2,
+  .mod-h_4-inner3,
+  .mod-h_4-inner4 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// -------------------------------------
+//  pat-item-midashi-simple の共通デザイン
+// -------------------------------------
+
+// シンプル背景タイトル（左寄）
+@mixin module-style-pat-item-midashi-simple-1 {
+  padding: 6px 17px 4px;
+  .mod-h_4-inner2,
+  .mod-h_4-inner3,
+  .mod-h_4-inner4 {
+    background-color: transparent;
+    background-image: none;
+  }
+  p {
+    @include common-set-font($fontSizeS);
+  }
+  .mod-h {
+    @include common-set-font($fontSizeL + 2,bold);
+  }
+  .mod-h_4-inner3.ex-first-child {
+    .mod-h {
+      font-size: $fontSizeL + 4;
+    }
+  }
+}
+// シンプル背景タイトル（中央）
+@mixin module-style-pat-item-midashi-simple-2 {
+  padding: 6px 17px 4px;
+  .mod-h_4-inner2,
+  .mod-h_4-inner3,
+  .mod-h_4-inner4 {
+    background-color: transparent;
+    background-image: none;
+  }
+  p {
+    @include common-set-font($fontSizeS,normal,center);
+  }
+  .mod-h {
+    @include common-set-font($fontSizeL + 2,bold,center);
+  }
+  .mod-h_4-inner3.ex-first-child {
+    .mod-h {
+      font-size: $fontSizeL + 4;
+    }
+  }
+}
+// シンプル背景グラデーションタイトル（左寄）
+@mixin module-style-pat-item-midashi-simple-3 {
+  background-repeat: repeat-x;
+  padding: 6px 17px 4px;
+  .mod-h_4-inner2,
+  .mod-h_4-inner3,
+  .mod-h_4-inner4 {
+    background-color: transparent;
+    background-image: none;
+  }
+  p {
+    @include common-set-font($fontSizeS);
+  }
+  .mod-h {
+    @include common-set-font($fontSizeL + 2,bold);
+  }
+  .mod-h_4-inner3.ex-first-child {
+    .mod-h {
+      font-size: $fontSizeL + 4;
+    }
+  }
+}
+
+// ボーダータイトル
+@mixin module-style-pat-item-midashi-simple-border {
+  padding: 6px 0 4px;
+  .mod-h_4-inner2,
+  .mod-h_4-inner3,
+  .mod-h_4-inner4 {
+    background-color: transparent;
+    background-image: none;
+  }
+  p {
+    @include common-set-font($fontSizeS);
+  }
+  .mod-h {
+    padding: 0;
+    @include common-set-font($fontSizeL + 2,bold);
+  }
+  .mod-h_4-inner3.ex-first-child {
+    .mod-h {
+      font-size: $fontSizeL + 4;
+    }
+  }
+}
+
+// -------------------------------------
+// pat-item-midashi-simple の装飾スタイル
+// -------------------------------------
+
+// シンプル背景タイトル（左寄）
+@mixin deco-style-module-style-pat-item-midashi-simple-none-bgc-blue {
+  background-color: #ccd4dd;
+  p {
+    @include common-set-link(#0f375f);
+    color: #0f375f;
+  }
+  .mod-h {
+    @include common-set-link(#0f375f);
+    color: #0f375f;
+  }
+}
+@mixin deco-style-module-style-pat-item-midashi-simple-none-bgc-blue-2 {
+  background-color: #274c7e;
+  p {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+  .mod-h {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+}
+@mixin deco-style-module-style-pat-item-midashi-simple-none-bgc-pink {
+  background-color: #ff9089;
+  p {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+  .mod-h {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+}
+// シンプル背景タイトル（中央）
+@mixin deco-style-module-style-pat-item-midashi-simple-none-bgc-red {
+  background-color: #450e07;
+  p {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+  .mod-h {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+}
+@mixin deco-style-module-style-pat-item-midashi-simple-none-bgc-blue-3 {
+  background-color: #5d758c;
+  p {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+  .mod-h {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+}
+@mixin deco-style-module-style-pat-item-midashi-simple-none-bgc-yellow {
+  background-color: #e7dfb6;
+  p {
+    @include common-set-link(#5f140a);
+    color: #5f140a;
+  }
+  .mod-h {
+    @include common-set-link(#5f140a);
+    color: #5f140a;
+  }
+}
+
+// シンプル背景グラデーション
+@mixin deco-style-module-style-pat-item-midashi-simple-none-grade-blue {
+  background-image: url(img/_pat-item/midashi-grade/bg.png);
+  background-color: #27364c;
+  p {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+  .mod-h {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+}
+@mixin deco-style-module-style-pat-item-midashi-simple-none-grade-red {
+  background-image: url(img/_pat-item/midashi-grade/bg_2.png);
+  background-color: #672016;
+  p {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+  .mod-h {
+    @include common-set-link(#ffffff);
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-midashi-simple-border-red {
+  border-top: 2px solid #962010 ;
+  border-bottom: 2px solid #962010;
+  background-image: none;
+  p {
+    @include common-set-link(#962010);
+    color: #962010;
+  }
+  .mod-h {
+    @include common-set-link(#962010);
+    color: #962010;
+  }
+}
+@mixin deco-style-pat-item-midashi-simple-border-orange {
+  border-top: 2px solid #e66d24 ;
+  border-bottom: 2px solid #e66d24;
+  background-image: none;
+  p {
+    @include common-set-link(#e66d24);
+    color: #e66d24;
+  }
+  .mod-h {
+    @include common-set-link(#e66d24);
+    color: #e66d24;
+  }
+}
+
+
+// --------------------------------------------------------------------------
+//
+// pat-item-midashi
+//
 //   ・〜in2 + mod-h_4の組み合わせ使用していることが前提のデザイン
 //
 // --------------------------------------------------------------------------
@@ -433,30 +678,4 @@
     }
   }
 }
-@mixin deco-style-pat-item-midashi-border-66 {
-  border: 1px solid #c5dcff;
-  > div {
-    border: 1px solid #9ac2f3;
-    background-color: #6e98d8;
-    background-image: url("img/mod-h_4/_32/bg_a.png");
-  }
-}
-@mixin deco-style-pat-item-midashi-border-7 {
-  border: 1px solid #c2eae8;
-  > div {
-    border: 1px solid #94d8dd;
-    background-color: #10808c;
-    background-image: url("img/mod-h_4/_32/bg_a_2.png");
-  }
-}
-@mixin deco-style-pat-item-midashi-border-8 {
-  border: 1px solid #ffe5b9;
-  > div {
-    border: 1px solid #ffd098;
-    background-color: #f28220;
-    background-image: url("img/mod-h_4/_32/bg_a_3.png");
-  }
-}
-
-
 

@@ -12,5 +12,110 @@
 //  module-style
 @mixin module-style-mod-tel-ii-footer { };
 
-//////////////////////////////
+//////////////////////////N////
 //  deco-style
+
+//##################################################
+//  mod-tel-g-side
+//##################################################
+/////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-tel-side {}
+
+//////////////////////////////
+//  module-style
+@mixin module-style-mod-tel-g-side {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 10px auto 0;
+  text-align:center;
+  position: relative;
+  height: 60px;
+  padding: 2px 5px 8px;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 15px;
+    margin-top: 3px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+
+//##################################################
+//  mod-tel-ig-side
+//##################################################
+//////////////////////////////
+//  module-style
+@mixin module-style-mod-tel-ig-side {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align:center;
+  position: relative;
+  padding: 2px 5px 8px 35px;
+  height: 60px;
+  .mod-tel-inner {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 4px 0 0 0;
+  }
+  > p:first-child.mod-tel-inner2 {
+    position: relative;
+    top: 10px;
+    margin-top: 3px;
+  }
+  > p[data-cms-switchable="false"] + p {
+    position: relative;
+    top: 15px;
+  }
+  .mod-tel-inner2 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-tel-ig-side {
+  @include tel-button("mod-tel/spbg.png", 10px, 15px);
+  background-size: 31px 32px, 100%;
+}
+@mixin deco-style01A2-mod-tel-ig-side {
+  @include tel-button("mod-tel/spbg_2.png", 10px, 15px);
+  background-size: 31px 32px, 100%;
+}
+@mixin deco-style01A3-mod-tel-ig-side {
+  @include tel-button("mod-tel/spbg_3.png", 10px, 15px);
+  background-size: 31px 32px, 100%;
+}

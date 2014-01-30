@@ -93,6 +93,11 @@
   @include module-style-pat-item-h4-shimple-2;
   @include deco-style-pat-item-h4-shimple-15;
 }
+@mixin pat-item-h4_16 {//part-main-286
+  @include common-style-pat-item-h4-2;
+  @include module-style-pat-item-h4-shimple-2;
+  @include deco-style-pat-item-h4-shimple-16;
+}
 
 
 // 背景グラデーション
@@ -264,7 +269,55 @@
   @include deco-style-pat-item-h4-icon-voice-9;
 }
 
+// 装飾見出しdesign
+@mixin pat-item-h4-design-1 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-design;
+  @include deco-style-pat-item-h4-design-1;
+}
+@mixin pat-item-h4-design-2 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-design;
+  @include deco-style-pat-item-h4-design-2;
+}
+@mixin pat-item-h4-design-3 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-design;
+  @include deco-style-pat-item-h4-design-3;
+}
+@mixin pat-item-h4-design-4 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-design;
+  @include deco-style-pat-item-h4-design-4;
+}
+@mixin pat-item-h4-design-5 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-design;
+  @include deco-style-pat-item-h4-design-5;
+}
+@mixin pat-item-h4-design-6 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-design;
+  @include deco-style-pat-item-h4-design-6;
+}
+@mixin pat-item-h4-design-7 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-design;
+  @include deco-style-pat-item-h4-design-7;
+}
+@mixin pat-item-h4-design-8 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-design;
+  @include deco-style-pat-item-h4-design-8;
+}
+@mixin pat-item-h4-design-9 {
+  @include common-style-pat-item-h4;
+  // @include module-style-pat-item-h4-icon;
+  @include deco-style-pat-item-h4-design-9;
+}
 
+
+//------------------------------------------------
 
 // pat-item-h4-simple (補足なし)　の共通スタイル
 @mixin pat-item-h4-simple-border-1 {

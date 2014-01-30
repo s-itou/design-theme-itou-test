@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "dependency/common-variable";
+// @import dependency/common-variable {}
 
 // --------------------------------------------
 // テーマ２　A1-2a1-L25
@@ -1299,6 +1299,16 @@
   }
 }
 
+@mixin deco-style01A1-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #335174;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
 @mixin deco-style01A2-mod-bnr-sitename-3 {
   border: 1px solid #5e160c;
   .mod-bnr-inner {
@@ -1309,10 +1319,30 @@
   }
 }
 
+@mixin deco-style01A2-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #5e160c;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
 @mixin deco-style01A3-mod-bnr-sitename-3 {
   border: 1px solid #373737;
   .mod-bnr-inner {
     border: 1px solid white;
+    background-color: #373737;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
     background-color: #373737;
     background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
     color: white;
@@ -1336,6 +1366,16 @@
     background-color: #666666;
     background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
     color: white;
+  }
+}
+
+@mixin deco-style01B2-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #f2d028;
+    background-image: url("img/mod-sitename/bg_bnr_arr_24.png");
+    color: #162332;
   }
 }
 

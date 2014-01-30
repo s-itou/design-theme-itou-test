@@ -3,34 +3,32 @@
 @import "../pattern/pat-item-bnr";
 
 .mod-bnr_ver2 {
-  @include common-style-mod-bnr;
-  @include module-style-mod-bnr;
   .ex-style_01A1 & {
-    @include pat-item-bnr-grade-13;
+    @include pat-item-bnr-b1;
   }
   .ex-style_01A2 & {
-    @include pat-item-bnr-grade-14;
+    @include pat-item-bnr-b2;
   }
   .ex-style_01A3 & {
-    @include pat-item-bnr-grade-15;
+    @include pat-item-bnr-b3;
   }
   .ex-style_01B1 & {
-    @include pat-item-bnr-grade-16;
+    @include pat-item-bnr-c1;
   }
   .ex-style_01B2 & {
-    @include pat-item-bnr-grade-17;
+    @include pat-item-bnr-c2;
   }
   .ex-style_01B3 & {
-    @include pat-item-bnr-grade-18;
+    @include pat-item-bnr-c3;
   }
   .ex-style_01C1 & {
-    @include pat-item-bnr-mesh-7;
+    @include pat-item-bnr-d1;
   }
   .ex-style_01C2 & {
-    @include pat-item-bnr-mesh-8;
+    @include pat-item-bnr-d2;
   }
   .ex-style_01C3 & {
-    @include pat-item-bnr-mesh-9;
+    @include pat-item-bnr-d3;
   }
 }
 

@@ -34,30 +34,38 @@
     vertical-align: middle;
   }
   .mod-title-inner3 {
-    font-size: $fontSizeS + 1;
+    &, span {
+      font-size: $fontSizeS !important;
+    }
   }
   .mod-title-inner4 {
     font-weight: bold;
-    font-size: $fontSizeL + 7;
+    font-size: $fontSizeL + 2 !important;
     line-height: 1.0;
     a {
       &:hover {
         text-decoration: none;
       }
     }
+    span {
+      font-size: $fontSizeL + 2 !important;
+    }
   }
   .mod-title-inner5 {
     margin-top: 5px;
-    font-size: $fontSizeS + 1;
+    font-size: $fontSizeS !important;
+    span {
+      font-size: $fontSizeS !important;
+    }
   }
   p:first-child.mod-title-inner4 {
     margin: 0;
-    font-size: $fontSizeL + 10;
+    font-size: $fontSizeL + 2 !important;
     line-height: 1.5;
   }
   .mod-title-inner3[data-cms-switchable="false"] + .mod-title-inner4 {
     margin: 0;
-    font-size: $fontSizeL + 10;
+    font-size: $fontSizeL + 2 !important;
     line-height: 1.5;
   }
 }

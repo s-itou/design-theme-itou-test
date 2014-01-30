@@ -320,6 +320,8 @@
   @include module-style-pat-item-waku-kadomaru-simple;
   @include deco-style-pat-item-waku-kadomaru-simple-blue;
 }
+
+//2px+1pxボーダー
 @mixin pat-item-waku-kadomaru-simple-1 {
   @include common-style-pat-item-waku-kadomaru;
   @include module-style-pat-item-waku-kadomaru-simple-3;
@@ -334,6 +336,38 @@
   @include common-style-pat-item-waku-kadomaru;
   @include module-style-pat-item-waku-kadomaru-simple-3;
   @include deco-style-pat-item-waku-kadomaru-simple-3;
+}
+
+//以下、.mod-set-news-bunsyo使用中（theme2での使用確定）
+@mixin pat-item-waku-kadomaru-simple-black {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-black;
+}
+@mixin pat-item-waku-kadomaru-simple-blue-4 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-blue-4;
+}
+@mixin pat-item-waku-kadomaru-simple-red {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-red;
+}
+@mixin pat-item-waku-kadomaru-simple-black-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-black;
+}
+@mixin pat-item-waku-kadomaru-simple-blue-5 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-blue-4;
+}
+@mixin pat-item-waku-kadomaru-simple-red-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-red-2;
 }
 
 // 角丸背景色あり
@@ -465,6 +499,23 @@
   @include common-style-pat-item-waku-kadomaru;
   @include module-style-pat-item-waku-kadomaru-grade;
   @include deco-style-pat-item-waku-kadomaru-simple-pink-grade;
+}
+
+//角丸マス目模様
+@mixin pat-item-waku-kadomaru-mesh-1 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-mesh;
+  @include deco-style-pat-item-waku-kadomaru-mesh-1;
+}
+@mixin pat-item-waku-kadomaru-mesh-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-mesh;
+  @include deco-style-pat-item-waku-kadomaru-mesh-2;
+}
+@mixin pat-item-waku-kadomaru-mesh-3 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-mesh;
+  @include deco-style-pat-item-waku-kadomaru-mesh-3;
 }
 
 

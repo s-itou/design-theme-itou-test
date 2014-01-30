@@ -4,6 +4,7 @@
 @import "../../common/extend";
 @import "dependency/common-variable_2a3";
 @import "dependency/common";
+@import "dependency/required";
 
 @import "../../A1-2/A1-2a1-L25/sp/module/ex-align";
 @import "../../A1-2/A1-2a1-L25/sp/module/mod-body";
@@ -34,6 +35,7 @@
 
 //////////////////////////////////////////////////
 
+@import "pattern/pat-item-bnr";
 @import "pattern/pat-item-copy";
 @import "pattern/pat-item-list";
 @import "pattern/pat-item-midashi";
@@ -41,12 +43,19 @@
 @import "pattern/pat-item-tel";
 @import "pattern/pat-item-title";
 @import "pattern/pat-item-waku";
+@import "pattern/pat-item-h4";
 
 @import "module/mod-part";
 @import "module/mod-2column";
 @import "module/mod-bnr";
+@import "module/mod-box";
+@import "module/mod-cell";
+@import "module/mod-email";
+@import "module/mod-fax";
+@import "module/mod-ftel";
 @import "module/mod-h";
 @import "module/mod-h_4";
+@import "module/mod-html";
 @import "module/mod-image";
 @import "module/mod-joint";
 @import "module/mod-link";
@@ -56,6 +65,7 @@
 @import "module/mod-title";
 @import "module/mod-ul";
 @import "module/mod-nav";
+@import "module/mod-sitename";
 
 @import "module/mod-set-bnr";
 @import "module/mod-set-copy-list";
@@ -64,5 +74,6 @@
 @import "module/mod-set-footer";
 @import "module/mod-set-fukidashi";
 @import "module/mod-set-nagare";
+@import "module/mod-set-news";
 @import "module/mod-set-tokucho";
 @import "module/mod-set-navi-footer";

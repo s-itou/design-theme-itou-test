@@ -9,8 +9,11 @@
 //
 //    ・waku（通常デザイン）
 //    ・waku-kadomaru（角丸用のデザイン）
+//    ・waku-board（ボード用のデザイン）
 //    ・waku-fukidashi（吹き出し用のデザイン）
 //    ・waku-pic（特徴画像用のデザイン）
+//    ・waku-beta（背景色が濃いもの）
+//    ・waku-mesh（マス目のようなデザイン）
 //
 // --------------------------------------------------------------------------
 
@@ -21,6 +24,11 @@
 // -------------------------------------
 
 //枠なし
+@mixin pat-item-waku-none-bgc-white {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-simple-2;
+  @include deco-style-pat-item-waku-none-bgc-white;
+}
 @mixin pat-item-waku-kado-none-bgc-gray {
   @include common-style-pat-item-waku;
   @include module-style-pat-item-waku-simple-2;
@@ -70,10 +78,22 @@
   @include module-style-pat-item-waku-simple;
   @include deco-style-pat-item-waku-kado-simple-gray-bgc-3;
 }
-@mixin pat-item-waku-none-bgc-white {//※これのみ枠なし
+
+// 背景画像（ペン）
+@mixin pat-item-waku-kado-none-bgimg {
   @include common-style-pat-item-waku;
-  @include module-style-pat-item-waku-simple-2;
-  @include deco-style-pat-item-waku-none-bgc-white;
+  @include module-style-pat-item-waku-simple-bgimg;
+  @include deco-style-pat-item-waku-kado-none-bgimg;
+}
+@mixin pat-item-waku-kado-none-bgimg-2 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-simple-bgimg;
+  @include deco-style-pat-item-waku-kado-none-bgimg-2;
+}
+@mixin pat-item-waku-kado-none-bgimg-3 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-simple-bgimg;
+  @include deco-style-pat-item-waku-kado-none-bgimg-3;
 }
 
 // 上下画像
@@ -92,20 +112,21 @@
   @include module-style-pat-item-waku-image;
   @include deco-style-pat-item-waku-jouge-image-red-bgc;
 }
-@mixin pat-item-waku-board-blue {
+// 上画像
+@mixin pat-item-waku-jouge-image-brown-bgc {
   @include common-style-pat-item-waku;
-  @include module-style-pat-item-waku-image-2;
-  @include deco-style-pat-item-waku-board-blue;
+  @include module-style-pat-item-waku-image-3;
+  @include deco-style-pat-item-waku-jouge-image-brown-bgc;
 }
-@mixin pat-item-waku-board-blue-2 {
+@mixin pat-item-waku-jouge-image-blue-bgc {
   @include common-style-pat-item-waku;
-  @include module-style-pat-item-waku-image-2;
-  @include deco-style-pat-item-waku-board-blue-2;
+  @include module-style-pat-item-waku-image-3;
+  @include deco-style-pat-item-waku-jouge-image-blue-bgc;
 }
-@mixin pat-item-waku-board-red {
+@mixin pat-item-waku-jouge-image-brown-bgc-2 {
   @include common-style-pat-item-waku;
-  @include module-style-pat-item-waku-image-2;
-  @include deco-style-pat-item-waku-board-red;
+  @include module-style-pat-item-waku-image-3;
+  @include deco-style-pat-item-waku-jouge-image-brown-bgc-2;
 }
 
 // 背景繰り返し
@@ -142,9 +163,69 @@
   @include deco-style-pat-item-waku-kado-none-grade-pink;
 }
 
+// 角・上下画像・背景色が濃いもの
+@mixin pat-item-waku-kado-jouge-beta-1 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-beta;
+  @include deco-style-pat-item-waku-kado-jouge-beta-1;
+}
+@mixin pat-item-waku-kado-jouge-beta-2 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-beta;
+  @include deco-style-pat-item-waku-kado-jouge-beta-2;
+}
+@mixin pat-item-waku-kado-jouge-beta-3 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-beta;
+  @include deco-style-pat-item-waku-kado-jouge-beta-3;
+}
+// 模様違い
+@mixin pat-item-waku-kado-jouge-beta-4 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-beta;
+  @include deco-style-pat-item-waku-kado-jouge-beta-4;
+}
+@mixin pat-item-waku-kado-jouge-beta-5 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-beta;
+  @include deco-style-pat-item-waku-kado-jouge-beta-5;
+}
+@mixin pat-item-waku-kado-jouge-beta-6 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-beta;
+  @include deco-style-pat-item-waku-kado-jouge-beta-6;
+}
+
+// 角・上画像・マス目模様
+@mixin pat-item-waku-kado-ue-mesh-1 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-mesh;
+  @include deco-style-pat-item-waku-kado-ue-mesh-1;
+}
+@mixin pat-item-waku-kado-ue-mesh-2 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-mesh;
+  @include deco-style-pat-item-waku-kado-ue-mesh-2;
+}
+@mixin pat-item-waku-kado-ue-mesh-3 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-mesh;
+  @include deco-style-pat-item-waku-kado-ue-mesh-3;
+}
+
+
+
 // -------------------------------------
 //  pat-item-waku-kadomaru の個別設定
 // -------------------------------------
+
+// 枠消し
+@mixin pat-item-waku-reset {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kadomaru-simple;
+  @include deco-style-pat-item-waku-none-bgc-none;
+}
+
 
 //枠なし
 @mixin pat-item-waku-kadomaru-none-bgc-blue {
@@ -211,6 +292,54 @@
   @include module-style-pat-item-waku-kadomaru-simple;
   @include deco-style-pat-item-waku-kadomaru-simple-blue;
 }
+//2px+1pxボーダー
+@mixin pat-item-waku-kadomaru-simple-1 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-3;
+  @include deco-style-pat-item-waku-kadomaru-simple-1;
+}
+@mixin pat-item-waku-kadomaru-simple-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-3;
+  @include deco-style-pat-item-waku-kadomaru-simple-2;
+}
+@mixin pat-item-waku-kadomaru-simple-3 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-3;
+  @include deco-style-pat-item-waku-kadomaru-simple-3;
+}
+//以下、.mod-set-news-bunsyo使用中（theme2での使用確定）
+@mixin pat-item-waku-kadomaru-simple-black {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-black;
+}
+@mixin pat-item-waku-kadomaru-simple-blue-4 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-blue-4;
+}
+@mixin pat-item-waku-kadomaru-simple-red {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-red;
+}
+@mixin pat-item-waku-kadomaru-simple-black-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-black;
+}
+@mixin pat-item-waku-kadomaru-simple-blue-5 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-blue-4;
+}
+@mixin pat-item-waku-kadomaru-simple-red-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-simple-2;
+  @include deco-style-pat-item-waku-kadomaru-simple-red-2;
+}
+
 
 
 // 太枠角丸
@@ -322,6 +451,75 @@
   @include deco-style-pat-item-waku-kadomaru-simple-pink-grade;
 }
 
+//角丸マス目模様
+@mixin pat-item-waku-kadomaru-mesh-1 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-mesh;
+  @include deco-style-pat-item-waku-kadomaru-mesh-1;
+}
+@mixin pat-item-waku-kadomaru-mesh-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-mesh;
+  @include deco-style-pat-item-waku-kadomaru-mesh-2;
+}
+@mixin pat-item-waku-kadomaru-mesh-3 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-mesh;
+  @include deco-style-pat-item-waku-kadomaru-mesh-3;
+}
+
+// -------------------------------------
+//  pat-item-waku-board の個別設定
+// -------------------------------------
+
+// ボード（ピン）
+@mixin pat-item-waku-board-blue-5 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-image-2;
+  @include deco-style-pat-item-waku-board-blue-5;
+}
+@mixin pat-item-waku-board-blue-6 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-image-2;
+  @include deco-style-pat-item-waku-board-blue-6;
+}
+@mixin pat-item-waku-board-red {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-image-2;
+  @include deco-style-pat-item-waku-board-red;
+}
+// ボード（バインダー）
+@mixin pat-item-waku-board-blue {
+  @include common-style-pat-item-waku-board;
+  @include module-style-pat-item-waku-board-2;
+  @include deco-style-pat-item-waku-board-blue;
+}
+@mixin pat-item-waku-board-blue-2 {
+  @include common-style-pat-item-waku-board;
+  @include module-style-pat-item-waku-board-2;
+  @include deco-style-pat-item-waku-board-blue-2;
+}
+@mixin pat-item-waku-board-yellow-2 {
+  @include common-style-pat-item-waku-board;
+  @include module-style-pat-item-waku-board-2;
+  @include deco-style-pat-item-waku-board-yellow-2;
+}
+// ボード（壁掛け）
+@mixin pat-item-waku-board-blue-3 {
+  @include common-style-pat-item-waku-board;
+  @include module-style-pat-item-waku-board-3;
+  @include deco-style-pat-item-waku-board-blue-3;
+}
+@mixin pat-item-waku-board-blue-4 {
+  @include common-style-pat-item-waku-board;
+  @include module-style-pat-item-waku-board-3;
+  @include deco-style-pat-item-waku-board-blue-4;
+}
+@mixin pat-item-waku-board-orange-2 {
+  @include common-style-pat-item-waku-board;
+  @include module-style-pat-item-waku-board-3;
+  @include deco-style-pat-item-waku-board-orange-2;
+}
 
 
 // -------------------------------------

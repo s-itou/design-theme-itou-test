@@ -4,6 +4,7 @@
 
 //##################################################
 //  mod-h_4
+//  !importantがついているのは、リッチで変更された値をSPに反映させたくないため
 //##################################################
 
 //////////////////////////////////////////////////
@@ -21,7 +22,7 @@
     vertical-align: middle;
     > p {
       &, span {
-        font-size: $fontSizeS !important;
+        font-size: $fontSizeS !important; //リッチ対策
       }
     }
   }
@@ -36,10 +37,10 @@
     .mod-h {
       max-height: 111px;
       word-break: break-all;
-      font-size: $fontSizeM !important;
+      font-size: $fontSizeM + 2 !important;//リッチ対策
       line-height: 1.3;
       span {
-        font-size: $fontSizeM !important;
+        font-size: $fontSizeM + 2 !important;//リッチ対策
       }
     }
   }
@@ -2406,3 +2407,45 @@
       }
     }
   }
+
+
+//##################################################
+//  mod-h_4_side
+//##################################################
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-h_4_side {}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-h_4_side {
+  max-height: 120px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 5px 10px;
+  .mod-h {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: $sideFontSizeL + 2;
+    @include text-shadow(1px 1px 2px #222222);
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-h_4_side {
+  background-image: url("img/mod-label/bg.png");
+  background-color: #646464;
+  border: 1px solid #3c3c3c;
+}
+@mixin deco-style01A2-mod-h_4_side {
+  background-image: url("img/mod-label/bg_2.png");
+  background-color: #0b2744;
+  border: 1px solid #0f375f;
+}
+@mixin deco-style01A3-mod-h_4_side {
+  background-image: url("img/mod-label/bg_3.png");
+  background-color: #430e07;
+  border: 1px solid #260e0e;
+}

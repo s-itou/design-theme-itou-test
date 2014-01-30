@@ -2,6 +2,29 @@
 @import "../sp-style/mod-tel-style";
 
 //##################################################
+//  mod-tel-g-side
+//  mod-tel-ig-side
+//##################################################
+.mod-tel-g-side {
+  @include common-style-mod-tel-side;
+  @include module-style-mod-tel-g-side;
+}
+
+.mod-tel-ig-side {
+  @include common-style-mod-tel-side;
+  @include module-style-mod-tel-ig-side;
+  .ex-style_#{$baseEx_01A1} & {@include deco-style01A1-mod-tel-ig-side;}
+  .ex-style_#{$baseEx_01A2} & {@include deco-style01A2-mod-tel-ig-side;}
+  .ex-style_#{$baseEx_01A3} & {@include deco-style01A3-mod-tel-ig-side;}
+  .ex-style_#{$baseEx_01B1} & {@include deco-style01A1-mod-tel-ig-side;}
+  .ex-style_#{$baseEx_01B2} & {@include deco-style01A2-mod-tel-ig-side;}
+  .ex-style_#{$baseEx_01B3} & {@include deco-style01A3-mod-tel-ig-side;}
+  .ex-style_#{$baseEx_01C1} & {@include deco-style01A1-mod-tel-ig-side;}
+  .ex-style_#{$baseEx_01C2} & {@include deco-style01A2-mod-tel-ig-side;}
+  .ex-style_#{$baseEx_01C3} & {@include deco-style01A3-mod-tel-ig-side;}
+}
+
+//##################################################
 //  mod-tel-ii-footer
 //##################################################
 .mod-tel-ii-footer {

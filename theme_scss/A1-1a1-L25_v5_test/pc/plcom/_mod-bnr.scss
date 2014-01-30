@@ -270,3 +270,90 @@
     }
   }
 }
+
+// ----------------------------
+// mod-4col
+// ----------------------------
+%common-style-mod-bnr-for-4col {
+  .ex-style_01A1 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-b1;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-b1;
+      }
+    }
+  }
+  .ex-style_01A2 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-b2;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-b2;
+      }
+    }
+  }
+  .ex-style_01A3 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-b3;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-b3;
+      }
+    }
+  }
+  .ex-style_01B1 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-c1;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-c1;
+      }
+    }
+  }
+  .ex-style_01B2 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-c2;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-c2;
+      }
+    }
+  }
+  .ex-style_01B3 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-c3;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-c3;
+      }
+    }
+  }
+  .ex-style_01C1 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-d1;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-d1;
+      }
+    }
+  }
+  .ex-style_01C2 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-d2;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-d2;
+      }
+    }
+  }
+  .ex-style_01C3 & {
+    .mod-bnr_ver2 {
+      @if $layoutCode == "L25" {
+        @include pat-item-bnr-for-4col-L25-d3;
+      } @else if $layoutCode == "L30" {
+        @include pat-item-bnr-for-4col-L30-d3;
+      }
+    }
+  }
+}

@@ -102,7 +102,6 @@
   }
   .mod-h_4-inner3 {
     margin: 0;
-    background-color: transparent;
   }
   .mod-ul_ver2 {
     @include border-radius(0px);
@@ -127,7 +126,6 @@
   }
   .mod-h_4-inner3 {
     margin: 0;
-    background-color: transparent;
   }
   .mod-ul_ver2 {
     @include border-radius(0px);
@@ -152,7 +150,6 @@
   }
   .mod-h_4-inner3 {
     margin: 0;
-    background-color: transparent;
   }
   .mod-ul_ver2 {
     @include border-radius(0px);
@@ -255,7 +252,7 @@
     background-image: none;
   }
   .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
-    color: #ffffff;
+    color: #443308;
   }
   .mod-ul_ver2 {
     @include border-radius(0px);
@@ -268,7 +265,7 @@
       padding: 0 0 0 15px;
       background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
       background-position: left 5px;
-      color: #ffffff;
+      color: #443308;
       list-style: none;
       &:after {
         background-image: none;
@@ -306,6 +303,11 @@
       background-size: auto;
     }
   }
+  .mod-bnr_ver2 {
+    .mod-bnr-inner {
+      padding: 12px 10px 12px 10px;
+    }
+  }
 }
 @mixin deco-style01C2-mod-set-design3 {
   > .mod-box-inner {
@@ -334,6 +336,11 @@
       color: #333333;
       list-style: none;
       background-size: auto;
+    }
+  }
+  .mod-bnr_ver2 {
+    .mod-bnr-inner {
+      padding: 12px 10px 12px 10px;
     }
   }
 }
@@ -366,6 +373,11 @@
       background-size: auto;
     }
   }
+  .mod-bnr_ver2 {
+    .mod-bnr-inner {
+      padding: 12px 10px 12px 10px;
+    }
+  }
 }
 
 
@@ -377,7 +389,6 @@
   .mod-h_4_ver2 {
     .mod-h_4-inner3 {
       margin: 0;
-      background-color: transparent;
       padding: 4px 0 2px 7px;
     }
   }
@@ -403,7 +414,6 @@
   .mod-h_4_ver2 {
     .mod-h_4-inner3 {
       margin: 0;
-      background-color: transparent;
       padding: 4px 0 2px 7px;
     }
   }
@@ -429,7 +439,6 @@
   .mod-h_4_ver2 {
     .mod-h_4-inner3 {
       margin: 0;
-      background-color: transparent;
       padding: 4px 0 2px 7px;
     }
   }
@@ -576,6 +585,11 @@
       background-size: auto;
     }
   }
+  .mod-bnr_ver2 {
+    .mod-bnr-inner {
+      padding: 12px 10px 12px 10px;
+    }
+  }
 }
 @mixin deco-style01C2-mod-set-design-2col {
   .mod-box_ver2 {
@@ -603,6 +617,11 @@
       background-size: auto;
     }
   }
+  .mod-bnr_ver2 {
+    .mod-bnr-inner {
+      padding: 12px 10px 12px 10px;
+    }
+  }
 }
 @mixin deco-style01C3-mod-set-design-2col {
   .mod-box_ver2 {
@@ -628,6 +647,11 @@
       color: #333333;
       list-style: none;
       background-size: auto;
+    }
+  }
+  .mod-bnr_ver2 {
+    .mod-bnr-inner {
+      padding: 12px 10px 12px 10px;
     }
   }
 }

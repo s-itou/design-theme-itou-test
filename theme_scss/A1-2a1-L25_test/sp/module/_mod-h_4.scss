@@ -113,6 +113,45 @@
   }
 }
 
+
+//##################################################
+//  mod-h_4_side
+//##################################################
+.mod-h_4_side {
+  @include common-style-mod-h_4_side;
+  @include module-style-mod-h_4_side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-h_4_side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-h_4_side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-h_4_side;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A1-mod-h_4_side;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A2-mod-h_4_side;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A3-mod-h_4_side;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A1-mod-h_4_side;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A2-mod-h_4_side;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A3-mod-h_4_side;
+  }
+}
+
+
+
+
 //##################################################
 //  mod-icon
 //##################################################

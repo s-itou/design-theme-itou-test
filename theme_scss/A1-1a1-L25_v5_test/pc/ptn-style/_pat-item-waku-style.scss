@@ -29,11 +29,6 @@
 @mixin module-style-pat-item-waku-simple-2 {
   padding: 0;
 }
-//文章<装飾>-2,3の初期装飾で使う
-@mixin module-style-pat-item-waku-kadomaru-simple-3 {
-  margin: 30px auto 0 auto;
-  padding: 2px;
-}
 
 // 上下画像
 @mixin module-style-pat-item-waku-image {
@@ -446,7 +441,12 @@
     }
   }
 }
+//文章<装飾>-2,3の初期装飾で使う
 @mixin module-style-pat-item-waku-kadomaru-simple-3 {
+  margin: 30px auto 0 auto;
+  padding: 2px;
+}
+@mixin module-style-pat-item-waku-kadomaru-simple-4 {
   margin: 30px auto 0 auto;
   > div {
     padding: 0;
@@ -565,9 +565,6 @@
 }
 @mixin deco-style-pat-item-waku-kadomaru-simple-blue-3 {
   border: 2px solid #84b5fe;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-blue-4 {
-  border: 2px solid #539af9;
 }
 @mixin deco-style-pat-item-waku-kadomaru-simple-blue-6 {
   border: 2px solid #539af9;

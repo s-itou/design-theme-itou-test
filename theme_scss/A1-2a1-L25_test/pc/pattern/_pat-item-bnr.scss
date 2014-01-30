@@ -189,3 +189,256 @@
   @include module-style-pat-item-bnr-3;
   @include deco-style-pat-item-bnr-mini-3;
 }
+@mixin pat-item-bnr-mini-4 {//黒
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr-3;
+  @include deco-style-pat-item-bnr-mini-4;
+}
+
+
+
+
+
+
+
+//////////////////////////////////
+//  ここからリファクタ
+//////////////////////////////////
+
+// -------------------------------------
+// pat-item-bnr-b 三角アイコン
+// -------------------------------------
+
+@mixin pat-item-bnr-b1 { //デフォ1a1
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-b;
+  @include deco-style-pat-item-bnr-b1;
+}
+
+@mixin pat-item-bnr-b2 { //デフォ1a2
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-b;
+  @include deco-style-pat-item-bnr-b2;
+}
+
+@mixin pat-item-bnr-b3 { //デフォ1a3
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-b;
+  @include deco-style-pat-item-bnr-b3;
+}
+
+// -------------------------------------
+// pat-item-bnr-c 矢印アイコン
+// -------------------------------------
+@mixin pat-item-bnr-c1 { //デフォ1b1
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-c;
+  @include deco-style-pat-item-bnr-c1;
+}
+
+@mixin pat-item-bnr-c2 { //デフォ1b2
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-c;
+  @include deco-style-pat-item-bnr-c2;
+}
+
+@mixin pat-item-bnr-c3 { //デフォ1b3
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-c;
+  @include deco-style-pat-item-bnr-c3;
+}
+
+// -------------------------------------
+// pat-item-bnr-d >>アイコン
+// -------------------------------------
+@mixin pat-item-bnr-d1 { //デフォ1c1
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-d1;
+}
+
+@mixin pat-item-bnr-d2 { //デフォ1c2
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-d2;
+}
+
+@mixin pat-item-bnr-d3 { //デフォ1c3
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr;
+  @include insize-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-d3;
+}
+
+
+
+
+
+// ----------------------------------
+//  pat-item-bnr-for-4col
+// ----------------------------------
+
+//pat-item-bnr-b
+@mixin pat-item-bnr-for-4col-L25-b1 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-b;
+  @include deco-style-pat-item-bnr-b1;
+}
+
+@mixin pat-item-bnr-for-4col-L30-b1 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-b;
+  @include deco-style-pat-item-bnr-b1;
+}
+
+@mixin pat-item-bnr-for-4col-L25-b2 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-b;
+  @include deco-style-pat-item-bnr-b2;
+}
+
+@mixin pat-item-bnr-for-4col-L30-b2 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-b;
+  @include deco-style-pat-item-bnr-b2;
+}
+
+@mixin pat-item-bnr-for-4col-L25-b3 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-b;
+  @include deco-style-pat-item-bnr-b3;
+}
+
+@mixin pat-item-bnr-for-4col-L30-b3 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-b;
+  @include deco-style-pat-item-bnr-b3;
+}
+
+//pat-item-bnr-c
+@mixin pat-item-bnr-for-4col-L25-c1 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-c;
+  @include deco-style-pat-item-bnr-c1;
+}
+
+@mixin pat-item-bnr-for-4col-L30-c1 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-c;
+  @include deco-style-pat-item-bnr-c1;
+}
+
+@mixin pat-item-bnr-for-4col-L25-c2 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-c;
+  @include deco-style-pat-item-bnr-c2;
+}
+
+@mixin pat-item-bnr-for-4col-L30-c2 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-c;
+  @include deco-style-pat-item-bnr-c2;
+}
+
+@mixin pat-item-bnr-for-4col-L25-c3 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-c;
+  @include deco-style-pat-item-bnr-c3;
+}
+
+@mixin pat-item-bnr-for-4col-L30-c3 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-c;
+  @include deco-style-pat-item-bnr-c3;
+}
+
+//pat-item-bnr-d
+@mixin pat-item-bnr-for-4col-L25-d1 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-d;
+  @include deco-style-pat-item-bnr-d1;
+}
+
+@mixin pat-item-bnr-for-4col-L30-d1 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-d;
+  @include deco-style-pat-item-bnr-d1;
+}
+
+@mixin pat-item-bnr-for-4col-L25-d2 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-d;
+  @include deco-style-pat-item-bnr-d2;
+}
+
+@mixin pat-item-bnr-for-4col-L30-d2 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-d;
+  @include deco-style-pat-item-bnr-d2;
+}
+
+@mixin pat-item-bnr-for-4col-L25-d3 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-for-4col-L25;
+  @include insize-style-pat-item-bnr-for-4col-L25-d;
+  @include deco-style-pat-item-bnr-d3;
+}
+
+@mixin pat-item-bnr-for-4col-L30-d3 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-for-4col-L30;
+  @include insize-style-pat-item-bnr-for-4col-L30-d;
+  @include deco-style-pat-item-bnr-d3;
+}
+

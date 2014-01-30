@@ -8,9 +8,6 @@
 //   mod-box3を元にしたメイン用の部品モジュール
 // **************************************************
 
-div[class*="mod-part"] {
-  @extend %common-style-mod-part;
-}
 
 .mod-part-bnr-x2,
 .mod-part-bnr-x3,
@@ -28,10 +25,12 @@ div[class*="mod-part"] {
 .mod-part-h1,
 .mod-part-h2,
 .mod-part-h3,
+.mod-part-h4,
 .mod-part-hikaku,
 .mod-part-hyo,
 .mod-part-list,
 .mod-part-list-number,
+.mod-part-news-bunsyo,
 .mod-part-map,
 .mod-part-nagare,
 .mod-part-office,
@@ -43,7 +42,6 @@ div[class*="mod-part"] {
 .mod-part-tokucho-bunsyo,
 .mod-part-tokucho-h,
 .mod-part-tokucho-pic,
-.mod-part-voice,
-.mod-part-dl {
+.mod-part-voice {
   @extend %common-style-mod-part;
 }

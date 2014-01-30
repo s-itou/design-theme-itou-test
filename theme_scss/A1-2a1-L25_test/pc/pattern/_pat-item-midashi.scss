@@ -177,17 +177,7 @@
   @include module-style-pat-item-midashi-border;
   @include deco-style-pat-item-midashi-border-6;
 }
-// 上下ボーダータイトル（お問い合わせ）
-@mixin pat-item-midashi-border-7 {
-  @include common-style-pat-item-midashi;
-  @include module-style-pat-item-midashi-border-2;
-  @include deco-style-pat-item-midashi-border-7;
-}
-@mixin pat-item-midashi-border-8 {
-  @include common-style-pat-item-midashi;
-  @include module-style-pat-item-midashi-border-2;
-  @include deco-style-pat-item-midashi-border-8;
-}
+
 // 上下ボーダータイトル（文章装飾）
 @mixin pat-item-midashi-simple-border-red {
   @include common-style-pat-item-midashi-simple;

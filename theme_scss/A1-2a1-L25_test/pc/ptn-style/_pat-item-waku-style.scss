@@ -75,7 +75,7 @@
 
 // 背景画像（ペン）
 @mixin module-style-pat-item-waku-simple-bgimg {
-  padding: 0 20px 72px;
+  padding: 15px 20px 72px;
   background-position: right bottom;
   background-repeat: no-repeat;
 }
@@ -404,9 +404,6 @@
   }
 }
 
-
-
-
 // 上下画像
 @mixin deco-style-pat-item-waku-jouge-image-gray-bgc {
   border: none;
@@ -468,6 +465,7 @@
     }
   }
 }
+
 // 上画像
 @mixin deco-style-pat-item-waku-jouge-image-brown-bgc {
   border: none;
@@ -630,13 +628,12 @@
 
 @mixin common-style-pat-item-waku-kadomaru {
   @include border-radius(3px);
-  margin: 30px 0 0 0;
-  padding: 0;
-  width: 100%;
+  //margin: 30px 0 0 0;
+  //padding: 0;
   background-position: left top;
   > div {
     @include border-radius(3px);
-    padding: 0;
+    //padding: 0;
     > div {
       @include border-radius(3px);
     }
@@ -663,10 +660,10 @@
   margin: 30px auto 0 auto;
   padding: 1px 0 0 0;
   > div {
-    padding: 0;
+    //padding: 0;
     > div {
       overflow: hidden;
-      padding: 0;
+      //padding: 0;
     }
   }
 }
@@ -681,6 +678,7 @@
 
 // 太枠角丸
 @mixin module-style-pat-item-waku-kadomaru-futo {
+  margin: 30px 0 0 0;
   background-repeat: repeat;
   > div {
     padding: 10px;
@@ -692,6 +690,7 @@
 
 //サイド用太枠角丸
 @mixin module-style-pat-item-waku-kadomaru-futo-2 {
+  margin: 30px 0 0 0;
   padding: 10px;
   width: 100%;
   > div {
@@ -702,6 +701,7 @@
 
 // 装飾角丸
 @mixin module-style-pat-item-waku-kadomaru-image {
+  margin: 30px 0 0 0;
   background-repeat: repeat;
   > div {
     padding: 3px;
@@ -727,11 +727,21 @@
 
 // 角丸背景グラデーション
 @mixin module-style-pat-item-waku-kadomaru-grade {
+  margin: 30px 0 0 0;
   background-repeat: repeat-x;
   > div {
     > div {
       padding: 20px;
     }
+  }
+}
+
+// 角丸メッシュ
+@mixin module-style-pat-item-waku-kadomaru-mesh {
+  margin: 30px auto;
+  > div {
+    padding: 1px;
+    background-repeat: repeat;
   }
 }
 
@@ -796,6 +806,8 @@
 @mixin deco-style-pat-item-waku-kadomaru-simple-orange {
   border: 2px solid #ffc789;
 }
+
+// 2px+1pxボーダー 未
 @mixin deco-style-pat-item-waku-kadomaru-simple-1 {
   border: 1px solid #cccccc;
   background-color: #e6e6e6;
@@ -819,6 +831,25 @@
     border: 1px solid #e5e3e3;
     background-color: #ffffff;
   }
+}
+
+@mixin deco-style-pat-item-waku-kadomaru-simple-black {
+  border: 1px solid #3c3c3c;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-blue-4 {
+  border: 1px solid #0f375f;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-red {
+  border: 1px solid #58120a;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-black-2 {
+  border: 1px solid #071c2f;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-blue-5 {
+  border: 1px solid #103760;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-red-2 {
+  border: 1px solid #260e0e;
 }
 
 // 角丸背景色あり
@@ -854,7 +885,6 @@
     background-color: #ffffff;
   }
 }
-
 @mixin deco-style-pat-item-waku-kadomaru-futo-gray {
   border: 1px solid #aaaaaa;
   > div {
@@ -993,6 +1023,23 @@
 @mixin deco-style-pat-item-waku-kadomaru-simple-blue-2 {
   border: 2px solid #448DC9;
   background-color: transparent;
+}
+
+//角丸マス目模様
+@mixin deco-style-pat-item-waku-kadomaru-mesh-1 {
+  border: 1px solid #cccccc;
+  background-color: transparent;
+  background-image: url("img/_pat-item/waku-kado-ue-mesh/bg.png");
+}
+@mixin deco-style-pat-item-waku-kadomaru-mesh-2 {
+  border: 1px solid #cccccc;
+  background-color: transparent;
+  background-image: url("img/_pat-item/waku-kado-ue-mesh/bg_2.png");
+}
+@mixin deco-style-pat-item-waku-kadomaru-mesh-3 {
+  border: 1px solid #cccccc;
+  background-color: transparent;
+  background-image: url("img/_pat-item/waku-kado-ue-mesh/bg_3.png");
 }
 
 
