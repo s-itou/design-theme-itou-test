@@ -9,20 +9,119 @@
 @mixin common-style-mod-ul {}
 
 
+@mixin common-style-mod-ul { //sideでのみ使いことを前提にしたcommonです。mainはitem化済
+  margin: 10px 0 0 0;
+  ul {
+    margin: 0;
+    padding-left: 0;
+    li {
+      margin: 5px 0 0 20px;
+      padding:0 0 0 15px;
+      list-style: none;
+      font-size: $sideFontSizeM;
+      background-repeat: no-repeat;
+      background-position: left 6px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  ol {
+    margin: 0 0 0 15px;
+    padding-left: 0;
+    > li {
+      background-image: none;
+      padding-left: 0;
+      list-style-type: decimal !important;
+    }
+  }
+}
+
+
 //////////////////////////////////////////////////
 //  MODULE-STYLE
 @mixin module-style-mod-ul {}
-
+@mixin module-style-mod-ul-side {}
 
 //////////////////////////////////////////////////
 //  DECORATION-STYLE
-@mixin deco-style01A1-mod-ul {}
-@mixin deco-style01A2-mod-ul {}
-@mixin deco-style01A3-mod-ul {}
-@mixin deco-style01B1-mod-ul {}
-@mixin deco-style01B2-mod-ul {}
-@mixin deco-style01B3-mod-ul {}
-@mixin deco-style01C1-mod-ul {}
-@mixin deco-style01C2-mod-ul {}
-@mixin deco-style01C3-mod-ul {}
+@mixin deco-style01A1-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg.png");
+    }
+  }
+}
+@mixin deco-style01A2-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg_2.png");
+    }
+  }
+}
+@mixin deco-style01A3-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg_3.png");
+    }
+  }
+}
+@mixin deco-style01B1-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg04.png");
+    }
+  }
+}
+@mixin deco-style01B2-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg04_2.png");
+    }
+  }
+}
+@mixin deco-style01B3-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg04_3.png");
+    }
+  }
+}
+@mixin deco-style01C1-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg06.png");
+    }
+  }
+}
+@mixin deco-style01C2-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg06_2.png");
+    }
+  }
+}
+@mixin deco-style01C3-mod-ul {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg06_3.png");
+    }
+  }
+}
 
+
+@mixin deco-style01A1-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02.png");
+  }
+}
+@mixin deco-style01A2-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02_2.png");
+  }
+}
+@mixin deco-style01A3-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02_3.png");
+  }
+}

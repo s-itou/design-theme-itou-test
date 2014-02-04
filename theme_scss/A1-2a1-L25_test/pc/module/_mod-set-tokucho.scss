@@ -16,33 +16,60 @@
 // -----------------------------------
 
 .mod-set-tokucho-bunsyo {
-  @extend %common-style-mod-set-tokucho;
+  @extend %common-style-mod-set-tokucho-bunsyo;
   .ex-style_01A1 & {
     @include pat-design-tokucho-bunsyo-1;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-b1;
+    }
   }
   .ex-style_01A2 & {
     @include pat-design-tokucho-bunsyo-2;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-b2;
+    }
   }
   .ex-style_01A3 & {
     @include pat-design-tokucho-bunsyo-3;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-b3;
+    }
   }
   .ex-style_01B1 & {
     @include pat-design-tokucho-bunsyo-4;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-c1;
+    }
   }
   .ex-style_01B2 & {
     @include pat-design-tokucho-bunsyo-5;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-c2;
+    }
   }
   .ex-style_01B3 & {
     @include pat-design-tokucho-bunsyo-6;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-c3;
+    }
   }
   .ex-style_01C1 & {
     @include pat-design-tokucho-bunsyo-7;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-d1;
+    }
   }
   .ex-style_01C2 & {
     @include pat-design-tokucho-bunsyo-8;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-d2;
+    }
   }
   .ex-style_01C3 & {
     @include pat-design-tokucho-bunsyo-9;
+    .mod-bnr_ver2 {
+      @include pat-item-bnr-for-2col-L25-d3;
+    }
   }
 }
 

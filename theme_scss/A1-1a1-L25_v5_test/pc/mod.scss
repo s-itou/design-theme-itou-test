@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "compass";
-
+//@import url('old_1a1.css');
 @import "../../common/extend";
 @import "dependency/common-variable";
 @import "dependency/common";
@@ -16,11 +16,12 @@
 @import "pattern/pat-item-rte-in2";
 @import "pattern/pat-item-tel";
 @import "pattern/pat-item-waku";
+@import "pattern/pat-item-2col";
 @import "pattern/pat-item-navi-header";
 @import "pattern/pat-item-table";
 @import "pattern/pat-item-title";
-@import "pattern/pat-item-navi-header";
 @import "pattern/pat-item-h4";
+//@import "pattern/pat-item-h5";
 // @import "pattern/pat-item-header-box";
 
 
@@ -90,6 +91,7 @@
 @import "module/mod-set-navi-header";
 @import "module/mod-set-navi-side";
 @import "module/mod-set-navi-footer";
+@import "module/mod-set-topicpath";
 @import "module/mod-set-news";
 @import "module/mod-set-side";
 // @import "module/mod-set-form";
@@ -100,7 +102,9 @@
 // @import "module/mod-set-pic";
 @import "module/mod-set-h4";
 @import "module/mod-set-service";
+@import "module/mod-set-tsuyomi";
 @import "module/mod-set-door";
+@import "module/mod-set-pic-design";
 
 
 @import "module/mod-sitename";

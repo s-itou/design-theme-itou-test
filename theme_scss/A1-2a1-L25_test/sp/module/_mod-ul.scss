@@ -6,16 +6,35 @@
 //##################################################
 //  mod-ul_ver2
 //##################################################
+
+
+//ゆくゆくはpat-item化　theme1では済のよう
 .mod-ul_ver2 {
   @include common-style-mod-ul;
   @include module-style-mod-ul;
-  .ex-style_#{$baseEx_01A1} & { @include deco-style01A1-mod-ul; }
-  .ex-style_#{$baseEx_01A2} & { @include deco-style01A2-mod-ul; }
-  .ex-style_#{$baseEx_01A3} & { @include deco-style01A3-mod-ul; }
-  .ex-style_#{$baseEx_01B1} & { @include deco-style01B1-mod-ul; }
-  .ex-style_#{$baseEx_01B2} & { @include deco-style01B2-mod-ul; }
-  .ex-style_#{$baseEx_01B3} & { @include deco-style01B3-mod-ul; }
-  .ex-style_#{$baseEx_01C1} & { @include deco-style01C1-mod-ul; }
-  .ex-style_#{$baseEx_01C2} & { @include deco-style01C2-mod-ul; }
-  .ex-style_#{$baseEx_01C3} & { @include deco-style01C3-mod-ul; }
+  .ex-style_#{$baseEx_01A1} &,.ex-style_#{$baseEx_02A1} & { @include deco-style01A1-mod-ul;}
+  .ex-style_#{$baseEx_01A2} &,.ex-style_#{$baseEx_02A2} & { @include deco-style01A2-mod-ul;}
+  .ex-style_#{$baseEx_01A3} &,.ex-style_#{$baseEx_02A3} & { @include deco-style01A3-mod-ul;}
+  .ex-style_#{$baseEx_01B1} &,.ex-style_#{$baseEx_02B1} & { @include deco-style01B1-mod-ul;}
+  .ex-style_#{$baseEx_01B2} &,.ex-style_#{$baseEx_02B2} & { @include deco-style01B2-mod-ul;}
+  .ex-style_#{$baseEx_01B3} &,.ex-style_#{$baseEx_02B3} & { @include deco-style01B3-mod-ul;}
+  .ex-style_#{$baseEx_01C1} &,.ex-style_#{$baseEx_02C1} & { @include deco-style01C1-mod-ul;}
+  .ex-style_#{$baseEx_01C2} &,.ex-style_#{$baseEx_02C2} & { @include deco-style01C2-mod-ul;}
+  .ex-style_#{$baseEx_01C3} &,.ex-style_#{$baseEx_02C3} & { @include deco-style01C3-mod-ul;}
 }
+
+
+//pat-item化は未済
+//.mod-ul-side {
+//  @include common-style-mod-ul-side;
+//  @include module-style-mod-ul-side;
+//  .ex-style_#{$baseEx_01A1} & {@include deco-style01A1-mod-ul-side;}
+//  .ex-style_#{$baseEx_01A2} & {@include deco-style01A2-mod-ul-side;}
+//  .ex-style_#{$baseEx_01A3} & {@include deco-style01A3-mod-ul-side;}
+//  .ex-style_#{$baseEx_01B1} & {@include deco-style01A1-mod-ul-side;}
+//  .ex-style_#{$baseEx_01B2} & {@include deco-style01A2-mod-ul-side;}
+//  .ex-style_#{$baseEx_01B3} & {@include deco-style01A3-mod-ul-side;}
+//  .ex-style_#{$baseEx_01C1} & {@include deco-style01A1-mod-ul-side;}
+//  .ex-style_#{$baseEx_01C2} & {@include deco-style01A2-mod-ul-side;}
+//  .ex-style_#{$baseEx_01C3} & {@include deco-style01A3-mod-ul-side;}
+//}

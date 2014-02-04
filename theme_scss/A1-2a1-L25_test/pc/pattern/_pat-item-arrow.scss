@@ -61,4 +61,50 @@
 }
 
 
+//4コラム
+// シンプル
+@mixin pat-item-arrow-simple-1-for-4col { // gray
+  @include common-style-pat-item-arrow-for-4col;
+  @include module-style-pat-item-arrow-1-for-4col;
+  @include deco-style-pat-item-arrow-simple-1;
+}
+@mixin pat-item-arrow-simple-2-for-4col { // blue
+  @include common-style-pat-item-arrow-for-4col;
+  @include module-style-pat-item-arrow-1-for-4col;
+  @include deco-style-pat-item-arrow-simple-2;
+}
+@mixin pat-item-arrow-simple-3-for-4col { // pink
+  @include common-style-pat-item-arrow-for-4col;
+  @include module-style-pat-item-arrow-1-for-4col;
+  @include deco-style-pat-item-arrow-simple-3;
+}
+
+//4コラム
+// 二重
+@mixin pat-item-arrow-double-1-for-4col { // gray
+  @include common-style-pat-item-arrow-for-4col;
+  @include module-style-pat-item-arrow-1-for-4col;
+  @include deco-style-pat-item-arrow-double-1;
+}
+@mixin pat-item-arrow-double-2-for-4col { // blue
+  @include common-style-pat-item-arrow-for-4col;
+  @include module-style-pat-item-arrow-1-for-4col;
+  @include deco-style-pat-item-arrow-double-2;
+}
+@mixin pat-item-arrow-double-3-for-4col { // pink
+  @include common-style-pat-item-arrow-for-4col;
+  @include module-style-pat-item-arrow-1-for-4col;
+  @include deco-style-pat-item-arrow-double-3;
+}
+//@mixin pat-item-arrow-double-4-for-4col { // yellow
+//  @include common-style-pat-item-arrow-for-4col;
+//  @include module-style-pat-item-arrow-2-for-4col;
+//  @include deco-style-pat-item-arrow-double-4;
+//}
+//@mixin pat-item-arrow-double-5-for-4col { // brown
+//  @include common-style-pat-item-arrow-for-4col;
+//  @include module-style-pat-item-arrow-2-for-4col;
+//  @include deco-style-pat-item-arrow-double-5;
+//}
+
 

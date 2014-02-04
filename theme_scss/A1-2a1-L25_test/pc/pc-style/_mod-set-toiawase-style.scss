@@ -81,6 +81,32 @@
     }
   }
 }
+@mixin module-style-mod-set-toiawase-2col-4 {
+  .mod-2col-in1 {
+    .mod-2col-inner-2 {
+      > .mod-html-map {
+        small a {
+          padding: 0 0 0 20px;
+          min-height: 0;
+          width: auto;
+          height: auto;
+          border: 0 none transparent;
+          background-color: transparent;
+          background-position: left 4px;
+          font-size: $fontSizeS + 1;
+        }
+      }
+    }
+    .mod-2col-inner2-2 {
+      > .mod-rte_ver2 {
+        margin-top: 5px;
+      }
+      > .mod-bnr_ver2 {
+        margin: 15px auto 0;
+      }
+    }
+  }
+}
 
 // -------------------------------------
 // deco-style
@@ -88,6 +114,14 @@
 @mixin deco-style-mod-set-toiawase-2col-1 {
   .mod-rte-kyocho {
     color: #46140b;
+  }
+  .mod-html-map {
+    small a {
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
   }
 }
 @mixin deco-style-mod-set-toiawase-2col-2 {
@@ -99,25 +133,68 @@
       border-bottom: 1px solid #222222;
     }
   }
+  .mod-html-map {
+    small a {
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-3 {
   .mod-rte-kyocho {
     color: #010911;
+  }
+  .mod-html-map {
+    small a {
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
   }
 }
 @mixin deco-style-mod-set-toiawase-2col-4 {
   .mod-rte-kyocho {
     color: #15315f;
   }
+  .mod-html-map {
+    small a {
+      background-image: url("img/mod-link/bg10.png");
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-5 {
   .mod-rte-kyocho {
     color: #333333;
   }
+  .mod-html-map {
+    small a {
+      background-image: url("img/mod-link/bg10_2.png");
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-6 {
   .mod-rte-kyocho {
     color: #341d1b;
+  }
+  .mod-html-map {
+    small a {
+      background-image: url("img/mod-link/bg10_3.png");
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
   }
 }
 @mixin deco-style-mod-set-toiawase-2col-7 {
@@ -127,6 +204,14 @@
   .mod-rte-kyocho {
     color: #350b06;
   }
+  .mod-html-map {
+    small a {
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-8 {
   .mod-box-in1 {
@@ -134,6 +219,14 @@
   }
   .mod-rte-kyocho {
     color: #222222;
+  }
+  .mod-html-map {
+    small a {
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
   }
 }
 @mixin deco-style-mod-set-toiawase-2col-9 {
@@ -147,6 +240,14 @@
     .mod-h {
       border-bottom: 1px dashed #781b0e;
       color: #742516;
+    }
+  }
+  .mod-html-map {
+    small a {
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
     }
   }
 }

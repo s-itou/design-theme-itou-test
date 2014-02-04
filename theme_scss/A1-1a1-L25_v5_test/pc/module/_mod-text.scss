@@ -35,7 +35,7 @@
   .ex-style_01B2 & {}
   .ex-style_01B3 & {}
   .ex-style_01C1 & {}
-  .ex-style_01C2 & {}
+  .ex-style_01C2 & {} 
   .ex-style_01C3 & {}
 }
 
@@ -182,6 +182,11 @@
   .ex-style_01C1 & {@include deco-style01C1-mod-text-kyocho-footer;}
   .ex-style_01C2 & {@include deco-style01C2-mod-text-kyocho-footer;}
   .ex-style_01C3 & {@include deco-style01C3-mod-text-kyocho-footer;}
+}
+
+.mod-text-hyo {
+  @include common-style-mod-text;
+  @include deco-style01A1-mod-text-hyo;
 }
 
 // *************************

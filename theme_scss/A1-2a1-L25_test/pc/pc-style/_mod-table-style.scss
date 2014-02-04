@@ -333,245 +333,247 @@
 // PATTERN STYLE
 
 // PATTERN ITEM STYLE
-@mixin pat-item-table-1 {
-  border: 1px solid #c9e0ff;
+@mixin pat-item-table-1-style {
+  border: 1px solid #c6c6c6;
   color: #333333;
   table {
-    border: 1px solid #c9e0ff;
+    border: 1px solid #c6c6c6;
     thead tr:first-child th {
       border-bottom: 1px solid #ffffff;
     }
     tr:first-child th {
-      border-top: 1px solid #c9e0ff;
+      border-top: 1px solid #c6c6c6;
       &:last-child {
-        border-right: 1px solid #c9e0ff;
+        border-right: 1px solid #c6c6c6;
       }
     }
     th {
       border-top: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
-      background-color: #c9e0ff;
+      background-color: #c6c6c6;
       background-image: none;
       background-repeat: repeat;
     }
     td {
-      border: 1px solid #c9e0ff;
+      border: 1px solid #c6c6c6;
     }
   }
 }
-@mixin pat-item-table-2 {
-  border: 1px solid #c4ecf0;
+@mixin pat-item-table-2-style {
+  border: 1px solid #d7e1ec;
   color: #333333;
   table {
-    border: 1px solid #c4ecf0;
+    border: 1px solid #d7e1ec;
     thead tr:first-child th {
       border-bottom: 1px solid #ffffff;
     }
     tr:first-child th {
-      border-top: 1px solid #c4ecf0;
+      border-top: 1px solid #d7e1ec;
       &:last-child {
-        border-right: 1px solid #c4ecf0;
+        border-right: 1px solid #d7e1ec;
       }
     }
     th {
       border-top: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
-      background-color: #c4ecf0;
+      background-color: #d7e1ec;
       background-image: none;
       background-repeat: repeat;
     }
     td {
-      border: 1px solid #c4ecf0;
+      border: 1px solid #d7e1ec;
     }
   }
 }
-@mixin pat-item-table-3 {
-  border: 1px solid #ffcda2;
-  color: #56534e;
+@mixin pat-item-table-3-style {
+  border: 1px solid #ead3cf;
+  color: #333333;
   table {
-    border: 1px solid #ffcda2;
+    border: 1px solid #ead3cf;
     thead tr:first-child th {
       border-bottom: 1px solid #ffffff;
     }
     tr:first-child th {
-      border-top: 1px solid #ffcda2;
+      border-top: 1px solid #ead3cf;
       &:last-child {
-        border-right: 1px solid #ffcda2;
+        border-right: 1px solid #ead3cf;
       }
     }
     th {
       border-top: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
-      background-color: #ffcda2;
+      background-color: #ead3cf;
       background-image: none;
       background-repeat: repeat;
     }
     td {
-      border: 1px solid #ffcda2;
+      border: 1px solid #ead3cf;
     }
   }
 }
-@mixin pat-item-table-4 {
-  border: 1px solid #8bb8e4;
-  color: #333333;
+@mixin pat-item-table-4-style {
+  border: 1px solid #666666;
+  color: #666666;
   table {
-    border: 1px solid #8bb8e4;
+    border: 1px solid #666666;
     thead tr:first-child th {
       border-bottom: 1px solid #ffffff;
     }
     tr:first-child th {
-      border-top: 1px solid #8bb8e4;
+      border-top: 1px solid #666666;
       &:last-child {
-        border-right: 1px solid #8bb8e4;
+        border-right: 1px solid #666666;
       }
     }
     th {
       border-top: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
-      background-color: #a8bbe3;
-      background-image: url("img/mod-table/bg02.png");
+      background-color: #666666;
       background-repeat: repeat-x;
     }
     td {
-      border: 1px solid #8bb8e4;
+      border: 1px solid #666666;
     }
   }
 }
-@mixin pat-item-table-5 {
-  border: 1px solid #a3e0e9;
-  color: #0b7c8a;
+@mixin pat-item-table-5-style {
+  border: 1px solid #b1cbe8;
+  color: #333333;
   table {
-    border: 1px solid #a3e0e9;
+    border: 1px solid #b1cbe8;
     thead tr:first-child th {
       border-bottom: 1px solid #ffffff;
     }
     tr:first-child th {
-      border-top: 1px solid #a3e0e9;
+      border-top: 1px solid #b1cbe8;
       &:last-child {
-        border-right: 1px solid #a3e0e9;
+        border-right: 1px solid #b1cbe8;
       }
     }
     th {
       border-top: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
-      background-color: #a3e0e9;
-      background-image: url("img/mod-table/bg02_2.png");
+      background-color: #b1cbe8;
       background-repeat: repeat-x;
+      color: #0c2947;
     }
     td {
-      border: 1px solid #a3E0E9;
+      border: 1px solid #b1cbe8;
     }
   }
 }
-@mixin pat-item-table-6 {
-  border: 1px solid #f7de6a;
+@mixin pat-item-table-6-style {
+  border: 1px solid #eaaca1;
   color: #45310c;
   table {
-    border: 1px solid #f7de6a;
+    border: 1px solid #eaaca1;
     thead tr:first-child th {
       border-bottom: 1px solid #ffffff;
     }
     tr:first-child {
       th {
-        border-top: 1px solid #f7de6a;
+        border-top: 1px solid #eaaca1;
         &:last-child {
-          border-right: 1px solid #f7de6a;
+          border-right: 1px solid #eaaca1;
         }
       }
     }
     th {
       border-top: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
-      background-color: #f7de6a;
-      background-image: url("img/mod-table/bg02_3.png");
+      background-color: #eaaca1;
       background-repeat: repeat-x;
+      color: #260e0e;
     }
     td {
-      border: 1px solid #f7de6a;
+      border: 1px solid #eaaca1;
     }
   }
 }
-@mixin pat-item-table-7 {
-  border: 1px solid #8bb8e4;
+@mixin pat-item-table-7-style {
+  border: 0 none transparent;
   color: #333333;
   table {
-    border: 1px solid #8bb8e4;
+    border: 1px solid #666666;
+    background-image: url("img/mod-table/bg04.png");
     thead tr:first-child th {
       border-bottom: 1px solid #8bb8e4;
     }
     tr:first-child {
       th {
-        border-top: 1px solid #8bb8e4;
+        border-top: 0 none transparent;
+        border-bottom: 1px solid #666666;
+        color: #333333;
         &:last-child {
-          border-right: 1px solid #8bb8e4;
+          border-right: 1px solid #666666;
         }
       }
     }
     th {
-      border-top: 1px solid #8bb8e4;
-      border-right: 1px solid #8bb8e4;
-      background-color: #c9e0ff;
-      background-image: url("img/mod-table/bg04.png");
-      background-repeat: repeat-x;
+      border-top: 1px solid #666666;
+      border-right: 1px solid #666666;
+      background-color: transparent;
+      color: #333333;
     }
     td {
-      border: 1px solid #8bb8e4;
+      border: 1px solid #666666;
+      background-color: #ffffff;
     }
   }
 }
-@mixin pat-item-table-8 {
-  border: 1px solid #7ed1d9;
+@mixin pat-item-table-8-style {
+border: 0 none transparent;
+  color: #414141;
+  table {
+    border: 1px solid #325073;
+    background-image: url("img/mod-table/bg04_2.png");
+    tr:first-child {
+      th {
+        border-top: 0 none transparent;
+        border-bottom: 1px solid #325073;
+        color: #333333;
+      }
+      th:last-child {
+        border-right: 1px solid #325073;
+      }
+    }
+    th {
+      border-top: 1px solid #325073;
+      border-right: 1px solid #325073;
+      background-color: transparent;
+      color: #333333;
+    }
+    td {
+      border: 1px solid #325073;
+      background-color: #ffffff;
+    }
+  }
+}
+@mixin pat-item-table-9-style {
+border: 0 none transparent;
   color: #333333;
   table {
-    border: 1px solid #7ed1d9;
-    thead tr:first-child th {
-      border-bottom: 1px solid #7ed1d9;
-    }
+    border: 1px solid #46140b;
+    background-image: url("img/mod-table/bg04_3.png");
     tr:first-child {
       th {
-        border-top: 1px solid #7ed1d9;
-        &:last-child {
-          border-right: 1px solid #7ed1d9;
-        }
+        border-top: 0 none transparent;
+        border-bottom: 1px solid #46140b;
+        color: #333333;
+      }
+      th:last-child {
+        border-right: 1px solid #46140b;
       }
     }
     th {
-      border-top: 1px solid #7ed1d9;
-      border-right: 1px solid #7ed1d9;
-      background-color: #c4ecf0;
-      background-image: url("img/mod-table/bg04_2.png");
-      background-repeat: repeat-x;
+      border-top: 1px solid #46140b;
+      border-right: 1px solid #46140b;
+      background-color: transparent;
+      color: #333333;
     }
     td {
-      border: 1px solid #7ed1d9;
-    }
-  }
-}
-@mixin pat-item-table-9 {
-  border: 1px solid #f9d5b5;
-  color: #45320b;
-  table {
-    border: 1px solid #f9d5b5;
-    thead tr:first-child th {
-      border-bottom: 1px solid #f9d5b5;
-    }
-    tr:first-child {
-      th {
-        border-top: 1px solid #f9d5b5;
-        &:last-child {
-          border-right: 1px solid #f9d5b5;
-        }
-      }
-    }
-    th {
-      border-top: 1px solid #f9d5b5;
-      border-right: 1px solid #f9d5b5;
-      background-color: #fdf6e4;
-      background-image: url("img/mod-table/bg04_3.png");
-      background-repeat: repeat-x;
-    }
-    td {
-      border: 1px solid #f9d5b5;
+      border: 1px solid #46140b;
+      background-color: #ffffff;
     }
   }
 }

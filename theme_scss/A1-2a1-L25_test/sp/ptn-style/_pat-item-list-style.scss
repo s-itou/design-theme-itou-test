@@ -73,7 +73,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-list-maru-default-3 {
+@mixin deco-style-pat-item-list-maru-default-4 {
   ul {
     li {
       background-image: url("img/_pat-item/list-maru/bg_4.png");
@@ -82,7 +82,7 @@
     }
   }
 }
-@mixin deco-style-pat-item-list-maru-default-3 {
+@mixin deco-style-pat-item-list-maru-default-5 {
   ul {
     li {
       background-image: url("img/_pat-item/list-maru/bg_5.png");
@@ -91,10 +91,20 @@
     }
   }
 }
-@mixin deco-style-pat-item-list-maru-default-3 {
+@mixin deco-style-pat-item-list-maru-default-6 {
   ul {
     li {
       background-image: url("img/_pat-item/list-maru/bg_6.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+//お問い合わせボックス 2a3(オレンジの●)
+@mixin deco-style-pat-item-list-maru-default-7 {
+  ul {
+    li {
+      background-image: url("img/_pat-item/list-maru/bg_7.png");
       color: #333333;
       @include common-set-link(#333333);
     }
@@ -209,6 +219,17 @@
     }
   }
 }
+//お問い合わせボックス2c2
+@mixin deco-style-pat-item-list-check-default-4 {
+  ul {
+    li {
+      background-image: url("img/mod-ul/bg06_2.png");
+      color: #333333;
+      @include common-set-link(#333333);
+    }
+  }
+}
+
 // チェックリスト
 @mixin deco-style-pat-item-list-check-1 {
   ul {

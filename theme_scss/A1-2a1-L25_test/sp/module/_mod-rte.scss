@@ -10,6 +10,20 @@
 .mod-rte_ver2 {
   @include common-style-mod-rte;
   @include module-style-mod-rte;
+  .ex-style_#{$baseEx_01A1} &,.ex-style_#{$baseEx_02A1} & { @include deco-style01A1-mod-rte; }
+  .ex-style_#{$baseEx_01A2} &,.ex-style_#{$baseEx_02A2} & { @include deco-style01A2-mod-rte; }
+  .ex-style_#{$baseEx_01A3} &,.ex-style_#{$baseEx_02A3} & { @include deco-style01A3-mod-rte; }
+  .ex-style_#{$baseEx_01B1} &,.ex-style_#{$baseEx_02B1} & { @include deco-style01B1-mod-rte; }
+  .ex-style_#{$baseEx_01B2} &,.ex-style_#{$baseEx_02B2} & { @include deco-style01B2-mod-rte; }
+  .ex-style_#{$baseEx_01B3} &,.ex-style_#{$baseEx_02B3} & { @include deco-style01B3-mod-rte; }
+  .ex-style_#{$baseEx_01C1} &,.ex-style_#{$baseEx_02C1} & { @include deco-style01C1-mod-rte; }
+  .ex-style_#{$baseEx_01C2} &,.ex-style_#{$baseEx_02C2} & { @include deco-style01C2-mod-rte; }
+  .ex-style_#{$baseEx_01C3} &,.ex-style_#{$baseEx_02C3} & { @include deco-style01C3-mod-rte; }
+}
+
+.mod-rte-kyocho {
+  @include common-style-mod-rte;
+  @include module-style-mod-rte-kyocho;
   .ex-style_#{$baseEx_01A1} & { @include deco-style01A1-mod-rte; }
   .ex-style_#{$baseEx_01A2} & { @include deco-style01A2-mod-rte; }
   .ex-style_#{$baseEx_01A3} & { @include deco-style01A3-mod-rte; }
@@ -20,7 +34,6 @@
   .ex-style_#{$baseEx_01C2} & { @include deco-style01C2-mod-rte; }
   .ex-style_#{$baseEx_01C3} & { @include deco-style01C3-mod-rte; }
 }
-
 
 //##################################################
 //  mod-rte-koramu

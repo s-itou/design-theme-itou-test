@@ -97,6 +97,7 @@
 //##################################################
 //  mod-link-1st-side
 //  mod-link-2nd-side
+//  mod-link-pic-side
 //##################################################
 
 //////////////////////////////////////////////////
@@ -129,15 +130,17 @@
 //////////////////////////////////////////////////
 //  MODULE-STYLE
 @mixin module-style-mod-link-1st-side {}
+@mixin module-style-mod-link-2nd-side {}
+@mixin module-style-mod-link-side {}
 
 //////////////////////////////////////////////////
 //  DECORATION-STYLE
-@mixin deco-styl01A1-mod-link-1st-side {
+@mixin deco-style01A1-mod-link-1st-side {
   color: #335a93;
 }
-@mixin deco-styl01A2-mod-link-1st-side {
+@mixin deco-style01A2-mod-link-1st-side {
   color: #294470;
 }
-@mixin deco-styl01A3-mod-link-1st-side {
+@mixin deco-style01A3-mod-link-1st-side {
   color: #45320b;
 }

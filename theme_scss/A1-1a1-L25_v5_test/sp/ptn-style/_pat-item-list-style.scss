@@ -31,7 +31,7 @@
   ul {
     padding: 0;
     li {
-      margin: 2px 0 0 3.125%;
+      margin: 2px 0 0 15px;
       padding: 0 0 0 15px;
       border-bottom: none;
       background-position: left 8px;
@@ -51,7 +51,7 @@
 @mixin deco-style-pat-item-list-maru-default-1 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-maru/bg.png");
+      background-image: url("img/_pat-item/list/bg.png");
       color: #333333;
       @include common-set-link(#333333);
     }
@@ -60,7 +60,7 @@
 @mixin deco-style-pat-item-list-maru-default-2 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-maru/bg_2.png");
+      background-image: url("img/_pat-item/list/bg_2.png");
       color: #333333;
       @include common-set-link(#333333);
     }
@@ -69,16 +69,16 @@
 @mixin deco-style-pat-item-list-maru-default-3 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-maru/bg_3.png");
-      color: #333333;
-      @include common-set-link(#333333);
+      background-image: url("img/_pat-item/list/bg_3.png");
+      color: #56534e;
+      @include common-set-link(#56534e);
     }
   }
 }
 @mixin deco-style-pat-item-list-maru-default-4 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-maru/bg_4.png");
+      background-image: url("img/_pat-item/list/bg_4.png");
       color: #333333;
       @include common-set-link(#333333);
     }
@@ -87,7 +87,7 @@
 @mixin deco-style-pat-item-list-maru-default-5 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-maru/bg_5.png");
+      background-image: url("img/_pat-item/list/bg_5.png");
       color: #333333;
       @include common-set-link(#333333);
     }
@@ -96,7 +96,7 @@
 @mixin deco-style-pat-item-list-maru-default-6 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-maru/bg_6.png");
+      background-image: url("img/_pat-item/list/bg_6.png");
       color: #333333;
       @include common-set-link(#333333);
     }
@@ -141,6 +141,7 @@
     }
   }
 }
+
 // チェックリスト
 @mixin module-style-pat-item-list-check-1 {
   ul {
@@ -153,6 +154,7 @@
     }
   }
 }
+
 // チェックリスト（下線画像あり）
 @mixin module-style-pat-item-list-check-2 {
   ul {
@@ -169,6 +171,7 @@
     }
   }
 }
+
 // チェックリスト（下破線あり）
 @mixin module-style-pat-item-list-check-3 {
   ul {
@@ -190,7 +193,7 @@
 @mixin deco-style-pat-item-list-check-default-1 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-check/bg.png");
+      background-image: url("img/_pat-item/list/bg_7.png");
       color: #333333;
       @include common-set-link(#333333);
     }
@@ -199,7 +202,7 @@
 @mixin deco-style-pat-item-list-check-default-2 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-check/bg_2.png");
+      background-image: url("img/_pat-item/list/bg_8.png");
       color: #45320b;
       @include common-set-link(#45320b);
     }
@@ -208,7 +211,7 @@
 @mixin deco-style-pat-item-list-check-default-3 {
   ul {
     li {
-      background-image: url("img/_pat-item/list-check/bg_3.png");
+      background-image: url("img/_pat-item/list/bg_9.png");
       color: #45320b;
       @include common-set-link(#45320b);
     }

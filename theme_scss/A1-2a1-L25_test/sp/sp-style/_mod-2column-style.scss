@@ -30,7 +30,34 @@
 //////////////////////////////
 //  module-style
 @mixin module-style-mod-2col { }
-@mixin module-style-mod-2col-in1 { }
+@mixin module-style-mod-2col-in1 {
+  margin-top: 20px;
+  > .mod-2col-wrap {
+    .mod-2col-inner-2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+    > div:first-child[class="mod-2col-inner2"],
+    > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+      margin: 0;
+    }
+    .mod-2col-inner2 {
+      margin-top: 15px;
+      .mod-2col-inner2-2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+          > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
 @mixin module-style-mod-2col-in1-hyo { }
 @mixin module-style-mod-2col50 { }
 @mixin module-style-mod-2col50-in2 { }

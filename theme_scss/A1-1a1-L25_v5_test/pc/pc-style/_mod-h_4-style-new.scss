@@ -8,19 +8,18 @@
 // それ以外ではそもそもぶち抜きでないので、commonでよいかと
 //
 // ------------------------------
-
 @mixin block-style-ex-align {  //左右に-25pxのマージンをとっていないもの。汎用的設定
   &.ex-align-center {
-    text-align: center;
-    margin-left: auto;//align対応のためショートハンド不使用
+    text-align: center !important;
+    margin-left: auto; //align対応のためショートハンド不使用
     margin-right: auto;
   }
   &.ex-align-right {
-    text-align: right;
+    text-align: right !important;
     margin-left: auto;//align対応のためショートハンド不使用
   }
   &.ex-align-left {
-    text-align: left;
+    text-align: left !important;
     margin-right: auto;//align対応のためショートハンド不使用
   }
 }
@@ -2914,8 +2913,6 @@
 // }
 
 
-
-
 //  mod-h_4_t2 の mixin一式
 @mixin mod-h_4_t2-common-style {
   .mod-h_4_t2 {
@@ -5537,8 +5534,12 @@
 //  mod-h_4 の mixin一式
 @mixin mod-h_4-common-style {
   @include block-style-ex-align;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
-
 
 
 // @mixin mod-h_4_20-c1A {

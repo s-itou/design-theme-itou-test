@@ -2,9 +2,47 @@
 
 // --------------------------------------------------------------------------
 //
-// pat-item-waku（通常デザイン）
+// pat-item-waku
 //
 // --------------------------------------------------------------------------
+
+// -------------------------------------
+// 角丸スタイル
+// -------------------------------------
+
+// 角丸3px
+@mixin rad-type-all-3px {
+  @include border-radius(3px);
+  > div {
+    @include border-radius(3px);
+    > div {
+      @include border-radius(3px);
+    }
+  }
+}
+
+// 角丸5px
+@mixin rad-type-all-5px {
+  @include border-radius(5px);
+  > div {
+    @include border-radius(5px);
+    > div {
+      @include border-radius(5px);
+    }
+  }
+}
+
+// 上部角丸3px
+@mixin rad-type-up-3px {
+  @include border-radius(3px 3px 0 0);
+  > div {
+    @include border-radius(3px 3px 0 0);
+    > div {
+      @include border-radius(3px 3px 0 0);
+    }
+  }
+}
+
 
 // -------------------------------------
 // pat-item-waku の共通スタイル
@@ -16,7 +54,7 @@
   width: auto;
   background-position: left top;
   background-repeat: no-repeat;
-  > .mod-box-inner {
+  > div {
     padding: 0;
     background-position: left top;
     background-repeat: no-repeat;
@@ -34,6 +72,40 @@
   padding: 15px;
 }
 @mixin module-style-pat-item-waku-simple-2 { }
+
+// 上下画像
+@mixin module-style-pat-item-waku-image {
+  margin: 20px 10px 0;
+  background-repeat: repeat-x;
+  > div {
+    padding: 15px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+  }
+}
+@mixin module-style-pat-item-waku-image-2 {
+  padding: 0 0 33px 0;
+  background-position: center bottom;
+  background-size: 100% auto;
+  > div {
+    background-color: #ffffff;
+    background-position: left 2px;
+    background-repeat: no-repeat;
+   > div {
+      padding: 15px 0 0;
+      background-position: right 2px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+// 上画像
+@mixin module-style-pat-item-waku-image-2 {
+  padding: 25px 2.8125% 17px;
+  width: 100%;
+  background-position: left top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 
 // 背景画像（ペン）
 @mixin module-style-pat-item-waku-simple-bgimg {
@@ -55,40 +127,6 @@
   }
 }
 
-// 上下画像
-@mixin module-style-pat-item-waku-image {
-  margin: 20px 10px 0;
-  background-repeat: repeat-x;
-  > .mod-box-inner {
-    padding: 15px;
-    background-position: left bottom;
-    background-repeat: repeat-x;
-  }
-}
-@mixin module-style-pat-item-waku-image-2 {
-  padding: 0 0 33px 0;
-  background-position: center bottom;
-  background-size: 100% auto;
-  > .mod-box-inner, .mod-ul-inner {
-    background-color: #ffffff;
-    background-position: left 2px;
-    background-repeat: no-repeat;
-   > .mod-box-inner2, .mod-ul-inner2 {
-      padding: 15px 0 0;
-      background-position: right 2px;
-      background-repeat: no-repeat;
-    }
-  }
-}
-// 上画像
-@mixin module-style-pat-item-waku-image-2 {
-  padding: 25px 2.8125% 17px;
-  width: 100%;
-  background-position: left top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
 // 背景繰り返し
 @mixin module-style-pat-item-waku-repeat {
   margin: 20px 10px 0;
@@ -100,7 +138,7 @@
 @mixin module-style-pat-item-waku-grade {
   width: 100%;
   background-repeat: repeat-x;
-  > .mod-box-inner {
+  > div {
     padding: 15px;
   }
 }
@@ -121,17 +159,128 @@
   }
 }
 
+// 角下べベル
+@mixin module-style-pat-item-waku-bevel {
+  padding: 3px 8px 9px;
+}
+
+// 角シンプル
+@mixin module-style-pat-item-waku-kado-simple-1 {
+  padding: 9px;
+}
+@mixin module-style-pat-item-waku-kado-simple-2 {
+  padding: 0;
+  > div {
+    padding: 8px;
+  }
+}
+
+
+// -------------------------------------
+// 背景装飾スタイル
+// -------------------------------------
+
+// シンプル1px
+@mixin deco-style-pat-item-waku-simple-1px-1 {
+  border: 1px solid #539af9;
+  background-color: #ffffff;
+}
+@mixin deco-style-pat-item-waku-simple-1px-2 {
+  border: 1px solid #53bcc9;
+  background-color: #ffffff;
+}
+@mixin deco-style-pat-item-waku-simple-1px-3 {
+  border: 1px solid #ffa659;
+  background-color: #ffffff;
+}
+@mixin deco-style-pat-item-waku-simple-1px-4 {
+  border: 1px solid #314f7a;
+  background-color: #ffffff;
+}
+@mixin deco-style-pat-item-waku-simple-1px-5 {
+  border: 1px solid #3ea2b1;
+  background-color: #ffffff;
+}
+@mixin deco-style-pat-item-waku-simple-1px-6 {
+  border: 1px solid #3986b8;
+  background-color: #ffffff;
+}
+@mixin deco-style-pat-item-waku-simple-1px-7 {
+  border: 1px solid #416ca6;
+  background-color: #fffdf2;
+}
+@mixin deco-style-pat-item-waku-simple-1px-8 {
+  border: 1px solid #ffe354;
+  background-color: #fffdf2;
+}
+@mixin deco-style-pat-item-waku-simple-1px-9 {
+  border: 1px solid #519dc3;
+  background-color: #f7fcff;
+}
+
+// part-main-246
+@mixin deco-style-pat-item-waku-simple-1px-10 {
+  border: 1px solid #66c7d2;
+  background-color: #ecfdff;
+}
+@mixin deco-style-pat-item-waku-simple-1px-11 {
+  border: 1px solid #0b7d89;
+  background-color: #f8ffff;
+}
+@mixin deco-style-pat-item-waku-simple-1px-12 {
+  border: 1px solid #ffa658;
+  background-color: #fffbe2;
+}
+@mixin deco-style-pat-item-waku-simple-1px-13 {
+  border: 1px solid #2366d3;
+  background-color: #e6effa;
+}
+@mixin deco-style-pat-item-waku-simple-1px-14 {
+  border: 1px solid #418189;
+  background-color: #f5fafa;
+}
+@mixin deco-style-pat-item-waku-simple-1px-15 {
+  border: 1px solid #dedad1;
+  background-color: #fffdee;
+}
+@mixin deco-style-pat-item-waku-simple-1px-16 {
+  border: 1px solid #cccccc;
+  background-color: transparent;
+  > div {
+    border: 1px solid #ffffff;
+    background-color: #fffef6;
+  }
+}
+@mixin deco-style-pat-item-waku-simple-1px-17 {
+  border: 1px solid #f27f1b;
+  background-color: transparent;
+  > div {
+    border: 1px solid #ffffff;
+    background-color: #fefaf0;
+  }
+}
+
 
 // -------------------------------------
 // pat-item-waku の装飾スタイル
 // -------------------------------------
+
+// シンプル枠無し
+@mixin deco-style-pat-item-waku-none-bgc-white {
+  border: none;
+  background-color: #ffffff;
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+}
 
 // 背景シンプル
 @mixin deco-style-pat-item-waku-kado-simple-orange-bgc {
   border: 1px solid #ffc789;
   background-color: #fff5ec;
   background-image: none;
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
@@ -139,7 +288,7 @@
   border: 1px solid #67ced9;
   background-color: #f5fafa;
   background-image: none;
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
@@ -147,15 +296,79 @@
   border: 1px solid #ffc789;
   background-color: #fffbe2;
   background-image: none;
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
-@mixin deco-style-pat-item-waku-none-bgc-white {
-  border: none;
-  background-color: #ffffff;
+@mixin deco-style-pat-item-waku-kado-simple-blue {
+  border: 3px double #c9e0ff;
+  background-color: transparent;
   background-image: none;
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
+    background-image: none;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-simple-blue-2 {
+  border: 3px double #426ca6;
+  background-color: transparent;
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-simple-blue-3 {
+  border: 3px double #519dce;
+  background-color: transparent;
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-simple-blue-4 {
+  border: 1px dotted #c9e0ff;
+  background-color: transparent;
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-simple-yellow {
+  border: 3px double #f1d128;
+  background-color: transparent;
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-simple-yellow-2 {
+  border: 3px double #F1D128;
+  background-color: transparent;
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-simple-orange {
+  border: 3px double #FF994C;
+  background-color: transparent;
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-simple-orange-2 {
+  border: 1px dotted #f2d028;
+  background-color: transparent;
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+}
+@mixin deco-style-pat-item-waku-kado-simple-orange-3 {
+  border: 1px dotted #ffa658;
+  background-color: transparent;
+  background-image: none;
+  > div {
     background-image: none;
   }
 }
@@ -170,7 +383,6 @@
     border-top: 3px solid #284469;
   }
 }
-
 @mixin deco-style-pat-item-waku-kado-shimple-grade-2 {
   padding: 2px;
   border: 1px solid #cccccc;
@@ -190,39 +402,6 @@
   }
 }
 
-@mixin deco-style-pat-item-waku-kadomaru-simple-blue-4 {
-  border: 1px solid #2e7fec;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-green-2 {
-  border: 1px solid #66c7d2;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-orange-2 {
-  border: 1px solid #f27f1d;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-blue-5 {
-  border: 1px solid #2366d3;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-green-3 {
-  border: 1px solid #138590;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-orange-3 {
-  border: 1px solid #f37f1c;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-gray {
-  border: 1px solid #cccccc;
-  background-color: #fffef6;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-green-4 {
-  border: 1px solid #7ed1d9;
-  background-color: #f5fafa;
-}
-@mixin deco-style-pat-item-waku-kadomaru-simple-orange-4 {
-  border: 1px solid #f37f1c;
-  background-color: #fefaf0;
-}
-
-
-
 // 背景画像（ペン）
 @mixin deco-style-pat-item-waku-kado-gray-bgimg {
   border: 1px solid #cdcdcd;
@@ -239,7 +418,7 @@
   border: none;
   background-color: #d0def7;
   background-image: url("img/mod-box/_55/bg_b.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: url("img/mod-box/_55/bg02_b.png");
   }
 }
@@ -247,7 +426,7 @@
   border: none;
   background-color: #c7e9ee;
   background-image: url("img/mod-box/_55/bg_b_2.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: url("img/mod-box/_55/bg02_b_2.png");
   }
 }
@@ -255,7 +434,7 @@
   border: none;
   background-color: #fbedad;
   background-image: url("img/mod-box/_55/bg_b_3.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: url("img/mod-box/_55/bg02_b_3.png");
   }
 }
@@ -281,7 +460,7 @@
   border: 1px solid #ffc789;
   background-color: #fbf5ed;
   background-image: url("img/mod-box/_55/bg_c.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
@@ -289,7 +468,7 @@
   border: 1px solid #7ed1d9;
   background-color: #f1feff;
   background-image: url("img/mod-box/_55/bg_c_2.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
@@ -297,7 +476,7 @@
   border: 1px solid #efde8e;
   background-color: #fefbea;
   background-image: url("img/mod-box/_55/bg_c_3.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
@@ -374,6 +553,71 @@
   }
 }
 
+// 角下ベベル
+@mixin deco-style-pat-item-waku-bevel-1 {
+  @include single-box-shadow(#478483, 0, 1px, 0, 0);
+  border-bottom: 1px solid #adc7be;
+  border-right: 1px solid #dae5d9;
+  border-left: 1px solid #dae5d9;
+  background-color: #fffdee;
+}
+@mixin deco-style-pat-item-waku-bevel-2 {
+  @include single-box-shadow(#3eb2bf, 0, 1px, 0, 0);
+  border-bottom: 1px solid #a6d8df;
+  border-right: 1px solid #d3e8eb;
+  border-left: 1px solid #d3e8eb;
+  background-color: #f6f6f6;
+}
+@mixin deco-style-pat-item-waku-bevel-3 {
+  @include single-box-shadow(#f49754, 0, 1px, 0, 0);
+  border-bottom: 1px solid #facfac;
+  border-right: 1px solid #fcead4;
+  border-left: 1px solid #fcead4;
+  background-color: #fffdee;
+}
+@mixin deco-style-pat-item-waku-bevel-4 {
+  @include single-box-shadow(#718fc1, 0, 1px, 0, 0);
+  border-bottom: 1px solid #c0ccda;
+  border-right: 1px solid #e3e7e5;
+  border-left: 1px solid #e3e7e5;
+  background-color: #fffdee;
+}
+@mixin deco-style-pat-item-waku-bevel-5 {
+  @include single-box-shadow(#4798a0, 0, 1px, 0, 0);
+  border-bottom: 1px solid #a8ccd0;
+  border-right: 1px solid #d3e3e5;
+  border-left: 1px solid #d3e3e5;
+  background-color: #f6f6f6;
+}
+@mixin deco-style-pat-item-waku-bevel-6 {
+  @include single-box-shadow(#f49754, 0, 1px, 0, 0);
+  border-bottom: 1px solid #fad2b0;
+  border-right: 1px solid #fdead4;
+  border-left: 1px solid #fdead4;
+  background-color: #fffef4;
+}
+@mixin deco-style-pat-item-waku-bevel-7 {
+  @include single-box-shadow(#7190cf, 0, 1px, 0, 0);
+  border-bottom: 1px solid #c0ceea;
+  border-right: 1px solid #e3e9f5;
+  border-left: 1px solid #e3e9f5;
+  background-color: #ffffff;
+}
+@mixin deco-style-pat-item-waku-bevel-8 {
+  @include single-box-shadow(#499ea6, 0, 1px, 0, 0);
+  border-bottom: 1px solid #aed4d7;
+  border-right: 1px solid #dbeced;
+  border-left: 1px solid #dbeced;
+  background-color: #f6f6f6;
+}
+@mixin deco-style-pat-item-waku-bevel-9 {
+  @include single-box-shadow(#f49858, 0, 1px, 0, 0);
+  border-bottom: 1px solid #fad1b5;
+  border-right: 1px solid #fdeade;
+  border-left: 1px solid #fdeade;
+  background-color: #fffdee;
+}
+
 
 // --------------------------------------------------------------------------
 //
@@ -391,10 +635,10 @@
   padding: 0;
   width: 100%;
   background-position: left top;
-  > .mod-box-inner {
+  > div {
     @include border-radius(3px);
     padding: 0;
-    > .mod-box-inner2 {
+    > div {
       @include border-radius(3px);
     }
   }
@@ -408,9 +652,9 @@
 // シンプル角丸
 @mixin module-style-pat-item-waku-kadomaru-simple {
   margin: 30px auto 0 auto;
-  > .mod-box-inner {
+  > div {
     padding: 0;
-    > .mod-box-inner2 {
+    > div {
       overflow: hidden;
       padding: 1px;
     }
@@ -419,9 +663,9 @@
 @mixin module-style-pat-item-waku-kadomaru-simple-2 {
   margin: 30px auto 0 auto;
   padding: 1px 0 0 0;
-  > .mod-box-inner {
+  > div {
     padding: 0;
-    > .mod-box-inner2 {
+    > div {
       overflow: hidden;
       padding: 0;
     }
@@ -440,9 +684,9 @@
 // 太枠角丸
 @mixin module-style-pat-item-waku-kadomaru-futo {
   background-repeat: repeat;
-  > .mod-box-inner {
+  > div {
     padding: 10px;
-    > .mod-box-inner2 {
+    > div {
       padding: 11px 9px;
     }
   }
@@ -451,7 +695,7 @@
 //サイド用太枠角丸
 @mixin module-style-pat-item-waku-kadomaru-futo-2 {
   padding: 10px;
-  > .mod-box-inner {
+  > div {
     padding: 10px 10px 1px;
   }
 }
@@ -459,9 +703,9 @@
 // 装飾角丸
 @mixin module-style-pat-item-waku-kadomaru-image {
   background-repeat: repeat;
-  > .mod-box-inner {
+  > div {
     padding: 3px;
-    > .mod-box-inner2 {
+    > div {
       padding: 20px;
     }
   }
@@ -472,9 +716,9 @@
   margin: 30px auto 0 auto;
   padding: 1px 0 0 0;
   background-repeat: repeat;
-  > .mod-box-inner {
+  > div {
     padding: 0;
-    > .mod-box-inner2 {
+    > div {
       overflow: hidden;
       padding: 0;
     }
@@ -484,11 +728,18 @@
 // 角丸背景グラデーション
 @mixin module-style-pat-item-waku-kadomaru-grade {
   background-repeat: repeat-x;
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       padding: 20px;
     }
   }
+}
+
+// 角上丸
+@mixin module-style-pat-item-waku-kadomaru-up {
+  width: auto;
+  margin: 30px 0 0;
+  padding: 0 25px 30px;
 }
 
 
@@ -576,89 +827,118 @@
     background-color: #ffffff;
   }
 }
+@mixin deco-style-pat-item-waku-kadomaru-simple-blue-4 {
+  border: 1px solid #2e7fec;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-green-2 {
+  border: 1px solid #66c7d2;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-orange-2 {
+  border: 1px solid #f27f1d;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-blue-5 {
+  border: 1px solid #2366d3;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-green-3 {
+  border: 1px solid #138590;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-orange-3 {
+  border: 1px solid #f37f1c;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-gray {
+  border: 1px solid #cccccc;
+  background-color: #fffef6;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-green-4 {
+  border: 1px solid #7ed1d9;
+  background-color: #f5fafa;
+}
+@mixin deco-style-pat-item-waku-kadomaru-simple-orange-4 {
+  border: 1px solid #f37f1c;
+  background-color: #fefaf0;
+}
 
 // 太枠角丸
 @mixin deco-style-pat-item-waku-kadomaru-futo-yellow {
   border: 1px solid #dedad1;
   background-color: #fffce9;
-  > .mod-box-inner {
+  > div {
     background-color: #ffffff;
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-futo-gray {
   border: 1px solid #cbd8d9;
   background-color: #f6f6f6;
-  > .mod-box-inner {
+  > div {
     background-color: #ffffff;
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-futo-yellow-3 {
   border: 1px solid #dedad1;
   background-color: #fffef4;
-  > .mod-box-inner {
+  > div {
     background-color: #ffffff;
   }
 }
-// 太枠角丸
 @mixin deco-style-pat-item-waku-kadomaru-futo-blue {
   border: 1px solid #ade9ef;
-  > .mod-box-inner {
+  > div {
     background-color: #ecfdff;
-    > .mod-box-inner2 {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-futo-blue-3 {
   border: 1px solid #60bff0;
-  > .mod-box-inner {
+  > div {
     background-color: #ebfdff;
-    > .mod-box-inner2 {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-futo-pink {
   border: 1px solid #fd8e89;
-  > .mod-box-inner {
+  > div {
     background-color: #ffe0de;
-    > .mod-box-inner2 {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-futo-blue-4 {
   border: 1px solid #b3cff5;
-  > .mod-box-inner {
+  > div {
     background-color: #e6effa;
-    > .mod-box-inner2 {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-futo-blue-2 {
   border: 1px solid #ade9ef;
-  > .mod-box-inner {
+  > div {
     background-color: #e3f6f8;
-    > .mod-box-inner2 {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-futo-orange {
   border: 1px solid #dedad1;
-  > .mod-box-inner {
+  > div {
     background-color: #fff0e4;
-    > .mod-box-inner2 {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-futo-orange-2 {
   border: 1px solid #dedad1;
-  > .mod-box-inner {
+  > div {
     background-color: #fff6e5;
-    > .mod-box-inner2 {
+    > div {
       background-color: #ffffff;
     }
   }
@@ -668,32 +948,32 @@
 // 装飾角丸
 @mixin deco-style-pat-item-waku-kadomaru-image-blue {
   background-image: url("img/mod-box/_57/bg_c.png");
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-image-green {
   background-image: url("img/mod-box/_57/bg_c_2.png");
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-image-yellow {
   background-image: url("img/mod-box/_57/bg_c_3.png");
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       background-color: #ffffff;
     }
   }
 }
 @mixin deco-style-pat-item-waku-kadomaru-image-orange {
   background-image:  url("img/mod-box/bg08_2.png");
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       background-color: #ffffff;
     }
   }
@@ -746,7 +1026,7 @@
   border: none;
   background-color: #5a7fb0;
   background-image: url("img/mod-box/_60/bg_b.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
@@ -754,7 +1034,7 @@
   border: none;
   background-color: #3e9fae;
   background-image: url("img/mod-box/_60/bg_b_2.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
@@ -762,7 +1042,7 @@
   border: none;
   background-color: #f39340;
   background-image: url("img/mod-box/_60/bg_b_3.png");
-  > .mod-box-inner, .mod-ul-inner {
+  > div {
     background-image: none;
   }
 }
@@ -812,16 +1092,16 @@
 // ボーダー（バインダー）
 @mixin module-style-pat-item-waku-board-2 {
   margin: 30px auto 0 auto;
-  padding: 58px 0 0;
+  padding: 38px 0 0;
   width: 100%;
   background-position: left top;
-  background-size: 100% 58px;
+  background-size: 100% 38px;
   background-repeat: no-repeat;
   > div {
     margin: 0;
-    padding: 0 0 34px;
+    padding: 0 0 24px;
     background-position: left bottom;
-    background-size: 100% 34px;
+    background-size: 100% 24px;
     background-repeat: no-repeat;
     > div {
       margin: 0;
@@ -852,6 +1132,32 @@
       padding: 10px 6.25%;
       background-position: left top;
       background-size: 100% 1px;
+      background-repeat: repeat-y;
+    }
+  }
+}
+// ボード（コルク）
+@mixin module-style-pat-item-waku-board-colk {
+  margin: 30px auto 0 auto;
+  padding: 25px 0 0 0;
+  width: 100%;
+  background-position: left top;
+  background-size: 100% 25px;
+  background-repeat: no-repeat;
+  > div {
+    margin: 0;
+    padding: 0 0 20px;
+    background-image: url("img/_pat-item/waku-board/bg03_7.png");
+    background-position: left bottom;
+    background-size: 100% 24px;
+    background-repeat: no-repeat;
+    > div {
+      overflow: hidden;
+      margin: 0;
+      padding: 0 6.25% 12px;
+      background-image: url("img/_pat-item/waku-board/bg02_7.png");
+      background-position: left top;
+      background-size: 100% 100px;
       background-repeat: repeat-y;
     }
   }
@@ -957,6 +1263,16 @@
     }
   }
 }
+// ボード（コルク）
+@mixin deco-style-pat-item-waku-board-colk-1 {
+  background-image: url("img/_pat-item/waku-board/bg_7.png");
+}
+@mixin deco-style-pat-item-waku-board-colk-2 {
+  background-image: url("img/_pat-item/waku-board/bg_8.png");
+}
+@mixin deco-style-pat-item-waku-board-colk-3 {
+  background-image: url("img/_pat-item/waku-board/bg_9.png");
+}
 
 
 // --------------------------------------------------------------------------
@@ -976,11 +1292,11 @@
   background-position: left top;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  > .mod-box-inner {
+  > div {
     background-position: left bottom;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    > .mod-box-inner2 {
+    > div {
       background-position: left top;
       background-size: 100% auto;
       background-repeat: repeat-y;
@@ -995,9 +1311,9 @@
 
 // シンプル１重枠線丸形吹き出し
 @mixin module-style-pat-item-waku-fukidashi-1 {
-  > .mod-box-inner {
+  > div {
     padding: 0 0 60px;
-    > .mod-box-inner2 {
+    > div {
       padding: 0 15px 0;
     }
   }
@@ -1005,9 +1321,9 @@
 
 // 上部太線１重角形吹き出し
 @mixin module-style-pat-item-waku-fukidashi-2 {
-  > .mod-box-inner {
+  > div {
     padding: 0 0 40px;
-    > .mod-box-inner2 {
+    > div {
       padding: 0 10px 0;
     }
   }
@@ -1015,11 +1331,60 @@
 
 // 色付き２重丸形吹き出し
 @mixin module-style-pat-item-waku-fukidashi-3 {
-  > .mod-box-inner {
+  > div {
     padding: 0 0 45px;
-    > .mod-box-inner2 {
+    > div {
       padding: 0 15px 0;
     }
+  }
+}
+
+// 文章吹き出し1
+@mixin module-style-pat-item-waku-fukidashi-4 {
+  width: 100%;
+  padding: 16px 0 0;
+  background-position: left top;
+  background-size: 100% 16px;
+  background-repeat: no-repeat;
+  > div {
+    padding: 0 0 35px;
+    background-position: left bottom;
+    background-size: 100% 35px;
+    background-repeat: no-repeat;
+    > div {
+      padding: 0 6.25% 30px;
+      background-position: left top;
+      background-size: 100% 1px;
+      background-repeat: repeat-y;
+    }
+  }
+}
+
+// 文章吹き出し2
+@mixin module-style-pat-item-waku-fukidashi-5 {
+  width: 100%;
+  padding: 0 0 28px;
+  background-position: left bottom;
+  background-size: 100% 28px;
+  background-repeat: no-repeat;
+  > div {
+    background-position: left bottom;
+    background-size: 1px 521px;
+    background-repeat: repeat-x;
+    padding: 25px 4.375% 30px;
+  }
+}
+
+// 文章吹き出し3
+@mixin module-style-pat-item-waku-fukidashi-6 {
+  width: 100%;
+  padding: 0;
+  padding: 0 0 28px;
+  background-position: left bottom;
+  background-size: 100% 28px;
+  background-repeat: no-repeat;
+  > div {
+    padding: 14px 6.25% 29px;
   }
 }
 
@@ -1030,86 +1395,171 @@
 
 @mixin deco-style-pat-item-waku-fukidashi-maru-blue {
   background-image: url("img/mod-box/_59/spbg_a.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_a.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_a.png");
     }
   }
 }
 @mixin deco-style-pat-item-waku-fukidashi-maru-green {
   background-image: url("img/mod-box/_59/spbg_a_2.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_a_2.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_a_2.png");
     }
   }
 }
 @mixin deco-style-pat-item-waku-fukidashi-maru-orange {
   background-image: url("img/mod-box/_59/spbg_a_3.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_a_3.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_a_3.png");
     }
   }
 }
 @mixin deco-style-pat-item-waku-fukidashi-shikaku-gray {
   background-image: url("img/mod-box/_59/spbg_b.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_b.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_b.png");
     }
   }
 }
 @mixin deco-style-pat-item-waku-fukidashi-shikaku-green {
   background-image: url("img/mod-box/_59/spbg_b_2.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_b_2.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_b_2.png");
     }
   }
 }
 @mixin deco-style-pat-item-waku-fukidashi-shikaku-yellow {
   background-image: url("img/mod-box/_59/spbg_b_3.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_b_3.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_b_3.png");
     }
   }
 }
 @mixin deco-style-pat-item-waku-fukidashi-6kaku-orange-bgc {
   background-image: url("img/mod-box/_59/spbg_c.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_c.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_c.png");
     }
   }
 }
 @mixin deco-style-pat-item-waku-fukidashi-6kaku-grenn-bgc {
   background-image: url("img/mod-box/_59/spbg_c_2.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_c_2.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_c_2.png");
     }
   }
 }
 @mixin deco-style-pat-item-waku-fukidashi-6kaku-pink-bgc {
   background-image: url("img/mod-box/_59/spbg_c_3.png");
-  > .mod-box-inner {
+  > div {
     background-image: url("img/mod-box/_59/spbg02_c_3.png");
-    > .mod-box-inner2 {
+    > div {
       background-image: url("img/mod-box/_59/spbg03_c_3.png");
     }
   }
 }
 
+// 文章吹き出し用
+@mixin deco-style-pat-item-waku-fukidashi-1 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg03.png");
+    > div {
+      background-image: url("img/_pat-item/waku-fukidashi/bg02.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-2 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_2.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg03_2.png");
+    > div {
+      background-image: url("img/_pat-item/waku-fukidashi/bg02_2.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-3 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_3.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg03_3.png");
+    > div {
+      background-image: url("img/_pat-item/waku-fukidashi/bg02_3.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-4 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg02_4.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_4.png");
+    background-color: #eef1f9;
+    border-top: 1px solid #1d3a6f;
+    border-left: 1px solid #1d3a6f;
+    border-right: 1px solid #1d3a6f;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-5 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg02_5.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_5.png");
+    background-color: #f0ffff;
+    border-top: 1px solid #b9e4ea;
+    border-left: 1px solid #b9e4ea;
+    border-right: 1px solid #b9e4ea;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-6 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg02_6.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_6.png");
+    background-color: #fffabb;
+    border-top: 1px solid #ffc789;
+    border-left: 1px solid #ffc789;
+    border-right: 1px solid #ffc789;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-7 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_7.png");
+  > div {
+    background-color: #ffffff;
+    border-top: 1px solid #ffc789;
+    border-left: 1px solid #ffc789;
+    border-right: 1px solid #ffc789;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-8 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_8.png");
+  > div {
+    background-color: #ffffff;
+    border-top: 1px solid #f2d028;
+    border-left: 1px solid #f2d028;
+    border-right: 1px solid #f2d028;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-9 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_9.png");
+  > div {
+    background-color: #ffffff;
+    border-top: 1px solid #d5e5f2;
+    border-left: 1px solid #d5e5f2;
+    border-right: 1px solid #d5e5f2;
+  }
+}
 
 
 // --------------------------------------------------------------------------
@@ -1127,7 +1577,7 @@
   padding: 0;
   background-position: 5px top;
   background-repeat: repeat-y;
-  > .mod-box-inner {
+  > div {
     padding: 0;
     background-position: 5px bottom;
     background-repeat: no-repeat;
@@ -1149,8 +1599,8 @@
 // -------------------------------------
 
 @mixin deco-style-pat-item-waku-pic-a1 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #e4f5f7;
@@ -1159,8 +1609,8 @@
   }
 }
 @mixin deco-style-pat-item-waku-pic-a2 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #cad7eb;
@@ -1169,8 +1619,8 @@
   }
 }
 @mixin deco-style-pat-item-waku-pic-a3 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #fee4e3;
@@ -1179,8 +1629,8 @@
   }
 }
 @mixin deco-style-pat-item-waku-pic-b1 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #eef3fa;
@@ -1189,8 +1639,8 @@
   }
 }
 @mixin deco-style-pat-item-waku-pic-b2 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #eaf7f9;
@@ -1199,8 +1649,8 @@
   }
 }
 @mixin deco-style-pat-item-waku-pic-b3 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #fdf4dd;
@@ -1209,8 +1659,8 @@
   }
 }
 @mixin deco-style-pat-item-waku-pic-c1 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #f7eadb;
@@ -1219,8 +1669,8 @@
   }
 }
 @mixin deco-style-pat-item-waku-pic-c2 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #eff4fb;
@@ -1229,8 +1679,8 @@
   }
 }
 @mixin deco-style-pat-item-waku-pic-c3 {
-  > .mod-box-inner {
-    > .mod-box-inner2 {
+  > div {
+    > div {
       .mod-h_4-inner2,
       .mod-h_4-inner3 .mod-h {
         background-color: #eff5fa;

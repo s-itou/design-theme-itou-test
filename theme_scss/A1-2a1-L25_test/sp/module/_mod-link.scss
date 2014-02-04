@@ -46,59 +46,77 @@
   @include common-style-mod-link;
   @include module-style-mod-link-pic;
   //decoはmod-linkをinclude
-  .ex-style_#{$baseEx_01A1} & {
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_#{$baseEx_01A2} & {
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_#{$baseEx_01A3} & {
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
     @include deco-style01A3-mod-link;
   }
-  .ex-style_#{$baseEx_01B1} & {
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_#{$baseEx_01B2} & {
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_#{$baseEx_01B3} & {
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
     @include deco-style01A3-mod-link;
   }
-  .ex-style_#{$baseEx_01C1} & {
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_#{$baseEx_01C2} & {
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_#{$baseEx_01C3} & {
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
     @include deco-style01A3-mod-link;
   }
   //　↓　aがdivの外についた時の対応
-  .ex-style_#{$baseEx_01A1} a & {
+  .ex-style_#{$baseEx_01A1} a &,
+  .ex-style_#{$baseEx_02A1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_#{$baseEx_01A2} a & {
+  .ex-style_#{$baseEx_01A2} a &,
+  .ex-style_#{$baseEx_02A2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_#{$baseEx_01A3} a & {
+  .ex-style_#{$baseEx_01A3} a &,
+  .ex-style_#{$baseEx_02A3} a & {
     @include deco-style01A3-mod-link-a;
   }
-  .ex-style_#{$baseEx_01B1} a & {
+  .ex-style_#{$baseEx_01B1} a &,
+  .ex-style_#{$baseEx_02B1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_#{$baseEx_01B2} a & {
+  .ex-style_#{$baseEx_01B2} a &,
+  .ex-style_#{$baseEx_02B2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_#{$baseEx_01B3} a & {
+  .ex-style_#{$baseEx_01B3} a &,
+  .ex-style_#{$baseEx_02B3} a & {
     @include deco-style01A3-mod-link-a;
   }
-  .ex-style_#{$baseEx_01C1} a & {
+  .ex-style_#{$baseEx_01C1} a &,
+  .ex-style_#{$baseEx_02C1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_#{$baseEx_01C2} a & {
+  .ex-style_#{$baseEx_01C2} a &,
+  .ex-style_#{$baseEx_02C2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_#{$baseEx_01C3} a & {
+  .ex-style_#{$baseEx_01C3} a &,
+  .ex-style_#{$baseEx_02C3} a & {
     @include deco-style01A3-mod-link-a;
   }
 }
@@ -108,6 +126,90 @@
 //  mod-link-1st
 //##################################################
 .mod-link-1st {
+  @include common-style-mod-link;
+  @include module-style-mod-link-1st;
+  //decoはmod-linkをinclude
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style01A3-mod-link;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01A1-mod-link;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01A2-mod-link;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style01A3-mod-link;
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_#{$baseEx_01A1} a &,
+  .ex-style_#{$baseEx_02A1} a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_#{$baseEx_01A2} a &,
+  .ex-style_#{$baseEx_02A2} a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_#{$baseEx_01A3} a &,
+  .ex-style_#{$baseEx_02A3} a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_#{$baseEx_01B1} a &,
+  .ex-style_#{$baseEx_02B1} a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_#{$baseEx_01B2} a &,
+  .ex-style_#{$baseEx_02B2} a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_#{$baseEx_01B3} a &,
+  .ex-style_#{$baseEx_02B3} a & {
+    @include deco-style01A3-mod-link-a;
+  }
+  .ex-style_#{$baseEx_01C1} a &,
+  .ex-style_#{$baseEx_02C1} a & {
+    @include deco-style01A1-mod-link-a;
+  }
+  .ex-style_#{$baseEx_01C2} a &,
+  .ex-style_#{$baseEx_02C2} a & {
+    @include deco-style01A2-mod-link-a;
+  }
+  .ex-style_#{$baseEx_01C3} a &,
+  .ex-style_#{$baseEx_02C3} a & {
+    @include deco-style01A3-mod-link-a;
+  }
+}
+
+
+
+//##################################################
+//  mod-link-hyo
+//##################################################
+.mod-link-hyo {
   @include common-style-mod-link;
   @include module-style-mod-link-1st;
   //decoはmod-linkをinclude
@@ -176,62 +278,81 @@
   @include common-style-mod-link;
   @include module-style-mod-link-2nd;
   //decoはmod-linkをinclude
-  .ex-style_#{$baseEx_01A1} & {
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_#{$baseEx_01A2} & {
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_#{$baseEx_01A3} & {
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
     @include deco-style01A3-mod-link;
   }
-  .ex-style_#{$baseEx_01B1} & {
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_#{$baseEx_01B2} & {
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_#{$baseEx_01B3} & {
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
     @include deco-style01A3-mod-link;
   }
-  .ex-style_#{$baseEx_01C1} & {
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_#{$baseEx_01C2} & {
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_#{$baseEx_01C3} & {
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
     @include deco-style01A3-mod-link;
   }
   //　↓　aがdivの外についた時の対応
-  .ex-style_#{$baseEx_01A1} a & {
+  .ex-style_#{$baseEx_01A1} a &,
+  .ex-style_#{$baseEx_02A1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_#{$baseEx_01A2} a & {
+  .ex-style_#{$baseEx_01A2} a &,
+  .ex-style_#{$baseEx_02A2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_#{$baseEx_01A3} a & {
+  .ex-style_#{$baseEx_01A3} a &,
+  .ex-style_#{$baseEx_02A3} a & {
     @include deco-style01A3-mod-link-a;
   }
-  .ex-style_#{$baseEx_01B1} a & {
+  .ex-style_#{$baseEx_01B1} a &,
+  .ex-style_#{$baseEx_02B1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_#{$baseEx_01B2} a & {
+  .ex-style_#{$baseEx_01B2} a &,
+  .ex-style_#{$baseEx_02B2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_#{$baseEx_01B3} a & {
+  .ex-style_#{$baseEx_01B3} a &,
+  .ex-style_#{$baseEx_02B3} a & {
     @include deco-style01A3-mod-link-a;
   }
-  .ex-style_#{$baseEx_01C1} a & {
+  .ex-style_#{$baseEx_01C1} a &,
+  .ex-style_#{$baseEx_02C1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_#{$baseEx_01C2} a & {
+  .ex-style_#{$baseEx_01C2} a &,
+  .ex-style_#{$baseEx_02C2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_#{$baseEx_01C3} a & {
+  .ex-style_#{$baseEx_01C3} a &,
+  .ex-style_#{$baseEx_02C3} a & {
     @include deco-style01A3-mod-link-a;
   }
 }
+
 
 
 //##################################################
@@ -272,7 +393,7 @@
 
 .mod-link-2nd-side {
   @include common-style-mod-link-side;
-  @include module-style-mod-link-1st-side;
+  @include module-style-mod-link-2nd-side;
   .ex-style_#{$baseEx_01A1} & {
     @include deco-style01A1-mod-link-1st-side;
   }
@@ -302,6 +423,46 @@
   }
 }
 
+
+//##################################################
+//   mod-link-side,
+//   mod-link-list-side
+//   mod-link-pic-side
+//##################################################
+.mod-link-side,
+.mod-link-list-side,
+.mod-link-pic-side {
+  @include common-style-mod-link-side;
+  @include module-style-mod-link-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B1} a & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B2} a & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B3} a & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C1} a & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C2} a & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C3} a & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+}
+
 //##################################################
 //  mod-link-list
 //##################################################
@@ -309,59 +470,77 @@
   @include common-style-mod-link;
   @include module-style-mod-link-list;
   //decoはmod-linkをinclude
-  .ex-style_01A1 & {
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_01A2 & {
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_01A3 & {
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
     @include deco-style01A3-mod-link;
   }
-  .ex-style_01B1 & {
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_01B2 & {
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_01B3 & {
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
     @include deco-style01A3-mod-link;
   }
-  .ex-style_01C1 & {
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
     @include deco-style01A1-mod-link;
   }
-  .ex-style_01C2 & {
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
     @include deco-style01A2-mod-link;
   }
-  .ex-style_01C3 & {
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
     @include deco-style01A3-mod-link;
   }
   //　↓　aがdivの外についた時の対応
-  .ex-style_01A1 a & {
+  .ex-style_#{$baseEx_01A1} a &,
+  .ex-style_#{$baseEx_02A1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_01A2 a & {
+  .ex-style_#{$baseEx_01A2} a &,
+  .ex-style_#{$baseEx_02A2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_01A3 a & {
+  .ex-style_#{$baseEx_01A3} a &,
+  .ex-style_#{$baseEx_02A3} a & {
     @include deco-style01A3-mod-link-a;
   }
-  .ex-style_01B1 a & {
+  .ex-style_#{$baseEx_01B1} a &,
+  .ex-style_#{$baseEx_02B1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_01B2 a & {
+  .ex-style_#{$baseEx_01B2} a &,
+  .ex-style_#{$baseEx_02B2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_01B3 a & {
+  .ex-style_#{$baseEx_01B3} a &,
+  .ex-style_#{$baseEx_02B3} a & {
     @include deco-style01A3-mod-link-a;
   }
-  .ex-style_01C1 a & {
+  .ex-style_#{$baseEx_01C1} a &,
+  .ex-style_#{$baseEx_02C1} a & {
     @include deco-style01A1-mod-link-a;
   }
-  .ex-style_01C2 a & {
+  .ex-style_#{$baseEx_01C2} a &,
+  .ex-style_#{$baseEx_02C2} a & {
     @include deco-style01A2-mod-link-a;
   }
-  .ex-style_01C3 a & {
+  .ex-style_#{$baseEx_01C3} a &,
+  .ex-style_#{$baseEx_02C3} a & {
     @include deco-style01A3-mod-link-a;
   }
 }

@@ -48,6 +48,19 @@
   .mod-bnr_ver2 {
     margin-top: $fontSizeM !important; //ex-alignを上書きしないため
   }
+  .mod-2col50 {
+    margin: 10px 0 0 0;
+    .mod-2col-inner2 {
+      margin: 10px 0 0 0;
+    }
+  }
+  .mod-set-step {
+    div:first-child {
+      .mod-2col50 {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
 }
 
 @mixin module-style-mod-set-design-2col {
@@ -288,6 +301,7 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     @include border-radius(0px);
     padding: 0;
     border: none;
@@ -301,11 +315,6 @@
       color: #333333;
       list-style: none;
       background-size: auto;
-    }
-  }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
     }
   }
 }
@@ -323,6 +332,7 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     @include border-radius(0px);
     padding: 0;
     border: none;
@@ -339,9 +349,7 @@
     }
   }
   .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
-    }
+    background-image: url("img/_mod/set-design3/bnr/bg_2.png");
   }
 }
 @mixin deco-style01C3-mod-set-design3 {
@@ -358,6 +366,7 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     @include border-radius(0px);
     padding: 0;
     border: none;
@@ -371,11 +380,6 @@
       color: #333333;
       list-style: none;
       background-size: auto;
-    }
-  }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
     }
   }
 }
@@ -570,6 +574,7 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     @include border-radius(0px);
     padding: 0;
     border: none;
@@ -585,11 +590,6 @@
       background-size: auto;
     }
   }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
-    }
-  }
 }
 @mixin deco-style01C2-mod-set-design-2col {
   .mod-box_ver2 {
@@ -602,6 +602,7 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     @include border-radius(0px);
     padding: 0;
     border: none;
@@ -618,9 +619,7 @@
     }
   }
   .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
-    }
+    background-image: url("img/_mod/set-design3/bnr/bg_2.png");
   }
 }
 @mixin deco-style01C3-mod-set-design-2col {
@@ -634,6 +633,7 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     @include border-radius(0px);
     padding: 0;
     border: none;
@@ -647,11 +647,6 @@
       color: #333333;
       list-style: none;
       background-size: auto;
-    }
-  }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
     }
   }
 }
@@ -714,7 +709,20 @@
     }
   }
 }
-
+@mixin module-style-mod-set-design4-4 {
+}
+@mixin module-style-mod-set-design4-5 {
+}
+@mixin module-style-mod-set-design4-6 {
+  .mod-ul_ver2 {
+    padding: 5px 10px;
+    ul {
+      li {
+        margin: 2px 0 0 5px;
+      }
+    }
+  }
+}
 // -------------------------------------
 // deco-style
 // -------------------------------------
@@ -736,4 +744,35 @@
 }
 @mixin deco-style-mod-set-design4-9 {
 }
-
+@mixin deco-style-mod-set-design4-10 {
+}
+@mixin deco-style-mod-set-design4-11 {
+}
+@mixin deco-style-mod-set-design4-12 {
+}
+@mixin deco-style-mod-set-design4-13 {
+}
+@mixin deco-style-mod-set-design4-14 {
+}
+@mixin deco-style-mod-set-design4-15 {
+}
+@mixin deco-style-mod-set-design4-16 {
+}
+@mixin deco-style-mod-set-design4-17 {
+  .mod-h_5_pic_top, .mod-h_5_pic_bottom, .mod-h_5_list_top {
+    .mod-h {
+      color: #333333;
+    }
+  }
+}
+@mixin deco-style-mod-set-design4-18 {
+  .mod-ul_ver2 {
+    border: 1px solid #d1c9a4;
+    background-color: #fffce9;
+    ul {
+      li {
+        background-image: url("img/mod-ul/bg06.png");
+      }
+    }
+  }
+}

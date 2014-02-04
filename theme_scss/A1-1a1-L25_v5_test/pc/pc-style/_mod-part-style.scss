@@ -6,6 +6,7 @@
   margin-right: auto;
   }
 
+
 //部品が最上部来た時の設定 メインエリア
 .ex-first-part > .mod-box-inner {
   > .mod-box-inner2 {
@@ -37,7 +38,9 @@
   // > div > div > div > .ex-first-child > .ex-first-child { //単体のバナーとリンク部品
   //   margin-top: 0 !important;
   // }
+  //このまま記述すると既存に影響が出る。何かしらの指定が必要。部品名？
 }
+
 
 
 //部品が最上部来た時の設定 サイドエリア
@@ -47,15 +50,20 @@
   // }
   // > div > .ex-first-child a > .ex-first-child {
   //   margin-top: 0 !important;
+  //このまま記述すると既存に影響が出る。何かしらの指定が必要。部品名？
   // }
   > .mod-box-inner2 {
     > .ex-first-child {
       > .ex-first-child {
         > .ex-first-child {
           margin-top: 0 !important;
+          > .ex-first-child {
+            margin-top: 0 !important;
+          }
         }
       }
     }
   }
 }
+
 

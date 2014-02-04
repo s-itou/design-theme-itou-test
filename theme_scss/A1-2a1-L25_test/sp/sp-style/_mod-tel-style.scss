@@ -20,24 +20,25 @@
 //##################################################
 /////////////////////////////////////////////////
 //  COMMON-STYLE
-@mixin common-style-mod-tel-side {}
+@mixin common-style-mod-tel-side { }
 
 //////////////////////////////
 //  module-style
 @mixin module-style-mod-tel-g-side {
   @include border-radius();
-  border: 1px solid #cccccc;
-  width: 100%;
-  margin: 10px auto 0;
-  text-align:center;
-  position: relative;
-  height: 60px;
-  padding: 2px 5px 8px;
   @include background-image(linear-gradient(top, #fff, #eee));
+  position: relative;
+  margin: 10px auto 0;
+  padding: 2px 5px 8px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #cccccc;
+  text-align:center;
   .mod-tel-inner {
-    font-size: 12px;
-    word-break: break-all;
     padding: 4px 0 0 0;
+    color: #333333;
+    word-break: break-all;
+    font-size: 12px;
   }
   > p:first-child.mod-tel-inner2 {
     position: relative;
@@ -50,11 +51,11 @@
   }
   .mod-tel-inner2 {
     margin-top: 3px;
-    font-weight: normal;
-    word-break: break-all;
-    line-height: 1.0;
-    font-size: 22px;
     color: #ff0000;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.0;
   }
 }
 
@@ -69,19 +70,20 @@
 //  module-style
 @mixin module-style-mod-tel-ig-side {
   @include border-radius();
-  border: 1px solid #cccccc;
-  width: 100%;
+  position: relative;
   margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
-  text-align:center;
-  position: relative;
   padding: 2px 5px 8px 35px;
+  width: 100%;
   height: 60px;
+  border: 1px solid #cccccc;
+  text-align:center;
   .mod-tel-inner {
-    font-size: 12px;
-    word-break: break-all;
     padding: 4px 0 0 0;
+    color: #333333;
+    word-break: break-all;
+    font-size: 12px;
   }
   > p:first-child.mod-tel-inner2 {
     position: relative;
@@ -95,13 +97,13 @@
   .mod-tel-inner2 {
     margin-top: 3px;
     margin-right: 0;
-    margin-left: 0;
     margin-bottom: 0;
-    font-weight: normal;
-    word-break: break-all;
-    line-height: 1.0;
-    font-size: 22px;
+    margin-left: 0;
     color: #ff0000;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.0;
   }
 }
 
@@ -119,3 +121,128 @@
   @include tel-button("mod-tel/spbg_3.png", 10px, 15px);
   background-size: 31px 32px, 100%;
 }
+
+
+
+//##################################################
+//  mod-tel-iig
+//##################################################
+
+//////////////////////////////
+//  common-style
+@mixin common-style-mod-tel-iig { };
+
+//////////////////////////////
+//  module-style
+@mixin module-style-mod-tel-iig {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 10px 0 0 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align:center;
+  position: relative;
+  padding: 5px 0 0 30px;
+  height: 60px;
+  @include tel-button2();
+  text-align: center;
+  i {
+    width: 31px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+  }
+  .mod-icon_ftel {
+    height: 25px;
+    top: 20px;
+    left: 10px;
+    background-size: 31px 25px;
+    background-image: url("img/mod-ftel/spbg02.png");
+    background-position: left top;
+  }
+  .mod-icon_tel {
+    height: 32px;
+    top: 15px;
+    left: 10px;
+    background-size: 31px 32px;
+    background-position: left top;
+  }
+  .mod-tel-inner {
+    display: inline-block;
+    > p:first-child.mod-tel-inner-3 {
+      position: relative;
+      top: 10px;
+      margin-top: 3px;
+    }
+    > p[data-cms-switchable="false"] + p {
+      position: relative;
+      top: 10px;
+    }
+  }
+  .mod-tel-inner-2 {
+    font-size: 12px;
+    word-break: break-all;
+  }
+  .mod-tel-inner-3 {
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    word-break: break-all;
+    line-height: 1.0;
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+//////////////////////////////
+//  deco-style
+@mixin deco-style01A1-mod-tel-iig{
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_a.png");
+
+  }
+}
+@mixin deco-style01A2-mod-tel-iig {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_a_2.png");
+  }
+}
+@mixin deco-style01A3-mod-tel-iig {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_a_3.png");
+  }
+}
+@mixin deco-style01B1-mod-tel-iig {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_b.png");
+  }
+}
+@mixin deco-style01B2-mod-tel-iig {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_b_2.png");
+  }
+}
+@mixin deco-style01B3-mod-tel-iig {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_b_3.png");
+  }
+}
+@mixin deco-style01C1-mod-tel-iig {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_c.png");
+  }
+}
+@mixin deco-style01C2-mod-tel-iig {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_c_2.png");
+  }
+}
+@mixin deco-style01C3-mod-tel-iig {
+  .mod-icon_tel {
+    background-image: url("img/mod-tel/_29/spbg_c_3.png");
+  }
+}
+

@@ -17,6 +17,12 @@
   text-align: center;
 }
 
+@mixin common-style-pat-item-arrow-for-4col {
+  margin-top: 10px !important;
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
 
 // -------------------------------------
 //  pat-item-arrow の共通デザイン
@@ -30,7 +36,14 @@
   margin-right: -24px !important;
   padding-right: 24px;
 }
-
+@mixin module-style-pat-item-arrow-1-for-4col {
+  margin-right: -22px !important;
+  padding-right: 22px;
+}
+//@mixin module-style-pat-item-arrow-2 {
+//  margin-right: -22px !important;
+//  padding-right: 22px;
+//}
 // -------------------------------------
 // pat-item-arrow の装飾スタイル
 // -------------------------------------

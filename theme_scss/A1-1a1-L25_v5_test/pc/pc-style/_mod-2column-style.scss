@@ -74,6 +74,14 @@
     width: 475px;
   }
 }
+
+@mixin deco-style01A1-mod-2col50 {
+  .mod-2col-inner, .mod-2col-inner2 {
+    //width: ;
+  }
+}
+
+
 @mixin module-style-mod-2col-side {
   margin: 10px 0 0 0;
   > .mod-2col-inner {
@@ -105,6 +113,10 @@
     }
   }
 }
+
+
+
+
 
 
 //＊＊＊＊＊＊＊＊＊＊＊＊
@@ -183,7 +195,7 @@
   .ex-imgFloat & {
     > .mod-2col-wrap {
       > .mod-2col-inner {
-        margin: 0 0 12px 20px;
+        margin: 0 20px 12px 20px;
       }
       > .mod-2col-inner2 {
         overflow: visible;

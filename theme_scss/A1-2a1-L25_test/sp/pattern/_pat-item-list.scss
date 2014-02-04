@@ -38,17 +38,23 @@
 @mixin pat-item-list-maru-default-4 {
   @include common-style-pat-item-list-maru;
   @include module-style-pat-item-list-maru-default;
-  @include deco-style-pat-item-list-maru-default-3;
+  @include deco-style-pat-item-list-maru-default-4;
 }
 @mixin pat-item-list-maru-default-5 {
   @include common-style-pat-item-list-maru;
   @include module-style-pat-item-list-maru-default;
-  @include deco-style-pat-item-list-maru-default-3;
+  @include deco-style-pat-item-list-maru-default-5;
 }
 @mixin pat-item-list-maru-default-6 {
   @include common-style-pat-item-list-maru;
   @include module-style-pat-item-list-maru-default;
-  @include deco-style-pat-item-list-maru-default-3;
+  @include deco-style-pat-item-list-maru-default-6;
+}
+//お問い合わせボックス 2a3
+@mixin pat-item-list-maru-default-7 {
+  @include common-style-pat-item-list-maru;
+  @include module-style-pat-item-list-maru-default;
+  @include deco-style-pat-item-list-maru-default-7;
 }
 
 // チェックリスト（デフォルト）
@@ -66,6 +72,11 @@
   @include common-style-pat-item-list-check;
   @include module-style-pat-item-list-check-default;
   @include deco-style-pat-item-list-check-default-3;
+}
+@mixin pat-item-list-check-default-4 {
+  @include common-style-pat-item-list-check;
+  @include module-style-pat-item-list-check-default;
+  @include deco-style-pat-item-list-check-default-4;
 }
 
 // チェックリスト

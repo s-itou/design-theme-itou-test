@@ -7,7 +7,11 @@
 //
 //   mod-box3を元にしたメイン用の部品モジュール
 // **************************************************
-
+.area-main {
+  div[class*="mod-part"] {
+  @extend %common-style-mod-part;
+  }
+}
 
 .mod-part-bnr-x2,
 .mod-part-bnr-x3,

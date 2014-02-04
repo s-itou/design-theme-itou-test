@@ -1,28 +1,48 @@
 @charset "UTF-8";
 
+//旧方式のコピーのため要改修
+
 //##################################################
 //  mod-text
 //##################################################
 
 //////////////////////////////////////////////////
-//  common-style
+//  COMMON-STYLE
 @mixin common-style-mod-text {
   margin-top: 10px !important;
   text-align: left;
   font-size: $fontSizeS + 1;
-  line-height: 1.6;
   a {
     text-decoration: none;
+  }
+  h1 span {
+    font-size:20px !important;
+  }
+  h2 span {
+    font-size:20px !important;
+  }
+  h3 span {
+    font-size:18px !important;
+  }
+  h4 span {
+    font-size:16px !important;
+  }
+  h5 span {
+    font-size:16px !important;
+  }
+  p span {
+    font-size:14px !important;
   }
   img {
     max-width: 100%;
   }
 }
 
-
 //////////////////////////////////////////////////
-//  module-style
-@mixin module-style-mod-text-pic {  //旧方式のコピーのため要改修
+//  MODULE-STYLE
+@mixin module-style-mod-text{
+}
+@mixin module-style-mod-text-pic{
   text-align: center;
 }
 @mixin module-style-mod-text-footer {
@@ -36,124 +56,106 @@
   text-align: center;
   font-size: $fontSizeL;
 }
-
-
 //////////////////////////////////////////////////
-//  deco-style
-@mixin deco-style01A1-mod-text-pic {
+//  DECORATION-STYLE
+
+//mod-text_ver2
+@mixin deco-style01A1-mod-text {
   color: #333333;
 }
-@mixin deco-style01A2-mod-text-pic {
+@mixin deco-style01A2-mod-text {
   color: #333333;
 }
-@mixin deco-style01A3-mod-text-pic {
-  color: #56534e;
-}
-@mixin deco-style01B1-mod-text-pic {
+@mixin deco-style01A3-mod-text {
   color: #333333;
 }
-@mixin deco-style01B2-mod-text-pic {
+@mixin deco-style01B1-mod-text {
   color: #333333;
 }
-@mixin deco-style01B3-mod-text-pic {
-  color: #45320b;
-}
-@mixin deco-style01C1-mod-text-pic {
+@mixin deco-style01B2-mod-text {
   color: #333333;
 }
-@mixin deco-style01C2-mod-text-pic {
+@mixin deco-style01B3-mod-text {
   color: #333333;
 }
-@mixin deco-style01C3-mod-text-pic {
-  color: #45320b;
+@mixin deco-style01C1-mod-text {
+  color: #333333;
+}
+@mixin deco-style01C2-mod-text {
+  color: #333333;
+}
+@mixin deco-style01C3-mod-text {
+  color: #333333;
 }
 
-@mixin deco-style01A1-mod-text-header {
+
+
+@mixin deco-style01A1-mod-text-footer {
   color: #333333;
 }
-@mixin deco-style01A2-mod-text-header {
+@mixin deco-style01A2-mod-text-footer {
   color: #333333;
 }
-@mixin deco-style01A3-mod-text-header {
+@mixin deco-style01A3-mod-text-footer {
   color: #333333;
 }
-@mixin deco-style01B1-mod-text-header {
+@mixin deco-style01B1-mod-text-footer {
   color: #ffffff;
 }
-@mixin deco-style01B2-mod-text-header {
+@mixin deco-style01B2-mod-text-footer {
   color: #ffffff;
 }
-@mixin deco-style01B3-mod-text-header {
+@mixin deco-style01B3-mod-text-footer {
   color: #ffffff;
 }
-@mixin deco-style01C1-mod-text-header {
+@mixin deco-style01C1-mod-text-footer {
   color: #333333;
 }
-@mixin deco-style01C2-mod-text-header {
+@mixin deco-style01C2-mod-text-footer {
   color: #333333;
 }
-@mixin deco-style01C3-mod-text-header {
+@mixin deco-style01C3-mod-text-footer {
   color: #333333;
 }
 
-
-//##################################################
-//  mod-text-kyocho-side
-//##################################################
-//////////////////////////////////////////////////
-//  common-style
-@mixin common-style-mod-text-kyocho-side {}
-
-//////////////////////////////////////////////////
-//  module-style
-@mixin module-style-mod-text-kyocho-side {
-  margin-top: 10px !important;
-  font-size: $sideFontSizeL - 1;
-  font-weight: bold;
-  h1 span {
-    font-size:20px !important;
-  }
-  h2 span {
-    font-size:20px !important;
-  }
-  h3 span {
-    font-size:18px !important;
-  }
-  h4 span {
-    font-size:16px !important;
-  }
-  h5 span {
-    font-size:16px !important;
-  }
-  p span {
-    font-size:14px !important;
-  }
-  img {
-    max-width: 100%;
-  }
+@mixin deco-style01A1-mod-text-kyocho-footer {
+  color: #333333;
 }
-
-//////////////////////////////////////////////////
-//  DECORATION-style
-@mixin deco-style01A1-mod-text-kyocho-side {
-  color: #010911;
+@mixin deco-style01A2-mod-text-kyocho-footer {
+  color: #333333;
 }
-@mixin deco-style01A2-mod-text-kyocho-side {
-  color: #46140b;
+@mixin deco-style01A3-mod-text-kyocho-footer {
+  color: #333333;
+}
+@mixin deco-style01B1-mod-text-kyocho-footer {
+  color: #ffffff;
+}
+@mixin deco-style01B2-mod-text-kyocho-footer {
+  color: #ffffff;
+}
+@mixin deco-style01B3-mod-text-kyocho-footer {
+  color: #ffffff;
+}
+@mixin deco-style01C1-mod-text-kyocho-footer {
+  color: #333333;
+}
+@mixin deco-style01C2-mod-text-kyocho-footer {
+  color: #333333;
+}
+@mixin deco-style01C3-mod-text-kyocho-footer {
+  color: #333333;
 }
 
 
 //##################################################
 //  mod-text-side
 //##################################################
+
 //////////////////////////////////////////////////
-//  common-style
+//  COMMON-STYLE
 @mixin common-style-mod-text-side {
-  font-size: $fontSizeS + 1;
   margin-top: 10px !important;
-  a {
-    text-decoration: none;
-  }
+  font-size: $sideFontSizeM;
   h1 span {
     font-size:20px !important;
   }
@@ -178,6 +180,47 @@
 }
 
 //////////////////////////////////////////////////
-//  module-style
-@mixin module-style-mod-text-side {}
+//  MODULE-STYLE
+@mixin module-style-mod-text-side {
+  .mod-body & {
+    font-size: $sideFontSizeM;
+    a {
+      text-decoration: none;
+    }
+  }
+}
 
+@mixin module-style-mod-text-pic-side {
+  .mod-body & {
+    text-align: center;
+    font-size: $sideFontSizeM;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+//##################################################
+//  mod-text-kyocho-side
+//##################################################
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-text-kyocho-side {
+  .mod-body & {
+    font-size: $sideFontSizeL - 1;
+    font-weight: bold;
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-style
+@mixin deco-style01A1-mod-text-kyocho-pic {
+  color: #010911;
+}
+@mixin deco-style01A2-mod-text-kyocho-pic {
+  color: #46140b;
+}

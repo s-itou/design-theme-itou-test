@@ -217,6 +217,71 @@
 }
 
 
+
+.mod-topicpath {
+  @include common-style-mod-topicpath;
+  @include module-style-mod-topicpath;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-topicpath;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C3-mod-topicpath;
+  }
+  .ex-style_02A1 & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_02A2 & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_02A3 & {
+    @include deco-style02A3-mod-topicpath;
+  }
+  .ex-style_02B1 & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_02B2 & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_02B3 & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_02C1 & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_02C2 & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_02C3 & {
+    @include deco-style02C3-mod-topicpath;
+  }
+}
+
+
+
+
+
+
 //旧方式とのconflict解除のための暫定コメントアウト(解消後は、コメントイン)
 // //旧 mod-sidemenu-box
 // .mod-side-menu {

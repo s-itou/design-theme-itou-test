@@ -39,13 +39,8 @@
     }
   }
   .mod-bnr-footer {
-    position: static !important;
-    bottom: auto;
+    @extend %inlineBlock;
     margin: 10px 0 0;
-    min-width: 150px;
-    .mod-bnr-inner {
-      padding: 5px 10px 5px 25px;
-    }
   }
 }
 

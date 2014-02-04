@@ -2,10 +2,11 @@
 @import "../pc-style/mod-4column-style";
 
 
-// .mod-4col_ver2 { //1重の4col(未使用)
-//   @include common-style-mod-4col;
-//   @include module-style-mod-4col;
-//   @extend %common-style-mod-rte-for-3col;
-//   @extend %common-style-mod-rte-koramu-for-3col;
-// }
+ .mod-4col_ver2,.mod-4col-in2-inset { //1重の4col(未使用)
+   @include common-style-mod-4col;
+   @include module-style-mod-4col;
+   @extend %common-style-mod-rte-for-3col;
+   @extend %common-style-mod-rte-koramu-for-3col;
+   @extend %common-style-mod-bnr-for-4col;
+ }
 

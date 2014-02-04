@@ -39,235 +39,1161 @@ display: table;
 //##################################################
 //  mod-h_2
 //##################################################
-
-//////////////////////////////////////////////////
-//  COMMON-STYLE
-
-
-//////////////////////////////////////////////////
-//  MODULE-STYLE
-
-
-//////////////////////////////////////////////////
-//  DECORATION-STYLE
-
+//  mod-h_2 の mixin一式
+//  旧方式のコピーのため要改修
+@mixin mod-h_2-common-style {
+  @extend %default-icon2;
+  margin-top: 20px;
+  margin-right: -15px;
+  margin-left: -15px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  .mod-h {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 20px !important;
+    span {
+      font-size: 20px !important;
+    }
+  }
+  > .mod-icon_1 {
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_2 {
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_3 {
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_4 {
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_5 {
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_dental {
+    background-repeat: no-repeat;
+  }
+}
+@mixin mod-h_2-style {
+  min-height: 0;
+  padding: 5px 0 2px;
+  border-top: 4px solid #f2c72a;
+  border-bottom: 1px dotted #dcd4c0;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: none;
+  background-color: transparent;
+  overflow: visible;
+  .mod-h {
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    color: #ff9000;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 42px;
+    height: auto;
+    border-top: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 0;
+  }
+  > .mod-icon_1 {
+    min-width: 10px;
+    height: auto;
+    background-image: none;
+    background-position: left top;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 0;
+    background-image: url("img/mod-h_2/bg02_v.png");
+    background-position: left 1px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg03_v.png");
+    background-position: 6px 4px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg04_v.png");
+    background-position: 11px 1px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg05_v.png");
+    background-position: 6px 4px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg_v.png");
+    background-position: 2px 2px;
+  }
+}
+@mixin mod-h_2-style2 {
+  min-height: 0;
+  padding: 5px 0 2px;
+  border-top:  4px solid #7ed0d9;
+  border-bottom: 1px dotted #cbd8d9;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: none;
+  background-color: transparent;
+  overflow: visible;
+  .mod-h {
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    color: #172846;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 42px;
+    height: auto;
+    border-top: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 0;
+  }
+  > .mod-icon_1 {
+    min-width: 10px;
+    height: auto;
+    background-image: none;
+    background-position: left top;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 0;
+    background-image: url("img/mod-h_2/bg02_v2.png");
+    background-position: left 1px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg03_v2.png");
+    background-position: 6px 4px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg04_v2.png");
+    background-position: 11px 1px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg05_v2.png");
+    background-position: 6px 4px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg_v2.png");
+    background-position: 2px 2px;
+  }
+}
+@mixin mod-h_2-style3 {
+  min-height: 0;
+  padding: 5px 0 2px;
+  border-top:  4px solid #ffa658;
+  border-bottom: 1px dotted #ffa658;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: none;
+  background-color: transparent;
+  overflow: visible;
+  .mod-h {
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    color: #45320b;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 42px;
+    height: auto;
+    border-top: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 0;
+  }
+  > .mod-icon_1 {
+    min-width: 10px;
+    height: auto;
+    background-image: none;
+    background-position: left top;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 0;
+    background-image: url("img/mod-h_2/bg02_v3.png");
+    background-position: left 1px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg03_v3.png");
+    background-position: 6px 4px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg04_v3.png");
+    background-position: 11px 1px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg05_v3.png");
+    background-position: 6px 4px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg_v3.png");
+    background-position: 2px 2px;
+  }
+}
+@mixin mod-h_2-style4 {
+  min-height: 0;
+  padding: 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: url("img/mod-h_2/bg03.png");
+  background-color: #3c66ba;
+  overflow: hidden;
+  .mod-h {
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    color: #ffffff;
+    padding: 10px 10px 5px 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 50px;
+    height: 38px;
+    border-top: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 15px;
+  }
+  > .mod-icon_1 {
+    min-width: 70px;
+    height: 38px;
+    background-image: url("img/mod-h_2/bg02.png");
+    background-position: 10px 12px;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 70px;
+    background-image: url("img/mod-h_2/bg02.png");
+    background-position: 10px 12px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg07_v.png");
+    background-position: 15px 14px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg08_v.png");
+    background-position: 20px 8px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg09_v.png");
+    background-position: 16px 14px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg10_v.png");
+    background-position: 14px 13px;
+  }
+}
+@mixin mod-h_2-style5 {
+  min-height: 0;
+  padding: 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: url("img/mod-h_2/bg03_2.png");
+  background-color: #0c7d88;
+  overflow: hidden;
+  .mod-h {
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    color: #ffffff;
+    padding: 10px 10px 5px 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 50px;
+    height: 38px;
+    border-top: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 15px;
+  }
+  > .mod-icon_1 {
+    min-width: 70px;
+    height: 38px;
+    background-image: url("img/mod-h_2/bg02_2.png");
+    background-position: 10px 12px;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 70px;
+    background-image: url("img/mod-h_2/bg02_2.png");
+    background-position: 10px 12px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg07_v.png");
+    background-position: 15px 14px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg08_v.png");
+    background-position: 20px 8px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg09_v2.png");
+    background-position: 16px 14px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg10_v2.png");
+    background-position: 14px 13px;
+  }
+}
+@mixin mod-h_2-style6 {
+  min-height: 0;
+  padding: 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: url("img/mod-h_2/bg03_3.png");
+  background-color: #f3811e;
+  overflow: hidden;
+  .mod-h {
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    color: #ffffff;
+    padding: 10px 10px 5px 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 50px;
+    height: 38px;
+    border-top: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 15px;
+  }
+  > .mod-icon_1 {
+    min-width: 70px;
+    height: 38px;
+    background-image: url("img/mod-h_2/bg02_3.png");
+    background-position: 10px 12px;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 70px;
+    background-image: url("img/mod-h_2/bg02_3.png");
+    background-position: 10px 12px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg07_v.png");
+    background-position: 15px 14px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg08_v.png");
+    background-position: 20px 8px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg09_v3.png");
+    background-position: 16px 14px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg10_v3.png");
+    background-position: 14px 13px;
+  }
+}
+@mixin mod-h_2-style7 {
+  min-height: 0;
+  padding: 0;
+  border-top:  0 none transparent;
+  border-bottom:  0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: url("img/mod-h_2/bg10.png");
+  background-color: transparent;
+  overflow: hidden;
+  .mod-h {
+    border-top: 4px solid #1b6fe0;
+    border-bottom: 0 none transparent;
+    color: #1b6fe0;
+    padding: 6px 15px 3px 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 40px;
+    height: auto;
+    border-top: 4px solid #1b6fe0;
+  }
+  > .mod-icon_0 {
+    min-width: 15px;
+  }
+  > .mod-icon_1 {
+    min-width: 15px;
+    height: auto;
+    background-image: none;
+    background-position: left top;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 0;
+    background-image: url("img/mod-h_2/bg11_v.png");
+    background-position: 12px 12px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg12_v.png");
+    background-position: 10px 10px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg13_v.png");
+    background-position: 13px 10px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg14_v.png");
+    background-position: 10px 10px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg15_v.png");
+    background-position: 6px 8px;
+  }
+}
+@mixin mod-h_2-style8 {
+  min-height: 0;
+  padding: 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: url("img/mod-h_2/bg10_2.png");
+  background-color: transparent;
+  overflow: hidden;
+  .mod-h {
+    border-top: 4px solid #7ed1d9;
+    border-bottom: 0 none transparent;
+    color: #355995;
+    padding: 6px 15px 3px 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 40px;
+    height: auto;
+    border-top: 4px solid #7ed1d9;
+  }
+  > .mod-icon_0 {
+    min-width: 15px;
+  }
+  > .mod-icon_1 {
+    min-width: 15px;
+    height: auto;
+    background-image: none;
+    background-position: left top;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 0;
+    background-image: url("img/mod-h_2/bg11_v2.png");
+    background-position: 12px 12px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg12_v2.png");
+    background-position: 10px 10px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg13_v2.png");
+    background-position: 13px 10px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg14_v2.png");
+    background-position: 10px 10px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg15_v2.png");
+    background-position: 6px 8px;
+  }
+}
+@mixin mod-h_2-style9 {
+  min-height: 0;
+  padding: 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  @include border-radius(0);
+  background-image: url("img/mod-h_2/bg10_3.png");
+  background-color: transparent;
+  overflow: hidden;
+  .mod-h {
+    border-top: 4px solid #f7931d;
+    border-bottom: 0 none transparent;
+    color: #45320b;
+    padding: 6px 15px 3px 0;
+    margin: 0 0 0 0;
+    font-weight: normal;
+  }
+  > i {
+    min-width: 40px;
+    height: auto;
+    border-top: 4px solid #f7931d;
+  }
+  > .mod-icon_0 {
+    min-width: 15px;
+  }
+  > .mod-icon_1 {
+    min-width: 15px;
+    height: auto;
+    background-image: none;
+    background-position: left top;
+    padding-right: 0;
+  }
+  > .mod-icon_2 {
+    min-width: 0;
+    background-image: url("img/mod-h_2/bg11_v3.png");
+    background-position: 12px 12px;
+  }
+  > .mod-icon_3 {
+    background-image: url("img/mod-h_2/bg12_v3.png");
+    background-position: 10px 10px;
+  }
+  > .mod-icon_4 {
+    background-image: url("img/mod-h_2/bg13_v3.png");
+    background-position: 13px 10px;
+  }
+  > .mod-icon_5 {
+    background-image: url("img/mod-h_2/bg14_v3.png");
+    background-position: 10px 10px;
+  }
+  > .mod-icon_dental {
+    background-image: url("img/mod-h_2/bg15_v3.png");
+    background-position: 6px 8px;
+  }
+}
 
 
 //##################################################
 //  mod-h_3
 //##################################################
-
+//  旧方式のコピーのため要改修
 //////////////////////////////////////////////////
 //  COMMON-STYLE
-
-//////////////////////////////////////////////////
-//  MODULE-STYLE
-
-
-//////////////////////////////////////////////////
-//  DECORATION-STYLE
-
-
-
-//##################################################
-//  mod-h_5_side
-//##################################################
-
-//////////////////////////////////////////////////
-//  COMMON-STYLE
-
-//////////////////////////////////////////////////
-//  MODULE-STYLE
-@mixin module-style-mod-h_5_side {
-  display: table;
-  margin-top: 15px;
-  padding: 4px 0 0 0 ;
-  i {
-    display: table-cell;
-    height: 17px;
-    background-repeat: no-repeat;
-  }
-  .mod-icon_0 {
-    min-width: 0;
-  }
+//  mod-h_3 の mixin一式
+@mixin mod-h_3-common-style {
+  @extend %default-icon2;
+  margin-top: 20px;
+  margin-right: -15px;
+  margin-left: -15px;
   .mod-h {
-    width: 100%;
+    line-height: 1.3;
     display: table-cell;
-    font-size: $fontSizeM + 2 !important;
+    vertical-align: middle;
+    font-size: 18px !important;
     span {
-      font-size: $fontSizeM + 2 !important;
+      font-size: 18px !important;
     }
   }
-}
-
-//////////////////////////////////////////////////
-//  DECORATION-STYLE
-@mixin deco-style01A1-mod-h_5_side {
-  border-bottom: 1px solid #d9d6cf;
-  .mod-icon_1 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg.png");
-    background-position: left 1px;
+  > .mod-icon_1 {
+    height: 28px;
+    background-repeat: no-repeat;
   }
-  .mod-icon_2 {
-    min-width: 28px;
-    background-image: url("img/mod-h_s/bg02.png");
-    background-position: left 3px;
+  > .mod-icon_3 {
+    background-repeat: no-repeat;
   }
-  .mod-icon_3 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg03.png");
-    background-position: left 2px;
+  > .mod-icon_4 {
+    background-repeat: no-repeat;
   }
-  .mod-icon_4 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg04.png");
-    background-position: 5px 3px;
+  > .mod-icon_5 {
+    background-repeat: no-repeat;
   }
-  .mod-icon_dental {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg05.png");
-    background-position: left top;
-  }
-  .mod-h {
-    color: #331b07;
+  > .mod-icon_dental {
+    background-repeat: no-repeat;
   }
 }
-@mixin deco-style01A2-mod-h_5_side {
-  border-bottom: 1px solid #cbd8d9;
-  .mod-icon_1 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg_2.png");
-    background-position: left 1px;
-  }
-  .mod-icon_2 {
-    min-width: 28px;
-    background-image: url("img/mod-h_s/bg02_2.png");
-    background-position: left 3px;
-  }
-  .mod-icon_3 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg03_2.png");
-    background-position: left 2px;
-  }
-  .mod-icon_4 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg04_2.png");
-    background-position: 5px 3px;
-  }
-  .mod-icon_dental {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg05_2.png");
-    background-position: left top;
-  }
-  .mod-h {
-    color: #355995;
-  }
-}
-@mixin deco-style01A3-mod-h_5_side {
+@mixin mod-h_3-style {
+  padding: 2px 0 2px 5px;
+  border-top: 0 none transparent;
   border-bottom: 1px solid #dedad1;
-  .mod-icon_1 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg_3.png");
-    background-position: left 1px;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  overflow: visible;
+  .mod-h {
+    width: 100%;
+    color: #331b07;
+    padding: 0 0 0 0;
+    font-weight: normal;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
   }
-  .mod-icon_2 {
+  > i {
+    padding: 0;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
     min-width: 28px;
-    background-image: url("img/mod-h_s/bg02_3.png");
-    background-position: left 3px;
-  }
-  .mod-icon_3 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg03_3.png");
-    background-position: left 2px;
-  }
-  .mod-icon_4 {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg04_3.png");
-    background-position: 5px 3px;
-  }
-  .mod-icon_dental {
-    min-width: 21px;
-    background-image: url("img/mod-h_s/bg05_3.png");
+    background-image: url("img/mod-h_3/bg04.png");
     background-position: left top;
   }
-  .mod-h {
-    color: #45320b;
+  > .mod-icon_2 {
+    height: 23px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg02_v.png");
+    background-position: left 5px;
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_3 {
+    height: 25px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg03_v.png");
+    background-position: left top;
+  }
+  > .mod-icon_4 {
+    height: 25px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg04_v.png");
+    background-position: 8px left;
+    border-left: 0 none transparent;
+  }
+  > .mod-icon_5 {
+    height: 23px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg05_v.png");
+    background-position: left 1px;
+  }
+  > .mod-icon_dental {
+    height: 31px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg_v.png");
+    background-position: left top;
   }
 }
-
-//##################################################
-//  mod-h_5_pic_top_side
-//##################################################
-
-//////////////////////////////////////////////////
-//  COMMON-STYLE
-
-@mixin mod-h_5_pic_side-common-style {
-  // @include block-style-ex-align;
-  display: table;
-  margin: 10px auto 0;
-  text-align: center;
-  i {
-    display: table-cell;
-  }
+@mixin mod-h_3-style2 {
+  padding: 2px 0 2px 5px;
+  border-top: 0 none transparent;
+  border-bottom: 1px solid #172846;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  overflow: visible;
   .mod-h {
-    display: table-cell;
+    width: 100%;
+    color: #172846;
+    padding: 0 0 0 0;
+    font-weight: normal;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+  }
+  > i {
+    padding: 0;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
+    min-width: 28px;
+    background-image: url("img/mod-h_3/bg04_2.png");
+    background-position: left top;
+  }
+  > .mod-icon_2 {
+    height: 23px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg02_v2.png");
+    background-position: left 5px;
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_3 {
+    height: 25px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg03_v2.png");
+    background-position: left top;
+  }
+  > .mod-icon_4 {
+    height: 25px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg04_v2.png");
+    background-position: 8px left;
+    border-left: 0 none transparent;
+  }
+  > .mod-icon_5 {
+    height: 23px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg05_v2.png");
+    background-position: left 1px;
+  }
+  > .mod-icon_dental {
+    height: 31px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg_v2.png");
+    background-position: left top;
+  }
+}
+@mixin mod-h_3-style3 {
+  padding: 2px 0 2px 5px;
+  border-top: 0 none transparent;
+  border-bottom: 1px solid #ffa658;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  overflow: visible;
+  .mod-h {
+    width: 100%;
+    color: #372809;
+    padding: 0 0 0 0;
+    font-weight: normal;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+  }
+  > i {
+    padding: 0;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 10px;
+  }
+  > .mod-icon_1 {
+    height: 28px;
+    min-width: 28px;
+    background-image: url("img/mod-h_3/bg04_3.png");
+    background-position: left top;
+  }
+  > .mod-icon_2 {
+    height: 23px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg02_v3.png");
+    background-position: left 9px;
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_3 {
+    height: 25px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg03_v3.png");
+    background-position: left 3px;
+  }
+  > .mod-icon_4 {
+    height: 25px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg04_v3.png");
+    background-position: 5px 4px;
+    border-left: 0 none transparent;
+  }
+  > .mod-icon_5 {
+    height: 23px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg05_v3.png");
+    background-position: left 4px;
+  }
+  > .mod-icon_dental {
+    height: 31px;
+    min-width: 31px;
+    background-image: url("img/mod-h_3/bg_v3.png");
+    background-position: left top;
+  }
+}
+@mixin mod-h_3-style4 {
+  padding: 2px 0 0 5px;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  overflow: visible;
+  .mod-h {
+    width: auto;
+    color: #f16c0b;
+    padding: 0 0 0 0;
     font-weight: bold;
-    font-size: $sideFontSizeL - 1;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+  }
+  > i {
+    padding: 0;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 0;
+  }
+  > .mod-icon_1 {
+    height: 38px;
+    min-width: 49px;
+    background-image: url("img/mod-h_3/bg03.png");
+    background-position: left top;
+  }
+  > .mod-icon_2 {
+    height: auto;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg06_v.png");
+    background-position: 6px 11px;
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_3 {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg07_v.png");
+    background-position: 5px 8px;
+  }
+  > .mod-icon_4 {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg08_v.png");
+    background-position: 14px 8px;
+    border-left: 0 none transparent;
+  }
+  > .mod-icon_5 {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg09_v.png");
+    background-position: 11px 8px;
+  }
+  > .mod-icon_dental {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg10_v.png");
+    background-position: 10px 3px;
   }
 }
-
-//////////////////////////////////////////////////
-//  MODULE-STYLE
-
-//////////////////////////////////////////////////
-//  DECORATION-STYLE
-
-@mixin deco-style-mod-h_5_pic_top_side-01A1 {
+@mixin mod-h_3-style5 {
+  padding: 2px 0 0 5px;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  overflow: visible;
   .mod-h {
-    color: #352111;
+    width: auto;
+    color: #2b436e;
+    padding: 0 0 0 0;
+    font-weight: bold;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+  }
+  > i {
+    padding: 0;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 0;
+  }
+  > .mod-icon_1 {
+    height: 38px;
+    min-width: 49px;
+    background-image: url("img/mod-h_3/bg03_2.png");
+    background-position: left top;
+  }
+  > .mod-icon_2 {
+    height: auto;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg06_v2.png");
+    background-position: 6px 11px;
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_3 {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg07_v2.png");
+    background-position: 5px 8px;
+  }
+  > .mod-icon_4 {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg08_v2.png");
+    background-position: 14px 8px;
+    border-left: 0 none transparent;
+  }
+  > .mod-icon_5 {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg09_v2.png");
+    background-position: 11px 8px;
+  }
+  > .mod-icon_dental {
+    height: auto;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg10_v2.png");
+    background-position: 10px 3px;
   }
 }
-@mixin deco-style-mod-h_5_pic_top_side-01A2 {
+@mixin mod-h_3-style6 {
+  padding: 2px 0 0 5px;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  overflow: visible;
   .mod-h {
-    color: #0b7d89;
+    width: auto;
+    color: #37280b;
+    padding: 0 0 0 0;
+    font-weight: bold;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+    border-right: 0 none transparent;
+  }
+  > i {
+    padding: 0;
+    border-top: 0 none transparent;
+    border-bottom: 0 none transparent;
+  }
+  > .mod-icon_0 {
+    min-width: 0;
+  }
+  > .mod-icon_1 {
+    height: 38px;
+    min-width: 49px;
+    background-image: url("img/mod-h_3/bg03_3.png");
+    background-position: left top;
+  }
+  > .mod-icon_2 {
+    height: auto;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg06_v3.png");
+    background-position: 6px 11px;
+    background-repeat: no-repeat;
+  }
+  > .mod-icon_3 {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg07_v3.png");
+    background-position: 5px 8px;
+  }
+  > .mod-icon_4 {
+    height: auto;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg08_v3.png");
+    background-position: 14px 8px;
+    border-left: 0 none transparent;
+  }
+  > .mod-icon_5 {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg09_v3.png");
+    background-position: 11px 8px;
+  }
+  > .mod-icon_dental {
+    height: 38px;
+    min-width: 39px;
+    background-image: url("img/mod-h_3/bg10_v3.png");
+    background-position: 10px 3px;
   }
 }
-@mixin deco-style-mod-h_5_pic_top_side-01A3 {
+@mixin mod-h_3-style7 {
+  padding: 0 0 0 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 10px solid #f7931d;
+  border-right: 0 none transparent;
+  background-color: #f7eadb;
+  overflow: hidden;
   .mod-h {
+    width: 100%;
+    color: #331b07;
+    padding: 4px 10px 2px 10px;
+    font-weight: normal;
+    border-top: 1px dotted #f7931d;
+    border-bottom: 1px dotted #f7931d;
+    border-right: 1px dotted #f7931d;
+  }
+  > i {
+    padding: 0;
+    border-top: 1px dotted #f7931d;
+    border-bottom: 1px dotted #f7931d;
+  }
+  > .mod-icon_0 {
+    min-width: 0;
+  }
+  > .mod-icon_1 {
+    height: 18px;
+    min-width: 0;
+    background-image: none;
+    background-position: left top;
+  }
+  > .mod-icon_2 {
+    height: 18px;
+    min-width: 7px;
+    background-image: url("img/mod-h_3/bg14_v.png");
+    background-position: left center;
+    background-repeat: repeat-y;
+  }
+  > .mod-icon_3 {
+    height: 18px;
+    min-width: 11px;
+    background-image: url("img/mod-h_3/bg11_v.png");
+    background-position: left top;
+  }
+  > .mod-icon_4 {
+    height: 18px;
+    min-width: 0;
+    background-image: none;
+    background-position: left top;
+    border-left: 2px solid #f2d027;
+  }
+  > .mod-icon_5 {
+    height: 18px;
+    min-width: 12px;
+    background-image: url("img/mod-h_3/bg12_v.png");
+    background-position: 6px 9px;
+  }
+  > .mod-icon_dental {
+    height: 18px;
+    min-width: 18px;
+    background-image: url("img/mod-h_3/bg13_v.png");
+    background-position: 4px 8px;
+  }
+}
+@mixin mod-h_3-style8 {
+  padding: 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 10px solid #f2d028;
+  border-right: 0 none transparent;
+  background-color: #fcf3c6;
+  overflow: hidden;
+  .mod-h {
+    width: 100%;
+    color: #333333;
+    padding: 4px 10px 2px 10px;
+    font-weight: normal;
+    border-top: 1px dotted #f2d028;
+    border-bottom: 1px dotted #f2d028;
+    border-right: 1px dotted #f2d028;
+  }
+  > i {
+    padding: 0;
+    border-top: 1px dotted #f2d028;
+    border-bottom: 1px dotted #f2d028;
+  }
+  > .mod-icon_0 {
+    min-width: 0;
+  }
+  > .mod-icon_1 {
+    height: 18px;
+    min-width: 0;
+    background-image: none;
+    background-position: left top;
+  }
+  > .mod-icon_2 {
+    height: 18px;
+    min-width: 7px;
+    background-image: url("img/mod-h_3/bg14_v2.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+  }
+  > .mod-icon_3 {
+    height: 18px;
+    min-width: 11px;
+    background-image: url("img/mod-h_3/bg11_v2.png");
+    background-position: left center;
+  }
+  > .mod-icon_4 {
+    height: 18px;
+    min-width: 0;
+    background-image: none;
+    background-position: left top;
+    border-left: 2px solid #f7931d;
+  }
+  > .mod-icon_5 {
+    height: 18px;
+    min-width: 12px;
+    background-image: url("img/mod-h_3/bg12_v2.png");
+    background-position: 6px 9px;
+  }
+  > .mod-icon_dental {
+    height: 18px;
+    min-width: 18px;
+    background-image: url("img/mod-h_3/bg13_v2.png");
+    background-position: 4px 8px;
+  }
+}
+@mixin mod-h_3-style9 {
+  padding: 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  border-left: 10px solid #519dce;
+  border-right: 0 none transparent;
+  background-color: #d5e6f2;
+  overflow: hidden;
+  .mod-h {
+    width: 100%;
     color: #45320b;
+    padding: 4px 10px 2px 10px;
+    font-weight: normal;
+    border-top: 1px dotted #519dce;
+    border-bottom: 1px dotted #519dce;
+    border-right: 1px dotted #519dce;
   }
-}
-
-
-
-//##################################################
-//  mod-h_5_pic_bottom_side
-//##################################################
-
-//////////////////////////////////////////////////
-//  COMMON-STYLE
-
-//////////////////////////////////////////////////
-//  MODULE-STYLE
-
-//////////////////////////////////////////////////
-//  DECORATION-STYLE
-
-@mixin deco-style-mod-h_5_pic_bottom_side-01A1 {
-  .mod-h {
-    color: #352111;
+  > i {
+    padding: 0;
+    border-top: 1px dotted #519dce;
+    border-bottom: 1px dotted #519dce;
   }
-}
-@mixin deco-style-mod-h_5_pic_bottom_side-01A2 {
-  .mod-h {
-    color: #0b7d89;
+  > .mod-icon_0 {
+    min-width: 0;
   }
-}
-@mixin deco-style-mod-h_5_pic_bottom_side-01A3 {
-  .mod-h {
-    color: #45320b;
+  > .mod-icon_1 {
+    height: 18px;
+    min-width: 0;
+    background-image: none;
+    background-position: left top;
+  }
+  > .mod-icon_2 {
+    height: 18px;
+    min-width: 7px;
+    background-image: url("img/mod-h_3/bg14_v3.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+  }
+  > .mod-icon_3 {
+    height: 18px;
+    min-width: 11px;
+    background-image: url("img/mod-h_3/bg11_v3.png");
+    background-position: left center;
+  }
+  > .mod-icon_4 {
+    height: 18px;
+    min-width: 0;
+    background-image: none;
+    background-position: left top;
+    border-left: 2px solid #7ed1d9;
+  }
+  > .mod-icon_5 {
+    height: 18px;
+    min-width: 12px;
+    background-image: url("img/mod-h_3/bg12_v3.png");
+    background-position: 6px 9px;
+  }
+  > .mod-icon_dental {
+    height: 18px;
+    min-width: 18px;
+    background-image: url("img/mod-h_3/bg13_v3.png");
+    background-position: 4px 8px;
   }
 }
 
@@ -897,7 +1823,7 @@ display: table;
 
 @mixin deco-style-mod-h_5_hyo-01A1 {
   .mod-h {
-    color: #46140b;
+    color: #352111;
   }
   .mod-icon_2 {
     height: 20px;
@@ -927,7 +1853,7 @@ display: table;
 }
 @mixin deco-style-mod-h_5_hyo-01A2 {
   .mod-h {
-    color: #222222;
+    color: #0b7d89;
   }
   .mod-icon_2 {
     height: 17px;
@@ -957,7 +1883,7 @@ display: table;
 }
 @mixin deco-style-mod-h_5_hyo-01A3 {
   .mod-h {
-    color: #010911;
+    color: #45320b;
   }
   .mod-icon_2 {
     height: 17px;
@@ -987,7 +1913,7 @@ display: table;
 }
 @mixin deco-style-mod-h_5_hyo-01B1 {
   .mod-h {
-    color: #5a6e55;
+    color: #223868;
   }
   .mod-icon_2 {
     height: 21px;
@@ -1017,7 +1943,7 @@ display: table;
 }
 @mixin deco-style-mod-h_5_hyo-01B2 {
   .mod-h {
-    color: #371008;
+    color: #0c7d87;
   }
   .mod-icon_2 {
     height: 21px;
@@ -1047,7 +1973,7 @@ display: table;
 }
 @mixin deco-style-mod-h_5_hyo-01B3 {
   .mod-h {
-    color: #6d5b04;
+    color: #f37f1c;
   }
   .mod-icon_2 {
     height: 21px;
@@ -1077,7 +2003,7 @@ display: table;
 }
 @mixin deco-style-mod-h_5_hyo-01C1 {
   .mod-h {
-    color: #3c3c3c;
+    color: #333333;
   }
   .mod-icon_2 {
     height: 21px;
@@ -1107,7 +2033,7 @@ display: table;
 }
 @mixin deco-style-mod-h_5_hyo-01C2 {
   .mod-h {
-   color: #375068;
+   color: #355997;
   }
   .mod-icon_2 {
     height: 21px;
@@ -1137,7 +2063,7 @@ display: table;
 }
 @mixin deco-style-mod-h_5_hyo-01C3 {
   .mod-h {
-    color: #4b4b4b;
+    color: #45320b;
   }
   .mod-icon_2 {
     height: 21px;
@@ -1243,4 +2169,333 @@ display: table;
 }
 @mixin deco-style-mod-h_5_pic-01C3 {
   @include deco-style-mod-h_5_hyo-01C3;
+}
+
+
+
+
+//##################################################
+//  mod-h_5_side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+
+@mixin common-style-mod-h_5_side {
+  display: table;
+  margin-top: 15px;
+  padding: 4px 0 0 0 ;
+  i {
+    display: table-cell;
+    height: 17px;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_0 {
+    min-width: 0;
+  }
+  .mod-h {
+    width: 100%;
+    display: table-cell;
+    font-size: $fontSizeM + 2 !important;
+    span {
+      font-size: $fontSizeM + 2 !important;
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+@mixin deco-style01A1-mod-h_5_side {
+  border-bottom: 1px solid #d9d6cf;
+  .mod-icon_1 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg.png");
+    background-position: left 1px;
+  }
+  .mod-icon_2 {
+    min-width: 28px;
+    background-image: url("img/mod-h_s/bg02.png");
+    background-position: left 3px;
+  }
+  .mod-icon_3 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg03.png");
+    background-position: left 2px;
+  }
+  .mod-icon_4 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg04.png");
+    background-position: 5px 3px;
+  }
+  .mod-icon_dental {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg05.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #331b07;
+  }
+}
+@mixin deco-style01A2-mod-h_5_side {
+  border-bottom: 1px solid #cbd8d9;
+  .mod-icon_1 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg_2.png");
+    background-position: left 1px;
+  }
+  .mod-icon_2 {
+    min-width: 28px;
+    background-image: url("img/mod-h_s/bg02_2.png");
+    background-position: left 3px;
+  }
+  .mod-icon_3 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg03_2.png");
+    background-position: left 2px;
+  }
+  .mod-icon_4 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg04_2.png");
+    background-position: 5px 3px;
+  }
+  .mod-icon_dental {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg05_2.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #355995;
+  }
+}
+@mixin deco-style01A3-mod-h_5_side {
+  border-bottom: 1px solid #dedad1;
+  .mod-icon_1 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg_3.png");
+    background-position: left 1px;
+  }
+  .mod-icon_2 {
+    min-width: 28px;
+    background-image: url("img/mod-h_s/bg02_3.png");
+    background-position: left 3px;
+  }
+  .mod-icon_3 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg03_3.png");
+    background-position: left 2px;
+  }
+  .mod-icon_4 {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg04_3.png");
+    background-position: 5px 3px;
+  }
+  .mod-icon_dental {
+    min-width: 21px;
+    background-image: url("img/mod-h_s/bg05_3.png");
+    background-position: left top;
+  }
+  .mod-h {
+    color: #45320b;
+  }
+}
+
+//##################################################
+//  mod-h_5_pic_top_side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+
+@mixin mod-h_5_pic_side-common-style {
+ // @include block-style-ex-align;
+  display: table;
+  margin: 10px auto 0;
+  text-align: center;
+  i {
+    display: table-cell;
+  }
+  .mod-h {
+    display: table-cell;
+    font-weight: bold;
+    font-size: $sideFontSizeL !important;
+    span {
+      font-size: $sideFontSizeL !important;
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+@mixin deco-style-mod-h_5_pic_top_side-01A1 {
+  .mod-h {
+    color: #352111;
+  }
+}
+@mixin deco-style-mod-h_5_pic_top_side-01A2 {
+  .mod-h {
+    color: #0b7d89;
+  }
+}
+@mixin deco-style-mod-h_5_pic_top_side-01A3 {
+  .mod-h {
+    color: #45320b;
+  }
+}
+
+
+
+//##################################################
+//  mod-h_5_pic_bottom_side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+@mixin deco-style-mod-h_5_pic_bottom_side-01A1 {
+  .mod-h {
+    color: #352111;
+  }
+}
+@mixin deco-style-mod-h_5_pic_bottom_side-01A2 {
+  .mod-h {
+    color: #0b7d89;
+  }
+}
+@mixin deco-style-mod-h_5_pic_bottom_side-01A3 {
+  .mod-h {
+    color: #45320b;
+  }
+}
+
+//##################################################
+//  mod-h_5_list_side
+//##################################################
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+
+@mixin mod-h_5-list-side-common-style {
+  @include block-style-ex-align;
+  display: table;
+  margin: 10px 0 0 0;
+  i {
+    display: table-cell;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_0,.mod-icon_1 {
+    min-width: 0;
+  }
+  .mod-h {
+    display: table-cell;
+    font-weight: bold;
+    font-size: $sideFontSizeL !important;
+    span {
+      font-size: $sideFontSizeL !important;
+    }
+  }
+}
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+
+@mixin mod-h_5-list-side-01A {
+  .mod-icon_2 {
+    min-width: 20px;
+    width: 20px;
+    height: 17px;
+    background-position: left top;
+  }
+  .mod-icon_3 {
+    min-width: 20px;
+    width: 20px;
+    height: 16px;
+    background-position: left top;
+  }
+  .mod-icon_4 {
+    min-width: 20px;
+    width: 20px;
+    height: 16px;
+    background-position: center 2px;
+  }
+  .mod-icon_5 {
+    min-width: 20px;
+    width: 20px;
+    height: 16px;
+    background-position: center 3px;
+  }
+  .mod-icon_dental {
+    min-width: 24px;
+    width: 24px;
+    height: 19px;
+    background-position: left top;
+  }
+}
+@mixin deco-style-mod-h_5-list-side-01A1 {
+  .mod-icon_2 {
+    background-image: url(img/mod-h_5/bg07_v.png);
+  }
+  .mod-icon_3 {
+    background-image: url(img/mod-h_5/bg08_v.png);
+  }
+  .mod-icon_4 {
+    background-image: url(img/mod-h_5/bg09_v.png);
+  }
+  .mod-icon_5 {
+    background-image: url(img/mod-h_5/bg10_v.png);
+  }
+  .mod-icon_dental {
+    background-image: url(img/mod-h_5/bg06_v.png);
+  }
+  .mod-h {
+    color: #352111;
+  }
+}
+@mixin deco-style-mod-h_5-list-side-01A2 {
+  .mod-icon_2 {
+    background-image: url(img/mod-h_5/bg07_v2.png);
+  }
+  .mod-icon_3 {
+    background-image: url(img/mod-h_5/bg08_v2.png);
+  }
+  .mod-icon_4 {
+    background-image: url(img/mod-h_5/bg09_v2.png);
+  }
+  .mod-icon_5 {
+    background-image: url(img/mod-h_5/bg10_v2.png);
+  }
+  .mod-icon_dental {
+    background-image: url(img/mod-h_5/bg06_v2.png);
+  }
+  .mod-h {
+    color: #0b7d89;
+  }
+}
+@mixin deco-style-mod-h_5-list-side-01A3 {
+  .mod-icon_2 {
+    background-image: url(img/mod-h_5/bg07_v3.png);
+  }
+  .mod-icon_3 {
+    background-image: url(img/mod-h_5/bg08_v3.png);
+  }
+  .mod-icon_4 {
+    background-image: url(img/mod-h_5/bg09_v3.png);
+  }
+  .mod-icon_5 {
+    background-image: url(img/mod-h_5/bg10_v3.png);
+  }
+  .mod-icon_dental {
+    background-image: url(img/mod-h_5/bg06_v3.png);
+  }
+  .mod-h {
+    color: #45320b;
+  }
 }

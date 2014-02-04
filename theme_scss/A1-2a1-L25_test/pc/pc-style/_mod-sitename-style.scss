@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-// @import dependency/common-variable {}
+// @import dependency/common-variable
 
 // --------------------------------------------
 // テーマ２　A1-2a1-L25
@@ -93,7 +93,7 @@
   > .mod-2col-inner {
     display: table-cell;
     padding-right: 10px;
-    vertical-align: bottom;
+    vertical-align: top;
     word-break: break-all;
   }
   > .mod-2col-inner2 {
@@ -132,7 +132,7 @@
   > .mod-3col-inner {
     display: table-cell;
     padding-right: 10px;
-    vertical-align: bottom;
+    vertical-align: top;
     word-break: break-all;
   }
   > .mod-3col-inner2 {
@@ -401,7 +401,7 @@
   }
   .mod-tel-inner.ex-first-child {
     > p.mod-telnum-sitename {
-      font-size: $fontSizeL + 12;
+      font-size: $fontSizeL + 10;
     }
   }
   .mod-tel-golo-sitename {
@@ -526,7 +526,7 @@
 @mixin module-style-mod-tel-sitename-2 {
   .mod-tel-inner.ex-first-child {
     > p.mod-telnum-sitename {
-      font-size: $fontSizeL + 16;
+      font-size: $fontSizeL + 14;
     }
   }
   .mod-tel-golo-sitename {
@@ -679,6 +679,141 @@
   }
   td {
     color: #333333;
+  }
+}
+
+@mixin common-style-mod-info3-sitename-2 {
+  margin: 6px 0 0 5px;
+  width: 100%;
+  th {
+    width: auto;
+    vertical-align: bottom;
+    font-weight: bold;
+    > p {
+      @include border-radius(3px);
+      float: left;
+      padding: 2px 3px 0;
+      width: auto;
+      min-width: 10px;
+      text-align: center;
+      font-size: $fontSizeS - 2;
+    }
+  }
+  td {
+    float: left;
+    padding: 0;
+    vertical-align: bottom;
+    text-align: left;
+    font-size: $fontSizeL + 2;
+    line-height: 1.0;
+  }
+}
+
+@mixin deco-style01A1-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #3c3c3c;
+      color: white;
+    }
+  }
+  td {
+    color: #781b0e;
+  }
+}
+
+@mixin deco-style01A2-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #030b13;
+      color: white;
+    }
+  }
+  td {
+    color: #5f140a;
+  }
+}
+
+@mixin deco-style01A3-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #70180c;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B1-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #f2d028;
+      color: 323232;
+    }
+  }
+  td {
+    color: #f2d028;
+  }
+}
+
+@mixin deco-style01B2-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #f2d028;
+      color: #323232;
+    }
+  }
+  td {
+    color: #f2d028;
+  }
+}
+
+@mixin deco-style01B3-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #f2d028;
+      color: #323232;
+    }
+  }
+  td {
+    color: #f2d028;
+  }
+}
+
+@mixin deco-style01C1-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #3c3c3c;
+      color: white;
+    }
+  }
+  td {
+    color: #781b0e;
+  }
+}
+
+@mixin deco-style01C2-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #030b13;
+      color: white;
+    }
+  }
+  td {
+    color: #a72613;
+  }
+}
+
+@mixin deco-style01C3-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #030b13;
+      color: white;
+    }
+  }
+  td {
+    color: #cc2e18;
   }
 }
 
@@ -1279,7 +1414,7 @@
   }
   .mod-bnr-inner {
     @include border-radius(3px);
-    padding: 3px 5px 0 24px;
+    padding: 3px 5px 2px 24px;
     max-height: 40px;
     background-position: 9px 5px;
     background-repeat: no-repeat;
@@ -1638,7 +1773,7 @@
   }
   .mod-tel-inner.ex-first-child {
     > p.mod-telnum-sitename {
-      font-size: $fontSizeL + 12;
+      font-size: $fontSizeL + 10;
     }
   }
   .mod-tel-golo-sitename {

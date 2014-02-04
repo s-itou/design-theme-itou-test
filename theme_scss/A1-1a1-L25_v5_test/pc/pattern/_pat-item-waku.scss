@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../ptn-style/_pat-item-waku-style.scss";
 
 // --------------------------------------------------------------------------
 //
@@ -9,13 +10,12 @@
 //
 //    ・waku（通常デザイン）
 //    ・waku-kadomaru（角丸用のデザイン）
+//    ・waku-kadomaru-up（上部角丸用のデザイン）
 //    ・waku-board（ボード用のデザイン）
 //    ・waku-fukidashi（吹き出し用のデザイン）
 //    ・waku-pic（特徴画像用のデザイン）
 //
 // --------------------------------------------------------------------------
-
-@import "../ptn-style/_pat-item-waku-style.scss";
 
 // -------------------------------------
 //  pat-item-waku の個別設定
@@ -26,6 +26,48 @@
   @include common-style-pat-item-waku;
   @include module-style-pat-item-waku-simple-2;
   @include deco-style-pat-item-waku-none-bgc-white;
+}
+
+// 枠シンプル
+@mixin pat-item-waku-kado-simple-1 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kado-simple-1;
+  @include deco-style-pat-item-waku-simple-1px-10;
+}
+@mixin pat-item-waku-kado-simple-2 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kado-simple-1;
+  @include deco-style-pat-item-waku-simple-1px-11;
+}
+@mixin pat-item-waku-kado-simple-3 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kado-simple-1;
+  @include deco-style-pat-item-waku-simple-1px-12;
+}
+@mixin pat-item-waku-kado-simple-4 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kado-simple-1;
+  @include deco-style-pat-item-waku-simple-1px-13;
+}
+@mixin pat-item-waku-kado-simple-5 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kado-simple-1;
+  @include deco-style-pat-item-waku-simple-1px-14;
+}
+@mixin pat-item-waku-kado-simple-6 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kado-simple-1;
+  @include deco-style-pat-item-waku-simple-1px-15;
+}
+@mixin pat-item-waku-kado-simple-7 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kado-simple-2;
+  @include deco-style-pat-item-waku-simple-1px-16;
+}
+@mixin pat-item-waku-kado-simple-8 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-kado-simple-2;
+  @include deco-style-pat-item-waku-simple-1px-17;
 }
 
 // 背景シンプル
@@ -44,6 +86,7 @@
   @include module-style-pat-item-waku-simple;
   @include deco-style-pat-item-waku-kado-simple-orange-bgc-2;
 }
+
 // 背景グラデーション
 @mixin pat-item-waku-kado-shimple-grade-1 {
   @include common-style-pat-item-waku;
@@ -212,6 +255,53 @@
   @include deco-style-pat-item-waku-kado-jouge-beta-6;
 }
 
+// 角下ベベル
+@mixin pat-item-waku-kado-bevel-1 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-1;
+}
+@mixin pat-item-waku-kado-bevel-2 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-2;
+}
+@mixin pat-item-waku-kado-bevel-3 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-3;
+}
+@mixin pat-item-waku-kado-bevel-4 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-4;
+}
+@mixin pat-item-waku-kado-bevel-5 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-5;
+}
+@mixin pat-item-waku-kado-bevel-6 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-6;
+}
+@mixin pat-item-waku-kado-bevel-7 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-7;
+}
+@mixin pat-item-waku-kado-bevel-8 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-8;
+}
+@mixin pat-item-waku-kado-bevel-9 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-bevel;
+  @include deco-style-pat-item-waku-bevel-9;
+}
+
 
 // -------------------------------------
 //  pat-item-waku-kadomaru の個別設定
@@ -303,7 +393,6 @@
   @include deco-style-pat-item-waku-kadomaru-simple-blue-6;
 }
 
-
 //以下、.mod-set-news-bunsyo使用中
 @mixin pat-item-waku-kadomaru-simple-blue-4 {
   @include common-style-pat-item-waku-kadomaru;
@@ -350,8 +439,6 @@
   @include module-style-pat-item-waku-kadomaru-simple-2;
   @include deco-style-pat-item-waku-kadomaru-simple-orange-4;
 }
-
-
 
 // 角丸背景色あり
 @mixin pat-item-waku-kadomaru-blue-bgc {
@@ -448,10 +535,6 @@
   @include module-style-pat-item-waku-kadomaru-image;
   @include deco-style-pat-item-waku-kadomaru-image-orange;
 }
-@mixin pat-item-waku-kadomaru-image-01 {
-  //@include module-style-pat-item-waku-kadomaru-simple;
-  //@include
-}
 
 
 // 角丸背景繰り返し
@@ -486,6 +569,67 @@
   @include common-style-pat-item-waku-kadomaru;
   @include module-style-pat-item-waku-kadomaru-grade;
   @include deco-style-pat-item-waku-kadomaru-simple-pink-grade;
+}
+
+
+// -------------------------------------
+//  pat-item-waku-kadomaru-up の個別設定
+// -------------------------------------
+
+// 上角丸（枠1px）
+@mixin pat-item-waku-kadomaru-up-1px-1 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-1;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-kadomaru-up-1px-2 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-2;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-kadomaru-up-1px-3 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-3;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-kadomaru-up-1px-4 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-4;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-kadomaru-up-1px-5 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-5;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-kadomaru-up-1px-6 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-6;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-kadomaru-up-1px-7 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-7;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-kadomaru-up-1px-8 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-8;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-kadomaru-up-1px-9 {
+  @include common-style-pat-item-waku-kadomaru;
+  @include module-style-pat-item-waku-kadomaru-up;
+  @include deco-style-pat-item-waku-simple-1px-9;
+  @include rad-type-up-3px;
 }
 
 
@@ -541,6 +685,22 @@
   @include module-style-pat-item-waku-board-3;
   @include deco-style-pat-item-waku-board-orange-2;
 }
+// ボード（コルク調）
+@mixin pat-item-waku-board-colk-1 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-board-colk;
+  @include deco-style-pat-item-waku-board-colk-1;
+}
+@mixin pat-item-waku-board-colk-2 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-board-colk;
+  @include deco-style-pat-item-waku-board-colk-2;
+}
+@mixin pat-item-waku-board-colk-3 {
+  @include common-style-pat-item-waku;
+  @include module-style-pat-item-waku-board-colk;
+  @include deco-style-pat-item-waku-board-colk-3;
+}
 
 
 // -------------------------------------
@@ -590,6 +750,56 @@
   @include common-style-pat-item-waku-fukidashi;
   @include module-style-pat-item-waku-fukidashi-3;
   @include deco-style-pat-item-waku-fukidashi-6kaku-pink-bgc;
+}
+
+// 文章吹き出し用
+@mixin pat-item-waku-fukidashi-1 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-4;
+  @include deco-style-pat-item-waku-fukidashi-1;
+}
+@mixin pat-item-waku-fukidashi-2 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-4;
+  @include deco-style-pat-item-waku-fukidashi-2;
+}
+@mixin pat-item-waku-fukidashi-3 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-4;
+  @include deco-style-pat-item-waku-fukidashi-3;
+}
+@mixin pat-item-waku-fukidashi-4 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-5;
+  @include deco-style-pat-item-waku-fukidashi-4;
+}
+@mixin pat-item-waku-fukidashi-5 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-5;
+  @include deco-style-pat-item-waku-fukidashi-5;
+}
+@mixin pat-item-waku-fukidashi-6 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-5;
+  @include deco-style-pat-item-waku-fukidashi-6;
+}
+@mixin pat-item-waku-fukidashi-7 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-6;
+  @include deco-style-pat-item-waku-fukidashi-7;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-fukidashi-8 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-6;
+  @include deco-style-pat-item-waku-fukidashi-8;
+  @include rad-type-up-3px;
+}
+@mixin pat-item-waku-fukidashi-9 {
+  @include common-style-pat-item-waku-fukidashi;
+  @include module-style-pat-item-waku-fukidashi-6;
+  @include deco-style-pat-item-waku-fukidashi-9;
+  @include rad-type-up-3px;
 }
 
 

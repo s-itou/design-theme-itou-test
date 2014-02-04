@@ -9,32 +9,16 @@
     width: 100% !important;
   }
   .ex-imgFloat.ex-imgSize_2L & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_5_ver2 {
-    @if $layoutCode == "L25" {
-      width: 320px;
-    } @else if $layoutCode == "L30" {
-      width: 266px;
-    }
+    width: floor($mainWidth * 0.50);
   }
   .ex-imgFloat & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_5_ver2 {
-    @if $layoutCode == "L25" {
-      width: 370px;
-    } @else if $layoutCode == "L30" {
-      width: 316px;
-    }
+    width: floor($mainWidth * 0.57);
   }
   .ex-imgFloat.ex-imgSize_2S & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_5_ver2 {
-    @if $layoutCode == "L25" {
-      width: 420px;
-    } @else if $layoutCode == "L30" {
-      width: 366px;
-    }
+    width: floor($mainWidth * 0.65);
   }
   .ex-imgFloat.ex-imgSize_2SS & .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 .mod-h_5_ver2 {
-    @if $layoutCode == "L25" {
-      width: 470px;
-    } @else if $layoutCode == "L30" {
-      width: 416px;
-    }
+    width: floor($mainWidth * 0.73);
   }
 }
 
@@ -164,12 +148,14 @@
    // .mod-img + .mod-h_5-pic, .mod-table + .mod-h_5-hyo, .mod-ul + .mod-h_5-list 差分でできるので不要
   //, .mod-h_5_4, .mod-h_5_5, .mod-h_5_7,.mod-h_5_9, .mod-h_5_10, .mod-h_5_14, .mod-h_5_15
   {
-    margin-top: 25px;
     .mod-h {
       font-size: $fontSizeS + 1;
       line-height: 1.6;
     }
   }
+  .mod-h_5_pic_top {
+    margin-top: 25px;
+    }
 }
 %common-style-mod-h_5_23-for-2colin3col {
   .mod-h_5_23_ver2
@@ -257,11 +243,13 @@
   .mod-h_5_pic_bottom, .mod-h_5_hyo_bottom, .mod-h_5_list_bottom
   //, .mod-h_5_4, .mod-h_5_5, .mod-h_5_7, .mod-h_5_9, .mod-h_5_10, .mod-h_5_14, .mod-h_5_15
   {
-    margin-top: 25px;
     .mod-h {
       font-size: $fontSizeM;
       line-height: 1.6;
     }
+  }
+  .mod-h_5_pic_top, .mod-h_5_hyo_top, .mod-h_5_list_top {
+    margin-top: 25px;
   }
 }
 

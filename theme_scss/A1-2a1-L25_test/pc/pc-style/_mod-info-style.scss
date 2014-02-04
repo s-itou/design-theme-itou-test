@@ -28,6 +28,16 @@
   }
 }
 
+@mixin common-style-mod-info-side {
+  @include border-radius();
+  @extend %inlineBlock; //横幅可変設定
+  margin-top: 15px !important; //p要素のため
+  padding: 0 13px;
+  text-align: left;
+  font-size: $sideFontSizeM;
+  font-weight: normal;
+}
+
 
 //＊＊＊＊＊＊＊＊＊＊＊＊
 //module-style
@@ -35,6 +45,7 @@
 
 //info基本形（メインエリア）
 @mixin module-style-mod-info {}
+@mixin module-style-mod-info-side {}
 
 
 
@@ -153,103 +164,22 @@
 }
 
 
-
-//ヘッダーエリア専用のinfo
-//＊＊＊＊＊＊＊＊＊＊＊＊
-//common-style
-//＊＊＊＊＊＊＊＊＊＊＊＊
-@mixin common-style-mod-info-header {
-  th {
-    vertical-align: top;
-    font-weight: normal;
-    > p {
-      @include border-radius(3px);
-      padding: 0;
-      width: 48px;
-      color: #ffffff;
-      text-align: center;
-      font-size: $fontSizeS - 1;
-    }
-  }
-  td {
-    padding: 0 0 0 7px;
-    max-width: 135px;
-    font-size: $fontSizeS;
-  }
+@mixin deco-style01A1-mod-info-side {
+  background-color: #5e1409;
+  color: #ffffff;
 }
 
 
-
-
-
-
-//ヘッダーエリア専用のinfo
-//＊＊＊＊＊＊＊＊＊＊＊＊
-//module-style
-//＊＊＊＊＊＊＊＊＊＊＊＊
-@mixin module-style-mod-info-header {
-  th {
-    > p {
-      padding: 0 3px 0 3px;
-    }
-  }
-  td {
-    max-width: 158px;
-  }
-}
-
-@mixin module-style-mod-info-header-top {
-  th {
-    display: table;
-    > p {
-      display: table-cell;
-      height: 36px;
-      vertical-align: middle;
-    }
-  }
+@mixin deco-style01A2-mod-info-side {
+  background-color: #3c3c3c;
+  color: #ffffff;
 }
 
 
-@mixin module-style-mod-info-header-bottom {
-  margin-top: 5px;
-  &.ex-first-child {
-    margin-top: 0 !important;
-  }
-  th {
-    display: table;
-    > p {
-      display: table-cell;
-      vertical-align: middle;
-    }
-  }
+@mixin deco-style01A3-mod-info-side {
+  background-color: #315273;
+  color: #ffffff;
 }
-
-//＊＊＊＊＊＊＊＊＊＊＊＊
-//deco-style
-//＊＊＊＊＊＊＊＊＊＊＊＊
-
-//ヘッダーエリア専用のinfo
-@mixin deco-style01A1-mod-info-header {
-  th {
-    > p {
-      background-color: #ff8809;
-    }
-  }
-  td {
-    color: #333333;
-  }
-}
-@mixin deco-style01A2-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
-@mixin deco-style01A3-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
-@mixin deco-style01B1-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
-@mixin deco-style01B2-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
-@mixin deco-style01B3-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
-@mixin deco-style01C1-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
-@mixin deco-style01C2-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
-@mixin deco-style01C3-mod-info-header {@include deco-style01A1-mod-info-header;}//未作成のため暫定措置
-
-
-
 
 //新着情報用
 //＊＊＊＊＊＊＊＊＊＊＊＊
@@ -293,7 +223,7 @@
 
 @mixin deco-style01A1-mod-info-news {
   > p:first-child {
-    background-color: #f59e3b;
+    background-color: #5e1409;
     background-image: none;
     color: #ffffff;
   }
@@ -304,9 +234,9 @@
 
 @mixin deco-style01A2-mod-info-news {
   > p:first-child {
-    background-color: #ffe876;
+    background-color: #3c3c3c;
     background-image: none;
-    color: #333333;
+    color: #ffffff;
   }
   > p + p {
     color: #333333;
@@ -315,7 +245,7 @@
 
 @mixin deco-style01A3-mod-info-news {
   > p:first-child {
-    background-color: #519dce;
+    background-color: #315273;
     background-image: none;
     color: #ffffff;
   }

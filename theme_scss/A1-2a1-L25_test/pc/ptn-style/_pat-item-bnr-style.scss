@@ -50,451 +50,6 @@
 }
 
 
-
-// -------------------------------------
-//  pat-item-bnr の共通デザイン
-// -------------------------------------
-@mixin module-style-pat-item-bnr-1 { //footer
-  @extend %inlineBlock;
-  position: absolute !important; //switchableのホバーで崩れる現象に対応するため
-  bottom: 0;
-  margin: 5px 0 0 0;
-  min-width: 200px;
-  max-width: 300px;
-  background-repeat: repeat-x;
-  background-position: left top;
-  .mod-bnr-inner {
-    padding: 7px 5px 6px 30px;
-    max-height: 51px;
-    background-position: 9px 10px;
-    p {
-      font-size: $fontSizeS + 1;
-    }
-  }
-}
-@mixin module-style-pat-item-bnr-2 { //お問合せ
-  margin: 15px 0 0 0;
-  width: 260px;
-  background-repeat: repeat-x;
-  background-position: left top;
-  .mod-bnr-inner {
-    padding: 4px 30px 2px 30px;
-    max-height: 50px;
-    background-position: 9px 8px;
-    background-repeat: no-repeat;
-  }
-}
-@mixin module-style-pat-item-bnr-3 { //サイドの細いバナー
-  margin: 10px 0 0 0;
-  .mod-bnr-inner {
-    padding: 0 0 0 18px;
-    max-height: 40px;
-    background-repeat: no-repeat;
-    background-position: left center;
-    p {
-      font-size: $sideFontSizeM;
-      line-height: 1.6;
-    }
-  }
-}
-@mixin module-style-pat-item-bnr-4 { //テーマ2デフォルト
-  width: 270px;
-  background-position: left top;
-  background-repeat: repeat-x;
-  .mod-bnr-inner {
-    padding: 11px 5px 10px 30px;
-    max-height: 65px;
-    background-position: 10px 15px;
-    background-repeat: no-repeat;
-  }
-}
-
-
-// -------------------------------------
-// pat-item-bnr の装飾スタイル
-// -------------------------------------
-
-@mixin deco-style-pat-item-bnr-grade-1 { //footer 青1
-  border: 1px solid #325073;
-  background-color: #274263;
-  background-image: url("img/mod-bnr/_34/bg_a.png");
-  .mod-bnr-inner {
-    border: 1px solid #b3bcc8;
-    background-image: url("img/mod-bnr/_34/bg02_a.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-2 { //footer 青2
-  border: 1px solid #5f140a;
-  background-color: #500f07;
-  background-image: url("img/mod-bnr/_34/bg_a_2.png");
-  .mod-bnr-inner {
-    border: 1px solid #c1aba8;
-    background-image: url("img/mod-bnr/_34/bg02_a_2.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-3 { //footer 青3
-  border: 1px solid #200805;
-  background-color: #180604;
-  background-image: url("img/mod-bnr/_34/bg_a_3.png");
-  .mod-bnr-inner {
-    border: 1px solid #aea8a7;
-    background-image: url("img/mod-bnr/_34/bg02_a_3.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-4 { //footer ピンク
-  border: 1px solid #931f10;
-  background-color: #8b1e0f;
-  background-image: url("img/mod-bnr/_34/bg_b.png");
-  .mod-bnr-inner {
-    border: 1px solid #591208;
-    background-image: url("img/mod-bnr/_34/bg02_b.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-5 { //footer 黄１
-  border: 1px solid #4672af;
-  background-color: #4671ae;
-  background-image: url("img/mod-bnr/_34/bg_b_2.png");
-  .mod-bnr-inner {
-    border: 1px solid #314e79;
-    background-image: url("img/mod-bnr/_34/bg02_b_2.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-6 { //footer 黄2
-  border: 1px solid #061626;
-  background-color: #2f4d6f;
-  background-image: url("img/mod-bnr/_34/bg_b_3.png");
-  .mod-bnr-inner {
-    border: 1px solid #0f375f;
-    background-image:  url("img/mod-bnr/_34/bg02_b_3.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-7 { //黒
-  border: 1px solid #3c3c3c;
-  background-color: #535353;
-  background-image: url("img/mod-bnr/_33/bg_a.png");
-  .mod-bnr-inner {
-    border: 1px solid #ffffff;
-    background-image: url("img/mod-bnr/_33/bg02_a.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-8 { //青4
-  border: 1px solid #7398c2;
-  background-color: #677e9a;
-  background-image: url("img/mod-bnr/_33/bg_a_2.png");
-    color: #ffffff;
-  .mod-bnr-inner {
-    border: 1px solid #ffffff;
-    background-image: url("img/mod-bnr/_33/bg02_a_2.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-9 { //薄赤
-  border: 1px solid #e1d5d5;
-  background-color: #dfd2d2;
-  background-image: url("img/mod-bnr/_33/bg_a_3.png");
-  .mod-bnr-inner {
-    border: 1px solid #ffffff;
-    background-image: url("img/mod-bnr/_33/bg02_a_3.png");
-    color: #5f140a;
-    a {
-      color: #5f140a;
-    }
-    a:hover {
-      color: #5f140a;
-    }
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-10 { //グレー
-  border: 1px solid #889eb8;
-  background-color: #c9c9c9;
-  background-image: url("img/mod-bnr/_33/bg_b.png");
-  .mod-bnr-inner {
-    border: 1px solid #ececec;
-    background-image: url("img/mod-bnr/_33/bg02_b.png");
-    color: #0f375f;
-    a {
-      color: #0f375f;
-    }
-    a:hover {
-      color: #0f375f;
-    }
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-11 { //ゴールド
-  border: 1px solid #3f5f7f;
-  background-color: #c7c0a1;
-  background-image: url("img/mod-bnr/_33/bg_b_2.png");
-  .mod-bnr-inner {
-    border: 1px solid #ebe9de;
-    background-image: url("img/mod-bnr/_33/bg02_b_2.png");
-    color: #333333;
-    a {
-      color: #333333;
-    }
-    a:hover {
-      color: #333333;
-    }
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-12 { //薄赤2
-  border: 1px solid #d7c0c0;
-  background-color: #dbcbcb;
-  background-image: url("img/mod-bnr/_33/bg_b_3.png");
-  .mod-bnr-inner {
-    border: 1px solid #f2ecec;
-    background-image: url("img/mod-bnr/_33/bg02_b_3.png");
-    color: #5f140a;
-    a {
-      color: #5f140a;
-    }
-    a:hover {
-      color: #5f140a;
-    }
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-13 { //2a1の黒
-  border: 1px solid #3c3c3c;
-  background-color: #303030;
-  background-image: url("img/mod-bnr/bg03.png");
-  .mod-bnr-inner {
-    border: 1px solid #ffffff;
-    background-image: url("img/mod-bnr/bg04.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-14 { //2a2の青
-  border: 1px solid #325073;
-  background-color: #264061;
-  background-image: url("img/mod-bnr/bg03_2.png");
-  .mod-bnr-inner {
-    border: 1px solid #bec9d4;
-    background-image: url("img/mod-bnr/bg04_2.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-15 { //2a3の赤
-  border: 1px solid #781b0e;
-  background-color: #65140a;
-  background-image: url("img/mod-bnr/bg03_3.png");
-  .mod-bnr-inner {
-    border: 1px solid #d6b5af;
-    background-image: url("img/mod-bnr/bg04_3.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-16 { //2b1の青
-  border: 1px solid #3c3c3c;
-  background-color: #010204;
-  background-image: url("img/mod-bnr/bg08_4.png");
-  .mod-bnr-inner {
-    border: 1px solid #b6c0cd;
-    background-image: url("img/mod-bnr/bg13.png");
-    background-position: 10px 11px; //common打ち消し
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-17 { //2b2の青
-  border: 1px solid #7196c0;
-  background-color: #143b64;
-  background-image: url("img/mod-bnr/bg08_2.png");
-  .mod-bnr-inner {
-    border: 1px solid #cddae8;
-    background-image: url("img/mod-bnr/bg13.png");
-    background-position: 10px 11px; //common打ち消し
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-18 { //2b3の赤
-  border: 1px solid #781b0e;
-  background-color: #65140a;
-  background-image: url("img/mod-bnr/bg03_3.png");
-  .mod-bnr-inner {
-    border: 1px solid #3d0d05;
-    background-image: url("img/mod-bnr/bg13.png");
-    background-position: 10px 11px; //common打ち消し
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-grade-19 { //1a1装飾文章
-  border: 1px solid #692f27;
-  background-color: #4f1108;
-  background-image: url("img/_pat-item/bnr-grade/bg.png");
-  .mod-bnr-inner {
-    border: 1px solid #cdb2ac;
-    background-image: url("img/_pat-item/bnr-grade/bg02.png");
-    color: #ffffff;
-  }
-}
-
-
-
-// メッシュ
-@mixin deco-style-pat-item-bnr-mesh-1 { //footer 青
-  border: 1px solid #325073;
-  background-image: url("img/mod-bnr/_34/bg_c.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-2 { //footer 黄
-  border: 1px solid #5f140a;
-  background-image: url("img/mod-bnr/_34/bg_c_2.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #ceb2ac;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-3 { //footer 茶
-  border: 1px solid #200805;
-  background-image: url("img/mod-bnr/_34/bg_c_3.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #c2b9b8;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-4 { //黒
-  border: 1px solid #666666;
-  background-image: url("img/mod-bnr/_33/bg_c.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #fafafa;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-5 { //青2
-  border: 1px solid #666666;
-  background-image: url("img/mod-bnr/_33/bg_c_2.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #f8fafb;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-6 { //赤2
-  border: 1px solid #781b0e;
-  background-image: url("img/mod-bnr/_33/bg_c_3.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #fbf8f7;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-7 {
-  border: 1px solid #3c3c3c;
-  background-image: url("img/mod-bnr/bg21.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #cbcbcb;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-8 {
-  border: 1px solid #0f375f;
-  background-image: url("img/mod-bnr/bg21_2.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #b6c9d5;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-9 {
-  border: 1px solid #781b0e;
-  background-image: url("img/mod-bnr/bg21_3.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #ddbeb5;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-10 {
-  border: 1px solid #3c3c3c;
-  background-image: url("img/_pat-item/bnr-mesh/bg.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #cbcbcb;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-11 {
-  border: 1px solid #0f375f;
-  background-image: url("img/_pat-item/bnr-mesh/bg_2.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #b6c9d5;
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mesh-12 {
-  border: 1px solid #781b0e;
-  background-image: url("img/_pat-item/bnr-mesh/bg_3.png");
-  background-repeat: no-repeat; //common打ち消し
-  .mod-bnr-inner {
-    border: 1px solid #ddbeb5;
-    color: #ffffff;
-  }
-}
-
-
-//小さいバナー
-@mixin deco-style-pat-item-bnr-mini-1 { //紺
-  border-top: 1px solid #98a4b4;
-  border-right: 1px solid #152640;
-  border-bottom: 1px solid #0e1c33;
-  background-color: #26415f;
-  .mod-bnr-inner {
-    background-image: url("img/mod-bnr/bg61.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mini-2 { //赤
-  border-top: 1px solid #bf938d;
-  border-right: 1px solid #560e07;
-  border-bottom: 1px solid #480904;
-  background-color: #781b0e;
-  .mod-bnr-inner {
-    background-image: url("img/mod-bnr/bg61_2.png");
-    color: #ffffff;
-  }
-}
-@mixin deco-style-pat-item-bnr-mini-3 { //濃赤
-  border-top: 1px solid #a9908c;
-  border-right: 1px solid #2d0b07;
-  border-bottom: 1px solid #220704;
-  background-color: #48160d;
-  .mod-bnr-inner {
-    background-image: url("img/mod-bnr/bg61_3.png");
-    color: #ffffff;
-  }
-}
-
-@mixin deco-style-pat-item-bnr-mini-4 { //黒
-  border-top: 1px solid #a5a5a5;
-  border-right: 1px solid #222222;
-  border-bottom: 1px solid #161616;
-  background-color: #414141;
-  .mod-bnr-inner {
-    background-image: url("img/_pat-item/bnr-mini/bg.png");
-    color: #ffffff;
-  }
-}
-
-
-
-//////////////////////////////////
-//  ここからリファクタ
-//////////////////////////////////
-
 // -------------------------------------
 //  module-style-pat-item-bnr
 // -------------------------------------
@@ -524,7 +79,7 @@
 //  size-style-pat-item-bnr
 // -------------------------------------
 @mixin size-style-pat-item-bnr {
-  min-width: none;
+  min-width: 0;
   max-width: none;
   width: 270px;
   .mod-bnr-inner {
@@ -532,15 +87,27 @@
   }
 }
 @mixin size-style-pat-item-bnr2 {
-  min-width: none;
+  min-width: 0;
   max-width: none;
   width: 260px;
   .mod-bnr-inner {
     max-height: 50px;
   }
 }
+@mixin size-style-pat-item-bnr3 {
+  min-width: 0;
+  max-width: none;
+  width: 195px;
+  .mod-bnr-inner {
+    max-height: 40px;
+    p { //common打ち消し
+      font-size: $sideFontSizeM;
+      line-height: 1.6;
+    }
+  }
+}
 @mixin size-style-pat-item-bnr-box {
-  min-width: none;
+  min-width: 0;
   max-width: 230px;
   width: auto;
   .mod-bnr-inner {
@@ -552,7 +119,7 @@
 }
 @mixin size-style-pat-item-bnr-side {
   margin: 10px 0 0 0; //common打ち消し
-  min-width: none;
+  min-width: 0;
   max-width: none;
   width: auto;
   .mod-bnr-inner {
@@ -565,7 +132,7 @@
 }
 @mixin size-style-pat-item-bnr-side2 {
   margin: 10px 0 0 0; //common打ち消し
-  min-width: none;
+  min-width: 0;
   max-width: none;
   width: auto;
   .mod-bnr-inner {
@@ -587,12 +154,106 @@
   }
 }
 
+// -------------------------------------
+//  size-style-pat-item-bnr-for-2col
+// -------------------------------------
+@mixin size-style-pat-item-bnr-for-2col-L25 {
+  min-width: 0;
+  max-width: floor(($mainWidth - 40) / 3);
+  width: auto;
+  .mod-bnr-inner {
+    max-height: 53px;
+  }
+}
+@mixin size-style-pat-item-bnr-box-for-2col-L25 {
+  min-width: 0;
+  max-width: none;
+  width: auto;
+  .mod-bnr-inner {
+    max-height: 46px;
+    p { //common打ち消し
+      font-size: $fontSizeM - 2;
+    }
+  }
+}
+@mixin size-style-pat-item-bnr-box2-for-2col-L25 {
+  min-width: 0;
+  max-width: none;
+  width: auto;
+  .mod-bnr-inner {
+    max-height: 33px;
+    p { //common打ち消し
+      font-size: $fontSizeS - 1;
+    }
+  }
+}
+@mixin size-style-pat-item-bnr-for-2col-L30 {
+  min-width: 0;
+  max-width: floor(($mainWidth - 40) / 3);
+  width: auto;
+  .mod-bnr-inner {
+    max-height: 53px;
+    p { //common打ち消し
+      font-size: $fontSizeM - 1;
+    }
+  }
+}
+
+// -------------------------------------
+//  size-style-pat-item-bnr-for-2colin3col
+// -------------------------------------
+@mixin size-style-pat-item-bnr-for-2colin3col-L25 {
+  min-width: 0;
+  max-width: none;
+  width: 120px;
+  .mod-bnr-inner {
+    max-height: 49px;
+    p { //common打ち消し
+      font-size: $fontSizeS + 1;
+    }
+  }
+}
+@mixin size-style-pat-item-bnr-for-2colin3col-L30 {
+  min-width: 0;
+  max-width: none;
+  width: 102px;
+  .mod-bnr-inner {
+    max-height: 49px;
+    p { //common打ち消し
+      font-size: $fontSizeS + 1;
+    }
+  }
+}
+
+// -------------------------------------
+//  size-style-pat-item-bnr-for-3col
+// -------------------------------------
+@mixin size-style-pat-item-bnr-for-3col-L25 {
+  min-width: 0;
+  max-width: floor(($mainWidth - 40) / 3);
+  width: auto;
+  .mod-bnr-inner {
+    max-height: 53px;
+  }
+}
+@mixin size-style-pat-item-bnr-for-3col-L30 {
+  min-width: 0;
+  max-width: floor(($mainWidth - 40) / 3);
+  width: auto;
+  .mod-bnr-inner {
+    max-height: 53px;
+    p { //common打ち消し
+      font-size: $fontSizeM - 1;
+    }
+  }
+}
+
 
 // -------------------------------------
 //  size-style-pat-item-bnr-for-4col
 // -------------------------------------
 @mixin size-style-pat-item-bnr-for-4col-L25 {
-  min-width: none;
+  min-width: 0;
   max-width: none;
   width: auto;
   .mod-bnr-inner {
@@ -603,7 +264,7 @@
   }
 }
 @mixin size-style-pat-item-bnr-for-4col-L30 {
-  min-width: none;
+  min-width: 0;
   max-width: none;
   width: auto;
   .mod-bnr-inner {
@@ -644,7 +305,7 @@
 @mixin insize-style-pat-item-bnr-c {
   .mod-bnr-inner {
     padding: 11px 5px 10px 30px;
-    background-position: 10px 11px;
+    background-position: 10px 10px;
   }
 }
 @mixin insize-style-pat-item-bnr-box-c {
@@ -660,6 +321,7 @@
   }
 }
 @mixin insize-style-pat-item-bnr-box-d {
+  background-position: -3px -8px; //common打ち消し
   .mod-bnr-inner {
     padding: 5px 5px 4px 30px;
     background-position: left top;
@@ -680,7 +342,7 @@
 @mixin insize-style-pat-item-bnr2-h {
   .mod-bnr-inner {
     padding: 4px 30px 2px 30px;
-    background-position: 9px 6px;
+    background-position: 9px 7px;
   }
 }
 @mixin insize-style-pat-item-bnr2-i {
@@ -690,6 +352,171 @@
   }
 }
 
+// -------------------------------------
+//  insize-style-pat-item-bnr-for-2col
+// -------------------------------------
+@mixin insize-style-pat-item-bnr-for-2col-L25-b {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
+    background-position: 10px 9px;
+  }
+}
+@mixin insize-style-pat-item-bnr-box-for-2col-L25-b {
+  .mod-bnr-inner {
+    padding: 5px 5px 3px 25px;
+    background-position: 8px 8px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2col-L30-b {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 23px;
+    background-position: 7px 9px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2col-L25-c {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
+    background-position: 10px 4px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-box-for-2col-L25-c {
+  .mod-bnr-inner {
+    padding: 5px 5px 3px 25px;
+    background-position: 8px 5px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2col-L30-c {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 23px;
+    background-position: 7px 6px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2col-L25-d {
+  background-position: -2px -6px; //common打ち消し
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
+    background-position: left top;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-box-for-2col-L25-d {
+  background-position: -5px -8px; //common打ち消し
+  .mod-bnr-inner {
+    padding: 5px 5px 3px 25px;
+    background-position: left top;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2col-L30-d {
+  background-position: -2px -6px; //common打ち消し
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 23px;
+    background-position: left top;
+  }
+}
+@mixin insize-style-pat-item-bnr-box2-for-2col-L25-l {
+  .mod-bnr-inner {
+    padding: 2px 5px 1px 17px;
+    background-position: 8px 5px;
+  }
+}
+
+// -------------------------------------
+//  insize-style-pat-item-bnr-for-2colin3col
+// -------------------------------------
+@mixin insize-style-pat-item-bnr-for-2colin3col-L25-b {
+  .mod-bnr-inner {
+    padding: 6px 5px 5px 25px;
+    background-position: 8px 9px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2colin3col-L30-b {
+  .mod-bnr-inner {
+    padding: 6px 5px 5px 25px;
+    background-position: 3px 9px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2colin3col-L25-c {
+  .mod-bnr-inner {
+    padding: 6px 5px 5px 25px;
+    background-position: 8px 5px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2colin3col-L30-c {
+  .mod-bnr-inner {
+    padding: 6px 5px 5px 25px;
+    background-position: 2px 5px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2colin3col-L25-d {
+  .mod-bnr-inner {
+    padding: 6px 5px 5px 25px;
+    background-position: left top;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-2colin3col-L30-d {
+  .mod-bnr-inner {
+    padding: 6px 5px 5px 25px;
+    background-position: left top;
+  }
+}
+
+// -------------------------------------
+//  insize-style-pat-item-bnr-for-3col
+// -------------------------------------
+@mixin insize-style-pat-item-bnr-for-3col-L25-b {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
+    background-position: 10px 9px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-3col-L30-b {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 23px;
+    background-position: 7px 9px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-3col-L25-c {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
+    background-position: 10px 4px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-3col-L30-c {
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 23px;
+    background-position: 7px 6px;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-3col-L25-d {
+  background-position: -3px -6px; //common打ち消し
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 30px;
+    background-position: left top;
+  }
+}
+
+@mixin insize-style-pat-item-bnr-for-3col-L30-d {
+  background-position: -3px -6px; //common打ち消し
+  .mod-bnr-inner {
+    padding: 5px 5px 4px 23px;
+    background-position: left top;
+  }
+}
 
 // -------------------------------------
 //  insize-style-pat-item-bnr-for-4col
@@ -711,7 +538,7 @@
 @mixin insize-style-pat-item-bnr-for-4col-L25-c {
   .mod-bnr-inner {
     padding: 5px 5px 4px 25px;
-    background-position: 7px 5px;
+    background-position: 7px 3px;
   }
 }
 
@@ -723,6 +550,7 @@
 }
 
 @mixin insize-style-pat-item-bnr-for-4col-L25-d {
+  background-position: -5px -7px; //common打ち消し
   .mod-bnr-inner {
     padding: 5px 5px 4px 25px;
     background-position: left top;
@@ -730,6 +558,7 @@
 }
 
 @mixin insize-style-pat-item-bnr-for-4col-L30-d {
+  background-position: -5px -7px; //common打ち消し
   .mod-bnr-inner {
     padding: 5px 3px 4px 20px;
     background-position: left top;
@@ -772,6 +601,59 @@
   }
 }
 
+@mixin deco-style-pat-item-bnr-b7 { //2a3 footer
+  border: 1px solid #200805;
+  background-color: #180604;
+  background-image: url("img/mod-bnr/_34/bg_a_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #aea8a7;
+    background-image: url("img/mod-bnr/_34/bg02_a_3.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-b8 { //2b1 footer
+  border: 1px solid #931f10;
+  background-color: #8b1e0f;
+  background-image: url("img/mod-bnr/_34/bg_b.png");
+  .mod-bnr-inner {
+    border: 1px solid #591208;
+    background-image: url("img/mod-bnr/_34/bg02_b.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-b9 { //2b2 footer
+  border: 1px solid #4672af;
+  background-color: #4671ae;
+  background-image: url("img/mod-bnr/_34/bg_b_2.png");
+  .mod-bnr-inner {
+    border: 1px solid #314e79;
+    background-image: url("img/mod-bnr/_34/bg02_b_2.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-b10 { //2b3 footer
+  border: 1px solid #061626;
+  background-color: #2f4d6f;
+  background-image: url("img/mod-bnr/_34/bg_b_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #0f375f;
+    background-image:  url("img/mod-bnr/_34/bg02_b_3.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-b16 { //2a1装飾文章 赤
+  border: 1px solid #692f27;
+  background-color: #4f1108;
+  background-image: url("img/_pat-item/bnr-grade/bg.png");
+  .mod-bnr-inner {
+    border: 1px solid #cdb2ac;
+    background-image: url("img/_pat-item/bnr-grade/bg02.png");
+    color: #ffffff;
+  }
+}
+
+
 // -------------------------------------
 // deco-style-pat-item-bnr-c
 // -------------------------------------
@@ -802,6 +684,36 @@
   .mod-bnr-inner {
     border: 1px solid #3d0d05;
     background-image: url("img/mod-bnr/bg13.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-c4 { //2b1の青
+  border: 1px solid #3c3c3c;
+  background-color: #010204;
+  background-image: url("img/mod-bnr/bg08_4.png");
+  .mod-bnr-inner {
+    border: 1px solid #b6c0cd;
+    background-image: url("img/_mod/set-design3/bnr/bg.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-c5 { //2b2の青
+  border: 1px solid #7196c0;
+  background-color: #143b64;
+  background-image: url("img/mod-bnr/bg08_2.png");
+  .mod-bnr-inner {
+    border: 1px solid #cddae8;
+    background-image: url("img/_mod/set-design3/bnr/bg.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-c6 { //2b3の赤
+  border: 1px solid #781b0e;
+  background-color: #65140a;
+  background-image: url("img/mod-bnr/bg03_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #3d0d05;
+    background-image: url("img/_mod/set-design3/bnr/bg.png");
     color: #ffffff;
   }
 }
@@ -837,5 +749,605 @@
     border: 1px solid #ddbeb5;
     background-image: none;
     color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-d7 { //フッター2c1
+  border: 1px solid #325073;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/_34/bg_c.png");
+  .mod-bnr-inner {
+    border: 1px solid #ffffff;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-d8 { //フッター2c2
+  border: 1px solid #5f140a;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/_34/bg_c_2.png");
+  .mod-bnr-inner {
+    border: 1px solid #ceb2ac;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-d9 { //フッター2c3
+  border: 1px solid #200805;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/_34/bg_c_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #c2b9b8;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-d10 {
+  border: 1px solid #3c3c3c;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/bg21.png");
+  .mod-bnr-inner {
+    border: 1px solid #cbcbcb;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-d11 {
+  border: 1px solid #0f375f;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/bg21_2.png");
+  .mod-bnr-inner {
+    border: 1px solid #b6c9d5;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-d12 {
+  border: 1px solid #781b0e;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/bg21_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #ddbeb5;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+
+// -------------------------------------
+// deco-style-pat-item-bnr-f
+// -------------------------------------
+@mixin deco-style-pat-item-bnr-f1 { //紺
+  border-top: 1px solid #98a4b4;
+  border-right: 1px solid #152640;
+  border-bottom: 1px solid #0e1c33;
+  background-color: #26415f;
+  background-image: none;
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/mod-bnr/bg61.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-f2 { //赤
+  border-top: 1px solid #bf938d;
+  border-right: 1px solid #560e07;
+  border-bottom: 1px solid #480904;
+  background-color: #781b0e;
+  background-image: none;
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/mod-bnr/bg61_2.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-f3 { //濃赤
+  border-top: 1px solid #a9908c;
+  border-right: 1px solid #2d0b07;
+  border-bottom: 1px solid #220704;
+  background-color: #48160d;
+  background-image: none;
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/mod-bnr/bg61_3.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-f4 { //黒
+  border-top: 1px solid #a5a5a5;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #161616;
+  background-color: #414141;
+  background-image: none;
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-mini/bg.png");
+    color: #ffffff;
+  }
+}
+
+
+
+// -------------------------------------
+// deco-style-pat-item-bnr-h
+// -------------------------------------
+@mixin deco-style-pat-item-bnr-h1 { //黒
+  border: 1px solid #3c3c3c;
+  background-color: #515151;
+  background-image: url("img/mod-bnr/_33/bg_a.png");
+  .mod-bnr-inner {
+    border: 1px solid #ffffff;
+    background-image: url("img/mod-bnr/_33/bg02_a.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-h2 { //青
+  border: 1px solid #7398c2;
+  background-color: #677e9a;
+  background-image: url("img/mod-bnr/_33/bg_a_2.png");
+    color: #ffffff;
+  .mod-bnr-inner {
+    border: 1px solid #ffffff;
+    background-image: url("img/mod-bnr/_33/bg02_a_2.png");
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-h3 { //薄赤
+  border: 1px solid #e1d5d5;
+  background-color: #dac8c8;
+  background-image: url("img/mod-bnr/_33/bg_a_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #ffffff;
+    background-image: url("img/mod-bnr/_33/bg02_a_3.png");
+    color: #5f140a;
+    a {
+      color: #5f140a;
+    }
+    a:hover {
+      color: #5f140a;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-h4 { //グレー
+  border: 1px solid #889eb8;
+  background-color: #c9c9c9;
+  background-image: url("img/mod-bnr/_33/bg_b.png");
+  .mod-bnr-inner {
+    border: 1px solid #ececec;
+    background-image: url("img/mod-bnr/_33/bg02_b.png");
+    color: #0f375f;
+    a {
+      color: #0f375f;
+    }
+    a:hover {
+      color: #0f375f;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-h5 { //ゴールド
+  border: 1px solid #3f5f7f;
+  background-color: #c7c0a1;
+  background-image: url("img/mod-bnr/_33/bg_b_2.png");
+  .mod-bnr-inner {
+    border: 1px solid #ebe9de;
+    background-image: url("img/mod-bnr/_33/bg02_b_2.png");
+    color: #333333;
+    a {
+      color: #333333;
+    }
+    a:hover {
+      color: #333333;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-h6 { //薄赤2
+  border: 1px solid #d7c0c0;
+  background-color: #d1b9ba;
+  background-image: url("img/mod-bnr/_33/bg_b_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #f2ecec;
+    background-image: url("img/mod-bnr/_33/bg02_b_3.png");
+    color: #5f140a;
+    a {
+      color: #5f140a;
+    }
+    a:hover {
+      color: #5f140a;
+    }
+  }
+}
+
+// -------------------------------------
+// deco-style-pat-item-bnr-i
+// -------------------------------------
+@mixin deco-style-pat-item-bnr-i1 { //黒
+  border: 1px solid #666666;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/_33/bg_c.png");
+  .mod-bnr-inner {
+    border: 1px solid #fafafa;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-i2 { //青
+  border: 1px solid #666666;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/_33/bg_c_2.png");
+  .mod-bnr-inner {
+    border: 1px solid #f8fafb;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-bnr-i3 { //赤2
+  border: 1px solid #781b0e;
+  background-color: transparent;
+  background-image: url("img/mod-bnr/_33/bg_c_3.png");
+  .mod-bnr-inner {
+    border: 1px solid #fbf8f7;
+    background-image: none;
+    color: #ffffff;
+  }
+}
+
+// -------------------------------------
+// deco-style-pat-item-bnr-l
+// -------------------------------------
+@mixin deco-style-pat-item-bnr-l1 { //2a1
+  border: none;
+  background-color: #0b2a4d;
+  background-image: url("img/_pat-item/bnr-l/bg.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-l2 { //2a2
+  border: none;
+  background-color: #65140a;
+  background-image: url("img/_pat-item/bnr-l/bg_2.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-l3 { //2a3
+  border: none;
+  background-color: #170603;
+  background-image: url("img/_pat-item/bnr-l/bg_3.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-l4 { //2b1
+  border: none;
+  background-color: #0f355b;
+  background-image: url("img/_pat-item/bnr-l/bg_4.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-l5 { //2b2
+  border: none;
+  background-color: #862713;
+  background-image: url("img/_pat-item/bnr-l/bg_5.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-l6 { //2b3
+  border: none;
+  background-color: #932010;
+  background-image: url("img/_pat-item/bnr-l/bg_6.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-l7 { //2c1
+  border: 1px solid #3c3c3c;
+  background-color: #2f2f2f;
+  background-image: url("img/_pat-item/bnr-l/bg_7.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-l8 { //2c2
+  border: 1px solid #0f375f;
+  background-color: #0b2b4f;
+  background-image: url("img/_pat-item/bnr-l/bg_8.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+@mixin deco-style-pat-item-bnr-l9 { //2c3
+  border: 1px solid #781b0e;
+  background-color: #67140a;
+  background-image: url("img/_pat-item/bnr-l/bg_9.png");
+  .mod-bnr-inner {
+    border: none;
+    background-image: url("img/_pat-item/bnr-l/bg02.png");
+    color: #ffffff;
+  }
+}
+
+
+
+// -------------------------------------
+//  module-style-pat-item-bnr-pic
+// -------------------------------------
+//mod-bnr-pic
+@mixin module-style-pat-item-bnr-pic {
+  @include border-radius(3px);
+  margin-top: 0; //common打ち消し
+  background-position: left top;
+  background-repeat: repeat-x;
+  &:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    @include border-radius(3px);
+    display: table;
+    .mod-bnr-inner2 {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .mod-bnr-inner3 {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+// -------------------------------------
+//  size-style-pat-item-bnr-pic
+// -------------------------------------
+//mod-bnr-pic
+@mixin size-style-pat-item-bnr-pic {
+  min-height: 70px;
+  max-height: 70px;
+  width: floor(($mainWidth - 40) / 3);
+  height: 70px;
+  .mod-bnr-inner {
+    min-height: 60px;
+    width: 100%;
+    .mod-bnr-inner2 {
+      width: 60px;
+    }
+    p {
+      word-break: break-all;
+      font-size: $fontSizeM + 1;
+      line-height: 1.2;
+    }
+    img {
+      max-height: 60px;
+      width: 60px;
+    }
+  }
+}
+@mixin size-style-pat-item-bnr-pic2 {
+  overflow: hidden;
+  min-height: 60px;
+  max-height: 68px;
+  width: 100%;
+  height: auto;
+  .mod-bnr-inner {
+    min-height: 58px;
+    width: 100%;
+    &:before, x:-moz-any-link {  //firefox対応　//x:-moz-any-link
+      display: block;
+      min-height: 58px;
+      width: 0;
+      content: "";
+    }
+    .mod-bnr-inner2 {
+      width: 50px;
+    }
+    p {
+      word-break: break-all;
+      font-size: $fontSizeM + 1;
+      line-height: 1.2;
+    }
+    img {
+      max-height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+
+// -------------------------------------
+//  insize-style-pat-item-bnr-pic
+// -------------------------------------
+@mixin insize-style-pat-item-bnr-pic-k {
+  .mod-bnr-inner3 {
+    padding: 0 0 0 13px;
+  }
+}
+@mixin insize-style-pat-item-bnr-pic2-k {
+  .mod-bnr-inner3 {
+    padding: 0 0 0 10px;
+  }
+}
+
+// -------------------------------------
+//  deco-style-pat-item-bnr-k
+// -------------------------------------
+//mod-bnr-pic
+@mixin deco-style-pat-item-bnr-k1 {
+  border: 1px solid #545454;
+  background-color: #434343;
+  background-image: url("img/mod-bnr/_36/bg_a.png");
+  .mod-bnr-inner {
+    padding: 3px;
+    border: 1px solid #cacaca;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k2 {
+  border: 1px solid #0f375f;
+  background-color: #0b294c;
+  background-image: url("img/mod-bnr/_36/bg_a_2.png");
+  .mod-bnr-inner {
+    padding: 3px;
+    border: 1px solid #afc1ce;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k3 {
+  border: 1px solid #641d14;
+  background-color: #51150e;
+  background-image: url("img/mod-bnr/_36/bg_a_3.png");
+  .mod-bnr-inner {
+    padding: 3px;
+    border: 1px solid #d0b6b2;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k4 {
+  border: 1px solid #185daa;
+  background-color: #0a284b;
+  background-image: url("img/mod-bnr/_36/bg_b.png");
+  .mod-bnr-inner {
+    padding: 4px;
+    border: none;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k5 {
+  border: 1px solid #185daa;
+  background-color: #0a284b;
+  background-image: url("img/mod-bnr/_36/bg_b_2.png");
+  .mod-bnr-inner {
+    padding: 4px;
+    border: none;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k6 {
+  border: 1px solid #5f140a;
+  background-color: #4b0e07;
+  background-image: url("img/mod-bnr/_36/bg_b_3.png");
+  .mod-bnr-inner {
+    padding: 4px;
+    border: none;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k7 {
+  border: 1px solid #2d2d2d;
+  background-color: #2c2c2c;
+  background-image: url("img/mod-bnr/_36/bg_c.png");
+  .mod-bnr-inner {
+    padding: 4px;
+    border: none;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k8 {
+  border: 1px solid #172a40;
+  background-color: #17293e;
+  background-image: url("img/mod-bnr/_36/bg_c_2.png");
+  .mod-bnr-inner {
+    padding: 4px;
+    border: none;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k9 {
+  border: 1px solid #3c1610;
+  background-color: #3b150f;
+  background-image: url("img/mod-bnr/_36/bg_c_3.png");
+  .mod-bnr-inner {
+    padding: 4px;
+    border: none;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k10 {
+  border: 1px solid #273e60;
+  border-top-color: #b2bbca;
+  border-bottom-color: #0b121c;
+  background-color: #1c2c45;
+  background-image: url("img/_pat-item/bnr-grade/_bg_door.png");
+  .mod-bnr-inner {
+    padding: 3px;
+    border: 1px solid #213452;
+    border-top-color: #6b7f98;
+    border-bottom-color: #111d2d;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k11 {
+  border: 1px solid #263f5e;
+  border-top-color: #afbdca;
+  border-bottom-color: #0c131d;
+  background-color: #012d5a;
+  background-image: url("img/_pat-item/bnr-grade/_bg_door_2.png");
+  .mod-bnr-inner {
+    padding: 3px;
+    border: 1px solid #143e6e;
+    border-top-color: #6785a9;
+    border-bottom-color: #021d3b;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
+  }
+}
+@mixin deco-style-pat-item-bnr-k12 {
+  border: 1px solid #2e2c2d;
+  border-top-color: #b4b4b4;
+  border-bottom-color: #190f0e;
+  background-color: #3d0e08;
+  background-image: url("img/_pat-item/bnr-grade/_bg_door_3.png");
+  .mod-bnr-inner {
+    padding: 3px;
+    border: 1px solid #4b1e19;
+    border-top-color: #8d6e69;
+    border-bottom-color: #2f0906;
+    .mod-bnr-inner3 {
+      color: #ffffff;
+    }
   }
 }

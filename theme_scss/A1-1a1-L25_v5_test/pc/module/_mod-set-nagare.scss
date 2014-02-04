@@ -51,52 +51,71 @@
 // --------------------------------------------------------------------------
 
 .mod-set-nagare-4col {
+  @include module-style-mod-set-nagare-4col;
   .ex-style_01A1 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-1-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-1;}
     }
   }
   .ex-style_01A2 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-1-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-2;}
     }
   }
   .ex-style_01A3 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-2-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-3;}
     }
   }
   .ex-style_01B1 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-3-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-4;}
     }
   }
   .ex-style_01B2 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-3-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-5;}
     }
   }
   .ex-style_01B3 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-4-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-6;}
     }
   }
   .ex-style_01C1 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-1-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-7;}
     }
   }
   .ex-style_01C2 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-2-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-8;}
     }
   }
   .ex-style_01C3 & {
     .mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3 {
       .mod-img {@include pat-item-arrow-grade-3-for-4col;}
+      .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-9;}
     }
   }
 }
 
-
+//icon用の記述
+.ex-style_01A1 {@include pat-item-h4-number-for-4col-icon-1;}
+.ex-style_01A2 {@include pat-item-h4-number-for-4col-icon-2;}
+.ex-style_01A3 {@include pat-item-h4-number-for-4col-icon-3;}
+.ex-style_01B1 {@include pat-item-h4-number-for-4col-icon-4;}
+.ex-style_01B2 {@include pat-item-h4-number-for-4col-icon-5;}
+.ex-style_01B3 {@include pat-item-h4-number-for-4col-icon-6;}
+.ex-style_01C1 {@include pat-item-h4-number-for-4col-icon-7;}
+.ex-style_01C2 {@include pat-item-h4-number-for-4col-icon-8;}
+.ex-style_01C3 {@include pat-item-h4-number-for-4col-icon-9;}
 

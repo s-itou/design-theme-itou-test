@@ -56,9 +56,6 @@
         margin: 0;
       }
     }
-    .mod-bnr_ver2 {
-      margin: 15px 0 0 0;
-    }
   }
 }
 @mixin module-style-mod-set-toiawase-2col-2 {
@@ -83,6 +80,32 @@
     }
   }
 }
+@mixin module-style-mod-set-toiawase-2col-4 {
+  .mod-2col-in1 {
+    .mod-2col-inner-2 {
+      > .mod-html-map {
+        small a {
+          padding: 0 0 0 17px;
+          min-height: 0;
+          width: auto;
+          height: auto;
+          border: 0 none transparent;
+          background-color: transparent;
+          background-position: left 2px;
+          font-size: $fontSizeS + 1;
+        }
+      }
+    }
+    .mod-2col-inner2-2 {
+      > .mod-rte_ver2 {
+        margin-top: 5px;
+      }
+      > .mod-bnr_ver2 {
+        margin: 15px auto 0;
+      }
+    }
+  }
+}
 
 // -------------------------------------
 // deco-style
@@ -91,30 +114,81 @@
   .mod-rte-kyocho {
     color: #45320b;
   }
+  .mod-html-map {
+    small a {
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-2 {
   .mod-rte-kyocho {
     color: #172846;
+  }
+  .mod-html-map {
+    small a {
+      color: #294470 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
   }
 }
 @mixin deco-style-mod-set-toiawase-2col-3 {
   .mod-rte-kyocho {
     color: #333333;
   }
+  .mod-html-map {
+    small a {
+      color: #45320b !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-4 {
   .mod-rte-kyocho {
     color: #333333;
+  }
+  .mod-html-map {
+    small a {
+      background-image: url("img/mod-link/bg.png");
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
   }
 }
 @mixin deco-style-mod-set-toiawase-2col-5 {
   .mod-rte-kyocho {
     color: #333333;
   }
+  .mod-html-map {
+    small a {
+      background-image: url("img/mod-link/bg_2.png");
+      color: #294470 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-6 {
   .mod-rte-kyocho {
     color: #333333;
+  }
+  .mod-html-map {
+    small a {
+      background-image: url("img/mod-link/bg_3.png");
+      color: #45320b !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
   }
 }
 @mixin deco-style-mod-set-toiawase-2col-7 {
@@ -124,6 +198,14 @@
   .mod-rte-kyocho {
     color: #426ca6;
   }
+  .mod-html-map {
+    small a {
+      color: #335a93 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-8 {
   .mod-box-in1 {
@@ -132,6 +214,14 @@
   .mod-rte-kyocho {
     color: #45320b;
   }
+  .mod-html-map {
+    small a {
+      color: #294470 !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
+  }
 }
 @mixin deco-style-mod-set-toiawase-2col-9 {
   .mod-box-in1 {
@@ -139,6 +229,14 @@
   }
   .mod-rte-kyocho {
     color: #333333;
+  }
+  .mod-html-map {
+    small a {
+      color: #45320b !important;
+      &:hover {
+        color: #f2d028 !important;
+      }
+    }
   }
 }
 

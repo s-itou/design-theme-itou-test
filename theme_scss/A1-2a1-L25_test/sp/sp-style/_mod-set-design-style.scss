@@ -39,12 +39,28 @@
 @mixin module-style-mod-set-design3 {
   margin: 20px 0 0 0;
   .mod-ul_ver2 {
+    ul {
+      padding: 0 !important; //itemに勝つため
+    }
     li {
       background-repeat: no-repeat;
     }
   }
   .mod-bnr_ver2 {
     margin-top: $fontSizeM !important; //ex-alignを上書きしないため
+  }
+  .mod-2col50 {
+    margin: 10px 0 0 0;
+    .mod-2col-inner2 {
+      margin: 10px 0 0 0;
+    }
+  }
+  .mod-set-step {
+    div:first-child {
+      .mod-2col50 {
+        margin: 15px 0 0 0;
+      }
+    }
   }
 }
 
@@ -77,6 +93,9 @@
     }
   }
   .mod-ul_ver2 {
+    ul {
+      padding: 0 !important; //itemに勝つため
+    }
     li {
       background-repeat: no-repeat;
     }
@@ -565,6 +584,7 @@
     @include border-radius(0px);
     padding: 0;
     border: none;
+    background-image: none;
     background-color: transparent;
     li {
       margin: 2px 10px 0 10px;
@@ -596,6 +616,7 @@
     @include border-radius(0px);
     padding: 0;
     border: none;
+    background-image: none;
     background-color: transparent;
     li {
       margin: 2px 10px 0 10px;
@@ -627,6 +648,7 @@
     @include border-radius(0px);
     padding: 0;
     border: none;
+    background-image: none;
     background-color: transparent;
     li {
       margin: 2px 10px 0 10px;
@@ -653,6 +675,14 @@
 // common-style
 // -------------------------------------
 @mixin common-style-mod-set-design4 {
+  .mod-box-inner2 {
+    > .ex-first-child {
+     margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
 }
 
 // -------------------------------------
@@ -666,8 +696,27 @@
 @mixin module-style-mod-set-design4-2 {
   .mod-box_ver2 {
     margin: 14px 0 0;
-    .ex-first-child {
-      margin-top: 0 !important; //これだけ枠デザインのため
+    > .ex-first-child {
+     margin-top: 0 !important;
+      > .ex-first-child, p:first-child {
+        margin-top: 0 !important;
+      }
+    }
+    > .ex-first-child.mod-2col-in1 {
+      > .mod-2col-wrap {
+        > div:first-child[class="mod-2col-inner2"],
+        > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+          margin: 0;
+          > .mod-2col-inner2-2 {
+            > .ex-first-child {
+             margin-top: 0 !important;
+              > .ex-first-child, p:first-child {
+                margin-top: 0 !important;
+              }
+            }
+          }
+        }
+      }
     }
   }
   .mod-ul_ver2 {
@@ -710,7 +759,28 @@
     }
   }
 }
-
+@mixin module-style-mod-set-design4-4 {
+  .mod-box_ver2 {
+    margin: 15px 0 0 0;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+@mixin module-style-mod-set-design4-5 {
+}
+@mixin module-style-mod-set-design4-6 {
+  .mod-ul_ver2 {
+    padding: 5px 10px;
+    ul {
+      li {
+        margin: 2px 0 0 5px;
+      }
+    }
+  }
+}
 
 // -------------------------------------
 // deco-style
@@ -722,6 +792,11 @@
 @mixin deco-style-mod-set-design4-3 {
 }
 @mixin deco-style-mod-set-design4-4 {
+  .mod-box_ver2 {
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
   .mod-h_5_pic_top,
   .mod-h_5_pic_bottom {
     .mod-h {
@@ -759,4 +834,59 @@
 }
 @mixin deco-style-mod-set-design4-9 {
 }
+@mixin deco-style-mod-set-design4-10 {
+}
+@mixin deco-style-mod-set-design4-11 {
+}
+@mixin deco-style-mod-set-design4-12 {
+  .mod-ul_ver2 {
+    ul {
+      li {
+       background-image: url("img/mod-ul/bg_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-mod-set-design4-13 {
+  .mod-h_5_pic_top, .mod-h_5_pic_bottom, .mod-h_5_list_top {
+    .mod-h {
+      color: #3c3c3c;
+    }
+  }
+}
+@mixin deco-style-mod-set-design4-14 {
+}
+@mixin deco-style-mod-set-design4-15 {
+  .mod-h_5_pic_top, .mod-h_5_pic_bottom, .mod-h_5_list_top {
+    .mod-h {
+      color: #587153;
+    }
+  }
+  .mod-ul_ver2 {
+    ul {
+      li {
+       background-image: url("img/mod-ul/bg04_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-mod-set-design4-16 {
+  .mod-ul_ver2 {
+    border: none;
+    background-color: #d5d5d5;
+  }
+}
+@mixin deco-style-mod-set-design4-17 {
+  .mod-ul_ver2 {
+    border: none;
+    background-color: #e2dad8;
+  }
+}
+@mixin deco-style-mod-set-design4-18 {
+  .mod-ul_ver2 {
+    border: 1px solid #cdcbcc;
+    background-color: #f8f3e0;
+  }
+}
+
 

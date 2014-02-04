@@ -3,7 +3,8 @@
 //##################################################
 //  mod-part
 //##################################################
-%common-style-mod-part {
+
+%common-style-mod-part-main {
   margin-right: auto;
   margin-left: auto;
   padding: 1px 15px 0 15px;
@@ -35,4 +36,34 @@
       }
     }
   }
+}
+
+%common-style-mod-part-side {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1px 15px 0 15px;
+  &.ex-first-part {
+    // > div > .ex-first-child > .ex-first-child { //単体のバナーやリンクの部品
+    //   margin-top: 0 !important;
+    // }
+    // > div > .ex-first-child a > .ex-first-child {
+    //   margin-top: 0 !important;
+    // }
+    > .mod-box-inner2 {
+      > .ex-first-child {
+        > .ex-first-child {
+          > .ex-first-child {
+            margin-top: 0 !important;
+            > .ex-first-child {
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//残敵的にここに記述
+.mod-sp-accordion {
+  padding: 0 !important;
 }

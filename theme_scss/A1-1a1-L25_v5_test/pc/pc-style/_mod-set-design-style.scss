@@ -32,7 +32,52 @@
     }
   }
 }
+// -----------------------------------
+// mod-set-design3-block-style
+// -----------------------------------
 
+//$pbm = padding + border　+ margin ($mainWidthから引くべき値)
+//exの階層上使用不可のため、現在使っていません
+@mixin mod-set-design3-mod-2col50-block-style($pbm: 68) {
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + $pbm)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .ex-imgSize_2SS {
+    .mod-2col50 {
+      > .mod-2col-inner, > .mod-2col-inner2 {
+        width: floor(($mainWidth - (($mainWidth * 0.23) + $pbm)) / 2);
+      }
+    }
+  }
+  &.ex-imgSize_2S {
+    .mod-2col50 {
+      > .mod-2col-inner, > .mod-2col-inner2 {
+         width: floor(($mainWidth - (($mainWidth * 0.31) + $pbm)) / 2);
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - ($pbm - 20)) / 2);
+          }
+        }
+      }
+    }
+  }
+}
+// -----------------------------------
+// module-style
+// -----------------------------------
 @mixin module-style-mod-set-design3 {
   .mod-ul_ver2 {
     @include border-radius(0px);
@@ -43,6 +88,28 @@
       margin-left: 20px;
       padding-left: 15px;
       background-position: left 5px;
+    }
+  }
+  .mod-link_ver2 {
+    margin: 0;
+  }
+  .mod-2col50 {
+    margin: 10px 0 0 0;
+    > .mod-2col-inner {
+      float: left;
+      margin: 0;
+    }
+    > .mod-2col-inner2 {
+      margin: 0 0 0 20px;
+      overflow: visible;
+      float: right;
+    }
+  }
+  .mod-set-step {
+    div:first-child {
+      .mod-2col50 {
+        margin: 20px 0 0 0;
+      }
     }
   }
 }
@@ -127,6 +194,27 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
     }
   }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 68)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 48) / 2);
+          }
+        }
+      }
+    }
+  }
 }
 @mixin deco-style01A2-mod-set-design3 {
   > .mod-box-inner {
@@ -144,6 +232,27 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
     }
   }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 68)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 48) / 2);
+          }
+        }
+      }
+    }
+  }
 }
 @mixin deco-style01A3-mod-set-design3 {
   > .mod-box-inner {
@@ -159,6 +268,27 @@
   .mod-ul_ver2 {
     li {
       background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
+    }
+  }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 68)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 48) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -184,7 +314,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_1.png");
@@ -192,6 +322,27 @@
   }
   a {
     color: #ffffff;
+  }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 86)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 66) / 2);
+          }
+        }
+      }
+    }
   }
 }
 @mixin deco-style01B2-mod-set-design3 {
@@ -216,7 +367,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_2.png");
@@ -224,6 +375,27 @@
   }
   a {
     color: #ffffff;
+  }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 86)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 66) / 2);
+          }
+        }
+      }
+    }
   }
 }
 @mixin deco-style01B3-mod-set-design3 {
@@ -248,7 +420,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #443308;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_3.png");
@@ -256,6 +428,27 @@
   }
   a {
     color: #443308;
+  }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 86)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 66) / 2);
+          }
+        }
+      }
+    }
   }
 }
 @mixin deco-style01C1-mod-set-design3 {
@@ -271,8 +464,30 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     li {
       background-image: url("img/_mod/set-design3/ul/bg_c_1.png");
+    }
+  }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 90)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 70) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -289,8 +504,30 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     li {
       background-image: url("img/_mod/set-design3/ul/bg_c_2.png");
+    }
+  }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 90)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 70) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -307,8 +544,30 @@
     background-image: none;
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     li {
       background-image: url("img/_mod/set-design3/ul/bg_c_3.png");
+    }
+  }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 90)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+           > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 70) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -334,7 +593,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -359,7 +618,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -384,7 +643,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -416,7 +675,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_1.png");
@@ -450,7 +709,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_2.png");
@@ -484,7 +743,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #443308;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_3.png");
@@ -509,11 +768,12 @@
     }
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     li {
       background-image: url("img/_mod/set-design3/ul/bg_c_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -537,11 +797,12 @@
     }
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     li {
       background-image: url("img/_mod/set-design3/ul/bg_c_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -564,11 +825,12 @@
     }
   }
   .mod-ul_ver2 {
+    margin: 15px 0 0 0;
     li {
       background-image: url("img/_mod/set-design3/ul/bg_c_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -632,7 +894,35 @@
     }
   }
 }
-
+@mixin module-style-mod-set-design4-4 {
+  .mod-link-pic, .mod-link-list {
+    p {
+      background-image: url("img/mod-link/bg.png");
+    }
+  }
+}
+@mixin module-style-mod-set-design4-5 {
+  .mod-link-pic, .mod-link-list {
+    p {
+      background-image: url("img/mod-link/bg.png");
+    }
+  }
+}
+@mixin module-style-mod-set-design4-6 {
+  .mod-ul_ver2 {
+    padding: 5px 10px;
+    ul {
+      li {
+        margin: 2px 0 0 5px;
+      }
+    }
+  }
+  .mod-link-pic, .mod-link-list {
+    p {
+      background-image: url("img/mod-link/bg.png");
+    }
+  }
+}
 
 // -------------------------------------
 // deco-style
@@ -655,4 +945,35 @@
 }
 @mixin deco-style-mod-set-design4-9 {
 }
-
+@mixin deco-style-mod-set-design4-10 {
+}
+@mixin deco-style-mod-set-design4-11 {
+}
+@mixin deco-style-mod-set-design4-12 {
+}
+@mixin deco-style-mod-set-design4-13 {
+}
+@mixin deco-style-mod-set-design4-14 {
+}
+@mixin deco-style-mod-set-design4-15 {
+}
+@mixin deco-style-mod-set-design4-16 {
+}
+@mixin deco-style-mod-set-design4-17 {
+  .mod-h_5_pic_top, .mod-h_5_pic_bottom, .mod-h_5_list_top {
+    .mod-h {
+      color: #333333;
+    }
+  }
+}
+@mixin deco-style-mod-set-design4-18 {
+  .mod-ul_ver2 {
+    border: 1px solid #d1c9a4;
+    background-color: #fffce9;
+    ul {
+      li {
+        background-image: url("img/mod-ul/bg06.png");
+      }
+    }
+  }
+}

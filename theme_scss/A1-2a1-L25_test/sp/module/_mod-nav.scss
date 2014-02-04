@@ -160,61 +160,123 @@
 .mod-navi-footer {
   @include common-style-mod-navi-footer;
   @include module-style-mod-navi-footer;
-  .ex-style_01A1 & {
+  .ex-style_#{$baseEx_01A1} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_01A2 & {
+  .ex-style_#{$baseEx_01A2} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_01A3 & {
+  .ex-style_#{$baseEx_01A3} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_01B1 & {
+  .ex-style_#{$baseEx_01B1} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_01B2 & {
+  .ex-style_#{$baseEx_01B2} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_01B3 & {
+  .ex-style_#{$baseEx_01B3} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_01C1 & {
+  .ex-style_#{$baseEx_01C1} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_01C2 & {
+  .ex-style_#{$baseEx_01C2} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_01C3 & {
+  .ex-style_#{$baseEx_01C3} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02A1 & {
+  .ex-style_#{$baseEx_02A1} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02A2 & {
+  .ex-style_#{$baseEx_02A2} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02A3 & {
+  .ex-style_#{$baseEx_02A3} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02B1 & {
+  .ex-style_#{$baseEx_02B1} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02B2 & {
+  .ex-style_#{$baseEx_02B2} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02B3 & {
+  .ex-style_#{$baseEx_02B3} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02C1 & {
+  .ex-style_#{$baseEx_02C1} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02C2 & {
+  .ex-style_#{$baseEx_02C2} & {
     @include deco-style01A1-mod-navi-footer;
   }
-  .ex-style_02C3 & {
+  .ex-style_#{$baseEx_02C3} & {
     @include deco-style01A1-mod-navi-footer;
   }
 }
+
+
+
+.mod-topicpath {
+  @include common-style-mod-topicpath;
+  @include module-style-mod-topicpath;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02A1} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02A2} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02A3} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02B1} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02B2} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style02A1-mod-topicpath;
+  }
+}
+
 
 
 //旧方式とのconflict解除のための暫定コメントアウト(解消後は、コメントイン)

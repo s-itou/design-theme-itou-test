@@ -525,7 +525,38 @@ div.mod-set-toiawase-sitename {
   }
 }
 
-.mod-info3-sitename, .mod-info4-sitename {
+.mod-info3-sitename {
+  @include common-style-mod-info3-sitename-2;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-info3-sitename-2;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-info3-sitename-2;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-info3-sitename-2;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01B1-mod-info3-sitename-2;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01B2-mod-info3-sitename-2;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01B3-mod-info3-sitename-2;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01C1-mod-info3-sitename-2;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01C2-mod-info3-sitename-2;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C3-mod-info3-sitename-2;
+  }
+}
+
+.mod-info4-sitename {
   @include common-style-mod-info3-sitename;
   .ex-style_01A1 & {
     @include deco-style01A1-mod-info3-sitename;

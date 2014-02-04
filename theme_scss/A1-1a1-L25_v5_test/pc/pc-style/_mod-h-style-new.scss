@@ -4835,8 +4835,79 @@
 }
 
 @mixin deco-style-mod-h_5_hyo-01A1 {
+  @include deco-style-mod-h_5_pic-01A1;
+}
+@mixin deco-style-mod-h_5_hyo-01A2 {
+  @include deco-style-mod-h_5_pic-01A2;
+}
+@mixin deco-style-mod-h_5_hyo-01A3 {
+  @include deco-style-mod-h_5_pic-01A3;
+}
+@mixin deco-style-mod-h_5_hyo-01B1 {
+  @include deco-style-mod-h_5_pic-01B1;
+}
+@mixin deco-style-mod-h_5_hyo-01B2 {
+  @include deco-style-mod-h_5_pic-01B2;
+}
+@mixin deco-style-mod-h_5_hyo-01B3 {
+  @include deco-style-mod-h_5_pic-01B3;
+}
+@mixin deco-style-mod-h_5_hyo-01C1 {
+  @include deco-style-mod-h_5_pic-01C1;
+}
+@mixin deco-style-mod-h_5_hyo-01C2 {
+  @include deco-style-mod-h_5_pic-01C2;
+}
+@mixin deco-style-mod-h_5_hyo-01C3 {
+  @include deco-style-mod-h_5_pic-01C3;
+}
+
+//------------------------
+// mod-h_5_list
+//------------------------
+@mixin mod-h_5_list {
+  //なし
+}
+
+//mod-h_5_listのリスト下用記述
+@mixin mod-h_5_list_bottom {
+  margin-top: 10px; //align対応のためシュートハンド不使用
+}
+//deco-styleは表・リスト・画像と同じ
+@mixin deco-style-mod-h_5_list-01A1 {
+  @include deco-style-mod-h_5_pic-01A1;
+}
+@mixin deco-style-mod-h_5_list-01A2 {
+  @include deco-style-mod-h_5_pic-01A2;
+}
+@mixin deco-style-mod-h_5_list-01A3 {
+  @include deco-style-mod-h_5_pic-01A3;
+}
+@mixin deco-style-mod-h_5_list-01B1 {
+  @include deco-style-mod-h_5_pic-01B1;
+}
+@mixin deco-style-mod-h_5_list-01B2 {
+  @include deco-style-mod-h_5_pic-01B2;
+}
+@mixin deco-style-mod-h_5_list-01B3 {
+  @include deco-style-mod-h_5_pic-01B3;
+}
+@mixin deco-style-mod-h_5_list-01C1 {
+  @include deco-style-mod-h_5_pic-01C1;
+}
+@mixin deco-style-mod-h_5_list-01C2 {
+  @include deco-style-mod-h_5_pic-01C2;
+}
+@mixin deco-style-mod-h_5_list-01C3 {
+  @include deco-style-mod-h_5_pic-01C3;
+}
+
+//------------------------
+// mod-h_5_pic
+//------------------------
+@mixin deco-style-mod-h_5_pic-01A1 {
   .mod-h {
-    color: #46140b;
+    color: #352111;
   }
   .mod-icon_2 {
     height: 20px;
@@ -4864,9 +4935,9 @@
     background-position: left 7px;
   }
 }
-@mixin deco-style-mod-h_5_hyo-01A2 {
+@mixin deco-style-mod-h_5_pic-01A2 {
   .mod-h {
-    color: #222222;
+    color: #0b7d89;
   }
   .mod-icon_2 {
     height: 17px;
@@ -4894,9 +4965,9 @@
     background-position: left 7px;
   }
 }
-@mixin deco-style-mod-h_5_hyo-01A3 {
+@mixin deco-style-mod-h_5_pic-01A3 {
   .mod-h {
-    color: #010911;
+    color: #45320b;
   }
   .mod-icon_2 {
     height: 17px;
@@ -4924,9 +4995,9 @@
     background-position: left 7px;
   }
 }
-@mixin deco-style-mod-h_5_hyo-01B1 {
+@mixin deco-style-mod-h_5_pic-01B1 {
   .mod-h {
-    color: #5a6e55;
+    color: #223868;
   }
   .mod-icon_2 {
     height: 21px;
@@ -4954,9 +5025,9 @@
     background-position: center 1px;
   }
 }
-@mixin deco-style-mod-h_5_hyo-01B2 {
+@mixin deco-style-mod-h_5_pic-01B2 {
   .mod-h {
-    color: #371008;
+    color: #0c7d87;
   }
   .mod-icon_2 {
     height: 21px;
@@ -4984,9 +5055,9 @@
     background-position: center 1px;
   }
 }
-@mixin deco-style-mod-h_5_hyo-01B3 {
+@mixin deco-style-mod-h_5_pic-01B3 {
   .mod-h {
-    color: #6d5b04;
+    color: #f37f1c;
   }
   .mod-icon_2 {
     height: 21px;
@@ -5014,9 +5085,9 @@
     background-position: center 1px;
   }
 }
-@mixin deco-style-mod-h_5_hyo-01C1 {
+@mixin deco-style-mod-h_5_pic-01C1 {
   .mod-h {
-    color: #3c3c3c;
+    color: #333333;
   }
   .mod-icon_2 {
     height: 21px;
@@ -5044,9 +5115,9 @@
     background-position: center 1px;
   }
 }
-@mixin deco-style-mod-h_5_hyo-01C2 {
+@mixin deco-style-mod-h_5_pic-01C2 {
   .mod-h {
-   color: #375068;
+   color: #355997;
   }
   .mod-icon_2 {
     height: 21px;
@@ -5074,9 +5145,9 @@
     background-position: center 1px;
   }
 }
-@mixin deco-style-mod-h_5_hyo-01C3 {
+@mixin deco-style-mod-h_5_pic-01C3 {
   .mod-h {
-    color: #4b4b4b;
+    color: #45320b;
   }
   .mod-icon_2 {
     height: 21px;
@@ -5105,49 +5176,7 @@
   }
 }
 
-//------------------------
-// mod-h_5_list
-//------------------------
-@mixin mod-h_5_list {
-  //なし
-}
 
-//mod-h_5_listのリスト下用記述
-@mixin mod-h_5_list_bottom {
-  margin-top: 10px; //align対応のためシュートハンド不使用
-}
-//deco-styleは表・リスト・画像と同じ
-@mixin deco-style-mod-h_5_list-01A1 {
-  @include deco-style-mod-h_5_hyo-01A1;
-}
-@mixin deco-style-mod-h_5_list-01A2 {
-  @include deco-style-mod-h_5_hyo-01A2;
-}
-@mixin deco-style-mod-h_5_list-01A3 {
-  @include deco-style-mod-h_5_hyo-01A3;
-}
-@mixin deco-style-mod-h_5_list-01B1 {
-  @include deco-style-mod-h_5_hyo-01B1;
-}
-@mixin deco-style-mod-h_5_list-01B2 {
-  @include deco-style-mod-h_5_hyo-01B2;
-}
-@mixin deco-style-mod-h_5_list-01B3 {
-  @include deco-style-mod-h_5_hyo-01B3;
-}
-@mixin deco-style-mod-h_5_list-01C1 {
-  @include deco-style-mod-h_5_hyo-01C1;
-}
-@mixin deco-style-mod-h_5_list-01C2 {
-  @include deco-style-mod-h_5_hyo-01C2;
-}
-@mixin deco-style-mod-h_5_list-01C3 {
-  @include deco-style-mod-h_5_hyo-01C3;
-}
-
-//------------------------
-// mod-h_5_pic
-//------------------------
 @mixin mod-h_5_pic {
   //なし
 }
@@ -5155,34 +5184,7 @@
 @mixin mod-h_5_pic_bottom {
   margin-top: 10px; //align対応のためシュートハンド不使用
 }
-//deco-styleは表・リスト・画像と同じ
-@mixin deco-style-mod-h_5_pic-01A1 {
-  @include deco-style-mod-h_5_hyo-01A1;
-}
-@mixin deco-style-mod-h_5_pic-01A2 {
-  @include deco-style-mod-h_5_hyo-01A2;
-}
-@mixin deco-style-mod-h_5_pic-01A3 {
-  @include deco-style-mod-h_5_hyo-01A3;
-}
-@mixin deco-style-mod-h_5_pic-01B1 {
-  @include deco-style-mod-h_5_hyo-01B1;
-}
-@mixin deco-style-mod-h_5_pic-01B2 {
-  @include deco-style-mod-h_5_hyo-01B2;
-}
-@mixin deco-style-mod-h_5_pic-01B3 {
-  @include deco-style-mod-h_5_hyo-01B3;
-}
-@mixin deco-style-mod-h_5_pic-01C1 {
-  @include deco-style-mod-h_5_hyo-01C1;
-}
-@mixin deco-style-mod-h_5_pic-01C2 {
-  @include deco-style-mod-h_5_hyo-01C2;
-}
-@mixin deco-style-mod-h_5_pic-01C3 {
-  @include deco-style-mod-h_5_hyo-01C3;
-}
+
 
 
 
@@ -5319,22 +5321,27 @@
 @mixin mod-h_5_side-01A {
   .mod-icon_1 {
     min-width: 21px;
+    width: 21px;
     background-position: left 1px;
   }
   .mod-icon_2 {
     min-width: 28px;
+    width: 28px;
     background-position: left 3px;
   }
   .mod-icon_3 {
     min-width: 21px;
+    width: 21px;
     background-position: left 2px;
   }
   .mod-icon_4 {
     min-width: 21px;
+    width: 21px;
     background-position: 5px 3px;
   }
   .mod-icon_dental {
     min-width: 21px;
+    width: 21px;
     background-position: left top;
   }
 }
@@ -5405,26 +5412,31 @@
 @mixin mod-h_5-list-side-01A {
   .mod-icon_2 {
     min-width: 20px;
+    width: 20px;
     height: 17px;
     background-position: left top;
   }
   .mod-icon_3 {
     min-width: 20px;
+    width: 20px;
     height: 16px;
     background-position: left top;
   }
   .mod-icon_4 {
     min-width: 20px;
+    width: 20px;
     height: 16px;
     background-position: center 2px;
   }
   .mod-icon_5 {
     min-width: 20px;
+    width: 20px;
     height: 16px;
     background-position: center 3px;
   }
   .mod-icon_dental {
     min-width: 24px;
+    width: 24px;
     height: 19px;
     background-position: left top;
   }
@@ -5667,34 +5679,10 @@ display: table;
   .mod-h_5-inner4 {
     margin-top: 3px !important;
   }
-  // .ex-imgFloat.ex-imgSize_2L .mod-2col6 .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 & {
-  //   @if $layoutCode == "L25" {
-  //     width: 278px;
-  //   } @else if $layoutCode == "L30" {
-  //     width: 224px;
-  //   }
-  // }
-  // .ex-imgFloat .mod-2col6 .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 & {
-  //   @if $layoutCode == "L25" {
-  //     width: 328px;
-  //   } @else if $layoutCode == "L30" {
-  //     width: 274px;
-  //   }
-  // }
-  // .ex-imgFloat.ex-imgSize_2S .mod-2col6 .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 & {
-  //   @if $layoutCode == "L25" {
-  //     width: 378px;
-  //   } @else if $layoutCode == "L30" {
-  //     width: 324px;
-  //   }
-  // }
-  // .ex-imgFloat.ex-imgSize_2SS .mod-2col6 .mod-2col-wrap > .mod-2col-inner + .mod-2col-inner2 & {
-  //   @if $layoutCode == "L25" {
-  //     width: 428px;
-  //   } @else if $layoutCode == "L30" {
-  //     width: 374px;
-  //   }
-  // }
+  //カラム違いの横幅差分はplcomに記述
+  .ex-imgFloat & {
+    width: auto;
+  }
 }
 
 
@@ -6054,8 +6042,13 @@ display: table;
 @mixin mod-h_5_side-common-style {
   @include block-style-ex-align;
   display: table;
+  width: 100%;
   margin: 15px 0 0 0;
   padding: 4px 0 0 0 ;
+  a {
+    display: table;
+    width: 100%;
+  }
   i {
     display: table-cell;
     height: 17px;

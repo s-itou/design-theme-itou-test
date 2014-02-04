@@ -10,17 +10,17 @@
 
 @mixin block-style-ex-align {  //左右に-25pxのマージンをとっていないもの。汎用的設定
   &.ex-align-center {
-    text-align: center;
-    margin-left: auto;//align対応のためショートハンド不使用
-    margin-right: auto;
+    text-align: center !important;
+    margin-left: auto !important;//align対応のためショートハンド不使用
+    margin-right: auto !important;
   }
   &.ex-align-right {
-    text-align: right;
-    margin-left: auto;//align対応のためショートハンド不使用
+    text-align: right !important;
+    margin-left: auto !important;//align対応のためショートハンド不使用
   }
   &.ex-align-left {
-    text-align: left;
-    margin-right: auto;//align対応のためショートハンド不使用
+    text-align: left !important;
+    margin-right: auto !important;//align対応のためショートハンド不使用
   }
 }
 
@@ -5538,6 +5538,11 @@
 //  mod-h_4 の mixin一式
 @mixin mod-h_4-common-style {
   @include block-style-ex-align;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 

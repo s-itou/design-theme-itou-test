@@ -1,543 +1,821 @@
 @charset "UTF-8";
 
-//旧方式のコピーのため要改修
+//+++++++++++++++++++++++++++
+//mod-ul
+//+++++++++++++++++++++++++++
 
-//##################################################
-//  mod-ul
-//##################################################
 
-//////////////////////////////////////////////////
-//  COMMON-STYLE
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
 @mixin common-style-mod-ul {
-  margin-top: 10px;
-  .mod-ul-inner {
+  margin: 10px 0 0 0;
+  ul {
+    margin: 0;//デフォルト値の削除
+    padding: 0;//デフォルト値の削除
+  }
+  li {
+    padding: 0 0 0 10px;
+    background-position: left 8px;
     background-repeat: no-repeat;
-    .mod-ul-inner2 {
-      background-repeat: no-repeat;
-      ul {
-        margin: 0;
-        li {
-          padding: 7px 0 0 30px;
-          background-position: left 4px;
-          background-repeat: no-repeat;
-          list-style-type: none;
-          font-weight: bold;
-          font-size: $fontSizeM + 2;
-        }
-      }
-      ol {
-        padding-left: 0;
-        > li {
-          padding-left: 0;
-          background-image: none;
-          list-style-type: decimal !important;
-        }
-      }
+    list-style-type: none;
+    font-size: $fontSizeM;
+    &:first-child {
+      padding-top: 0; //first-chilsとして上の余白のみ無くしたいのでショートハンドなし
+    }
+  }
+  > p {
+    margin: 12px 0 0 0;
+  }
+  > p:first-child {
+    margin: 0;
+  }
+  ol {
+    padding: 0;
+    > li {
+      padding: 0;
+      background-image: none !important;//ulのアイコンが出てきてしまうのに勝つため
+      list-style-type: decimal !important;
     }
   }
 }
-
-
-//////////////////////////////////////////////////
-//  MODULE-STYLE
-@mixin module-style-mod-ul {}
-
-
-//////////////////////////////////////////////////
-//  DECORATION-STYLE
-@mixin deco-style01A1-mod-ul {
-  @include border-radius(0);
-  padding: 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
-  border-left: 0 none transparent;
-  background-color: #ffffff;
-  background-image: none;
-  background-position: left top;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  .mod-ul-inner {
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-color: transparent;
-    background-image: none;
-    background-position: left top;
-    .mod-ul-inner2 {
-      padding: 0;
-      background-image: none;
-      background-position: left top;
-    }
-  }
-  ul {
-    padding: 5px 0 10px 0;
-  }
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//差分記述用のextend-common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+%common-style-mod-ul-2col {//2col
   li {
-    position: static;
-    margin: 2px 15px 0 15px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg_a.png");
-    color: #f27f1b;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:after {
-      position: static;
-      bottom: auto;
-      left: auto;
-      display: inline;
-      width: auto;
-      height: auto;
-      background-image: none;
-      background-size: auto auto;
-      background-repeat: repeat;
-      content: normal;
-    }
+    margin: 2px 0 0 20px;
+  }
+  > p {
+    margin: 10px 0 0 0;
+  }
+}
+
+%common-style-mod-ul-3col {//3col
+  li {
+    margin: 2px 0 0 15px;
+  }
+  > p {
+    margin: 8px 0 0 0;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin module-style-mod-ul {
+  li {
+    margin: 2px 0 0 15px;
+    padding-left: 18px;
+  }
+}
+@mixin module-style-mod-ul-side {
+  li {
+    margin: 5px 0 0 15px;
+    background-position: left 5px;
+    font-size: $sideFontSizeM ;
+  }
+}
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin deco-style01A1-mod-ul {
+  li {
+    background-image: url("img/mod-ul/bg.png");
+    color: #333333;
+
   }
 }
 @mixin deco-style01A2-mod-ul {
-  @include border-radius(0);
-  padding: 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
-  border-left: 0 none transparent;
-  background-color: #ffffff;
-  background-image: none;
-  background-position: left top;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  .mod-ul-inner {
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-color: transparent;
-    background-image: none;
-    background-position: left top;
-    .mod-ul-inner2 {
-      padding: 0;
-      background-image: none;
-      background-position: left top;
-    }
-  }
-  ul {
-    padding: 5px 0 10px 0;
-  }
   li {
-    position: static;
-    margin: 2px 15px 0 15px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg_a_2.png");
-    color: #274c7e;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:after {
-      position: static;
-      bottom: auto;
-      left: auto;
-      display: inline;
-      width: auto;
-      height: auto;
-      background-image: none;
-      background-size: auto auto;
-      background-repeat: repeat;
-      content: normal;
-    }
+    background-image: url("img/mod-ul/bg_2.png");
+    color: #333333;
+
   }
 }
+
 @mixin deco-style01A3-mod-ul {
-  @include border-radius(0);
-  padding: 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
-  border-left: 0 none transparent;
-  background-color: #ffffff;
-  background-image: none;
-  background-position: left top;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  .mod-ul-inner {
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-color: transparent;
-    background-image: none;
-    background-position: left top;
-    .mod-ul-inner2 {
-      padding: 0;
-      background-image: none;
-      background-position: left top;
-    }
+  li {
+    background-image: url("img/mod-ul/bg_3.png");
+    color: #56534e;
   }
-  ul {
-    padding: 5px 0 10px 0;
+}
+
+@mixin deco-style01B1-mod-ul {
+  li {
+    background-image: url("img/mod-ul/bg04.png");
+    color: #333333;
+
+  }
+}
+
+@mixin deco-style01B2-mod-ul {
+  li {
+    background-image: url("img/mod-ul/bg04_2.png");
+    color: #333333;
+
+  }
+}
+
+@mixin deco-style01B3-mod-ul {
+  li {
+    background-image: url("img/mod-ul/bg04_3.png");
+    color: #333333;
+
+  }
+}
+
+@mixin deco-style01C1-mod-ul {
+  @include border-radius();
+  padding: 10px;
+  border: 1px solid #aebdce;
+  background-color: #d7e1ec;
+  li {
+    margin: 0 0 0 10px;
+    padding: 0 0 0 20px;
+    background-image: url("img/mod-ul/bg06.png");
+    background-position: left top;
+    color: #333333;
+
+  }
+}
+
+@mixin deco-style01C2-mod-ul {
+  @include border-radius();
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  background-color: #ececec;
+  li {
+    margin: 0 0 0 10px;
+    padding: 0 0 0 20px;
+    background-image: url("img/mod-ul/bg06_2.png");
+    background-position: left top;
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C3-mod-ul {
+  @include border-radius();
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background-color: #f8f3e0;
+  li {
+    margin: 0 0 0 10px;
+    padding: 0 0 0 20px;
+    background-image: url("img/mod-ul/bg06_3.png");
+    background-position: left top;
+    color: #45320b;
+  }
+}
+
+@mixin deco-style01C1-mod-ul-2col {
+  li {
+    margin: 0 0 0 10px;
+  }
+}
+@mixin deco-style01C2-mod-ul-2col {
+  li {
+    margin: 0 0 0 10px;
+  }
+}
+@mixin deco-style01C3-mod-ul-2col {
+  li {
+    margin: 0 0 0 10px;
+  }
+}
+@mixin deco-style01C1-mod-ul-3col {
+  li {
+    margin: 0 0 0 5px;
+  }
+}
+@mixin deco-style01C2-mod-ul-3col {
+  li {
+    margin: 0 0 0 5px;
+  }
+}
+@mixin deco-style01C3-mod-ul-3col {
+  li {
+    margin: 0 0 0 5px;
+  }
+}
+@mixin deco-style01A1-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02.png");
+  }
+}
+@mixin deco-style01A2-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02_2.png");
+  }
+}
+@mixin deco-style01A3-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02_3.png");
+  }
+}
+@mixin deco-style01B1-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02.png");
+  }
+}
+@mixin deco-style01B2-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02_2.png");
+  }
+}
+@mixin deco-style01B3-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02_3.png");
+  }
+}
+@mixin deco-style01C1-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02.png");
+  }
+}
+@mixin deco-style01C2-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02_2.png");
+  }
+}
+@mixin deco-style01C3-mod-ul-side {
+  li {
+    background-image: url("img/mod-ul/bg02_3.png");
+  }
+}
+
+
+//+++++++++++++++++++++++++++
+//        mod-ol
+//+++++++++++++++++++++++++++
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin common-style-mod-ol {
+  margin: 10px 0 0 0;
+  ol {
+    margin: 0 0 0 25px;
+    padding: 0 0 0 25px;
   }
   li {
-    position: static;
-    margin: 2px 15px 0 15px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg_a_3.png");
-    color: #f27f1b;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:after {
-      position: static;
-      bottom: auto;
-      left: auto;
-      display: inline;
-      width: auto;
-      height: auto;
-      background-image: none;
-      background-size: auto auto;
-      background-repeat: repeat;
-      content: normal;
+    margin: 2px 0 0 0;
+  }
+  > p {
+    margin: 12px 0 0 0;
+  }
+  > p:first-child {
+    margin: 0;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin module-style-mod-ol { }
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin deco-style01A1-mod-ol {
+  ol {
+    color: #333333;
+  }
+}
+@mixin deco-style01A2-mod-ol {
+  ol {
+    color: #333333;
+  }
+}
+@mixin deco-style01A3-mod-ol {
+  ol {
+    color: #56534e;
+  }
+}
+@mixin deco-style01B1-mod-ol {
+  ol {
+    color: #f16c0b;
+  }
+}
+@mixin deco-style01B2-mod-ol {
+  ol {
+    color: #0C7D87;
+  }
+}
+@mixin deco-style01B3-mod-ol {
+  ol {
+    color: #337FB2;
+  }
+}
+@mixin deco-style01C1-mod-ol {
+  ol {
+    color: #333333;
+  }
+}
+@mixin deco-style01C2-mod-ol {
+  ol {
+    color: #333333;
+  }
+}
+@mixin deco-style01C3-mod-ol {
+  ol {
+    color: #45320b;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//残しておきますが統合の結果差分で書くことになった部分
+
+
+@mixin deco-style01A1-mod-ul-in2 {
+  background-color: #ffffff;
+  ul {
+    padding: 5px 0 10px 0;
+    li {
+      margin: 2px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      background-image: url("img/mod-ul/_06/bg_a.png");
+      color: #274c7e;
+      &:first-child {
+        margin: 0;
+      }
+      &:after {
+        content: none;
+      }
     }
   }
 }
-@mixin deco-style01B1-mod-ul {
-  @include border-radius(0);
-  padding: 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
-  border-left: 0 none transparent;
+@mixin deco-style01A2-mod-ul-in2 {
+  background-color: #ffffff;
+  ul {
+    padding: 5px 0 10px 0;
+    li {
+      margin: 2px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      background-image: url("img/mod-ul/_06/bg_a_2.png");
+      color: #274c7e;
+      &:first-child {
+        margin: 0;
+      }
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+@mixin deco-style01A3-mod-ul-in2 {
+  background-color: #ffffff;
+  ul {
+    padding: 5px 0 10px 0;
+    li {
+      margin: 2px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      background-image: url("img/mod-ul/_06/bg_a_3.png");
+      color: #f27f1b;
+      &:first-child {
+        margin: 0;
+      }
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+@mixin deco-style01B1-mod-ul-in2 {
   background-color: #5a7fb0;
   background-image: url("img/mod-ul/_06/bg_b.png");
   background-position: left top;
-  background-size: auto auto;
   background-repeat: repeat-x;
-  .mod-ul-inner {
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-color: transparent;
-    background-image: none;
-    background-position: left top;
-    .mod-ul-inner2 {
-      padding: 0;
-      background-image: none;
-      background-position: left top;
-    }
-  }
   ul {
     padding: 5px 0 15px 0;
-  }
-  li {
-    position: relative;
-    margin: 10px 15px 0 15px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg02_b.png");
-    color: #ffffff;
-    &:first-child {
-      margin-top: 2px;
-    }
-    &:after {
+    li {
       position: relative;
-      top: 8px;
-      left: -30px;
-      display: block;
-      width: 115%;
-      height: 8px;
-      background-image: url("img/mod-ul/_06/bg03_b.png");
-      background-size: 100% 1px;
-      background-repeat: no-repeat;
-      content: "";
+      margin: 10px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      background-image: url("img/mod-ul/_06/bg02_b.png");
+      color: #ffffff;
+      &:first-child {
+        margin: 2px 0 0 0;
+      }
+      &:after {
+        position: absolute;
+        bottom: -15px;
+        left: 10px;
+        content: url("img/mod-ul/_06/bg03_b.png");
+      }
     }
   }
 }
-@mixin deco-style01B2-mod-ul {
-  @include border-radius(0);
-  padding: 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
-  border-left: 0 none transparent;
+
+@mixin deco-style01B2-mod-ul-in2 {
   background-color: #5eb0bc;
   background-image: url("img/mod-ul/_06/bg_b_2.png");
   background-position: left top;
-  background-size: auto auto;
   background-repeat: repeat-x;
-  .mod-ul-inner {
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-color: transparent;
-    background-image: none;
-    background-position: left top;
-    .mod-ul-inner2 {
-      padding: 0;
-      background-image: none;
-      background-position: left top;
-    }
-  }
   ul {
     padding: 5px 0 15px 0;
-  }
-  li {
-    position: relative;
-    margin: 10px 15px 0 15px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg02_b_2.png");
-    color: #ffffff;
-    &:first-child {
-      margin-top: 2px;
-    }
-    &:after {
+    li {
       position: relative;
-      top: 8px;
-      left: -30px;
-      display: block;
-      width: 115%;
-      height: 8px;
-      background-image: url("img/mod-ul/_06/bg03_b_2.png");
-      background-size: 100% 1px;
-      background-repeat: no-repeat;
-      content: "";
+      margin: 10px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      background-image: url("img/mod-ul/_06/bg02_b_2.png");
+      color: #ffffff;
+      &:first-child {
+        margin: 2px 0 0 0;
+      }
+      &:after {
+        position: absolute;
+        bottom: -15px;
+        left: 10px;
+        content: url("img/mod-ul/_06/bg03_b_2.png");
+      }
     }
   }
 }
-@mixin deco-style01B3-mod-ul {
-  @include border-radius(0);
-  padding: 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
-  border-left: 0 none transparent;
+
+@mixin deco-style01B3-mod-ul-in2 {
   background-color: #f5a561;
   background-image: url("img/mod-ul/_06/bg_b_3.png");
   background-position: left top;
-  background-size: auto auto;
   background-repeat: repeat-x;
-  .mod-ul-inner {
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-color: transparent;
-    background-image: none;
-    background-position: left top;
-    .mod-ul-inner2 {
-      padding: 0;
-      background-image: none;
-      background-position: left top;
-    }
-  }
   ul {
     padding: 5px 0 15px 0;
-  }
-  li {
-    position: relative;
-    margin: 10px 15px 0 15px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg02_b_3.png");
-    color: #ffffff;
-    &:first-child {
-      margin-top: 2px;
-    }
-    &:after {
+    li {
       position: relative;
-      top: 8px;
-      left: -30px;
-      display: block;
-      width: 115%;
-      height: 8px;
-      background-image: url("img/mod-ul/_06/bg03_b_3.png");
-      background-size: 100% 1px;
-      background-repeat: no-repeat;
-      content: "";
+      margin: 10px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      background-image: url("img/mod-ul/_06/bg02_b_3.png");
+      color: #ffffff;
+      &:first-child {
+        margin: 2px 0 0 0;
+      }
+      &:after {
+        position: absolute;
+        bottom: -15px;
+        left: 10px;
+        content: url("img/mod-ul/_06/bg03_b_3.png");
+      }
     }
   }
 }
-@mixin deco-style01C1-mod-ul {
-  @include border-radius(0);
+
+@mixin deco-style01C1-mod-ul-in2 {
   padding: 0 0 33px 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
   border-left: 1px solid #f7eadb;
   background-color: transparent;
-  background-image: url("img/mod-ul/_06/spbg_c.png");
+  background-image: url("img/mod-ul/_06/bg_c.png");
   background-position: center bottom;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   .mod-ul-inner {
     border-top: 1px solid #f7eadb;
     border-right: 1px solid #f7eadb;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
     background-color: #ffffff;
     background-image: url("img/mod-ul/_06/bg02_c.png");
     background-position: left 2px;
-    .mod-ul-inner2 {
-      padding: 10px 0 0 0;
-      background-image: url("img/mod-ul/_06/bg02_c.png");
-      background-position: right 2px;
+    background-repeat: no-repeat;
     }
-  }
+  .mod-ul-inner2 {
+    padding: 10px 0 0 0;
+    background-image: url("img/mod-ul/_06/bg02_c.png");
+    background-position: right 2px;
+    }
   ul {
     padding: 5px 0 0 0;
-  }
-  li {
-    position: static;
-    margin: 2px 15px 5px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 1px dashed #808285;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg03_c.png");
-    color: #331b07;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:after {
-      position: static;
-      bottom: auto;
-      left: auto;
-      display: inline;
-      width: auto;
-      height: auto;
-      background-image: none;
-      background-size: auto auto;
-      background-repeat: repeat;
-      content: normal;
+    li {
+      margin: 2px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      border-bottom: 1px dashed #808285;
+      background-image: url("img/mod-ul/_06/bg03_c.png");
+      color: #331b07;
+      &:first-child {
+        margin: 0;
+      }
+      &:after {
+        content: none;
+      }
     }
   }
 }
-@mixin deco-style01C2-mod-ul {
-  @include border-radius(0);
+@mixin deco-style01C2-mod-ul-in2 {
   padding: 0 0 33px 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
   border-left: 1px solid #f7eadb;
   background-color: transparent;
-  background-image: url("img/mod-ul/_06/spbg_c_2.png");
+  background-image: url("img/mod-ul/_06/bg_c_2.png");
   background-position: center bottom;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   .mod-ul-inner {
     border-top: 1px solid #f7eadb;
     border-right: 1px solid #f7eadb;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
     background-color: #ffffff;
     background-image: url("img/mod-ul/_06/bg02_c_2.png");
     background-position: left 2px;
-    .mod-ul-inner2 {
-      padding: 10px 0 0 0;
-      background-image: url("img/mod-ul/_06/bg02_c_2.png");
-      background-position: right 2px;
+    background-repeat: no-repeat;
     }
-  }
+  .mod-ul-inner2 {
+    padding: 10px 0 0 0;
+    background-image: url("img/mod-ul/_06/bg02_c_2.png");
+    background-position: right 2px;
+    }
   ul {
     padding: 5px 0 0 0;
-  }
-  li {
-    position: static;
-    margin: 2px 15px 5px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 1px dashed #808285;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg03_c_2.png");
-    color: #331b07;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:after {
-      position: static;
-      bottom: auto;
-      left: auto;
-      display: inline;
-      width: auto;
-      height: auto;
-      background-image: none;
-      background-size: auto auto;
-      background-repeat: repeat;
-      content: normal;
+    li {
+      margin: 2px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      border-bottom: 1px dashed #808285;
+      background-image: url("img/mod-ul/_06/bg03_c_2.png");
+      color: #331b07;
+      &:first-child {
+        margin: 0;
+      }
+      &:after {
+        content: none;
+      }
     }
   }
 }
-@mixin deco-style01C3-mod-ul {
-  @include border-radius(0);
+@mixin deco-style01C3-mod-ul-in2 {
   padding: 0 0 33px 0;
-  border-top: 0 none transparent;
-  border-right: 0 none transparent;
-  border-bottom: 0 none transparent;
   border-left: 1px solid #f7eadb;
   background-color: transparent;
-  background-image: url("img/mod-ul/_06/spbg_c_3.png");
+  background-image: url("img/mod-ul/_06/bg_c_3.png");
   background-position: center bottom;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   .mod-ul-inner {
     border-top: 1px solid #f7eadb;
     border-right: 1px solid #f7eadb;
-    border-bottom: 0 none transparent;
-    border-left: 0 none transparent;
     background-color: #ffffff;
     background-image: url("img/mod-ul/_06/bg02_c_3.png");
     background-position: left 2px;
-    .mod-ul-inner2 {
-      padding: 10px 0 0 0;
-      background-image: url("img/mod-ul/_06/bg02_c_3.png");
-      background-position: right 2px;
+    background-repeat: no-repeat;
     }
-  }
+  .mod-ul-inner2 {
+    padding: 10px 0 0 0;
+    background-image: url("img/mod-ul/_06/bg02_c_3.png");
+    background-position: right 2px;
+    }
   ul {
     padding: 5px 0 0 0;
+    li {
+      margin: 2px 15px 0 15px;
+      padding: 7px 0 0 30px;
+      border-bottom: 1px dashed #c5c5c5;
+      background-image: url("img/mod-ul/_06/bg03_c_3.png");
+      color: #331b07;
+      &:first-child {
+        margin: 0;
+      }
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-ol-in2 {
+  ol {
+    padding: 0;
   }
   li {
-    position: static;
-    margin: 2px 15px 5px;
-    border-top: 0 none transparent;
-    border-right: 0 none transparent;
-    border-bottom: 1px dashed #c5c5c5;
-    border-left: 0 none transparent;
-    background-image: url("img/mod-ul/_06/bg03_c_3.png");
-    color: #331b07;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:after {
-      position: static;
-      bottom: auto;
-      left: auto;
-      display: inline;
-      width: auto;
-      height: auto;
-      background-image: none;
-      background-size: auto auto;
-      background-repeat: repeat;
-      content: normal;
-    }
+    padding: 3px 10px 10px 45px;
+    border-bottom: 1px dotted #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 27px;
+    height: 27px;
+    background: url(img/mod-ol/_02/bg_a.png) no-repeat left top;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeM + 1;
+  }
+}
+@mixin deco-style01A2-mod-ol-in2 {
+  ol {
+    padding: 0;
+  }
+  li {
+    padding: 3px 10px 10px 45px;
+    border-bottom: 1px dotted #cccccc;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 27px;
+    height: 27px;
+    background: url(img/mod-ol/_02/bg_a_2.png) no-repeat left top;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeM + 1;
+  }
+}
+@mixin deco-style01A3-mod-ol-in2 {
+  ol {
+    padding: 0;
+  }
+  li {
+    padding: 3px 10px 10px 45px;
+    border-bottom: 1px dotted #dedad1;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 27px;
+    height: 27px;
+    background: url(img/mod-ol/_02/bg_a_3.png) no-repeat left top;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeM + 1;
+  }
+}
+@mixin deco-style01B1-mod-ol-in2 {
+  ol {
+    padding: 0 0 0 8px;
+  }
+  li {
+    padding: 8px 10px 10px 50px;
+    border: 1px solid #a8bfdc;
+    background-color: #e7eef8;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: -9px;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 47px;
+    height: 28px;
+    background:url(img/mod-ol/_02/bg_b.png) no-repeat left 2px;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeL + 2;
+  }
+}
+@mixin deco-style01B2-mod-ol-in2 {
+  ol {
+    padding: 0 0 0 8px;
+  }
+  li {
+    padding: 8px 10px 10px 50px;
+    border: 1px solid #85d1d9;
+    background-color: #dafafa;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: -9px;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 47px;
+    height: 28px;
+    background:url(img/mod-ol/_02/bg_b_2.png) no-repeat left 2px;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeL + 2;
+  }
+}
+@mixin deco-style01B3-mod-ol-in2 {
+  ol {
+    padding: 0 0 0 8px;
+  }
+  li {
+    padding: 8px 10px 10px 50px;
+    border: 1px solid #ffca99;
+    background-color: #fff6e5;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: -9px;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 47px;
+    height: 28px;
+    background:url(img/mod-ol/_02/bg_b_3.png) no-repeat left 2px;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeL + 2;
+  }
+}
+@mixin deco-style01C1-mod-ol-in2 {
+  ol {
+    padding: 0 0 0 8px;
+  }
+  li {
+    padding: 8px 10px 10px 50px;
+    border: 1px solid #dedad1;
+    background-color: #fffdee;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: -9px;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 47px;
+    height: 28px;
+    background:url(img/mod-ol/_02/bg_c.png) no-repeat left 2px;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeL + 2;
+  }
+}
+@mixin deco-style01C2-mod-ol-in2 {
+  ol {
+    padding: 0 0 0 8px;
+  }
+  li {
+    padding: 8px 10px 10px 50px;
+    border: 1px solid #cbd8d9;
+    background-color: #f6f6f6;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: -9px;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 47px;
+    height: 28px;
+    background:url(img/mod-ol/_02/bg_c_2.png) no-repeat left 2px;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeL + 2;
+  }
+}
+@mixin deco-style01C3-mod-ol-in2 {
+  ol {
+    padding: 0 0 0 8px;
+  }
+  li {
+    padding: 8px 10px 10px 50px;
+    border: 1px solid #dedad1;
+    background-color: #fffdee;
+    color: #333333;
+    font-size: $fontSizeM;
+  }
+  li:before {
+    top: 0;
+    left: -9px;
+    display: block;
+    padding: 3px 0 0 0;
+    width: 47px;
+    height: 28px;
+    background:url(img/mod-ol/_02/bg_c_3.png) no-repeat left 2px;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: $fontSizeL + 2;
   }
 }
 

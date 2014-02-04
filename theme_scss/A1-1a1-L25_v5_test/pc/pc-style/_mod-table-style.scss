@@ -332,8 +332,13 @@
 ////////////////////////////////////////
 // PATTERN STYLE
 
+@mixin common-style-pat-item-table {
+}
+@mixin module-style-pat-item-table {}
+
+
 // PATTERN ITEM STYLE
-@mixin pat-item-table-1 {
+@mixin deco-style-pat-item-table-1 {
   border: 1px solid #c9e0ff;
   color: #333333;
   table {
@@ -359,7 +364,7 @@
     }
   }
 }
-@mixin pat-item-table-2 {
+@mixin deco-style-pat-item-table-2 {
   border: 1px solid #c4ecf0;
   color: #333333;
   table {
@@ -385,7 +390,7 @@
     }
   }
 }
-@mixin pat-item-table-3 {
+@mixin deco-style-pat-item-table-3 {
   border: 1px solid #ffcda2;
   color: #56534e;
   table {
@@ -411,7 +416,7 @@
     }
   }
 }
-@mixin pat-item-table-4 {
+@mixin deco-style-pat-item-table-4 {
   border: 1px solid #8bb8e4;
   color: #333333;
   table {
@@ -437,7 +442,7 @@
     }
   }
 }
-@mixin pat-item-table-5 {
+@mixin deco-style-pat-item-table-5 {
   border: 1px solid #a3e0e9;
   color: #0b7c8a;
   table {
@@ -463,7 +468,7 @@
     }
   }
 }
-@mixin pat-item-table-6 {
+@mixin deco-style-pat-item-table-6 {
   border: 1px solid #f7de6a;
   color: #45310c;
   table {
@@ -491,7 +496,7 @@
     }
   }
 }
-@mixin pat-item-table-7 {
+@mixin deco-style-pat-item-table-7 {
   border: 1px solid #8bb8e4;
   color: #333333;
   table {
@@ -519,7 +524,7 @@
     }
   }
 }
-@mixin pat-item-table-8 {
+@mixin deco-style-pat-item-table-8 {
   border: 1px solid #7ed1d9;
   color: #333333;
   table {
@@ -547,7 +552,7 @@
     }
   }
 }
-@mixin pat-item-table-9 {
+@mixin deco-style-pat-item-table-9 {
   border: 1px solid #f9d5b5;
   color: #45320b;
   table {
@@ -575,7 +580,7 @@
     }
   }
 }
-@mixin pat-item-table-10 {
+@mixin deco-style-pat-item-table-10 {
   table {
     background-image: none;
     color: #333333;
@@ -603,7 +608,7 @@
     }
   }
 }
-@mixin pat-item-table-11 {
+@mixin deco-style-pat-item-table-11 {
   table {
     background-image: none;
     color: #333333;
@@ -631,7 +636,7 @@
     }
   }
 }
-@mixin pat-item-table-12 {
+@mixin deco-style-pat-item-table-12 {
   table {
     background-image: none;
     color: #56534e;
@@ -659,7 +664,7 @@
     }
   }
 }
-@mixin pat-item-table-13 {
+@mixin deco-style-pat-item-table-13 {
   table {
     background-image: none;
     color: #333333;
@@ -687,7 +692,7 @@
     }
   }
 }
-@mixin pat-item-table-14 {
+@mixin deco-style-pat-item-table-14 {
   table {
     background-image: none;
     color: #0b7c8a;
@@ -715,7 +720,7 @@
     }
   }
 }
-@mixin pat-item-table-15 {
+@mixin deco-style-pat-item-table-15 {
   table {
     background-image: none;
     color: #45310C;
@@ -743,7 +748,7 @@
     }
   }
 }
-@mixin pat-item-table-16 {
+@mixin deco-style-pat-item-table-16 {
   table {
     background-image: url("img/mod-table/bg03.png");
     color: #333333;
@@ -771,7 +776,7 @@
     }
   }
 }
-@mixin pat-item-table-17 {
+@mixin deco-style-pat-item-table-17 {
   table {
     background-image: url("img/mod-table/bg03_2.png");
     color: #333333;
@@ -799,7 +804,7 @@
     }
   }
 }
-@mixin pat-item-table-18 {
+@mixin deco-style-pat-item-table-18 {
   table {
     background-image: url("img/mod-table/bg03_3.png");
     color: #45320b;
@@ -828,7 +833,7 @@
   }
 }
 
-@mixin pat-item-table-side-1 {
+@mixin deco-style-pat-item-table-side-1 {
   border: 1px solid #c9e0ff;
   table {
     border: 1px solid #c9e0ff;
@@ -848,7 +853,7 @@
     }
   }
 }
-@mixin pat-item-table-side-2 {
+@mixin deco-style-pat-item-table-side-2 {
   border: 1px solid #ffea83;
   table {
     border: 1px solid #ffea83;
@@ -868,7 +873,7 @@
     }
   }
 }
-@mixin pat-item-table-side-3 {
+@mixin deco-style-pat-item-table-side-3 {
   border: 1px solid #fdcecc;
   table {
     border: 1px solid #fdcecc;

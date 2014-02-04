@@ -20,7 +20,7 @@
     .mod-box-in1 {
       @include pat-item-waku-kadomaru-none-bgc-white;
       .mod-tel-iig {@include pat-item-tel-M-1;}
-      .mod-bnr_ver2 {@include pat-item-bnr-grade-7;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-h1;}
     }
     @include common-style-mod-set-toiawase;
     @include module-style-mod-set-toiawase-2col-1;
@@ -32,7 +32,7 @@
     .mod-box-in1 {
       @include pat-item-waku-kadomaru-none-bgc-white-2;
       .mod-tel-iig {@include pat-item-tel-M-2;}
-      .mod-bnr_ver2 {@include pat-item-bnr-grade-8;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-h2;}
     }
     @include common-style-mod-set-toiawase;
     @include module-style-mod-set-toiawase-2col-1;
@@ -44,7 +44,7 @@
     .mod-box-in1 {
       @include pat-item-waku-kadomaru-none-bgc-pink;
       .mod-tel-iig {@include pat-item-tel-M-3;}
-      .mod-bnr_ver2 {@include pat-item-bnr-grade-9;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-h3;}
       .mod-ul_ver2 {@include pat-item-list-maru-default-3;}
     }
     @include common-style-mod-set-toiawase;
@@ -57,7 +57,7 @@
     .mod-box-in1 {
       @include pat-item-waku-kadomaru-none-gurade-gold;
       .mod-tel-iig {@include pat-item-tel-M-4;}
-      .mod-bnr_ver2 {@include pat-item-bnr-grade-10;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-h4;}
     }
     @include common-style-mod-set-toiawase;
     @include module-style-mod-set-toiawase-2col-2;
@@ -69,7 +69,7 @@
     .mod-box-in1 {
       @include pat-item-waku-kadomaru-none-gurade-blue;
       .mod-tel-iig {@include pat-item-tel-M-5;}
-      .mod-bnr_ver2 {@include pat-item-bnr-grade-11;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-h5;}
     }
     @include common-style-mod-set-toiawase;
     @include module-style-mod-set-toiawase-2col-2;
@@ -81,7 +81,7 @@
     .mod-box-in1 {
       @include pat-item-waku-kadomaru-none-gurade-yellow;
       .mod-tel-iig {@include pat-item-tel-M-6;}
-      .mod-bnr_ver2 {@include pat-item-bnr-grade-12;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-h6;}
     }
     @include common-style-mod-set-toiawase;
     @include module-style-mod-set-toiawase-2col-2;
@@ -92,7 +92,7 @@
     .mod-h_4_ver2 {@include pat-item-h4-kaku-7;}
     .mod-box-in1 {
       .mod-tel-iig {@include pat-item-tel-M-7;}
-      .mod-bnr_ver2 {@include pat-item-bnr-mesh-4;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-i1;}
       .mod-ul_ver2 {@include pat-item-waku-kadomaru-yellow-bgc-2;}
     }
     @include common-style-mod-set-toiawase;
@@ -104,7 +104,7 @@
     .mod-h_4_ver2 {@include pat-item-h4-kaku-8;}
     .mod-box-in1 {
       .mod-tel-iig {@include pat-item-tel-M-8;}
-      .mod-bnr_ver2 {@include pat-item-bnr-mesh-5;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-i2;}
     }
     @include common-style-mod-set-toiawase;
     @include module-style-mod-set-toiawase-2col-3;
@@ -115,7 +115,7 @@
     .mod-h_4_ver2 {@include pat-item-h4-kaku-9;}
     .mod-box-in1 {
       .mod-tel-iig {@include pat-item-tel-M-9;}
-      .mod-bnr_ver2 {@include pat-item-bnr-mesh-6;}
+      .mod-bnr_ver2 {@include pat-item-bnr2-i3;}
       .mod-ul_ver2 {
         @include pat-item-waku-kadomaru-yellow-bgc-2;
         @include pat-item-list-check-default-1;
@@ -124,5 +124,8 @@
     @include common-style-mod-set-toiawase;
     @include module-style-mod-set-toiawase-2col-3;
     @include deco-style-mod-set-toiawase-2col-9;
+  }
+  [data-parts-name*="part-main-291"] & {
+    @include module-style-mod-set-toiawase-2col-4;
   }
 }

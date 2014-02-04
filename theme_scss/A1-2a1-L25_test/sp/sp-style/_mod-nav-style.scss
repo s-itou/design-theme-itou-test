@@ -1065,6 +1065,75 @@
 
 
 
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-topicpath
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----commom-style-----//
+
+@mixin common-style-mod-topicpath {
+  margin: 0;
+  padding: 0;
+  font-size: $fontSizeS + 1;
+  line-height: 1.6;
+  li {
+    // @extend %inlineBlock;
+    display: inline;
+    list-style: none;
+  }
+}
+
+
+//-----module-style-----//
+@mixin module-style-mod-topicpath {
+  li {
+    padding: 0 0 0 5px;
+    &:first-child {
+      padding: 0 0 0 0;
+    }
+    a {
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-image: url("img/mod-topicpath/bg.png");
+      padding: 0 15px 0 0;
+    }
+  }
+}
+
+
+//-----deco-style-----//
+@mixin deco-style01A1-mod-topicpath {
+  text-align: right;
+  li {
+    a {
+      color: #335a93;
+      &:hover {
+        color: #f2d028;
+      }
+    }
+    em {
+      font-style: normal;
+      color: #333333;
+    }
+  }
+}
+
+
+@mixin deco-style02A1-mod-topicpath {
+  text-align: left;
+  li {
+    a {
+      color: #335a93;
+      &:hover {
+        color: #f2d028;
+      }
+    }
+    em {
+      font-style: normal;
+      color: #333333;
+    }
+  }
+}
 
 
 

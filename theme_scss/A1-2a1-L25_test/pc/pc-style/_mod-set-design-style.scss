@@ -1,26 +1,25 @@
 @charset "UTF-8";
 // -------------------------------------
-// mod-set-design の共通定義
+// mod-set-design
 // -------------------------------------
 
 // --------------------------------------------------------------------------
 // mod-set-design
 // --------------------------------------------------------------------------
 @mixin common-style-mod-set-design {
-  //業務チームから見出し等がSWでoffになっても最低限この余白をとるようとの依頼
   margin: 20px 0 0;
 }
 // --------------------------------------------------------------------------
 // mod-set-design2
 // --------------------------------------------------------------------------
 @mixin common-style-mod-set-design2 {
-  //業務チームから見出し等がSWでoffになっても最低限この余白をとるようとの依頼
   margin: 30px 0 0;
 }
 
 // --------------------------------------------------------------------------
 // mod-set-design3
 // --------------------------------------------------------------------------
+
 @mixin common-style-mod-set-design3 {
   .mod-box-inner2 {
     > .ex-first-child {
@@ -32,9 +31,57 @@
   }
 }
 
+
+// -----------------------------------
+// mod-set-design3-block-style
+// -----------------------------------
+
+//$pbm = padding + border　+ margin ($mainWidthから引くべき値)
+//exの階層上使用不可のため、現在使っていません
+@mixin mod-set-design3-mod-2col50-block-style($pbm: 68) {
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + $pbm)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .ex-imgSize_2SS {
+    .mod-2col50 {
+      > .mod-2col-inner, > .mod-2col-inner2 {
+        width: floor(($mainWidth - (($mainWidth * 0.23) + $pbm)) / 2);
+      }
+    }
+  }
+  &.ex-imgSize_2S {
+    .mod-2col50 {
+      > .mod-2col-inner, > .mod-2col-inner2 {
+         width: floor(($mainWidth - (($mainWidth * 0.31) + $pbm)) / 2);
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - ($pbm - 20)) / 2);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 // -----------------------------------
 // module-style
 // -----------------------------------
+
 @mixin module-style-mod-set-design3 {
   .mod-ul_ver2 {
     @include border-radius(0px);
@@ -45,6 +92,28 @@
       margin-left: 20px;
       padding-left: 15px;
       background-position: left 5px;
+    }
+  }
+  .mod-link_ver2 {
+    margin: 0;
+  }
+  .mod-2col50 {
+    margin: 10px 0 0 0;
+    > .mod-2col-inner {
+      float: left;
+      margin: 0;
+    }
+    > .mod-2col-inner2 {
+      margin: 0 0 0 20px;
+      overflow: visible;
+      float: right;
+    }
+  }
+  .mod-set-step {
+    div:first-child {
+      .mod-2col50 {
+        margin: 20px 0 0 0;
+      }
     }
   }
 }
@@ -63,7 +132,7 @@
       display: table-cell;
       position: relative;
       > .mod-2col-inner-2, > .mod-2col-inner2-2 {
-        margin: 0 !important; //item打ち消し+decoにかくと階層構造の点数が足りないため
+        margin: 0 !important; //item´ò¤ÁÏû¤·+deco¤Ë¤«¤¯¤ÈëAŒÓ˜‹Ôì¤ÎµãÊý¤¬×ã¤ê¤Ê¤¤¤¿¤á
         > .mod-2col-inner-3, > .mod-2col-inner2-3 {
           > .mod-box_ver2 {
             margin: 0;
@@ -89,7 +158,7 @@
     &:first-child.mod-2col-inner2 {
       border: none;
     }
-    div[data-cms-switchable="false"] + .mod-2col-inner2 {//編集画面上,公開画面
+    div[data-cms-switchable="false"] + .mod-2col-inner2 {//¾Ž¼¯»­ÃæÉÏ,¹«é_»­Ãæ
       border: none;
     }
   }
@@ -99,7 +168,7 @@
     border: none;
     background-color: transparent;
     li {
-      margin-left: 5px !important;// カラム指定方が階層深いため
+      margin-left: 5px !important;
       padding-left: 15px;
       background-position: left 5px;
       font-size: $fontSizeM - 1;
@@ -125,15 +194,25 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
     }
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      padding: 5px 5px 4px 30px;
-      max-height: 47px;
-      background-position: 10px 8px;
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 68)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 48) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -152,15 +231,25 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
     }
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      padding: 5px 5px 4px 30px;
-      max-height: 47px;
-      background-position: 10px 8px;
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 68)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 48) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -179,15 +268,25 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
     }
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      padding: 5px 5px 4px 30px;
-      max-height: 47px;
-      background-position: 10px 8px;
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 68)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 48) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -213,7 +312,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_1.png");
@@ -222,16 +321,25 @@
   a {
     color: #ffffff;
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      padding: 5px 5px 4px 30px;
-      max-height: 47px;
-      background-position: 10px 6px;
-      background-image: url("img/_mod/set-design3/bnr/bg.png");
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 86)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 66) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -257,7 +365,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_2.png");
@@ -266,15 +374,25 @@
   a {
     color: #ffffff;
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      background-position: 10px 6px;
-      max-height: 47px;
-      background-image: url("img/_mod/set-design3/bnr/bg.png");
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 86)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 66) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -300,7 +418,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_3.png");
@@ -309,16 +427,25 @@
   a {
     color: #ffffff;
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      padding: 5px 5px 4px 30px;
-      max-height: 47px;
-      background-position: 10px 6px;
-      background-image: url("img/_mod/set-design3/bnr/bg.png");
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 86)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 66) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -339,14 +466,25 @@
       background-image: url("img/_mod/set-design3/ul/bg_c_1.png");
     }
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      padding: 5px 5px 4px 30px;
-      max-height: 47px;
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 90)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 70) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -367,14 +505,25 @@
       background-image: url("img/_mod/set-design3/ul/bg_c_2.png");
     }
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      padding: 5px 5px 4px 30px;
-      max-height: 47px;
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 90)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 70) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -395,14 +544,25 @@
       background-image: url("img/_mod/set-design3/ul/bg_c_3.png");
     }
   }
-  .mod-bnr_ver2 {
-    max-width: 230px;
-    .mod-bnr-inner {
-      padding: 5px 5px 4px 30px;
-      max-height: 47px;
-       p {
-         font-size: 13px;
-       }
+  .mod-2col50 {//誘導リンク部品
+    > .mod-2col-inner, > .mod-2col-inner2 {
+      width: floor(($mainWidth - (($mainWidth * 0.39) + 90)) / 2);
+      //68px = padding+border:28px + margin(2colin1)20px + margin(2col50)20px
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-in1 {
+    > .mod-2col-wrap {
+      > div:first-child[class="mod-2col-inner2"],
+      > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+        .mod-2col50 {
+          > .mod-2col-inner, > .mod-2col-inner2 {
+            width: floor(($mainWidth - 70) / 2);
+          }
+        }
+      }
     }
   }
 }
@@ -427,17 +587,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
     }
   }
-  .mod-bnr_ver2 {
-    width: auto; //pat-itemのwidth270pxを打ち消し
-    .mod-bnr-inner {
-      padding: 5px 5px 3px 25px;
-      background-position: 8px 8px;
-      > p {
-        font-size: $fontSizeM - 2;
-      }
-    }
-  }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -462,17 +612,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
     }
   }
-  .mod-bnr_ver2 {
-    width: auto; //pat-itemのwidth270pxを打ち消し
-    .mod-bnr-inner {
-      padding: 5px 5px 3px 25px;
-      background-position: 8px 8px;
-      > p {
-        font-size: $fontSizeM - 2;
-      }
-    }
-  }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -497,17 +637,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
     }
   }
-  .mod-bnr_ver2 {
-    width: auto; //pat-itemのwidth270pxを打ち消し
-    .mod-bnr-inner {
-      padding: 5px 5px 3px 25px;
-      background-position: 8px 8px;
-      > p {
-        font-size: $fontSizeM - 2;
-      }
-    }
-  }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -539,17 +669,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
     }
   }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 5px 5px 3px 25px;
-      background-position: 8px 5px;
-      background-image: url("img/_mod/set-design3/bnr/bg.png");
-      > p {
-        font-size: $fontSizeM - 2;
-      }
-    }
-  }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_1.png");
@@ -583,18 +703,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
     }
   }
-  .mod-bnr_ver2 {
-    width: auto; //pat-itemのwidth270pxを打ち消し
-    .mod-bnr-inner {
-      padding: 5px 5px 3px 25px;
-      background-position: 8px 5px;
-      background-image: url("img/_mod/set-design3/bnr/bg.png");
-      > p {
-        font-size: $fontSizeM - 2;
-      }
-    }
-  }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_2.png");
@@ -628,18 +737,7 @@
       background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
     }
   }
-  .mod-bnr_ver2 {
-    width: auto; //pat-itemのwidth270pxを打ち消し
-    .mod-bnr-inner {
-      padding: 5px 5px 3px 25px;
-      background-position: 8px 5px;
-      background-image: url("img/_mod/set-design3/bnr/bg.png");
-      > p {
-        font-size: $fontSizeM - 2;
-      }
-    }
-  }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     color: #ffffff;
     > p {
       background-image: url("img/_mod/set-design3/link/bg_b_3.png");
@@ -669,7 +767,7 @@
     }
   }
   .mod-bnr_ver2 {
-    width: auto; //pat-itemのwidth270pxを打ち消し
+    width: auto; //pat-item¤Îwidth270px¤ò´ò¤ÁÏû¤·
     .mod-bnr-inner {
       padding: 5px 5px 3px 25px;
       > p {
@@ -677,7 +775,7 @@
       }
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -706,7 +804,7 @@
     }
   }
   .mod-bnr_ver2 {
-    width: auto; //pat-itemのwidth270pxを打ち消し
+    width: auto; //pat-item¤Îwidth270px¤ò´ò¤ÁÏû¤·
     .mod-bnr-inner {
       padding: 5px 5px 3px 25px;
       > p {
@@ -714,7 +812,7 @@
       }
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -742,7 +840,7 @@
     }
   }
   .mod-bnr_ver2 {
-    width: auto; //pat-itemのwidth270pxを打ち消し
+    width: auto; //pat-item¤Îwidth270px¤ò´ò¤ÁÏû¤·
     .mod-bnr-inner {
       padding: 5px 5px 3px 25px;
       > p {
@@ -750,7 +848,7 @@
       }
     }
   }
-  .mod-link-1st, .mod-link-2nd {
+  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
     > p {
       padding: 2px 0 0 20px;
       font-size: $fontSizeM - 2;
@@ -781,7 +879,7 @@
   .mod-box_ver2 {
     margin: 14px 0 0;
     .ex-first-child {
-      margin-top: 0 !important; //これだけ枠デザインのため
+      margin-top: 0 !important; //¤³¤ì¤À¤±–˜¥Ç¥¶¥¤¥ó¤Î¤¿¤á
     }
   }
   .mod-rte_ver2 {
@@ -815,7 +913,28 @@
     }
   }
 }
-
+@mixin module-style-mod-set-design4-4 {
+  .mod-box_ver2 {
+    margin: 15px 0 0 0;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    > .ex-first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+@mixin module-style-mod-set-design4-5 {
+}
+@mixin module-style-mod-set-design4-6 {
+  .mod-ul_ver2 {
+    padding: 5px 10px;
+    ul {
+      li {
+        margin: 2px 0 0 5px;
+      }
+    }
+  }
+}
 
 // -------------------------------------
 // deco-style
@@ -863,5 +982,59 @@
 @mixin deco-style-mod-set-design4-8 {
 }
 @mixin deco-style-mod-set-design4-9 {
+}
+@mixin deco-style-mod-set-design4-10 {
+}
+@mixin deco-style-mod-set-design4-11 {
+}
+@mixin deco-style-mod-set-design4-12 {
+  .mod-ul_ver2 {
+    ul {
+      li {
+       background-image: url("img/mod-ul/bg_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-mod-set-design4-13 {
+  .mod-h_5_pic_top, .mod-h_5_pic_bottom, .mod-h_5_list_top {
+    .mod-h {
+      color: #3c3c3c;
+    }
+  }
+}
+@mixin deco-style-mod-set-design4-14 {
+}
+@mixin deco-style-mod-set-design4-15 {
+  .mod-h_5_pic_top, .mod-h_5_pic_bottom, .mod-h_5_list_top {
+    .mod-h {
+      color: #587153;
+    }
+  }
+  .mod-ul_ver2 {
+    ul {
+      li {
+       background-image: url("img/mod-ul/bg04_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-mod-set-design4-16 {
+  .mod-ul_ver2 {
+    border: none;
+    background-color: #d5d5d5;
+  }
+}
+@mixin deco-style-mod-set-design4-17 {
+  .mod-ul_ver2 {
+    border: none;
+    background-color: #e2dad8;
+  }
+}
+@mixin deco-style-mod-set-design4-18 {
+  .mod-ul_ver2 {
+    border: 1px solid #cdcbcc;
+    background-color: #f8f3e0;
+  }
 }
 

@@ -100,11 +100,7 @@
 //##################################################
 //////////////////////////////////////////////////
 //  COMMON-STYLE
-@mixin common-style-mod-link-side {}
-
-//////////////////////////////////////////////////
-//  MODULE-STYLE
-@mixin module-style-mod-link-1st-side {
+@mixin common-style-mod-link-side {
   line-height: 1.4;
   text-decoration: none;
   text-align: center;
@@ -129,6 +125,11 @@
   }
 }
 
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-link-1st-side {}
+@mixin module-style-mod-link-2nd-side {}
+@mixin module-style-mod-link-side {}
 //////////////////////////////////////////////////
 //  DECORATION-STYLE
 @mixin deco-style01A1-mod-link-1st-side {
