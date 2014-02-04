@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+//##################################################
+//  mod-2col
+//##################################################
+
+//////////////////////////////
+//  common-style SP対応済
+@mixin common-style-mod-2col {
+  margin-top: 20px;
+  .mod-2col-inner {
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-inner2 {
+    margin-top: 15px;
+    > .ex-first-child {
+      margin-top: 0 !important;
+      > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+//////////////////////////////
+//  module-style
+@mixin module-style-mod-2col { }
+@mixin module-style-mod-2col-in1 {
+  margin-top: 20px;
+  > .mod-2col-wrap {
+    .mod-2col-inner-2 {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+    }
+    > div:first-child[class="mod-2col-inner2"],
+    > .mod-2col-inner[data-cms-switchable="false"] + .mod-2col-inner2 {
+      margin: 0;
+    }
+    .mod-2col-inner2 {
+      margin-top: 15px;
+      .mod-2col-inner2-2 {
+        > .ex-first-child {
+          margin-top: 0 !important;
+          > .ex-first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin module-style-mod-2col-in1-hyo { }
+@mixin module-style-mod-2col50 { }
+@mixin module-style-mod-2col50-in2 { }
+@mixin module-style-mod-2col-side { }
+
+//////////////////////////////
+//  deco-style
+
+
+
+//##################################################
+//  mod-2col-footer
+//##################################################
+
+//////////////////////////////
+//  common-style
+@mixin common-style-mod-2col-footer {
+  // display: table;
+  width: 100%;
+  .mod-2col-inner {
+    overflow: hidden;
+    margin-top: 15px;
+    // margin-right: 30px;
+    // min-width: 370px;
+  }
+  .mod-2col-inner2 {
+    margin-top: 15px;
+    // display: table-cell;
+    // min-width: 580px;
+    // vertical-align: bottom;
+  }
+  > div:first-child {
+    margin-top: 0;
+    > .ex-first-child {
+      &, > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+//////////////////////////////
+//  module-style
+@mixin module-style-mod-2col-footer { }
+
+//////////////////////////////
+//  deco-style
+@mixin deco-style01A1-mod-2col-footer { }
+
+
+//##################################################
+//  mod-2col-footer
+//##################################################
+
+//////////////////////////////
+//  common-style
+@mixin common-style-mod-2col-table-footer {
+  // float: right;
+  .mod-2col-inner {
+    margin-top: 15px;
+    // display: table-cell;
+    // padding-right: 30px;
+    // min-width: 300px;
+    // max-width: 300px;
+    // vertical-align: bottom;
+    > .ex-first-child {
+      &, > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .mod-2col-inner2 {
+    margin-top: 15px;
+    // display: table-cell;
+    // min-width: 260px;
+    // max-width: 280px;
+    // vertical-align: bottom;
+    text-align: center;
+  }
+}
+
+//////////////////////////////
+//  module-style
+@mixin module-style-mod-2col-table-footer { }
+
+//////////////////////////////
+//  deco-style
+@mixin deco-style01A1-mod-2col-table-footer { }

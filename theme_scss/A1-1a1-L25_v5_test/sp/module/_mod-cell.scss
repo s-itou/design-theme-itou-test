@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import "../sp-style/mod-cell-style";
+
+.mod-cell-side {
+	@include module-style-mod-cell-side;
+}
+
+.mod-cell-i-side {
+	@include module-style-mod-cell-i-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A2-mod-cell-i-side;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A2-mod-cell-i-side;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A1-mod-cell-i-side;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A2-mod-cell-i-side;
+  }
+}

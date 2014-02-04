@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+//##################################################
+//  mod-cell-side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin module-style-mod-cell-side {
+  @include box-sizing(border-box);
+  @include border-radius();
+  @include background-image(linear-gradient(top, #fff, #eee));
+  margin-top: 10px !important;
+  padding: 20px 0 0 0;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #cccccc;
+  color: #ff0000;
+  text-align:center;
+  word-break: break-all;
+  font-weight: normal;
+  font-size: 22px !important;
+  line-height: 1.0;
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+
+
+//##################################################
+//  mod-cell-i-side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin module-style-mod-cell-i-side {
+  @include border-radius();
+  @include box-sizing(border-box);
+  margin-top: 10px !important;
+  padding: 20px 0 0 40px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #cccccc;
+  background-size: 31px 31px, 100% !important;
+  color: #ff0000;
+  text-align:center;
+  word-break: break-all;
+  font-weight: normal;
+  font-size: 22px !important;
+  line-height: 1.0;
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-cell-i-side {
+  @include tel-button("mod-cell/spbg02.png", 10px, 15px);
+}
+@mixin deco-style01A2-mod-cell-i-side {
+  @include tel-button("mod-cell/spbg02_3.png", 10px, 15px);
+}

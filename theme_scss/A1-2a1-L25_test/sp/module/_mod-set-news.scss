@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+// -------------------------------------
+//
+// mod-set-toiawase の紐付けモジュール
+//
+// -------------------------------------
+
+@import "../sp-style/mod-set-news-style";
+
+// -------------------------------------
+// part-main-279
+// お問い合わせ
+// -------------------------------------
+
+
+.mod-set-news-bunsyo {
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-waku-kadomaru-simple-black;
+    .mod-h_4_ver2 {@include pat-item-h4-10;}
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-13;}
+    @include deco-style-mod-set-news-bunsyo-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-waku-kadomaru-simple-blue-4;
+    .mod-h_4_ver2 {@include pat-item-h4-11;}
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-14;}
+    @include deco-style-mod-set-news-bunsyo-1;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-waku-kadomaru-simple-red;
+    .mod-h_4_ver2 {@include pat-item-h4-1;}
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-15;}
+    @include deco-style-mod-set-news-bunsyo-1;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-waku-kadomaru-simple-black-2;
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-13;}
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-10;}
+    @include deco-style-mod-set-news-bunsyo-2;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-waku-kadomaru-simple-blue-5;
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-14;}
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-11;}
+    @include deco-style-mod-set-news-bunsyo-2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-waku-kadomaru-simple-red-2;
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-15;}
+    .mod-h_4_ver2 {@include pat-item-h4-kaku-12;}
+    @include deco-style-mod-set-news-bunsyo-2;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-waku-kadomaru-mesh-1;
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-13;}
+    .mod-h_4_ver2 {@include pat-item-h4-12;}
+    @include deco-style-mod-set-news-bunsyo-3;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-waku-kadomaru-mesh-2;
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-14;}
+    .mod-h_4_ver2 {@include pat-item-h4-13;}
+    @include deco-style-mod-set-news-bunsyo-3;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-waku-kadomaru-mesh-3;
+    .mod-bnr-1st, .mod-bnr-2nd {@include pat-item-bnr-grade-15;}
+    .mod-h_4_ver2 {@include pat-item-h4-14;}
+    @include deco-style-mod-set-news-bunsyo-3;
+  }
+  @include common-style-mod-set-news-bunsyo;
+}
+
+

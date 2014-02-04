@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-dl
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-dl {
+  display: table;
+  margin: 20px 0 0 0;
+  .mod-dl-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      float: left;
+      margin-right: 10px !important;
+    }
+  }
+  .mod-dl-inner2 {
+    display: table-cell;
+    min-width: 20px;
+    vertical-align: middle;
+    > p {
+      padding: 0 0 0 5px;
+    }
+  }
+}
+//—————————module-style—————————
+@mixin module-style-mod-dl {
+  .mod-dl-inner2 {
+    > p {
+      font-size: $fontSizeL + 2;
+    }
+  }
+}
+@mixin module-style-mod-dl-adobe {
+  .mod-dl-inner2 {
+    > p {
+      font-size: $fontSizeM;
+    }
+  }
+}
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01A2-mod-dl {
+  a {
+    color: #294470;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01A3-mod-dl {
+  a {
+    color: #45320b;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01B1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01B2-mod-dl {
+  a {
+    color: #294470;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01B3-mod-dl {
+  a {
+    color: #45320b;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+@mixin deco-style01C1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}
+@mixin deco-style01C2-mod-dl {
+  a {
+    color: #294470;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}
+@mixin deco-style01C3-mod-dl {
+  a {
+    color: #45320b;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}

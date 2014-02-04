@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import "../sp-style/mod-fax-style";
+
+.mod-fax-side {
+  @include common-style-mod-fax-side;
+  @include module-style-mod-fax-side;
+}
+
+.mod-fax-i-side {
+  @include common-style-mod-fax-side;
+  @include module-style-mod-fax-i-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-fax-i-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-fax-i-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-fax-i-side;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A3-mod-fax-i-side;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A2-mod-fax-i-side;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A3-mod-fax-i-side;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A3-mod-fax-i-side;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A2-mod-fax-i-side;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A3-mod-fax-i-side;
+  }  
+}

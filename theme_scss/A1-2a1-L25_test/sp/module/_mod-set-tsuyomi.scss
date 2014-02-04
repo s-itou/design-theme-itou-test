@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-tsuyomi の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../sp-style/mod-set-tsuyomi-style";
+
+// -----------------------------------
+// mod-set-tsuyomi
+// part-main-289,290
+// -----------------------------------
+
+.mod-set-tsuyomi {
+  @include common-style-mod-set-tsuyomi;
+  @include module-style-mod-set-tsuyomi;
+  .ex-style_01A1 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-1;
+      @include deco-style01A1-mod-set-tsuyomi;
+    }
+  }
+  .ex-style_01A2 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-2;
+      @include deco-style01A2-mod-set-tsuyomi;
+    }
+  }
+  .ex-style_01A3 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-3;
+      @include deco-style01A3-mod-set-tsuyomi;
+    }
+  }
+  .ex-style_01B1 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-4;
+      @include deco-style01B1-mod-set-tsuyomi;
+    }
+  }
+  .ex-style_01B2 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-5;
+      @include deco-style01B2-mod-set-tsuyomi;
+    }
+  }
+  .ex-style_01B3 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-6;
+      @include deco-style01B3-mod-set-tsuyomi;
+    }
+  }
+  .ex-style_01C1 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-7;
+      @include deco-style01C1-mod-set-tsuyomi;
+    }
+  }
+  .ex-style_01C2 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-8;
+      @include deco-style01C2-mod-set-tsuyomi;
+    }
+  }
+  .ex-style_01C3 & {
+    .mod-h_4_ver2 {
+      @include pat-item-h4-icon-tsuyomi-9;
+      @include deco-style01C3-mod-set-tsuyomi;
+    }
+  }
+}

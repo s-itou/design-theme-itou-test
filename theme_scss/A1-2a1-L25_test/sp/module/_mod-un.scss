@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "../sp-style/mod-un-style";
+
+.mod-dl_ver2 {
+  @include common-style-mod-dl;
+  @include module-style-mod-dl;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01C1-mod-dl;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01C1-mod-dl;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C1-mod-dl;
+  }
+}
+
+.mod-dl-adobe {
+  @include common-style-mod-dl;
+  @include module-style-mod-dl-adobe;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A1-mod-dl;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01C1-mod-dl;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01C1-mod-dl;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01C1-mod-dl;
+  }
+}

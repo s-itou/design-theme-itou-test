@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+// ------------------------------------------------------------
+//mod-2col
+// ------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-mod-2col-style.scss";
+// -------------------------------------
+//  pat-item-mod-2col の個別設定
+// -------------------------------------
+
+@mixin pat-item-mod-2col-1 {
+//  @include common-style-mod-2col;
+//  @include module-style-mod-2col;
+  @include deco-style01A1-pat-item-mod-2col;
+}
+
+// -------------------------------------
+//  pat-item-mod-2col50 の個別設定
+// -------------------------------------

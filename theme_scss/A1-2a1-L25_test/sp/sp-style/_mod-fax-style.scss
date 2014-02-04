@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+//##################################################
+//  mod-fax-side
+//##################################################
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-fax-side {}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-fax-side {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  color: #333333;
+  width:100%;
+  margin-top: 10px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  .mod-body & {
+      font-size: 20px;
+  }
+}
+//////////////////////////////////////////////////
+//  DECPRATOIN-STYLE
+
+//##################################################
+//  mod-fax-i-side
+//##################################################
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-fax-i-side {
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  color: #333333;
+  width:100%;
+  margin-top: 10px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  position: relative;
+  &:before {
+    content: "";
+    width: 22px;
+    z-index: 3;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 22px 18px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: -5px;
+  }
+  .mod-body & {
+      font-size: 20px;
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECPRATOIN-STYLE
+@mixin deco-style01A1-mod-fax-i-side {
+  &:before {
+    background-image: url("img/mod-fax/spbg.png");
+  }
+}
+@mixin deco-style01A2-mod-fax-i-side {
+  &:before {
+    background-image: url("img/mod-fax/spbg_2.png");
+  }
+}
+@mixin deco-style01A3-mod-fax-i-side {
+  &:before {
+    background-image: url("img/mod-fax/spbg_3.png");
+  }
+}

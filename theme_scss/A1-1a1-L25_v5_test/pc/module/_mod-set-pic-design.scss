@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-pic-design
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-pic-design-style";
+//@import "../design/pat-design-common";
+
+
+
+.mod-set-pic-design {
+  .ex-style_01A1 & {
+    @include pat-item-waku-kado-bevel-1;
+    .mod-h_4_ver2 {@include pat-item-h4_16;}
+    .mod-2col_ver2 {@include pat-item-mod-2col-1;}
+    //.mod-2col_ver2 {@include pat-item}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l1;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-1;
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-waku-kado-bevel-2;
+    .mod-h_4_ver2 {@include pat-item-h4_17;}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l2;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-1;
+    @include deco-style01A2-mod-set-pic-design;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-waku-kado-bevel-3;
+    .mod-h_4_ver2 {@include pat-item-h4_18;}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l3;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-1;
+    @include deco-style01A3-mod-set-pic-design;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-waku-kado-bevel-4;
+    .mod-h_4_ver2 {@include pat-item-h4_19;}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l4;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-2;
+    @include deco-style01B1-mod-set-pic-design;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-waku-kado-bevel-5;
+    .mod-h_4_ver2 {@include pat-item-h4_20;}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l5;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-2;
+    @include deco-style01B2-mod-set-pic-design;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-waku-kado-bevel-6;
+    .mod-h_4_ver2 {@include pat-item-h4_21;}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l1;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-2;
+    @include deco-style01B3-mod-set-pic-design;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-waku-kado-bevel-7;
+    .mod-h_4_ver2 {@include pat-item-h4_22;}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l6;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-3;
+    @include deco-style01C1-mod-set-pic-design;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-waku-kado-bevel-8;
+    .mod-h_4_ver2 {@include pat-item-h4_23;}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l7;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-3;
+    @include deco-style01C2-mod-set-pic-design;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-waku-kado-bevel-9;
+    .mod-h_4_ver2 {@include pat-item-h4_24;}
+    .mod-bnr_ver2 {@include pat-item-bnr-box2-for-2col-L25-l8;}
+    @include common-style-mod-set-pic-design;
+    @include module-style-mod-set-pic-design-3;
+    @include deco-style01C3-mod-set-pic-design;
+  }
+}

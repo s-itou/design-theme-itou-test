@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+// ----------------------------
+//
+// mod-set-door
+//
+// ----------------------------
+
+// ----------------------------
+// common-style
+// ----------------------------
+@mixin common-style-mod-set-door {
+  > .mod-box-inner > .mod-box-inner2 > .ex-first-child {
+    margin-top: 0;
+  }
+  .mod-set-step {
+    margin-top: 40px;
+  }
+  .mod-2col50-in2 .mod-2col-wrap .mod-2col-wrap2 {
+    > .mod-2col-inner {
+      width: floor(($mainWidth - 40*2 - 40) / 2);
+    }
+    > .mod-2col-inner2 {
+      width: floor(($mainWidth - 40*2 - 40) / 2);
+      margin-left: 40px;
+    }
+  }
+}
+
+// ----------------------------
+// module-style
+// ----------------------------
+@mixin module-style-mod-set-door { }
+
+// ----------------------------
+// module-style
+// ----------------------------
+
+
+
+
+
+//////////////////////////////////////////////////
+//  後でファイル分け
+//////////////////////////////////////////////////
+
+//////////////////////////////
+//  pat-item-h4-style (pat-item-h4ベース)
+
+//  ----- common -----
+@mixin common-style-pat-item-h4_tmp {
+  display: table;
+  margin: 30px 0 0 0;
+  i {
+    display: table-cell;
+  }
+  .mod-h_4-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      font-size: $fontSizeS;
+    }
+  }
+  .mod-h_4-inner3 {
+    overflow: hidden;
+    .mod-h {
+      word-break: break-all;
+      font-size: $fontSizeL;
+      line-height: 1.3;
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 3px 0 0 0;
+  }
+}
+//  ----- module -----
+@mixin module-style-pat-item-h4-shimple_tmp {
+  width: 100%;
+  //i {}　iconなし
+  .mod-h_4-inner {
+    width: 100%;
+  }
+  .mod-h_4-inner3 {
+     @include border-radius();
+     margin: 3px 0 0 0;
+     padding: 2px 7px;
+  }
+  .mod-h {
+    max-height: 111px;
+    font-weight: normal;
+  }
+}
+//  ----- size -----
+//  ----- insize -----
+//  ----- deco -----
+@mixin deco-style-pat-item-h4_tmp-25 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #314f7a;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4_tmp-26 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #3ea2b1;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4_tmp-27 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #3986b8;
+    background-image: none;
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4_tmp-A {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4_shimple/bg_5.png");
+    background-color: #416ca6;
+    background-repeat: repeat-y;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4_tmp-B {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4_shimple/bg_6.png");
+    background-color: #ffe354;
+    background-repeat: repeat-y;
+  }
+  .mod-h {
+    color: #355995;
+  }
+}
+@mixin deco-style-pat-item-h4_tmp-C {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4_shimple/bg_7.png");
+    background-color: #519dce;
+    background-repeat: repeat-y;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+//  ----- pattern mapping -----
+@mixin pat-item-h4_tmp-25 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4_tmp-25;
+}
+@mixin pat-item-h4_tmp-26 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4_tmp-26;
+}
+@mixin pat-item-h4_tmp-27 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4_tmp-27;
+}
+@mixin pat-item-h4_tmp-A {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4_tmp-A;
+}
+@mixin pat-item-h4_tmp-B {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4_tmp-B;
+}
+@mixin pat-item-h4_tmp-C {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4_tmp-C;
+}
+
+
+
+//////////////////////////////
+//  pat-item-waku-style (pat-item-waku-fukidashiベース)
+
+//  ----- common -----
+@mixin common-style-pat-item-waku-corkboard_tmp {
+  margin: 30px auto 0 auto;
+  padding: 45px 0 0 0;
+  width: $mainWidth;
+  background-position: left top;
+  background-repeat: no-repeat;
+  > .mod-box-inner {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    > div {
+      overflow: hidden;
+      background-position: left top;
+      background-repeat: repeat-y;
+    }
+  }
+}
+//  ----- module -----
+@mixin module-style-pat-item-waku-corkboard_tmp {
+  > .mod-box-inner {
+    padding: 0 0 41px;
+    background-image: url("img/_pat-item/waku-board/bg03_7.png");
+    > div {
+      padding: 2px 40px 17px;
+      background-image: url("img/_pat-item/waku-board/bg02_7.png");
+    }
+  }
+}
+//  ----- size -----
+//  ----- insize -----
+//  ----- deco -----
+@mixin deco-style-pat-item-waku-corkboard_tmp-A {
+  background-image: url("img/_pat-item/waku-board/bg_7.png");
+}
+@mixin deco-style-pat-item-waku-corkboard_tmp-B {
+  background-image: url("img/_pat-item/waku-board/bg_8.png");
+}
+@mixin deco-style-pat-item-waku-corkboard_tmp-C {
+  background-image: url("img/_pat-item/waku-board/bg_9.png");
+}
+//  ----- pattern mapping -----
+@mixin pat-item-waku-corkboard_tmp-A {
+  @include common-style-pat-item-waku-corkboard_tmp;
+  @include module-style-pat-item-waku-corkboard_tmp;
+  @include deco-style-pat-item-waku-corkboard_tmp-A;
+}
+@mixin pat-item-waku-corkboard_tmp-B {
+  @include common-style-pat-item-waku-corkboard_tmp;
+  @include module-style-pat-item-waku-corkboard_tmp;
+  @include deco-style-pat-item-waku-corkboard_tmp-B;
+}
+@mixin pat-item-waku-corkboard_tmp-C {
+  @include common-style-pat-item-waku-corkboard_tmp;
+  @include module-style-pat-item-waku-corkboard_tmp;
+  @include deco-style-pat-item-waku-corkboard_tmp-C;
+}
+
+
+

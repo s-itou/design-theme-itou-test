@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+//##################################################
+//  mod-cell-side
+//##################################################
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-cell-side {}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-cell-side {
+  @include box-sizing(border-box);
+  padding: 20px 0 0 0;
+  height: 60px;
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 22px !important;
+  color: #ff0000;
+  @include background-image(linear-gradient(top, #fff, #eee));
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+
+//##################################################
+//  mod-cell-i-side
+//##################################################
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-cell-i-side {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 1.0;
+  font-size: 22px !important;
+  color: #ff0000;
+  @include box-sizing(border-box);
+  padding: 20px 0 0 40px;
+  height: 60px;
+  background-size: 31px 31px, 100% !important;
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-cell-i-side {
+  @include tel-button("mod-cell/spbg.png", 10px, 15px);
+}
+@mixin deco-style01A2-mod-cell-i-side {
+  @include tel-button("mod-cell/spbg_2.png", 10px, 15px);
+}
+@mixin deco-style01A3-mod-cell-i-side {
+  @include tel-button("mod-cell/spbg_3.png", 10px, 15px);
+}

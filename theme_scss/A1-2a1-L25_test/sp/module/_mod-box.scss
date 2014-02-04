@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import "../sp-style/mod-box-style";
+
+//##################################################
+//  mod-box-in1-side
+//##################################################
+.mod-box-in1-side {
+	@include mod-box-side;
+	@include module-style-mod-box-in1-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A1-mod-box-in1-side;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A2-mod-box-in1-side;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A2-mod-box-in1-side;
+  }
+}

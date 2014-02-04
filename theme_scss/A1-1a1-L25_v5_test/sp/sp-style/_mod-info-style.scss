@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+//info基本形（メインエリア） 現在は１モジュールだけのcommonですが、サンクスページ部品用として追加予定
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin common-style-mod-info-side {
+  @include border-radius();
+  @extend %inlineBlock; //横幅可変設定
+  margin-top: 15px !important; //p要素のため
+  padding: 0 13px;
+  text-align: left;
+  font-weight: normal;
+  .mod-body & {
+    font-size: $sideFontSizeM;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin module-style-mod-info-side {}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+
+@mixin deco-style01A1-mod-info-side {
+  background-color: #f59e3b;
+  color: #ffffff;
+}
+
+
+@mixin deco-style01A2-mod-info-side {
+  background-color: #7fcfd8;
+  color: #ffffff;
+}
+
+
+@mixin deco-style01A3-mod-info-side {
+  background-color: #519dce;
+  color: #ffffff;
+}

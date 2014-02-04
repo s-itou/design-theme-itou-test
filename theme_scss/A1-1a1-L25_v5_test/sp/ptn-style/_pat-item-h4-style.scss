@@ -1,0 +1,2364 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-h4
+//
+//  ・h4-icon アイコンがつくデザイン
+//  ・h4-border 小見出しのようなデザイン
+//
+// --------------------------------------------------------------------------
+
+
+
+
+
+// ------------------------------
+//
+// block-style ex-alignにおける設定について
+// カラーでは変わらないがdesignごとに変わっていくるため。h_2,h_3では@mixin mod-h_2-01Aの単位でつけること推奨
+// それ以外ではそもそもぶち抜きでないので、commonでよいかと
+//
+// ------------------------------
+@mixin block-style-ex-align {  //左右に-25pxのマージンをとっていないもの。汎用的設定
+  &.ex-align-center {
+    text-align: center;
+    margin-left: auto;//align対応のためショートハンド不使用
+    margin-right: auto;
+  }
+  &.ex-align-right {
+    text-align: right;
+    margin-left: auto;//align対応のためショートハンド不使用
+  }
+  &.ex-align-left {
+    text-align: left;
+    margin-right: auto;//align対応のためショートハンド不使用
+  }
+}
+
+
+
+
+
+// -------------------------------------
+// pat-item-h4 の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-h4 {
+  @include block-style-ex-align;
+  display: table;
+  margin: 15px 0 0 0;
+  i {
+    display: table-cell;
+  }
+  .mod-h_4-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      font-size: $fontSizeS;
+    }
+  }
+  .mod-h_4-inner3 {
+    overflow: hidden;
+    .mod-h {
+      word-break: break-all;
+      font-size: $fontSizeM + 2 !important; //リッチの影響を防ぐ
+      line-height: 1.3;
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 3px 0 0 0;
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-h4 の共通デザイン
+// -------------------------------------
+
+
+// 汎用的なボックス見出し＝デフォルトスタイル
+@mixin module-style-pat-item-h4-shimple {
+  width: 100%;
+  //i {}　iconなし
+  .mod-h_4-inner {
+    width: 100%;
+  }
+  .mod-h_4-inner3 {
+     @include border-radius();
+     margin: 3px 0 0 0;
+     padding: 2px 7px;
+  }
+  .mod-h {
+    max-height: 111px;
+    font-weight: normal;
+  }
+}
+//part-main-040 ぶち抜きタイプのボックス見出し アイコン無し
+@mixin module-style-pat-item-h4-design {
+  margin: 0 -7%;
+  padding: 4px 0;
+  width: auto;
+  min-height: 45px;
+  .mod-h_4-inner {
+    padding: 3px 7%;
+  }
+  p, .mod-h_4-inner3 {
+    padding: 0;
+  }
+  p {
+    padding: 0;
+    text-align: left;
+    font-weight: normal;
+    font-size: $fontSizeS;
+    line-height: 1.6;
+  }
+  .mod-h_4-inner4 {
+    margin: 0;
+  }
+  .mod-h {
+    text-align: left;
+    font-weight: bold;
+    font-size: $fontSizeM + 2 !important; //リッチの影響を防ぐ
+    line-height: 1.6;
+  }
+}
+// 背景グラデーション
+@mixin module-style-pat-item-h4-gurade {
+  width: 100%;
+  //i {}　iconなし
+  .mod-h_4-inner {
+    width: 100%;
+  }
+  .mod-h_4-inner3 {
+    background-position: right top;
+    }
+  .mod-h {
+    max-height: 111px;
+    font-weight: bold;
+  }
+}
+
+//四角い見出し　※お問い合わせボックス
+@mixin module-style-pat-item-h4-kaku {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  .mod-h_4-inner3 {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    background-repeat: repeat-x;
+    .mod-h {
+      font-weight: normal;
+      font-size: $fontSizeL + 5;
+      line-height: 1.2;
+    }
+  }
+}
+
+// アイコンの入ったボックス見出し
+@mixin module-style-pat-item-h4-icon {
+  min-height: 52px;
+  i {
+    width: 50px;
+    min-height: 52px;
+    padding: 0 10px 0 0;
+  }
+  .mod-h_4-inner {
+    min-width: 30px;
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      max-height: 111px;
+      font-weight: bold;
+    }
+    &.ex-first-child {
+      .mod-h {
+        font-size: $fontSizeM + 2;
+      }
+    }
+  }
+}
+
+
+// -------------------------------------
+// pat-item-h4-shimple の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-h4-shimple-1 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #58bfcc;
+    background-image: url(img/mod-h_4/bg02.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-2 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #2e4e88;
+    background-image: url(img/mod-h_4/bg02_2.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-3 {
+  .mod-h_4-inner {
+    > p {
+      color: #56534e;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #ff9a4c;
+    background-image: url(img/mod-h_4/bg02_3.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-4 {
+  .mod-h_4-inner {
+    > p {
+      color: #1f4185;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #2369d9;
+    background-image: url(img/mod-h_4/bg14.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-5 {
+  .mod-h_4-inner {
+    > p {
+      color: #06474f;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #3ca1b0;
+    background-image: url(img/mod-h_4/bg14_2.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-6 {
+  .mod-h_4-inner {
+    > p {
+      color: #163850;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #509ccd;
+    background-image: url(img/mod-h_4/bg14_3.png);
+    background-repeat: no-repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-7 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/mod-h_4/bg24.png);
+    background-repeat: no-repeat;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-8 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/mod-h_4/bg24_2.png);
+    background-repeat: no-repeat;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #355955;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-9 {
+  .mod-h_4-inner {
+    > p {
+      color: #45320b;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/mod-h_4/bg24_3.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-10 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/mod-h_4/bg03.png);
+    background-color: #4a88f5;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-11 {
+  .mod-h_4-inner {
+    > p {
+      // color: #333333;補足ありの見出しは現時点で不使用
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/_pat-item/h4_shimple/bg.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #284469;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-12 {
+  .mod-h_4-inner {
+    > p {
+      // color: #333333;補足ありの見出しは現時点で不使用
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/_pat-item/h4_shimple/bg_2.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #12838e;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-13 {
+  .mod-h_4-inner {
+    > p {
+      // color: #333333;補足ありの見出しは現時点で不使用
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/_pat-item/h4_shimple/bg_3.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #443308;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-14 {
+  .mod-h_4-inner {
+    > p {
+      // color: #333333;補足ありの見出しは現時点で不使用
+    }
+  }
+  .mod-h_4-inner3 {
+    background-color: #f06d17;
+     background-image: url(img/_pat-item/h4_shimple/bg_4.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+
+// -------------------------------------
+// pat-item-h4-gurade の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-gurade-1 {
+  .mod-h_4-inner3 {
+    @include border-radius(5px 0 0 5px);
+    padding: 2px 0 2px 10px;
+    background-color: #f2dc72;
+    background-image: url(img/_pat-item/h4-gurade/bg.png);
+    background-repeat: repeat-y;
+    }
+  .mod-h {
+    color: #352111;
+    padding: 0 40px 0 0;
+  }
+}
+@mixin deco-style-pat-item-h4-gurade-2 {
+  .mod-h_4-inner3 {
+    @include border-radius(5px 0 0 5px);
+    padding: 2px 0 2px 10px;
+    background-color: #66c7d2;
+    background-image: url(img/_pat-item/h4-gurade/bg_2.png);
+    background-repeat: repeat-y;
+    }
+  .mod-h {
+    color: #ffffff;
+    padding: 0 40px 0 0;
+  }
+}
+@mixin deco-style-pat-item-h4-gurade-3 {
+  .mod-h_4-inner3 {
+    @include border-radius(5px 0 0 5px);
+    padding: 2px 0 2px 10px;
+    background-color: #f27f1b;
+    background-image: url(img/_pat-item/h4-gurade/bg_3.png);
+    background-repeat: repeat-y;
+    }
+  .mod-h {
+    color: #ffffff;
+    padding: 0 40px 0 0;
+  }
+}
+
+
+// -------------------------------------
+// pat-item-h4-kaku の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-h4-kaku-1 {
+  border: 1px solid #c5dcff;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 9px 20px;
+    border: 1px solid #9ac2fe;
+    background-color: #6e98d8;
+    background-image: url("img/mod-h_4/_32/bg_a.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-2 {
+  border: 1px solid #c2eae8;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 9px 20px;
+    border: 1px solid #94d8dd;
+    background-color: #10808c;
+    background-image: url("img/mod-h_4/_32/bg_a_2.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-3 {
+  border: 1px solid #ffe5b9;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 9px 20px;
+    border: 1px solid #ffd098;
+    background-color: #f28220;
+    background-image: url("img/mod-h_4/_32/bg_a_3.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-4 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 12px 20px 12px;
+    background-color: #3c66ba;
+    background-image: url("img/mod-h_4/_32/bg_b.png");
+    background-position: left -5px;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-5 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 12px 20px 12px;
+    background-color: #12626c;
+    background-image: url("img/mod-h_4/_32/bg_b_2.png");
+    background-position: left -5px;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-6 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 12px 20px 12px;
+    background-color: #f3811e;
+    background-image: url("img/mod-h_4/_32/bg_b_3.png");
+    background-position: left -5px;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-7 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 10px 20px 10px;
+    background-color: transparent;
+    background-image: url("img/mod-h_4/_32/bg_c.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-8 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 10px 20px 10px;
+    background-color: transparent;
+    background-image: url("img/mod-h_4/_32/bg_c_2.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-9 {
+  .mod-h_4-inner3 {
+    @include border-radius(3px 3px 0 0);
+    padding: 10px 20px 10px;
+    background-color: transparent;
+    background-image: url("img/mod-h_4/_32/bg_c_3.png");
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-10 {
+  padding: 0px 10px;
+  background-color: #2366d3;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 3px 5px;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-11 {
+  padding: 0px 10px;
+  background-color: #138590;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 3px 5px;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-12 {
+  padding: 0px 10px;
+  background-color: #f37f1c;
+  .mod-h_4-inner3 {
+    @include border-radius(0);
+    padding: 3px 5px;
+    background-color: transparent;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+// -------------------------------------
+// pat-item-h4-icon の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-h4-icon-case-1 {
+  i {
+    background-image: url(img/mod-h_4/bg07.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #426ca6;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-2 {
+  i {
+    background-image: url(img/mod-h_4/bg07_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #172846;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-3 {
+  i {
+    background-image: url(img/mod-h_4/bg07_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #56534e;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f7931d;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-4 {
+  i {
+    background-image: url(img/mod-h_4/bg10.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #1F4285;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f16c0b;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-5 {
+  i {
+    background-image: url(img/mod-h_4/bg10_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #0E7E89;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-6 {
+  i {
+    background-image: url(img/mod-h_4/bg10_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #428dc4;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-7 {
+  i {
+    background-image: url(img/mod-h_4/bg15.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #5596f6;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-8 {
+  i {
+    background-image: url(img/mod-h_4/bg15_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #59c8cf;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-case-9 {
+  i {
+    background-image: url(img/mod-h_4/bg15_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #45320b;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f16e0d;
+    }
+  }
+}
+
+
+@mixin deco-style-pat-item-h4-icon-voice-1 {
+  i {
+    background-image: url(img/mod-h_4/bg.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f58804;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-2 {
+  i {
+    background-image: url(img/mod-h_4/bg_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #0b7d89;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-3 {
+  i {
+    background-image: url(img/mod-h_4/bg_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #56534e;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #fd8e89;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-4 {
+  .mod-h_4-inner {
+    > p {
+      color: #F16C0B;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #1F4285;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-5 {
+  .mod-h_4-inner {
+    > p {
+      color: #F16C0B;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #06474F;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-6 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f16c0b;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-7 {
+  i {
+    background-image: url(img/mod-h_4/bg16.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #7dd1dB;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-8 {
+  i {
+    background-image: url(img/mod-h_4/bg16_2.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #7dd1dB;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-icon-voice-9 {
+  i {
+    background-image: url(img/mod-h_4/bg16_3.png);
+  }
+  .mod-h_4-inner {
+    > p {
+      color: #45320b;
+    }
+  }
+  .mod-h_4-inner3 {
+    .mod-h {
+      color: #f16e0d;
+    }
+  }
+}
+
+
+
+// -------------------------------------
+// pat-item-h4 (補足なし)　の共通スタイル
+// -------------------------------------
+@mixin common-style-pat-item-h4-shimple {
+  //-----必須レイアウト記述------
+  margin: 25px 0 0 0;
+  padding: 0;
+  line-height: 1.2;
+  // font-size: $fontSizeL;
+  text-align: left;
+  // ▼見出しにおいては不要
+  // p {
+  //   margin
+  //   line-height
+  // }
+  //-----必須デザイン記述------
+  // a {
+  //   color
+  //   &:hover {
+  //     color
+  //     text-decoration
+  //   }
+  // }
+  // font-weight: normal;
+  .mod-h {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-size: $fontSizeM + 2;
+    font-weight: bold;
+  }
+}
+// -------------------------------------
+// pat-item-h4 (補足なし) の共通スタイル
+// -------------------------------------
+//小見出しのようなデザイン（これは補足）
+@mixin module-style-pat-item-h4-shimple-border {
+  width: 100%; //すべてのブラウザで下線をのばすため
+}
+// -------------------------------------
+//  pat-item-h4 (補足なし) の装飾デザイン
+// -------------------------------------
+@mixin deco-style-pat-item-h4-simple-border-1 {
+  .mod-h {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-simple-border-2 {
+  .mod-h {
+    color: #443308;
+    border-bottom: 1px solid #443308;
+  }
+}
+@mixin deco-style-pat-item-h4-simple-border-3 {
+  .mod-h {
+    color: #284469;
+    border-bottom: 1px dotted #384469;
+  }
+}
+@mixin deco-style-pat-item-h4-simple-border-4 {
+  .mod-h {
+    color: #12838e;
+    border-bottom: 1px dotted #12838e;
+  }
+}
+@mixin deco-style-pat-item-h4-simple-border-5 {
+  .mod-h {
+    color: #443308;
+    border-bottom: 1px dotted #f37f1c;
+  }
+}
+
+// -------------------------------------
+// pat-item-h4-side の共通スタイル
+// -------------------------------------
+@mixin common-style-pat-item-h4-side {}
+// -------------------------------------
+//  pat-item-h4-side の共通デザイン
+// -------------------------------------
+@mixin module-style-pat-item-h4-side {
+  overflow: hidden;
+  padding: 5px 10px;
+  max-height: 120px;
+  background-repeat: no-repeat;
+  .mod-h {
+    @include text-shadow(1px 1px 2px #222222);
+    font-weight: bold;
+    font-size: $sideFontSizeL + 2;
+  }
+}
+// -------------------------------------
+//  pat-item-h4-side の装飾デザイン
+// -------------------------------------
+@mixin deco-style-pat-item-h4-side-1 {
+  background-image: url("img/mod-label/bg.png");
+  color: #ffffff;
+}
+
+@mixin deco-style-pat-item-h4-side-2 {
+  background-image: url("img/mod-label/bg_2.png");
+  color: #ffffff;
+}
+
+@mixin deco-style-pat-item-h4-side-3 {
+  background-image: url("img/mod-label/bg_3.png");
+  color: #ffffff;
+}
+
+
+
+//part-main289,290 強み
+@mixin deco-style-pat-item-h4-icon-tsuyomi-1 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg02.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg03.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg04.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg05.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg06.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg07.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg08.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg09.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg10.png");
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-icon-tsuyomi-2 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg_2.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg02_2.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg03_2.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg04_2.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg05_2.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg06_2.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg07_2.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg08_2.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg09_2.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      i {
+        background-image: url("img/mod-h_4/33/bg10_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-icon-tsuyomi-3 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg_3.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg02_3.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg03_3.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg04_3.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg05_3.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg06_3.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg07_3.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg08_3.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg09_3.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      i {
+        background-image: url("img/mod-h_4/33/bg10_3.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-icon-tsuyomi-4 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg11.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg12.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg13.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg14.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg15.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg16.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg17.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg18.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg19.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg20.png");
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-icon-tsuyomi-5 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg11_2.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg12_2.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg13_2.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg14_2.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg15_2.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg16_2.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg17_2.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg18_2.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg19_2.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg20_2.png");
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-icon-tsuyomi-6 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg11_3.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg12_3.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg13_3.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg14_3.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg15_3.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg16_3.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg17_3.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg18_3.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg19_3.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg20_3.png");
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-icon-tsuyomi-7 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg21.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg22.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg23.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg24.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg25.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg26.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg27.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg28.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg29.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg30.png");
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-icon-tsuyomi-8 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg21_2.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg22_2.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg23_2.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg24_2.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg25_2.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg26_2.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg27_2.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg28_2.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg29_2.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg30_2.png");
+        }
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-icon-tsuyomi-9 {
+  .step1 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg21_3.png");
+        }
+      }
+    }
+  }
+  .step2 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg22_3.png");
+        }
+      }
+    }
+  }
+  .step3 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg23_3.png");
+        }
+      }
+    }
+  }
+  .step4 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg24_3.png");
+        }
+      }
+    }
+  }
+  .step5 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg25_3.png");
+        }
+      }
+    }
+  }
+  .step6{
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg26_3.png");
+        }
+      }
+    }
+  }
+  .step7 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg27_3.png");
+        }
+      }
+    }
+  }
+  .step8 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg28_3.png");
+        }
+      }
+    }
+  }
+  .step9 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg29_3.png");
+        }
+      }
+    }
+  }
+  .step10 {
+    .mod-set-tsuyomi {
+      .mod-h_4_ver2 {
+        i {
+          background-image: url("img/mod-h_4/33/bg30_3.png");
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin module-style-pat-item-h4-design-sayu-iamge {}
+
+@mixin deco-style-pat-item-h4-design-1 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;// module
+    padding: 0px;// module // 01A1系で修正
+    width: 100%; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し //01A1系
+    background-image: none;//deco// commmon打ち消し
+    border: 2px solid #2e7fed;// deco 01A1系
+    background-color: #2e7fed;//打ち消し用
+    .mod-h {
+      background-color: #2e7fed;// deco 01A1系記述追加
+      border-top: 1px solid #cfdff5;// deco 01A1系
+      border-right: 3px solid #cfdff5;// deco 01A1系
+      border-bottom: 1px solid #cfdff5;// deco 01A1系
+      border-left: 3px solid #cfdff5;// deco 01A1系
+      @include border-radius(3px);// deco 01A1系
+      font-size: $fontSizeL - 2;//module or deco //size変更
+      line-height: 1.2;//module  or deco//1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 7px 10px 7px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-2 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//deco or module //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;//deco or module
+    padding: 0px;// module // 01A1系で修正
+    width: 100%; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し //01A1系
+    background-image: none;//deco// commmon打ち消し
+    border: 2px solid #67ced9;// deco 01A1系
+    background-color: #67ced9;//打ち消し用
+    .mod-h {
+      background-color: #67ced9;// deco 01A1系記述追加
+      border-top: 1px solid #cef1f5;// deco 01A1系
+      border-right: 3px solid #cef1f5;// deco 01A1系
+      border-bottom: 1px solid #cef1f5;// deco 01A1系
+      border-left: 3px solid #cef1f5;// deco 01A1系
+      @include border-radius(3px);// deco 01A1系
+      font-size: $fontSizeL - 2;//module or deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 7px 10px 7px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-3 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;// module
+    padding: 0px;// module // 01A1系で修正
+    width: 100%; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し //01A1系
+    background-image: none;//deco// commmon打ち消し
+    border: 2px solid #f27f1b;// deco 01A1系
+    background-color: #f27f1b;//打ち消し用
+    .mod-h {
+      background-color: #f27f1b;// deco 01A1系記述追加
+      border-top: 1px solid #f5e0ce;// deco 01A1系
+      border-right: 3px solid #f5e0ce;// deco 01A1系
+      border-bottom: 1px solid #f5e0ce;// deco 01A1系
+      border-left: 3px solid #f5e0ce;// deco 01A1系
+      @include border-radius(3px);// deco 01A1系
+      font-size: $fontSizeL - 2;//deco or module //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 7px 10px 7px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-4 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;// module
+    padding: 10px 0 10px;
+    background-color: #2e4a72;//deco
+    position: relative; // deco
+    width: 100%; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: none;//deco// commmon打ち消し
+    &:before {
+      content: url(img/mod-h_4/_35/bg_b.png);//deco//path変更
+      left: 5px;// deco
+      position: absolute; //deco
+      top: 50%; //deco
+      margin-top: -11px; //deco
+    }
+    &:after {
+      content: url(img/mod-h_4/_35/bg02_b.png);//deco//path変更
+      right: 5px; //deco
+      position: absolute;//deco
+      top: 50%;// deco
+      margin-top: -11px;//deco
+    }
+    .mod-h {
+      font-size: $fontSizeL - 2;//module or deco//size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 0 38px;//deco
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-5 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;// module
+    padding: 10px 0 10px;
+    background-color: #418189;//deco
+    position: relative; // deco
+    width: 100%; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: none;//deco// commmon打ち消し
+    &:before {
+      content: url(img/mod-h_4/_35/bg_b_2.png);//deco//path変更
+      left: 5px;// deco
+      position: absolute; //deco
+      top: 50%; //deco
+      margin-top: -11px; //deco
+    }
+    &:after {
+      content: url(img/mod-h_4/_35/bg02_b_2.png);//deco//path変更
+      right: 5px; //deco
+      position: absolute;//deco
+      top: 50%;// deco
+      margin-top: -11px;//deco
+    }
+    .mod-h {
+      font-size: $fontSizeL - 2;//module or deco //size変更
+      line-height: 1.2;//module or deco//1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 0 38px;//deco
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-6 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//module deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;// module
+    padding: 10px 0 10px;
+    background-color: #fcf1c2;//deco
+    position: relative; // deco
+    width: 100%; //module// deco //287対応
+    @include border-radius(0);//module// commmon打ち消し
+    background-image: none;//deco// commmon打ち消し
+    &:before {
+      content: url(img/mod-h_4/_35/bg_b_3.png);//deco//path変更
+      left: 5px;// deco
+      position: absolute; //deco
+      top: 50%; //deco
+      margin-top: -11px; //deco
+    }
+    &:after {
+      content: url(img/mod-h_4/_35/bg02_b_3.png);//deco//path変更
+      right: 5px; //deco
+      position: absolute;//deco
+      top: 50%;// deco
+      margin-top: -11px;//deco
+    }
+    .mod-h {
+      font-size: $fontSizeL - 2;//module or deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 0 38px;//deco
+      color: #443308;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-7 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;// module
+    padding: 5px;// module // 01C1系で修正
+    width: 100%; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し
+    background-image: url(img/mod-h_4/_35/bg_c.png);//deco// commmon打ち消し
+    background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    .mod-h {
+      background-color: #5596f6;// deco 01C1系記述追加
+      font-size: $fontSizeL - 2;//module or  deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 9px 10px 8px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-8 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;// module
+    padding: 5px;// module // 01C1系で修正
+    width: 100%; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し
+    background-image: url(img/mod-h_4/_35/bg_c_2.png);//deco// commmon打ち消し
+    background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    .mod-h {
+      background-color: #fcf4c6;// deco 01C1系記述追加
+      font-size: $fontSizeL - 2;//module or deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 9px 10px 8px;//deco // 01C1系で修正
+      color: #42330a;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+@mixin deco-style-pat-item-h4-design-9 {
+  text-align: center; //module//copy
+  .mod-h_4-inner {
+    > p {
+      font-size: $fontSizeS;//module or deco //
+      color: #333333;// deco
+    }
+  }
+  .mod-h_4-inner2 {
+    margin: 3px 0 0 0;//deco or module
+  }
+  .mod-h_4-inner3 {
+    margin: 3px 0 0 0;// module
+    padding: 5px;// module // 01C1系で修正
+    width: 100%; //module// deco //287対応
+    @include border-radius(3px);//module// commmon打ち消し
+    background-image: url(img/mod-h_4/_35/bg_c_3.png);//deco// commmon打ち消し
+    background-repeat: repeat;//module// commmon打ち消し// 01C1系で追記
+    .mod-h {
+      background-color: #f27f1b;// deco 01C1系記述追加
+      font-size: $fontSizeL - 2;//module or deco //size変更
+      line-height: 1.2;//module //1.2?
+      font-weight: bold; //module?
+      margin: 0; //module?//copy
+      padding: 9px 10px 8px;//deco // 01C1系で修正
+      color: #ffffff;//deco
+      max-height: none;//deco //mod-h_ver2打ち消し
+    }
+    a {
+      text-decoration: none; //暫定対応//common整理後は削除
+      &:hover {
+        .mod-h {
+          color: #f2d028;//リンクモジュールのhover色:暫定対応//common整理後は削除
+        }
+      }
+    }
+  }
+}
+
+//part-main-040
+@mixin deco-style-pat-item-h4-design-10 {
+  background-color: #ffc789;
+  .mod-h_4-inner {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  p, .mod-h {
+    color: #2f1703;
+  }
+}
+@mixin deco-style-pat-item-h4-design-11 {
+  background-color: #5cc8d4;
+  .mod-h_4-inner {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  p, .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-design-12 {
+  background-color: #99ccff;
+  .mod-h_4-inner {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  p, .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-design-13 {
+  margin: 0 -5%;//module打ち消し
+  padding: 0;//module打ち消し
+  background-color: #16305f;
+  background-image: url("img/_pat-item/h4-design/bg.png");
+  background-position: center right;
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  .mod-h_4-inner {
+    padding: 3px 5%;
+  }
+  p, .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-design-14 {
+  margin: 0 -5%;//module打ち消し
+  padding: 0;//module打ち消し
+  background-color: #12626c;
+  background-image: url("img/_pat-item/h4-design/bg_2.png");
+  background-position: center right;
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  .mod-h_4-inner {
+    padding: 3px 5%;
+  }
+  p, .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-design-15 {
+  margin: 0 -5%;//module打ち消し
+  padding: 0;//module打ち消し
+  background-color: #f16d0b;
+  background-image: url("img/_pat-item/h4-design/bg_3.png");
+  background-position: center right;
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  .mod-h_4-inner {
+    padding: 3px 5%;
+  }
+  p, .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-design-16 {
+  margin: 0;//module打ち消し
+  padding: 0;//module打ち消し
+  border-top: 1px dotted #f7931d;
+  border-right: 1px dotted #f7931d;
+  border-bottom: 1px dotted #f7931d;
+  border-left: 10px solid #f7931d;
+  background-color: #f7eadb;
+  background-image: none;
+  .mod-h_4-inner {
+    padding: 3px 10px;
+  }
+  p, .mod-h {
+    color: #331b07;
+  }
+}
+@mixin deco-style-pat-item-h4-design-17 {
+  margin: 0;//module打ち消し
+  padding: 0;//module打ち消し
+  border-top: 1px dotted #f1d128;
+  border-right: 1px dotted #f1d128;
+  border-bottom: 1px dotted #f1d128;
+  border-left: 10px solid #f1d128;
+  background-color: #fcf4c6;
+  background-image: none;
+  .mod-h_4-inner {
+    padding: 3px 10px;
+  }
+  p, .mod-h {
+    color: #331b07;
+  }
+}
+@mixin deco-style-pat-item-h4-design-18 {
+  margin: 0;//module打ち消し
+  padding: 0;//module打ち消し
+  border-top: 1px dotted #509ece;
+  border-right: 1px dotted #509ece;
+  border-bottom: 1px dotted #509ece;
+  border-left: 10px solid #509ece;
+  background-color: #d5e5f2;
+  background-image: none;
+  .mod-h_4-inner {
+    padding: 3px 10px;
+  }
+  p, .mod-h {
+    color: #331b07;
+  }
+}

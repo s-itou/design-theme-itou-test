@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-topicpath-header の紐付けモジュール
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-topicpath-style";
+
+
+// -----------------------------------
+// topicpath-header
+// -----------------------------------
+
+
+.mod-set-topicpath {
+  @include common-style-mod-set-topicpath;
+}
+
+// -----------------------------------
+// topicpath-header
+// -----------------------------------
+
+
+.mod-set-topicpath-header {
+  @include common-style-mod-set-topicpath-header;
+}

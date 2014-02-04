@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+//##################################################
+//  mod-html-side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-html-side {
+  overflow: auto;
+  > div,
+  > iframe {
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}

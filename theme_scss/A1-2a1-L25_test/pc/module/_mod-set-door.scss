@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@import "../pc-style/mod-set-door-style";
+
+.mod-set-door {
+  @include common-style-mod-set-door;
+  @include module-style-mod-set-door;
+  .ex-style_01A1 &,
+  .ex-style_01A3 &,
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_01C2 & {
+    @include pat-item-waku-woodenboard_tmp-A;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-waku-woodenboard_tmp-B;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-waku-woodenboard_tmp-C;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-waku-woodenboard_tmp-D;
+  }
+  //  見出しの指定
+  .ex-style_01A3 & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-15;}
+  }
+  .ex-style_01B1 & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-16;}
+  }
+  .ex-style_01B2 & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-17;}
+  }
+  .ex-style_01B3 & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-18;}
+  }
+  .ex-style_01C1 & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-A;}
+  }
+  .ex-style_01C2 & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-B;}
+  }
+  .ex-style_01C3 & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-C;}
+  }
+  //  バナーの指定
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 &,
+  .ex-style_01C2 & {
+    .mod-bnr-pic {@include pat-item-bnr-pic2-k10;}
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 & {
+    .mod-bnr-pic {@include pat-item-bnr-pic2-k11;}
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    .mod-bnr-pic {@include pat-item-bnr-pic2-k12;}
+  }
+}

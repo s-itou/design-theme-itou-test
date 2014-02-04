@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+//##################################################
+//  mod-email-side
+//##################################################
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-email-side {}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-email-side {
+  @include box-sizing(border-box);
+  padding: 0 0 0 0;
+  height: 60px;
+  color: transparent !important;
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 0;
+  font-size: 20px;
+  color: #ff0000;
+  @include background-image(linear-gradient(top, #fff, #eee));
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    height: 61px;
+    background-image: url("img/mod-email/sp_bg02.png");
+    background-size: 150px 38px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  a {
+    color: transparent !important;
+    width: 100%;
+    height: 60px;
+    background-color: transparent !important;
+    display: block;
+    position: relative;
+    top: -60px;
+  }
+  span {
+    color: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+
+//##################################################
+//  mod-email-i-side
+//##################################################
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-email-i-side {
+  @include border-radius();
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align:center;
+  margin-top: 10px !important;
+  font-weight: normal;
+  word-break: break-all;
+  line-height: 0;
+  font-size: 20px;
+  @include box-sizing(border-box);
+  padding:  0 0 40px;
+  height: 60px;
+  color: transparent;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    height: 61px;
+    background-image: url("img/mod-email/sp_bg02.png");
+    background-size: 150px 38px;
+    background-position: 60% center;
+    background-repeat: no-repeat;
+  }
+  a {
+    color: transparent !important;
+    width: 100%;
+    height: 60px;
+    background-color: transparent !important;
+    display: block;
+    position: relative;
+    top: -60px;
+  }
+  span {
+    color: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+@mixin deco-style01A1-mod-email-i-side {
+  @include tel-button("mod-email/spbg.png", 10px ,18px);
+  background-size: 30px 23px, 100%;
+}
+@mixin deco-style01A2-mod-email-i-side {
+  @include tel-button("mod-email/spbg_2.png", 10px ,18px);
+  background-size: 30px 21px, 100%;
+}
+@mixin deco-style01A3-mod-email-i-side {
+  @include tel-button("mod-email/spbg_3.png", 10px ,18px);
+  background-size: 30px 21px, 100%;
+}

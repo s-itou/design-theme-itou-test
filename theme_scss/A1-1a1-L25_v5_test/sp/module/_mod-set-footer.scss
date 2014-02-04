@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import "../sp-style/mod-set-footer-style";
+
+//##################################################
+//  mod-set-company-footer
+//##################################################
+.mod-set-company-footer {
+  @include common-style-mod-set-footer;
+  @include module-style-mod-set-company-footer;
+  &.ex-style_#{$baseEx_01A1} {
+    @include deco-style01A1-mod-set-company-footer;
+  }
+  &.ex-style_#{$baseEx_01A2} {
+    @include deco-style01A2-mod-set-company-footer;
+  }
+  &.ex-style_#{$baseEx_01A3} {
+    @include deco-style01A3-mod-set-company-footer;
+  }
+  &.ex-style_#{$baseEx_01B1} {
+    @include deco-style01B1-mod-set-company-footer;
+  }
+  &.ex-style_#{$baseEx_01B2} {
+    @include deco-style01B2-mod-set-company-footer;
+  }
+  &.ex-style_#{$baseEx_01B3} {
+    @include deco-style01B3-mod-set-company-footer;
+  }
+  &.ex-style_#{$baseEx_01C1} {
+    @include deco-style01C1-mod-set-company-footer;
+  }
+  &.ex-style_#{$baseEx_01C2} {
+    @include deco-style01C2-mod-set-company-footer;
+  }
+  &.ex-style_#{$baseEx_01C3} {
+    @include deco-style01C3-mod-set-company-footer;
+  }
+}

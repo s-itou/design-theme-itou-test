@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-dl 未完成部品モジュール
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————common-style—————————
+@mixin common-style-mod-dl {
+  margin: 20px 0 0 0;
+  display: table;
+  .mod-dl-inner {
+    display: table-cell;
+    vertical-align: middle;
+    > p {
+      margin-right: 10px !important;
+      float: left;
+    }
+  }
+  .mod-dl-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 20px;
+    > p {
+      padding: 0 0 0 5px;
+    }
+  }
+}
+//—————————module-style—————————
+@mixin module-style-mod-dl {
+  .mod-dl-inner2 {
+    > p {
+      font-size: $fontSizeL + 2;
+    }
+  }
+}
+@mixin module-style-mod-dl-adobe {
+  .mod-dl-inner2 {
+    > p {
+      font-size: $fontSizeM;
+    }
+  }
+}
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #aaaaaa;
+      }
+    }
+  }
+}
+
+@mixin deco-style01C1-mod-dl {
+  a {
+    color: #335a93;
+  }
+  .mod-dl-inner {
+    > p {
+      > img {
+        border: 1px solid #325073;
+      }
+    }
+  }
+}

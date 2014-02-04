@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import "../sp-style/mod-set-door-style";
+
+.mod-set-door {
+  @include common-style-mod-set-door;
+  @include module-style-mod-set-door;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-waku-board-colk-1;
+    .mod-bnr-pic {@include pat-item-bnr-pic_tmp-A;}
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-waku-board-colk-2;
+    .mod-bnr-pic {@include pat-item-bnr-pic_tmp-B;}
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-waku-board-colk-3;
+    .mod-bnr-pic {@include pat-item-bnr-pic_tmp-C;}
+  }
+  //  見出しの指定
+  .ex-style_#{$baseEx_01A1} & {
+    .mod-h_4_ver2 {@include pat-item-h4-10;}
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    .mod-h_4_ver2 {@include pat-item-h4-1;}
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-25;}
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-26;}
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-27;}
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-A;}
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-B;}
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-C;}
+  }
+}

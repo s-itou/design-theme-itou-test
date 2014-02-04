@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+//旧方式のコピーのため要改修
+
+//##################################################
+//  mod-html-side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-html-side {
+  overflow: auto;
+  > div,
+  > iframe {
+    max-height: 240px !important;
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: block;
+  }
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-html-side {}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE

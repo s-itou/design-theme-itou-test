@@ -1,0 +1,2256 @@
+@charset "UTF-8";
+
+// @import dependency/common-variable
+
+// --------------------------------------------
+// テーマ２　A1-2a1-L25
+// --------------------------------------------
+
+// --------------------------------------------
+// ヘッダー最上部要素　mod-top-sitename
+// --------------------------------------------
+@mixin common-style-mod-top-sitename {
+  min-height: 20px;
+  width: 100%;
+  .mod-top-text-sitename {
+    margin: 0 auto;
+    width: 100%;
+    font-size: $fontSizeS -2;
+  }
+}
+
+@mixin module-style-mod-top-sitename {
+  .mod-top-text-sitename {
+    color: white;
+  }
+}
+
+@mixin deco-style01A1-mod-top-sitename {
+  background-color: #3c3c3c;
+}
+
+@mixin deco-style01A2-mod-top-sitename {
+  background-color: #14365f;
+}
+
+@mixin deco-style01A3-mod-top-sitename {
+  background-color: #6f160c;
+}
+
+// --------------------------------------------
+// ヘッダー部品の枠　mod-parts-sitename
+// --------------------------------------------
+
+@mixin common-style-mod-parts-sitename {}
+
+@mixin module-style-mod-parts-sitename {}
+
+@mixin deco-style01A1-mod-parts-sitename {
+  background-color: #c9c9c9;
+}
+
+@mixin deco-style01A2-mod-parts-sitename {
+  background-color: #aebdce;
+}
+
+@mixin deco-style01A3-mod-parts-sitename {
+  background-color: #e9d2ce;
+}
+
+@mixin deco-style01B1-mod-parts-sitename {
+  background-image: url(img/mod-sitename/bg_b_1.png);
+  background-repeat: repeat-x;
+  background-color: #474747;
+}
+
+@mixin deco-style01B2-mod-parts-sitename {
+  background-image: url(img/mod-sitename/bg_b_2.png);
+  background-repeat: repeat-x;
+  background-color: #162d42;
+}
+
+@mixin deco-style01B3-mod-parts-sitename {
+  background-image: url(img/mod-sitename/bg_b_3.png);
+  background-repeat: repeat-x;
+  background-color: #3d110d;
+}
+
+@mixin deco-style01C1-mod-parts-sitename {
+  background-color: #efefef;
+}
+
+// --------------------------------------------
+// 2列　mod-2col-sitename
+// --------------------------------------------
+@mixin common-style-mod-2col-sitename {
+  // display: table
+  // overflow: hidden
+  margin: 0 auto;
+  padding: 25px 0;
+  // max-height: 460px
+  // width: 980px
+  background-repeat: repeat-x;
+  > .mod-2col-inner {
+    // display: table-cell
+    // padding-right: 10px
+    // vertical-align: bottom
+    word-break: break-all;
+    padding: 0 5%;
+  }
+  > .mod-2col-inner2 {
+    // display: table-cell
+    // vertical-align: bottom
+    word-break: break-all;
+    padding: 20px 5% 0;
+  }
+}
+
+@mixin module-style-mod-2col-sitename-1 {
+  // > .mod-2col-inner2
+  //   width: 390px
+  // // ここの横幅を指定せず、内容物にwidthを決めてもらったほうがいいかもしれない
+}
+
+@mixin module-style-mod-2col-sitename-2 {
+  // > .mod-2col-inner2
+  //   width: 408px
+}
+
+// --------------------------------------------
+// 3列　mod-3col-sitename
+// --------------------------------------------
+
+@mixin common-style-mod-3col-sitename {
+  // display: table
+  // overflow: hidden
+  margin: 0 auto;
+  padding: 25px 0;
+  // max-height: 460px
+  // width: 980px
+  background-repeat: repeat-x;
+  > .mod-3col-inner {
+    // display: table-cell
+    // padding-right: 10px
+    // vertical-align: bottom
+    word-break: break-all;
+    padding: 0 5%;
+  }
+  > .mod-3col-inner2 {
+    // display: table-cell
+    // vertical-align: bottom
+    word-break: break-all;
+    padding: 20px 5% 0;
+  }
+  > .mod-3col-inner3 {
+    // display: table-cell
+    // vertical-align: bottom
+    word-break: break-all;
+    padding: 20px 5% 0;
+  }
+}
+
+@mixin module-style-mod-3col-sitename-1 {
+  // > .mod-3col-inner2
+  //   width: 237px
+  //   padding-right: 10px
+  // > .mod-3col-inner3
+  //   width: 150px
+}
+
+@mixin module-style-mod-3col-sitename-2 {
+  // > .mod-3col-inner2
+  //   width: 270px
+  //   padding-right: 10px
+  // > .mod-3col-inner3
+  //   width: 150px
+}
+
+@mixin module-style-mod-3col-sitename-3 {
+  // > .mod-3col-inner2
+  //   width: 197px
+  //   padding-right: 10px
+  // > .mod-3col-inner3
+  //   width: 228px
+}
+
+@mixin module-style-mod-3col-sitename-4 {
+  // > .mod-3col-inner2
+  //   width: 240px
+  //   padding-right: 10px
+  // > .mod-3col-inner3
+  //   width: 250px
+}
+
+@mixin module-style-mod-3col-sitename-5 {
+  // > .mod-3col-inner2
+  //   width: 266px
+  //   padding-right: 10px
+  // > .mod-3col-inner3
+  //   width: 260px
+}
+
+// --------------------------------------------
+// サイト名、サイト名上補足　mod-title-sitename
+// --------------------------------------------
+
+@mixin common-style-mod-title-sitename {
+  display: table;
+  .mod-title-inner {
+    display: table-cell;
+    margin: 0;
+    width: 45px;
+    vertical-align: top;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    margin: 0;
+    vertical-align: middle;
+  }
+  .mod-title-logo {
+    margin-right: 5px;
+    width: 40px;
+  }
+  .mod-title-hosoku-sitename {
+    font-size: $fontSizeS + 1;
+  }
+  .mod-title-text-sitename {
+    font-weight: bold;
+    font-size: $fontSizeL + 7;
+    line-height: 1;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .mod-title-text-sitename.ex-first-child {
+    margin: 0;
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+  }
+}
+
+@mixin module-style-mod-title-sitename {}
+
+@mixin deco-style01A1-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: #333333;
+  }
+  .mod-title-text-sitename {
+    color: #222222;
+    a {
+      color: #222222;
+    }
+  }
+}
+
+@mixin deco-style01A2-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: #333333;
+  }
+  .mod-title-text-sitename {
+    color: #030b13;
+    a {
+      color: #030b13;
+    }
+  }
+}
+
+@mixin deco-style01A3-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: #be7b72;
+  }
+  .mod-title-text-sitename {
+    color: #888888;
+    a {
+      color: #45320b;
+    }
+  }
+}
+
+@mixin deco-style01B1-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: white;
+  }
+  .mod-title-text-sitename {
+    color: white;
+    a {
+      color: white;
+    }
+  }
+}
+
+@mixin deco-style01B2-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: white;
+  }
+  .mod-title-text-sitename {
+    color: white;
+    a {
+      color: white;
+    }
+  }
+}
+
+@mixin deco-style01B3-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: white;
+  }
+  .mod-title-text-sitename {
+    color: white;
+    a {
+      color: white;
+    }
+  }
+}
+
+@mixin deco-style01C1-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: #5a6e55;
+  }
+  .mod-title-text-sitename {
+    color: #222222;
+    a {
+      color: #222222;
+    }
+  }
+}
+
+@mixin deco-style01C2-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: #5b92d2;
+  }
+  .mod-title-text-sitename {
+    color: #030b13;
+    a {
+      color: #030b13;
+    }
+  }
+}
+
+@mixin deco-style01C3-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: #46140b;
+  }
+  .mod-title-text-sitename {
+    color: #200805;
+    a {
+      color: #200805;
+    }
+  }
+}
+
+// --------------------------------------------
+// サイト名下補足　mod-address-sitename
+// --------------------------------------------
+@mixin common-style-mod-address-sitename {
+  margin-top: 5px;
+  font-size: $fontSizeS + 1;
+  line-height: 1.1;
+}
+
+@mixin module-style-mod-address-sitename {}
+
+@mixin deco-style01A1-mod-address-sitename {
+  color: #333333;
+}
+
+@mixin deco-style01A3-mod-address-sitename {
+  color: #888888;
+}
+
+@mixin deco-style01B1-mod-address-sitename {
+  color: #cccccc;
+}
+
+@mixin deco-style01B2-mod-address-sitename {
+  color: white;
+}
+
+// --------------------------------------------
+// 電話番号　mod-tel-sitename
+// --------------------------------------------
+@mixin module-style-mod-tel-sitename-1 {
+  display: table;
+  margin: 5px auto 15px;
+  padding: 0 10px 0 15px;
+  height: 60px;
+  text-align: center;
+  @include border-radius;
+  border: 1px solid #cccccc;
+  width: 100%;
+  background: linear-gradient(white, #f6f6f6, #eeeeee);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.5, #f6f6f6), to(#eeeeee));
+  background: -moz-linear-gradient(top, white 0%, #f6f6f6 50%, #eeeeee 100%);
+  i {
+    display: table-cell;
+    width: 31px;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_ftel {
+    background-image: url("img/mod-sitename/spbg_ftel.png");
+    background-size: 31px;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/spbg_tel.png");
+    background-size: 31px 29px;
+  }
+  .mod-tel-inner {
+    display: table-cell;
+    padding-left: 3px;
+    height: 60px;
+    vertical-align: middle;
+    .mod-telnum-sitename {
+      padding: 0;
+      background-image: none;
+      vertical-align: middle;
+    }
+  }
+  .mod-tel-inner.ex-first-child {
+    > p.mod-telnum-sitename {
+      font-size: $fontSizeL + 12;
+    }
+  }
+  .mod-tel-golo-sitename {
+    text-align: center;
+    font-size: $fontSizeS;
+    line-height: 1;
+    // margin-top: 7px
+
+  }
+  p.mod-telnum-sitename {
+    margin-top: 3px;
+    word-break: break-all;
+    font-size: $fontSizeL + 8;
+    line-height: 1;
+    color: red;
+  }
+  p.mod-telnum-sitename.ex-first-child {
+    font-size: $fontSizeL + 10;
+  }
+}
+
+@mixin deco-style01A1-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_1.png");
+  }
+  .mod-telnum-sitename {
+    color: #781b0e;
+  }
+  .mod-tel-golo-sitename {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A2-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_2.png");
+  }
+  .mod-telnum-sitename {
+    color: #5f140a;
+  }
+  .mod-tel-golo-sitename {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A3-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_3.png");
+  }
+  .mod-telnum-sitename, .mod-tel-golo-sitename {
+    color: #222222;
+  }
+}
+
+@mixin deco-style01B1-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_4.png");
+  }
+  .mod-telnum-sitename {
+    color: #f2d028;
+  }
+  .mod-tel-golo-sitename {
+    color: white;
+  }
+}
+
+@mixin deco-style01B2-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_4.png");
+  }
+  .mod-telnum-sitename {
+    color: #f2d028;
+  }
+  .mod-tel-golo-sitename {
+    color: white;
+  }
+}
+
+@mixin deco-style01B3-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_4.png");
+  }
+  .mod-telnum-sitename {
+    color: #f2d028;
+  }
+  .mod-tel-golo-sitename {
+    color: white;
+  }
+}
+
+@mixin deco-style01C1-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_1.png");
+  }
+  .mod-telnum-sitename {
+    color: #781b0e;
+  }
+  .mod-tel-golo-sitename {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C2-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_5.png");
+  }
+  .mod-telnum-sitename {
+    color: #a72613;
+  }
+  .mod-tel-golo-sitename {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C3-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_6.png");
+  }
+  .mod-telnum-sitename {
+    color: #cc2e18;
+  }
+  .mod-tel-golo-sitename {
+    color: #333333;
+  }
+}
+
+@mixin module-style-mod-tel-sitename-2 {
+  .mod-tel-inner.ex-first-child {
+    > p.mod-telnum-sitename {
+      font-size: $fontSizeL + 16;
+    }
+  }
+  .mod-tel-golo-sitename {
+    text-align: right;
+    font-size: $fontSizeS + 1;
+    line-height: 1;
+  }
+  p.mod-telnum-sitename {
+    margin-top: 3px;
+    word-break: break-all;
+    font-size: $fontSizeL + 12;
+    line-height: 1;
+  }
+}
+
+// --------------------------------------------
+// ラベル付き文章（一行分のみ背景色がひかれる）　mod-info
+// --------------------------------------------
+
+@mixin common-style-mod-info3-sitename {
+  margin-top: 8px;
+  // width: 100%
+  th {
+    width: 48px;
+    vertical-align: middle;
+    font-weight: normal;
+    > p {
+      @include border-radius(3px);
+      float: left;
+      padding: 0 3px;
+      width: 48px;
+      text-align: center;
+      font-size: $fontSizeS - 1;
+    }
+  }
+  td {
+    float: left;
+    padding: 0 0 1px 3px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: $fontSizeS;
+    > p {
+      padding-left: 4px;
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #3c3c3c;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #325073;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #70180c;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #3c3c3c;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #325074;
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style01B3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #260e0e;
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style01C1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #555555;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #325073;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #782317;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A1-mod-info3-sitename-2 {
+  th {
+    background-color: #3c3c3c;
+    color: white;
+  }
+  td {
+    color: #781b0e;
+  }
+}
+
+@mixin deco-style01A2-mod-info3-sitename-2 {
+  th {
+    background-color: #030b13;
+    color: white;
+  }
+  td {
+    color: #5f140a;
+  }
+}
+
+@mixin deco-style01A3-mod-info3-sitename-2 {
+  th {
+    background-color: #70180c;
+    color: white;
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B1-mod-info3-sitename-2 {
+  th {
+    background-color: #f2d028;
+    color: 323232;
+  }
+  td {
+    color: #f2d028;
+  }
+}
+
+@mixin deco-style01B2-mod-info3-sitename-2 {
+  th {
+    background-color: #f2d028;
+    color: #323232;
+  }
+  td {
+    color: #f2d028;
+  }
+}
+
+@mixin deco-style01B3-mod-info3-sitename-2 {
+  th {
+    background-color: #f2d028;
+    color: #323232;
+  }
+  td {
+    color: #f2d028;
+  }
+}
+
+@mixin deco-style01C1-mod-info3-sitename-2 {
+  th {
+    background-color: #3c3c3c;
+    color: white;
+  }
+  td {
+    color: #781b0e;
+  }
+}
+
+@mixin deco-style01C2-mod-info3-sitename-2 {
+  th {
+    background-color: #030b13;
+    color: white;
+  }
+  td {
+    color: #a72613;
+  }
+}
+
+@mixin deco-style01C3-mod-info3-sitename-2 {
+  th {
+    background-color: #030b13;
+    color: white;
+  }
+  td {
+    color: #cc2e18;
+  }
+}
+
+@mixin mod-info-sitename {
+  margin-bottom: 10px;
+  th {
+    @include border-radius(3px);
+    display: table;
+    padding: 0 3px;
+    width: 80px;
+    min-height: 24px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-size: $fontSizeM;
+    > p {
+      display: table-cell;
+      vertical-align: bottom;
+    }
+  }
+  td {
+    padding: 0 0 0 7px;
+    // max-width: 135px
+    vertical-align: middle;
+    font-size: $fontSizeM;
+    text-align: left;
+  }
+}
+
+@mixin mod-info2-sitename {
+  // margin-top: 5px
+  margin: 10px auto 10px 0;
+  width: auto;
+  &.ex-first-child {
+    margin-top: 0 !important;
+  }
+  th {
+    @include border-radius(3px);
+    display: table;
+    padding: 0 3px;
+    width: 80px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-size: $fontSizeM;
+    > p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  td {
+    padding: 0 0 0 7px;
+    // max-width: 135px
+    vertical-align: top;
+    font-size: $fontSizeM;
+    text-align: left;
+  }
+}
+
+@mixin mod-info3-sitename {
+  margin: 10px auto 10px 0;
+  width: auto;
+  th {
+    width: 74px;
+    vertical-align: middle;
+    font-weight: normal;
+    > p {
+      @include border-radius(3px);
+      float: left;
+      padding: 0 3px;
+      width: 48px;
+      text-align: center;
+      font-size: $fontSizeM;
+    }
+  }
+  td {
+    float: left;
+    padding: 0 0 1px 3px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: $fontSizeM;
+    > p {
+      padding-left: 4px;
+    }
+  }
+}
+
+@mixin mod-info4-sitename {
+  margin: 10px auto 10px 0;
+  width: auto;
+  th {
+    width: 80px;
+    vertical-align: middle;
+    font-weight: normal;
+    > p {
+      float: left;
+      width: auto;
+      text-align: center;
+      font-size: $fontSizeM;
+    }
+  }
+  td {
+    float: left;
+    padding: 0 0 1px 3px;
+    width: auto;
+    vertical-align: middle;
+    text-align: left;
+    font-size: $fontSizeM;
+    > p {
+      padding-left: 4px;
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-info-sitename {
+  th {
+    background-color: #3c3c3c;
+    color: white;
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A2-mod-info-sitename {
+  th {
+    background-color: #325073;
+    color: white;
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A3-mod-info-sitename {
+  th {
+    background-color: #70180c;
+    color: white;
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B1-mod-info-sitename {
+  th {
+    background-color: #0b2745;
+    color: white;
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style01B2-mod-info-sitename {
+  th {
+    background-color: #325074;
+    color: white;
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style01B3-mod-info-sitename {
+  th {
+    background-color: #781b0e;
+    color: white;
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style01C1-mod-info-sitename {
+  th {
+    background-color: #555555;
+    color: white;
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C2-mod-info-sitename {
+  th {
+    background-color: #325073;
+    color: white;
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C3-mod-info-sitename {
+  th {
+    background-color: #782317;
+    color: white;
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #3c3c3c;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #325073;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #70180c;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #0b2745;
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style01B2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #325074;
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style01B3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #781b0e;
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style01C1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #555555;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #325073;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #782317;
+      color: white;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style02A1-mod-info4-sitename {
+  th {
+    > p {
+      color: #333333;
+    }
+  }
+  td {
+    color: #333333;
+  }
+}
+
+@mixin deco-style02B1-mod-info4-sitename {
+  th {
+    > p {
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+}
+
+@mixin deco-style02C3-mod-info4-sitename {
+  th {
+    > p {
+      color: #45320b;
+    }
+  }
+  td {
+    color: #45320b;
+  }
+}
+
+// --------------------------------------------
+// バナー1　mod-bnr-sitename
+// --------------------------------------------
+@mixin common-style-mod-bnr-sitename {
+  @include border-radius;
+  // margin-top: 5px
+  margin: 15px auto 10px;
+  width: 100%;
+  background-position: left top;
+  p {
+    font-size: $fontSizeM + 2;
+  }
+  &:hover {
+    opacity: 0.8;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    @include border-radius;
+    padding: 12px 30px 10px;
+    // max-height: 49px
+    border: 1px solid white;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    line-height: 1.4;
+    text-align: center;
+    [data-parts-name^=part-header-089] & {
+      border: 1px solid white;
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-bnr-sitename {
+  border: 1px solid #3c3c3c;
+  background-color: #3b3b3b;
+  background-image: url("img/mod-sitename/bg_bnr_1.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_1.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename {
+  border: 1px solid #325073;
+  background-color: #3e648f;
+  background-image: url("img/mod-sitename/bg_bnr_2.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_2.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename {
+  border: 1px solid #6a1c0f;
+  background-color: #681b0f;
+  background-image: url("img/mod-sitename/bg_bnr_3.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_3.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B1-mod-bnr-sitename {
+  border: 1px solid #162332;
+  background-color: #252b33;
+  background-image: url("img/mod-sitename/bg_bnr_4.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid #4772a5;
+    background-image: url("img/mod-sitename/bg_bnr_arr_2.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B2-mod-bnr-sitename {
+  border: 1px solid #162332;
+  background-color: #0b2030;
+  background-image: url("img/mod-sitename/bg_bnr_5.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid #4772a5;
+    background-image: url("img/mod-sitename/bg_bnr_arr_2.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B3-mod-bnr-sitename {
+  border: 1px solid #260e0e;
+  background-color: #010001;
+  background-image: url("img/mod-sitename/bg_bnr_6.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid #711a0c;
+    background-image: url("img/mod-sitename/bg_bnr_arr_3.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01C1-mod-bnr-sitename {
+  border: 1px solid #3c3c3c;
+  background-image: url("img/mod-sitename/spbg_bnr_7.png");
+  .mod-bnr-inner {
+    color: white;
+  }
+}
+
+@mixin deco-style01C2-mod-bnr-sitename {
+  border: 1px solid #0f375f;
+  background-image: url("img/mod-sitename/spbg_bnr_8.png");
+  .mod-bnr-inner {
+    color: white;
+  }
+}
+
+@mixin deco-style01C3-mod-bnr-sitename {
+  border: 1px solid #781b0e;
+  background-image: url("img/mod-sitename/spbg_bnr_9.png");
+  .mod-bnr-inner {
+    color: white;
+  }
+}
+
+// --------------------------------------------
+// バナー2　mod-bnr2-sitename
+// --------------------------------------------
+@mixin common-style-mod-bnr2-sitename {
+  @include border-radius;
+  margin-top: 15px;
+  width: 100%;
+  background-position: left top;
+  p {
+    font-size: $fontSizeM + 2;
+  }
+  &:hover {
+    opacity: 0.8;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    @include border-radius;
+    padding: 12px 30px 10px;
+    // max-height: 49px
+    border: 1px solid white;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 1.4;
+  }
+}
+
+@mixin deco-style01A1-mod-bnr-sitename-2 {
+  border: 1px solid #325073;
+  background-color: #3e638f;
+  background-image: url("img/mod-sitename/bg_bnr_10.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_2.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename-2 {
+  border: 1px solid #6a1c0f;
+  background-color: #681b0e;
+  background-image: url("img/mod-sitename/bg_bnr_11.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_3.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename-2 {
+  border: 1px solid #3c3c3c;
+  background-color: #626262;
+  background-image: url("img/mod-sitename/bg_bnr_12.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_1.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B1-mod-bnr-sitename-2 {
+  border: 1px solid #982110;
+  background-color: #591209;
+  background-image: url("img/mod-sitename/bg_bnr_13.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid #7c6705;
+    background-image: url("img/mod-sitename/bg_bnr_arr_3.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B2-mod-bnr-sitename-2 {
+  border: 1px solid #4772a5;
+  background-color: #314f7a;
+  background-image: url("img/mod-sitename/bg_bnr_14.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid #284265;
+    background-image: url("img/mod-sitename/bg_bnr_arr_2.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B3-mod-bnr-sitename-2 {
+  border: 1px solid #982110;
+  background-color: #551108;
+  background-image: url("img/mod-sitename/bg_bnr_15.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid #3d0d05;
+    background-image: url("img/mod-sitename/bg_bnr_arr_3.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01C1-mod-bnr-sitename-2 {
+  border: 1px solid #325073;
+  background-image: url("img/mod-sitename/spbg_bnr_16.png");
+  .mod-bnr-inner {
+    color: white;
+  }
+}
+
+@mixin deco-style01C2-mod-bnr-sitename-2 {
+  border: 1px solid #5f140a;
+  background-image: url("img/mod-sitename/spbg_bnr_17.png");
+  .mod-bnr-inner {
+    color: white;
+  }
+}
+
+@mixin deco-style01C3-mod-bnr-sitename-2 {
+  border: 1px solid #273d53;
+  background-image: url("img/mod-sitename/spbg_bnr_18.png");
+  .mod-bnr-inner {
+    color: white;
+  }
+}
+
+// --------------------------------------------
+// バナー3　mod-bnr3-sitename
+// --------------------------------------------
+@mixin common-style-mod-bnr-sitename-3 {
+  @include border-radius;
+  clear: both;
+  margin-top: 5px;
+  width: 100%;
+  &:hover {
+    opacity: 0.8;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    @include border-radius;
+    padding: 12px 30px 10px;
+    // max-height: 40px
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: $fontSizeM + 2;
+    line-height: 1.2;
+  }
+}
+
+@mixin deco-style01A1-mod-bnr-sitename-3 {
+  border: 1px solid #335174;
+  .mod-bnr-inner {
+    border: 1px solid white;
+    background-color: #335174;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A1-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #335174;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename-3 {
+  border: 1px solid #5e160c;
+  .mod-bnr-inner {
+    border: 1px solid white;
+    background-color: #5e160c;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #5e160c;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename-3 {
+  border: 1px solid #373737;
+  .mod-bnr-inner {
+    border: 1px solid white;
+    background-color: #373737;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #373737;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B1-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #801b0d;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B2-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #666666;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01B2-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #f2d028;
+    background-image: url("img/mod-sitename/bg_bnr_arr_24.png");
+    color: #162332;
+  }
+}
+
+@mixin deco-style01B3-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #781b0e;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01C1-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #333333;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01C2-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #325073;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+@mixin deco-style01C3-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #782317;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: white;
+  }
+}
+
+// --------------------------------------------
+// お気軽にお問合せください　mod-hosoku2-sitename
+// --------------------------------------------
+@mixin common-style-mod-hosoku2-sitename {
+  margin: 5px 0;
+  padding: 0;
+  font-size: $fontSizeM;
+  text-align: center;
+}
+
+@mixin deco-style01A1-mod-hosoku2-sitename {
+  color: #333333;
+}
+
+@mixin deco-style01B1-mod-hosoku2-sitename {
+  color: white;
+}
+
+@mixin deco-style01B3-mod-hosoku2-sitename {
+  color: white;
+}
+
+@mixin common-style02-mod-hosoku2-sitename {
+  padding: 0;
+  text-align: center;
+  font-size: $fontSizeM;
+  line-height: 1.4;
+}
+
+@mixin deco-style02C3-mod-hosoku2-sitename {
+  color: #45320b;
+}
+
+// --------------------------------------------
+// 無料相談実施中ボックス　mod-set-toiawase2
+// --------------------------------------------
+@mixin common-style-mod-set-toiawase2-sitename {
+  @include border-radius;
+  display: table;
+  min-width: 220px;
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+  .mod-box-inner {
+    @include border-radius(4px 4px 0 0);
+    padding: 2px 5px 0;
+    font-size: $fontSizeL;
+  }
+  .mod-box-inner2 {
+    @include border-radius(0 0 4px 4px);
+    padding: 4px 5px 2px;
+    font-size: $fontSizeM;
+  }
+}
+
+@mixin deco-style01A1-mod-set-toiawase2-sitename {
+  border: 1px solid #3c3c3c;
+  .mod-box-inner {
+    border-bottom: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: white;
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A2-mod-set-toiawase2-sitename {
+  border: 1px solid #0f375f;
+  .mod-box-inner {
+    border-bottom: 1px solid #0f375f;
+    background-color: #0f375f;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: white;
+    color: #333333;
+  }
+}
+
+@mixin deco-style01A3-mod-set-toiawase2-sitename {
+  border: 1px solid #70180c;
+  .mod-box-inner {
+    border-bottom: 1px solid #70180c;
+    background-color: #70180c;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: white;
+    color: #45320b;
+  }
+}
+
+@mixin deco-style01B1-mod-set-toiawase2-sitename {
+  border: 1px solid #1a1a1a;
+  .mod-box-inner {
+    border-bottom: 1px solid #1a1a1a;
+    background-color: #5b5b5b;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: white;
+    color: #333333;
+  }
+}
+
+@mixin deco-style01B2-mod-set-toiawase2-sitename {
+  border: 1px solid #0d2234;
+  .mod-box-inner {
+    border-bottom: 1px solid #0d2234;
+    background-color: #4671ae;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: white;
+    color: #15315f;
+  }
+}
+
+@mixin deco-style01B3-mod-set-toiawase2-sitename {
+  border: 1px solid #0f375f;
+  .mod-box-inner {
+    border-bottom: 1px solid #0f375f;
+    background-color: #0f375f;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: white;
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C1-mod-set-toiawase2-sitename {
+  border: 1px solid #273e5a;
+  .mod-box-inner {
+    border-bottom: 1px solid #273e5a;
+    background-color: #273e5a;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: white;
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C2-mod-set-toiawase2-sitename {
+  border: 1px solid #560c02;
+  .mod-box-inner {
+    border-bottom: 1px solid #560c02;
+    background-color: #752217;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: transparent;
+    color: #333333;
+  }
+}
+
+@mixin deco-style01C3-mod-set-toiawase2-sitename {
+  border: 1px solid #0f375f;
+  .mod-box-inner {
+    border-bottom: 1px solid #0f375f;
+    background-color: #0f375f;
+    color: white;
+  }
+  .mod-box-inner2 {
+    background-color: transparent;
+    color: #333333;
+  }
+}
+
+// --------------------------------------------
+// 無料相談実施中ボックス　pat-item-toiawase-sitename
+// --------------------------------------------
+@mixin common-style-pat-item-toiawase-sitename {
+  @include border-radius;
+  // margin: auto 0 auto auto
+  // width: 255px
+  margin: 0 auto;
+  display: table;
+  vertical-align: bottom;
+  width: 100%;
+  div.mod-tel-sitename {
+    margin: 10px auto;
+  }
+  i {
+    display: table-cell;
+    width: 31px;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+  > div {
+    @include border-radius;
+    padding: 1px 5px;
+    background-repeat: repeat-x;
+  }
+  // .mod-telnum-sitename
+  //   margin: 0 auto
+  //   padding: 0 0 1px
+  //   width: auto
+  //   color: #ffffff
+  //   text-align: center
+  //   word-break: break-all
+  //   letter-spacing: 1px
+  //   font-size: 25px
+  //   line-height: 0.9
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_7.png")
+  .mod-icon_ftel {
+    background-image: url("img/mod-sitename/bg_10.png");
+  }
+  .mod-tel-inner {
+    display: table-cell;
+    padding-left: 3px;
+    .mod-tel-sitename {
+      padding: 0;
+      background-image: none;
+    }
+  }
+  .mod-tel-inner.ex-first-child {
+    > p.mod-telnum-sitename {
+      font-size: $fontSizeL + 12;
+    }
+  }
+  // .mod-tel-golo-sitename
+  //   text-align: right
+  //   font-size: $fontSizeS
+  //   line-height: 1
+  //   color: #ffffff
+  // p.mod-telnum-sitename
+  //   margin-top: 3px
+  //   word-break: break-all
+  //   font-size: $fontSizeL + 7
+  //   line-height: 1
+}
+
+@mixin module-style-pat-item-toiawase-sitename {
+  p.mod-hosoku4-sitename {
+    @include common-style02-mod-hosoku4-sitename;
+    [class*=ex-style_02] & {
+      margin-top: 3px;
+    }
+  }
+}
+
+@mixin deco-style01A1-pat-item-toiawase-sitename {
+  border: 1px solid #325073;
+  > div {
+    border: 1px solid white;
+    background-color: #3f6490;
+    background-image: url("img/mod-sitename/bg_set_1-1.png");
+  }
+  p.mod-hosoku4-sitename {
+    @include deco-style01A1-mod-hosoku2-sitename;
+    color: white;
+  }
+  .mod-telnum-sitename {
+    padding: 0 0 2px;
+  }
+}
+
+@mixin deco-style01A2-pat-item-toiawase-sitename {
+  border: 1px solid #6a1c0f;
+  > div {
+    border: 1px solid white;
+    background-color: #691c0f;
+    background-image: url("img/mod-sitename/bg_set_2-1.png");
+  }
+}
+
+@mixin deco-style01A3-pat-item-toiawase-sitename {
+  border: 1px solid #6a1c0f;
+  > div {
+    border: 1px solid white;
+    background-color: #691c0f;
+    background-image: url("img/mod-sitename/bg_set_3-1.png");
+  }
+}
+
+@mixin deco-style01B1-pat-item-toiawase-sitename {
+  border: 1px solid #2e4970;
+  > div {
+    border: 1px solid #1b2b42;
+    background-color: #2e4971;
+    background-image: url("img/mod-sitename/bg_set_4-1.png");
+  }
+}
+
+@mixin deco-style01B2-pat-item-toiawase-sitename {
+  border: 1px solid #4772a5;
+  > div {
+    border: 1px solid #162332;
+    background-color: #314f72;
+    background-image: url("img/mod-sitename/bg_set_5-1.png");
+  }
+}
+
+@mixin deco-style01B3-pat-item-toiawase-sitename {
+  border: 1px solid #260e0e;
+  > div {
+    border: 1px solid #771a0c;
+    background-color: #4f130c;
+    background-image: url("img/mod-sitename/bg_set_6-1.png");
+  }
+}
+
+@mixin deco-style01C1-pat-item-toiawase-sitename {
+  border: 1px solid #325073;
+  > div {
+    border: 1px solid white;
+    background-color: #3f6490;
+    background-image: url("img/mod-sitename/bg_set_7-1.png");
+  }
+}
+
+@mixin deco-style01C2-pat-item-toiawase-sitename {
+  border: 1px solid #0f375f;
+  > div {
+    border: 1px solid white;
+    background-color: #185796;
+    background-image: url("img/mod-sitename/bg_set_8-1.png");
+  }
+}
+
+@mixin deco-style01C3-pat-item-toiawase-sitename {
+  border: 1px solid #5f140a;
+  > div {
+    border: 1px solid white;
+    background-color: #bd2814;
+    background-image: url("img/mod-sitename/bg_set_9-1.png");
+  }
+}
+
+// --------------------------------------------
+// ↓　中途半端ゾーン！ここから pat-item-waku
+// --------------------------------------------
+
+@mixin common-style-mod-set-toiawase3 {
+  // display: table
+  width: auto;
+  border: none;
+  background-color: transparent;
+  div.mod-tel-sitename {
+    margin: 10px auto;
+  }
+  // float: right
+  // > .mod-set-inner
+  //   display: table-cell
+  //   width: 240px
+  //   vertical-align: bottom
+  // > .mod-set-inner2
+  //   display: table-cell
+  //   width: 150px
+  //   vertical-align: middle
+  //   padding-left: 10px
+  // i
+  //   display: table-cell
+  //   width: 31px
+  //   background-position: left 18px
+  //   background-repeat: no-repeat
+  // .mod-icon_ftel
+  //   background-image: url("img/mod-sitename/bg_10.png")
+}
+
+@mixin common-style-pat-item-waku-sitename {
+  @include border-radius;
+  padding: 5px 10px 3px;
+  .mod-telnum-sitename {
+    font-size: $fontSizeL + 8;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 auto;
+    i {
+      width: 25px;
+    }
+  }
+  .mod-tel-sitename.ex-first-child {
+    > p {
+      font-size: $fontSizeL + 10;
+    }
+  }
+  .mod-hosoku2-sitename {
+    text-align: center;
+    padding: 0;
+    font-size: $fontSizeM;
+  }
+  .mod-info4-sitename {
+    margin: 0 auto;
+    td {
+      padding: 0;
+    }
+    // width: auto
+    // text-align: center
+    // word-break: break-all
+    // th
+    //   width: auto
+    //   vertical-align: middle
+    //   font-weight: normal
+    //   > p
+    //     width: auto
+    //     text-align: center
+    //     font-size: $fontSizeM - 3
+    // td
+    //   float: left
+    //   padding: 0 0 1px 3px
+    //   width: auto
+    //   vertical-align: middle
+    //   text-align: left
+    //   font-size: $fontSizeM - 3
+    //   > p
+    //     padding-left: 4px
+
+  }
+}
+
+@mixin deco-style02A1-pat-item-waku-sitename {
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  .mod-hosoku2-sitename {
+    color: #333333;
+  }
+  // .mod-telnum-sitename
+  //   color: #781b0e
+  // .mod-tel-golo-sitename
+  //   color: #781b0e
+  th {
+    > p {
+      color: #333333;
+    }
+  }
+  td {
+    color: #333333;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_1.png")
+}
+
+@mixin deco-style02A2-pat-item-waku-sitename {
+  border: 1px solid white;
+  background-color: #325073;
+  .mod-hosoku2-sitename {
+    color: white;
+  }
+  // .mod-telnum-sitename
+  //   color: #ffffff
+  // .mod-tel-golo-sitename
+  //   color: #ffffff
+  th {
+    > p {
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_7.png")
+}
+
+@mixin deco-style02A3-pat-item-waku-sitename {
+  border: 1px solid #b72714;
+  background-color: #70180c;
+  .mod-hosoku2-sitename {
+    color: white;
+  }
+  // .mod-telnum-sitename
+  //   color: #ffffff
+  // .mod-tel-golo-sitename
+  //   color: #ffffff
+  th {
+    > p {
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_7.png")
+}
+
+@mixin deco-style02B1-pat-item-waku-sitename {
+  border: 1px solid #cccccc;
+  background-color: #666666;
+  .mod-hosoku2-sitename {
+    color: white;
+  }
+  // .mod-telnum-sitename
+  //   color: #f2d028
+  // .mod-tel-golo-sitename
+  //   color: #f2d028
+  th {
+    > p {
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_4.png")
+}
+
+@mixin deco-style02B2-pat-item-waku-sitename {
+  border: 1px solid white;
+  background-color: #162332;
+  .mod-hosoku2-sitename {
+    color: white;
+  }
+  // .mod-telnum-sitename
+  //   color: #ffffff
+  // .mod-tel-golo-sitename
+  //   color: #ffffff
+  th {
+    > p {
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_7.png")
+}
+
+@mixin deco-style02B3-pat-item-waku-sitename {
+  border: 1px solid #b72714;
+  background-color: #65170b;
+  .mod-hosoku2-sitename {
+    color: white;
+  }
+  // .mod-telnum-sitename
+  //   color: #f2d028
+  // .mod-tel-golo-sitename
+  //   color: #ffffff
+  th {
+    > p {
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_4.png")
+}
+
+@mixin deco-style02C1-pat-item-waku-sitename {
+  border: 1px solid #666666;
+  background-color: #efefef;
+  .mod-hosoku2-sitename {
+    color: #333333;
+  }
+  // .mod-telnum-sitename
+  //   color: #781b0e
+  // .mod-tel-golo-sitename
+  //   color: #781b0e
+  th {
+    > p {
+      color: #333333;
+    }
+  }
+  td {
+    color: #333333;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_1.png")
+}
+
+@mixin deco-style02C2-pat-item-waku-sitename {
+  border: 1px solid #030b13;
+  background-color: #0f375f;
+  .mod-hosoku2-sitename {
+    color: white;
+  }
+  // .mod-telnum-sitename
+  //   color: #ffffff
+  // .mod-tel-golo-sitename
+  //   color: #ffffff
+  th {
+    > p {
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_7.png")
+}
+
+@mixin deco-style02C3-pat-item-waku-sitename {
+  border: 1px solid #cc2e18;
+  background-color: #782317;
+  .mod-hosoku2-sitename {
+    color: white;
+  }
+  // .mod-telnum-sitename
+  //   color: #ffffff
+  // .mod-tel-golo-sitename
+  //   color: #ffffff
+  th {
+    > p {
+      color: white;
+    }
+  }
+  td {
+    color: white;
+  }
+  // .mod-icon_tel
+  //   background-image: url("img/mod-sitename/bg_7.png")
+}
+
+@mixin common-style02-mod-tel-sitename {
+  padding: 0;
+  text-align: center;
+  font-size: $fontSizeL + 11;
+  line-height: 1;
+}
+
+@mixin common-style02-mod-hosoku3-sitename {
+  // text-align: right
+  font-size: $fontSizeS;
+}
+
+@mixin common-style02-mod-hosoku4-sitename {
+  color: white;
+  text-align: center;
+  font-size: $fontSizeM;
+  line-height: 1.3;
+  margin: 8px 0;
+  // &.ex-first-child
+  //   font-size: $fontSizeM
+}
+
+// --------------------------------------------
+// ↑　中途半端ゾーン！ここまで
+// --------------------------------------------
+
+@mixin deco-style01A1-mod-set-toiawase-sitename {
+  border: 1px solid #ff8809;
+  > .mod-box-inner {
+    border: 1px solid white;
+    background-color: #ffb260;
+    background-image: url("img/mod-sitename/bg_set_1-1.png");
+  }
+}
+
+@mixin deco-style01A2-mod-set-toiawase-sitename {
+  border: 1px solid #7ed1d9;
+  > .mod-box-inner {
+    border: 1px solid #bce2e7;
+    background-color: #6ec7d1;
+    background-image: url("img/mod-sitename/bg_set_2-1.png");
+  }
+}
+
+@mixin deco-style01A3-mod-set-toiawase-sitename {
+  border: 1px solid #519dce;
+  > .mod-box-inner {
+    border: 1px solid white;
+    background-color: #519ccd;
+    background-image: url("img/mod-sitename/bg_set_3-1.png");
+  }
+}
+
+@mixin deco-style01B1-mod-set-toiawase-sitename {
+  border: 1px solid #2e7feb;
+  > .mod-box-inner {
+    border: 1px solid #2e4a72;
+    background-color: #2e7be1;
+    background-image: url("img/mod-sitename/bg_set_4-1.png");
+  }
+}
+
+@mixin deco-style01B2-mod-set-toiawase-sitename {
+  border: 1px solid #8cd6df;
+  > .mod-box-inner {
+    border: 1px solid #0b7d88;
+    background-color: #48b4c0;
+    background-image: url("img/mod-sitename/bg_set_5-1.png");
+  }
+}
+
+@mixin deco-style01B3-mod-set-toiawase-sitename {
+  border: 1px solid #fbcda8;
+  > .mod-box-inner {
+    border: 1px solid #f38222;
+    background-color: #f9b57d;
+    background-image: url("img/mod-sitename/bg_set_6-1.png");
+  }
+}
+
+@mixin deco-style01C1-mod-set-toiawase-sitename {
+  border: 1px solid #ff908a;
+  > .mod-box-inner {
+    border: 1px solid #ffdddc;
+    background-color: #ff9e99;
+    background-image: url("img/mod-sitename/bg_set_7-1.png");
+  }
+}
+
+@mixin deco-style01C2-mod-set-toiawase-sitename {
+  border: 1px solid #0b7d88;
+  > .mod-box-inner {
+    border: 1px solid #c5f3f8;
+    background-color: #0abfd1;
+    background-image: url("img/mod-sitename/bg_set_8-1.png");
+  }
+}
+
+@mixin deco-style01C3-mod-set-toiawase-sitename {
+  border: 1px solid #ffa353;
+  > .mod-box-inner {
+    border: 1px solid #ffd9bd;
+    background-color: #ffaf65;
+    background-image: url("img/mod-sitename/bg_set_9-1.png");
+  }
+}

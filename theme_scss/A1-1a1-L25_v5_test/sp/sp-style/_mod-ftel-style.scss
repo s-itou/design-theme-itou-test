@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+//##################################################
+//  mod-ftel-g-side
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin module-style-mod-ftel-g-side {
+  @include border-radius();
+  @include background-image(linear-gradient(top, #fff, #eee));
+  position: relative;
+  margin: 10px auto 0;
+  padding: 5px 5px 8px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #cccccc;
+  text-align:center;
+  .mod-ftel-inner {
+    padding: 4px 0 0 0;
+    color: #333333;
+    word-break: break-all;
+    font-size: 12px;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    position: relative;
+    top: 15px;
+    margin: 0;
+    color: #ff0000;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.0;
+  }
+  > p[data-cms-switchable="false"] + p {
+    position: relative;
+    top: 15px;
+    margin: 0;
+    color: #ff0000;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.0;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 0;
+    color: #ff0000;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.0;
+  }
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+
+
+//##################################################
+//  mod-ftel-ig-side-common-style
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin module-style-mod-ftel-ig-side {
+  @include border-radius();
+  @include tel-button("mod-ftel/spbg02.png", 10px, 20px);
+  position: relative;
+  margin: 10px auto 0;
+  padding: 5px 5px 8px 35px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #cccccc;
+  background-size: 31px 25px, 100%;
+  text-align:center;
+  .mod-ftel-inner {
+    padding: 4px 0 0 0;
+    color: #333333;
+    word-break: break-all;
+    font-size: 12px;
+  }
+  > p:first-child.mod-ftel-inner2 {
+    position: relative;
+    top: 15px;
+    margin: 0;
+    color: #ff0000;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.0;
+  }
+  > p[data-cms-switchable="false"] + p {
+    position: relative;
+    top: 15px;
+    margin: 0;
+    color: #ff0000;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.0;
+  }
+  .mod-ftel-inner2 {
+    margin-top: 0;
+    color: #ff0000;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.0;
+  }
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE

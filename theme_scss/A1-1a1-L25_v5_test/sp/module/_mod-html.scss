@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../sp-style/mod-html-style";
+
+//##################################################
+//  mod-html-side
+//##################################################
+.mod-html-side {
+  @include common-style-mod-html-side;
+  @include module-style-mod-html-side;
+}

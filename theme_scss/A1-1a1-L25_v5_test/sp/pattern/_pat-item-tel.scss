@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+// ----------------------------------
+//
+// pat-item-tel
+//
+// ----------------------------------
+
+@import "../ptn-style/_pat-item-tel-style.scss";
+
+// -------------------------------------
+//  pat-item-tel の個別設定
+// -------------------------------------
+
+@mixin pat-item-tel-ii-footer-1 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii;
+  @include deco-sytle-pat-item-tel-ii-1;
+}
+@mixin pat-item-tel-ii-footer-2 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii;
+  @include deco-sytle-pat-item-tel-ii-2;
+}
+@mixin pat-item-tel-ii-footer-3 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii;
+  @include deco-sytle-pat-item-tel-ii-3;
+}
+@mixin pat-item-tel-ii-footer-4 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii;
+  @include deco-sytle-pat-item-tel-ii-4;
+}
+@mixin pat-item-tel-ii-footer-5 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii;
+  @include deco-sytle-pat-item-tel-ii-5;
+}
+@mixin pat-item-tel-ii-footer-6 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii;
+  @include deco-sytle-pat-item-tel-ii-6;
+}
+@mixin pat-item-tel-ii-footer-7 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii;
+  @include deco-sytle-pat-item-tel-ii-7;
+}
+@mixin pat-item-tel-ii-footer-8 {
+  @include common-style-pat-item-tel;
+  @include module-style-pat-item-tel-ii;
+  @include deco-sytle-pat-item-tel-ii-8;
+}

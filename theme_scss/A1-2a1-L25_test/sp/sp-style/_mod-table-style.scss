@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+////////////////////////////////////////
+// MODULE STYLE (mod-table)
+
+// COMMON-STYLE
+@mixin common-style-mod-table_ver2 {
+  margin: 10px 0 0 0;
+  padding: 1px;
+  table {
+    font-size: $fontSizeM;
+    width: 100%;
+    table-layout: fixed;
+    vertical-align: middle;
+    font-weight: normal;
+    th {
+      padding: 8px;
+      text-align: left;
+      font-weight: normal;
+    }
+    td {
+      padding: 8px;
+      vertical-align: top;
+    }
+  }
+  > p {
+    margin: 12px 0 0 0;
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+@mixin module-style-mod-table_ver2 {
+  table {
+    tr:first-child {
+      > th:first-child,
+      > td:first-child {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-table_ver2 {
+  border: 1px solid #c6c6c6;
+  color: #333333;
+  table {
+    border: 1px solid #c6c6c6;
+    thead tr:first-child th {
+      border-bottom: 1px solid #ffffff;
+    }
+    tr:first-child th {
+      border-top: 1px solid #c6c6c6;
+      &:last-child {
+        border-right: 1px solid #c6c6c6;
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #c6c6c6;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #c6c6c6;
+    }
+  }  
+}
+
+@mixin deco-style01A2-mod-table_ver2 {
+  border: 1px solid #d7e1ec;
+  color: #333333;
+  table {
+    border: 1px solid #d7e1ec;
+    thead tr:first-child th {
+      border-bottom: 1px solid #ffffff;
+    }
+    tr:first-child th {
+      border-top: 1px solid #d7e1ec;
+      &:last-child {
+        border-right: 1px solid #d7e1ec;
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #d7e1ec;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #d7e1ec;
+    }
+  }	
+}
+
+@mixin deco-style01A3-mod-table_ver2 {
+  border: 1px solid #ead3cf;
+  color: #434343;
+  table {
+    border: 1px solid #ead3cf;
+    thead tr:first-child th {
+      border-bottom: 1px solid #ffffff;
+    }
+    tr:first-child th {
+      border-top: 1px solid #ead3cf;
+      &:last-child {
+        border-right: 1px solid #ead3cf;
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #ead3cf;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid #ead3cf;
+    }
+  }
+}
+
+@mixin deco-style01B1-mod-table_ver2 {
+  border: 1px solid #666666;
+  color: #ffffff;
+  table {
+    border: 1px solid #666666;
+    thead tr:first-child th {
+      border-bottom: 1px solid #ffffff;
+    }
+    tr:first-child th {
+      border-top: 1px solid #666666;
+      &:last-child {
+        border-right: 1px solid #666666;
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #666666;
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #666666;
+    }
+  }
+}
+
+@mixin deco-style01B2-mod-table_ver2 {
+  border: 1px solid #b1cbe8;
+  color: #333333;
+  table {
+    border: 1px solid #b1cbe8;
+    thead tr:first-child th {
+      border-bottom: 1px solid #ffffff;
+    }
+    tr:first-child th {
+      border-top: 1px solid #b1cbe8;
+      &:last-child {
+        border-right: 1px solid #b1cbe8;
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #b1cbe8;
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #b1cbe8;
+    }
+  }
+}
+
+@mixin deco-style01B3-mod-table_ver2 {
+  border: 1px solid #eaaca1;
+  color: #260e0e;
+  table {
+    border: 1px solid #eaaca1;
+    thead tr:first-child th {
+      border-bottom: 1px solid #ffffff;
+    }
+    tr:first-child {
+      th {
+        border-top: 1px solid #eaaca1;
+        &:last-child {
+          border-right: 1px solid #eaaca1;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      background-color: #eaaca1;
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #eaaca1;
+    }
+  }
+}
+
+@mixin deco-style01C1-mod-table_ver2 {
+  border: 0 none transparent;
+  color: #333333;
+  table {
+    background-image: url("img/mod-table/bg04.png");
+    border: 1px solid #666666;
+    thead tr:first-child th {
+      border-bottom: 1px solid #666666;
+    }
+    tr:first-child {
+      th {
+        border-top: 1px solid #666666;
+        &:last-child {
+          border-right: 1px solid #666666;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #666666;
+      border-right: 1px solid #666666;
+      background-color: transparent;
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #666666;
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin deco-style01C2-mod-table_ver2 {
+  border: 0 none transparent;
+  color: #333333;
+  table {
+    border: 1px solid #325073;
+    background-image: url("img/mod-table/bg04_2.png");
+    thead tr:first-child th {
+      border-bottom: 1px solid #325073;
+    }
+    tr:first-child {
+      th {
+        border-top: 1px solid #325073;
+        &:last-child {
+          border-right: 1px solid #325073;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #325073;
+      border-right: 1px solid #325073;
+      background-color: transparent;
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #325073;
+      background-color: #ffffff;
+    }
+  }
+}
+
+@mixin deco-style01C3-mod-table_ver2 {
+  border: 0 none transparent;
+  color: #45320b;
+  table {
+    border: 1px solid #46140b;
+    background-image: url("img/mod-table/bg04_3.png");
+    thead tr:first-child th {
+      border-bottom: 1px solid #46140b;
+    }
+    tr:first-child {
+      th {
+        border-top: 1px solid #46140b;
+        &:last-child {
+          border-right: 1px solid #46140b;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid #46140b;
+      border-right: 1px solid #46140b;
+      background-color: transparent;
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid #46140b;
+      background-color: #ffffff;
+    }
+  }
+}

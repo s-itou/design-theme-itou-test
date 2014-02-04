@@ -1,0 +1,797 @@
+@charset "UTF-8";
+
+@import "../sp-style/mod-sitename-style";
+
+// --------------------------------------------
+// テーマ１　A1-1a1-L25
+// --------------------------------------------
+
+// --------------------------------------------
+// ヘッダー最上部要素　mod-top-sitename
+// --------------------------------------------
+.mod-top-sitename {
+  @include common-style-mod-top-sitename;
+  @include module-style-mod-top-sitename;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02A1} &,
+  .ex-style_#{$baseEx_02B1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01A1-mod-top-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02A2} &,
+  .ex-style_#{$baseEx_02B2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01A2-mod-top-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02A3} &,
+  .ex-style_#{$baseEx_02B3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style01A3-mod-top-sitename;
+  }
+}
+
+// --------------------------------------------
+// ヘッダー最上部要素　mod-top-sitename
+// --------------------------------------------
+.mod-parts-sitename {
+  @include common-style-mod-parts-sitename;
+  @include module-style-mod-parts-sitename;
+  &.ex-style_#{$baseEx_01A1},
+  &.ex-style_#{$baseEx_02A1},
+  &.ex-style_#{$baseEx_01A2},
+  &.ex-style_#{$baseEx_02A2},
+  &.ex-style_#{$baseEx_01A3},
+  &.ex-style_#{$baseEx_02A3},
+  &.ex-style_#{$baseEx_01C1},
+  &.ex-style_#{$baseEx_02C1},
+  &.ex-style_#{$baseEx_01C2},
+  &.ex-style_#{$baseEx_02C2},
+  &.ex-style_#{$baseEx_01C3},
+  &.ex-style_#{$baseEx_02C3} {
+    @include deco-style01A1-mod-parts-sitename;
+  }
+  &.ex-style_#{$baseEx_01B1},
+  &.ex-style_#{$baseEx_02B1} {
+    @include deco-style01B1-mod-parts-sitename;
+  }
+  &.ex-style_#{$baseEx_01B2},
+  &.ex-style_#{$baseEx_02B2} {
+    @include deco-style01B2-mod-parts-sitename;
+  }
+  &.ex-style_#{$baseEx_01B3},
+  &.ex-style_#{$baseEx_02B3} {
+    @include deco-style01B3-mod-parts-sitename;
+  }
+}
+
+// --------------------------------------------
+// 2列　mod-2col-sitename
+// --------------------------------------------
+.mod-2col-sitename {
+  @include common-style-mod-2col-sitename;
+}
+
+[data-parts-name^=part-header-084] {
+  &[class*=ex-style_01] {
+    .mod-2col-sitename {
+      @include module-style-mod-2col-sitename-1;
+    }
+  }
+  &[class*=ex-style_02] {
+    .mod-2col-sitename {
+      @include module-style-mod-2col-sitename-2;
+    }
+  }
+}
+
+// --------------------------------------------
+// 3列　mod-3col-sitename
+// --------------------------------------------
+.mod-3col-sitename {
+  @include common-style-mod-3col-sitename;
+}
+
+[data-parts-name^=part-header-085] {
+  &[class*=ex-style_01] {
+    .mod-3col-sitename {
+      @include module-style-mod-3col-sitename-1;
+    }
+  }
+  &[class*=ex-style_02] {
+    .mod-3col-sitename {
+      @include module-style-mod-3col-sitename-2;
+    }
+  }
+}
+
+[data-parts-name^=part-header-086] {
+  .mod-3col-sitename {
+    @include module-style-mod-3col-sitename-3;
+  }
+}
+
+[data-parts-name^=part-header-087] {
+  .mod-3col-sitename {
+    @include module-style-mod-3col-sitename-4;
+  }
+}
+
+[data-parts-name^=part-header-088] {
+  .mod-3col-sitename {
+    @include module-style-mod-3col-sitename-5;
+  }
+}
+
+[data-parts-name^=part-header-089] {
+  .mod-3col-sitename {
+    @include module-style-mod-3col-sitename-5;
+  }
+}
+
+// --------------------------------------------
+// サイト名、サイト名上補足　mod-title-sitename
+// --------------------------------------------
+.mod-title-sitename {
+  @include common-style-mod-title-sitename;
+  @include module-style-mod-title-sitename;
+  .ex-style_#{$baseEx_01A1} &, .ex-style_#{$baseEx_02A1} & {
+    @include deco-style01A1-mod-title-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} &, .ex-style_#{$baseEx_02A2} & {
+    @include deco-style01A2-mod-title-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} &, .ex-style_#{$baseEx_02A3} & {
+    @include deco-style01A3-mod-title-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} &, .ex-style_#{$baseEx_02B1} & {
+    @include deco-style01B1-mod-title-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} &, .ex-style_#{$baseEx_02B2} & {
+    @include deco-style01B2-mod-title-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} &, .ex-style_#{$baseEx_02B3} & {
+    @include deco-style01B3-mod-title-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} &, .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01C1-mod-title-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} &, .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01C2-mod-title-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} &, .ex-style_#{$baseEx_02C3} & {
+    @include deco-style01C3-mod-title-sitename;
+  }
+}
+
+// --------------------------------------------
+// サイト名下補足　mod-address-sitename
+// --------------------------------------------
+p.mod-address-sitename {
+  @include common-style-mod-address-sitename;
+  @include module-style-mod-address-sitename;
+  .ex-style_#{$baseEx_01A1} &, .ex-style_#{$baseEx_02A1} & {
+    @include deco-style01A1-mod-address-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} &, .ex-style_#{$baseEx_02A2} & {
+    @include deco-style01A1-mod-address-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} &, .ex-style_#{$baseEx_02A3} & {
+    @include deco-style01A1-mod-address-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} &, .ex-style_#{$baseEx_02B1} & {
+    @include deco-style01B1-mod-address-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} &, .ex-style_#{$baseEx_02B2} & {
+    @include deco-style01B2-mod-address-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} &, .ex-style_#{$baseEx_02B3} & {
+    @include deco-style01B3-mod-address-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} &, .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01A1-mod-address-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} &, .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01A1-mod-address-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} &, .ex-style_#{$baseEx_02C3} & {
+    @include deco-style01A1-mod-address-sitename;
+  }
+}
+
+// --------------------------------------------
+// 電話番号　mod-telnum-sitename
+// --------------------------------------------
+.mod-tel-sitename {
+  // [class*=ex-style_01] &
+  @include module-style-mod-tel-sitename-1;
+  // .ex-style_#{$baseEx_01A1} &
+  //   +deco-style01A1-mod-tel-sitename
+  // .ex-style_#{$baseEx_01A2} &
+  //   +deco-style01A2-mod-tel-sitename
+  // .ex-style_#{$baseEx_01A3} &
+  //   +deco-style01A3-mod-tel-sitename
+  // .ex-style_#{$baseEx_01B1} &
+  //   +deco-style01B1-mod-tel-sitename
+  // .ex-style_#{$baseEx_01B2} &
+  //   +deco-style01B2-mod-tel-sitename
+  // .ex-style_#{$baseEx_01B3} &
+  //   +deco-style01B3-mod-tel-sitename
+  // .ex-style_#{$baseEx_01C1} &
+  //   +deco-style01C1-mod-tel-sitename
+  // .ex-style_#{$baseEx_01C2} &
+  //   +deco-style01C2-mod-tel-sitename
+  // .ex-style_#{$baseEx_01C3} &
+  //   +deco-style01C3-mod-tel-sitename
+  // [data-parts-name^=part-header-088] &,
+  // [data-parts-name^=part-header-089] &
+  //   +module-style-mod-tel-sitename-2
+}
+
+// --------------------------------------------
+// お気軽にお問合せ下さい ボックス　mod-set-toiawase1
+// --------------------------------------------
+div.mod-set-toiawase-sitename {
+  [class*=ex-style_01] & {
+    @include common-style-pat-item-toiawase-sitename;
+    @include module-style-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01B1-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01B2-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01B3-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01C1-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01C2-pat-item-toiawase-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01C3-pat-item-toiawase-sitename;
+  }
+}
+
+// .mod-tel-wrap-sitename
+//   [class*=ex-style_02][data-parts-name^=part-header-087] &
+//     +common-style-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02A1} &
+//     +deco-style01A1-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02A2} &
+//     +deco-style01A2-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02A3} &
+//     +deco-style01A3-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02B1} &
+//     +deco-style01B1-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02B2} &
+//     +deco-style01B2-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02B3} &
+//     +deco-style01B3-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02C1} &
+//     +deco-style01C1-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02C2} &
+//     +deco-style01C2-pat-item-toiawase-sitename
+//   [data-parts-name^=part-header-087].ex-style_#{$baseEx_02C3} &
+//     +deco-style01C3-pat-item-toiawase-sitename
+
+// --------------------------------------------
+// 無料相談実施中ボックス　mod-set-toiawase2
+// --------------------------------------------
+.mod-set-toiawase2-sitename {
+  @include common-style-mod-set-toiawase2-sitename;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-set-toiawase2-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-set-toiawase2-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-set-toiawase2-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01B1-mod-set-toiawase2-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01B2-mod-set-toiawase2-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01B3-mod-set-toiawase2-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01C1-mod-set-toiawase2-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01C2-mod-set-toiawase2-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01C3-mod-set-toiawase2-sitename;
+  }
+}
+
+// --------------------------------------------
+// 問い合わせボックス　mod-set-toiawase3-sitename
+// --------------------------------------------
+.mod-set-toiawase3-sitename {
+  @include common-style-mod-set-toiawase3;
+  [class*=ex-style_02] & {
+    @include common-style-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02A1} & {
+    @include deco-style02A1-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02A2} & {
+    @include deco-style02A2-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02A3} & {
+    @include deco-style02A3-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02B1} & {
+    @include deco-style02B1-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02B2} & {
+    @include deco-style02B2-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style02B3-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style02C1-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style02C2-pat-item-waku-sitename;
+  }
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style02C3-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089] & {
+    @include common-style-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01A1} & {
+    @include deco-style02A1-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01A2} & {
+    @include deco-style02A2-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01A3} & {
+    @include deco-style02A3-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01B1} & {
+    @include deco-style02B1-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01B2} & {
+    @include deco-style02B2-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01B3} & {
+    @include deco-style02B3-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01C1} & {
+    @include deco-style02C1-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01C2} & {
+    @include deco-style02C2-pat-item-waku-sitename;
+  }
+  [data-parts-name^=part-header-089].ex-style_#{$baseEx_01C3} & {
+    @include deco-style02C3-pat-item-waku-sitename;
+  }
+}
+
+// --------------------------------------------
+// ラベル付き文章　mod-info-sitename
+// --------------------------------------------
+
+.mod-info-sitename {
+  @include mod-info-sitename;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01B1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01B2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01B3-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01C1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01C2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01C3-mod-info-sitename;
+  }
+}
+
+.mod-info2-sitename {
+  @include mod-info-sitename;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01B1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01B2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01B3-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01C1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01C2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01C3-mod-info-sitename;
+  }
+}
+
+.mod-info3-sitename {
+  @include mod-info-sitename;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-info3-sitename-2;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-info3-sitename-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-info3-sitename-2;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01B1-mod-info3-sitename-2;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01B2-mod-info3-sitename-2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01B3-mod-info3-sitename-2;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01C1-mod-info3-sitename-2;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01C2-mod-info3-sitename-2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01C3-mod-info3-sitename-2;
+  }
+}
+
+.mod-info4-sitename {
+  @include mod-info-sitename;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01B1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01B2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01B3-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01C1-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01C2-mod-info-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01C3-mod-info-sitename;
+  }
+}
+
+// --------------------------------------------
+// バナー1　mod-bnr-sitename
+// --------------------------------------------
+.mod-bnr-sitename {
+  @include common-style-mod-bnr-sitename;
+  .ex-style_#{$baseEx_01A1} &, .ex-style_#{$baseEx_02A1} & {
+    @include deco-style01A1-mod-bnr-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} &, .ex-style_#{$baseEx_02A2} & {
+    @include deco-style01A2-mod-bnr-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} &, .ex-style_#{$baseEx_02A3} & {
+    @include deco-style01A3-mod-bnr-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} &, .ex-style_#{$baseEx_02B1} & {
+    @include deco-style01B1-mod-bnr-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} &, .ex-style_#{$baseEx_02B2} & {
+    @include deco-style01B2-mod-bnr-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} &, .ex-style_#{$baseEx_02B3} & {
+    @include deco-style01B3-mod-bnr-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} &, .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01C1-mod-bnr-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} &, .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01C2-mod-bnr-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} &, .ex-style_#{$baseEx_02C3} & {
+    @include deco-style01C3-mod-bnr-sitename;
+  }
+}
+
+// --------------------------------------------
+// バナー2　mod-bnr2-sitename
+// --------------------------------------------
+div.mod-bnr2-sitename {
+  @include common-style-mod-bnr-sitename;
+  margin-top: 10px;
+  .mod-bnr-inner {
+    padding: 12px 30px 10px;
+    background-position: 95% center;
+  }
+  .ex-style_#{$baseEx_01A1} &, .ex-style_#{$baseEx_02A1} & {
+    @include deco-style01A1-mod-bnr-sitename-2;
+  }
+  .ex-style_#{$baseEx_01A2} &, .ex-style_#{$baseEx_02A2} & {
+    @include deco-style01A2-mod-bnr-sitename-2;
+  }
+  .ex-style_#{$baseEx_01A3} &, .ex-style_#{$baseEx_02A3} & {
+    @include deco-style01A3-mod-bnr-sitename-2;
+  }
+  .ex-style_#{$baseEx_01B1} &, .ex-style_#{$baseEx_02B1} & {
+    @include deco-style01B1-mod-bnr-sitename-2;
+  }
+  .ex-style_#{$baseEx_01B2} &, .ex-style_#{$baseEx_02B2} & {
+    @include deco-style01B1-mod-bnr-sitename-2;
+  }
+  .ex-style_#{$baseEx_01B3} &, .ex-style_#{$baseEx_02B3} & {
+    @include deco-style01B3-mod-bnr-sitename-2;
+  }
+  .ex-style_#{$baseEx_01C1} &, .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01C1-mod-bnr-sitename-2;
+  }
+  .ex-style_#{$baseEx_01C2} &, .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01C2-mod-bnr-sitename-2;
+  }
+  .ex-style_#{$baseEx_01C3} &, .ex-style_#{$baseEx_02C3} & {
+    @include deco-style01C3-mod-bnr-sitename-2;
+  }
+}
+
+// --------------------------------------------
+// バナー3　mod-bnr3-sitename
+// --------------------------------------------
+div.mod-bnr3-sitename {
+  @extend .mod-bnr-sitename;
+  margin-top: 10px;
+  // width: 100%
+  // margin: 3px 0 2px
+  // .mod-bnr-inner
+  //   +border-radius
+  //   padding: 12px 30px 10px// change
+  //   max-height: 49px
+  //   background-position: 95% center// change
+  //   line-height: 1.4
+  [data-parts-name^=part-header-088] &,
+  [data-parts-name^=part-header-090] & {
+    @include common-style-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-bnr-sitename-3-2;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-bnr-sitename-3-2;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-bnr-sitename-3-2;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01B1} & {
+    @include deco-style01B1-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01B1} & {
+    @include deco-style01B1-mod-bnr-sitename-3-2;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01B2} &,
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01B2} & {
+    @include deco-style01B2-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01B3} &,
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01B3} & {
+    @include deco-style01B3-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01C1} & {
+    @include deco-style01C1-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01C1} & {
+    @include deco-style01C1-mod-bnr-sitename-3-2;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01C2} & {
+    @include deco-style01C2-mod-bnr-sitename-3;
+  }
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01C2} & {
+    @include deco-style01C2-mod-bnr-sitename-3-2;
+  }
+  [data-parts-name^=part-header-088].ex-style_#{$baseEx_01C3} &,
+  [data-parts-name^=part-header-090].ex-style_#{$baseEx_01C3} & {
+    @include deco-style01C3-mod-bnr-sitename-3;
+  }
+}
+
+// --------------------------------------------
+// お気軽にお問合せください　mod-hosoku2-sitename
+// --------------------------------------------
+p.mod-hosoku2-sitename {
+  @include common-style-mod-hosoku2-sitename;
+  .ex-style_#{$baseEx_01A1} &, .ex-style_#{$baseEx_02A1} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} &, .ex-style_#{$baseEx_02A2} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} &, .ex-style_#{$baseEx_02A3} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} &, .ex-style_#{$baseEx_02B1} & {
+    @include deco-style01B1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} &, .ex-style_#{$baseEx_02B2} & {
+    @include deco-style01B1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01B3-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style01B1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} &, .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01B1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style02C3-mod-hosoku2-sitename;
+  }
+  [class*=ex-style_02] & {
+    @include common-style02-mod-hosoku2-sitename;
+  }
+}
+
+p.mod-hosoku3-sitename {
+  @include common-style02-mod-hosoku3-sitename;
+  .ex-style_#{$baseEx_01A1} &, .ex-style_#{$baseEx_02A1} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01A2} &, .ex-style_#{$baseEx_02A2} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01A3} &, .ex-style_#{$baseEx_02A3} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01B1} &, .ex-style_#{$baseEx_02B1} & {
+    @include deco-style01B1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01B2} &, .ex-style_#{$baseEx_02B2} & {
+    @include deco-style01B1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01B3} &, .ex-style_#{$baseEx_02B3} & {
+    @include deco-style01B3-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01C1} &, .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01C2} &, .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_01C3} &, .ex-style_#{$baseEx_02C3} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+}
+
+p.mod-hosoku4-sitename {
+  @include common-style02-mod-hosoku4-sitename;
+  [class*=ex-style_02] & {
+    margin-top: 4px;
+  }
+  .ex-style_#{$baseEx_02A1} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02A2} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02A3} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02B1} & {
+    @include deco-style01B1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02B2} & {
+    @include deco-style01B1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style01B3-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style01A1-mod-hosoku2-sitename;
+  }
+}
+
+.mod-image-sitename {
+  img {
+    width: 100%;
+  }
+  // .ex-imgSize_L &
+  //   img
+  //     width: 90%
+  // .ex-imgSize_M &
+  //   img
+  //     width: 80%
+  // .ex-imgSize_S &
+  //   img
+  //     width: 75%
+}
+
+.mod-title-inner {
+  margin-right: 5px;
+  height: 40px;
+  max-width: 160px;
+}

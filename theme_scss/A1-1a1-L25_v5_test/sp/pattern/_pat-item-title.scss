@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-title
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-title-style.scss";
+
+// -------------------------------------
+//  pat-item-title の個別設定
+// -------------------------------------
+
+@mixin pat-item-title-black-1 {
+  @include common-style-pat-item-title;
+  @include module-style-pat-item-title-1;
+  @include deco-style-pat-item-title-black-1;
+}
+@mixin pat-item-title-white-1 {
+  @include common-style-pat-item-title;
+  @include module-style-pat-item-title-1;
+  @include deco-style-pat-item-title-white-1;
+}
+@mixin pat-item-title-brown-1 {
+  @include common-style-pat-item-title;
+  @include module-style-pat-item-title-1;
+  @include deco-style-pat-item-title-brown-1;
+}
+@mixin pat-item-title-brown-2 {
+  @include common-style-pat-item-title;
+  @include module-style-pat-item-title-1;
+  @include deco-style-pat-item-title-brown-2;
+}
+@mixin pat-item-title-brown-2 {
+  @include common-style-pat-item-title;
+  @include module-style-pat-item-title-1;
+  @include deco-style-pat-item-title-brown-2;
+}
+@mixin pat-item-title-blue-1 {
+  @include common-style-pat-item-title;
+  @include module-style-pat-item-title-1;
+  @include deco-style-pat-item-title-blue-1;
+}
+@mixin pat-item-title-blue-2 {
+  @include common-style-pat-item-title;
+  @include module-style-pat-item-title-1;
+  @include deco-style-pat-item-title-blue-2;
+}
