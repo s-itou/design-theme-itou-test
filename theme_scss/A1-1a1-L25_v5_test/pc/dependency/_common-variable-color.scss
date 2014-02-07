@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// 			theme1 カラー変数
+//
+// --------------------------------------------------------------------------
+
+
+// --------------------------------------------------------------------------
+//
+// 			フォントカラー コード co
+//
+// --------------------------------------------------------------------------
+
+
+$co-black-1: #333333;
+$co-black-2: #222222;
+
+$co-white-1: #ffffff;
+
+$co-gray-1: #bbbbbb;
+$co-gray-2: #999999;
+$co-gray-3: #666666;
+$co-gray-4: #56543e;
+$co-gray-5: #56534e;
+$co-gray-6: #4f4f4f;
+$co-gray-7: #333300;
+$co-gray-8: #393939;
+
+$co-red-1: #fa5954;
+
+$co-pink-1: #fe7b76;
+$co-pink-2: #fd8e89;
+
+$co-blue-1: #5399F9;
+$co-blue-2: #519dce;
+$co-blue-3: #428dc4;
+$co-blue-4: #416ca3;
+$co-blue-5: #365a8a;
+$co-blue-6: #355995;
+$co-blue-7: #337fb2;
+$co-blue-8: #335a93;
+$co-blue-9: #334766;
+$co-blue-10: #294470;
+$co-blue-11: #264e84;
+$co-blue-12: #223868;
+$co-blue-13: #1f4185;
+$co-blue-14: #2e7feb;
+$co-blue-15: #1b6fe0;
+$co-blue-16: #172846;
+$co-blue-17: #163850;
+$co-blue-18: #154e86;
+$co-blue-19: #0b2d63;
+$co-blue-20: #07172f;
+$co-blue-21: #027ac8;
+$co-blue-22: #063ca9;
+
+$co-green-1: #67ced9;
+$co-green-2: #59c8cf;
+$co-green-3: #109cab;
+$co-green-4: #12626c;
+$co-green-5: #0f9299;
+$co-green-6: #0c7d87;
+$co-green-7: #085b66;
+$co-green-8: #067e87;
+$co-green-9: #064951;
+$co-green-10: #05393e;
+
+$co-orange-1: #ffa658;
+$co-orange-2: #ff8809;
+$co-orange-3: #f6931c;
+$co-orange-4: #f48a00;
+$co-orange-5: #f47200;
+$co-orange-6: #f37f1c;
+$co-orange-7: #f16c0b;
+$co-orange-8: #eb5910;
+$co-orange-9: #e8970f;
+$co-orange-10: #e8750f;
+$co-orange-11: #e24a00;
+
+$co-yellow-1: #f2d028;
+$co-yellow-2: #d1b422;
+$co-yellow-3: #998319;
+
+$co-brown-1: #77590e;
+$co-brown-2: #774d08;
+$co-brown-3: #6a3d04;
+$co-brown-4: #4D2504;
+$co-brown-5: #46140B;
+$co-brown-6: #44320c;
+$co-brown-7: #432407;
+$co-brown-8: #352111;
+$co-brown-9: #2f141c;
+$co-brown-10: #2a1e07;
+
+
+
+// --------------------------------------------------------------------------
+//
+// 			バックグラウンドカラー コード bg
+//
+// --------------------------------------------------------------------------
+
+
+$bg-black-1: #000000;
+$bg-white-1: #ffffff;
+
+$bg-gray-1: #f6f6f6;
+$bg-gray-2: #ced3d9;
+$bg-gray-3: #cecece;
+$bg-gray-4: #c9c9c9;
+$bg-gray-5: #9c9285;
+$bg-gray-6: #98a3b3;
+
+$bg-pink-1: #fee4e3;
+$bg-pink-2: #ffdddc;
+$bg-pink-3: #ffcdcb;
+$bg-pink-4: #ff9e98;
+$bg-pink-5: #ff857f;
+$bg-pink-6: #ff7c76;
+$bg-pink-7: #fe9f99;
+$bg-pink-8: #fe8e8a;
+
+$bg-blue-1: #f8feff;
+$bg-blue-2: #f5fafa;
+$bg-blue-3: #eff5fa;
+$bg-blue-4: #edf4f4;
+$bg-blue-5: #eaf7f9;
+$bg-blue-6: #e6f8ff;
+$bg-blue-7: #e7eef8;
+$bg-blue-8: #e6effa;
+$bg-blue-9: #dce9fb;
+$bg-blue-10: #d5e6f2;
+$bg-blue-11: #d1e3fe;
+$bg-blue-12: #d0def7;
+$bg-blue-13: #cce6fe;
+$bg-blue-14: #cad7eb;
+$bg-blue-15: #c9dfff;
+$bg-blue-16: #b3d0f9;
+$bg-blue-17: #a8bbe3;
+$bg-blue-18: #7CB4D8;
+$bg-blue-19: #84b5fe;
+$bg-blue-20: #7ab0f7;
+$bg-blue-21: #6e98d8;
+$bg-blue-22: #6a8cd2;
+$bg-blue-23: #5a7fb0;
+$bg-blue-24: #5998ec;
+$bg-blue-25: #509dcd;
+$bg-blue-26: #4973c8;
+$bg-blue-27: #4a88f5;
+$bg-blue-28: #3b80f1;
+$bg-blue-29: #347be8;
+$bg-blue-30: #1d6fde;
+$bg-blue-31: #226bdc;
+$bg-blue-32: #3a66b7;
+$bg-blue-33: #375eac;
+$bg-blue-34: #3568ac;
+$bg-blue-35: #355995;
+$bg-blue-36: #2e4e88;
+$bg-blue-37: #2e4a72;
+$bg-blue-38: #408bc2;
+$bg-blue-39: #3d6ea8;
+$bg-blue-40: #426ca6;
+$bg-blue-41: #2679BD;
+$bg-blue-42: #1e4182;
+$bg-blue-43: #0f234b;
+$bg-blue-44: #0e55b5;
+$bg-blue-45: #093673;
+
+$bg-green-1: #f1feff;
+$bg-green-2: #ecfdff;
+$bg-green-3: #e3f6f8;
+$bg-green-4: #dafafa;
+$bg-green-5: #c7e9ee;
+$bg-green-6: #c5eef9;
+$bg-green-7: #c5ecf1;
+$bg-green-8: #bcdfe4;
+$bg-green-9: #B9E4EA;
+$bg-green-10: #aceef5;
+$bg-green-11: #A3E0E9;
+$bg-green-12: #7ed0d9;
+$bg-green-13: #72cad3;
+$bg-green-14: #6cc8d3;
+$bg-green-15: #67ced9;
+$bg-green-16: #5eb0bc;
+$bg-green-17: #5bc8d3;
+$bg-green-18: #5acbda;
+$bg-green-19: #59bfcd;
+$bg-green-20: #56b8cb;
+$bg-green-21: #55c2cf;
+$bg-green-22: #50ACB8;
+$bg-green-23: #47afc2;
+$bg-green-24: #418189;
+$bg-green-25: #3da1b0;
+$bg-green-26: #2b9da8;
+$bg-green-27: #18939d;
+$bg-green-28: #0F808B;
+$bg-green-29: #096874;
+$bg-green-30: #12626c;
+$bg-green-31: #095C66;
+$bg-green-32: #02a1b4;
+$bg-green-33: #a1be4d;
+
+$bg-orange-1: #ffefe5;
+$bg-orange-2: #ffe9d6;
+$bg-orange-3: #ffe1c8;
+$bg-orange-4: #f7eadb;
+$bg-orange-5: #ffdd9d;
+$bg-orange-6: #ffcda2;
+$bg-orange-7: #ffc789;
+$bg-orange-8: #ffb260;
+$bg-orange-9: #ff9547;
+$bg-orange-10: #ff8809;
+$bg-orange-11: #fee4ba;
+$bg-orange-12: #fea452;
+$bg-orange-13: #fbb159;
+$bg-orange-14: #f9a15a;
+$bg-orange-15: #f7931d;
+$bg-orange-16: #f69e3c;
+$bg-orange-17: #F69C3A;
+$bg-orange-18: #f5a561;
+$bg-orange-19: #f59e3b;
+$bg-orange-20: #f39340;
+$bg-orange-21: #F38222;
+$bg-orange-22: #f1751f;
+$bg-orange-23: #e26801;
+
+$bg-yellow-1: #fffdf2;
+$bg-yellow-2: #fffced;
+$bg-yellow-3: #fffbe2;
+$bg-yellow-4: #fff9ee;
+$bg-yellow-5: #fff6e5;
+$bg-yellow-6: #fff7b8;
+$bg-yellow-7: #fff292;
+$bg-yellow-8: #ffea83;
+$bg-yellow-9: #ffe876;
+$bg-yellow-10: #fdfaeb;
+$bg-yellow-11: #fdf4dd;
+$bg-yellow-12: #fcf7d5;
+$bg-yellow-13: #fcf3c6;
+$bg-yellow-14: #fef7c1;
+$bg-yellow-15: #fef6b2;
+$bg-yellow-16: #fef291;
+$bg-yellow-17: #FEEB91;
+$bg-yellow-18: #fee742;
+$bg-yellow-19: #ffe254;
+$bg-yellow-20: #f9fcfe;
+$bg-yellow-21: #fbf5ed;
+$bg-yellow-22: #fbedad;
+$bg-yellow-23: #f9e89d;
+$bg-yellow-24: #f9d788;
+$bg-yellow-25: #f7de5e;
+$bg-yellow-26: #f4d554;
+$bg-yellow-27: #f2e18b;
+$bg-yellow-28: #f2d028;
+$bg-yellow-29: #f1e98a;
+$bg-yellow-30: #ecca26;
+$bg-yellow-31: #e7e7ce;
+$bg-yellow-32: #e6b405;
+
+$bg-brown-1: #d6cda7;
+$bg-brown-2: #cbbb92;
+$bg-brown-3: #a58c5c;
+$bg-brown-4: #8a4a00;
+$bg-brown-5: #443308;
+$bg-brown-6: #332505;
+
+
+
+// --------------------------------------------------------------------------
+//
+// 			ボーダーカラー コード bo
+//
+// --------------------------------------------------------------------------
+
+$bo-black-1: #1b1403;
+
+$bo-white-1: #ffffff;
+
+$bo-gray-1: #ececec;
+$bo-gray-2: #e5e5e5;
+$bo-gray-3: #d9d9d9;
+$bo-gray-4: #e9e7dd;
+$bo-gray-5: #d9d6cf;
+$bo-gray-6: #cccccc;
+$bo-gray-7: #c5c5c5;
+$bo-gray-8: #bfbfbf;
+$bo-gray-9: #b2b2b2;
+$bo-gray-10: #aaaaaa;
+$bo-gray-11: #808285;
+$bo-gray-12: #d0d6dc;
+$bo-gray-13: #7a828f;
+$bo-gray-14: #748095;
+
+$bo-pink-1: #ffdddc;
+$bo-pink-2: #ffd2d0;
+$bo-pink-3: #ffa19b;
+$bo-pink-4: #ff968f;
+$bo-pink-5: #ff908a;
+$bo-pink-6: #fe837c;
+$bo-pink-7: #ff7c76;
+$bo-pink-8: #fd7872;
+
+$bo-blue-1: #fdfeff;
+$bo-blue-2: #f5fbfc;
+$bo-blue-3: #e6edee;
+$bo-blue-4: #c9e2f0;
+$bo-blue-5: #c9dfff;
+$bo-blue-6: #c5dcff;
+$bo-blue-7: #b3cff5;
+$bo-blue-8: #abd2f6;
+$bo-blue-9: #bdcee2;
+$bo-blue-10: #a8bfdc;
+$bo-blue-11: #a3c9fe;
+$bo-blue-12: #9ac2fe;
+$bo-blue-13: #84b5fe;
+$bo-blue-14: #8bb8e4;
+$bo-blue-15: #8aa9e3;
+$bo-blue-16: #889eb8;
+$bo-blue-17: #6390ce;
+$bo-blue-18: #60bff0;
+$bo-blue-19: #5ca4de;
+$bo-blue-20: #519dce;
+$bo-blue-21: #5596f6;
+$bo-blue-22: #4c7cbe;
+$bo-blue-23: #4973c8;
+$bo-blue-24: #426ca6;
+$bo-blue-25: #4281f3;
+$bo-blue-26: #2e7fec;
+$bo-blue-27: #226bdc;
+$bo-blue-28: #1a5eb8;
+$bo-blue-29: #2058a4;
+$bo-blue-30: #0a56bd;
+$bo-blue-31: #0146a6;
+$bo-blue-32: #408bc2;
+$bo-blue-33: #0a81ce;
+$bo-blue-34: #027ac8;
+$bo-blue-35: #355591;
+$bo-blue-36: #325073;
+$bo-blue-37: #16305f;
+$bo-blue-38: #172846;
+$bo-blue-39: #273446;
+
+$bo-green-1: #d6f0f4;
+$bo-green-2: #c8dcde;
+$bo-green-3: #c2eae8;
+$bo-green-4: #c7e9ee;
+$bo-green-5: #b9e4ea;
+$bo-green-6: #ade9ef;
+$bo-green-7: #A3E0E9;
+$bo-green-8: #97dfe7;
+$bo-green-9: #94d8dd;
+$bo-green-10: #85d1d9;
+$bo-green-11: #67ced9;
+$bo-green-12: #58c3cf;
+$bo-green-13: #3ab2c0;
+$bo-green-14: #1b494f;
+$bo-green-15: #1999a3;
+$bo-green-16: #1891a1;
+$bo-green-17: #57adb6;
+$bo-green-18: #43949e;
+$bo-green-19: #0b7d89;
+$bo-green-20: #096874;
+$bo-green-21: #09555c;
+$bo-green-22: #04282c;
+$bo-green-23: #02a1b4;
+$bo-green-24: #01758c;
+
+$bo-orange-1: #ffe9d5;
+$bo-orange-2: #ffe5b9;
+$bo-orange-3: #ffd9bd;
+$bo-orange-4: #ffd098;
+$bo-orange-5: #ffc789;
+$bo-orange-6: #ffcda2;
+$bo-orange-7: #ffc38d;
+$bo-orange-8: #ffa353;
+$bo-orange-9: #ff9547;
+$bo-orange-10: #ff8809;
+$bo-orange-11: #FBCDA8;
+$bo-orange-12: #fad1b2;
+$bo-orange-13: #f7ebdb;
+$bo-orange-14: #f9a35e;
+$bo-orange-15: #f89e35;
+$bo-orange-16: #f79316;
+$bo-orange-17: #f3882b;
+$bo-orange-18: #f37f1c;
+$bo-orange-19: #f47200;
+$bo-orange-20: #eb5910;
+$bo-orange-21: #f9c79a; // 変数の割り当ても結合先もなかったため、ひとまず連番で採番。不要の場合は削除
+
+$bo-yellow-1: #fffff6;
+$bo-yellow-2: #ffed67;
+$bo-yellow-3: #fdf6e5;
+$bo-yellow-4: #fde082;
+$bo-yellow-5: #f6cd77;
+$bo-yellow-6: #f2e9aa;
+$bo-yellow-7: #efde8e;
+$bo-yellow-8: #cccc99;
+$bo-yellow-9: #fbedad;
+$bo-yellow-10: #F7DE6A;
+$bo-yellow-11: #f4d34e;
+$bo-yellow-12: #f2d028;
+$bo-yellow-13: #f2c72a;
+$bo-yellow-14: #d1b422;
+$bo-yellow-15: #bea31f;
+$bo-yellow-16: #b29e3b;
+$bo-yellow-17: #9c8b47;
+$bo-yellow-18: #7c6705;
+
+$bo-brown-1: #dcd4c0;
+$bo-brown-2: #d2ccaa;
+$bo-brown-3: #cebfae;
+$bo-brown-4: #ab9d7b;
+$bo-brown-5: #938d73;
+$bo-brown-6: #866510;
+$bo-brown-7: #423108;
+$bo-brown-8: #352111;

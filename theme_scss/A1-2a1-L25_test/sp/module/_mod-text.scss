@@ -38,23 +38,6 @@
 }
 
 
-//##################################################
-//  mod-text-list
-//##################################################
-.mod-text-list {
-  @include common-style-mod-text;
-  @include module-style-mod-text-pic;
-  .ex-style_#{$baseEx_01A1} & { @include deco-style01A1-mod-text; }
-  .ex-style_#{$baseEx_01A2} & { @include deco-style01A2-mod-text; }
-  .ex-style_#{$baseEx_01A3} & { @include deco-style01A3-mod-text; }
-  .ex-style_#{$baseEx_01B1} & { @include deco-style01B1-mod-text; }
-  .ex-style_#{$baseEx_01B2} & { @include deco-style01B2-mod-text; }
-  .ex-style_#{$baseEx_01B3} & { @include deco-style01B3-mod-text; }
-  .ex-style_#{$baseEx_01C1} & { @include deco-style01C1-mod-text; }
-  .ex-style_#{$baseEx_01C2} & { @include deco-style01C2-mod-text; }
-  .ex-style_#{$baseEx_01C3} & { @include deco-style01C3-mod-text; }
-}
-
 
 //##################################################
 //  mod-text-kyocho-side

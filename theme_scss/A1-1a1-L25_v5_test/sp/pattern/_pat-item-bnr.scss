@@ -8,213 +8,7 @@
 
 @import "../ptn-style/_pat-item-bnr-style.scss";
 
-// ----------------------------------
-//  pat-item-arrow の個別設定
-// ----------------------------------
 
-// グラデーション
-@mixin pat-item-bnr-grade-1 { //footer 青
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-grade-1;
-}
-@mixin pat-item-bnr-grade-2 { //footer 青2
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-grade-2;
-}
-@mixin pat-item-bnr-grade-3 { //footer 青3
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-grade-3;
-}
-@mixin pat-item-bnr-grade-4 { //footer ピンク
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-grade-4;
-}
-@mixin pat-item-bnr-grade-5 { //footer 黄１
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-grade-5;
-}
-@mixin pat-item-bnr-grade-6 { //footer 黄2
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-grade-6;
-}
-@mixin pat-item-bnr-grade-7 { //グレー
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-grade-7;
-}
-@mixin pat-item-bnr-grade-8 { //緑
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-grade-8;
-}
-@mixin pat-item-bnr-grade-9 { //薄黄
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-grade-9;
-}
-
-@mixin pat-item-bnr-grade-16 { //1a2装飾文章
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-grade-16;
-}
-@mixin pat-item-bnr-grade-17 { //1b1装飾文章
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-grade-17;
-}
-@mixin pat-item-bnr-grade-18 { //1b2装飾文章
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-grade-18;
-}
-@mixin pat-item-bnr-grade-19 { //1b3装飾文章
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-grade-19;
-}
-@mixin pat-item-bnr-grade-20 { //緑 新着情報(SP専用)
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-grade-20;
-}
-@mixin pat-item-bnr-grade-21 { //橙 新着情報・サイド単体(SP専用)
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-grade-21;
-}
-
-
-// メッシュ
-@mixin pat-item-bnr-mesh-1 { //footer 青
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-mesh-1;
-}
-@mixin pat-item-bnr-mesh-2 { //footer 黄
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-1;
-  @include deco-style-pat-item-bnr-mesh-2;
-}
-@mixin pat-item-bnr-mesh-3 { //青2
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-mesh-3;
-}
-@mixin pat-item-bnr-mesh-4 { //黄2
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-mesh-4;
-}
-@mixin pat-item-bnr-mesh-5 { //黄2
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-mesh-5;
-}
-
-@mixin pat-item-bnr-mesh-9 { //1c1のピンク
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-mesh-9;
-}
-@mixin pat-item-bnr-mesh-10 { //1c2の緑
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-mesh-10;
-}
-@mixin pat-item-bnr-mesh-11 {//1c3の青
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-mesh-11;
-}
-
-
-
-//背景色つき
-@mixin pat-item-bnr-bgc-1 { //青
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-bgc-1;
-}
-@mixin pat-item-bnr-bgc-2 { //緑
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-bgc-2;
-}
-@mixin pat-item-bnr-bgc-3 { //ピンク
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-2;
-  @include deco-style-pat-item-bnr-bgc-3;
-}
-
-
-
-// -------------------------------------
-// pat-item-bnr-h 三角アイコン４（メイン）
-// -------------------------------------
-@mixin pat-item-bnr2-h1 { //青
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-h1;
-}
-@mixin pat-item-bnr2-h2 { //緑
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-h2;
-}
-@mixin pat-item-bnr2-h3 { //ピンク
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-h3;
-}
-@mixin pat-item-bnr2-h4 { //グレー
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-h4;
-}
-@mixin pat-item-bnr2-h5 { //緑
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-h5;
-}
-@mixin pat-item-bnr2-h6 { //薄黄
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-h6;
-}
-
-// -------------------------------------
-// pat-item-bnr-i >>アイコン2（メイン）
-// -------------------------------------
-@mixin pat-item-bnr2-i1 { //青
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-i1;
-}
-@mixin pat-item-bnr2-i2 { //黄
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-i2;
-}
-@mixin pat-item-bnr2-i3 { //オレンジ
-  @include common-style-pat-item-bnr;
-  @include module-style-pat-item-bnr-4;
-  @include deco-style-pat-item-bnr-i3;
-}
-
-
-
-
-
-/////////////////////////////////////////
-// ここからリファクタ
-/////////////////////////////////////////
 // -------------------------------------
 // pat-item-bnr-b 三角アイコン
 // -------------------------------------
@@ -239,47 +33,63 @@
   @include deco-style-pat-item-bnr-b3;
 }
 
-@mixin pat-item-bnr-side-b4 { //サイド1a1
+@mixin pat-item-bnr-b4 { //1a1　青
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr;
-  @include size-style-pat-item-bnr-1st-side;
+  @include size-style-pat-item-bnr;
   @include deco-style-pat-item-bnr-b4;
 }
 
-@mixin pat-item-bnr-side-b5 { //サイド1a2
+@mixin pat-item-bnr-b5 { //1a2 緑
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr;
-  @include size-style-pat-item-bnr-1st-side;
+  @include size-style-pat-item-bnr;
   @include deco-style-pat-item-bnr-b5;
 }
 
-@mixin pat-item-bnr-side-b6 { //サイド1a3
+@mixin pat-item-bnr-b6 { //1a3 オレンジ
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr;
-  @include size-style-pat-item-bnr-1st-side;
+  @include size-style-pat-item-bnr;
   @include deco-style-pat-item-bnr-b6;
 }
 
-@mixin pat-item-bnr-1st-side-b4 { //サイド1a1
+@mixin pat-item-bnr-footer-b7 { //footer 1a2 青
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr;
-  @include size-style-pat-item-bnr-1st-side;
-  @include deco-style-pat-item-bnr-b4;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-b7;
 }
 
-@mixin pat-item-bnr-1st-side-b5 { //サイド1a2
+@mixin pat-item-bnr-footer-b8 { //footer 1a3 青
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr;
-  @include size-style-pat-item-bnr-1st-side;
-  @include deco-style-pat-item-bnr-b5;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-b8;
 }
 
-@mixin pat-item-bnr-1st-side-b6 { //サイド1a3
+@mixin pat-item-bnr-footer-b9 { //footer 1b1 黄
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr;
-  @include size-style-pat-item-bnr-1st-side;
-  @include deco-style-pat-item-bnr-b6;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-b9;
 }
+
+@mixin pat-item-bnr-footer-b10 { //footer 1b3 ピンク
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-b10;
+}
+
+@mixin pat-item-bnr-b15 { //1a2
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-b15;
+}
+
+
 
 // -------------------------------------
 // pat-item-bnr-c 矢印アイコン
@@ -305,29 +115,202 @@
   @include deco-style-pat-item-bnr-c3;
 }
 
+@mixin pat-item-bnr-c4 { //1b1装飾文章
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-c4;
+}
+
+@mixin pat-item-bnr-c5 { //1b1装飾文章
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-c5;
+}
+
+@mixin pat-item-bnr-c6 { //1b1装飾文章
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-c6;
+}
+
+@mixin pat-item-bnr-c7 { //1b1サービス紹介SP
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-c7;
+}
+
+@mixin pat-item-bnr-c8 { //1c2 画像３列オレンジ
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-c8;
+}
+
 // -------------------------------------
 // pat-item-bnr-d >>アイコン
 // -------------------------------------
 @mixin pat-item-bnr-d1 { //デフォ1c1
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr2;
-  @include size-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d1;
 }
 
 @mixin pat-item-bnr-d2 { //デフォ1c2
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr2;
-  @include size-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d2;
 }
 
 @mixin pat-item-bnr-d3 { //デフォ1c3
   @include common-style-pat-item-bnr;
   @include module-style-pat-item-bnr2;
-  @include size-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-d;
   @include deco-style-pat-item-bnr-d3;
 }
+
+@mixin pat-item-bnr-footer-d7 { //footer 1c1 青
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-d7;
+}
+
+@mixin pat-item-bnr-footer-d8 { //footer 1c2 黄
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-d8;
+}
+
+@mixin pat-item-bnr-d13 { //1c2
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-d13;
+}
+
+@mixin pat-item-bnr-d15 { //1C2サービス紹介SP
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-d15;
+}
+
+// -------------------------------------
+// pat-item-bnr-f サイド三角アイコン
+// -------------------------------------
+@mixin pat-item-bnr-side-f1 { //サイド1a1
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-side;
+  @include deco-style-pat-item-bnr-f1;
+}
+
+@mixin pat-item-bnr-side-f2 { //サイド1a2
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-side;
+  @include deco-style-pat-item-bnr-f2;
+}
+
+@mixin pat-item-bnr-side-f3 { //サイド1a3
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-side;
+  @include deco-style-pat-item-bnr-f3;
+}
+
+@mixin pat-item-bnr-2nd-side-f1 { //サイド1a1
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-2nd-side;
+  @include deco-style-pat-item-bnr-f1;
+}
+
+@mixin pat-item-bnr-2nd-side-f2 { //サイド1a2
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-2nd-side;
+  @include deco-style-pat-item-bnr-f2;
+}
+
+@mixin pat-item-bnr-2nd-side-f3 { //サイド1a3
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr-2nd-side;
+  @include deco-style-pat-item-bnr-f3;
+}
+
+
+// -------------------------------------
+// pat-item-bnr-h 三角アイコン４（メイン）
+// -------------------------------------
+@mixin pat-item-bnr2-h1 { //青
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-h1;
+}
+@mixin pat-item-bnr2-h2 { //緑
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-h2;
+}
+@mixin pat-item-bnr2-h3 { //ピンク
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-h3;
+}
+@mixin pat-item-bnr2-h4 { //グレー
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-h4;
+}
+@mixin pat-item-bnr2-h5 { //緑
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-h5;
+}
+@mixin pat-item-bnr2-h6 { //薄黄
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr;
+  @include size-style-pat-item-bnr;
+  @include deco-style-pat-item-bnr-h6;
+}
+
+// -------------------------------------
+// pat-item-bnr-i >>アイコン2（メイン）
+// -------------------------------------
+@mixin pat-item-bnr2-i1 { //青
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-i1;
+}
+@mixin pat-item-bnr2-i2 { //黄
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-i2;
+}
+@mixin pat-item-bnr2-i3 { //オレンジ
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr2;
+  @include size-style-pat-item-bnr-d;
+  @include deco-style-pat-item-bnr-i3;
+}
+
+
 
 
 // -------------------------------------
@@ -395,4 +378,26 @@
   @include size-style-pat-item-bnr-pic;
   @include insize-style-pat-item-bnr-pic-k;
   @include deco-style-pat-item-bnr-k9;
+}
+
+@mixin pat-item-bnr-pic2-k10 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr-pic;
+  @include size-style-pat-item-bnr-pic2;
+  @include insize-style-pat-item-bnr-pic2-k;
+  @include deco-style-pat-item-bnr-k10;
+}
+@mixin pat-item-bnr-pic2-k11 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr-pic;
+  @include size-style-pat-item-bnr-pic2;
+  @include insize-style-pat-item-bnr-pic2-k;
+  @include deco-style-pat-item-bnr-k11;
+}
+@mixin pat-item-bnr-pic2-k12 {
+  @include common-style-pat-item-bnr;
+  @include module-style-pat-item-bnr-pic;
+  @include size-style-pat-item-bnr-pic2;
+  @include insize-style-pat-item-bnr-pic2-k;
+  @include deco-style-pat-item-bnr-k12;
 }

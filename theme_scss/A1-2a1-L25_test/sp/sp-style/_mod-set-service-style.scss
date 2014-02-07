@@ -1,0 +1,55 @@
+@charset "UTF-8";
+// -------------------------------------
+// mod-set-service
+// -------------------------------------
+
+@mixin common-style-mod-set-service-2col {
+  .mod-2col50 {
+    margin: 15px 0 0 0;
+    > .mod-2col-inner {
+      margin: 0;
+    }
+    > .mod-2col-inner2 {
+      margin: 15px 0 0 0;
+    }
+  }
+}
+
+@mixin module-style-mod-set-service-2col {
+}
+
+
+@mixin deco-style01A1-mod-set-service-2col {
+  padding: 0 15px 30px;
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .mod-h_4_ver2 {
+        margin: 0 -15px;
+        width: auto;
+        @include border-radius(0);
+        .mod-h_4-inner3 {
+          @include border-radius(0);
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@mixin deco-style01A2-mod-set-service-2col {
+}
+@mixin deco-style01A3-mod-set-service-2col {
+}
+@mixin deco-style01B1-mod-set-service-2col {
+}
+@mixin deco-style01B2-mod-set-service-2col {
+}
+@mixin deco-style01B3-mod-set-service-2col {
+}
+@mixin deco-style01C1-mod-set-service-2col {
+}
+@mixin deco-style01C2-mod-set-service-2col {
+}
+@mixin deco-style01C3-mod-set-service-2col {
+}
+
+

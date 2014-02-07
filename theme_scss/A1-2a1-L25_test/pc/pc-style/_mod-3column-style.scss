@@ -48,7 +48,12 @@
 @mixin module-style-mod-3col {
   //現状記述なし
 }
-
+@mixin module-style-mod-3col-waku {
+    margin: 0 20px 0 0;
+   &.mod-3col-inner3 {
+    margin: 0; //枠デザインにかんけなくこのレイアウト指定
+  }
+}
 //mod-3col-footer
 @mixin module-style-mod-3col-footer {
   position: relative;

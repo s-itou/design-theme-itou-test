@@ -13,14 +13,23 @@
     text-align: center !important;
     margin-left: auto; //align対応のためショートハンド不使用
     margin-right: auto;
+    p,.mod-h {
+      text-align: center !important;
+    }
   }
   &.ex-align-right {
     text-align: right !important;
     margin-left: auto;//align対応のためショートハンド不使用
+    p,.mod-h {
+      text-align: right !important;
+    }
   }
   &.ex-align-left {
     text-align: left !important;
     margin-right: auto;//align対応のためショートハンド不使用
+    p,.mod-h {
+      text-align: left !important;
+    }
   }
 }
 // -----------------------------------

@@ -2,6 +2,14 @@
 @import "../sp-style/mod-html-style";
 
 //##################################################
+//  mod-html-map
+//##################################################
+.mod-html-map {
+  @include common-style-mod-html;
+  @include module-style-mod-html;
+}
+
+//##################################################
 //  mod-html-side
 //##################################################
 .mod-html-side {

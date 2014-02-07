@@ -10,7 +10,7 @@
 
 .mod-text-pic,
 .mod-text-list,
-.mod-text-table,
+.mod-text-hyo,
 .mod-text_ver2 {
   @include common-style-mod-text;
   @include module-style-mod-text;
@@ -184,9 +184,6 @@
   .ex-style_01C3 & {@include deco-style01C3-mod-text-header;}
 }
 
-.mod-text-hyo {
-  @include common-style-mod-text;
-}
 
 
 // *************************

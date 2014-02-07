@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-service
+//
+// -----------------------------------
+
+@import "../pc-style/mod-set-service-style";
+@import "../pc-style/mod-set-door-style"; //同じ見出しを引っ張っているため暫定処理
+//@import "../design/pat-design-common";
+
+
+
+.mod-set-service-2col {
+  @include common-style-mod-set-service-2col;
+  @include module-style-mod-set-service-2col;
+  .ex-style_01A1 & {
+    @include pat-item-waku-kadomaru-up-1px-1;
+    @include deco-style01A1-mod-set-service-2col;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-waku-kadomaru-up-1px-2;
+    @include deco-style01A1-mod-set-service-2col;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-waku-kadomaru-up-1px-3;
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-15;}
+    @include deco-style01A1-mod-set-service-2col;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-waku-kadomaru-up-1px-4;
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-16;}
+    @include deco-style01A1-mod-set-service-2col;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-waku-kadomaru-up-1px-5;
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-17;}
+    @include deco-style01A1-mod-set-service-2col;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-waku-kadomaru-up-1px-6;
+    .mod-h_4_ver2 {@include pat-item-h4_tmp-18;}
+    @include deco-style01A1-mod-set-service-2col;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-waku-kadomaru-up-1px-7;
+    .mod-h_4_ver2 {@include pat-item-h4-mesh-4;}
+    @include deco-style01A1-mod-set-service-2col;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-waku-kadomaru-up-1px-8;
+    .mod-h_4_ver2 {@include pat-item-h4-mesh-5;}
+    @include deco-style01A1-mod-set-service-2col;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-waku-kadomaru-up-1px-9;
+    .mod-h_4_ver2 {@include pat-item-h4-mesh-6;}
+    @include deco-style01A1-mod-set-service-2col;
+  }
+}

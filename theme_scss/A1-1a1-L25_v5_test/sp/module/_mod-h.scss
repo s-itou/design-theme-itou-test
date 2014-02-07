@@ -15,59 +15,105 @@
     text-align: center;
     margin-left: auto;//align対応のためショートハンド不使用
     margin-right: auto;
+    p, .mod-h {
+      text-align: center;
+    }
   }
   &.ex-align-right {
     text-align: right;
     margin-left: auto;//align対応のためショートハンド不使用
+    p, .mod-h {
+      text-align: right;
+    }
   }
   &.ex-align-left {
     text-align: left;
     margin-right: auto;//align対応のためショートハンド不使用
+    p, .mod-h {
+      text-align: left;
+    }
   }
 }
-
 
 @mixin block-style-ex-align-buchinuki {  //左右に-25pxのマージンをとっていて、下線や囲みのあるタイプの見出し（theme1におけるh2,h3）
   &.ex-align-center {
+    width: 109%;
     text-align: center;
-    margin-left: -25px;//align対応のためショートハンド不使用
-    margin-right: -25px;
+    margin-left: -15px;//align対応のためショートハンド不使用
+    margin-right: -15px;
+    p, .mod-h {
+      text-align: center;
+    }
   }
   &.ex-align-right {
+    width: 109%;
     text-align: right;
-    margin-left: -25px;//align対応のためショートハンド不使用
-    margin-right: -25px;
+    margin-left: -15px;//align対応のためショートハンド不使用
+    margin-right: -15px;
+    p, .mod-h {
+      text-align: right;
+    }
   }
   &.ex-align-left {
+    width: 109%;
     text-align: left;
-    margin-left: -25px;//align対応のためショートハンド不使用
-    margin-right: -25px;
+    margin-left: -15px;//align対応のためショートハンド不使用
+    margin-right: -15px;
+    p, .mod-h {
+      text-align: left;
+    }
   }
 }
-
 @mixin block-style-ex-align-buchinuki-2 {  //左右に-25pxのマージンをとっていて、下線や囲みのないタイプの見出し（theme1におけるh2,h3）
   &.ex-align-center {
+    width: auto;
     text-align: center;
     margin-left: auto;//align対応のためショートハンド不使用
     margin-right: auto;
+    p, .mod-h {
+      text-align: center;
+    }
+    a {
+      width: auto;
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
   &.ex-align-right {
+    width: auto;
     text-align: right;
     margin-left: auto;//align対応のためショートハンド不使用
-    margin-right: -25px;
+    margin-right: -15px;
+    p, .mod-h {
+      text-align: right;
+    }
+    a {
+      width: auto;
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
   &.ex-align-left {
+    width: auto;
     text-align: left;
-    margin-left: -25px;//align対応のためショートハンド不使用
+    margin-left: -15px;//align対応のためショートハンド不使用
     margin-right: auto;
+    p, .mod-h {
+      text-align: auto;
+    }
+    a {
+      width: auto;
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
 }
-
 
 //##################################################
 //  mod-h_2_ver2
 //##################################################
 .mod-h_2_ver2 {
+  @include block-style-ex-align-buchinuki;
   @include mod-h_2-common-style;
   .ex-style_#{$baseEx_01A1} &,
   .ex-style_#{$baseEx_02A1} & {
@@ -112,6 +158,7 @@
 //  mod-h_3_ver2
 //##################################################
 .mod-h_3_ver2 {
+  @include block-style-ex-align-buchinuki;
   @include mod-h_3-common-style;
   .ex-style_#{$baseEx_01A1} &,
   .ex-style_#{$baseEx_02A1} & {
@@ -128,14 +175,17 @@
   .ex-style_#{$baseEx_01B1} &,
   .ex-style_#{$baseEx_02B1} & {
     @include mod-h_3-style4;
+    @include block-style-ex-align-buchinuki-2;
   }
   .ex-style_#{$baseEx_01B2} &,
   .ex-style_#{$baseEx_02B2} & {
     @include mod-h_3-style5;
+    @include block-style-ex-align-buchinuki-2;
   }
   .ex-style_#{$baseEx_01B3} &,
   .ex-style_#{$baseEx_02B3} & {
     @include mod-h_3-style6;
+    @include block-style-ex-align-buchinuki-2;
   }
   .ex-style_#{$baseEx_01C1} &,
   .ex-style_#{$baseEx_02C1} & {

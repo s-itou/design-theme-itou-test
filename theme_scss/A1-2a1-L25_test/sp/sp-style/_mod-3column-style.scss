@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+// ----------------------------
+// mod-3col
+//必須レイアウト記述→margin-top
+//必須デザイン記述→なし
+// ----------------------------
+
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//mod-3col(inner1重)
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//-----common-style-----//
+@mixin common-style-mod-3col {
+  margin-top: 20px;
+  .mod-3col-inner2, .mod-3col-inner3 {
+    margin-top: 20px;
+    }
+  .mod-3col-inner-3, .mod-3col-inner2-3, .mod-3col-inner3-3 {
+     > .ex-first-child {
+      margin-top: 0 !important;
+       > .ex-first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+//-----module-style-----//
+//mod-3col
+@mixin module-style-mod-3col {}
+@mixin module-style-mod-3col-inset {
+  margin-top: 0;
+}
+@mixin module-style-mod-3col-waku {}

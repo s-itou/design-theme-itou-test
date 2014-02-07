@@ -46,9 +46,6 @@
       background-repeat: no-repeat;
     }
   }
-  .mod-bnr_ver2 {
-    margin-top: $fontSizeM !important; //ex-alignを上書きしないため
-  }
   .mod-2col50 {
     margin: 10px 0 0 0;
     .mod-2col-inner2 {
@@ -99,9 +96,6 @@
     li {
       background-repeat: no-repeat;
     }
-  }
-  .mod-bnr_ver2 {
-    margin-top: $fontSizeM !important; //ショートハンド不使用:ex-alignを上書きしないため,!important:itemの打ち消し
   }
 }
 
@@ -316,11 +310,6 @@
       list-style: none;
     }
   }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
-    }
-  }
 }
 @mixin deco-style01C2-mod-set-design3 {
   > .mod-box-inner {
@@ -350,11 +339,6 @@
       list-style: none;
     }
   }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
-    }
-  }
 }
 @mixin deco-style01C3-mod-set-design3 {
   > .mod-box-inner {
@@ -382,11 +366,6 @@
       background-position: left 5px;
       color: #333333;
       list-style: none;
-    }
-  }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
     }
   }
 }
@@ -596,11 +575,6 @@
       list-style: none;
     }
   }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
-    }
-  }
 }
 @mixin deco-style01C2-mod-set-design-2col {
   .mod-box_ver2 {
@@ -628,11 +602,6 @@
       list-style: none;
     }
   }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
-    }
-  }
 }
 @mixin deco-style01C3-mod-set-design-2col {
   .mod-box_ver2 {
@@ -658,11 +627,6 @@
       background-position: left 5px;
       color: #333333;
       list-style: none;
-    }
-  }
-  .mod-bnr_ver2 {
-    .mod-bnr-inner {
-      padding: 12px 10px 12px 10px;
     }
   }
 }

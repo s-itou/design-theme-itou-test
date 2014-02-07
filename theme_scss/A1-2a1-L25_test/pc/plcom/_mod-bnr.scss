@@ -185,7 +185,8 @@
 // mod-3col
 // ----------------------------
 %common-style-mod-bnr-for-3col {
-  .ex-style_01A1 & {
+  .ex-style_01A1 &,
+  .ex-style_02A1 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-b1;
@@ -194,7 +195,8 @@
       }
     }
   }
-  .ex-style_01A2 & {
+  .ex-style_01A2 &,
+  .ex-style_02A2 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-b2;
@@ -203,7 +205,8 @@
       }
     }
   }
-  .ex-style_01A3 & {
+  .ex-style_01A3 &,
+  .ex-style_02A3 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-b3;
@@ -212,7 +215,8 @@
       }
     }
   }
-  .ex-style_01B1 & {
+  .ex-style_01B1 &,
+  .ex-style_02B1 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-c1;
@@ -221,7 +225,8 @@
       }
     }
   }
-  .ex-style_01B2 & {
+  .ex-style_01B2 &,
+  .ex-style_02B2 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-c2;
@@ -230,7 +235,8 @@
       }
     }
   }
-  .ex-style_01B3 & {
+  .ex-style_01B3 &,
+  .ex-style_02B3 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-c3;
@@ -239,7 +245,8 @@
       }
     }
   }
-  .ex-style_01C1 & {
+  .ex-style_01C1 &,
+  .ex-style_02C1 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-d1;
@@ -248,7 +255,8 @@
       }
     }
   }
-  .ex-style_01C2 & {
+  .ex-style_01C2 &,
+  .ex-style_02C2 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-d2;
@@ -257,7 +265,8 @@
       }
     }
   }
-  .ex-style_01C3 & {
+  .ex-style_01C3 &,
+  .ex-style_02C3 & {
     .mod-bnr_ver2 {
       @if $layoutCode == "L25" {
         @include pat-item-bnr-for-3col-L25-d3;

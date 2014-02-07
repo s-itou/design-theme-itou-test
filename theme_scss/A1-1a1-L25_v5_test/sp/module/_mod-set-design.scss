@@ -44,6 +44,43 @@
   }
 }
 
+
+// -----------------------------------
+// part-main-292
+// -----------------------------------
+
+.mod-set-design2 {
+  .ex-style_#{$baseEx_01A1} & {}
+  .ex-style_#{$baseEx_01A2} & {}
+  .ex-style_#{$baseEx_01A3} & {}
+  .ex-style_#{$baseEx_01B1} & {}
+  .ex-style_#{$baseEx_01B2} & {}
+  .ex-style_#{$baseEx_01B3} & {}
+  .ex-style_#{$baseEx_01C1} & {
+    .mod-ul_ver2 {
+      ul li {
+        margin: 2px 0 0 15px;
+      }
+    }
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    .mod-ul_ver2 {
+      ul li {
+        margin: 2px 0 0 15px;
+      }
+    }
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    .mod-ul_ver2 {
+      ul li {
+        margin: 2px 0 0 15px;
+      }
+    }
+  }
+}
+
+
+
 // -----------------------------------
 // part-main-281,282
 // mod-set-design3,2col
@@ -60,7 +97,7 @@
   .ex-style_#{$baseEx_01A2} & {
     @include pat-item-waku-kadomaru-simple-2;
     .mod-h_4_ver2 {@include pat-item-h4-gurade-2;}
-    .mod-bnr_ver2 {@include pat-item-bnr-grade-16;}
+    .mod-bnr_ver2 {@include pat-item-bnr-b15;}
     @include deco-style01A2-mod-set-design3;
   }
   .ex-style_#{$baseEx_01A3} & {
@@ -72,19 +109,19 @@
   .ex-style_#{$baseEx_01B1} & {
     @include pat-item-waku-kado-jouge-beta-1;
     .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
-    .mod-bnr_ver2 {@include pat-item-bnr-grade-17;}
+    .mod-bnr_ver2 {@include pat-item-bnr-c4;}
     @include deco-style01B1-mod-set-design3;
   }
   .ex-style_#{$baseEx_01B2} & {
     @include pat-item-waku-kado-jouge-beta-2;
     .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
-    .mod-bnr_ver2 {@include pat-item-bnr-grade-18;}
+    .mod-bnr_ver2 {@include pat-item-bnr-c5;}
     @include deco-style01B2-mod-set-design3;
   }
   .ex-style_#{$baseEx_01B3} & {
     @include pat-item-waku-kado-jouge-beta-3;
     .mod-h_4_ver2 {@include pat-item-h4-simple-border-2;}
-    .mod-bnr_ver2 {@include pat-item-bnr-grade-19;}
+    .mod-bnr_ver2 {@include pat-item-bnr-c6;}
     @include deco-style01B3-mod-set-design3;
   }
   .ex-style_#{$baseEx_01C1} & {
@@ -95,6 +132,7 @@
   .ex-style_#{$baseEx_01C2} & {
     @include pat-item-waku-kado-shimple-grade-2;
     .mod-h_4_ver2 {@include pat-item-h4-simple-border-4;}
+    .mod-bnr_ver2 {@include pat-item-bnr-d13;}
     @include deco-style01C2-mod-set-design3;
   }
   .ex-style_#{$baseEx_01C3} & {
@@ -116,7 +154,7 @@
   .ex-style_#{$baseEx_01A2} & {
     .mod-2col-wrap > div > div {@include pat-item-waku-kadomaru-simple-2;}
     .mod-h_4_ver2 {@include pat-item-h4-gurade-2;}
-    .mod-bnr_ver2 {@include pat-item-bnr-grade-16;}
+    .mod-bnr_ver2 {@include pat-item-bnr-b15;}
     @include deco-style01A2-mod-set-design-2col;
   }
   .ex-style_#{$baseEx_01A3} & {
@@ -128,19 +166,19 @@
   .ex-style_#{$baseEx_01B1} & {
     .mod-2col-wrap > div > div {@include pat-item-waku-kado-jouge-beta-4;}
     .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
-    .mod-bnr_ver2 {@include pat-item-bnr-grade-17;}
+    .mod-bnr_ver2 {@include pat-item-bnr-c4;}
     @include deco-style01B1-mod-set-design-2col;
   }
   .ex-style_#{$baseEx_01B2} & {
     .mod-2col-wrap > div > div {@include pat-item-waku-kado-jouge-beta-5;}
     .mod-h_4_ver2 {@include pat-item-h4-simple-border-1;}
-    .mod-bnr_ver2 {@include pat-item-bnr-grade-18;}
+    .mod-bnr_ver2 {@include pat-item-bnr-c5;}
     @include deco-style01B2-mod-set-design-2col;
   }
   .ex-style_#{$baseEx_01B3} & {
     .mod-2col-wrap > div > div {@include pat-item-waku-kado-jouge-beta-6;}
     .mod-h_4_ver2 {@include pat-item-h4-simple-border-2;}
-    .mod-bnr_ver2 {@include pat-item-bnr-grade-19;}
+    .mod-bnr_ver2 {@include pat-item-bnr-c6;}
     @include deco-style01B3-mod-set-design-2col;
   }
   .ex-style_#{$baseEx_01C1} & {
@@ -151,6 +189,7 @@
   .ex-style_#{$baseEx_01C2} & {
     .mod-2col-wrap > div > div {@include pat-item-waku-kado-shimple-grade-2;}
     .mod-h_4_ver2 {@include pat-item-h4-simple-border-4;}
+    .mod-bnr_ver2 {@include pat-item-bnr-d13;}
     @include deco-style01C2-mod-set-design-2col;
   }
   .ex-style_#{$baseEx_01C3} & {

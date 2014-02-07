@@ -9,43 +9,11 @@
 //
 // --------------------------------------------------------------------------
 
-
-
-
-
-// ------------------------------
-//
-// block-style ex-alignにおける設定について
-// カラーでは変わらないがdesignごとに変わっていくるため。h_2,h_3では@mixin mod-h_2-01Aの単位でつけること推奨
-// それ以外ではそもそもぶち抜きでないので、commonでよいかと
-//
-// ------------------------------
-@mixin block-style-ex-align {  //左右に-25pxのマージンをとっていないもの。汎用的設定
-  &.ex-align-center {
-    text-align: center;
-    margin-left: auto;//align対応のためショートハンド不使用
-    margin-right: auto;
-  }
-  &.ex-align-right {
-    text-align: right;
-    margin-left: auto;//align対応のためショートハンド不使用
-  }
-  &.ex-align-left {
-    text-align: left;
-    margin-right: auto;//align対応のためショートハンド不使用
-  }
-}
-
-
-
-
-
 // -------------------------------------
 // pat-item-h4 の共通スタイル
 // -------------------------------------
 
 @mixin common-style-pat-item-h4 {
-  @include block-style-ex-align;
   display: table;
   margin: 15px 0 0 0;
   i {
@@ -71,6 +39,27 @@
   }
 }
 
+@mixin common-style-pat-item-h4-2 {
+  margin-top: 0;//align対応のため左右にmarginを設定しない
+  .mod-h_4-inner {
+    vertical-align: middle;
+    > p {
+      font-size: $fontSizeS;
+    }
+  }
+  .mod-h_4-inner3 {
+    overflow: hidden;
+    .mod-h {
+      word-break: break-all;
+      font-size: $fontSizeM + 2;
+      line-height: 1.3;
+    }
+  }
+  .mod-h_4-inner4 {
+    margin: 0;
+  }
+}
+
 
 // -------------------------------------
 //  pat-item-h4 の共通デザイン
@@ -90,6 +79,23 @@
      padding: 2px 7px;
   }
   .mod-h {
+    max-height: 111px;
+    font-weight: normal;
+  }
+}
+//part-main-286 診療案内
+@mixin module-style-pat-item-h4-shimple-2 {
+  //width: 100%;
+  //i {} iconなし
+  .mod-h_4-inner {
+    //width: 100%;
+  }
+  .mod-h_4-inner3 {
+     margin: 0;
+     padding: 2px 7px;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
     max-height: 111px;
     font-weight: normal;
   }
@@ -123,6 +129,24 @@
     line-height: 1.6;
   }
 }
+//part-main-246 枠付きデザイン時の「角」汎用見出し
+@mixin module-style-pat-item-h4-kaku-shimple {
+  width: 100%;
+  .mod-h_4-inner {
+    width: 100%;
+  }
+  .mod-h_4-inner3 {
+     @include border-radius(0px);
+     margin: 3px 0 0 0;
+     padding: 3px 7px;
+  }
+  .mod-h {
+    max-height: 111px;
+    font-weight: normal;
+    font-size: $fontSizeM + 1;
+  }
+}
+
 // 背景グラデーション
 @mixin module-style-pat-item-h4-gurade {
   width: 100%;
@@ -162,8 +186,11 @@
   min-height: 52px;
   i {
     width: 50px;
+    min-width: 50px;
     min-height: 52px;
     padding: 0 10px 0 0;
+    background-repeat: no-repeat;
+    background-position: left center;
   }
   .mod-h_4-inner {
     min-width: 30px;
@@ -178,6 +205,26 @@
         font-size: $fontSizeM + 2;
       }
     }
+  }
+}
+
+
+@mixin module-style-pat-item-h4-number-for-4col {
+  .mod-h_4-inner3 {
+    background-color: transparent;
+    background-image: none;
+    padding: 0;
+    margin: 0;
+    }
+  .mod-h {
+    min-width: 33px;
+    max-width: 100%;
+    padding: 3px 0 0 0;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .mod-h_4-inner4 {
+    margin: 0;
   }
 }
 
@@ -402,6 +449,231 @@
   }
   .mod-h {
     color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-15 {
+  .mod-h_4-inner {
+    > p {
+      color: #333333;
+    }
+  }
+  .mod-h_4-inner3 {
+    background-image: url(img/mod-h_4/bg30.png);
+    background-repeat: repeat-x;
+  }
+  .mod-h {
+    padding: 0 0 0 5px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-16 {//part-main-286 1a1
+  .mod-h_4-inner3 {
+    background-color: #61c4d0;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-17 {//part-main-286 1a2
+  .mod-h_4-inner3 {
+    background-color: #2e4e87;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-18 {//part-main-286 1a3
+  .mod-h_4-inner3 {
+    background-color: #fef291;
+    background-image: none;
+  }
+  .mod-h {
+    color: #3d2612;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-19 {//part-main-286 1b1
+  .mod-h_4-inner3 {
+    background-color: #f2d027;
+    background-image: none;
+  }
+  .mod-h {
+    color: #304e78;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-20 {//part-main-286 1b2
+  .mod-h_4-inner3 {
+    background-color: #a6e4e9;
+    background-image: none;
+  }
+  .mod-h {
+    color: #294470;
+  }
+}
+@mixin deco-style-pat-item-h4-shimple-21 {//part-main-286 1b3
+  .mod-h_4-inner3 {
+    background-color: #ffa658;
+    background-image: none;
+  }
+  .mod-h {
+    color: #3d2612;
+  }
+}
+
+// -------------------------------------
+// pat-item-h4-mesh の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-mesh-1 {//part-main-286 1c1 カラム中h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #0146a6;
+  }
+}
+@mixin deco-style-pat-item-h4-mesh-2 {//part-main-286 1c2 カラム中h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg_2.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #284469;
+  }
+}
+@mixin deco-style-pat-item-h4-mesh-3 {//part-main-286 1c3 カラム中h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg_3.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #45320b;
+  }
+}
+@mixin deco-style-pat-item-h4-mesh-4 {//part-main-286 1c1 大外h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg_4.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-mesh-5 {//part-main-286 1c2 大外h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg_5.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #284469;
+  }
+}
+@mixin deco-style-pat-item-h4-mesh-6 {//part-main-286 1c3 大外h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg_6.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+
+// -------------------------------------
+// deco-style-pat-item-h4-kaku-shimple の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-kaku-shimple-1 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #66c7d2;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-2 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #0b7d89;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-3 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #fea452;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-4 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #226bdc;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-5 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #0f808b;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-6 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #443308;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+// -------------------------------------
+// pat-item-h4-kaku-mesh の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-kaku-mesh-1 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: transparent;
+    background-image: url(img/_pat-item/h4-kaku-mesh/bg_3.png);
+    background-repeat: repeat;
+    background-position: left top;
+  }
+  .mod-h {
+    color: #443308;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-mesh-2 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: transparent;
+    background-image: url(img/_pat-item/h4-kaku-mesh/bg_2.png);
+    background-repeat: repeat;
+    background-position: left top;
+  }
+  .mod-h {
+    color: #355995;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-mesh-3 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: transparent;
+    background-image: url(img/_pat-item/h4-kaku-mesh/bg.png);
+    background-repeat: repeat;
+    background-position: left top;
+  }
+  .mod-h {
+    color: #ffffff;
+    font-weight: bold;
   }
 }
 
@@ -798,6 +1070,9 @@
 }
 
 @mixin deco-style-pat-item-h4-icon-voice-4 {
+  i {
+    background-image: url(img/mod-h_4/bg09.png);
+  }
   .mod-h_4-inner {
     > p {
       color: #F16C0B;
@@ -811,6 +1086,9 @@
 }
 
 @mixin deco-style-pat-item-h4-icon-voice-5 {
+  i {
+    background-image: url(img/mod-h_4/bg09.png);
+  }
   .mod-h_4-inner {
     > p {
       color: #F16C0B;
@@ -824,6 +1102,9 @@
 }
 
 @mixin deco-style-pat-item-h4-icon-voice-6 {
+  i {
+    background-image: url(img/mod-h_4/bg09.png);
+  }
   .mod-h_4-inner {
     > p {
       color: #333333;
@@ -2360,5 +2641,406 @@
   }
   p, .mod-h {
     color: #331b07;
+  }
+}
+
+// -------------------------------------
+//  pat-item-h4-number
+// 数字アイコン付きの見出し用 装飾デザイン
+// -------------------------------------
+@mixin deco-style-pat-item-h4-number-for-4col-1 {
+ .mod-h {
+    color: #f7931d;
+  }
+  p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style-pat-item-h4-number-for-4col-2 {
+ .mod-h {
+    color: #355995;
+  }
+  p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style-pat-item-h4-number-for-4col-3 {
+ .mod-h {
+    color: #fd8e89;
+  }
+  p {
+    color: #56534e;
+  }
+}
+
+@mixin deco-style-pat-item-h4-number-for-4col-4 {
+ .mod-h {
+    color: #16305f;
+  }
+  p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style-pat-item-h4-number-for-4col-5 {
+ .mod-h {
+    color: #0c7e88;
+  }
+  p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style-pat-item-h4-number-for-4col-6 {
+ .mod-h {
+    color: #f3811e;
+  }
+  p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style-pat-item-h4-number-for-4col-7 {
+ .mod-h {
+    color: #299daa;
+  }
+  p {
+    color: #333333;
+  }
+}
+
+@mixin deco-style-pat-item-h4-number-for-4col-8 {
+ .mod-h {
+    color: #333333;
+  }
+  p {
+    color: #333333;
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-9 {
+ .mod-h {
+    color: #333333;
+  }
+  p {
+    color: #45320b;
+  }
+}
+
+//アイコン記述
+@mixin module-style-pat-item-h4-number-for-4col-icon {
+  .mod-set-nagare-4col .mod-h_4_ver2 i {
+    min-width: 33px;
+    width: 33px;
+    height: 29px;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-1 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_a.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_a.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_a.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_a.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_a.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_a.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_a.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_a.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-2 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_a_2.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_a_2.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_a_2.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_a_2.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_a_2.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_a_2.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_a_2.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_a_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-3 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_a_3.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_a_3.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_a_3.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_a_3.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_a_3.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_a_3.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_a_3.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_a_3.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-4 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_b.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_b.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_b.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_b.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_b.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_b.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_b.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_b.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-5 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_b_2.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_b_2.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_b_2.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_b_2.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_b_2.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_b_2.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_b_2.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_b_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-6 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_b_3.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_b_3.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_b_3.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_b_3.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_b_3.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_b_3.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_b_3.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_b_3.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-7 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_c.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_c.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_c.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_c.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_c.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_c.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_c.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_c.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-8 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_c_2.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_c_2.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_c_2.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_c_2.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_c_2.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_c_2.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_c_2.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_c_2.png");
+      }
+    }
+  }
+}
+@mixin deco-style-pat-item-h4-number-for-4col-icon-9 {
+  .step1 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg_c_3.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg02_c_3.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg03_c_3.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg04_c_3.png");
+      }
+    }
+  }
+  .step2 {
+    .mod-set-nagare-4col {
+      .mod-4col-inner .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg05_c_3.png");
+      }
+      .mod-4col-inner2 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg06_c_3.png");
+      }
+      .mod-4col-inner3 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg07_c_3.png");
+      }
+      .mod-4col-inner4 .mod-h_4_ver2 i {
+      background-image: url("img/mod-h_4/_28/bg08_c_3.png");
+      }
+    }
   }
 }

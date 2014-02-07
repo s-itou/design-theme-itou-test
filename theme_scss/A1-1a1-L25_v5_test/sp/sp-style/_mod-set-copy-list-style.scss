@@ -8,3 +8,98 @@
 %common-style-mod-set-copy-list {
 }
 
+
+@mixin module-style-mod-set-copy-list-2col {
+  .mod-set-list-deco {
+    .mod-2col-in1 {
+      margin: 20px auto 0 auto;
+    }
+  }
+}
+
+@mixin module-style-mod-set-copy-list-2col-2 {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  > div {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    > div {
+      margin: 0;
+      padding: 0;
+      background-image: none;
+    }
+  }
+  ul {
+  	padding: 0;
+  }
+}
+@mixin deco-style-mod-set-copy-list-2col-1 {
+  .mod-2col-in1 {
+    padding: 15px;
+    .mod-2col-inner2 {
+      margin: 15px 0 0 0;
+  	  }
+    .mod-ul_ver2 {
+       ul {
+         li {
+           margin: 10px 0 0 0;
+           }
+        }
+     }
+  }
+}
+@mixin deco-style-mod-set-copy-list-2col-2 {
+  .mod-2col-in1 {
+  	.mod-2col-inner2 {
+  		margin: 15px 0 0 0;
+  		}
+    .mod-ul_ver2 {
+      ul {
+        li {
+          margin: 10px 0 0 0;
+          padding: 4px 0 0 30px;
+          background-position: left 1px;
+        }
+      }
+    }
+  }
+  .mod-text-pic {
+    color: #ffffff;
+  }
+  .mod-copy-in2 {
+    .mod-copy-inner2 {
+      padding: 0 25px;
+    }
+  }
+}
+@mixin deco-style-mod-set-copy-list-2col-3 {
+  .mod-set-list-deco {
+    padding: 10px 15px;
+  }
+  .mod-2col-in1 {
+     > div > div {
+        &.mod-2col-inner2 {
+          background-image: none;
+          padding: 8px 15px 0;
+        }
+     }
+  }
+  .mod-2col-in1 {
+    .mod-ul_ver2 {
+      ul {
+        li {
+          margin: 7px 0 0 0;
+          padding: 4px 0 1px 30px;
+        }
+      }
+    }
+  }
+}
+

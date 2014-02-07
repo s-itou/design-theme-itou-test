@@ -6,14 +6,6 @@
 //-----common-style-----//
 @mixin common-style-mod-set-tsuyomi {}
 @mixin module-style-mod-set-tsuyomi {
-  .mod-h_5_ver2 {
-    width: auto !important;
-  }
-  .mod-h_5_hyo_top, .mod-h_5_hyo_bottom, .mod-h_5_list_top, .mod-h_5_list_bottom {
-    .mod-h {
-      font-size: $fontSizeM;
-    }
-  }
   .mod-h_4_ver2 {
     i {
       min-width: 58px;
@@ -37,6 +29,11 @@
       padding: 0;
     }
   }
+  .mod-h_5_hyo_top, .mod-h_5_hyo_bottom, .mod-h_5_list_top, .mod-h_5_list_bottom {
+    .mod-h {
+      font-size: $fontSizeM;
+    }
+  }
   .mod-table_ver2 {
     table {
       font-size: $fontSizeS + 1;
@@ -48,9 +45,6 @@
         font-size: $fontSizeM;
       } 
     }
-  }
-  .mod-text-list {
-    text-align: left !important;
   }
   .mod-ul_ver2 {
     ul {
@@ -71,6 +65,17 @@
     background-color: transparent;
     .mod-h {
       color: #53251d;
+    }
+  }
+  .mod-2col-in1 {
+    .mod-h_4_ver2 {
+      .mod-h_4-inner3 {
+        &.ex-first-child {
+          .mod-h {
+            font-size: $fontSizeL + 4;
+          }
+        }
+      }
     }
   }
 }

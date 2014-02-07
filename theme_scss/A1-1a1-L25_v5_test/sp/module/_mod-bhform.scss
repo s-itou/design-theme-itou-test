@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import "../sp-style/mod-bhform-style";
+
+.mod-bh-form-main, .mod-bh-form-side {
+  @include mod-bhform-common-style;
+  @if $defaultTheme == "01A1" { @include mod-bhform-style; }
+    @else if $defaultTheme == "01A2" { @include mod-bhform-style2; }
+    @else if $defaultTheme == "01A3" { @include mod-bhform-style3; }
+    @else if $defaultTheme == "01B1" { @include mod-bhform-style4; }
+    @else if $defaultTheme == "01B2" { @include mod-bhform-style5; }
+    @else if $defaultTheme == "01B3" { @include mod-bhform-style6; }
+    @else if $defaultTheme == "01C1" { @include mod-bhform-style7; }
+    @else if $defaultTheme == "01C2" { @include mod-bhform-style8; }
+    @else if $defaultTheme == "01C3" { @include mod-bhform-style9; }
+    @else { @include mod-bhform-style; }
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-bhform-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-bhform-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-bhform-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-bhform-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-bhform-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-bhform-style6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-bhform-style7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-bhform-style8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-bhform-style9;
+  }
+}

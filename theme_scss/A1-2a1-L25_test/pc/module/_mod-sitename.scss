@@ -849,22 +849,7 @@ p.mod-hosoku4-sitename {
 
 .mod-image-sitename {
   img {
-    width: 100%;
-  }
-  .ex-imgSize_L & {
-    img {
-      width: 90%;
-    }
-  }
-  .ex-imgSize_M & {
-    img {
-      width: 80%;
-    }
-  }
-  .ex-imgSize_S & {
-    img {
-      width: 75%;
-    }
+    max-width: 100%;
   }
 }
 

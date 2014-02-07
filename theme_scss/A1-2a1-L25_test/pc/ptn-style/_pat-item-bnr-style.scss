@@ -179,7 +179,7 @@
 @mixin size-style-pat-item-bnr-box2-for-2col-L25 {
   min-width: 0;
   max-width: none;
-  width: auto;
+  width: floor((($mainWidth - 82) / 2) - 143);
   .mod-bnr-inner {
     max-height: 33px;
     p { //common打ち消し
@@ -421,8 +421,8 @@
 }
 @mixin insize-style-pat-item-bnr-box2-for-2col-L25-l {
   .mod-bnr-inner {
-    padding: 2px 5px 1px 17px;
-    background-position: 8px 5px;
+    padding: 1px 5px 0 17px;
+    background-position: 8px 4px;
   }
 }
 
@@ -1157,7 +1157,7 @@
     width: 100%;
     &:before, x:-moz-any-link {  //firefox対応　//x:-moz-any-link
       display: block;
-      min-height: 58px;
+      min-height: 50px;
       width: 0;
       content: "";
     }

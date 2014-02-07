@@ -10,7 +10,7 @@
 
 .mod-text-pic,
 .mod-text-list,
-.mod-text-table,
+.mod-text-hyo,
 .mod-text_ver2 {
   @include common-style-mod-text;
   @include module-style-mod-text;
@@ -35,7 +35,7 @@
   .ex-style_01B2 & {}
   .ex-style_01B3 & {}
   .ex-style_01C1 & {}
-  .ex-style_01C2 & {} 
+  .ex-style_01C2 & {}
   .ex-style_01C3 & {}
 }
 
@@ -184,10 +184,6 @@
   .ex-style_01C3 & {@include deco-style01C3-mod-text-kyocho-footer;}
 }
 
-.mod-text-hyo {
-  @include common-style-mod-text;
-  @include deco-style01A1-mod-text-hyo;
-}
 
 // *************************
 //  新規と既存のヒモ付

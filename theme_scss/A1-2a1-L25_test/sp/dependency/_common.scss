@@ -83,6 +83,17 @@
   background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee));
   background: -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%);
 }
+
+
+// リンク用グラデーション
+@mixin link-arrow($imgUrl,$position-x: 20px, $position-y: 15px) { //spカラバリ対策
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, linear-gradient(#ffffff, #f6f6f6, #eeeeee) left top repeat;
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, -webkit-gradient(linear,left top,left bottom,from(#ffffff),color-stop(0.5,#f6f6f6),to(#eeeeee))  left top repeat;
+  background: url("img/#{$imgUrl}") $position-x $position-y no-repeat, -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 50%,#eeeeee 100%)  left top repeat;
+}
+
+
+
 //プレイスホルダー --------------------
 
 %default-h_4 {

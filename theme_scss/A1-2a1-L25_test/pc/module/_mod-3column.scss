@@ -126,29 +126,53 @@
 }
 
 
-//＊＊＊＊＊＊＊＊＊＊＊＊
-//現行モジュールへのスタイル取り込み
-//＊＊＊＊＊＊＊＊＊＊＊＊
-// .mod-3col {
-//   @extend .mod-3col-in2;
-// }
-
-// .mod-3col4 { set
-// }
-
-// .mod-3col6 { set
-// }
-
-// .mod-3col7 { set
-// }
-
-// .mod-3col8 {
-//   @extend .mod-3col-footer;
-// }
-
-// .mod-3col9 { set
-// }
-
-// .mod-3col10 {
-//   @extend .mod-3col-in2;
-// }
+//3カラム枠付きデザイン
+.mod-3col-in2 {
+  .mod-3col-wrap2 > div {
+    .ex-style_02A1 & {
+      @include pat-item-waku-kado-simple-1;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-1;}
+      @include module-style-mod-3col-waku;
+    }
+    .ex-style_02A2 & {
+      @include pat-item-waku-kado-simple-2;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-2;}
+      @include module-style-mod-3col-waku;
+    }
+    .ex-style_02A3 & {
+      @include pat-item-waku-kado-simple-3;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-3;}
+      @include module-style-mod-3col-waku;
+    }
+    .ex-style_02B1 & {
+      @include pat-item-waku-kado-simple-4;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-4;}
+      @include module-style-mod-3col-waku;
+    }
+    .ex-style_02B2 & {
+      @include pat-item-waku-kado-simple-5;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-5;}
+      @include module-style-mod-3col-waku;
+    }
+    .ex-style_02B3 & {
+      @include pat-item-waku-kado-simple-6;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-6;}
+      @include module-style-mod-3col-waku;
+    }
+    .ex-style_02C1 & {
+      @include pat-item-waku-kado-simple-7;
+      .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-3;}
+      @include module-style-mod-3col-waku;
+    }
+    .ex-style_02C2 & {
+      @include pat-item-waku-kado-simple-8;
+      .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-2;}
+      @include module-style-mod-3col-waku;
+    }
+    .ex-style_02C3 & {
+      @include pat-item-waku-kado-simple-9;
+      .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-1;}
+      @include module-style-mod-3col-waku;
+    }
+  }
+}

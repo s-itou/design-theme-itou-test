@@ -3,6 +3,9 @@
 
 @import "../../common/extend";
 @import "dependency/common-variable";
+@import "dependency/common-variable-color";
+@import "dependency/common-variable-font-size";
+@import "dependency/common-variable-margin";
 @import "dependency/common";
 @import "dependency/required";
 
@@ -61,9 +64,9 @@
 
 
 @import "module/mod-set-bnr";
+@import "module/mod-set-decolist";
 @import "module/mod-set-copy-list";
 @import "module/mod-set-link";
-@import "module/mod-set-decolist";
 @import "module/mod-set-design";
 @import "module/mod-set-fukidashi";
 @import "module/mod-set-nagare";
@@ -81,6 +84,10 @@
 @import "module/mod-set-tsuyomi";
 @import "module/mod-set-news";
 @import "module/mod-set-door";
-
+@import "module/mod-set-service";
+@import "module/mod-set-pic-design";
+@import "module/mod-set-voice";
 
 @import "module/mod-sitename";
+
+@import "module/mod-bhform";

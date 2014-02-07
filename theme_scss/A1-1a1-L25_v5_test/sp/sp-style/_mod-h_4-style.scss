@@ -32,7 +32,7 @@
   .mod-h_4-inner3 {
     @include border-radius();
     overflow: hidden;
-    padding: 0 7px;
+    padding: 2px 7px;
     .mod-h {
       max-height: 111px;
       word-break: break-all;
@@ -41,6 +41,28 @@
       span {
         font-size: $fontSizeM + 2 !important;
       }
+    }
+  }
+  &.ex-align-center {
+    text-align: center !important;
+    margin-left: auto; //align対応のためショートハンド不使用
+    margin-right: auto;
+    p,.mod-h {
+      text-align: center !important;
+    }
+  }
+  &.ex-align-right {
+    text-align: right !important;
+    margin-left: auto;//align対応のためショートハンド不使用
+    p,.mod-h {
+      text-align: right !important;
+    }
+  }
+  &.ex-align-left {
+    text-align: left !important;
+    margin-right: auto;//align対応のためショートハンド不使用
+    p,.mod-h {
+      text-align: left !important;
     }
   }
 }

@@ -4,12 +4,7 @@
 //common-style
 //＊＊＊＊＊＊＊＊＊＊＊＊
 %common-style-mod-text-for-2col { //文章＋画像、2列、文章＋画像2列、3列、文章＋画像3列
-  .mod-text_ver2,
-  .mod-text-pic,
-  .mod-text-list,
-  .mod-text-table
-  //.mod-text4 //暫定
-  {
+  .mod-text-pic {
     font-size: $fontSizeS + 1;
     text-align: center;
     margin-top: 10px !important;

@@ -18,25 +18,22 @@
   .mod-4col-inner {
     float: left;
     width: floor(($mainWidth - 20 * 3) / 4);
-    > .ex-first-child {
-      margin-top: 0 !important;
-      > .ex-first-child {
-        margin-top: 0 !important;
-      }
-    }
   }
   .mod-4col-inner2, .mod-4col-inner3, .mod-4col-inner4 {
     float: left;
     width: floor(($mainWidth - 20 * 3) / 4)+20 ;
     padding: 0 0 0 20px;
+  }
+  .mod-4col-inner-3,.mod-4col-inner2-3, .mod-4col-inner3-3, .mod-4col-inner4-3 {
+  > .ex-first-child {
+    margin-top: 0 !important;
     > .ex-first-child {
       margin-top: 0 !important;
-      > .ex-first-child {
-        margin-top: 0 !important;
       }
     }
   }
 }
+
 
 @mixin module-style-mod-4col {
   //記述なし

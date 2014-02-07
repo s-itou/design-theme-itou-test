@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+// -----------------------------------
+//
+// mod-set-pic-design
+//
+// -----------------------------------
+
+@import "../sp-style/mod-set-pic-design-style";
+//@import "../design/pat-design-common";
+
+
+
+.mod-set-pic-design {
+  @include common-style-mod-set-pic-design;
+  @include module-style-mod-set-pic-design;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-waku-kado-bevel-1;
+    .mod-h_4_ver2 {@include pat-item-h4_16;}
+    .mod-bnr_ver2 {@include pat-item-bnr-b2;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-waku-kado-bevel-2;
+    .mod-h_4_ver2 {@include pat-item-h4_17;}
+    .mod-bnr_ver2 {@include pat-item-bnr-b3;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-waku-kado-bevel-3;
+    .mod-h_4_ver2 {@include pat-item-h4_18;}
+    .mod-bnr_ver2 {@include pat-item-bnr-b1;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-waku-kado-bevel-4;
+    .mod-h_4_ver2 {@include pat-item-h4_19;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-waku-kado-bevel-5;
+    .mod-h_4_ver2 {@include pat-item-h4_20;}
+    .mod-bnr_ver2 {@include pat-item-bnr-c3;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-waku-kado-bevel-6;
+    .mod-h_4_ver2 {@include pat-item-h4_21;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-waku-kado-bevel-7;
+    .mod-h_4_ver2 {@include pat-item-h4-mesh-1;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-waku-kado-bevel-8;
+    .mod-h_4_ver2 {@include pat-item-h4-mesh-2;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-waku-kado-bevel-9;
+    .mod-h_4_ver2 {@include pat-item-h4-mesh-3;}
+    @include deco-style01A1-mod-set-pic-design;
+  }
+}

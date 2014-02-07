@@ -9,34 +9,6 @@
 //
 // --------------------------------------------------------------------------
 
-
-// ------------------------------
-//
-// block-style ex-alignにおける設定について
-// カラーでは変わらないがdesignごとに変わっていくるため。h_2,h_3では@mixin mod-h_2-01Aの単位でつけること推奨
-// それ以外ではそもそもぶち抜きでないので、commonでよいかと
-//
-// ------------------------------
-@mixin block-style-ex-align {  //左右に-25pxのマージンをとっていないもの。汎用的設定
-  &.ex-align-center {
-    text-align: center;
-    margin-left: auto;//align対応のためショートハンド不使用
-    margin-right: auto;
-  }
-  &.ex-align-right {
-    text-align: right;
-    margin-left: auto;//align対応のためショートハンド不使用
-  }
-  &.ex-align-left {
-    text-align: left;
-    margin-right: auto;//align対応のためショートハンド不使用
-  }
-}
-
-
-
-
-
 // -------------------------------------
 // pat-item-h4 の共通スタイル
 // -------------------------------------
@@ -44,7 +16,7 @@
 @mixin common-style-pat-item-h4 {
   //@include block-style-ex-align;
   display: table;
-  margin: 30px 0 0 0;
+  margin-top: 30px;//align対応のため左右にmarginを設定しない
   i {
     display: table-cell;
   }
@@ -57,11 +29,11 @@
   }
   .mod-h_4-inner3 {
     overflow: hidden;
-    .mod-h {
-      word-break: break-all;
-      font-size: $fontSizeL;
-      line-height: 1.3;
-    }
+  }
+  .mod-h {
+    word-break: break-all;
+    font-size: $fontSizeL;
+    line-height: 1.3;
   }
   .mod-h_4-inner4 {
     margin: 3px 0 0 0;
@@ -69,7 +41,7 @@
 }
 
 @mixin common-style-pat-item-h4-2 {
-  margin: 0;
+  margin-top: 0;//align対応のため左右にmarginを設定しない
   .mod-h_4-inner {
     vertical-align: middle;
     > p {
@@ -78,11 +50,11 @@
   }
   .mod-h_4-inner3 {
     overflow: hidden;
-    .mod-h {
-      word-break: break-all;
-      font-size: $fontSizeL;
-      line-height: 1.3;
-    }
+  }
+  .mod-h {
+    word-break: break-all;
+    font-size: $fontSizeL;
+    line-height: 1.3;
   }
   .mod-h_4-inner4 {
     margin: 0;
@@ -138,7 +110,7 @@
 
 //part-main-040 ぶち抜きタイプのボックス見出し アイコン無し
 @mixin module-style-pat-item-h4-design {
-  margin: 0 -40px;
+  margin: 0 -40px;//ぶち抜きのため例外的に左右にもmargin
   padding: 4px 0;
   width: $mainWidth;
   .mod-h_4-inner {
@@ -166,8 +138,23 @@
     }
   }
 }
-
-
+//part-main-246 枠付きデザイン時の「角」汎用見出し
+@mixin module-style-pat-item-h4-kaku-shimple {
+  width: 100%;
+  //i {} iconなし
+  .mod-h_4-inner {
+    width: 100%;
+  }
+  .mod-h_4-inner3 {
+     margin: 3px 0 0 0;
+     padding: 3px 7px;
+  }
+  .mod-h {
+    max-height: 111px;
+    font-weight: normal;
+    font-size: $fontSizeM;
+  }
+}
 
 // 背景グラデーション
 @mixin module-style-pat-item-h4-gurade {
@@ -187,7 +174,7 @@
 
 //四角い見出し ※お問い合わせボックス
 @mixin module-style-pat-item-h4-kaku {
-  margin: 0 auto;
+  margin: 0 auto;//ぶち抜きのため例外的に左右にもmargin
   width: 100%;
   text-align: center;
   .mod-h_4-inner3 {
@@ -229,6 +216,10 @@
 }
 
 @mixin module-style-pat-item-h4-number-for-4col {
+  width: auto;
+  .mod-h_4-inner1 {
+    width: auto;
+    }
   .mod-h_4-inner3 {
     background-color: transparent;
     background-image: none;
@@ -246,21 +237,21 @@
     margin: 0;
   }
 }
-@mixin deco-style01A1-pat-item-h4 {
-  i {
-    min-width: 58px;
-    height: 57px;
-    background-repeat: no-repeat;
-  }
-  .mod-h_4-inner3 {
-    @include border-radius();
-    margin: 0;
-    padding: 0;
-  }
-  .mod-h_4-inner4 {
-    margin: 0;
-  }
-}
+// @mixin deco-style01A1-pat-item-h4 {
+//   i {
+//     min-width: 58px;
+//     height: 57px;
+//     background-repeat: no-repeat;
+//   }
+//   .mod-h_4-inner3 {
+//     @include border-radius();
+//     margin: 0;
+//     padding: 0;
+//   }
+//   .mod-h_4-inner4 {
+//     margin: 0;
+//   }
+// }
 
 
 
@@ -556,32 +547,162 @@
     color: #3d2612;
   }
 }
-@mixin deco-style-pat-item-h4-shimple-22 {//part-main-286 1c1
+
+// -------------------------------------
+// pat-item-h4-mesh の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-mesh-1 {//part-main-286 1c1 カラム中h4
   .mod-h_4-inner3 {
-    background-image: url("img/mod-h_4/bg31.png");
+    background-image: url("img/_pat-item/h4-mesh/bg.png");
+    background-repeat: repeat;
   }
   .mod-h {
     color: #0146a6;
   }
 }
-@mixin deco-style-pat-item-h4-shimple-23 {//part-main-286 1c2
+@mixin deco-style-pat-item-h4-mesh-2 {//part-main-286 1c2 カラム中h4
   .mod-h_4-inner3 {
-    background-image: url("img/mod-h_4/bg31_2.png");
+    background-image: url("img/_pat-item/h4-mesh/bg_2.png");
+    background-repeat: repeat;
   }
   .mod-h {
     color: #284469;
   }
 }
-@mixin deco-style-pat-item-h4-shimple-24 {//part-main-286 1c3
+@mixin deco-style-pat-item-h4-mesh-3 {//part-main-286 1c3 カラム中h4
   .mod-h_4-inner3 {
-    background-image: url("img/mod-h_4/bg31_3.png");
+    background-image: url("img/_pat-item/h4-mesh/bg_3.png");
+    background-repeat: repeat;
   }
   .mod-h {
     color: #45320b;
   }
 }
+@mixin deco-style-pat-item-h4-mesh-4 {//part-main-286 1c1 大外h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg_4.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-mesh-5 {//part-main-286 1c2 大外h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg_5.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #284469;
+  }
+}
+@mixin deco-style-pat-item-h4-mesh-6 {//part-main-286 1c3 大外h4
+  .mod-h_4-inner3 {
+    background-image: url("img/_pat-item/h4-mesh/bg_6.png");
+    background-repeat: repeat;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
 
 
+// -------------------------------------
+// deco-style-pat-item-h4-kaku-shimple の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-kaku-shimple-1 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #66c7d2;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-2 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #0b7d89;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-3 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #fea452;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-4 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #226bdc;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-5 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #0f808b;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-shimple-6 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: #443308;
+    background-image: none;
+  }
+  .mod-h {
+    color: #ffffff;
+  }
+}
+// -------------------------------------
+// pat-item-h4-kaku-mesh の装飾スタイル
+// -------------------------------------
+@mixin deco-style-pat-item-h4-kaku-mesh-1 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: transparent;
+    background-image: url(img/_pat-item/h4-kaku-mesh/bg_3.png);
+    background-repeat: repeat;
+    background-position: left top;
+  }
+  .mod-h {
+    color: #443308;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-mesh-2 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: transparent;
+    background-image: url(img/_pat-item/h4-kaku-mesh/bg_2.png);
+    background-repeat: repeat;
+    background-position: left top;
+  }
+  .mod-h {
+    color: #355995;
+    font-weight: bold;
+  }
+}
+@mixin deco-style-pat-item-h4-kaku-mesh-3 {//part-main-246 見出し補足なしデザインのみ
+  .mod-h_4-inner3 {
+    background-color: transparent;
+    background-image: url(img/_pat-item/h4-kaku-mesh/bg.png);
+    background-repeat: repeat;
+    background-position: left top;
+  }
+  .mod-h {
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
 // -------------------------------------
 // pat-item-h4-gurade の装飾スタイル
 // -------------------------------------
@@ -921,6 +1042,8 @@
 @mixin deco-style-pat-item-h4-icon-voice-1 {
   i {
     background-image: url(img/mod-h_4/bg.png);
+    background-position: left center;
+    background-repeat: no-repeat;
   }
   .mod-h_4-inner {
     > p {
@@ -937,6 +1060,8 @@
 @mixin deco-style-pat-item-h4-icon-voice-2 {
   i {
     background-image: url(img/mod-h_4/bg_2.png);
+    background-position: left center;
+    background-repeat: no-repeat;
   }
   .mod-h_4-inner {
     > p {
@@ -953,6 +1078,8 @@
 @mixin deco-style-pat-item-h4-icon-voice-3 {
   i {
     background-image: url(img/mod-h_4/bg_3.png);
+    background-position: left center;
+    background-repeat: no-repeat;
   }
   .mod-h_4-inner {
     > p {
@@ -967,6 +1094,11 @@
 }
 
 @mixin deco-style-pat-item-h4-icon-voice-4 {
+  i {
+    background-image: url(img/mod-h_4/bg09.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
   .mod-h_4-inner {
     > p {
       color: #F16C0B;
@@ -980,6 +1112,11 @@
 }
 
 @mixin deco-style-pat-item-h4-icon-voice-5 {
+  i {
+    background-image: url(img/mod-h_4/bg09.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
   .mod-h_4-inner {
     > p {
       color: #F16C0B;
@@ -993,6 +1130,11 @@
 }
 
 @mixin deco-style-pat-item-h4-icon-voice-6 {
+  i {
+    background-image: url(img/mod-h_4/bg09.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
   .mod-h_4-inner {
     > p {
       color: #333333;
@@ -1008,6 +1150,8 @@
 @mixin deco-style-pat-item-h4-icon-voice-7 {
   i {
     background-image: url(img/mod-h_4/bg16.png);
+    background-position: left center;
+    background-repeat: no-repeat;
   }
   .mod-h_4-inner {
     > p {
@@ -1016,7 +1160,7 @@
   }
   .mod-h_4-inner3 {
     .mod-h {
-      color: #7dd1dB;
+      color: #5496f7;
     }
   }
 }
@@ -1024,6 +1168,8 @@
 @mixin deco-style-pat-item-h4-icon-voice-8 {
   i {
     background-image: url(img/mod-h_4/bg16_2.png);
+    background-position: left center;
+    background-repeat: no-repeat;
   }
   .mod-h_4-inner {
     > p {
@@ -1040,6 +1186,8 @@
 @mixin deco-style-pat-item-h4-icon-voice-9 {
   i {
     background-image: url(img/mod-h_4/bg16_3.png);
+    background-position: left center;
+    background-repeat: no-repeat;
   }
   .mod-h_4-inner {
     > p {

@@ -96,15 +96,15 @@
   @include module-style-pat-item-arrow-1-for-4col;
   @include deco-style-pat-item-arrow-double-3;
 }
-//@mixin pat-item-arrow-double-4-for-4col { // yellow
-//  @include common-style-pat-item-arrow-for-4col;
-//  @include module-style-pat-item-arrow-2-for-4col;
-//  @include deco-style-pat-item-arrow-double-4;
-//}
-//@mixin pat-item-arrow-double-5-for-4col { // brown
-//  @include common-style-pat-item-arrow-for-4col;
-//  @include module-style-pat-item-arrow-2-for-4col;
-//  @include deco-style-pat-item-arrow-double-5;
-//}
+@mixin pat-item-arrow-double-4-for-4col { // yellow
+ @include common-style-pat-item-arrow-for-4col;
+ @include module-style-pat-item-arrow-1-for-4col;
+ @include deco-style-pat-item-arrow-double-4;
+}
+@mixin pat-item-arrow-double-5-for-4col { // brown
+ @include common-style-pat-item-arrow-for-4col;
+ @include module-style-pat-item-arrow-1-for-4col;
+ @include deco-style-pat-item-arrow-double-5;
+}
 
 

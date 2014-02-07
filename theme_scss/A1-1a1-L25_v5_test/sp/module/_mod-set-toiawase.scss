@@ -112,5 +112,8 @@
     @include module-style-mod-set-toiawase-2col-3;
     @include deco-style-mod-set-toiawase-2col-9;
   }
+  [data-parts-name*="part-main-291"] & {
+    @include module-style-mod-set-toiawase-2col-4;
+  }
 }
 

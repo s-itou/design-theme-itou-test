@@ -19,6 +19,9 @@
           margin-top: 0;
         }
       }
+      .mod-html-map {
+        padding: 0 10px;
+      }
     }
     .mod-box_ver2 {
       margin: 0;
@@ -26,9 +29,9 @@
         clear: both;
         margin: 15px 0 0;
       }
-    }
-    .mod-text-list {
-      text-align: left;
+      .mod-bnr_ver2 {
+        margin: 10px 0 0;
+      }
     }
   }
 }
@@ -80,6 +83,33 @@
           margin: 2px 0 0 5px;
         }
       }
+    }
+  }
+}
+@mixin module-style-mod-set-toiawase-2col-4 {
+  .mod-2col-in1 {
+    .mod-2col-inner-2 {
+      > .mod-img-map {
+        margin-top: 15px !important;
+      }
+    }
+    .mod-2col-inner2-2 {
+      margin-top: 20px;
+      .mod-rte-kyocho {
+        margin-top: 10px;
+      }
+      .mod-tel-iig {
+        margin-top: 0;
+      }
+      > .mod-rte_ver2 {
+        margin-top: 5px;
+      }
+    }
+  }
+  .mod-set-h5 {
+    margin-top: 30px;
+    .mod-rte_ver2 {
+      margin-top: 10px;
     }
   }
 }

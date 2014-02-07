@@ -1,0 +1,63 @@
+@charset "UTF-8";
+// -------------------------------------
+// mod-set-pic-design
+// -------------------------------------
+
+// --------------------------------------------------------------------------
+// mod-set-pic-design
+// --------------------------------------------------------------------------
+@mixin common-style-mod-set-pic-design {
+  .mod-2col_ver2 {
+    margin: 15px 0 0 0;
+    > .mod-2col-inner {
+      > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+      .mod-img {
+        img {
+          max-width: 180px;
+        }
+      }
+    }
+    > .mod-2col-inner2 {
+      margin: 15px 0 0 0;
+       > .ex-first-child {
+        margin-top: 0 !important;
+        > .ex-first-child {
+          margin-top: 0 !important;
+        }
+      }
+      .mod-rte_ver2 {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+}
+
+@mixin module-style-mod-set-pic-design {
+}
+
+@mixin deco-style01A1-mod-set-pic-design {
+  margin: 0;
+  padding: 3px 8px 9px;
+  .mod-h_4_ver2 {
+    .mod-h_4-inner3 {
+      padding: 3px 7px 1px;
+    }
+  }
+  > .mod-box-inner {
+    > .mod-box-inner2 {
+      > .mod-h_4_ver2 {
+        margin: 0 -8px;
+        width: auto; //ぶち抜きのため
+        @include border-radius(0);
+        .mod-h_4-inner3 {
+          @include border-radius(0);
+        }
+      }
+    }
+  }
+}

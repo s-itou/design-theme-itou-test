@@ -263,8 +263,10 @@
       color: #ffffff;
       &:after {
         position: relative;
-        top: 8px;
+        top: 1px;
         left: -30px;
+        display: block;
+        height: 1px;
         background-image: url("img/mod-ul/_06/bg03_b.png");
         background-size: 100% 1px;
         background-repeat: no-repeat;
@@ -280,8 +282,10 @@
       color: #ffffff;
       &:after {
         position: relative;
-        top: 8px;
+        top: 1px;
         left: -30px;
+        display: block;
+        height: 1px;
         background-image: url("img/mod-ul/_06/bg03_b_2.png");
         background-size: 100% 1px;
         background-repeat: no-repeat;
@@ -297,8 +301,10 @@
       color: #333333;
       &:after {
         position: relative;
-        top: 8px;
+        top: 1px;
         left: -30px;
+        display: block;
+        height: 1px;
         background-image: url("img/mod-ul/_06/bg03_b_3.png");
         background-size: 100% 1px;
         background-repeat: no-repeat;
@@ -313,7 +319,7 @@
     li {
       border-bottom: 1px dashed #808285;
       background-image: url("img/mod-ul/_06/bg03_c.png");
-      color: #331b07;
+      color: #333333;
     }
   }
 }
@@ -322,7 +328,7 @@
     li {
       border-bottom: 1px dashed #808285;
       background-image: url("img/mod-ul/_06/bg03_c_2.png");
-      color: #331b07;
+      color: #333333;
     }
   }
 }
@@ -331,7 +337,7 @@
     li {
       border-bottom: 1px dashed #c5c5c5;
       background-image: url("img/mod-ul/_06/bg03_c_3.png");
-      color: #331b07;
+      color: #333333;
     }
   }
 }

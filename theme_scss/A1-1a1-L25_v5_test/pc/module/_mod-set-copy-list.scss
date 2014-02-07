@@ -27,3 +27,66 @@
   .ex-style_01C2 & {@include pat-design-copy-list-8;}
   .ex-style_01C3 & {@include pat-design-copy-list-9;}
 }
+
+
+
+// -----------------------------------
+// part-main-252
+// キャッチコピーリスト 画像＋文章
+// -----------------------------------
+.mod-set-copy-list-2col {
+  .ex-style_01A1 & {
+    .mod-2col-in1 {@include pat-item-waku-none-bgc-white;}
+    .mod-copy-in2 {@include pat-item-copy-grade-4;}
+    @include deco-style-mod-set-copy-list-2col-1;
+  }
+  .ex-style_01A2 & {
+    .mod-2col-in1 {@include pat-item-waku-none-bgc-white;}
+    .mod-copy-in2 {@include pat-item-copy-grade-5;}
+    @include deco-style-mod-set-copy-list-2col-1;
+  }
+  .ex-style_01A3 & {
+    .mod-2col-in1 {@include pat-item-waku-none-bgc-white;}
+    .mod-copy-in2 {@include pat-item-copy-grade-6;}
+    @include deco-style-mod-set-copy-list-2col-1;
+  }
+  .ex-style_01B1 & {
+    .mod-2col-in1 {@include pat-item-waku-kado-none-grade-blue;}
+    .mod-copy-in2 {@include pat-item-copy-sayu-image-1;}
+    @include deco-style-mod-set-copy-list-2col-2;
+  }
+  .ex-style_01B2 & {
+    .mod-2col-in1 {@include pat-item-waku-kado-none-grade-green;}
+    .mod-copy-in2 {@include pat-item-copy-sayu-image-2;}
+    @include deco-style-mod-set-copy-list-2col-2;
+  }
+  .ex-style_01B3 & {
+    .mod-2col-in1 {@include pat-item-waku-kado-none-grade-orange;}
+    .mod-copy-in2 {@include pat-item-copy-sayu-image-3;}
+    @include deco-style-mod-set-copy-list-2col-2;
+  }
+  .ex-style_01C1 & {
+    .mod-2col-in1 {@include pat-item-waku-board-orange;}
+    .mod-copy-in2 {@include pat-item-copy-repeat-1;}
+    @include deco-style-mod-set-copy-list-2col-3;
+  }
+  .ex-style_01C2 & {
+    .mod-2col-in1 {@include pat-item-waku-board-yellow;}
+    .mod-copy-in2 {@include pat-item-copy-repeat-2;}
+    @include deco-style-mod-set-copy-list-2col-3;
+  }
+  .ex-style_01C3 & {
+    .mod-2col-in1 {@include pat-item-waku-board-brown;}
+    .mod-copy-in2 {@include pat-item-copy-repeat-3;}
+    @include deco-style-mod-set-copy-list-2col-3;
+  }
+  .ex-imgLayout_l.ex-style_01C1 &,
+  .ex-imgLayout_l.ex-style_01C2 &,
+  .ex-imgLayout_l.ex-style_01C3 & {
+    @include deco-style-mod-set-copy-list-2col-4;
+  }
+  .mod-set-list-deco .mod-2col-in1 {
+    .mod-ul_ver2 {@include module-style-mod-set-copy-list-2col-2;} //set-list-decoの装飾リセット
+  }
+  @include module-style-mod-set-copy-list-2col;
+}

@@ -123,20 +123,85 @@
   @include module-style-pat-item-h4-shimple-2;
   @include deco-style-pat-item-h4-shimple-21;
 }
-@mixin pat-item-h4_22 {//part-main-286 1c1
+
+//mesh（主にc系の見出し）
+@mixin pat-item-h4-mesh-1 {//part-main-286 1c1
   @include common-style-pat-item-h4-2;
   @include module-style-pat-item-h4-shimple-2;
-  @include deco-style-pat-item-h4-shimple-22;
+  @include deco-style-pat-item-h4-mesh-1;
 }
-@mixin pat-item-h4_23 {//part-main-286 1c2
+@mixin pat-item-h4-mesh-2 {//part-main-286 1c2
   @include common-style-pat-item-h4-2;
   @include module-style-pat-item-h4-shimple-2;
-  @include deco-style-pat-item-h4-shimple-23;
+  @include deco-style-pat-item-h4-mesh-2;
 }
-@mixin pat-item-h4_24 {//part-main-286 1c3
+@mixin pat-item-h4-mesh-3 {//part-main-286 1c3
   @include common-style-pat-item-h4-2;
   @include module-style-pat-item-h4-shimple-2;
-  @include deco-style-pat-item-h4-shimple-24;
+  @include deco-style-pat-item-h4-mesh-3;
+}
+@mixin pat-item-h4-mesh-4 {//part-main-286 1c1 外
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-mesh-4;
+}
+@mixin pat-item-h4-mesh-5 {//part-main-286 1c1 外
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-mesh-5;
+}
+@mixin pat-item-h4-mesh-6 {//part-main-286 1c1 外
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-shimple;
+  @include deco-style-pat-item-h4-mesh-6;
+}
+
+//part-main-246 枠付きデザイン時の「角」汎用見出し
+@mixin pat-item-kaku-shimple-h4-1 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-shimple-1;
+}
+@mixin pat-item-kaku-shimple-h4-2 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-shimple-2;
+}
+@mixin pat-item-kaku-shimple-h4-3 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-shimple-3;
+}
+@mixin pat-item-kaku-shimple-h4-4 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-shimple-4;
+}
+@mixin pat-item-kaku-shimple-h4-5 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-shimple-5;
+}
+@mixin pat-item-kaku-shimple-h4-6 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-shimple-6;
+}
+//メッシュ　part-main-246 枠付きデザイン時の「角」汎用見出し
+@mixin pat-item-kaku-mesh-h4-1 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-mesh-1;
+}
+@mixin pat-item-kaku-mesh-h4-2 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-mesh-2;
+}
+@mixin pat-item-kaku-mesh-h4-3 {
+  @include common-style-pat-item-h4;
+  @include module-style-pat-item-h4-kaku-shimple;
+  @include deco-style-pat-item-h4-kaku-mesh-3;
 }
 
 
@@ -215,6 +280,12 @@
   @include common-style-pat-item-h4;
   @include deco-style-pat-item-h4-kaku-12;
 }
+
+
+
+
+
+
 // ボックス見出しcase
 @mixin pat-item-h4-icon-case-1 {
   @include common-style-pat-item-h4;

@@ -1,6 +1,60 @@
 @charset "UTF-8";
 
 //##################################################
+//  mod-html
+//##################################################
+
+//////////////////////////////////////////////////
+//  COMMON-STYLE
+@mixin common-style-mod-html {
+  @include box-sizing(border-box);
+  overflow: auto;
+  iframe {
+    @include box-sizing(border-box);
+    max-height: 240px !important;
+    width: 100% !important;
+    border: 1px solid #cccccc;
+  }
+  small {
+    a {
+      @include border-radius();
+      @include box-sizing(border-box);
+      display: block;
+      padding: 12px 30px 12px 10px;
+      width: 100%;
+      border: 1px solid #cccccc;
+      background-position: 95% 50%;
+      background-size: 12px 12px, 100%;
+      background-repeat: no-repeat;
+      color: #333333 !important;
+      text-align: center !important;
+      text-decoration: none;
+      font-size: $fontSizeM !important;
+    }
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+//////////////////////////////////////////////////
+//  MODULE-STYLE
+@mixin module-style-mod-html {
+  small a {
+    @include link-arrow("mod-link/spbg03.png", 95%, 50%);
+    background-size: 17px 17px, 100%;
+  }
+}
+
+//////////////////////////////////////////////////
+//  DECORATION-STYLE
+
+
+
+
+
+//##################################################
 //  mod-html-side
 //##################################################
 

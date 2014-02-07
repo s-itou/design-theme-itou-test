@@ -544,3 +544,11 @@
     @include deco-style01A3-mod-link-a;
   }
 }
+
+//##################################################
+//  mod-link-map
+//##################################################
+.mod-link-map {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+}

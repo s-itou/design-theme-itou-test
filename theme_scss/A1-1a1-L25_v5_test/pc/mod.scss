@@ -1,11 +1,12 @@
 @charset "UTF-8";
 @import "compass";
-//@import url('old_1a1.css');
 @import "../../common/extend";
 @import "dependency/common-variable";
+@import "dependency/common-variable-color";
+@import "dependency/common-variable-font-size";
+@import "dependency/common-variable-margin";
 @import "dependency/common";
 @import "dependency/required";
-
 
 
 @import "pattern/pat-item-arrow";
@@ -16,7 +17,6 @@
 @import "pattern/pat-item-rte-in2";
 @import "pattern/pat-item-tel";
 @import "pattern/pat-item-waku";
-@import "pattern/pat-item-2col";
 @import "pattern/pat-item-navi-header";
 @import "pattern/pat-item-table";
 @import "pattern/pat-item-title";
@@ -75,9 +75,9 @@
 
 
 @import "module/mod-set-bnr";
-@import "module/mod-set-copy-list";
 @import "module/mod-set-link";
 @import "module/mod-set-decolist";
+@import "module/mod-set-copy-list";
 @import "module/mod-set-design";
 @import "module/mod-set-fukidashi";
 @import "module/mod-set-nagare";
@@ -105,6 +105,9 @@
 @import "module/mod-set-tsuyomi";
 @import "module/mod-set-door";
 @import "module/mod-set-pic-design";
+@import "module/mod-set-voice";
 
 
 @import "module/mod-sitename";
+
+@import "module/mod-bhform";

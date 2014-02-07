@@ -11,16 +11,25 @@
 @mixin block-style-ex-align {  //左右に-25pxのマージンをとっていないもの。汎用的設定
   &.ex-align-center {
     text-align: center !important;
-    margin-left: auto !important;//align対応のためショートハンド不使用
-    margin-right: auto !important;
+    margin-left: auto; //align対応のためショートハンド不使用
+    margin-right: auto;
+    p,.mod-h {
+      text-align: center !important;
+    }
   }
   &.ex-align-right {
     text-align: right !important;
-    margin-left: auto !important;//align対応のためショートハンド不使用
+    margin-left: auto;//align対応のためショートハンド不使用
+    p,.mod-h {
+      text-align: right !important;
+    }
   }
   &.ex-align-left {
     text-align: left !important;
-    margin-right: auto !important;//align対応のためショートハンド不使用
+    margin-right: auto;//align対応のためショートハンド不使用
+    p,.mod-h {
+      text-align: left !important;
+    }
   }
 }
 
@@ -6217,7 +6226,7 @@
         font-size: $fontSizeL;
       }
       &.ex-first-child {
-        font-size: $fontSizeL + 6;
+        font-size: $fontSizeL + 8;
       }
     }
   }

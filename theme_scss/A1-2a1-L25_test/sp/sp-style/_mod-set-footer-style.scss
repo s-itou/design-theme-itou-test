@@ -36,8 +36,7 @@
     }
   }
   .mod-bnr-footer {
-    position: static !important;
-    bottom: auto;
+    margin: 10px 0 0;
   }
 }
 
@@ -79,8 +78,4 @@
 @mixin deco-style01C3-mod-set-company-footer {
   background-color: #ead8d5;
   background-image: url("img/mod-box/_46/bg_c_3.png");
-  .mod-bnr-footer { //ポイント優劣制御のための記述
-    position: static !important;
-    bottom: auto;
-  }
 }

@@ -229,3 +229,189 @@
   @include deco-style-pat-design-nagare-3col-9;
 }
 
+
+// --------------------------------------------------------------------------
+// pat-design-nagare-4col の共通スタイル
+// --------------------------------------------------------------------------
+
+@mixin common-style-pat-design-nagare-4col {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    background-position: 50% bottom;
+    background-size: 39px 16px;
+    background-repeat: no-repeat;
+  }
+  .mod-4col-inner {
+    .mod-4col-inner-3 {
+      > .ex-first-child {
+        margin-top: 0;
+        > .ex-first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .mod-4col-inner2 {
+    margin-top: 15px;
+    .mod-4col-inner2-3 {
+      > .ex-first-child {
+        margin-top: 0;
+        > .ex-first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .mod-4col-inner3 {
+    margin-top: 15px;
+    .mod-4col-inner3-3 {
+      > .ex-first-child {
+        margin-top: 0;
+        > .ex-first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .mod-4col-inner4 {
+    margin-top: 15px;
+    .mod-4col-inner4-3 {
+      > .ex-first-child {
+        margin-top: 0;
+        > .ex-first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-nagare-4col のモジュール共通スタイル
+// --------------------------------------------------------------------------
+@mixin module-style-pat-design-nagare-4col-1 {}
+
+
+// --------------------------------------------------------------------------
+// pat-design-nagare-4col の装飾スタイル
+// --------------------------------------------------------------------------
+
+@mixin deco-style-pat-design-nagare-4col-1 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg.png");
+  }
+}
+@mixin deco-style-pat-design-nagare-4col-2 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg_2.png");
+  }
+}
+@mixin deco-style-pat-design-nagare-4col-3 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg_3.png");
+  }
+}
+@mixin deco-style-pat-design-nagare-4col-4 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg02.png");
+  }
+}
+@mixin deco-style-pat-design-nagare-4col-5 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg02_2.png");
+  }
+}
+@mixin deco-style-pat-design-nagare-4col-6 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg02_3.png");
+  }
+}
+@mixin deco-style-pat-design-nagare-4col-7 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg03.png");
+  }
+}
+@mixin deco-style-pat-design-nagare-4col-8 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg03_2.png");
+  }
+}
+@mixin deco-style-pat-design-nagare-4col-9 {
+  .mod-4col-inner,
+  .mod-4col-inner2,
+  .mod-4col-inner3 {
+    background-image: url("img/mod-column/spbg03_3.png");
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-design-nagare-4col の個別設定
+// --------------------------------------------------------------------------
+
+@mixin pat-design-nagare-4col-1 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-1;
+}
+@mixin pat-design-nagare-4col-2 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-2;
+}
+@mixin pat-design-nagare-4col-3 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-3;
+}
+@mixin pat-design-nagare-4col-4 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-4;
+}
+@mixin pat-design-nagare-4col-5 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-5;
+}
+@mixin pat-design-nagare-4col-6 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-6;
+}
+@mixin pat-design-nagare-4col-7 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-7;
+}
+@mixin pat-design-nagare-4col-8 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-8;
+}
+@mixin pat-design-nagare-4col-9 {
+  @include common-style-pat-design-nagare-4col;
+  @include module-style-pat-design-nagare-4col-1;
+  @include deco-style-pat-design-nagare-4col-9;
+}
+

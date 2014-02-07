@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+// -------------------------------------
+//
+// mod-set-voice の紐付けモジュール
+//
+// -------------------------------------
+
+@import "../sp-style/mod-set-voice-style";
+
+// -------------------------------------
+// part-main-293
+// お客さまの声 <文章＋画像 装飾見出し>
+// -------------------------------------
+.mod-set-voice-h {
+  @include common-style-mod-set-voice;
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-waku-fukidashi-10;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-10; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-1; }
+    }
+    @include deco-style-mod-set-voice-h-1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-waku-fukidashi-11;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-11; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-2; }
+    }
+    @include deco-style-mod-set-voice-h-2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-waku-fukidashi-12;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-12; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-3; }
+    }
+    @include deco-style-mod-set-voice-h-3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-waku-fukidashi-13;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-13; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-4; }
+    }
+    @include deco-style-mod-set-voice-h-4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-waku-fukidashi-14;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-14; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-5; }
+    }
+    @include deco-style-mod-set-voice-h-5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-waku-fukidashi-15;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-15; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-6; }
+    }
+    .mod-bnr_ver2 {@include pat-item-bnr-c8;}
+    @include deco-style-mod-set-voice-h-6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-waku-fukidashi-16;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-16; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-7; }
+    }
+    @include deco-style-mod-set-voice-h-7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-waku-fukidashi-17;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-17; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-8; }
+    }
+    @include deco-style-mod-set-voice-h-8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-waku-fukidashi-18;
+    .mod-set-h4 {
+      .mod-box-in2 .mod-h_4_ver2 { @include pat-item-h4-design-18; }
+      > .mod-h_4_ver2 { @include pat-item-h4-icon-voice-9; }
+    }
+    @include deco-style-mod-set-voice-h-9;
+  }
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_01C3} & { @include module-style-mod-set-voice-h; }
+}

@@ -58,6 +58,9 @@
     }
     > .mod-2col-inner2 {
       overflow: visible;
+      ol { //リッチ対応
+        display: table;
+      }
     }
   }
 }
@@ -130,8 +133,8 @@
   margin: 20px 0 0 0;
   //----必須デザイン記述-----//
   //---------------------//
-  @extend %cf;
   > .mod-2col-wrap {
+    @extend %cf;
     > .mod-2col-inner {
       float: right;
       width: floor($mainWidth * 0.39);
@@ -195,7 +198,17 @@
   .ex-imgFloat & {
     > .mod-2col-wrap {
       > .mod-2col-inner {
-        margin: 0 20px 12px 20px;
+        margin: 0 0 12px 20px;
+      }
+      > .mod-2col-inner2 {
+        overflow: visible;
+      }
+    }
+  }
+  .ex-imgFloat.ex-imgLayout_l & {
+    > .mod-2col-wrap {
+      > .mod-2col-inner {
+        margin: 0 20px 12px 0;
       }
       > .mod-2col-inner2 {
         overflow: visible;

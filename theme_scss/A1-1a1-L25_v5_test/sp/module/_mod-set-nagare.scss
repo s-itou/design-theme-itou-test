@@ -64,3 +64,88 @@
 // }
 
 
+// --------------------------------------------------------------------------
+// part-main-049
+// 流れ <左→右 4列>
+// --------------------------------------------------------------------------
+
+.mod-set-nagare-4col {
+  @include module-style-mod-set-nagare-4col;
+  .ex-style_#{$baseEx_01A1} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-1;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-1;}
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-2;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-2;}
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-3;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-3;}
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-4;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-4;}
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-5;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-5;}
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-6;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-6;}
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-7;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-7;}
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-8;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-8;}
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    .mod-h_4_ver2 {@include pat-item-h4-number-for-4col-9;}
+    .mod-4col-in2-inset {@include pat-design-nagare-4col-9;}
+
+  }
+}
+
+//icon用の記述
+.ex-style_#{$baseEx_01A1} {@include pat-item-h4-number-for-4col-icon-1;}
+.ex-style_#{$baseEx_01A2} {@include pat-item-h4-number-for-4col-icon-2;}
+.ex-style_#{$baseEx_01A3} {@include pat-item-h4-number-for-4col-icon-3;}
+.ex-style_#{$baseEx_01B1} {@include pat-item-h4-number-for-4col-icon-4;}
+.ex-style_#{$baseEx_01B2} {@include pat-item-h4-number-for-4col-icon-5;}
+.ex-style_#{$baseEx_01B3} {@include pat-item-h4-number-for-4col-icon-6;}
+.ex-style_#{$baseEx_01C1} {@include pat-item-h4-number-for-4col-icon-7;}
+.ex-style_#{$baseEx_01C2} {@include pat-item-h4-number-for-4col-icon-8;}
+.ex-style_#{$baseEx_01C3} {@include pat-item-h4-number-for-4col-icon-9;}
+
+
+  .ex-style_#{$baseEx_01A1} {
+    @include deco-style01A1-mod-set-nagare-4col;
+  }
+  .ex-style_#{$baseEx_01A2} {
+    @include deco-style01A2-mod-set-nagare-4col;
+  }
+  .ex-style_#{$baseEx_01A3} {
+    @include deco-style01A3-mod-set-nagare-4col;
+  }
+  .ex-style_#{$baseEx_01B1} {
+    @include deco-style01B1-mod-set-nagare-4col;
+  }
+  .ex-style_#{$baseEx_01B2} {
+    @include deco-style01B2-mod-set-nagare-4col;
+  }
+  .ex-style_#{$baseEx_01B3} {
+    @include deco-style01B3-mod-set-nagare-4col;
+  }
+  .ex-style_#{$baseEx_01C1} {
+    @include deco-style01C1-mod-set-nagare-4col;
+  }
+  .ex-style_#{$baseEx_01C2} {
+    @include deco-style01C2-mod-set-nagare-4col;
+  }
+  .ex-style_#{$baseEx_01C3} {
+    @include deco-style01C3-mod-set-nagare-4col;
+  }

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import "../sp-style/mod-3column-style";
+
+  //3重の3col
+.mod-3col-in2,  {
+  @include common-style-mod-3col;
+  @include module-style-mod-3col;
+}
+
+.mod-3col-in2-inset {
+  @include common-style-mod-3col;
+  @include module-style-mod-3col-inset;
+}
+//3カラム枠付きデザイン
+.mod-3col-in2 {
+  .mod-3col-wrap2 > div {
+    .ex-style_#{$baseEx_02A1} & {
+      @include pat-item-waku-kado-simple-1;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-1;}
+    }
+    .ex-style_#{$baseEx_02A2} & {
+      @include pat-item-waku-kado-simple-2;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-2;}
+    }
+    .ex-style_#{$baseEx_02A3} & {
+      @include pat-item-waku-kado-simple-3;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-3;}
+    }
+    .ex-style_#{$baseEx_02B1} & {
+      @include pat-item-waku-kado-simple-4;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-4;}
+    }
+    .ex-style_#{$baseEx_02B2} & {
+      @include pat-item-waku-kado-simple-5;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-5;}
+    }
+    .ex-style_#{$baseEx_02B3} & {
+      @include pat-item-waku-kado-simple-6;
+      .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-6;}
+    }
+    .ex-style_#{$baseEx_02C1} & {
+      @include pat-item-waku-kado-simple-7;
+      .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-3;}
+    }
+    .ex-style_#{$baseEx_02C2} & {
+      @include pat-item-waku-kado-simple-7;
+      .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-2;}
+    }
+    .ex-style_#{$baseEx_02C3} & {
+      @include pat-item-waku-kado-simple-8;
+      .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-1;}
+    }
+  }
+  @include module-style-mod-3col-waku;
+}

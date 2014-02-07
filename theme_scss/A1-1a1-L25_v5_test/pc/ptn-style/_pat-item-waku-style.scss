@@ -582,14 +582,14 @@
   border-bottom: 1px solid #aed4d7;
   border-right: 1px solid #dbeced;
   border-left: 1px solid #dbeced;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
 }
 @mixin deco-style-pat-item-waku-bevel-9 {
   @include single-box-shadow(#f49858, 0, 1px, 0, 0);
   border-bottom: 1px solid #fad1b5;
   border-right: 1px solid #fdeade;
   border-left: 1px solid #fdeade;
-  background-color: #fffdee;
+  background-color: #ffffff;
 }
 
 
@@ -1053,6 +1053,7 @@
 // -------------------------------------
 
 // ボード（ピン）
+
 @mixin module-style-pat-item-waku-board-1 {
   width: $mainWidth - 40;
   margin: 20px auto 0;
@@ -1369,6 +1370,46 @@
   }
 }
 
+// 文章吹き出し（口なし）1
+@mixin module-style-pat-item-waku-fukidashi-7 {
+  width: $mainWidth;
+  padding: 16px 0 0;
+  background-position: left top;
+  background-repeat: no-repeat;
+  > div {
+    padding: 0 0 11px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    > div {
+      padding: 0 30px 16px;
+      background-position: left top;
+      background-repeat: repeat-y;
+    }
+  }
+}
+
+// 文章吹き出し（口なし）2
+@mixin module-style-pat-item-waku-fukidashi-8 {
+  padding: 0 0 10px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  > div {
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    padding: 25px 28px 27px;
+  }
+}
+
+// 文章吹き出し（口なし）3
+@mixin module-style-pat-item-waku-fukidashi-9 {
+  padding: 0 0 9px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  > div {
+    padding: 14px 39px 29px;
+  }
+}
+
 
 // -------------------------------------
 // pat-item-waku-fukidashi の装飾スタイル
@@ -1534,6 +1575,92 @@
 }
 @mixin deco-style-pat-item-waku-fukidashi-9 {
   background-image: url("img/_pat-item/waku-fukidashi/bg_9.png");
+  > div {
+    background-color: #ffffff;
+    border-top: 1px solid #d5e5f2;
+    border-left: 1px solid #d5e5f2;
+    border-right: 1px solid #d5e5f2;
+  }
+}
+
+// 文章吹き出し（口なし）用
+@mixin deco-style-pat-item-waku-fukidashi-10 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_10.png");
+    > div {
+      background-image: url("img/_pat-item/waku-fukidashi/bg02.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-11 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_2.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_11.png");
+    > div {
+      background-image: url("img/_pat-item/waku-fukidashi/bg02_2.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-12 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_3.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_12.png");
+    > div {
+      background-image: url("img/_pat-item/waku-fukidashi/bg02_3.png");
+    }
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-13 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_13.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_4.png");
+    background-color: #eef1f9;
+    border-top: 1px solid #1d3a6f;
+    border-left: 1px solid #1d3a6f;
+    border-right: 1px solid #1d3a6f;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-14 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_14.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_5.png");
+    background-color: #f0ffff;
+    border-top: 1px solid #b9e4ea;
+    border-left: 1px solid #b9e4ea;
+    border-right: 1px solid #b9e4ea;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-15 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_15.png");
+  > div {
+    background-image: url("img/_pat-item/waku-fukidashi/bg_6.png");
+    background-color: #fffabb;
+    border-top: 1px solid #ffc789;
+    border-left: 1px solid #ffc789;
+    border-right: 1px solid #ffc789;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-16 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_16.png");
+  > div {
+    background-color: #ffffff;
+    border-top: 1px solid #ffc789;
+    border-left: 1px solid #ffc789;
+    border-right: 1px solid #ffc789;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-17 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_17.png");
+  > div {
+    background-color: #ffffff;
+    border-top: 1px solid #f2d028;
+    border-left: 1px solid #f2d028;
+    border-right: 1px solid #f2d028;
+  }
+}
+@mixin deco-style-pat-item-waku-fukidashi-18 {
+  background-image: url("img/_pat-item/waku-fukidashi/bg_18.png");
   > div {
     background-color: #ffffff;
     border-top: 1px solid #d5e5f2;

@@ -45,9 +45,6 @@
       background-repeat: no-repeat;
     }
   }
-  .mod-bnr_ver2 {
-    margin-top: $fontSizeM !important; //ex-alignを上書きしないため
-  }
   .mod-2col50 {
     margin: 10px 0 0 0;
     .mod-2col-inner2 {
@@ -95,9 +92,6 @@
     li {
       background-repeat: no-repeat;
     }
-  }
-  .mod-bnr_ver2 {
-    margin-top: $fontSizeM !important; //ショートハンド不使用:ex-alignを上書きしないため,!important:itemの打ち消し
   }
   .mod-img {
     //未
@@ -347,9 +341,6 @@
       list-style: none;
       background-size: auto;
     }
-  }
-  .mod-bnr_ver2 {
-    background-image: url("img/_mod/set-design3/bnr/bg_2.png");
   }
 }
 @mixin deco-style01C3-mod-set-design3 {
@@ -617,9 +608,6 @@
       list-style: none;
       background-size: auto;
     }
-  }
-  .mod-bnr_ver2 {
-    background-image: url("img/_mod/set-design3/bnr/bg_2.png");
   }
 }
 @mixin deco-style01C3-mod-set-design-2col {
