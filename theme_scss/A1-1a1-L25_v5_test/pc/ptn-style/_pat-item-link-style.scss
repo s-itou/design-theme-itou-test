@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+// -------------------------------------
+//
+// pat-item-link
+//
+// -------------------------------------
+
+// -------------------------------------
+// pat-item-link の共通スタイル
+// -------------------------------------
+@mixin common-style-pat-item-link {
+  margin-top: 10px;//ex-argin対応のためショートハンド不使用
+  padding: 0;
+  p {
+    margin: 0;
+    text-align: left;
+    font-weight: normal;
+    font-size: $fontSizeM;
+    line-height: 1.4;
+  }
+  a {
+    color: #335a93;
+  }
+  a:hover {
+    color: #f2d028;
+    text-decoration: underline;
+  }
+}
+
+// -------------------------------------
+//  module-style-pat-item-link
+// -------------------------------------
+@mixin module-style-pat-item-link {
+  p {
+    @include box-sizing(border-box);
+    background-repeat: no-repeat;
+    .ex-imgFloat & { //回り込みあり対応
+      overflow: hidden;
+    }
+  }
+}
+
+// -------------------------------------
+//  size-style-pat-item-link
+// -------------------------------------
+@mixin size-style-pat-item-link {
+  p {
+    min-width: 15px;
+    min-height: 20px;
+  }
+}
+
+
+// -------------------------------------
+//  insize-style-pat-item-link
+// -------------------------------------
+@mixin insize-style-pat-item-link-a {
+  p {
+    background-position: left 4px;
+    @if $layoutCode == "L25" {
+      padding: 0 0 0 20px;
+      font-size: $fontSizeM;
+    } @else if $layoutCode == "L30" {
+      padding: 0 0 0 16px;
+      font-size: $fontSizeM - 1;
+    }
+  }
+}
+
+// -------------------------------------
+// deco-style-pat-item-link-a
+// -------------------------------------
+@mixin deco-style-pat-item-link-a1 { //1a1
+  p {
+    background-image: url("img/mod-link/bg.png");
+    color: #333333;
+  }
+}
+@mixin deco-style-pat-item-link-a2 { //1a1
+  p {
+    background-image: url("img/mod-link/bg_2.png");
+    color: #333333;
+  }
+}
+@mixin deco-style-pat-item-link-a3 { //1a1
+  p {
+    background-image: url("img/mod-link/bg_2.png");
+    color: #56534e;
+  }
+}
+
+
+// -------------------------------------
+// deco-style-pat-item-link-b
+// -------------------------------------
