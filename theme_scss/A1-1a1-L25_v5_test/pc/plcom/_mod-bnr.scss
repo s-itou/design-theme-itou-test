@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "../pattern/_pat-item-bnr.scss";
 
 // ----------------------------
 // mod-2col
@@ -12,83 +11,47 @@
 %common-style-mod-bnr-for-2col {
   .ex-style_01A1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-b1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-b1;
-      }
+      @include pat-item-bnr-for-2col-b1;
     }
   }
   .ex-style_01A2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-b2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-b2;
-      }
+      @include pat-item-bnr-for-2col-b2;
     }
   }
   .ex-style_01A3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-b3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-b3;
-      }
+      @include pat-item-bnr-for-2col-b3;
     }
   }
   .ex-style_01B1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-c1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-c1;
-      }
+      @include pat-item-bnr-for-2col-c1;
     }
   }
   .ex-style_01B2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-c2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-c2;
-      }
+      @include pat-item-bnr-for-2col-c2;
     }
   }
   .ex-style_01B3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-c3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-c3;
-      }
+      @include pat-item-bnr-for-2col-c3;
     }
   }
   .ex-style_01C1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-d1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-d1;
-      }
+      @include pat-item-bnr-for-2col-d1;
     }
   }
   .ex-style_01C2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-d2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-d2;
-      }
+      @include pat-item-bnr-for-2col-d2;
     }
   }
   .ex-style_01C3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2col-L25-d3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2col-L30-d3;
-      }
+      @include pat-item-bnr-for-2col-d3;
     }
   }
 }
@@ -100,83 +63,47 @@
 %common-style-mod-bnr-for-2colin3col {
   .ex-style_01A1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-b1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-b1;
-      }
+      @include pat-item-bnr-for-2colin3col-b1;
     }
   }
   .ex-style_01A2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-b2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-b2;
-      }
+      @include pat-item-bnr-for-2colin3col-b2;
     }
   }
   .ex-style_01A3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-b3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-b3;
-      }
+      @include pat-item-bnr-for-2colin3col-b3;
     }
   }
   .ex-style_01B1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-c1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-c1;
-      }
+      @include pat-item-bnr-for-2colin3col-c1;
     }
   }
   .ex-style_01B2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-c2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-c2;
-      }
+      @include pat-item-bnr-for-2colin3col-c2;
     }
   }
   .ex-style_01B3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-c3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-c3;
-      }
+      @include pat-item-bnr-for-2colin3col-c3;
     }
   }
   .ex-style_01C1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-d1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-d1;
-      }
+      @include pat-item-bnr-for-2colin3col-d1;
     }
   }
   .ex-style_01C2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-d2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-d2;
-      }
+      @include pat-item-bnr-for-2colin3col-d2;
     }
   }
   .ex-style_01C3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-2colin3col-L25-d3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-2colin3col-L30-d3;
-      }
+      @include pat-item-bnr-for-2colin3col-d3;
     }
   }
 }
@@ -191,91 +118,55 @@
   .ex-style_01A1 &,
   .ex-style_02A1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-b1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-b1;
-      }
+      @include pat-item-bnr-for-3col-b1;
     }
   }
   .ex-style_01A2 &,
   .ex-style_02A2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-b2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-b2;
-      }
+      @include pat-item-bnr-for-3col-b2;
     }
   }
   .ex-style_01A3 &,
   .ex-style_02A3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-b3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-b3;
-      }
+      @include pat-item-bnr-for-3col-b3;
     }
   }
   .ex-style_01B1 &,
   .ex-style_02B1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-c1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-c1;
-      }
+      @include pat-item-bnr-for-3col-c1;
     }
   }
   .ex-style_01B2 &,
   .ex-style_02B2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-c2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-c2;
-      }
+      @include pat-item-bnr-for-3col-c2;
     }
   }
   .ex-style_01B3 &,
   .ex-style_02B3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-c3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-c3;
-      }
+      @include pat-item-bnr-for-3col-c3;
     }
   }
   .ex-style_01C1 &,
   .ex-style_02C1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-d1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-d1;
-      }
+      @include pat-item-bnr-for-3col-d1;
     }
   }
   .ex-style_01C2 &,
   .ex-style_02C2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-d2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-d2;
-      }
+      @include pat-item-bnr-for-3col-d2;
     }
   }
   .ex-style_01C3 &,
   .ex-style_02C3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-3col-L25-d3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-3col-L30-d3;
-      }
+      @include pat-item-bnr-for-3col-d3;
     }
   }
 }
@@ -286,83 +177,47 @@
 %common-style-mod-bnr-for-4col {
   .ex-style_01A1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-b1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-b1;
-      }
+      @include pat-item-bnr-for-4col-b1;
     }
   }
   .ex-style_01A2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-b2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-b2;
-      }
+      @include pat-item-bnr-for-4col-b2;
     }
   }
   .ex-style_01A3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-b3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-b3;
-      }
+      @include pat-item-bnr-for-4col-b3;
     }
   }
   .ex-style_01B1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-c1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-c1;
-      }
+      @include pat-item-bnr-for-4col-c1;
     }
   }
   .ex-style_01B2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-c2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-c2;
-      }
+      @include pat-item-bnr-for-4col-c2;
     }
   }
   .ex-style_01B3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-c3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-c3;
-      }
+      @include pat-item-bnr-for-4col-c3;
     }
   }
   .ex-style_01C1 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-d1;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-d1;
-      }
+      @include pat-item-bnr-for-4col-d1;
     }
   }
   .ex-style_01C2 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-d2;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-d2;
-      }
+      @include pat-item-bnr-for-4col-d2;
     }
   }
   .ex-style_01C3 & {
     .mod-bnr_ver2 {
-      @if $layoutCode == "L25" {
-        @include pat-item-bnr-for-4col-L25-d3;
-      } @else if $layoutCode == "L30" {
-        @include pat-item-bnr-for-4col-L30-d3;
-      }
+      @include pat-item-bnr-for-4col-d3;
     }
   }
 }

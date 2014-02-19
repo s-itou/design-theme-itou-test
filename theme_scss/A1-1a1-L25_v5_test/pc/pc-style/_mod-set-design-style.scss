@@ -124,7 +124,7 @@
     }
     > .mod-2col-inner2 {
       min-width: floor((($mainWidth - 10) / 2) + 10);
-      border-left: 10px solid #ffffff;
+      border-left: 10px solid $bo-white-1;
       margin: 0;
     }
     > .mod-2col-inner, > .mod-2col-inner2 {
@@ -307,22 +307,19 @@
     background-image: none;
   }
   .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
-    color: #ffffff;
+    color: $co-white-1;
   }
   .mod-ul_ver2 {
     li {
-      color: #ffffff;
+      color: $co-white-1;
       background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    color: #ffffff;
-    > p {
-      background-image: url("img/_mod/set-design3/link/bg_b_1.png");
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
   a {
-    color: #ffffff;
+    color: $co-white-1;
   }
   .mod-2col50 {//誘導リンク部品
     > .mod-2col-inner, > .mod-2col-inner2 {
@@ -360,22 +357,19 @@
     background-image: none;
   }
   .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
-    color: #ffffff;
+    color: $co-white-1;
   }
   .mod-ul_ver2 {
     li {
-      color: #ffffff;
+      color: $co-white-1;
       background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    color: #ffffff;
-    > p {
-      background-image: url("img/_mod/set-design3/link/bg_b_2.png");
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
   a {
-    color: #ffffff;
+    color: $co-white-1;
   }
   .mod-2col50 {//誘導リンク部品
     > .mod-2col-inner, > .mod-2col-inner2 {
@@ -413,22 +407,19 @@
     background-image: none;
   }
   .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
-    color: #443308;
+    color: $co-brown-6;
   }
   .mod-ul_ver2 {
     li {
-      color: #443308;
+      color: $co-brown-6;
       background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    color: #443308;
-    > p {
-      background-image: url("img/_mod/set-design3/link/bg_b_3.png");
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
   a {
-    color: #443308;
+    color: $co-brown-6;
   }
   .mod-2col50 {//誘導リンク部品
     > .mod-2col-inner, > .mod-2col-inner2 {
@@ -594,11 +585,8 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    > p {
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 @mixin deco-style01A2-mod-set-design-2col {
@@ -619,11 +607,8 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    > p {
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 @mixin deco-style01A3-mod-set-design-2col {
@@ -644,11 +629,8 @@
       background-image: url("img/_mod/set-design3/ul/bg_a_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    > p {
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 @mixin deco-style01B1-mod-set-design-2col {
@@ -668,21 +650,16 @@
     }
   }
   .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
-    color: #ffffff;
+    color: $co-white-1;
   }
   .mod-ul_ver2 {
     li {
-      color: #ffffff;
+      color: $co-white-1;
       background-image: url("img/_mod/set-design3/ul/bg_b_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    color: #ffffff;
-    > p {
-      background-image: url("img/_mod/set-design3/link/bg_b_1.png");
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 @mixin deco-style01B2-mod-set-design-2col {
@@ -702,21 +679,16 @@
     }
   }
   .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
-    color: #ffffff;
+    color: $co-white-1;
   }
   .mod-ul_ver2 {
     li {
-      color: #ffffff;
+      color: $co-white-1;
       background-image: url("img/_mod/set-design3/ul/bg_b_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    color: #ffffff;
-    > p {
-      background-image: url("img/_mod/set-design3/link/bg_b_2.png");
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 @mixin deco-style01B3-mod-set-design-2col {
@@ -736,21 +708,16 @@
     }
   }
   .mod-text-pic, .mod-h_5_list_top > .mod-h, .mod-rte_ver2 {
-    color: #443308;
+    color: $co-brown-6;
   }
   .mod-ul_ver2 {
     li {
-      color: #443308;
+      color: $co-brown-6;
       background-image: url("img/_mod/set-design3/ul/bg_b_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    color: #443308;
-    > p {
-      background-image: url("img/_mod/set-design3/link/bg_b_3.png");
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 @mixin deco-style01C1-mod-set-design-2col {
@@ -774,11 +741,8 @@
       background-image: url("img/_mod/set-design3/ul/bg_c_1.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    > p {
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 @mixin deco-style01C2-mod-set-design-2col {
@@ -803,11 +767,8 @@
       background-image: url("img/_mod/set-design3/ul/bg_c_2.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    > p {
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 @mixin deco-style01C3-mod-set-design-2col {
@@ -831,11 +792,8 @@
       background-image: url("img/_mod/set-design3/ul/bg_c_3.png");
     }
   }
-  .mod-link-1st, .mod-link-2nd, .mod-link_ver2 {
-    > p {
-      padding: 2px 0 0 20px;
-      font-size: $fontSizeM - 2;
-    }
+  .mod-link-1st {
+    margin-top: 20px;//点数で勝つためdecoに記載。ショートハンド不使用。
   }
 }
 
@@ -896,18 +854,8 @@
   }
 }
 @mixin module-style-mod-set-design4-4 {
-  .mod-link-pic, .mod-link-list {
-    p {
-      background-image: url("img/mod-link/bg.png");
-    }
-  }
 }
 @mixin module-style-mod-set-design4-5 {
-  .mod-link-pic, .mod-link-list {
-    p {
-      background-image: url("img/mod-link/bg.png");
-    }
-  }
 }
 @mixin module-style-mod-set-design4-6 {
   .mod-ul_ver2 {
@@ -916,11 +864,6 @@
       li {
         margin: 2px 0 0 5px;
       }
-    }
-  }
-  .mod-link-pic, .mod-link-list {
-    p {
-      background-image: url("img/mod-link/bg.png");
     }
   }
 }
@@ -963,14 +906,14 @@
 @mixin deco-style-mod-set-design4-17 {
   .mod-h_5_pic_top, .mod-h_5_pic_bottom, .mod-h_5_list_top {
     .mod-h {
-      color: #333333;
+      color: $co-black-1;
     }
   }
 }
 @mixin deco-style-mod-set-design4-18 {
   .mod-ul_ver2 {
-    border: 1px solid #d1c9a4;
-    background-color: #fffce9;
+    border: 1px solid $bo-brown-2;
+    background-color: $bg-yellow-4;
     ul {
       li {
         background-image: url("img/mod-ul/bg06.png");

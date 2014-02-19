@@ -1,28 +1,28 @@
 @charset "UTF-8";
-@import "../pc-style/mod-3column-style";
+@import "../../../pc/pc-style/mod-3column-style";
 
 
 .mod-3col_ver2 {
   //1重の3col(未使用)
-  @include common-style-mod-3col;
-  @include module-style-mod-3col;
+  @include comm-style-mod-3col;
+  @include modu-style-mod-3col;
 }
 
 .mod-3col-footer {
-  @include common-style-mod-3col;
-  @include module-style-mod-3col-footer;
+  @include comm-style-mod-3col;
+  @include modu-style-mod-3col-footer;
 }
 
 .mod-3col-in1 {
   //2重の3col(未使用)
-  @include common-style-mod-3col-in1;
-  @include module-style-mod-3col-in1;
+  @include comm-style-mod-3col-in1;
+  @include modu-style-mod-3col-in1;
 }
 
 .mod-3col-in2, .mod-3col-in2-inset {
   //3重の3col
-  @include common-style-mod-3col-in2;
-  @include module-style-mod-3col-in2;
+  @include comm-style-mod-3col-in2;
+  @include modu-style-mod-3col-in2;
   @extend %common-style-mod-bnr-for-3col;
   @extend %common-style-mod-h_4-for-3col;
   @extend %common-style-mod-h_5-for-3col;
@@ -35,37 +35,13 @@
   @extend %common-style-mod-text-for-2col;
   .mod-3col-inner-3, .mod-3col-inner2-3, .mod-3col-inner3-3 {
     > .mod-2col_ver2 {
+      @include modu-style-mod-2colin3col;
       @extend %common-style-mod-h_5_pic-for-2colin3col;
       @extend %common-style-mod-h_5_6-for-2colin3col;//仮名称
       @extend %common-style-mod-h_5_23-for-2colin3col;//仮名称
       @extend %mod-h_5_x2-for-2colin3col;//仮名称
       @extend %common-style-mod-bnr-for-2colin3col;
       @extend %common-style-mod-link-for-2col;
-      // ↓ 2colin3colの差分
-      margin: 25px 0 0 0;
-      > .mod-2col-inner {
-        width: 70px;
-        margin: 0 0 0 10px;
-         > .ex-first-child {
-          margin-top: 0 !important;
-           > .ex-first-child {
-            margin-top: 0 !important;
-          }
-        }
-      }
-      > .mod-2col-inner2 {
-         > .ex-first-child {
-          margin-top: 0 !important;
-           > .ex-first-child {
-            margin-top: 0 !important;
-          }
-        }
-      }
-      .ex-imgLayout_l & {
-        .mod-2col-inner {
-          margin: 0 10px 0 0;
-        }
-      }
     }
   }
   .ex-style_01A1 & {
@@ -129,48 +105,48 @@
 .mod-3col-in2 {
   .mod-3col-wrap2 > div {
     .ex-style_02A1 & {
-      @include pat-item-waku-kado-simple-1;
+      @include pat-item-waku-simple-1px-1;
       .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-1;}
       @include module-style-mod-3col-waku;
     }
     .ex-style_02A2 & {
-      @include pat-item-waku-kado-simple-2;
+      @include pat-item-waku-simple-1px-2;
       .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-2;}
       @include module-style-mod-3col-waku;
     }
     .ex-style_02A3 & {
-      @include pat-item-waku-kado-simple-3;
+      @include pat-item-waku-simple-1px-3;
       .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-3;}
       @include module-style-mod-3col-waku;
     }
     .ex-style_02B1 & {
-      @include pat-item-waku-kado-simple-4;
+      @include pat-item-waku-simple-1px-4;
       .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-4;}
       @include module-style-mod-3col-waku;
     }
     .ex-style_02B2 & {
-      @include pat-item-waku-kado-simple-5;
+      @include pat-item-waku-simple-1px-5;
       .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-5;}
       @include module-style-mod-3col-waku;
     }
     .ex-style_02B3 & {
-      @include pat-item-waku-kado-simple-6;
+      @include pat-item-waku-simple-1px-6;
       .mod-h_4_ver2 {@include pat-item-kaku-shimple-h4-6;}
-      .mod-bnr_ver2 {@include pat-item-bnr-for-3col-L25-c7;}
+      .mod-bnr_ver2 {@include pat-item-bnr-for-3col-c7;}
       @include module-style-mod-3col-waku;
     }
     .ex-style_02C1 & {
-      @include pat-item-waku-kado-simple-7;
+      @include pat-item-waku-simple-1px-7;
       .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-3;}
       @include module-style-mod-3col-waku;
     }
     .ex-style_02C2 & {
-      @include pat-item-waku-kado-simple-7;
+      @include pat-item-waku-simple-1px-7;
       .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-2;}
       @include module-style-mod-3col-waku;
     }
     .ex-style_02C3 & {
-      @include pat-item-waku-kado-simple-8;
+      @include pat-item-waku-simple-1px-8;
       .mod-h_4_ver2 {@include pat-item-kaku-mesh-h4-1;}
       @include module-style-mod-3col-waku;
     }
